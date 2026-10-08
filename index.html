@@ -59,6 +59,34 @@ h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;letter-spacing:-.02em;marg
 .filters button{font:inherit;font-size:.88rem;background:transparent;color:var(--mu);border:1px solid var(--line);padding:8px 18px;border-radius:99px;cursor:pointer;transition:.25s}
 .filters button{background:#fff}.filters button.on,.filters button:hover{background:var(--tx);color:#fff;border-color:var(--tx)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:26px}
+.feat{position:relative;display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:0;margin-bottom:48px;border-radius:28px;overflow:hidden;background:#0d1626;color:#eef3ea;box-shadow:0 40px 80px -40px #0d162699;isolation:isolate;transition:transform .45s cubic-bezier(.2,.8,.2,1)}
+.feat::before{content:"";position:absolute;inset:-2px;z-index:-2;border-radius:30px;background:conic-gradient(from var(--a),#8cc63a,#22c55e,#d9f99d,#8cc63a);animation:spin 6s linear infinite}
+.feat::after{content:"";position:absolute;inset:2px;z-index:-1;border-radius:26px;background:radial-gradient(circle at 100% 0,#22c55e33,transparent 50%),#0d1626}
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+@keyframes spin{to{--a:360deg}}
+.feat:hover{transform:translateY(-6px)}
+.feat .ph{margin:18px 0 18px 18px;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px -20px #000;position:relative}
+.feat .ph img{display:block;width:100%;height:auto;transition:transform 1.2s ease}
+.feat:hover .ph img{transform:scale(1.04)}
+.feat .tx{padding:40px 44px;display:flex;flex-direction:column;gap:14px}
+.badge{align-self:flex-start;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#0d1626;background:linear-gradient(135deg,#d9f99d,#8cc63a);padding:6px 14px;border-radius:99px}
+.feat h3{font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.15}
+.feat h3 em{font-style:normal;color:#a3e635}
+.feat p{color:#b6c2b0;font-size:.98rem}
+.kpi{display:flex;gap:26px;margin:4px 0}
+.kpi b{display:block;font-size:1.5rem;color:#a3e635;line-height:1.2}
+.kpi span{font-size:.75rem;color:#8f9b8a}
+.feat .tags span{background:#ffffff0d;border-color:#ffffff1a;color:#d4dccf}
+.feat .go{color:#0d1626;background:#a3e635;padding:12px 22px;border-radius:14px;align-self:flex-start;margin-top:6px}
+@media(max-width:900px){.feat{grid-template-columns:1fr}.feat .ph{margin:14px 14px 0}.feat .tx{padding:26px 24px 30px}}
+.feat.rev{grid-template-columns:1fr 1.25fr}
+.feat.rev .ph{order:2;margin:18px 18px 18px 0}
+.feat.rev::before{background:conic-gradient(from var(--a),#22d3ee,#818cf8,#a5f3fc,#22d3ee)}
+.feat.rev::after{background:radial-gradient(circle at 0 0,#22d3ee2e,transparent 50%),#0d1626}
+.feat.rev h3 em,.feat.rev .kpi b{color:#22d3ee}
+.feat.rev .badge{background:linear-gradient(135deg,#a5f3fc,#22d3ee)}
+.feat.rev .go{background:#22d3ee}
+@media(max-width:900px){.feat.rev{grid-template-columns:1fr}.feat.rev .ph{order:0;margin:14px 14px 0}}
 .card{background:var(--card);box-shadow:0 10px 30px -18px #16190f40;border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .45s;opacity:0;transform:translateY(30px)}
 .card.in{opacity:1;transform:none}
 .card:hover{transform:translateY(-8px);border-color:#8cc63a99;box-shadow:0 30px 60px -25px #3f7a1255,0 0 0 1px #8cc63a33}
@@ -137,6 +165,28 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mu);font-size
   <section id="portfolio">
     <h2>Nosso <em>portfólio</em></h2>
     <p class="sub">Projetos reais, no ar, gerando clientes. Clique em qualquer card para ver o site.</p>
+    <a class="feat" href="https://souabia.com" target="_blank" rel="noopener">
+      <div class="ph"><img src="img/souabia.jpg" alt="Site da Bia, secretária de IA no WhatsApp" width="1440" height="900" loading="lazy"></div>
+      <div class="tx">
+        <span class="badge">★ Destaque · Produto de IA</span>
+        <h3>Bia: secretária de <em>IA</em> que atende o WhatsApp 24h</h3>
+        <p>SaaS criado por nós: um chatbot de inteligência artificial que agenda, confirma e cancela compromissos sozinho no Google Calendar, reduzindo faltas e recuperando clientes fora do horário comercial.</p>
+        <div class="kpi"><div><b>24/7</b><span>atendimento</span></div><div><b>5 min</b><span>setup via QR Code</span></div><div><b>SaaS</b><span>assinatura recorrente</span></div></div>
+        <div class="tags"><span>IA / LLM</span><span>WhatsApp</span><span>Google Calendar</span><span>SaaS</span><span>LGPD</span></div>
+        <span class="go">Conhecer a Bia</span>
+      </div>
+    </a>
+    <a class="feat rev" href="https://souabia.com/nova-remote" target="_blank" rel="noopener">
+      <div class="ph"><img src="img/nova-remote.jpg" alt="Site do app NovaRemote, controle remoto para Smart TV" width="1440" height="900" loading="lazy"></div>
+      <div class="tx">
+        <span class="badge">★ Destaque · App Mobile</span>
+        <h3>NovaRemote: o celular vira o <em>controle da TV</em></h3>
+        <p>App Android criado por nós, com site próprio: controla Smart TVs Android TV, Google TV, Samsung, Roku e Philips pelo Wi-Fi, com busca por voz, atalhos para streaming e anúncios que não interrompem o uso.</p>
+        <div class="kpi"><div><b>5</b><span>marcas de TV</span></div><div><b>100%</b><span>gratuito</span></div><div><b>Voz</b><span>busca por voz</span></div></div>
+        <div class="tags"><span>Android</span><span>Google Play</span><span>Wi-Fi</span><span>Landing page</span></div>
+        <span class="go">Conhecer o app</span>
+      </div>
+    </a>
     <div class="filters" id="filters"></div>
     <div class="grid" id="grid"></div>
   </section>
@@ -171,7 +221,7 @@ const bt=document.getElementById('bits');
 for(let i=0;i<16;i++){const e=document.createElement('i');e.textContent=Array.from({length:40},()=>Math.random()<.5?0:1).join('');
  e.style.left=(i/16*100+Math.random()*4)+'%';e.style.animationDuration=(28+Math.random()*30)+'s';e.style.animationDelay=(-Math.random()*50)+'s';bt.appendChild(e)}
 const g=document.getElementById('grid'),f=document.getElementById('filters');
-document.getElementById('nproj').textContent=P.length;
+document.getElementById('nproj').textContent=P.length+2;
 document.getElementById('y').textContent=new Date().getFullYear();
 g.innerHTML=P.map(([d,n,c,t,tg])=>`<a class="card" data-c="${c}" href="${d}/index.html" target="_blank" rel="noopener">
  <div class="shot"><div class="bar"><i></i><i></i><i></i></div><iframe data-src="${d}/index.html" title="Prévia de ${n}" tabindex="-1" loading="lazy"></iframe></div>
