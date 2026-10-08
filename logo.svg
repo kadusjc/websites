@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 170" role="img" aria-label="Ferreiro Corrêa Software">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&amp;display=swap');
+    text{font-family:Ubuntu,'Segoe UI',Arial,sans-serif}
+  </style>
+  <defs>
+    <linearGradient id="fc-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c6f04a"/>
+      <stop offset="1" stop-color="#6fb52c"/>
+    </linearGradient>
+    <mask id="fc-m">
+      <rect width="410" height="170" fill="#fff"/>
+      <circle cx="96" cy="92" r="58" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="82" cy="82" r="66" fill="url(#fc-g)" mask="url(#fc-m)"/>
+  <text x="44" y="112" font-size="58" font-weight="700" textLength="350" letter-spacing="-1" lengthAdjust="spacingAndGlyphs" fill="currentColor">ferreiro<tspan fill="url(#fc-g)">corrêa</tspan></text>
+  <text x="394" y="150" font-size="30" font-weight="400" letter-spacing="2" text-anchor="end" fill="currentColor" opacity=".8">software</text>
+</svg>

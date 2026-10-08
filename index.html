@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Portfólio | Ferreiro Corrêa Software</title>
+<meta name="description" content="Ferreiro Corrêa Software: mais de 20 anos em Inteligência Artificial, sites com SEO de alta performance e sistemas web, desktop e mobile. Conheça nosso portfólio.">
+<meta property="og:title" content="Portfólio | Ferreiro Corrêa Software">
+<meta property="og:description" content="Sites, landing pages e sistemas com SEO de alta performance. Mais de 20 anos de experiência.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Ferreiro Corrêa Software","description":"Mais de 20 anos de experiência em IA, desenvolvimento de sites e sistemas web, desktop e mobile.","logo":"logo.svg"}</script>
+<style>
+:root{--bg:#0b0e0a;--bg2:#12170f;--card:#151b12;--line:#ffffff14;--tx:#eef3ea;--mu:#9aa594;--g1:#c6f04a;--g2:#6fb52c;--grad:linear-gradient(135deg,var(--g1),var(--g2))}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:auto;padding:0 20px}
+.glow{position:fixed;inset:-20% -10% auto auto;width:700px;height:700px;background:radial-gradient(circle,#8fd13a33,transparent 60%);filter:blur(40px);pointer-events:none;z-index:0;animation:float 14s ease-in-out infinite alternate}
+.glow.b{inset:auto auto -30% -15%;background:radial-gradient(circle,#c6f04a1f,transparent 60%);animation-duration:18s}
+@keyframes float{to{transform:translate(-80px,60px) scale(1.1)}}
+header,main,footer{position:relative;z-index:1}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+nav svg{height:46px;width:auto}
+nav .cta{border:1px solid var(--line);padding:10px 20px;border-radius:99px;font-size:.9rem;transition:.3s}
+nav .cta:hover{background:var(--g1);color:#0b0e0a;border-color:var(--g1)}
+.hero{padding:90px 0 70px;text-align:center}
+.hero .logo{width:min(620px,92%);height:auto;margin:0 auto 40px;display:block;filter:drop-shadow(0 10px 40px #8fd13a30)}
+.pill{display:inline-block;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--g1);border:1px solid #c6f04a40;padding:6px 16px;border-radius:99px;margin-bottom:24px}
+h1{font-size:clamp(2.1rem,5.5vw,4rem);line-height:1.1;font-weight:700;letter-spacing:-.02em;max-width:900px;margin:auto}
+h1 em,h2 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mu);font-size:1.15rem;max-width:680px;margin:22px auto 0;font-weight:300}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:70px 0 0}
+.stats div{background:var(--bg2);padding:28px 16px;text-align:center}
+.stats b{display:block;font-size:2.2rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stats span{color:var(--mu);font-size:.85rem}
+section{padding:80px 0}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;letter-spacing:-.02em;margin-bottom:12px}
+.sub{color:var(--mu);max-width:600px;margin-bottom:40px}
+.srv{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.srv div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;transition:.35s}
+.srv div:hover{transform:translateY(-6px);border-color:#c6f04a55}
+.srv i{font-style:normal;font-size:1.8rem;display:block;margin-bottom:12px}
+.srv h3{font-size:1.1rem;margin-bottom:6px}
+.srv p{color:var(--mu);font-size:.92rem}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.filters button{font:inherit;font-size:.88rem;background:transparent;color:var(--mu);border:1px solid var(--line);padding:8px 18px;border-radius:99px;cursor:pointer;transition:.25s}
+.filters button.on,.filters button:hover{background:var(--g1);color:#0b0e0a;border-color:var(--g1)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:26px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .3s,box-shadow .45s;opacity:0;transform:translateY(30px)}
+.card.in{opacity:1;transform:none}
+.card:hover{transform:translateY(-8px);border-color:#c6f04a66;box-shadow:0 30px 60px -20px #000,0 0 0 1px #c6f04a22}
+.card.hide{display:none}
+.shot{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0f130d;border-bottom:1px solid var(--line)}
+.bar{position:absolute;top:0;left:0;right:0;height:26px;background:#1c2318;display:flex;align-items:center;gap:6px;padding:0 12px;z-index:2}
+.bar i{width:9px;height:9px;border-radius:50%;background:#ffffff22}
+.bar i:first-child{background:#ff5f57}.bar i:nth-child(2){background:#febc2e}.bar i:nth-child(3){background:#28c840}
+.shot iframe{position:absolute;top:26px;left:0;width:400%;height:calc((100% - 26px)*4);transform:scale(.25);transform-origin:0 0;border:0;pointer-events:none;transition:transform 6s ease}
+.shot::after{content:"Ver site ↗";position:absolute;inset:26px 0 0;display:grid;place-items:center;background:#0b0e0aaa;color:var(--g1);font-weight:600;opacity:0;transition:.3s;z-index:3;backdrop-filter:blur(2px)}
+.card:hover .shot::after{opacity:1}
+.body{padding:24px 26px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cat{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--g1)}
+.body h3{font-size:1.3rem;line-height:1.25}
+.body p{color:var(--mu);font-size:.93rem;flex:1}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{font-size:.72rem;padding:4px 10px;border-radius:99px;background:#ffffff0a;border:1px solid var(--line);color:#cfd8c8}
+.go{margin-top:8px;display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--g1)}
+.go::after{content:"→";transition:.3s}
+.card:hover .go::after{transform:translateX(6px)}
+.ctab{background:var(--grad);color:#0b0e0a;border-radius:28px;padding:60px 40px;text-align:center}
+.ctab h2{color:#0b0e0a}
+.ctab p{max-width:560px;margin:0 auto 26px;opacity:.85}
+.ctab a{display:inline-block;background:#0b0e0a;color:var(--g1);padding:14px 32px;border-radius:99px;font-weight:600;transition:.3s}
+.ctab a:hover{transform:scale(1.05)}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--mu);font-size:.85rem;text-align:center}
+@media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}nav svg{height:36px}.hero{padding:50px 0 40px}.ctab{padding:44px 22px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.card{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="glow"></div><div class="glow b"></div>
+<header class="wrap">
+  <nav>
+    <a href="#" aria-label="Ferreiro Corrêa Software"><svg viewBox="0 0 410 170"><use href="#fc-logo"/></svg></a>
+    <a class="cta" href="#contato">Fale conosco</a>
+  </nav>
+  <div class="hero">
+    <svg class="logo" viewBox="0 0 410 170" role="img" aria-label="Ferreiro Corrêa Software">
+      <defs>
+        <linearGradient id="fc-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c6f04a"/><stop offset="1" stop-color="#6fb52c"/></linearGradient>
+        <mask id="fc-m"><rect width="410" height="170" fill="#fff"/><circle cx="96" cy="92" r="58" fill="#000"/></mask>
+        <g id="fc-logo">
+          <circle cx="82" cy="82" r="66" fill="url(#fc-g)" mask="url(#fc-m)"/>
+          <text x="44" y="112" font-family="Ubuntu,sans-serif" font-size="58" font-weight="700" textLength="350" letter-spacing="-1" lengthAdjust="spacingAndGlyphs" fill="#eef3ea">ferreiro<tspan fill="url(#fc-g)">corrêa</tspan></text>
+          <text x="394" y="150" font-family="Ubuntu,sans-serif" font-size="30" letter-spacing="2" text-anchor="end" fill="#eef3ea" opacity=".75">software</text>
+        </g>
+      </defs>
+      <use href="#fc-logo"/>
+    </svg>
+    <span class="pill">+20 anos transformando ideias em software</span>
+    <h1>Sites que <em>ranqueiam</em>, sistemas que <em>resolvem</em>.</h1>
+    <p>Inteligência Artificial, sites e landing pages com SEO de altíssima qualidade e sistemas web, desktop e mobile feitos sob medida para o seu negócio crescer.</p>
+    <div class="stats">
+      <div><b>20+</b><span>anos de experiência</span></div>
+      <div><b id="nproj">13</b><span>projetos no portfólio</span></div>
+      <div><b>100%</b><span>SEO técnico aplicado</span></div>
+      <div><b>IA</b><span>no centro das soluções</span></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="servicos">
+    <h2>O que <em>fazemos</em></h2>
+    <p class="sub">Da estratégia ao código, entregamos tecnologia que gera resultado mensurável.</p>
+    <div class="srv">
+      <div><i>🧠</i><h3>Inteligência Artificial</h3><p>Automação, agentes, chatbots e integração de IA aos processos da sua empresa.</p></div>
+      <div><i>🚀</i><h3>Sites & Landing Pages</h3><p>Rápidos, responsivos e com SEO técnico e local para dominar o Google.</p></div>
+      <div><i>🖥️</i><h3>Sistemas Web & Desktop</h3><p>ERPs, painéis e ferramentas sob medida, robustas e escaláveis.</p></div>
+      <div><i>📱</i><h3>Apps Mobile</h3><p>Aplicativos Android e iOS com experiência fluida e foco no usuário.</p></div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Nosso <em>portfólio</em></h2>
+    <p class="sub">Projetos reais, no ar, gerando clientes. Clique em qualquer card para ver o site.</p>
+    <div class="filters" id="filters"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="contato">
+    <div class="ctab">
+      <h2>Vamos construir o seu próximo projeto?</h2>
+      <p>Conte sua ideia. Nós cuidamos da tecnologia, do design e do SEO para que ela vire resultado.</p>
+      <a href="mailto:carlos@resmarksystems.com">Solicitar orçamento</a>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">© <span id="y"></span> Ferreiro Corrêa Software · IA, Sites e Sistemas</footer>
+
+<script>
+const P=[
+ ["ribeiro","Ribeiro Móveis e Colchões","Varejo","Site multipágina para loja de móveis em São José dos Campos, com páginas por categoria e guias de compra pensados para capturar buscas locais de alta intenção.",["SEO local","Conteúdo/Guias","Multipágina"]],
+ ["lavanderia","Lavanderia Central Barueri","Serviços","Site completo com serviços, preços, sobre e contato. Estrutura de SEO local para Barueri e conversão direta pelo WhatsApp.",["SEO local","Multipágina","WhatsApp"]],
+ ["vertice","Vértice Paisagismo","Paisagismo","Site multipágina com landing pages por cidade (São Paulo e Uberlândia), portfólio de projetos e captação de orçamentos.",["Páginas por cidade","Portfólio","Leads"]],
+ ["bemtevi","Bem-Te-Vi English Academy","Educação","Landing page para curso de inglês integrativo que une idioma, neurociência e autoconhecimento, com foco em matrículas.",["Landing page","Conversão","PWA-ready"]],
+ ["central-villa-branca","Central Villa Branca","Alimentação","Açougue, hortifrúti e mercadinho em Jacareí com montagem de cesta no site e pedido direto pelo WhatsApp.",["Carrinho","WhatsApp","SEO local"]],
+ ["hudson","Hudson Empório de Carnes","Alimentação","Empório em São José dos Campos com kits de carnes, espetinhos e churrasco, delivery diário via WhatsApp.",["Delivery","Catálogo","SEO local"]],
+ ["gml","GML Corretora de Seguros","Serviços","Corretora com seguros auto, vida, residencial, saúde, pet e consórcio. Cotação rápida sem compromisso pelo WhatsApp.",["Leads","Multiproduto","Nacional"]],
+ ["protec","Protec Toldos","Construção","Toldos, coberturas e fachadas de alto padrão. Site premium que comunica engenharia e acabamento no Vale do Paraíba.",["Premium","Galeria","Orçamento"]],
+ ["toldos-milena","Toldos Milena","Construção","Toldos, coberturas e luminosos sob medida em Caçapava/SP, com catálogo de soluções e pedido de orçamento.",["SEO local","Catálogo","Orçamento"]],
+ ["destaque-vidros","Destaque Vidros","Construção","Vidraçaria de precisão: vidros temperados, box, espelhos, fachadas e guarda-corpos com apresentação elegante.",["Landing page","Visual","Leads"]],
+ ["renan-paisagismo","RNN Ambiental","Paisagismo","Manutenção de áreas verdes, poda técnica e grama esmeralda para condomínios, empresas e residências em Caçapava.",["Galeria","SEO local","B2B"]],
+ ["tecnoway","Tecnoway Auto Peças","Varejo","Peças automotivas novas, recondicionadas e remanufaturadas em São José dos Campos, com disk entrega.",["Catálogo","SEO local","Contato"]]
+];
+const g=document.getElementById('grid'),f=document.getElementById('filters');
+document.getElementById('nproj').textContent=P.length;
+document.getElementById('y').textContent=new Date().getFullYear();
+g.innerHTML=P.map(([d,n,c,t,tg])=>`<a class="card" data-c="${c}" href="${d}/index.html" target="_blank" rel="noopener">
+ <div class="shot"><div class="bar"><i></i><i></i><i></i></div><iframe data-src="${d}/index.html" title="Prévia de ${n}" tabindex="-1" loading="lazy"></iframe></div>
+ <div class="body"><span class="cat">${c}</span><h3>${n}</h3><p>${t}</p><div class="tags">${tg.map(x=>`<span>${x}</span>`).join('')}</div><span class="go">Ver site</span></div></a>`).join('');
+const cats=['Todos',...new Set(P.map(p=>p[2]))];
+f.innerHTML=cats.map((c,i)=>`<button class="${i?'':'on'}">${c}</button>`).join('');
+f.onclick=e=>{const b=e.target.closest('button');if(!b)return;f.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));
+ g.querySelectorAll('.card').forEach(k=>k.classList.toggle('hide',b.textContent!=='Todos'&&k.dataset.c!==b.textContent))};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const k=e.target,fr=k.querySelector('iframe');
+ if(!fr.src)fr.src=fr.dataset.src;setTimeout(()=>k.classList.add('in'),(k.dataset.i%3)*90);io.unobserve(k)}),{rootMargin:'100px'});
+g.querySelectorAll('.card').forEach((k,i)=>{k.dataset.i=i;io.observe(k)});
+</script>
+</body>
+</html>
