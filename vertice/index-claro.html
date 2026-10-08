@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ================================================================
+     DOMÍNIO DO SITE
+     Hoje: https://souabia.com/vertice/
+     Para migrar para o domínio próprio, rode na pasta do site:
+         ./trocar-dominio.sh https://verticepaisagismo.com.br/
+     O script atualiza canonical, og:url, twitter, JSON-LD, sitemap.xml
+     e robots.txt de uma vez. Detalhes em SEO.md.
+     ================================================================ -->
+
+<title>Paisagismo e Jardinagem em SP e Uberlândia | Vértice</title>
+<meta name="description" content="Projeto, execução e manutenção de jardins há mais de 10 anos. Paisagismo para residências, condomínios e empresas em São Paulo e Uberlândia. Orçamento grátis.">
+<!-- Variante de tema do index.html. Mesmo conteúdo, então fica fora do
+     índice: duas URLs com o mesmo texto competiriam entre si e
+     dividiriam a força de ranqueamento da página principal. -->
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#5C7A45">
+<meta name="author" content="Vértice Jardinagem &amp; Paisagismo">
+<!-- geo.* é metatag de valor único: a home atende duas regiões, então
+     ela não declara nenhuma. O sinal geográfico fica nas páginas
+     /paisagismo-em-sao-paulo/ e /paisagismo-em-uberlandia/ (um par
+     correto em cada) e no areaServed do JSON-LD. -->
+
+<link rel="canonical" href="https://souabia.com/vertice/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Vértice Jardinagem &amp; Paisagismo">
+<meta property="og:url" content="https://souabia.com/vertice/">
+<meta property="og:title" content="Paisagismo e Jardinagem em SP e Uberlândia | Vértice">
+<meta property="og:description" content="Projeto exclusivo, execução com equipe própria e manutenção contínua. Mais de 10 anos criando jardins em São Paulo e Uberlândia.">
+<meta property="og:image" content="https://souabia.com/vertice/img/og-vertice.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Jardim residencial executado pela Vértice Jardinagem &amp; Paisagismo">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Paisagismo e Jardinagem em SP e Uberlândia | Vértice">
+<meta name="twitter:description" content="Projeto exclusivo, execução com equipe própria e manutenção contínua. Mais de 10 anos criando jardins em São Paulo e Uberlândia.">
+<meta name="twitter:image" content="https://souabia.com/vertice/img/og-vertice.jpg">
+<meta name="twitter:image:alt" content="Jardim residencial executado pela Vértice Jardinagem &amp; Paisagismo">
+
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="img/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Fontes self-hosted: elimina 2 conexões externas e o CSS bloqueante do
+     Google Fonts. Só o subset latin (pt-BR não precisa de latin-ext). -->
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/plus-jakarta-sans-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/fraunces-latin.woff2" crossorigin>
+
+<link rel="preload" as="image" href="img/projeto-01-1280.webp"
+      imagesrcset="img/projeto-01-640.webp 640w, img/projeto-01-960.webp 960w, img/projeto-01-1280.webp 1280w, img/projeto-01-1600.webp 1600w"
+      imagesizes="100vw" fetchpriority="high">
+
+<link rel="stylesheet" href="assets/css/estilo.css">
+<link rel="stylesheet" href="assets/css/tema-claro.css">
+<noscript><style>.rev{ opacity:1 !important; transform:none !important; }</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="index.html" aria-label="Vértice Jardinagem e Paisagismo — início">
+      <img class="brand-mark" src="img/marca-144.webp" srcset="img/marca-144.webp 144w, img/marca-288.webp 288w" sizes="56px" alt="" width="288" height="288" decoding="async" fetchpriority="high">
+      <span class="brand-txt">
+        <span class="brand-name">Vértice</span>
+        <span class="brand-sub">Jardinagem &amp; Paisagismo</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="servicos/">Serviços</a>
+      <a href="projetos/">Projetos</a>
+      <a href="sobre/">Sobre</a>
+      <a href="index.html#faq">Dúvidas</a>
+      <a href="contato/">Contato</a>
+    </nav>
+    <a class="btn btn-primary hdr-cta" href="contato/" data-cta="header">Pedir orçamento</a>
+
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+  </div>
+</header>
+
+<div class="mnav" id="mnav">
+  <a href="servicos/">Serviços</a>
+  <a href="projetos/">Projetos</a>
+  <a href="sobre/">Sobre</a>
+  <a href="index.html#faq">Dúvidas</a>
+  <a href="contato/">Contato</a>
+  <a class="btn btn-primary btn-block" href="contato/" data-cta="menu">Pedir orçamento grátis</a>
+</div>
+
+<main id="conteudo">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="topo">
+  <div class="hero-bg">
+    <img src="img/projeto-01-1280.webp"
+         srcset="img/projeto-01-640.webp 640w, img/projeto-01-960.webp 960w, img/projeto-01-1280.webp 1280w, img/projeto-01-1600.webp 1600w"
+         sizes="100vw"
+         alt="Jardim residencial com forração, palmeiras e piso de seixos executado pela Vértice Paisagismo"
+         fetchpriority="high" decoding="async" width="1600" height="1100">
+  </div>
+  <div class="wrap hero-in">
+    <p class="eyebrow rev">São Paulo e região · Uberlândia e região</p>
+    <h1 class="rev rev-1">O jardim que você imagina, <em>executado por quem faz paisagismo há mais de 10 anos.</em></h1>
+    <p class="hero-lede rev rev-2">
+      Projeto exclusivo, execução com equipe própria e manutenção contínua. A Vértice cuida do
+      seu espaço do primeiro croqui à última poda — para você só aproveitar.
+    </p>
+    <div class="hero-ctas rev rev-3">
+      <a class="btn btn-primary btn-lg" href="#orcamento" data-cta="hero-primary">
+        <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 1 1-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Quero meu orçamento grátis
+      </a>
+      <a class="btn btn-on-photo btn-lg" href="#projetos">Ver projetos realizados</a>
+    </div>
+
+    <div class="hero-trust rev rev-4">
+      <div><b>+10</b><span>anos criando jardins</span></div>
+      <div><b>2</b><span>regiões atendidas</span></div>
+      <div><b>100%</b><span>projeto exclusivo</span></div>
+      <div><b>Equipe</b><span>própria, do plantio à poda</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CREDIBILIDADE ============ -->
+<div class="credit">
+  <div class="wrap credit-in">
+    <span class="credit-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Residências e alto padrão</span>
+    <span class="credit-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Condomínios</span>
+    <span class="credit-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Empresas e indústrias</span>
+    <span class="credit-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Chácaras e sítios</span>
+    <span class="credit-item"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Varandas e apartamentos</span>
+  </div>
+</div>
+
+<!-- ============ DORES ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Por que a Vértice</p>
+      <h2>Jardim bonito não é sorte. <em>É projeto.</em></h2>
+      <p class="lede">A maior parte dos jardins fracassa por três motivos: espécie errada, solo mal preparado e ausência de manutenção. Nós resolvemos os três — na mesma contratação.</p>
+    </div>
+
+    <div class="pains">
+      <div class="pain rev"><q>Plantei e morreu tudo em dois meses.</q><i class="arrow"></i>
+        <p>Selecionamos espécies pela <strong>insolação, clima e solo reais do seu terreno</strong>, com preparo e correção antes do primeiro plantio.</p></div>
+      <div class="pain rev rev-1"><q>Contratei e sumiram no meio da obra.</q><i class="arrow"></i>
+        <p><strong>Equipe própria e cronograma definido.</strong> Você acompanha cada etapa e sabe exatamente quando termina.</p></div>
+      <div class="pain rev rev-2"><q>Ficou lindo e virou mato em 3 meses.</q><i class="arrow"></i>
+        <p>Planos de <strong>manutenção programada</strong> com poda, adubação e limpeza — o jardim continua igual ao dia da entrega.</p></div>
+      <div class="pain rev rev-3"><q>Meu espaço é pequeno demais.</q><i class="arrow"></i>
+        <p><strong>Jardins verticais, árvores em vaso, kokedamas e terrários.</strong> Verde de verdade em varanda, hall ou corredor.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="sec sec-alt" id="servicos">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Serviços</p>
+      <h2>Do projeto no papel <em>ao jardim mantido.</em></h2>
+      <p class="lede">Você pode contratar uma etapa ou o pacote completo. A maioria dos clientes começa pelo projeto e permanece na manutenção.</p>
+      <p style="margin-top:22px"><a class="btn btn-ghost" href="servicos/">Ver todos os serviços em detalhe</a></p>
+    </div>
+
+    <div class="svcs">
+      <article class="svc rev">
+        <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3><a href="servicos/projeto-de-paisagismo/" style="text-decoration:none">Projeto de Paisagismo</a></h3>
+        <p>Projeto exclusivo para o seu espaço: conceito, distribuição de canteiros, lista de espécies, iluminação e acabamentos.</p>
+        <ul><li>Levantamento</li><li>Lista de espécies</li><li>Orçamento fechado</li></ul>
+      </article>
+
+      <article class="svc rev rev-1">
+        <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V9"/><path d="M12 9c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 13c0-3.3-2.7-6-6-6 0 3.3 2.7 6 6 6z"/></svg></div>
+        <h3><a href="servicos/execucao-e-plantio/" style="text-decoration:none">Execução &amp; Plantio</a></h3>
+        <p>Preparo e correção de solo, drenagem, irrigação, plantio e acabamento. Executamos o que projetamos — sem terceirizar a mão de obra.</p>
+        <ul><li>Preparo de solo</li><li>Irrigação</li><li>Acabamento</li></ul>
+      </article>
+
+      <article class="svc rev rev-2">
+        <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5l6 6"/><path d="M20.5 3.5l-15 15"/><circle cx="5" cy="19" r="2"/><path d="M3.5 3.5l6 6"/><circle cx="19" cy="19" r="2"/></svg></div>
+        <h3><a href="servicos/manutencao-de-jardins/" style="text-decoration:none">Manutenção de Jardins</a></h3>
+        <p>Visitas programadas com poda técnica, adubação, controle fitossanitário, replantio pontual e limpeza. Contrato mensal ou avulso.</p>
+        <ul><li>Poda técnica</li><li>Adubação</li><li>Visitas programadas</li></ul>
+      </article>
+
+      <article class="svc rev">
+        <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div>
+        <h3><a href="servicos/jardins-verticais/" style="text-decoration:none">Jardins Verticais</a></h3>
+        <p>Verde onde não existe chão. Painéis naturais ou preservados para fachadas, muros, halls e ambientes internos.</p>
+        <ul><li>Natural ou preservado</li><li>Interno e externo</li><li>Irrigação embutida</li></ul>
+      </article>
+
+      <article class="svc rev rev-1">
+        <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 17c3-4 6-4 10-4s7 0 10 4"/><path d="M2 21h20"/><path d="M7 13V9M12 13V7M17 13v-3"/></svg></div>
+        <h3><a href="servicos/grama-e-gramados/" style="text-decoration:none">Grama &amp; Gramados</a></h3>
+        <p>Formação, troca e recuperação de gramado com nivelamento e preparo de base — para o tapete ficar uniforme e durar.</p>
+        <ul><li>Nivelamento</li><li>Troca de grama</li><li>Recuperação</li></ul>
+      </article>
+
+      <article class="svc rev rev-2">
+        <div class="svc-ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 15v6M9 21h6"/></svg></div>
+        <h3><a href="servicos/vasos-kokedamas-e-terrarios/" style="text-decoration:none">Vasos, Kokedamas &amp; Terrários</a></h3>
+        <p>Árvores adaptadas em vaso — jabuticabeira, oliveira, caliandra, hibisco trançado — além de kokedamas e terrários sob encomenda.</p>
+        <ul><li>Sob encomenda</li><li>Ideal p/ pouco espaço</li><li>Presente corporativo</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANTES & DEPOIS ============ -->
+<section class="sec" id="transformacoes">
+  <div class="wrap">
+    <div class="ba-grid">
+      <div class="rev">
+        <p class="eyebrow">Antes &amp; depois</p>
+        <h2 style="margin-top:18px">A mesma metragem. <em>Outro imóvel.</em></h2>
+        <p class="lede" style="margin-top:20px">
+          Paisagismo é o investimento que mais devolve percepção de valor por real aplicado. Arraste
+          para ver uma transformação real executada pela Vértice.
+        </p>
+        <ul class="conv-list" style="margin-top:28px">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Valorização imediata do imóvel na venda e na locação</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Área externa que a família realmente passa a usar</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Sombra, frescor e menos poeira no dia a dia</span></li>
+        </ul>
+        <a class="btn btn-primary" style="margin-top:30px" href="#orcamento" data-cta="antes-depois">Quero a minha transformação</a>
+      </div>
+
+      <div class="ba rev rev-1" id="ba">
+        <img src="img/antes-720.webp"
+             srcset="img/antes-480.webp 480w, img/antes-720.webp 720w, img/antes-1000.webp 1000w"
+             sizes="(max-width:1000px) 92vw, 560px"
+             alt="Canto externo com solo exposto e vegetação rala, antes da intervenção da Vértice Paisagismo"
+             loading="lazy" decoding="async" width="1000" height="1250">
+        <img class="ba-after" id="ba-after" src="img/depois-720.webp"
+             srcset="img/depois-480.webp 480w, img/depois-720.webp 720w, img/depois-1000.webp 1000w"
+             sizes="(max-width:1000px) 92vw, 560px"
+             alt="O mesmo canto depois do paisagismo da Vértice: forração densa, caminho de seixos e iluminação"
+             loading="lazy" decoding="async" width="1000" height="1250">
+        <span class="ba-tag l">Antes</span>
+        <span class="ba-tag r">Depois</span>
+        <div class="ba-handle" id="ba-handle">
+          <div class="ba-knob"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></div>
+        </div>
+        <input class="ba-range" id="ba-range" type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIA ============ -->
+<section class="sec sec-alt" id="projetos">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Projetos realizados</p>
+      <h2>Trabalho entregue, <em>não render.</em></h2>
+      <p class="lede">Uma seleção de jardins, canteiros e áreas externas executados pela nossa equipe. Clique para ampliar.</p>
+      <p style="margin-top:22px"><a class="btn btn-ghost" href="projetos/">Ver todos os projetos</a></p>
+    </div>
+
+    <div class="gal rev" id="gal">
+      <figure class="g-a" tabindex="0" role="button" aria-label="Ampliar: refúgio tropical em área externa" data-full="img/projeto-01-1600.webp">
+        <img src="img/projeto-01-960.webp" srcset="img/projeto-01-640.webp 640w, img/projeto-01-960.webp 960w, img/projeto-01-1280.webp 1280w" sizes="(max-width:1000px) 96vw, (max-width:1268px) 58vw, 690px" alt="Área externa de paisagismo com espreguiçadeira de madeira, floreira de folhagens tropicais e piso de seixos" loading="lazy" decoding="async" width="1600" height="1100"><figcaption>Refúgio tropical em área externa · projeto exclusivo</figcaption></figure>
+
+      <figure class="g-b" tabindex="0" role="button" aria-label="Ampliar: jardim vertical natural em muro externo" data-full="img/projeto-02-1100.webp">
+        <img src="img/projeto-02-720.webp" srcset="img/projeto-02-480.webp 480w, img/projeto-02-720.webp 720w, img/projeto-02-1100.webp 1100w" sizes="(max-width:640px) 48vw, (max-width:1000px) 96vw, (max-width:1268px) 41vw, 480px" alt="Parede externa tomada por jardim vertical natural de samambaias" loading="lazy" decoding="async" width="1100" height="1100"><figcaption>Jardim vertical natural em muro externo</figcaption></figure>
+
+      <figure class="g-c" tabindex="0" role="button" aria-label="Ampliar: jardim interno com iluminação embutida" data-full="img/projeto-03-900.webp">
+        <img src="img/projeto-03-480.webp" srcset="img/projeto-03-480.webp 480w, img/projeto-03-720.webp 720w, img/projeto-03-900.webp 900w" sizes="(max-width:640px) 48vw, (max-width:1000px) 32vw, (max-width:1268px) 33vw, 380px" alt="Jardim interno com árvore central, forração e caminho de seixos iluminado" loading="lazy" decoding="async" width="900" height="1200"><figcaption>Jardim interno com iluminação embutida</figcaption></figure>
+
+      <figure class="g-d" tabindex="0" role="button" aria-label="Ampliar: kokedamas e terrários sob encomenda" data-full="img/projeto-04-900.webp">
+        <img src="img/projeto-04-480.webp" srcset="img/projeto-04-480.webp 480w, img/projeto-04-720.webp 720w, img/projeto-04-900.webp 900w" sizes="(max-width:640px) 48vw, (max-width:1000px) 32vw, (max-width:1268px) 33vw, 380px" alt="Kokedamas e terrários de vidro produzidos sob encomenda pela Vértice" loading="lazy" decoding="async" width="900" height="1200"><figcaption>Kokedamas e terrários sob encomenda</figcaption></figure>
+
+      <figure class="g-e" tabindex="0" role="button" aria-label="Ampliar: transplante de espécies em obra" data-full="img/projeto-05-900.webp">
+        <img src="img/projeto-05-480.webp" srcset="img/projeto-05-480.webp 480w, img/projeto-05-720.webp 720w, img/projeto-05-900.webp 900w" sizes="(max-width:640px) 48vw, (max-width:1000px) 32vw, (max-width:1268px) 33vw, 380px" alt="Transplante de árvore em vaso durante a execução de um projeto de paisagismo" loading="lazy" decoding="async" width="900" height="1200"><figcaption>Transplante de espécies em obra</figcaption></figure>
+
+      <figure class="g-f" tabindex="0" role="button" aria-label="Ampliar: repaginação de jardim residencial" data-full="img/projeto-06-1400.webp">
+        <img src="img/projeto-06-1100.webp" srcset="img/projeto-06-480.webp 480w, img/projeto-06-720.webp 720w, img/projeto-06-1100.webp 1100w, img/projeto-06-1400.webp 1400w" sizes="(max-width:640px) 48vw, (max-width:1268px) 96vw, 1172px" alt="Jardim residencial repaginado com palmeiras e canteiros de forração" loading="lazy" decoding="async" width="1400" height="1050"><figcaption>Repaginação de jardim residencial</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROVA / FAIXA ESCURA ============ -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Quem está por trás</p>
+      <h2>Uma década de mão na terra — <em>e reconhecimento no setor.</em></h2>
+      <p class="lede">A Vértice não é um catálogo de fotos bonitas. É uma operação de campo com equipe própria, presença no setor e projetos entregues em duas regiões.</p>
+    </div>
+
+    <figure class="band-photo rev">
+      <img src="img/equipe-720.webp"
+           srcset="img/equipe-480.webp 480w, img/equipe-720.webp 720w, img/equipe-1000.webp 1000w"
+           sizes="(max-width:760px) 92vw, (max-width:1268px) 52vw, 620px"
+           alt="Equipe da Vértice Paisagismo em visita técnica a fornecedor de grama em Holambra, São Paulo"
+           loading="lazy" decoding="async" width="1000" height="750">
+      <figcaption>Visita técnica em Holambra/SP: escolhemos pessoalmente os fornecedores de grama e insumos que entram nos projetos.</figcaption>
+    </figure>
+
+    <div class="proofs">
+      <div class="proof rev">
+        <div class="proof-k">+10</div>
+        <h3>Anos de estrada</h3>
+        <p>Mais de uma década criando, executando e mantendo jardins residenciais, condominiais e corporativos.</p>
+      </div>
+      <div class="proof rev rev-1">
+        <div class="proof-k">SP<span style="font-size:.5em"> + </span>MG</div>
+        <h3>Duas regiões</h3>
+        <p>Atendimento em São Paulo e região e em Uberlândia e região, com equipe deslocada para a obra.</p>
+      </div>
+      <div class="proof rev rev-2">
+        <div class="proof-k">Expo</div>
+        <h3>1ª ExpoGarden</h3>
+        <p>Presença confirmada na 1ª ExpoGarden — Congresso Paisagismo Para Todos, em Holambra/SP, 17 a 19 de outubro.</p>
+      </div>
+      <div class="proof rev rev-3">
+        <div class="proof-k">OAB</div>
+        <h3>Missão Plantio</h3>
+        <p>Empresa executora do plantio da Missão “De Olho nas Árvores” com a Comissão de Meio Ambiente da OAB-SJC e escolas estaduais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESSO ============ -->
+<section class="sec" id="processo">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Como funciona</p>
+      <h2>Quatro passos <em>até o seu jardim pronto.</em></h2>
+      <p class="lede">Sem burocracia e sem surpresa no valor. O orçamento sai com escopo, prazo e lista de espécies — por escrito.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step rev"><span class="step-n">PASSO 01</span><h3>Conversa no WhatsApp</h3><p>Você conta o que precisa e manda uma foto do espaço. Em minutos entendemos o porte do trabalho e a faixa de investimento.</p></div>
+      <div class="step rev rev-1"><span class="step-n">PASSO 02</span><h3>Visita técnica</h3><p>Vamos ao local medir, avaliar insolação, solo e drenagem, e entender como a família ou a empresa usa o espaço.</p></div>
+      <div class="step rev rev-2"><span class="step-n">PASSO 03</span><h3>Projeto e proposta</h3><p>Você recebe o conceito, a lista de espécies, o prazo e o valor fechado. Ajustamos até fazer sentido para você.</p></div>
+      <div class="step rev rev-3"><span class="step-n">PASSO 04</span><h3>Execução e manutenção</h3><p>Equipe própria executa dentro do cronograma. Na entrega, você escolhe o plano de manutenção que mantém tudo assim.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEGMENTOS ============ -->
+<section class="sec tight sec-alt">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Para quem trabalhamos</p>
+      <h2>Cada espaço pede <em>uma resposta diferente.</em></h2>
+    </div>
+    <div class="segs">
+      <article class="seg rev"><img src="img/segmento-residencial-480.webp" srcset="img/segmento-residencial-320.webp 320w, img/segmento-residencial-480.webp 480w, img/segmento-residencial-760.webp 760w" sizes="(max-width:520px) 92vw, (max-width:1268px) 24vw, 287px" alt="Paisagismo residencial: jardim com árvore central, forração e caminho de seixos iluminado" loading="lazy" decoding="async" width="760" height="1010">
+        <div class="seg-in"><h3>Residências</h3><p>Jardins de entrada, área de piscina, quintal e varanda — com manutenção que cabe na rotina.</p></div></article>
+      <article class="seg rev rev-1"><img src="img/segmento-condominio-480.webp" srcset="img/segmento-condominio-320.webp 320w, img/segmento-condominio-480.webp 480w, img/segmento-condominio-760.webp 760w" sizes="(max-width:520px) 92vw, (max-width:1268px) 24vw, 287px" alt="Paisagismo para condomínios: jardim externo com gramado formado e palmeiras" loading="lazy" decoding="async" width="760" height="1010">
+        <div class="seg-in"><h3>Condomínios</h3><p>Áreas comuns, portaria e praças. Contrato mensal, relatório de visita e previsibilidade de custo.</p></div></article>
+      <article class="seg rev rev-2"><img src="img/segmento-empresa-480.webp" srcset="img/segmento-empresa-320.webp 320w, img/segmento-empresa-480.webp 480w, img/segmento-empresa-760.webp 760w" sizes="(max-width:520px) 92vw, (max-width:1268px) 24vw, 287px" alt="Paisagismo corporativo: jardim vertical natural de samambaias em parede externa" loading="lazy" decoding="async" width="760" height="1010">
+        <div class="seg-in"><h3>Empresas</h3><p>Fachada, recepção e áreas de convivência. O verde que comunica cuidado antes de qualquer discurso.</p></div></article>
+      <article class="seg rev rev-3"><img src="img/segmento-chacara-480.webp" srcset="img/segmento-chacara-320.webp 320w, img/segmento-chacara-480.webp 480w, img/segmento-chacara-760.webp 760w" sizes="(max-width:520px) 92vw, (max-width:1268px) 24vw, 287px" alt="Paisagismo em chácaras e sítios: vegetação tropical densa, floreiras e área de estar" loading="lazy" decoding="async" width="760" height="1010">
+        <div class="seg-in"><h3>Chácaras e sítios</h3><p>Grandes áreas, arborização, pomar ornamental e recuperação de gramado.</p></div></article>
+    </div>
+
+    <!-- ==========================================================
+         ATENÇÃO — CONFIRA ESTA LISTA DE CIDADES ANTES DE PUBLICAR.
+         Ela foi montada a partir das regiões já citadas no site e é
+         o que faz o Google associar a Vértice a buscas do tipo
+         "paisagismo em <cidade>". Tire as cidades que vocês NÃO
+         atendem e acrescente as que faltam — e repita exatamente a
+         mesma lista no bloco areaServed do JSON-LD, no fim do arquivo.
+         ========================================================== -->
+    <div class="areas rev" id="areas">
+      <div class="area-col">
+        <h3><a href="paisagismo-em-sao-paulo/" style="text-decoration:none">São Paulo e região</a></h3>
+        <p>Projeto, execução e manutenção com equipe deslocada para a obra.</p>
+        <ul>
+          <li>São Paulo</li><li>São José dos Campos</li><li>Jacareí</li>
+          <li>Caçapava</li><li>Taubaté</li><li>Guarulhos</li>
+          <li>Santana de Parnaíba</li><li>Barueri</li><li>Osasco</li>
+        </ul>
+      </div>
+      <div class="area-col">
+        <h3><a href="paisagismo-em-uberlandia/" style="text-decoration:none">Uberlândia e região</a></h3>
+        <p>Mesma equipe, mesmo padrão de projeto e de acabamento.</p>
+        <ul>
+          <li>Uberlândia</li><li>Uberaba</li><li>Araguari</li>
+          <li>Araxá</li><li>Patos de Minas</li><li>Monte Alegre de Minas</li>
+          <li>Tupaciguara</li><li>Indianópolis</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2>O que perguntam <em>antes de fechar.</em></h2>
+    </div>
+
+    <div class="faq rev">
+      <details open>
+        <summary>Vocês atendem a minha região?</summary>
+        <div class="ans">Atendemos <strong>São Paulo e região</strong> e <strong>Uberlândia e região</strong>. Para obras maiores avaliamos deslocamento para cidades vizinhas — mande a localização no WhatsApp que confirmamos na hora.</div>
+      </details>
+      <details>
+        <summary>Quanto custa um projeto de paisagismo?</summary>
+        <div class="ans">Depende da área, do tipo de intervenção e das espécies escolhidas. O que fazemos é o contrário do orçamento vago: após a visita técnica você recebe um <strong>valor fechado</strong>, com escopo, prazo e lista de espécies por escrito. A conversa inicial e o orçamento não têm custo.</div>
+      </details>
+      <details>
+        <summary>Posso contratar só a manutenção?</summary>
+        <div class="ans">Sim. Assumimos jardins já existentes — inclusive projetos feitos por terceiros. Fazemos um diagnóstico, um plano de recuperação se for necessário, e seguimos com visitas programadas.</div>
+      </details>
+      <details>
+        <summary>Quanto tempo demora a execução?</summary>
+        <div class="ans">Jardins residenciais de pequeno e médio porte costumam ser executados em poucos dias. Áreas condominiais e corporativas seguem cronograma por etapas. O prazo vai definido na proposta — e nós cumprimos.</div>
+      </details>
+      <details>
+        <summary>E se alguma planta não pegar?</summary>
+        <div class="ans">Fazemos o acompanhamento pós-plantio, que é justamente o período crítico. Com o plano de manutenção contratado, o replantio pontual de mudas que não se estabeleceram está contemplado nas visitas.</div>
+      </details>
+      <details>
+        <summary>Moro em apartamento. Vale a pena?</summary>
+        <div class="ans">Vale — e é onde o resultado aparece mais rápido. Trabalhamos com <strong>jardins verticais, árvores adaptadas em vaso</strong> (jabuticabeira, oliveira, caliandra, hibisco trançado), kokedamas e terrários sob encomenda para varandas, halls e ambientes internos.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMULÁRIO / CONVERSÃO ============ -->
+<section class="sec conv" id="orcamento">
+  <div class="wrap conv-grid">
+    <div class="conv-copy rev">
+      <p class="eyebrow">Orçamento sem compromisso</p>
+      <h2>Conte o que você tem hoje. <em>Devolvemos o que dá para fazer.</em></h2>
+      <ul class="conv-list">
+        <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Resposta no mesmo dia útil</strong> — você fala direto com quem executa, não com call center.</span></li>
+        <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Visita técnica e orçamento sem custo</strong> nas regiões atendidas.</span></li>
+        <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Proposta com valor fechado</strong>, prazo e lista de espécies. Sem custo surpresa no meio.</span></li>
+        <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><span>Se não for o momento, tudo bem — <strong>não insistimos</strong>.</span></li>
+      </ul>
+      <div class="conv-direct">
+        <span>Prefere falar agora?</span>
+        <a class="tel" href="https://wa.me/5534999927666?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20paisagismo." target="_blank" rel="noopener" data-cta="numero-whatsapp">(34) 9 9992-7666</a>
+      </div>
+    </div>
+
+    <form class="form rev rev-1" id="lead" novalidate>
+      <h3>Peça seu orçamento</h3>
+      <p class="form-sub">Leva menos de um minuto. Ao enviar, abrimos o WhatsApp com sua mensagem já pronta.</p>
+
+      <div class="fields">
+        <div class="hp" aria-hidden="true">
+          <label for="site-url">Não preencha este campo</label>
+          <input id="site-url" name="site-url" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="field" id="f-nome">
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required>
+          <span class="msg">Preencha seu nome.</span>
+        </div>
+
+        <div class="f2">
+          <div class="field" id="f-fone">
+            <label for="fone">WhatsApp</label>
+            <input id="fone" name="fone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(00) 00000-0000" required>
+            <span class="msg">Informe um WhatsApp válido.</span>
+          </div>
+          <div class="field" id="f-cidade">
+            <label for="cidade">Cidade</label>
+            <input id="cidade" name="cidade" type="text" placeholder="Ex.: São Paulo" required>
+            <span class="msg">Informe sua cidade.</span>
+          </div>
+        </div>
+
+        <div class="f2">
+          <div class="field" id="f-tipo">
+            <label for="tipo">Tipo de espaço</label>
+            <select id="tipo" name="tipo" required>
+              <option value="" selected disabled>Selecione…</option>
+              <option>Residência / casa</option>
+              <option>Apartamento / varanda</option>
+              <option>Condomínio</option>
+              <option>Empresa / indústria</option>
+              <option>Chácara / sítio</option>
+            </select>
+            <span class="msg">Escolha uma opção.</span>
+          </div>
+          <div class="field" id="f-svc">
+            <label for="svc">O que você precisa</label>
+            <select id="svc" name="svc" required>
+              <option value="" selected disabled>Selecione…</option>
+              <option>Projeto de paisagismo</option>
+              <option>Execução e plantio</option>
+              <option>Manutenção de jardim</option>
+              <option>Jardim vertical</option>
+              <option>Grama / gramado</option>
+              <option>Vasos, kokedamas e terrários</option>
+              <option>Ainda não sei — quero orientação</option>
+            </select>
+            <span class="msg">Escolha uma opção.</span>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="obs">Conte um pouco (opcional)</label>
+          <textarea id="obs" name="obs" placeholder="Tamanho aproximado da área, o que te incomoda hoje, prazo desejado…"></textarea>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-block btn-lg" type="submit">
+        <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 1 1-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+        Enviar e falar no WhatsApp
+      </button>
+      <p class="form-note">Seus dados são usados apenas para responder este orçamento.</p>
+      <div class="form-ok" id="form-ok" role="status" aria-live="polite"><span class="ok-abriu">Pronto! Abrimos o WhatsApp com sua mensagem. Se não abrir automaticamente, </span><span class="ok-bloqueou">Seu navegador bloqueou a abertura do WhatsApp — <strong>sua mensagem ainda não foi enviada.</strong> Toque no botão abaixo para abrir a conversa já preenchida:</span><a href="https://wa.me/5534999927666" target="_blank" rel="noopener"><strong>Abrir o WhatsApp</strong></a></div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="finale">
+  <div class="finale-bg"><img src="img/projeto-02-1100.webp" srcset="img/projeto-02-720.webp 720w, img/projeto-02-1100.webp 1100w" sizes="100vw" alt="" loading="lazy" decoding="async" aria-hidden="true" width="1100" height="1100"></div>
+  <div class="wrap">
+    <div class="finale-in rev">
+      <p class="eyebrow" style="color:var(--leaf-soft)">Vamos começar</p>
+      <h2 style="margin-top:18px">Seu espaço já tem potencial. <em>Falta o projeto certo.</em></h2>
+      <p>Mande uma foto do seu jardim, quintal, varanda ou área comum. Em poucos minutos te dizemos o que dá para fazer — e quanto custa.</p>
+      <div class="finale-ctas">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/5534999927666?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20paisagismo." target="_blank" rel="noopener" data-cta="finale">
+          <svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 1 1-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-on-photo btn-lg" href="#orcamento">Preencher o formulário</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand-mark" src="img/marca-144.webp" srcset="img/marca-144.webp 144w, img/marca-288.webp 288w" sizes="56px" alt="" width="288" height="288" loading="lazy" decoding="async">
+          <span class="brand-txt">
+            <span class="brand-name">Vértice</span>
+            <span class="brand-sub">Jardinagem &amp; Paisagismo</span>
+          </span>
+        </a>
+        <p class="ft-about">Há mais de uma década criando jardins. Projeto, execução e manutenção para residências, condomínios e empresas em São Paulo e Uberlândia.</p>
+        <div class="ft-social">
+          <a href="https://www.instagram.com/vertice_paisagismo/" target="_blank" rel="noopener" aria-label="Instagram @vertice_paisagismo">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/5534999927666" target="_blank" rel="noopener" aria-label="WhatsApp" data-cta="rodape-icone">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 1 1-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="servicos/projeto-de-paisagismo/">Projeto de paisagismo</a></li>
+          <li><a href="servicos/execucao-e-plantio/">Execução e plantio</a></li>
+          <li><a href="servicos/manutencao-de-jardins/">Manutenção de jardins</a></li>
+          <li><a href="servicos/jardins-verticais/">Jardins verticais</a></li>
+          <li><a href="servicos/grama-e-gramados/">Grama e gramados</a></li>
+          <li><a href="servicos/vasos-kokedamas-e-terrarios/">Kokedamas e terrários</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Onde atendemos</h4>
+        <ul>
+          <li><a href="paisagismo-em-sao-paulo/">Paisagismo em São Paulo</a></li>
+          <li><a href="paisagismo-em-uberlandia/">Paisagismo em Uberlândia</a></li>
+          <li><a href="projetos/">Projetos realizados</a></li>
+          <li><a href="sobre/">Sobre a Vértice</a></li>
+          <li><a href="contato/">Pedir orçamento</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5534999927666" target="_blank" rel="noopener" data-cta="rodape">(34) 9 9992-7666</a></li>
+          <li><a href="https://www.instagram.com/vertice_paisagismo/" target="_blank" rel="noopener">@vertice_paisagismo</a></li>
+          <li><a href="https://www.instagram.com/vertice.jardinagem/" target="_blank" rel="noopener">@vertice.jardinagem</a></li>
+          <li style="color:var(--on-deep-soft);font-size:14.5px">São Paulo e região</li>
+          <li style="color:var(--on-deep-soft);font-size:14.5px">Uberlândia e região</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="ft-btm">
+      <p>© <span id="yr">2026</span> Vértice Jardinagem &amp; Paisagismo. Todos os direitos reservados.</p>
+      <p>Jardinagem · Paisagismo · Manutenção de áreas verdes</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5534999927666?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20paisagismo." target="_blank" rel="noopener" aria-label="Falar no WhatsApp" data-cta="float">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 3.5 17.2L2 22l4.9-1.6A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 1 1-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5 0-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1.1 2.8 1.2 3c.1.2 2.1 3.3 5.1 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<div class="mbar" id="mbar">
+  <a class="btn btn-ghost" href="tel:+5534999927666" data-cta="ligar-mbar">Ligar</a>
+  <a class="btn btn-primary" href="contato/" data-cta="mbar">Orçamento grátis</a>
+</div>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Visualização ampliada">
+  <button class="lb-close" id="lb-close" aria-label="Fechar"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  <button class="lb-prev" id="lb-prev" aria-label="Anterior"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+  <button class="lb-next" id="lb-next" aria-label="Próxima"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+  <img id="lb-img" alt="" decoding="async">
+  <p class="lb-cap" id="lb-cap"></p>
+</div>
+
+<!-- =====================================================================
+     DADOS ESTRUTURADOS (JSON-LD)
+     É o que habilita os resultados enriquecidos do Google: o bloco de
+     perguntas expansível na busca, o painel da empresa e a galeria.
+     Valide em https://search.google.com/test/rich-results depois de
+     qualquer alteração aqui.
+
+     >>> QUANDO TIVEREM O ENDEREÇO FÍSICO <<<
+     Cole o trecho abaixo dentro do objeto "LandscapingBusiness" (logo
+     depois da linha "telephone") e preencha com os dados reais. Endereço
+     + coordenadas é o fator mais forte de SEO local — é o que coloca a
+     Vértice no mapa e no pacote local do Google. Pegue latitude e
+     longitude abrindo o endereço no Google Maps e copiando os números
+     que aparecem na URL.
+
+     "address":{
+       "@type":"PostalAddress",
+       "streetAddress":"Rua Exemplo, 123",
+       "addressLocality":"Uberlândia",
+       "addressRegion":"MG",
+       "postalCode":"38400-000",
+       "addressCountry":"BR"
+     },
+     "geo":{"@type":"GeoCoordinates","latitude":-18.918600,"longitude":-48.277200},
+     "hasMap":"https://www.google.com/maps/search/?api=1&query=-18.918600,-48.277200",
+     "openingHoursSpecification":[
+       {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
+       {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"08:00","closes":"12:00"}
+     ],
+
+     Preencha também as metatags geo.position / ICBM no <head>.
+     ===================================================================== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"LandscapingBusiness",
+      "@id":"https://souabia.com/vertice/#empresa",
+      "name":"Vértice Jardinagem & Paisagismo",
+      "alternateName":"Vértice Paisagismo",
+      "url":"https://souabia.com/vertice/",
+      "description":"Projeto, execução e manutenção de jardins para residências, condomínios e empresas. Há mais de uma década criando jardins em São Paulo e Uberlândia.",
+      "telephone":"+5534999927666",
+      "image":"https://souabia.com/vertice/img/og-vertice.jpg",
+      "logo":"https://souabia.com/vertice/img/marca-288.webp",
+      "priceRange":"$$",
+      "currenciesAccepted":"BRL",
+      "paymentAccepted":"Dinheiro, PIX, Cartão de Crédito, Cartão de Débito",
+      "foundingDate":"2014",
+      "knowsLanguage":"pt-BR",
+      "slogan":"Jardim bonito não é sorte. É projeto.",
+      "areaServed":[
+        {"@type":"City","name":"São Paulo","addressRegion":"SP"},
+        {"@type":"City","name":"São José dos Campos","addressRegion":"SP"},
+        {"@type":"City","name":"Jacareí","addressRegion":"SP"},
+        {"@type":"City","name":"Caçapava","addressRegion":"SP"},
+        {"@type":"City","name":"Taubaté","addressRegion":"SP"},
+        {"@type":"City","name":"Guarulhos","addressRegion":"SP"},
+        {"@type":"City","name":"Santana de Parnaíba","addressRegion":"SP"},
+        {"@type":"City","name":"Barueri","addressRegion":"SP"},
+        {"@type":"City","name":"Osasco","addressRegion":"SP"},
+        {"@type":"City","name":"Uberlândia","addressRegion":"MG"},
+        {"@type":"City","name":"Uberaba","addressRegion":"MG"},
+        {"@type":"City","name":"Araguari","addressRegion":"MG"},
+        {"@type":"City","name":"Araxá","addressRegion":"MG"},
+        {"@type":"City","name":"Patos de Minas","addressRegion":"MG"},
+        {"@type":"City","name":"Monte Alegre de Minas","addressRegion":"MG"},
+        {"@type":"City","name":"Tupaciguara","addressRegion":"MG"},
+        {"@type":"City","name":"Indianópolis","addressRegion":"MG"}
+      ],
+      "sameAs":[
+        "https://www.instagram.com/vertice_paisagismo/",
+        "https://www.instagram.com/vertice.jardinagem/"
+      ],
+      "hasOfferCatalog":{
+        "@type":"OfferCatalog",
+        "name":"Serviços de paisagismo e jardinagem",
+        "itemListElement":[
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Projeto de paisagismo","description":"Projeto exclusivo com conceito, distribuição de canteiros, lista de espécies, iluminação e acabamentos.","serviceType":"Projeto de paisagismo","provider":{"@id":"https://souabia.com/vertice/#empresa"}}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Execução e plantio","description":"Preparo e correção de solo, drenagem, irrigação, plantio e acabamento com equipe própria.","serviceType":"Execução de jardim","provider":{"@id":"https://souabia.com/vertice/#empresa"}}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Manutenção de jardins","description":"Visitas programadas com poda técnica, adubação, controle fitossanitário, replantio pontual e limpeza.","serviceType":"Manutenção de jardim","provider":{"@id":"https://souabia.com/vertice/#empresa"}}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Jardins verticais","description":"Painéis naturais ou preservados para fachadas, muros, halls e ambientes internos.","serviceType":"Jardim vertical","provider":{"@id":"https://souabia.com/vertice/#empresa"}}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Grama e gramados","description":"Formação, troca e recuperação de gramado com nivelamento e preparo de base.","serviceType":"Instalação de gramado","provider":{"@id":"https://souabia.com/vertice/#empresa"}}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vasos, kokedamas e terrários","description":"Árvores adaptadas em vaso, kokedamas e terrários sob encomenda.","serviceType":"Jardinagem sob encomenda","provider":{"@id":"https://souabia.com/vertice/#empresa"}}}
+        ]
+      }
+    },
+    {
+      "@type":"WebSite",
+      "@id":"https://souabia.com/vertice/#site",
+      "url":"https://souabia.com/vertice/",
+      "name":"Vértice Jardinagem & Paisagismo",
+      "inLanguage":"pt-BR",
+      "publisher":{"@id":"https://souabia.com/vertice/#empresa"}
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://souabia.com/vertice/#pagina",
+      "url":"https://souabia.com/vertice/",
+      "name":"Paisagismo e Jardinagem em SP e Uberlândia | Vértice",
+      "description":"Projeto, execução e manutenção de jardins há mais de 10 anos. Paisagismo para residências, condomínios e empresas em São Paulo e Uberlândia.",
+      "inLanguage":"pt-BR",
+      "isPartOf":{"@id":"https://souabia.com/vertice/#site"},
+      "about":{"@id":"https://souabia.com/vertice/#empresa"},
+      "primaryImageOfPage":{"@id":"https://souabia.com/vertice/#imagem-principal"}
+    },
+    {
+      "@type":"ImageObject",
+      "@id":"https://souabia.com/vertice/#imagem-principal",
+      "url":"https://souabia.com/vertice/img/projeto-01-1600.webp",
+      "contentUrl":"https://souabia.com/vertice/img/projeto-01-1600.webp",
+      "width":1600,
+      "height":1100,
+      "caption":"Jardim residencial executado pela Vértice Jardinagem & Paisagismo"
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"https://souabia.com/vertice/#faq",
+      "isPartOf":{"@id":"https://souabia.com/vertice/#pagina"},
+      "mainEntity":[
+        {"@type":"Question","name":"Vocês atendem a minha região?","acceptedAnswer":{"@type":"Answer","text":"Atendemos São Paulo e região e Uberlândia e região. Para obras maiores avaliamos deslocamento para cidades vizinhas — mande a localização no WhatsApp que confirmamos na hora."}},
+        {"@type":"Question","name":"Quanto custa um projeto de paisagismo?","acceptedAnswer":{"@type":"Answer","text":"Depende da área, do tipo de intervenção e das espécies escolhidas. Após a visita técnica você recebe um valor fechado, com escopo, prazo e lista de espécies por escrito. A conversa inicial e o orçamento não têm custo."}},
+        {"@type":"Question","name":"Posso contratar só a manutenção do jardim?","acceptedAnswer":{"@type":"Answer","text":"Sim. Assumimos jardins já existentes, inclusive projetos feitos por terceiros. Fazemos um diagnóstico, um plano de recuperação se for necessário, e seguimos com visitas programadas."}},
+        {"@type":"Question","name":"Quanto tempo demora a execução do jardim?","acceptedAnswer":{"@type":"Answer","text":"Jardins residenciais de pequeno e médio porte costumam ser executados em poucos dias. Áreas condominiais e corporativas seguem cronograma por etapas. O prazo vai definido na proposta."}},
+        {"@type":"Question","name":"E se alguma planta não pegar?","acceptedAnswer":{"@type":"Answer","text":"Fazemos o acompanhamento pós-plantio, que é o período crítico. Com o plano de manutenção contratado, o replantio pontual de mudas que não se estabeleceram está contemplado nas visitas."}},
+        {"@type":"Question","name":"Moro em apartamento. Vale a pena fazer paisagismo?","acceptedAnswer":{"@type":"Answer","text":"Vale, e é onde o resultado aparece mais rápido. Trabalhamos com jardins verticais, árvores adaptadas em vaso (jabuticabeira, oliveira, caliandra, hibisco trançado), kokedamas e terrários sob encomenda para varandas, halls e ambientes internos."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script src="assets/js/vertice.js" defer></script>
+
+</body>
+</html>

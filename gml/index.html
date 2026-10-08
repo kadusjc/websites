@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GML Corretora de Seguros · Proteção que acelera seus planos</title>
+<meta name="description" content="GML Corretora de Seguros: seguro auto, vida, residencial, plano de saúde, plano pet, consórcio, crédito com garantia e financiamento. Cotação sem compromisso pelo WhatsApp e atendimento em todo o Brasil.">
+<meta name="theme-color" content="#030a1a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="GML Corretora de Seguros · Proteção que acelera seus planos">
+<meta property="og:description" content="Seguro, consórcio e crédito com atendimento de gente. Cotação em 1 minuto pelo WhatsApp.">
+<meta property="og:image" content="img/hero-1920.webp">
+<link rel="icon" href="img/logo.webp" type="image/webp">
+<link rel="preload" as="image" href="img/hero-960.webp" imagesrcset="img/hero-960.webp 960w, img/hero-1920.webp 1920w" imagesizes="100vw" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"InsuranceAgency","name":"GML Corretora de Seguros","logo":"img/logo.webp","image":"img/hero-1920.webp","telephone":"+55-11-99556-3037","areaServed":{"@type":"Country","name":"Brasil"},"sameAs":["https://www.instagram.com/gmlcorretora/"],
+"contactPoint":[{"@type":"ContactPoint","telephone":"+55-11-99556-3037","contactType":"sales","name":"Cristiane","availableLanguage":"pt-BR"},{"@type":"ContactPoint","telephone":"+55-11-98814-1836","contactType":"sales","name":"Marcio","availableLanguage":"pt-BR"}]}
+</script>
+<style>
+:root{
+  --bg:#030a1a;--bg-2:#061634;--card:#0a1b3d;--line:rgba(160,185,255,.12);--line-2:rgba(160,185,255,.22);
+  --white:#f3f6fc;--text:#b4c0d8;--mute:#9aa9c8;
+  --blue:#0b5fc4;--royal:#00519c;--steel:#3c78a8;--cyan:#5aa9ff;--mint:#f5b82e;--gold:#f5b82e;--silver:#b4c0d8;--wa:#13803f;
+  --r:24px;--wrap:1240px;
+  --disp:"Sora",system-ui,sans-serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font:16.5px/1.6 var(--sans);overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:8px}
+::selection{background:var(--blue);color:#fff}
+.wrap{width:min(var(--wrap),100% - 32px);margin-inline:auto}
+.ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ico.f{fill:currentColor;stroke:none}
+h1,h2,h3{font-family:var(--disp);color:var(--white);letter-spacing:-.035em;line-height:1.02;font-weight:800}
+.grad{background:linear-gradient(95deg,#e6eefc 0%,#9ccbff 45%,#5aa9ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan)}
+.eyebrow::after{content:"★★★★★";font-size:.6rem;letter-spacing:2px;color:var(--gold)}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.lead{font-size:clamp(1.02rem,1.35vw,1.18rem);max-width:56ch}
+
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:600;font-size:.98rem;color:#fff;white-space:nowrap;isolation:isolate;overflow:hidden;
+  background:linear-gradient(95deg,var(--royal),var(--blue) 50%,#3d8ef0);background-size:200% 100%;box-shadow:0 12px 40px -12px rgba(11,95,196,.9),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .25s, box-shadow .25s, background-position .5s}
+.btn:hover{transform:translateY(-2px);background-position:100% 0;box-shadow:0 18px 50px -12px rgba(90,169,255,.8),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn .ico{width:19px;height:19px;transition:transform .25s}
+.btn:hover .ico{transform:translateX(3px)}
+.btn--glass{background:rgba(255,255,255,.06);border:1px solid var(--line-2);box-shadow:none;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn--glass:hover{background:rgba(255,255,255,.12);box-shadow:none}
+.btn--wa{background:var(--wa);box-shadow:0 12px 36px -12px rgba(19,128,63,.9)}
+.btn--wa:hover{box-shadow:0 18px 44px -12px rgba(19,128,63,1)}
+
+/* progress */
+.progress{position:fixed;top:0;left:0;height:3px;width:100%;z-index:70;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--blue),var(--cyan),var(--mint))}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto;z-index:60;transition:background .35s, border-color .35s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(3,10,26,.75);backdrop-filter:blur(16px) saturate(150%);-webkit-backdrop-filter:blur(16px) saturate(150%);border-color:var(--line)}
+.nav__in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--disp);font-weight:800;color:var(--white);font-size:1.2rem;letter-spacing:-.02em;line-height:1.1}
+.brand img{width:44px;height:44px;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.15),0 0 24px rgba(11,95,196,.5)}
+.brand small{display:block;font:500 .64rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.nav__links{display:flex;gap:30px;font-size:.92rem;font-weight:500}
+.nav__links a{color:var(--text);transition:color .2s}
+.nav__links a:hover{color:var(--white)}
+.nav .btn{padding:12px 20px;font-size:.88rem}
+.burger{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line-2);place-items:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:18px;height:2px;border-radius:2px;background:var(--white);position:relative;transition:.3s}
+.burger span::before,.burger span::after{content:"";position:absolute}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.nav.open .burger span{background:transparent}
+.nav.open .burger span::before{transform:translateY(6px) rotate(45deg)}
+.nav.open .burger span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden;isolation:isolate}
+.hero__bg{position:absolute;inset:0;z-index:-2}
+.hero__bg img{width:100%;height:100%;object-fit:cover;object-position:65% 60%;transform:scale(1.06);animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{to{transform:scale(1.14) translate(-1.5%,-1%)}}
+.hero__bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(3,10,26,.96) 0%,rgba(3,10,26,.82) 38%,rgba(3,10,26,.25) 70%,rgba(3,10,26,.55) 100%),
+  linear-gradient(0deg,var(--bg) 0%,transparent 35%)}
+.aurora{position:absolute;inset:0;z-index:-1;pointer-events:none;mix-blend-mode:screen;opacity:.75}
+.aurora i{position:absolute;border-radius:50%;filter:blur(70px)}
+.aurora i:nth-child(1){width:46vw;height:46vw;left:-12vw;top:-14vw;background:radial-gradient(closest-side,rgba(11,95,196,.55),transparent);animation:a1 16s ease-in-out infinite alternate}
+.aurora i:nth-child(2){width:34vw;height:34vw;left:22vw;bottom:-16vw;background:radial-gradient(closest-side,rgba(90,169,255,.35),transparent);animation:a2 19s ease-in-out infinite alternate}
+.aurora i:nth-child(3){width:26vw;height:26vw;right:4vw;top:6vw;background:radial-gradient(closest-side,rgba(245,184,46,.22),transparent);animation:a1 23s ease-in-out infinite alternate-reverse}
+@keyframes a1{to{transform:translate(8vw,6vw) scale(1.15)}}
+@keyframes a2{to{transform:translate(-6vw,-5vw) scale(1.2)}}
+.grid-lines{position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(rgba(160,185,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(160,185,255,.06) 1px,transparent 1px);background-size:64px 64px;-webkit-mask-image:radial-gradient(ellipse 60% 70% at 25% 50%,#000,transparent);mask-image:radial-gradient(ellipse 60% 70% at 25% 50%,#000,transparent)}
+.sky{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.sky i{position:absolute;color:var(--gold);font-style:normal;line-height:1;text-shadow:0 0 12px rgba(245,184,46,.8);animation:tw var(--d,4s) ease-in-out infinite;animation-delay:var(--dl,0s);opacity:0}
+@keyframes tw{0%,100%{opacity:0;transform:scale(.5) rotate(0)}50%{opacity:var(--o,.9);transform:scale(1) rotate(30deg)}}
+.hero__in{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.hero__in>*{min-width:0}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:7px 14px 7px 8px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line-2);backdrop-filter:blur(8px);font-size:.84rem;color:var(--white)}
+.pill b{padding:3px 9px;border-radius:999px;background:var(--mint);color:#2a1c00;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.7rem,7vw,6.2rem);margin:26px 0 24px}
+.hero h1 .l{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .l>span{display:inline-block;transform:translateY(110%);transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+.hero.ready h1 .l>span{transform:none}
+.hero h1 .l:nth-child(2)>span{transition-delay:.12s}
+.hero h1 .l:nth-child(3)>span{transition-delay:.24s}
+.hero .lead{color:#c8d2ea;margin-bottom:34px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero__trust{display:flex;flex-wrap:wrap;gap:12px 26px;margin-top:40px;font-size:.88rem;color:var(--white)}
+.hero__trust span{display:flex;align-items:center;gap:8px}
+.hero__trust .ico{width:18px;height:18px;color:var(--mint);stroke-width:2.6}
+
+/* 3D policy card */
+.card3d{perspective:1200px;justify-self:end;width:min(380px,100%)}
+.policy{position:relative;border-radius:28px;padding:26px;transform-style:preserve-3d;transition:transform .2s ease-out;
+  background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.22);
+  backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);
+  box-shadow:0 40px 80px -30px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.25);color:var(--white)}
+.policy::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(400px circle at var(--gx,30%) var(--gy,0%),rgba(255,255,255,.22),transparent 45%)}
+.policy__top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.policy__top img{width:48px;height:48px;border-radius:50%}
+.badge{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;background:rgba(245,184,46,.16);color:var(--mint);font-size:.74rem;font-weight:600;border:1px solid rgba(245,184,46,.35)}
+.badge i{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(245,184,46,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(245,184,46,0)}100%{box-shadow:0 0 0 0 rgba(245,184,46,0)}}
+.policy small{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#9fb0d6}
+.policy .big{font-family:var(--disp);font-weight:700;font-size:1.6rem;letter-spacing:-.02em;margin:4px 0 20px;transform:translateZ(40px)}
+.cov{display:grid;gap:10px;transform:translateZ(25px)}
+.cov div{display:flex;align-items:center;gap:12px;padding:11px 13px;border-radius:14px;background:rgba(3,10,26,.45);border:1px solid rgba(255,255,255,.08);font-size:.9rem}
+.cov .ico{width:18px;height:18px;color:var(--mint);stroke-width:2.4}
+.cov span{flex:1}
+.cov b{font-size:.74rem;color:var(--mint);font-weight:600}
+.policy__foot{display:flex;justify-content:space-between;align-items:flex-end;margin-top:22px;padding-top:18px;border-top:1px dashed rgba(255,255,255,.18)}
+.policy__foot .stars{color:var(--gold);letter-spacing:3px}
+.chipcard{width:42px;height:30px;border-radius:7px;background:linear-gradient(135deg,#ffe08a,#c99a2e);box-shadow:inset 0 0 0 1px rgba(0,0,0,.2)}
+.scroll{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);width:26px;height:42px;border-radius:14px;border:1.5px solid rgba(255,255,255,.35)}
+.scroll::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:#fff;animation:wheel 1.8s infinite}
+@keyframes wheel{to{transform:translateY(14px);opacity:0}}
+
+/* MARQUEE */
+.marq{position:relative;border-block:1px solid var(--line);overflow:hidden;padding:22px 0;background:linear-gradient(90deg,var(--bg),var(--bg-2),var(--bg))}
+.marq__t{display:flex;width:max-content;animation:m 45s linear infinite}
+.marq span{display:flex;align-items:center;gap:22px;padding-right:22px;font-family:var(--disp);font-weight:700;font-size:clamp(1.3rem,2.6vw,2.1rem);letter-spacing:-.02em;color:var(--white);white-space:nowrap}
+.marq span:nth-child(even){color:#8cc2ff}
+.marq span::after{content:"★";font-size:.55em;color:var(--gold)}
+@keyframes m{to{transform:translateX(-50%)}}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-top:-1px}
+.stat{background:var(--bg);padding:30px 26px}
+.stat b{display:block;font-family:var(--disp);font-weight:800;font-size:clamp(2.2rem,4vw,3.2rem);letter-spacing:-.04em;line-height:1;color:var(--white)}
+.stat b em{font-style:normal;color:var(--cyan)}
+.stat>span{font-size:.88rem;color:var(--mute)}
+.stat b span+em{margin-left:.12em}
+
+/* SECTIONS */
+.sec{padding:clamp(80px,11vw,150px) 0;position:relative}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-bottom:clamp(36px,5vw,60px)}
+.head>div{max-width:720px}
+.head h2{font-size:clamp(2.2rem,5vw,4rem);margin-top:16px}
+.head .lead{max-width:42ch}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:150px;gap:16px}
+.tile{position:relative;border-radius:var(--r);overflow:hidden;isolation:isolate;text-align:left;border:1px solid var(--line);background:var(--card);display:flex;flex-direction:column;justify-content:flex-end;padding:26px;min-width:0}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform 1.2s cubic-bezier(.2,.7,.2,1), filter .6s;filter:saturate(1.05) brightness(.9)}
+.tile::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(3,10,26,0) 25%,rgba(3,10,26,.6) 60%,rgba(3,10,26,.96) 100%)}
+.tile::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .35s;background:radial-gradient(500px circle at var(--mx,50%) var(--my,50%),rgba(90,169,255,.18),transparent 45%);box-shadow:inset 0 0 0 1px rgba(90,169,255,.35)}
+.tile:hover img{transform:scale(1.07);filter:saturate(1.15) brightness(1)}
+.tile:hover::after{opacity:1}
+.tile .ic{position:absolute;top:22px;left:22px;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.2);color:#fff}
+.tile .arrow{position:absolute;top:22px;right:22px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--bg);transform:scale(.6) rotate(-45deg);opacity:0;transition:.35s cubic-bezier(.2,1.4,.4,1)}
+.tile:hover .arrow,.tile:focus-visible .arrow{transform:scale(1) rotate(-45deg);opacity:1}
+.tile h3{font-size:clamp(1.3rem,2vw,1.75rem);margin-bottom:6px}
+.tile p{font-size:.93rem;color:#c3cde6;max-width:44ch}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags b{font-weight:500;font-size:.76rem;padding:5px 11px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);color:#e6ecfb}
+.b-auto{grid-column:span 7;grid-row:span 4}
+.b-casa{grid-column:span 5;grid-row:span 2}
+.b-vida{grid-column:span 5;grid-row:span 2}
+.b-saude{grid-column:span 4;grid-row:span 3}
+.b-pet{grid-column:span 4;grid-row:span 3}
+.b-cons{grid-column:span 4;grid-row:span 3}
+.b-cred{grid-column:span 6;grid-row:span 2}
+.b-fin{grid-column:span 6;grid-row:span 2}
+.b-auto h3{font-size:clamp(1.8rem,3.4vw,2.8rem)}
+.b-auto img{object-position:60% 50%}
+.b-saude img{object-position:50% 20%}
+
+/* GAUGE */
+.risk{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center;padding:clamp(28px,5vw,60px);border-radius:36px;background:radial-gradient(80% 100% at 0% 0%,rgba(11,95,196,.22),transparent 60%),radial-gradient(60% 80% at 100% 100%,rgba(245,184,46,.12),transparent 60%),var(--bg-2);border:1px solid var(--line);position:relative;overflow:hidden}
+.risk>*{min-width:0}
+.risk h2{font-size:clamp(2rem,4.2vw,3.4rem);margin:16px 0 16px}
+.gauge{position:relative;width:min(320px,100%);margin:28px 0 8px}
+.gauge svg{width:100%;height:auto;display:block}
+.gauge .val{position:absolute;left:0;right:0;bottom:4px;text-align:center}
+.gauge .val b{display:block;font-family:var(--disp);font-size:2.6rem;font-weight:800;color:var(--white);line-height:1;letter-spacing:-.03em}
+.gauge .val span{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+#arc{transition:stroke-dashoffset .8s cubic-bezier(.2,.8,.2,1)}
+.verdict{color:var(--white);font-size:1.02rem;min-height:3.2em;margin-bottom:6px}
+.items{display:grid;gap:10px}
+.item{position:relative;display:flex;gap:14px;align-items:center;padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid var(--line);cursor:pointer;transition:background .2s, border-color .2s, transform .2s;color:#dfe6f7;font-size:.96rem}
+.item:hover{transform:translateX(4px);border-color:var(--line-2)}
+.item input{position:absolute;opacity:0;pointer-events:none}
+.box{width:26px;height:26px;border-radius:9px;border:1.5px solid rgba(255,255,255,.3);display:grid;place-items:center;flex:none;transition:.2s}
+.box .ico{width:15px;height:15px;stroke-width:3.2;opacity:0;color:#2a1c00;transform:scale(.4);transition:.25s cubic-bezier(.2,1.6,.4,1)}
+.item:has(input:checked){background:rgba(255,93,93,.08);border-color:rgba(255,120,120,.4)}
+.item:has(input:checked) .box{background:linear-gradient(135deg,var(--gold),#ff8a3d);border-color:transparent}
+.item:has(input:checked) .box .ico{opacity:1;transform:none}
+.item:has(input:focus-visible){outline:2px solid var(--cyan);outline-offset:2px}
+
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;position:relative}
+.steps::before{content:"";position:absolute;left:8%;right:8%;top:44px;height:1px;background:linear-gradient(90deg,transparent,var(--cyan),transparent);opacity:.5}
+.st{position:relative;padding:30px 26px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);transition:transform .3s, border-color .3s}
+.st:hover{transform:translateY(-6px);border-color:var(--line-2)}
+.st .n{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;margin-bottom:22px;font-family:var(--disp);font-weight:800;font-size:1.2rem;color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 12px 30px -10px rgba(90,169,255,.7)}
+.st h3{font-size:1.25rem;margin-bottom:8px}
+
+/* TEAM */
+.team{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,70px);align-items:center}
+.team>*{min-width:0}
+.team__img{position:relative;border-radius:32px;overflow:hidden;aspect-ratio:4/3.2;border:1px solid var(--line)}
+.team__img img{width:100%;height:100%;object-fit:cover}
+.team__img::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,10,26,.6),transparent 50%)}
+.team__img .tag{position:absolute;left:20px;bottom:20px;z-index:1}
+.team h2{font-size:clamp(2.1rem,4.4vw,3.5rem);margin:16px 0}
+.people{display:grid;gap:12px;margin-top:28px}
+.person{display:flex;align-items:center;gap:16px;padding:16px 18px;border-radius:20px;background:var(--card);border:1px solid var(--line);transition:border-color .25s, transform .25s, background .25s}
+.person:hover{border-color:rgba(19,128,63,.5);transform:translateY(-2px);background:#0e1c40}
+.av{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-family:var(--disp);font-weight:800;color:#fff;font-size:1.3rem;flex:none;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 0 0 3px var(--bg),0 0 0 4px rgba(90,169,255,.4)}
+.av.m{background:linear-gradient(135deg,var(--steel),var(--royal))}
+.person div{flex:1;min-width:0}
+.person b{display:block;color:var(--white);font-family:var(--disp);font-size:1.1rem}
+.person small{color:var(--mute)}
+.person .wa{width:48px;height:48px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;flex:none;box-shadow:0 10px 24px -8px rgba(19,128,63,.8)}
+
+/* WIZARD */
+.wiz{max-width:900px;margin:0 auto;border-radius:32px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid var(--line-2);box-shadow:0 50px 100px -40px rgba(0,0,0,.9),0 0 0 1px rgba(90,169,255,.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.wiz__top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 30px;font-size:.88rem;color:var(--mute)}
+.wiz__top b{color:var(--white);font-family:var(--disp)}
+.bar{height:3px;background:var(--line)}
+.bar i{display:block;height:100%;width:33.3%;background:linear-gradient(90deg,var(--blue),var(--cyan),var(--mint));transition:width .5s cubic-bezier(.2,.8,.2,1);box-shadow:0 0 16px var(--cyan)}
+.pane{display:none;padding:clamp(22px,4vw,40px)}
+.pane.on{display:block;animation:in .45s ease}
+@keyframes in{from{opacity:0;transform:translateY(12px)}}
+.pane h3{font-size:clamp(1.3rem,2.2vw,1.6rem);margin-bottom:20px}
+.opts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.opt{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:18px;border-radius:18px;border:1px solid var(--line-2);background:rgba(255,255,255,.03);text-align:left;font-weight:600;color:var(--white);font-size:.94rem;transition:border-color .2s, background .2s, transform .2s;min-width:0}
+.opt .ico{color:var(--cyan)}
+.opt:hover{border-color:rgba(90,169,255,.45);transform:translateY(-2px)}
+.opt[aria-pressed="true"]{border-color:var(--cyan);background:rgba(90,169,255,.1);box-shadow:0 0 0 1px var(--cyan) inset}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fields>*{min-width:0}
+.field{display:grid;gap:7px}
+.field.full{grid-column:1/-1}
+.field label{font-size:.8rem;font-weight:600;color:#cfd8ee}
+.field input,.field select{width:100%;padding:14px 16px;border-radius:14px;border:1px solid var(--line-2);background:rgba(3,10,26,.6);font-size:1rem;color:var(--white);transition:border-color .2s, box-shadow .2s;-webkit-appearance:none;appearance:none}
+.field input::placeholder{color:#8393b5}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%237484a8' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:38px}
+.field select option{background:var(--bg-2)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 4px rgba(90,169,255,.14)}
+.field input.err{border-color:#ff6b6b;box-shadow:0 0 0 4px rgba(255,107,107,.14)}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.who .opt{flex-direction:row;align-items:center}
+.who .av{width:44px;height:44px;font-size:1rem;box-shadow:none}
+.wiz__nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:28px}
+.back{font-weight:600;color:var(--mute);padding:10px 4px}
+.back:hover{color:var(--white)}
+.preview{margin-top:18px;padding:16px 18px;border-radius:16px;background:rgba(3,10,26,.6);border:1px dashed var(--line-2);font-size:.88rem;white-space:pre-wrap;color:#c8d2ea;max-height:190px;overflow:auto}
+
+/* FAQ */
+.faq{max-width:860px;margin:0 auto;display:grid;gap:10px}
+.faq details{border-radius:18px;padding:0 24px;background:var(--card);border:1px solid var(--line);transition:border-color .25s, background .25s}
+.faq details[open]{border-color:rgba(90,169,255,.35);background:#0d1a3d}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;font-family:var(--disp);font-weight:700;color:var(--white);font-size:1.04rem;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line-2);font:400 1.3rem/1 var(--sans);color:var(--cyan);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 0 22px;font-size:.97rem}
+
+/* FINAL */
+.final{position:relative;isolation:isolate;overflow:hidden;padding:clamp(120px,16vw,220px) 0;text-align:center}
+.final>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.final::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,rgba(3,10,26,.55) 35%,rgba(3,10,26,.55) 65%,var(--bg) 100%)}
+.final h2{font-size:clamp(2.6rem,7.4vw,6.4rem);max-width:14ch;margin:18px auto 20px}
+.final .eyebrow{flex-wrap:wrap;justify-content:center}
+.final .eyebrow::before{display:none}
+.final p{max-width:48ch;margin:0 auto 34px;color:#d6def2}
+.final .cta{justify-content:center}
+
+footer{border-top:1px solid var(--line);padding:36px 0 110px;font-size:.88rem;color:var(--mute)}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot a:hover{color:var(--white)}
+
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 14px 34px -10px rgba(19,128,63,.9);transition:transform .25s}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:ring 2.4s infinite}
+@keyframes ring{to{transform:scale(1.6);opacity:0}}
+.fab:hover{transform:scale(1.08)}
+.fab .ico{width:30px;height:30px}
+
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+
+@media (max-width:1060px){
+  .nav__links{display:none}
+  .burger{display:grid}
+  .nav.open .nav__links{display:flex;flex-direction:column;gap:0;position:absolute;top:76px;left:0;right:0;background:rgba(3,10,26,.97);border-bottom:1px solid var(--line);padding:6px 16px 16px}
+  .nav.open .nav__links a{padding:15px 0;border-bottom:1px solid var(--line)}
+  .hero__in{grid-template-columns:1fr}
+  .card3d{justify-self:start;width:min(400px,100%)}
+  .bento{grid-template-columns:repeat(6,1fr);grid-auto-rows:140px}
+  .b-auto{grid-column:span 6;grid-row:span 3}
+  .b-casa,.b-vida,.b-cred,.b-fin{grid-column:span 3;grid-row:span 2}
+  .b-saude,.b-pet,.b-cons{grid-column:span 2;grid-row:span 3}
+  .opts{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .risk,.team{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .steps::before{display:none}
+  .b-saude,.b-pet,.b-cons{grid-column:span 3;grid-row:span 2}
+  .b-cons{grid-column:span 6}
+  .hero__bg img{object-position:70% 60%}
+  .hero__bg::after{background:linear-gradient(180deg,rgba(3,10,26,.7) 0%,rgba(3,10,26,.85) 50%,var(--bg) 100%)}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .nav .btn span{display:none}
+  .nav .btn{padding:12px}
+  .brand small{display:none}
+  .hero{padding-top:108px;min-height:auto}
+  .hero h1{font-size:clamp(2.4rem,11.5vw,3.4rem)}
+  .cta .btn{flex:1 1 100%}
+  .scroll{display:none}
+  .bento{display:flex;flex-direction:column;gap:12px}
+  .tile{min-height:260px;padding:22px}
+  .b-auto{min-height:380px}
+  .stat{padding:22px 18px}
+  .fields,.who{grid-template-columns:1fr}
+  .wiz__top{padding:16px 20px}
+  .wiz__nav .btn{flex:1}
+  .opts{gap:8px}
+  .opt{padding:14px;font-size:.88rem}
+  .faq details{padding:0 18px}
+  .policy{padding:22px}
+}
+@media (hover:none){.tile .arrow{opacity:1;transform:scale(.85) rotate(-45deg)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.hero h1 .l>span{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 17h14M3 13l2-6a2 2 0 012-1h10a2 2 0 012 1l2 6v4a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1H7v1a1 1 0 01-1 1H4a1 1 0 01-1-1zM3 13h18M7 15h.01M17 15h.01"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 00-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 000-7.8z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6h-6v6H4a1 1 0 01-1-1z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
+  <symbol id="i-paw" viewBox="0 0 24 24"><path d="M12 13c-3 0-6 3.5-6 6 0 1.5 1.5 2 3 2 1.2 0 2-.5 3-.5s1.8.5 3 .5c1.5 0 3-.5 3-2 0-2.5-3-6-6-6zM5 11a2 2 0 100-4 2 2 0 000 4zM9 7a2 2 0 100-4 2 2 0 000 4zM15 7a2 2 0 100-4 2 2 0 000 4zM19 11a2 2 0 100-4 2 2 0 000 4z"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><path d="M15 7a4 4 0 11-3.9 5H3v3h3v-2h2v2h3.1A4 4 0 0115 7zM15.5 11h.01"/></symbol>
+  <symbol id="i-cash" viewBox="0 0 24 24"><path d="M2 7h20v10H2zM12 15a3 3 0 100-6 3 3 0 000 6zM6 7v10M18 7v10"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 3 3 6-6M15 8h5v5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4M12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8M20.5 3.5C18.2 1.2 15.2 0 12 0 5.4 0 .1 5.3.1 11.9c0 2.1.5 4.2 1.6 6L0 24l6.3-1.6c1.8 1 3.8 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.5"/></symbol>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__in">
+    <a href="#top" class="brand" aria-label="GML Corretora de Seguros - início"><img src="img/logo.webp" alt="" width="44" height="44"><span>GML<small>Corretora de Seguros</small></span></a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#solucoes">Soluções</a><a href="#teste">Teste de risco</a><a href="#equipe">Quem atende</a><a href="#duvidas">Dúvidas</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn" href="#cotacao"><svg class="ico"><use href="#i-shield"/></svg><span>Cotar agora</span></a>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" id="hero">
+  <div class="hero__bg"><img src="img/hero-960.webp" srcset="img/hero-960.webp 960w, img/hero-1920.webp 1920w" sizes="100vw" alt="" fetchpriority="high"></div>
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="grid-lines" aria-hidden="true"></div>
+  <div class="sky" id="sky" aria-hidden="true"></div>
+  <div class="wrap hero__in">
+    <div>
+      <span class="pill rv"><b>Brasil</b>Atendimento on-line em todos os estados</span>
+      <h1><span class="l"><span>Proteção que</span></span><span class="l"><span class="grad">acelera</span></span><span class="l"><span>seus planos.</span></span></h1>
+      <p class="lead rv d2">Seguro auto, de vida e residencial, planos de saúde e pet, consórcio e crédito. A GML compara as melhores opções do mercado, explica cada detalhe com clareza e conduz todo o atendimento com você pelo WhatsApp.</p>
+      <div class="cta rv d3">
+        <a class="btn" href="#cotacao">Fazer minha cotação <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--glass" href="https://wa.me/5511995563037?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GML%20e%20quero%20falar%20com%20um%20consultor." target="_blank" rel="noopener"><svg class="ico f" style="color:var(--wa)"><use href="#i-wa"/></svg>Falar com consultor</a>
+      </div>
+      <div class="hero__trust rv d3">
+        <span><svg class="ico"><use href="#i-check"/></svg>Cotação sem compromisso</span>
+        <span><svg class="ico"><use href="#i-check"/></svg>Seguro novo ou renovação</span>
+        <span><svg class="ico"><use href="#i-check"/></svg>Atendimento humano e personalizado</span>
+      </div>
+    </div>
+    <div class="card3d rv d2">
+      <div class="policy" id="policy">
+        <div class="policy__top"><img src="img/logo.webp" alt="" width="48" height="48"><span class="badge"><i></i>Proteção ativa</span></div>
+        <small>Sua apólice</small>
+        <div class="big">Seguro Auto · Completo</div>
+        <div class="cov">
+          <div><svg class="ico"><use href="#i-check"/></svg><span>Colisão, roubo e furto</span><b>OK</b></div>
+          <div><svg class="ico"><use href="#i-check"/></svg><span>Assistência 24 horas</span><b>OK</b></div>
+          <div><svg class="ico"><use href="#i-check"/></svg><span>Danos a terceiros</span><b>OK</b></div>
+        </div>
+        <div class="policy__foot"><div><small>Corretora</small><b style="font-family:var(--disp)">GML</b> <span class="stars">★★★★★</span></div><span class="chipcard"></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll" aria-hidden="true"></div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="marq__t">
+  <span>Seguro Auto</span><span>Seguro de Vida</span><span>Residencial</span><span>Plano de Saúde</span><span>Plano Pet</span><span>Consórcio</span><span>Crédito com garantia</span><span>Financiamento</span>
+  <span>Seguro Auto</span><span>Seguro de Vida</span><span>Residencial</span><span>Plano de Saúde</span><span>Plano Pet</span><span>Consórcio</span><span>Crédito com garantia</span><span>Financiamento</span>
+</div></div>
+
+<div class="wrap" style="margin-top:clamp(50px,7vw,90px)">
+  <div class="stats rv">
+    <div class="stat"><b data-count="8">8</b><span>soluções em um único lugar</span></div>
+    <div class="stat"><b><span data-count="27">27</span><em>UF</em></b><span>estados atendidos</span></div>
+    <div class="stat"><b><span data-count="1">1</span><em>min</em></b><span>para pedir sua cotação</span></div>
+    <div class="stat"><b><em>R$</em> 0</b><span>de custo na cotação</span></div>
+  </div>
+</div>
+
+<section class="sec" id="solucoes">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow rv">Soluções</span>
+        <h2 class="rv d1">Tudo o que protege o que é seu, <span class="grad">em um único lugar.</span></h2>
+      </div>
+      <p class="lead rv d2">Trabalhamos com produtos de parceiros como Porto, Porto Bank e Petlove. Selecione uma solução para iniciar sua cotação.</p>
+    </div>
+    <div class="bento" id="bento">
+      <button class="tile b-auto rv" data-pick="auto">
+        <img src="img/auto-960.webp" srcset="img/auto-960.webp 960w, img/auto-1400.webp 1400w" sizes="(max-width:1060px) 100vw, 60vw" alt="Carro esportivo em garagem" loading="lazy" decoding="async">
+        <span class="ic"><svg class="ico"><use href="#i-car"/></svg></span><span class="arrow"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <h3>Seguro Auto</h3>
+        <p>Carro, moto ou caminhão, seguro novo ou renovação. Comparamos as opções e apresentamos a melhor proteção pelo melhor custo.</p>
+        <div class="tags"><b>Carro</b><b>Moto</b><b>Caminhão</b><b>Renovação</b></div>
+      </button>
+      <button class="tile b-casa rv d1" data-pick="residencial">
+        <img src="img/casa-640.webp" srcset="img/casa-640.webp 640w, img/casa-1200.webp 1200w" sizes="(max-width:560px) 100vw, 45vw" alt="Casa iluminada ao entardecer" loading="lazy" decoding="async">
+        <span class="ic"><svg class="ico"><use href="#i-home"/></svg></span><span class="arrow"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <h3>Seguro Residencial</h3><p>Casa ou apartamento, próprio ou alugado.</p>
+      </button>
+      <button class="tile b-vida rv d2" data-pick="vida">
+        <img src="img/vida-640.webp" srcset="img/vida-640.webp 640w, img/vida-1200.webp 1200w" sizes="(max-width:560px) 100vw, 45vw" alt="Pai brincando com os filhos" loading="lazy" decoding="async" style="object-position:50% 30%">
+        <span class="ic"><svg class="ico"><use href="#i-heart"/></svg></span><span class="arrow"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <h3>Seguro de Vida</h3><p>Tranquilidade para quem depende de você.</p>
+      </button>
+      <button class="tile b-saude rv" data-pick="saude">
+        <img src="img/saude-640.webp" srcset="img/saude-640.webp 640w, img/saude-1200.webp 1200w" sizes="(max-width:560px) 100vw, 34vw" alt="Médica sorrindo" loading="lazy" decoding="async">
+        <span class="ic"><svg class="ico"><use href="#i-plus"/></svg></span><span class="arrow"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <h3>Plano de Saúde</h3><p>Individual, familiar ou empresarial.</p>
+      </button>
+      <button class="tile b-pet rv d1" data-pick="pet">
+        <img src="img/pet-640.webp" srcset="img/pet-640.webp 640w, img/pet-1200.webp 1200w" sizes="(max-width:560px) 100vw, 34vw" alt="Cachorro feliz" loading="lazy" decoding="async">
+        <span class="ic"><svg class="ico"><use href="#i-paw"/></svg></span><span class="arrow"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <h3>Plano Pet</h3><p>Planos Petlove para cães e gatos.</p>
+      </button>
+      <button class="tile b-cons rv d2" data-pick="consorcio">
+        <img src="img/consorcio-640.webp" srcset="img/consorcio-640.webp 640w, img/consorcio-1200.webp 1200w" sizes="(max-width:560px) 100vw, 34vw" alt="Miniatura de casa com chave" loading="lazy" decoding="async">
+        <span class="ic"><svg class="ico"><use href="#i-key"/></svg></span><span class="arrow"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <h3>Consórcio</h3><p>Carro, moto ou imóvel, sem juros. Com o Consórcio Data Certa, sua conquista tem data definida.</p>
+      </button>
+      <button class="tile b-cred rv" data-pick="credito">
+        <img src="img/credito-640.webp" srcset="img/credito-640.webp 640w, img/credito-1200.webp 1200w" sizes="(max-width:560px) 100vw, 50vw" alt="Carro esportivo de frente" loading="lazy" decoding="async">
+        <span class="ic"><svg class="ico"><use href="#i-cash"/></svg></span><span class="arrow"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <h3>Crédito com garantia</h3><p>Seu veículo continua com você, e seus planos saem do papel.</p>
+      </button>
+      <button class="tile b-fin rv d1" data-pick="financiamento">
+        <img src="img/financiamento-640.webp" srcset="img/financiamento-640.webp 640w, img/financiamento-1200.webp 1200w" sizes="(max-width:560px) 100vw, 50vw" alt="Carro azul novo" loading="lazy" decoding="async">
+        <span class="ic"><svg class="ico"><use href="#i-chart"/></svg></span><span class="arrow"><svg class="ico"><use href="#i-arrow"/></svg></span>
+        <h3>Financiamento</h3><p>Condições diferenciadas para a compra do seu veículo.</p>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="teste" style="padding-top:0">
+  <div class="wrap">
+    <div class="risk rv">
+      <div>
+        <span class="eyebrow">Teste de risco</span>
+        <h2>Quanto custa ficar <span class="grad">sem proteção?</span></h2>
+        <p>Imprevistos não avisam quando vão acontecer. Selecione as afirmações que se aplicam a você e descubra o seu nível de exposição.</p>
+        <div class="gauge" aria-hidden="true">
+          <svg viewBox="0 0 200 110">
+            <defs><linearGradient id="gg" x1="0" x2="1"><stop offset="0" stop-color="#5aa9ff"/><stop offset=".5" stop-color="#f5b82e"/><stop offset="1" stop-color="#ff5d5d"/></linearGradient></defs>
+            <path d="M15 100 A85 85 0 0 1 185 100" fill="none" stroke="rgba(160,185,255,.14)" stroke-width="14" stroke-linecap="round"/>
+            <path id="arc" d="M15 100 A85 85 0 0 1 185 100" fill="none" stroke="url(#gg)" stroke-width="14" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" style="opacity:0"/>
+          </svg>
+          <div class="val"><b id="pct">0%</b><span>exposição</span></div>
+        </div>
+        <p class="verdict" id="verdict" aria-live="polite">Selecione os itens para ver o seu resultado.</p>
+        <a class="btn" href="#cotacao">Quero me proteger <svg class="ico"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="items" id="items">
+        <label class="item"><input type="checkbox"><span class="box"><svg class="ico"><use href="#i-check"/></svg></span>Uso o carro diariamente e ele não tem seguro</label>
+        <label class="item"><input type="checkbox"><span class="box"><svg class="ico"><use href="#i-check"/></svg></span>Meu seguro vence em breve e ainda não comparei preços</label>
+        <label class="item"><input type="checkbox"><span class="box"><svg class="ico"><use href="#i-check"/></svg></span>Minha família depende da minha renda</label>
+        <label class="item"><input type="checkbox"><span class="box"><svg class="ico"><use href="#i-check"/></svg></span>Minha casa não tem nenhum seguro</label>
+        <label class="item"><input type="checkbox"><span class="box"><svg class="ico"><use href="#i-check"/></svg></span>Não tenho plano de saúde ou considero o meu caro demais</label>
+        <label class="item"><input type="checkbox"><span class="box"><svg class="ico"><use href="#i-check"/></svg></span>Uma consulta veterinária já pesou no meu orçamento</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow rv">Como funciona</span>
+        <h2 class="rv d1">Simples, rápido e <span class="grad">sem burocracia.</span></h2>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="st rv"><span class="n">01</span><h3>Conte o que precisa</h3><p>Preencha a cotação no site ou fale conosco pelo WhatsApp. Leva menos de um minuto.</p></div>
+      <div class="st rv d1"><span class="n">02</span><h3>Nós comparamos</h3><p>Pesquisamos as melhores opções e explicamos cada cobertura com clareza.</p></div>
+      <div class="st rv d2"><span class="n">03</span><h3>Você fica protegido</h3><p>Contratação online e acompanhamento próximo, da renovação ao acionamento do seguro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="equipe" style="padding-top:0">
+  <div class="wrap team">
+    <div class="team__img rv">
+      <img src="img/equipe-960.webp" srcset="img/equipe-960.webp 960w, img/equipe-1400.webp 1400w" sizes="(max-width:860px) 100vw, 52vw" alt="Consultores comemorando com cliente" loading="lazy" decoding="async">
+      <span class="badge tag"><i></i>Atendimento humano</span>
+    </div>
+    <div>
+      <span class="eyebrow rv">Quem atende</span>
+      <h2 class="rv d1">Proteja você e <span class="grad">quem você ama.</span></h2>
+      <p class="lead rv d2">Na GML, você fala diretamente com especialistas, sem central de atendimento e sem filas. Escolha com quem prefere conversar:</p>
+      <div class="people">
+        <a class="person rv" href="https://wa.me/5511995563037?text=Ol%C3%A1%2C%20Cristiane!%20Vim%20pelo%20site%20da%20GML." target="_blank" rel="noopener">
+          <span class="av">C</span><div><b>Cristiane</b><small>(11) 99556-3037</small></div><span class="wa" aria-hidden="true"><svg class="ico f"><use href="#i-wa"/></svg></span>
+        </a>
+        <a class="person rv d1" href="https://wa.me/5511988141836?text=Ol%C3%A1%2C%20Marcio!%20Vim%20pelo%20site%20da%20GML." target="_blank" rel="noopener">
+          <span class="av m">M</span><div><b>Marcio</b><small>(11) 98814-1836</small></div><span class="wa" aria-hidden="true"><svg class="ico f"><use href="#i-wa"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="cotacao" style="padding-top:0">
+  <div class="wrap">
+    <div class="head" style="justify-content:center;text-align:center">
+      <div>
+        <span class="eyebrow rv">Cotação online</span>
+        <h2 class="rv d1">Sua cotação em <span class="grad">3 passos.</span></h2>
+        <p class="lead rv d2" style="margin:16px auto 0">Sem cadastro e sem compromisso. Ao final, sua solicitação é enviada completa para o WhatsApp do consultor.</p>
+      </div>
+    </div>
+    <div class="wiz rv" id="wiz">
+      <div class="wiz__top"><span>Passo <b id="stepN">1</b> de 3</span><span id="stepLabel">Escolha a solução</span></div>
+      <div class="bar"><i id="bar"></i></div>
+      <div class="pane on" data-p="1">
+        <h3>O que você quer proteger ou conquistar?</h3>
+        <div class="opts" id="opts"></div>
+        <div class="wiz__nav"><span></span><button class="btn" data-next disabled style="opacity:.45">Continuar <svg class="ico"><use href="#i-arrow"/></svg></button></div>
+      </div>
+      <div class="pane" data-p="2">
+        <h3 id="p2title">Conte um pouco sobre você</h3>
+        <div class="fields">
+          <div class="field"><label for="qName">Seu nome</label><input id="qName" autocomplete="name" placeholder="Nome completo"></div>
+          <div class="field"><label for="qCity">Cidade / UF</label><input id="qCity" autocomplete="address-level2" placeholder="Ex.: São Paulo / SP"></div>
+          <div id="extra" style="display:contents"></div>
+        </div>
+        <div class="wiz__nav"><button class="back" data-prev>← Voltar</button><button class="btn" data-next>Continuar <svg class="ico"><use href="#i-arrow"/></svg></button></div>
+      </div>
+      <div class="pane" data-p="3">
+        <h3>Com quem você quer falar?</h3>
+        <div class="who" id="who">
+          <button class="opt" aria-pressed="true" data-who="5511995563037|Cristiane"><span class="av">C</span>Cristiane</button>
+          <button class="opt" aria-pressed="false" data-who="5511988141836|Marcio"><span class="av m">M</span>Marcio</button>
+          <button class="opt" aria-pressed="false" data-who="5511995563037|"><span class="av" style="background:linear-gradient(135deg,var(--gold),#e08a00)">★</span>Sem preferência</button>
+        </div>
+        <div class="preview" id="preview" aria-label="Prévia da mensagem"></div>
+        <div class="wiz__nav"><button class="back" data-prev>← Voltar</button><a class="btn btn--wa" id="send" href="#" target="_blank" rel="noopener"><svg class="ico f"><use href="#i-wa"/></svg>Enviar no WhatsApp</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="duvidas" style="padding-top:0">
+  <div class="wrap">
+    <div class="head" style="justify-content:center;text-align:center"><div><span class="eyebrow rv">Dúvidas</span><h2 class="rv d1">Perguntas <span class="grad">frequentes</span></h2></div></div>
+    <div class="faq">
+      <details class="rv"><summary>A GML atende em qual região?</summary><p>Atendemos clientes de todo o Brasil. Todo o processo, da cotação à contratação, é feito online e pelo WhatsApp.</p></details>
+      <details class="rv"><summary>A cotação tem algum custo?</summary><p>Não. A cotação é gratuita e sem compromisso: você só contrata se a proposta fizer sentido para você.</p></details>
+      <details class="rv"><summary>Já tenho seguro com outra corretora. Posso renovar com a GML?</summary><p>Sim. Envie os dados da sua apólice atual: comparamos as opções e cuidamos de toda a renovação, seja de carro, moto ou caminhão.</p></details>
+      <details class="rv"><summary>Consórcio tem juros?</summary><p>Não. No consórcio não há juros, apenas taxa de administração. No Consórcio Data Certa você ainda sabe com antecedência quando seu sonho vai acontecer. Consulte as condições.</p></details>
+      <details class="rv"><summary>Como funciona o crédito com garantia de veículo?</summary><p>Você oferece o veículo como garantia e obtém taxas menores que as de um empréstimo convencional. O carro continua com você, em uso normal.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="img/final-960.webp" srcset="img/final-960.webp 960w, img/final-1920.webp 1920w" sizes="100vw" alt="" loading="lazy" decoding="async">
+  <div class="wrap">
+    <span class="eyebrow rv">Seu sonho não pode ficar para depois</span>
+    <h2 class="rv d1">A proteção certa começa com <span class="grad">uma conversa.</span></h2>
+    <p class="rv d2">Fale com a GML pelo WhatsApp e receba sua cotação personalizada ainda hoje.</p>
+    <div class="cta rv d3">
+      <a class="btn" href="#cotacao">Fazer minha cotação <svg class="ico"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn--wa" href="https://wa.me/5511995563037?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GML." target="_blank" rel="noopener"><svg class="ico f"><use href="#i-wa"/></svg>Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a href="#top" class="brand"><img src="img/logo.webp" alt="" width="44" height="44"><span>GML<small>Corretora de Seguros</small></span></a>
+    <a href="https://www.instagram.com/gmlcorretora/" target="_blank" rel="noopener">@gmlcorretora</a>
+    <p>© <span id="yr">2026</span> GML Corretora de Seguros · Atendimento para todo o Brasil</p>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5511995563037?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20GML." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg class="ico f"><use href="#i-wa"/></svg></a>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+  /* estrelas douradas (as 5 estrelas do logo) */
+  if (!reduce) $('sky').innerHTML = Array.from({ length: innerWidth < 700 ? 14 : 28 }, () =>
+    `<i style="left:${Math.random() * 100}%;top:${Math.random() * 85}%;font-size:${6 + Math.random() * 12}px;--d:${3 + Math.random() * 4}s;--dl:${-Math.random() * 6}s;--o:${.4 + Math.random() * .6}">★</i>`).join('');
+
+  /* hero intro */
+  requestAnimationFrame(() => setTimeout(() => $('hero').classList.add('ready'), 80));
+
+  /* 3D policy card */
+  const pol = $('policy');
+  if (fine && !reduce) {
+    const area = $('hero');
+    area.addEventListener('pointermove', e => {
+      const r = pol.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      pol.style.transform = `rotateY(${Math.max(-1, Math.min(1, x)) * 14}deg) rotateX(${Math.max(-1, Math.min(1, -y)) * 12}deg)`;
+      pol.style.setProperty('--gx', ((x + .5) * 100) + '%'); pol.style.setProperty('--gy', ((y + .5) * 100) + '%');
+    });
+    area.addEventListener('pointerleave', () => pol.style.transform = '');
+  }
+
+  /* spotlight nos tiles */
+  $('bento').addEventListener('pointermove', e => {
+    const t = e.target.closest('.tile'); if (!t) return;
+    const r = t.getBoundingClientRect();
+    t.style.setProperty('--mx', (e.clientX - r.left) + 'px'); t.style.setProperty('--my', (e.clientY - r.top) + 'px');
+  });
+
+  /* wizard */
+  const P = {
+    auto:          { t: 'Seguro Auto', i: 'car', f: [['Veículo (modelo e ano)', 'Ex.: Onix 2022'], ['Tipo', ['Carro', 'Moto', 'Caminhão']], ['Situação', ['Seguro novo', 'Renovação']]] },
+    vida:          { t: 'Seguro de Vida', i: 'heart', f: [['Sua idade', 'Ex.: 38', 'numeric'], ['Profissão', 'Ex.: Professor(a)']] },
+    residencial:   { t: 'Seguro Residencial', i: 'home', f: [['Tipo de imóvel', ['Casa', 'Apartamento']], ['O imóvel é', ['Próprio', 'Alugado']]] },
+    saude:         { t: 'Plano de Saúde', i: 'plus', f: [['Para quem', ['Só para mim', 'Família', 'Empresa']], ['Idades das pessoas', 'Ex.: 35, 33, 8']] },
+    pet:           { t: 'Plano Pet', i: 'paw', f: [['Pet', ['Cachorro', 'Gato']], ['Idade do pet', 'Ex.: 3 anos']] },
+    consorcio:     { t: 'Consórcio', i: 'key', f: [['Quero conquistar', ['Carro', 'Moto', 'Imóvel']], ['Valor aproximado', 'Ex.: R$ 80 mil']] },
+    credito:       { t: 'Crédito com garantia', i: 'cash', f: [['Valor desejado', 'Ex.: R$ 20 mil'], ['Veículo em garantia', 'Ex.: HB20 2020']] },
+    financiamento: { t: 'Financiamento', i: 'chart', f: [['Veículo desejado', 'Ex.: Compass 2023'], ['Valor de entrada', 'Ex.: R$ 30 mil']] },
+  };
+  let pick = null, step = 1, who = '5511995563037|Cristiane';
+  const LABELS = ['Escolha a solução', 'Seus dados', 'Envio'];
+  $('opts').innerHTML = Object.entries(P).map(([k, v]) => `<button class="opt" aria-pressed="false" data-k="${k}"><svg class="ico"><use href="#i-${v.i}"/></svg>${v.t}</button>`).join('');
+  const next1 = document.querySelector('[data-p="1"] [data-next]');
+  function choose(k) {
+    pick = k;
+    document.querySelectorAll('#opts .opt').forEach(o => o.setAttribute('aria-pressed', o.dataset.k === k));
+    next1.disabled = false; next1.style.opacity = '';
+    $('p2title').textContent = P[k].t + ': conte um pouco mais';
+    $('extra').innerHTML = P[k].f.map(([label, ph, mode], n) => {
+      const id = 'x' + n;
+      const ctl = Array.isArray(ph)
+        ? `<select id="${id}" data-l="${label}">${ph.map(o => `<option>${o}</option>`).join('')}</select>`
+        : `<input id="${id}" data-l="${label}" placeholder="${ph}"${mode ? ` inputmode="${mode}"` : ''}>`;
+      return `<div class="field${P[k].f.length === 3 && n === 0 ? ' full' : ''}"><label for="${id}">${label}</label>${ctl}</div>`;
+    }).join('');
+  }
+  function go(n) {
+    step = n;
+    document.querySelectorAll('.pane').forEach(p => p.classList.toggle('on', +p.dataset.p === n));
+    $('stepN').textContent = n; $('stepLabel').textContent = LABELS[n - 1];
+    $('bar').style.width = (n / 3 * 100) + '%';
+    if (n === 3) build();
+  }
+  function msg() {
+    const name = $('qName').value.trim(), city = $('qCity').value.trim(), nm = who.split('|')[1];
+    const extra = [...$('extra').querySelectorAll('[data-l]')].filter(e => e.value.trim()).map(e => `• ${e.dataset.l}: ${e.value.trim()}`);
+    return [`Olá${nm ? ', ' + nm : ''}! Vim pelo site da GML e quero uma cotação de *${P[pick].t}*.`, '', `• Nome: ${name}`, city ? `• Cidade: ${city}` : null, ...extra].filter(l => l !== null).join('\n');
+  }
+  function build() { const m = msg(); $('preview').textContent = m; $('send').href = `https://wa.me/${who.split('|')[0]}?text=${encodeURIComponent(m)}`; }
+  $('opts').addEventListener('click', e => { const o = e.target.closest('[data-k]'); if (o) choose(o.dataset.k); });
+  $('wiz').addEventListener('click', e => {
+    if (e.target.closest('[data-prev]')) go(step - 1);
+    if (e.target.closest('[data-next]')) {
+      if (step === 1 && !pick) return;
+      if (step === 2 && !$('qName').value.trim()) { $('qName').classList.add('err'); $('qName').focus(); return; }
+      go(step + 1);
+    }
+  });
+  $('qName').addEventListener('input', () => $('qName').classList.remove('err'));
+  $('who').addEventListener('click', e => {
+    const o = e.target.closest('[data-who]'); if (!o) return;
+    who = o.dataset.who;
+    document.querySelectorAll('#who .opt').forEach(x => x.setAttribute('aria-pressed', x === o));
+    build();
+  });
+  document.querySelectorAll('[data-pick]').forEach(b => b.addEventListener('click', () => {
+    choose(b.dataset.pick); go(2);
+    $('cotacao').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+    setTimeout(() => $('qName').focus({ preventScroll: true }), 700);
+  }));
+
+  /* teste de risco */
+  const boxes = [...document.querySelectorAll('#items input')];
+  const V = ['Selecione os itens para ver o seu resultado.', 'Há um ponto descoberto. Uma cotação rápida pode resolver.', 'Há pontos descobertos. Uma cotação rápida pode resolver.',
+    'Sua exposição é maior do que parece. Recomendamos conversar ainda hoje.', 'Sua exposição é maior do que parece. Recomendamos conversar ainda hoje.', 'Exposição elevada: um imprevisto agora pode custar muito caro.', 'Exposição elevada: um imprevisto agora pode custar muito caro.'];
+  $('items').addEventListener('change', () => {
+    const n = boxes.filter(b => b.checked).length, pct = Math.round(n / boxes.length * 100);
+    $('arc').style.strokeDashoffset = 100 - pct; $('arc').style.opacity = pct ? 1 : 0; $('pct').textContent = pct + '%'; $('verdict').textContent = V[n];
+  });
+
+  /* contadores */
+  document.querySelectorAll('[data-count]').forEach(el => {
+    const end = +el.dataset.count; if (reduce || !end) return;
+    el.textContent = '0';
+    const o = new IntersectionObserver(([e]) => {
+      if (!e.isIntersecting) return; o.disconnect();
+      const t0 = performance.now();
+      const tick = t => { const k = Math.min(1, (t - t0) / 1400); el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(tick); };
+      requestAnimationFrame(tick);
+    });
+    o.observe(el);
+  });
+
+  /* nav + progresso */
+  const nav = $('nav'), bar = $('progress');
+  const onScroll = () => {
+    nav.classList.toggle('scrolled', scrollY > 20);
+    const h = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+  };
+  onScroll(); addEventListener('scroll', onScroll, { passive: true });
+  $('burger').addEventListener('click', () => $('burger').setAttribute('aria-expanded', nav.classList.toggle('open')));
+  nav.querySelectorAll('.nav__links a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  $('yr').textContent = new Date().getFullYear();
+
+  /* reveal */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .1, rootMargin: '0px 0px -30px 0px' });
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+})();
+</script>
+</body>
+</html>

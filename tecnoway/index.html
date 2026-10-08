@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tecnoway Auto Peças | Tecnologia em Peças Automotivas – São José dos Campos</title>
+	<meta name="description" content="Tecnoway – Tecnologia em peças automotivas em São José dos Campos. Peças novas, recondicionadas, recuperadas e remanufaturadas com garantia de qualidade e disk entrega." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700;1,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	<style>
+		:root {
+			--bg:      #0c0c0c;
+			--card:    #141414;
+			--surf:    #1c1c1c;
+			--line:    #242424;
+			--line2:   #303030;
+			--amber:   #d08828;
+			--amber-h: #e09a38;
+			--amber-g: rgba(208,136,40,0.15);
+			--amber-b: rgba(208,136,40,0.28);
+			--silver:  #b4b4b4;
+			--text:    #f2f2f2;
+			--soft:    #888;
+			--muted:   #555;
+			--max:     1160px;
+			--r:       14px;
+		}
+		*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+		html, body { width: 100%; overflow-x: hidden; scroll-behavior: smooth; }
+		body {
+			font-family: "Manrope", sans-serif;
+			background: var(--bg);
+			color: var(--text);
+			line-height: 1.6;
+			min-height: 100vh;
+		}
+
+		/* ── LAYOUT ── */
+		.wrap { width: min(100% - 2.5rem, var(--max)); margin-inline: auto; }
+
+		/* ── HEADER ── */
+		header {
+			position: sticky; top: 0; z-index: 100;
+			background: rgba(12,12,12,0.9);
+			backdrop-filter: blur(14px);
+			-webkit-backdrop-filter: blur(14px);
+			border-bottom: 1px solid var(--line);
+		}
+		.nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.9rem 0; }
+
+		/* ── LOGO ── */
+		.logo { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+		.logo-mark {
+			width: 74px; height: 74px; border-radius: 15px;
+			background: var(--card); border: 1px solid var(--line2);
+			display: grid; place-items: center; flex-shrink: 0;
+			overflow: hidden;
+		}
+		.logo-mark img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+		}
+		.logo-wordmark { line-height: 1; }
+		.logo-name {
+			display: block;
+			font-family: "Barlow Condensed", sans-serif;
+			font-weight: 800; font-style: italic;
+			font-size: 2.85rem; letter-spacing: 0.04em;
+			text-transform: uppercase; line-height: 1;
+		}
+		.logo-tecno { color: var(--silver); }
+		.logo-way   { color: var(--amber); }
+		.logo-sub {
+			display: block; font-size: 0.86rem; font-weight: 700;
+			letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+			margin-top: 0.15rem;
+		}
+
+		/* ── NAV ACTIONS ── */
+		.nav-right { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; justify-content: flex-end; }
+		.socials { display: flex; gap: 0.4rem; }
+		.soc {
+			width: 36px; height: 36px; border-radius: 50%;
+			display: grid; place-items: center;
+			border: 1px solid var(--line); color: var(--soft);
+			text-decoration: none;
+			transition: border-color .18s, color .18s, background .18s;
+		}
+		.soc:hover { border-color: var(--amber); color: var(--amber); background: var(--amber-g); }
+		.soc svg { width: 16px; height: 16px; fill: currentColor; }
+
+		/* ── BUTTONS ── */
+		.btn {
+			display: inline-flex; align-items: center; gap: 0.45rem;
+			padding: 0.6rem 1.15rem; border-radius: 999px;
+			font-family: "Manrope", sans-serif; font-weight: 700; font-size: 0.88rem;
+			text-decoration: none; border: 1px solid transparent;
+			white-space: nowrap; cursor: pointer;
+			transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+		}
+		.btn svg { width: 15px; height: 15px; flex-shrink: 0; }
+		.btn:hover { transform: translateY(-1px); }
+		.btn-amber {
+			background: var(--amber); color: #111;
+			box-shadow: 0 4px 20px rgba(208,136,40,.3);
+		}
+		.btn-amber:hover { background: var(--amber-h); box-shadow: 0 8px 28px rgba(208,136,40,.45); }
+		.btn-ghost { background: transparent; color: var(--text); border-color: var(--line2); }
+		.btn-ghost:hover { border-color: var(--amber-b); background: var(--amber-g); }
+		.btn-dark { background: #111; color: #fff; border-color: var(--line2); }
+		.btn-dark:hover { background: #1a1a1a; }
+		.btn-lg { padding: 0.85rem 1.6rem; font-size: 0.95rem; }
+
+		/* ── HERO ── */
+		.hero {
+			padding: 5.5rem 0 4.5rem;
+			position: relative; overflow: hidden;
+		}
+		/* amber glow top-right */
+		.hero::before {
+			content: ""; position: absolute;
+			width: 700px; height: 700px;
+			top: -280px; right: -280px; border-radius: 999px; pointer-events: none;
+			background: radial-gradient(circle, rgba(208,136,40,.11), transparent 60%);
+		}
+		/* thin amber diagonal accent */
+		.hero::after {
+			content: ""; position: absolute;
+			width: 3px; height: 280px;
+			top: 60px; right: calc(50% - 60px);
+			background: linear-gradient(to bottom, var(--amber), transparent);
+			transform: rotate(18deg); opacity: 0.4;
+			border-radius: 999px; pointer-events: none;
+		}
+		.hero-grid {
+			display: grid;
+			grid-template-columns: 1.2fr 0.8fr;
+			gap: 2.5rem; align-items: start;
+			position: relative; z-index: 1;
+		}
+		.eyebrow {
+			display: inline-flex; align-items: center; gap: 0.45rem;
+			background: var(--amber-g); border: 1px solid var(--amber-b);
+			color: var(--amber); font-size: 0.75rem; font-weight: 800;
+			letter-spacing: 0.12em; text-transform: uppercase;
+			padding: 0.38rem 0.85rem; border-radius: 999px; margin-bottom: 1.35rem;
+		}
+		.eyebrow svg { width: 13px; height: 13px; fill: currentColor; }
+		h1 {
+			font-family: "Barlow Condensed", sans-serif;
+			font-size: clamp(2.6rem, 6.5vw, 4.4rem);
+			font-weight: 800; font-style: italic;
+			text-transform: uppercase; letter-spacing: 0.02em; line-height: 0.93;
+			margin-bottom: 1.35rem;
+		}
+		.acc { color: var(--amber); }
+		.hero-body { color: var(--soft); font-size: 1rem; line-height: 1.75; max-width: 52ch; margin-bottom: 2rem; }
+		.hero-btns { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+		/* ── CONTACT CARD ── */
+		.contact-card {
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: var(--r);
+			overflow: hidden;
+		}
+		.cc-head {
+			padding: 1rem 1.4rem;
+			border-bottom: 1px solid var(--line);
+			display: flex; align-items: center; gap: 0.5rem;
+		}
+		.cc-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); flex-shrink: 0; }
+		.cc-title { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--soft); }
+		.cc-body { padding: 0.5rem 0; }
+		.cc-row {
+			display: flex; align-items: center; gap: 0.85rem;
+			padding: 0.85rem 1.4rem;
+			border-bottom: 1px solid var(--line);
+			text-decoration: none; color: inherit;
+			transition: background .18s;
+		}
+		.cc-row:last-child { border-bottom: none; }
+		.cc-row:hover { background: rgba(255,255,255,.02); }
+		.cc-ico {
+			width: 36px; height: 36px; border-radius: 9px;
+			background: var(--surf); display: grid; place-items: center; flex-shrink: 0;
+		}
+		.cc-ico svg { width: 16px; height: 16px; }
+		.cc-lbl { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+		.cc-val { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-top: 0.1rem; }
+		.cc-row:hover .cc-val { color: var(--amber); }
+
+		/* ── STATS BAND ── */
+		.stats-band {
+			border-top: 1px solid var(--line);
+			border-bottom: 1px solid var(--line);
+		}
+		.stats-inner {
+			display: grid; grid-template-columns: repeat(4, 1fr);
+		}
+		.stat {
+			padding: 2rem 1.25rem; text-align: center;
+			border-right: 1px solid var(--line);
+		}
+		.stat:last-child { border-right: none; }
+		.stat-n {
+			font-family: "Barlow Condensed", sans-serif;
+			font-size: clamp(1.9rem, 3.8vw, 2.8rem); font-weight: 800; font-style: italic;
+			color: var(--amber); line-height: 1; display: block;
+		}
+		.stat-l { font-size: 0.8rem; color: var(--soft); margin-top: 0.3rem; display: block; font-weight: 500; }
+
+		/* ── SECTION ── */
+		.section { padding: 5rem 0; }
+		.section-lbl { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); margin-bottom: 0.6rem; }
+		.section-h {
+			font-family: "Barlow Condensed", sans-serif;
+			font-size: clamp(1.9rem, 4.2vw, 2.8rem);
+			font-weight: 800; font-style: italic;
+			text-transform: uppercase; letter-spacing: 0.03em; line-height: 1; margin-bottom: 0.75rem;
+		}
+		.section-p { color: var(--soft); font-size: 0.95rem; line-height: 1.75; max-width: 60ch; }
+		.section-head { margin-bottom: 2.75rem; }
+
+		/* ── SERVICE CARDS ── */
+		.serv-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+		.serv-card {
+			background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+			padding: 1.75rem;
+			transition: border-color .22s, background .22s, transform .22s;
+		}
+		.serv-card:hover { border-color: var(--amber-b); background: var(--surf); transform: translateY(-2px); }
+		.serv-ico {
+			width: 46px; height: 46px; border-radius: 12px;
+			background: var(--amber-g); border: 1px solid var(--amber-b);
+			display: grid; place-items: center; margin-bottom: 1.1rem;
+		}
+		.serv-ico svg { width: 22px; height: 22px; fill: var(--amber); }
+		.serv-name {
+			font-family: "Barlow Condensed", sans-serif; font-style: italic;
+			font-size: 1.25rem; font-weight: 800; text-transform: uppercase;
+			letter-spacing: 0.04em; margin-bottom: 0.4rem;
+		}
+		.serv-desc { color: var(--soft); font-size: 0.88rem; line-height: 1.65; }
+
+		/* ── WHY SECTION ── */
+		.why-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 3rem; align-items: center; }
+		.why-card {
+			background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+			padding: 2.5rem;
+		}
+		.why-card .section-h { margin-bottom: 0.5rem; }
+		.why-card .section-p { margin-bottom: 1.75rem; }
+		.why-btns { display: flex; flex-direction: column; gap: 0.6rem; }
+
+		.checks { display: grid; gap: 1.1rem; }
+		.check-row { display: flex; align-items: flex-start; gap: 1rem; }
+		.check-bullet {
+			width: 38px; height: 38px; flex-shrink: 0; border-radius: 10px;
+			background: var(--card); border: 1px solid var(--line);
+			display: grid; place-items: center;
+		}
+		.check-bullet svg { width: 17px; height: 17px; fill: var(--amber); }
+		.check-title { font-weight: 700; font-size: 0.94rem; margin-bottom: 0.2rem; }
+		.check-body { color: var(--soft); font-size: 0.87rem; line-height: 1.6; }
+
+		/* ── CTA BAND ── */
+		.cta-band {
+			background: var(--amber);
+			border-radius: var(--r);
+			padding: 2.75rem;
+			display: flex; align-items: center; justify-content: space-between;
+			gap: 2rem; flex-wrap: wrap;
+		}
+		.cta-band-title {
+			font-family: "Barlow Condensed", sans-serif; font-style: italic;
+			font-size: clamp(1.6rem, 3.8vw, 2.2rem); font-weight: 800;
+			text-transform: uppercase; letter-spacing: 0.03em; color: #111; line-height: 1.05;
+			margin-bottom: 0.4rem;
+		}
+		.cta-band-desc { color: rgba(0,0,0,0.65); font-size: 0.9rem; max-width: 55ch; font-weight: 500; }
+		.cta-band-btns { display: flex; gap: 0.65rem; flex-wrap: wrap; flex-shrink: 0; }
+
+		/* ── INSTAGRAM CTA ── */
+		.ig-block {
+			background: var(--card); border: 1px solid var(--line); border-radius: var(--r);
+			padding: 2.5rem; display: flex; align-items: center;
+			justify-content: space-between; gap: 2rem; flex-wrap: wrap;
+		}
+		.ig-left { display: flex; align-items: center; gap: 1.25rem; }
+		.ig-icon {
+			width: 56px; height: 56px; border-radius: 14px; flex-shrink: 0;
+			background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+			display: grid; place-items: center;
+		}
+		.ig-icon svg { width: 28px; height: 28px; fill: #fff; }
+		.ig-title { font-family: "Barlow Condensed", sans-serif; font-style: italic; font-size: 1.4rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.03em; }
+		.ig-handle { color: var(--soft); font-size: 0.88rem; }
+		.ig-handle strong { color: var(--amber); }
+
+		/* ── SHOWCASE IMAGES ── */
+		.showcase-grid {
+			display: grid;
+			grid-template-columns: 1.1fr 0.9fr;
+			gap: 1rem;
+		}
+		.showcase-main {
+			min-height: 380px;
+			border-radius: var(--r);
+			overflow: hidden;
+			border: 1px solid var(--line);
+			position: relative;
+			background:
+				linear-gradient(120deg, rgba(0,0,0,0.7), rgba(0,0,0,0.25)),
+				url('https://ts2.mm.bing.net/th?id=OIP.O2E4EG0Ct_5vJl1gh-5WmAHaHa&pid=15.1') center/cover no-repeat;
+		}
+		.showcase-main::after {
+			content: "";
+			position: absolute;
+			inset: auto 0 0 0;
+			height: 55%;
+			background: linear-gradient(to top, rgba(0,0,0,0.72), transparent);
+		}
+		.showcase-main-copy {
+			position: absolute;
+			left: 1.25rem;
+			bottom: 1.1rem;
+			z-index: 2;
+			max-width: 42ch;
+		}
+		.showcase-main-copy p {
+			font-size: 0.8rem;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: #d6d6d6;
+			font-weight: 700;
+		}
+		.showcase-main-copy h3 {
+			font-family: "Barlow Condensed", sans-serif;
+			font-size: clamp(1.5rem, 3.8vw, 2.2rem);
+			font-style: italic;
+			text-transform: uppercase;
+			line-height: 1;
+			letter-spacing: 0.03em;
+		}
+		.showcase-side {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 1rem;
+		}
+		.shot {
+			border-radius: var(--r);
+			overflow: hidden;
+			border: 1px solid var(--line);
+			background: #101010;
+		}
+		.shot img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			min-height: 182px;
+			object-fit: cover;
+			filter: grayscale(16%);
+			transition: transform .25s ease, filter .25s ease;
+		}
+		.shot:hover img {
+			transform: scale(1.04);
+			filter: grayscale(0%);
+		}
+
+		/* ── MAP SECTION ── */
+		.map-card {
+			background: var(--card);
+			border: 1px solid var(--line);
+			border-radius: var(--r);
+			overflow: hidden;
+		}
+		.map-frame {
+			width: 100%;
+			height: 420px;
+			border: 0;
+			display: block;
+		}
+		.map-meta {
+			padding: 1rem 1.2rem;
+			border-top: 1px solid var(--line);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 0.8rem;
+			flex-wrap: wrap;
+		}
+		.map-meta p {
+			color: var(--soft);
+			font-size: 0.88rem;
+		}
+
+		/* ── SHOPEE SPOTLIGHT ── */
+		.shopee-spotlight {
+			background:
+				radial-gradient(circle at 10% 20%, rgba(238, 120, 24, 0.22), transparent 42%),
+				linear-gradient(120deg, #1a1a1a 0%, #141414 48%, #101010 100%);
+			border: 1px solid #2c2c2c;
+			border-radius: var(--r);
+			padding: 2.6rem;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1.4rem;
+			flex-wrap: wrap;
+		}
+		.shopee-kicker {
+			display: inline-block;
+			padding: 0.35rem 0.8rem;
+			border-radius: 999px;
+			border: 1px solid rgba(238, 120, 24, 0.45);
+			background: rgba(238, 120, 24, 0.12);
+			font-size: 0.74rem;
+			font-weight: 800;
+			letter-spacing: 0.11em;
+			text-transform: uppercase;
+			color: #ff9f4a;
+			margin-bottom: 0.8rem;
+		}
+		.shopee-title {
+			font-family: "Barlow Condensed", sans-serif;
+			font-style: italic;
+			text-transform: uppercase;
+			font-size: clamp(1.9rem, 4.7vw, 3rem);
+			line-height: 0.96;
+			letter-spacing: 0.03em;
+			margin-bottom: 0.5rem;
+		}
+		.shopee-title strong {
+			color: #ff8d32;
+		}
+		.shopee-desc {
+			max-width: 58ch;
+			color: #bdbdbd;
+			font-size: 0.95rem;
+		}
+		.shopee-cta {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.55rem;
+			padding: 0.92rem 1.55rem;
+			border-radius: 999px;
+			background: linear-gradient(145deg, #ff7a1a, #ff9b36);
+			color: #161616;
+			font-weight: 800;
+			font-size: 0.95rem;
+			text-decoration: none;
+			box-shadow: 0 8px 30px rgba(255, 132, 34, 0.35);
+			transition: transform .2s ease, box-shadow .2s ease;
+		}
+		.shopee-cta:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 12px 34px rgba(255, 132, 34, 0.5);
+		}
+		.shopee-cta svg {
+			width: 18px;
+			height: 18px;
+			fill: currentColor;
+		}
+
+		/* ── FLOAT ── */
+		.wpp-float {
+			position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 999;
+			width: 58px; height: 58px; border-radius: 50%;
+			background: #25d366; display: grid; place-items: center;
+			box-shadow: 0 6px 24px rgba(37,211,102,.45);
+			text-decoration: none;
+			transition: transform .2s ease, box-shadow .2s ease;
+		}
+		.wpp-float:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,.6); }
+		.wpp-float svg { width: 30px; height: 30px; fill: #fff; }
+
+		/* ── FOOTER ── */
+		footer {
+			border-top: 1px solid var(--line); padding: 1.5rem 0 2.5rem;
+		}
+		.foot-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+		.foot-logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+		.foot-copy { font-size: 0.8rem; color: var(--muted); }
+		.foot-copy a { color: var(--soft); text-decoration: none; }
+		.foot-copy a:hover { color: var(--amber); }
+
+		/* ── ANIMATIONS ── */
+		@keyframes up { to { opacity:1; transform:translateY(0); } }
+		.fade { opacity:0; transform:translateY(16px); animation: up .6s ease forwards; }
+		.d1 { animation-delay:.06s; } .d2 { animation-delay:.16s; }
+		.d3 { animation-delay:.26s; } .d4 { animation-delay:.36s; }
+
+		/* ── RESPONSIVE ── */
+		@media (max-width:960px) {
+			.hero-grid { grid-template-columns: 1fr; }
+			.contact-card { display: grid; grid-template-columns: 1fr; }
+			.why-grid { grid-template-columns: 1fr; }
+			.showcase-grid { grid-template-columns: 1fr; }
+			.stats-inner { grid-template-columns: repeat(2,1fr); }
+			.stat:nth-child(2) { border-right: none; }
+			.stat:nth-child(1), .stat:nth-child(2) { border-bottom: 1px solid var(--line); }
+		}
+		@media (max-width:680px) {
+			.stat { padding: 1.5rem .6rem; min-width: 0; }
+			.stat-n { font-size: 1.4rem; }
+			.serv-grid { grid-template-columns: 1fr; }
+			.showcase-side { grid-template-columns: 1fr; }
+			.logo-mark { width: 64px; height: 64px; }
+			.logo-name { font-size: 2.25rem; }
+			.logo-sub { font-size: 0.76rem; }
+			.nav { flex-wrap: wrap; gap: .6rem; }
+			.nav-right { width: 100%; justify-content: flex-start; }
+			.hero { padding: 3.5rem 0 3rem; }
+			.hero::after { display: none; }
+			.section { padding: 3.5rem 0; }
+			.cta-band { flex-direction: column; }
+			.ig-block { flex-direction: column; align-items: flex-start; }
+			.shopee-spotlight { padding: 1.7rem; }
+			.map-frame { height: 320px; }
+		}
+	</style>
+</head>
+<body>
+
+<!-- Floating WhatsApp -->
+<a class="wpp-float" href="https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20cota%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+	<svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.29-.14-1.71-.84-1.97-.94-.27-.1-.46-.14-.65.14-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.2-.29.29-.48.1-.2.05-.37-.02-.52-.08-.14-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.49-.17 0-.36-.02-.56-.02-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.43 0 1.43 1.04 2.81 1.19 3 .14.2 2.05 3.13 4.96 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.19-.56-.34zM12.05 21.8h-.02a9.87 9.87 0 0 1-5.02-1.37l-.36-.21-3.73.98 1-3.64-.24-.38a9.86 9.86 0 0 1-1.51-5.27C2.17 6.7 6.64 2.2 12.07 2.2c2.63 0 5.1 1.03 6.96 2.89a9.81 9.81 0 0 1 2.88 6.96c-.01 5.43-4.48 9.75-9.86 9.75zm8.4-18.17A11.82 11.82 0 0 0 12.04.2C5.5.2.17 5.53.17 12.07c0 2.1.55 4.15 1.6 5.95L.1 23.8l5.94-1.56a11.85 11.85 0 0 0 5.99 1.61h.01C18.56 23.85 23.9 18.52 23.9 11.97c0-3.17-1.23-6.15-3.45-8.38z"/></svg>
+</a>
+
+<!-- HEADER -->
+<header>
+	<div class="wrap nav">
+		<a class="logo" href="#">
+			<div class="logo-mark">
+				<img src="assets/robozinho-tecnoway.jpg" alt="Mascote Tecnoway" loading="lazy" />
+			</div>
+			<div class="logo-wordmark">
+				<span class="logo-name"><span class="logo-tecno">TECNO</span><span class="logo-way">WAY</span></span>
+				<span class="logo-sub">Tecnologia em peças automotivas</span>
+			</div>
+		</a>
+
+		<div class="nav-right">
+			<div class="socials">
+				<a class="soc" href="https://www.instagram.com/tecnowaysjc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+					<svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.96 3.96 0 0 0 3.8 7.75v8.5a3.96 3.96 0 0 0 3.95 3.95h8.5a3.96 3.96 0 0 0 3.95-3.95v-8.5a3.96 3.96 0 0 0-3.95-3.95Zm8.95 1.35a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2ZM12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5Zm0 1.8A3.2 3.2 0 1 0 15.2 12 3.2 3.2 0 0 0 12 8.8Z"/></svg>
+				</a>
+				<a class="soc" href="https://www.facebook.com/tecnowaysjc" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+					<svg viewBox="0 0 24 24"><path d="M13.5 21v-7.2h2.4l.36-2.8H13.5V9.2c0-.81.23-1.36 1.39-1.36h1.48V5.33A19.5 19.5 0 0 0 14.2 5c-2.2 0-3.7 1.34-3.7 3.8V11H8v2.8h2.5V21Z"/></svg>
+				</a>
+			</div>
+			<a class="btn btn-ghost" href="tel:12981889399">
+				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.7 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6 6l.82-.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+				Ligar agora
+			</a>
+			<a class="btn btn-amber" href="https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20na%20Tecnoway" target="_blank" rel="noopener noreferrer">
+				<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.29-.14-1.71-.84-1.97-.94-.27-.1-.46-.14-.65.14-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.2-.29.29-.48.1-.2.05-.37-.02-.52-.08-.14-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.49-.17 0-.36-.02-.56-.02-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.43 0 1.43 1.04 2.81 1.19 3 .14.2 2.05 3.13 4.96 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.19-.56-.34zM12.05 21.8h-.02a9.87 9.87 0 0 1-5.02-1.37l-.36-.21-3.73.98 1-3.64-.24-.38a9.86 9.86 0 0 1-1.51-5.27C2.17 6.7 6.64 2.2 12.07 2.2c2.63 0 5.1 1.03 6.96 2.89a9.81 9.81 0 0 1 2.88 6.96c-.01 5.43-4.48 9.75-9.86 9.75zm8.4-18.17A11.82 11.82 0 0 0 12.04.2C5.5.2.17 5.53.17 12.07c0 2.1.55 4.15 1.6 5.95L.1 23.8l5.94-1.56a11.85 11.85 0 0 0 5.99 1.61h.01C18.56 23.85 23.9 18.52 23.9 11.97c0-3.17-1.23-6.15-3.45-8.38z"/></svg>
+				Cotar no WhatsApp
+			</a>
+		</div>
+	</div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+	<div class="wrap hero-grid">
+		<div>
+			<div class="eyebrow fade d1">
+				<svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+				São José dos Campos — SP
+			</div>
+			<h1 class="fade d1">
+				Peças novas<br>e <span class="acc">recondi&shy;cionadas</span><br>com procedência
+			</h1>
+			<p class="hero-body fade d2">
+				Tecnologia em peças automotivas — a Tecnoway oferece peças recondicionadas, recuperadas e remanufaturadas com garantia de qualidade. Economia real sem abrir mão de segurança.
+			</p>
+			<div class="hero-btns fade d3">
+				<a class="btn btn-amber btn-lg" href="https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20na%20Tecnoway" target="_blank" rel="noopener noreferrer">
+					<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.29-.14-1.71-.84-1.97-.94-.27-.1-.46-.14-.65.14-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.08-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.15-.17.2-.29.29-.48.1-.2.05-.37-.02-.52-.08-.14-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.49-.17 0-.36-.02-.56-.02-.2 0-.51.07-.78.37-.27.29-1.02 1-1.02 2.43 0 1.43 1.04 2.81 1.19 3 .14.2 2.05 3.13 4.96 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.19-.56-.34zM12.05 21.8h-.02a9.87 9.87 0 0 1-5.02-1.37l-.36-.21-3.73.98 1-3.64-.24-.38a9.86 9.86 0 0 1-1.51-5.27C2.17 6.7 6.64 2.2 12.07 2.2c2.63 0 5.1 1.03 6.96 2.89a9.81 9.81 0 0 1 2.88 6.96c-.01 5.43-4.48 9.75-9.86 9.75zm8.4-18.17A11.82 11.82 0 0 0 12.04.2C5.5.2.17 5.53.17 12.07c0 2.1.55 4.15 1.6 5.95L.1 23.8l5.94-1.56a11.85 11.85 0 0 0 5.99 1.61h.01C18.56 23.85 23.9 18.52 23.9 11.97c0-3.17-1.23-6.15-3.45-8.38z"/></svg>
+					Fazer cotação
+				</a>
+				<a class="btn btn-ghost btn-lg" href="tel:12981889399">Disk entrega: (12) 9 8188-9399</a>
+			</div>
+		</div>
+
+		<div class="contact-card fade d2">
+			<div class="cc-head">
+				<div class="cc-dot"></div>
+				<span class="cc-title">Informações de contato</span>
+			</div>
+			<div class="cc-body">
+				<a class="cc-row" href="https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos" target="_blank" rel="noopener noreferrer">
+					<div class="cc-ico">
+						<svg viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="none"/></svg>
+					</div>
+					<div>
+						<p class="cc-lbl">Endereço</p>
+						<p class="cc-val">Av. Benedito Bento, 759 – Cidade Morumbi<br>São José dos Campos – SP</p>
+					</div>
+				</a>
+				<a class="cc-row" href="tel:12981889399">
+					<div class="cc-ico">
+						<svg viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.7 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6 6l.82-.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+					</div>
+					<div>
+						<p class="cc-lbl">Telefone / WhatsApp</p>
+						<p class="cc-val">(12) 9 8188-9399</p>
+					</div>
+				</a>
+				<a class="cc-row" href="mailto:tecnowayremanu@gmail.com">
+					<div class="cc-ico">
+						<svg viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+					</div>
+					<div>
+						<p class="cc-lbl">E-mail</p>
+						<p class="cc-val">tecnowayremanu@gmail.com</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+	<div class="wrap">
+		<div class="stats-inner">
+			<div class="stat fade d1">
+				<span class="stat-n">Novas</span>
+				<span class="stat-l">Peças automotivas com procedência</span>
+			</div>
+			<div class="stat fade d2">
+				<span class="stat-n">Recondicionadas</span>
+				<span class="stat-l">Revisadas e testadas com garantia</span>
+			</div>
+			<div class="stat fade d3">
+				<span class="stat-n">Remanufaturas</span>
+				<span class="stat-l">Remanufaturadas com padrão técnico</span>
+			</div>
+			<div class="stat fade d4">
+				<span class="stat-n">Disk</span>
+				<span class="stat-l">Entrega rápida para toda a região</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- SHOPEE CTA -->
+<section class="section" style="padding-top:2rem; padding-bottom:3.5rem;">
+	<div class="wrap">
+		<div class="shopee-spotlight fade d1">
+			<div>
+				<span class="shopee-kicker">Loja online oficial</span>
+				<h2 class="shopee-title">Visitem nossa <strong>loja online</strong></h2>
+				<p class="shopee-desc">Compre com praticidade pela Shopee da Tecnoway. Aproveite ofertas e encontre pecas automotivas direto pelo celular.</p>
+			</div>
+			<a class="shopee-cta" href="https://shopee.com.br/tecnoway" target="_blank" rel="noopener noreferrer" aria-label="Abrir loja da Tecnoway na Shopee">
+				<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 7h-1V6a5 5 0 0 0-10 0v1H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v1H9zm3 9.75a2.75 2.75 0 1 1 2.75-2.75H13a1 1 0 1 0-1 1h1a2 2 0 1 1-2 2z"/></svg>
+				Acessar
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- SERVICES -->
+<section class="section">
+	<div class="wrap">
+		<div class="section-head">
+			<p class="section-lbl">O que oferecemos</p>
+			<h2 class="section-h">Nossas especialidades</h2>
+			<p class="section-p">Trabalhamos com orientação técnica para ajudar você a encontrar exatamente a peça certa, na condição ideal para o seu orçamento.</p>
+		</div>
+
+		<div class="serv-grid">
+			<article class="serv-card fade d1">
+				<div class="serv-ico">
+					<svg viewBox="0 0 24 24"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
+				</div>
+				<h3 class="serv-name">Peças Recondicionadas</h3>
+				<p class="serv-desc">Revisadas e testadas para entregar desempenho confiável com excelente custo-benefício. Ideal para quem busca qualidade pagando muito menos.</p>
+			</article>
+
+			<article class="serv-card fade d2">
+				<div class="serv-ico">
+					<svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+				</div>
+				<h3 class="serv-name">Peças Remanufaturadas</h3>
+				<p class="serv-desc">Processo técnico rigoroso de recuperação com padrão de qualidade próximo ao original — durabilidade e confiabilidade garantidas.</p>
+			</article>
+
+			<article class="serv-card fade d3">
+				<div class="serv-ico">
+					<svg viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></svg>
+				</div>
+				<h3 class="serv-name">Peças Recuperadas</h3>
+				<p class="serv-desc">Alternativa inteligente para reduzir custos sem abrir mão de segurança. Soluções práticas para quem precisa resolver com rapidez e economia.</p>
+			</article>
+
+			<article class="serv-card fade d4">
+				<div class="serv-ico">
+					<svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+				</div>
+				<h3 class="serv-name">Peças Novas</h3>
+				<p class="serv-desc">Peças originais e de linha para reposição direta — procedência de fábrica, segurança máxima e compatibilidade garantida com o seu veículo.</p>
+			</article>
+		</div>
+	</div>
+</section>
+
+<!-- WHY TECNOWAY -->
+<section class="section" style="padding-top:0;">
+	<div class="wrap">
+		<div class="why-grid">
+			<div class="why-card fade d1">
+				<p class="section-lbl">Motivo para escolher</p>
+				<h2 class="section-h">Por que a Tecnoway?</h2>
+				<p class="section-p">Mais de uma opção para cada necessidade. Orientação técnica honesta para você não pagar mais do que precisa.</p>
+				<div class="why-btns">
+					<a class="btn btn-amber btn-lg" href="https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20na%20Tecnoway" target="_blank" rel="noopener noreferrer">
+						Fazer cotação no WhatsApp
+					</a>
+					<a class="btn btn-ghost btn-lg" href="https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos" target="_blank" rel="noopener noreferrer">
+						Ver localização no mapa
+					</a>
+				</div>
+			</div>
+
+			<div class="checks fade d2">
+				<div class="check-row">
+					<div class="check-bullet">
+						<svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+					</div>
+					<div>
+						<p class="check-title">Garantia de qualidade em todas as peças</p>
+						<p class="check-body">Cada item passa por avaliação técnica antes de sair da loja. Você recebe com total procedência e transparência.</p>
+					</div>
+				</div>
+				<div class="check-row">
+					<div class="check-bullet">
+						<svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+					</div>
+					<div>
+						<p class="check-title">Disk entrega em toda a região de SJC</p>
+						<p class="check-body">Ligue, faça sua cotação e receba sua peça sem sair de casa. Atendimento rápido e eficiente.</p>
+					</div>
+				</div>
+				<div class="check-row">
+					<div class="check-bullet">
+						<svg viewBox="0 0 24 24"><path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"/></svg>
+					</div>
+					<div>
+						<p class="check-title">Orientação especializada, sem enrolação</p>
+						<p class="check-body">Não sabe qual peça precisa? Nossa equipe orienta você com clareza para fazer a escolha certa na primeira vez.</p>
+					</div>
+				</div>
+				<div class="check-row">
+					<div class="check-bullet">
+						<svg viewBox="0 0 24 24"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+					</div>
+					<div>
+						<p class="check-title">Economia real com segurança</p>
+						<p class="check-body">Peças recondicionadas e remanufaturadas até 70% mais baratas que o equivalente novo, sem abrir mão de desempenho.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CTA BAND -->
+<section class="section" style="padding-top:0; padding-bottom:3.5rem;">
+	<div class="wrap">
+		<div class="cta-band fade d1">
+			<div>
+				<p class="cta-band-title">Precisa de uma peça agora?</p>
+				<p class="cta-band-desc">Fale com a Tecnoway e receba atendimento rápido — verificamos disponibilidade, preço e entrega na hora. Sem burocracia.</p>
+			</div>
+			<div class="cta-band-btns">
+				<a class="btn btn-dark btn-lg" href="https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20na%20Tecnoway" target="_blank" rel="noopener noreferrer">
+					Chamar no WhatsApp
+				</a>
+				<a class="btn btn-lg" style="background:transparent; border:1px solid rgba(0,0,0,0.3); color:#111;" href="tel:12981889399">
+					Ligar para a loja
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- INSTAGRAM CTA -->
+<section class="section" style="padding-top:0; padding-bottom:5rem;">
+	<div class="wrap">
+		<div class="ig-block fade d1">
+			<div class="ig-left">
+				<div class="ig-icon">
+					<svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.96 3.96 0 0 0 3.8 7.75v8.5a3.96 3.96 0 0 0 3.95 3.95h8.5a3.96 3.96 0 0 0 3.95-3.95v-8.5a3.96 3.96 0 0 0-3.95-3.95Zm8.95 1.35a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2ZM12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5Zm0 1.8A3.2 3.2 0 1 0 15.2 12 3.2 3.2 0 0 0 12 8.8Z"/></svg>
+				</div>
+				<div>
+					<p class="ig-title">Siga a Tecnoway no Instagram</p>
+					<p class="ig-handle">Acompanhe novidades, peças em destaque e promoções <strong>@tecnowaysjc</strong></p>
+				</div>
+			</div>
+			<a class="btn btn-ghost btn-lg" href="https://www.instagram.com/tecnowaysjc/" target="_blank" rel="noopener noreferrer">
+				<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.96 3.96 0 0 0 3.8 7.75v8.5a3.96 3.96 0 0 0 3.95 3.95h8.5a3.96 3.96 0 0 0 3.95-3.95v-8.5a3.96 3.96 0 0 0-3.95-3.95Zm8.95 1.35a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2ZM12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5Zm0 1.8A3.2 3.2 0 1 0 15.2 12 3.2 3.2 0 0 0 12 8.8Z"/></svg>
+				Abrir no Instagram
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- IMAGE SHOWCASE -->
+<section class="section" style="padding-top:0; padding-bottom:3.5rem;">
+	<div class="wrap">
+		<div class="section-head">
+			<p class="section-lbl">Galeria da loja</p>
+			<h2 class="section-h">Visual da Tecnoway</h2>
+			<p class="section-p">Uma prévia visual da Tecnoway Auto Peças para reforçar confiança, estrutura e presença local.</p>
+		</div>
+
+		<div class="showcase-grid">
+			<a class="showcase-main fade d1" href="https://www.instagram.com/tecnowaysjc/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram da Tecnoway">
+				<div class="showcase-main-copy">
+					<p>Destaque</p>
+					<h3>Tecnologia em peças automotivas</h3>
+				</div>
+			</a>
+
+			<div class="showcase-side">
+				<a class="shot fade d2" href="https://www.instagram.com/tecnowaysjc/" target="_blank" rel="noopener noreferrer" aria-label="Imagem da Tecnoway 1">
+					<img src="https://ts2.mm.bing.net/th?id=OIP.LQUSTfEuobQbrE5nmiwADQHaHa&pid=15.1" alt="Imagem da Tecnoway Auto Pecas" loading="lazy" />
+				</a>
+				<a class="shot fade d3" href="https://www.instagram.com/tecnowaysjc/" target="_blank" rel="noopener noreferrer" aria-label="Imagem da Tecnoway 2">
+					<img src="https://ts3.mm.bing.net/th?id=OIP.Mxyb4bdeWVVcIhLBfJYdYAHaHa&pid=15.1" alt="Fachada e atendimento Tecnoway" loading="lazy" />
+				</a>
+				<a class="shot fade d3" href="https://www.instagram.com/tecnowaysjc/" target="_blank" rel="noopener noreferrer" aria-label="Imagem da Tecnoway 3">
+					<img src="https://ts2.mm.bing.net/th?id=OIP.Rpz4-xeAaVypS6_A0sAvagHaHa&pid=15.1" alt="Catalogo e pecas Tecnoway" loading="lazy" />
+				</a>
+				<a class="shot fade d4" href="https://www.instagram.com/tecnowaysjc/" target="_blank" rel="noopener noreferrer" aria-label="Imagem da Tecnoway 4">
+					<img src="https://ts4.mm.bing.net/th?id=OIP.0FRYkfuia2ZooAs0R4731QHaGx&pid=15.1" alt="Equipe Tecnoway" loading="lazy" />
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- MAPA EMBUTIDO -->
+<section class="section" style="padding-top:0; padding-bottom:4rem;">
+	<div class="wrap">
+		<div class="section-head">
+			<p class="section-lbl">Localização</p>
+			<h2 class="section-h">Visite a loja</h2>
+			<p class="section-p">Estamos na Av. Benedito Bento, 759, Cidade Morumbi, São José dos Campos - SP.</p>
+		</div>
+
+		<div class="map-card fade d1">
+			<iframe
+				class="map-frame"
+				title="Mapa da Tecnoway Auto Pecas"
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+				src="https://www.google.com/maps?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos+-+SP&output=embed"
+			></iframe>
+			<div class="map-meta">
+				<p>Av. Benedito Bento, 759 - Cidade Morumbi - São José dos Campos - SP</p>
+				<a class="btn btn-ghost" href="https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<footer>
+	<div class="wrap foot-inner">
+		<a class="foot-logo" href="#">
+			<span style="font-family:'Barlow Condensed',sans-serif; font-weight:800; font-style:italic; font-size:1.3rem; letter-spacing:.04em; text-transform:uppercase;">
+				<span style="color:var(--silver)">TECNO</span><span style="color:var(--amber)">WAY</span>
+			</span>
+		</a>
+		<p class="foot-copy">
+			Av. Benedito Bento, 759 — Cidade Morumbi · <a href="https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos" target="_blank" rel="noopener noreferrer">São José dos Campos – SP</a>
+			· <a href="tel:12981889399">(12) 9 8188-9399</a>
+		</p>
+		<div class="socials">
+			<a class="soc" href="https://www.instagram.com/tecnowaysjc/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+				<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7.75 2h8.5A5.76 5.76 0 0 1 22 7.75v8.5A5.76 5.76 0 0 1 16.25 22h-8.5A5.76 5.76 0 0 1 2 16.25v-8.5A5.76 5.76 0 0 1 7.75 2Zm0 1.8A3.96 3.96 0 0 0 3.8 7.75v8.5a3.96 3.96 0 0 0 3.95 3.95h8.5a3.96 3.96 0 0 0 3.95-3.95v-8.5a3.96 3.96 0 0 0-3.95-3.95Zm8.95 1.35a1.2 1.2 0 1 1-1.2 1.2 1.2 1.2 0 0 1 1.2-1.2ZM12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5Zm0 1.8A3.2 3.2 0 1 0 15.2 12 3.2 3.2 0 0 0 12 8.8Z"/></svg>
+			</a>
+			<a class="soc" href="https://www.facebook.com/tecnowaysjc" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+				<svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.2h2.4l.36-2.8H13.5V9.2c0-.81.23-1.36 1.39-1.36h1.48V5.33A19.5 19.5 0 0 0 14.2 5c-2.2 0-3.7 1.34-3.7 3.8V11H8v2.8h2.5V21Z"/></svg>
+			</a>
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

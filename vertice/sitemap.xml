@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--NOTA-TRANSICAO
+  Sitemap da Vértice.
+
+  Enquanto o site estiver numa subpasta de outro domínio este arquivo
+  NÃO tem efeito: quem vale é o robots.txt da raiz daquele domínio.
+  Ele passa a valer no dia em que o site ganhar domínio próprio — rode
+  ./trocar-dominio.sh e envie a URL no Google Search Console.
+
+  (Este aviso é removido automaticamente pelo trocar-dominio.sh.)
+FIM-NOTA-TRANSICAO-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://souabia.com/vertice/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-01-1600.webp</image:loc>
+      <image:title>Refúgio tropical em área externa</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-02-1100.webp</image:loc>
+      <image:title>Jardim vertical natural em muro externo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-06-1400.webp</image:loc>
+      <image:title>Repaginação de jardim residencial</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/servicos/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/servicos/projeto-de-paisagismo/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-01-1600.webp</image:loc>
+      <image:title>Projeto de paisagismo executado</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/servicos/execucao-e-plantio/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-05-900.webp</image:loc>
+      <image:title>Transplante de espécies em obra</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/servicos/manutencao-de-jardins/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/depois-1000.webp</image:loc>
+      <image:title>Jardim mantido com forração densa e iluminação</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/servicos/jardins-verticais/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-02-1100.webp</image:loc>
+      <image:title>Jardim vertical natural em muro externo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/servicos/grama-e-gramados/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-06-1400.webp</image:loc>
+      <image:title>Gramado formado em jardim residencial</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/servicos/vasos-kokedamas-e-terrarios/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-04-900.webp</image:loc>
+      <image:title>Kokedamas e terrários sob encomenda</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/paisagismo-em-sao-paulo/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/paisagismo-em-uberlandia/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/projetos/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-01-1600.webp</image:loc>
+      <image:title>Refúgio tropical em área externa</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-03-900.webp</image:loc>
+      <image:title>Jardim interno com iluminação embutida</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-04-900.webp</image:loc>
+      <image:title>Kokedamas e terrários sob encomenda</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/projeto-05-900.webp</image:loc>
+      <image:title>Transplante de espécies em obra</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/sobre/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://souabia.com/vertice/img/equipe-1000.webp</image:loc>
+      <image:title>Equipe da Vértice em visita técnica em Holambra</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://souabia.com/vertice/contato/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

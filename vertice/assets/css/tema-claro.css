@@ -1,0 +1,59 @@
+/* ============================================================
+   TEMA CLARO
+   Sobrescreve apenas os tokens de cor do estilo.css. Carregado
+   só pelo index-claro.html, que tem data-theme="light" no <html>
+   — o que já desliga as regras de modo escuro do estilo base.
+   Editou o estilo.css? Este arquivo continua valendo: ele mexe
+   em cor, não em layout.
+   ============================================================ */
+
+:root{ color-scheme:light; }
+
+:root{
+  /* papel / neutros com viés quente */
+  --paper:        #FFFDF8;
+  --paper-2:      #F8F5EC;
+  --paper-3:      #F0EBDD;
+  --card:         #FFFFFF;
+
+  /* marca */
+  --forest:       #456232;
+  --forest-2:     #53713D;
+  --forest-3:     #5C7A45;
+  --leaf:         #8CAC6C;
+  --leaf-soft:    #C6D8AE;
+  --brass:        #C08A2E;
+
+  /* tinta */
+  --ink:          #24301A;
+  --ink-soft:     rgba(36,48,26,0.68);
+  --ink-faint:    rgba(36,48,26,0.46);
+  --rule:         rgba(36,48,26,0.11);
+  --rule-2:       rgba(36,48,26,0.20);
+
+  /* faixa escura — escura nos dois temas, por decisão */
+  --deep:         #3B5329;
+  --deep-2:       #324621;
+  --on-deep:      #F6FAEF;
+  --on-deep-soft: rgba(246,250,239,0.76);
+  --on-deep-faint:rgba(246,250,239,0.52);
+  --rule-deep:    rgba(246,250,239,0.22);
+
+  /* texto sobre fotografia */
+  --on-photo:      #FBFAF6;
+  --on-photo-soft: rgba(251,250,246,0.74);
+
+  --shadow-1: 0 1px 2px rgba(36,48,26,.04), 0 6px 18px rgba(36,48,26,.04);
+  --shadow-2: 0 2px 6px rgba(36,48,26,.05), 0 18px 44px rgba(36,48,26,.08);
+  --shadow-cta: 0 8px 22px rgba(69,98,50,.26);
+
+  --display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --sans:    'Plus Jakarta Sans', -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  --maxw: 1220px;
+  --gut: 24px;
+  --hdr: 88px;
+  --r-s: 12px;
+  --r-m: 18px;
+  --r-l: 28px;
+}

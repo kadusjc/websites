@@ -1,0 +1,5 @@
+/* SITE */
+Loja: Ribeiro Móveis e Colchões — São José dos Campos, SP
+Idioma: pt-BR
+Tecnologia: HTML5, CSS3, JavaScript (sem frameworks), WebP, H.264
+Última atualização: 2026-09-23

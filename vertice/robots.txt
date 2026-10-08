@@ -1,0 +1,24 @@
+# robots.txt da Vértice.
+#NOTA-TRANSICAO
+# Enquanto o site estiver em souabia.com/vertice/, ESTE ARQUIVO É IGNORADO
+# pelos buscadores: robots.txt só vale na raiz do domínio, e quem manda é
+# o /robots.txt do souabia.com — que hoje bloqueia /vertice/ de propósito.
+#
+# Ele existe pronto para o dia da migração para o domínio próprio, quando
+# passa a ser servido na raiz e vira o arquivo válido.
+# (Este aviso é removido automaticamente pelo trocar-dominio.sh.)
+#FIM-NOTA-TRANSICAO
+
+User-agent: *
+Allow: /
+
+# O tema claro e a página de erro estão fora do índice pela metatag
+# "robots: noindex" no HTML delas.
+#
+# NÃO bloqueie essas duas aqui com Disallow. Disallow impede o Google de
+# BAIXAR a página — e sem baixar ele nunca lê o noindex, então a URL pode
+# acabar indexada assim mesmo, sem título nem descrição. Bloquear e pedir
+# noindex ao mesmo tempo é contraditório: só o noindex funciona, e para
+# funcionar a página precisa continuar rastreável.
+
+Sitemap: https://souabia.com/vertice/sitemap.xml

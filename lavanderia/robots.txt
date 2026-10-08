@@ -1,0 +1,6 @@
+# robots.txt — Lavanderia Central Barueri
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://lavanderiacentralbarueri.com.br/sitemap.xml

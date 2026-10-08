@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RNN Ambiental · Paisagismo em Caçapava</title>
+<meta name="description" content="Manutenção de áreas verdes, paisagismo, poda técnica e grama esmeralda para condomínios, empresas, comércios, chácaras e residências em Caçapava e região do Vale do Paraíba.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#231032">
+<meta name="author" content="RNN Ambiental">
+
+<!-- TROQUE o domínio abaixo pelo endereço final antes de publicar -->
+<link rel="canonical" href="https://decamsite.com/rnn-ambiental/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="RNN Ambiental">
+<meta property="og:url" content="https://decamsite.com/rnn-ambiental/">
+<meta property="og:title" content="RNN Ambiental · Paisagismo em Caçapava">
+<meta property="og:description" content="Manutenção de áreas verdes, paisagismo e poda técnica para condomínios, empresas, chácaras e residências. Caçapava – SP e região.">
+<meta property="og:image" content="https://decamsite.com/rnn-ambiental/paisagismo-residencial-3.jpeg">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='64' y2='64'><stop offset='0' stop-color='%23FF8A1F'/><stop offset='1' stop-color='%236B2FA8'/></linearGradient></defs><rect width='64' height='64' rx='14' fill='url(%23g)'/><path d='M19 45c0-14 10-25 26-27 0 17-11 27-26 27z' fill='%23fff'/><path d='M19 45c6-8 13-14 21-18' stroke='%23fff' stroke-width='3' stroke-linecap='round' opacity='.5' fill='none'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="paisagismo-residencial-3.jpeg">
+
+<style>
+/* ============================================================
+   RNN AMBIENTAL — identidade visual
+   Conceito: a interface não tem verde. Todo o verde da página é
+   fotografia real de trabalho executado. A UI fica inteira na
+   paleta da marca (laranja ↔ violeta) sobre um neutro com viés
+   violeta, para que as fotos sejam a única cor "viva" da tela.
+   ============================================================ */
+
+:root{
+  /* neutros — cinzas puxados para o violeta da marca, não cinza morto */
+  --paper:        #F4F1F5;
+  --paper-deep:   #E8E2EB;
+  --paper-lift:   #FBF9FB;
+  --ink:          #231032;
+  --ink-soft:     rgba(35,16,50,0.64);
+  --ink-faint:    rgba(35,16,50,0.38);
+  --rule:         rgba(35,16,50,0.13);
+  --rule-strong:  rgba(35,16,50,0.26);
+
+  /* marca */
+  --ember:        #EE5A0E;
+  --ember-lift:   #FF8A1F;
+  --plum:         #6B2FA8;
+  --plum-lift:    #9B5DE0;
+
+  /* faixa profunda — escura nos dois temas, por decisão */
+  --night:        #190A24;
+  --night-2:      #250F35;
+  --on-night:     #F3EEF6;
+  --on-night-soft:rgba(243,238,246,0.62);
+  --on-night-faint:rgba(243,238,246,0.42);
+  --rule-night:   rgba(243,238,246,0.16);
+  --night-hover:  rgba(243,238,246,0.09);
+  --ember-on-night:#FF8A1F;
+
+  /* texto sobre fotografia — claro sempre, em qualquer versão */
+  --on-photo:      #F6F2F8;
+  --on-photo-soft: rgba(246,242,248,0.70);
+
+  /* escala de intensidade do calendário (plum → ember) */
+  --heat-0: rgba(35,16,50,0.07);
+  --heat-1: rgba(107,47,168,0.30);
+  --heat-2: rgba(238,90,14,0.55);
+  --heat-3: #EE5A0E;
+
+  --serif: 'Instrument Serif', 'Iowan Old Style', Georgia, 'Times New Roman', serif;
+  --sans:  'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --mono:  'DM Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --maxw: 1260px;
+  --gut: 30px;
+  --hdr: 100px;
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:       #170920;
+    --paper-deep:  #0F0517;
+    --paper-lift:  #1F0E2C;
+    --ink:         #F3EEF6;
+    --ink-soft:    rgba(243,238,246,0.66);
+    --ink-faint:   rgba(243,238,246,0.40);
+    --rule:        rgba(243,238,246,0.14);
+    --rule-strong: rgba(243,238,246,0.28);
+    --ember:       #FF7A2E;
+    --ember-lift:  #FFA754;
+    --plum:        #B583EC;
+    --plum-lift:   #CBA6F5;
+    --heat-0: rgba(243,238,246,0.08);
+    --heat-1: rgba(181,131,236,0.32);
+    --heat-2: rgba(255,122,46,0.58);
+    --heat-3: #FF7A2E;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:       #170920;
+  --paper-deep:  #0F0517;
+  --paper-lift:  #1F0E2C;
+  --ink:         #F3EEF6;
+  --ink-soft:    rgba(243,238,246,0.66);
+  --ink-faint:   rgba(243,238,246,0.40);
+  --rule:        rgba(243,238,246,0.14);
+  --rule-strong: rgba(243,238,246,0.28);
+  --ember:       #FF7A2E;
+  --ember-lift:  #FFA754;
+  --plum:        #B583EC;
+  --plum-lift:   #CBA6F5;
+  --heat-0: rgba(243,238,246,0.08);
+  --heat-1: rgba(181,131,236,0.32);
+  --heat-2: rgba(255,122,46,0.58);
+  --heat-3: #FF7A2E;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:var(--sans);
+  background:var(--paper);
+  color:var(--ink);
+  font-size:16.5px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
+:focus-visible{outline:2px solid var(--ember);outline-offset:3px;border-radius:2px;}
+
+/* o header é fixo — âncoras precisam de folga para não passar por baixo dele */
+[id]{scroll-margin-top:var(--hdr);}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);}
+@media(max-width:640px){:root{--gut:20px;--hdr:84px;}}
+
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--ember);color:#fff;padding:12px 18px;font-weight:600;font-size:14px;
+}
+.skip:focus{left:12px;top:12px;}
+
+/* ---------- tipografia ---------- */
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-0.015em;text-wrap:balance;}
+h1 em,h2 em,h3 em{font-style:italic;color:var(--ember);}
+
+.d-xl{font-size:clamp(44px,7.4vw,98px);line-height:0.94;}
+.d-l {font-size:clamp(31px,4.4vw,58px);line-height:1.02;}
+
+.lede{font-size:clamp(17px,1.5vw,20.5px);line-height:1.6;color:var(--ink-soft);max-width:52ch;}
+.body{color:var(--ink-soft);max-width:62ch;}
+
+/* eyebrow com traço — marca de seção */
+.eyebrow{
+  font-family:var(--mono);font-size:11.5px;font-weight:500;
+  text-transform:uppercase;letter-spacing:0.16em;color:var(--ember);
+  display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:30px;height:1px;background:var(--ember);flex:none;}
+
+/* ---------- botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:15px 26px;border-radius:2px;
+  font-size:14.5px;font-weight:600;letter-spacing:0.01em;
+  border:1px solid transparent;
+  transition:transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+}
+.btn svg{flex:none;transition:transform .2s ease;}
+.btn:hover svg{transform:translateX(4px);}
+.btn-solid{background:var(--ember);color:#fff;}
+.btn-solid:hover{background:var(--ember-lift);transform:translateY(-1px);}
+.btn-line{border-color:var(--rule-strong);color:var(--ink);}
+.btn-line:hover{border-color:var(--ink);}
+.btn-night{border:1px solid var(--rule-night);color:var(--on-night);}
+.btn-night:hover{background:var(--night-hover);}
+
+.inline-link{
+  font-size:13.5px;font-weight:600;color:var(--ember);
+  display:inline-flex;align-items:center;gap:7px;
+  border-bottom:1px solid transparent;transition:border-color .2s ease;
+}
+.inline-link svg{transition:transform .2s ease;}
+.inline-link:hover{border-color:currentColor;}
+.inline-link:hover svg{transform:translateX(3px);}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:18px 0;
+  transition:padding .3s ease, border-color .3s ease;
+  border-bottom:1px solid transparent;
+}
+/* O fundo translúcido vive num pseudo-elemento de propósito: `backdrop-filter`
+   aplicado ao próprio header o tornaria bloco de contenção dos descendentes
+   `position:fixed` — e o menu lateral do celular passaria a caber dentro da
+   altura do header em vez da tela inteira. */
+header::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  opacity:0;transition:opacity .3s ease;
+  background:var(--paper);                                     /* fallback */
+  background:color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter:blur(14px) saturate(1.2);
+  -webkit-backdrop-filter:blur(14px) saturate(1.2);
+}
+header.stuck{padding:11px 0;border-bottom-color:var(--rule);}
+header.stuck::after{opacity:1;}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;}
+.brand img{height:54px;width:auto;}
+@media(max-width:520px){.brand img{height:44px;}}
+header nav{display:flex;align-items:center;gap:34px;}
+header nav ul{display:flex;gap:28px;}
+header nav a{font-size:14px;font-weight:500;color:var(--ink-soft);transition:color .2s ease;}
+header nav a:hover{color:var(--ink);}
+.menu-btn{display:none;padding:8px;}
+.menu-btn i{display:block;width:22px;height:1.5px;background:var(--ink);margin:5px 0;}
+
+@media(max-width:940px){
+  header nav ul{
+    position:fixed;inset:0 0 0 auto;width:80%;max-width:330px;
+    background:var(--paper-lift);border-left:1px solid var(--rule);
+    box-shadow:-26px 0 64px -34px rgba(0,0,0,0.6);
+    flex-direction:column;gap:0;padding:96px 28px 28px;
+    overflow-y:auto;overscroll-behavior:contain;
+    transform:translateX(101%);transition:transform .38s cubic-bezier(.65,0,.35,1);
+  }
+  header nav ul.open{transform:translateX(0);}
+  header nav ul li{border-bottom:1px solid var(--rule);}
+  header nav a{display:block;padding:17px 0;font-size:17px;font-family:var(--serif);}
+  .menu-btn{display:block;}
+  header .btn{display:none;}
+}
+
+/* véu atrás do menu do celular */
+.nav-scrim{
+  position:fixed;inset:0;z-index:99;
+  background:rgba(15,5,23,0.55);
+  opacity:0;visibility:hidden;
+  transition:opacity .3s ease, visibility .3s ease;
+}
+.nav-scrim.on{opacity:1;visibility:visible;}
+@media(min-width:941px){.nav-scrim{display:none;}}
+body.nav-open{overflow:hidden;}
+
+/* ============================================================
+   ABERTURA
+   ============================================================ */
+.opening{padding:150px 0 0;}
+.opening-grid{display:grid;grid-template-columns:1.18fr 0.82fr;gap:60px;align-items:end;}
+@media(max-width:960px){.opening-grid{grid-template-columns:1fr;gap:40px;}}
+
+.opening h1{margin:26px 0 0;max-width:13ch;}
+.opening .lede{margin-top:26px;}
+.opening-ctas{margin-top:34px;display:flex;gap:14px;flex-wrap:wrap;}
+
+/* entrada — termina visível, nada fica preso em opacity:0 */
+.rise{animation:rise .85s cubic-bezier(.22,.8,.28,1) backwards;}
+.rise-1{animation-delay:.05s;} .rise-2{animation-delay:.16s;}
+.rise-3{animation-delay:.27s;} .rise-4{animation-delay:.38s;}
+.rise-5{animation-delay:.5s;}
+@keyframes rise{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:none;}}
+
+.opening-photo img{width:100%;aspect-ratio:640/570;object-fit:cover;border-radius:2px;}
+.opening-photo figcaption{
+  margin-top:12px;display:flex;justify-content:space-between;gap:16px;
+  font-family:var(--mono);font-size:11px;text-transform:uppercase;
+  letter-spacing:0.13em;color:var(--ink-faint);
+}
+
+/* faixa-índice: os segmentos, logo abaixo da abertura */
+.index-strip{margin-top:74px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+.index-strip ul{display:grid;grid-template-columns:repeat(5,1fr);}
+.index-strip li{padding:20px 18px 20px 0;border-right:1px solid var(--rule);}
+.index-strip li:last-child{border-right:none;}
+.index-strip li:not(:first-child){padding-left:18px;}
+.index-strip b{display:block;font-family:var(--serif);font-size:19px;font-weight:400;line-height:1.2;}
+.index-strip span{font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.13em;color:var(--ink-faint);}
+@media(max-width:860px){
+  .index-strip ul{grid-template-columns:1fr 1fr;}
+  .index-strip li{border-bottom:1px solid var(--rule);padding-left:0;padding-right:14px;}
+  .index-strip li:nth-child(2n){border-right:none;padding-left:14px;padding-right:0;}
+  .index-strip li:last-child{grid-column:1 / -1;border-bottom:none;border-right:none;padding-left:0;}
+}
+
+/* ============================================================
+   SEÇÕES — base
+   ============================================================ */
+.sec{padding:118px 0;}
+.sec.tight{padding-top:0;}
+@media(max-width:700px){.sec{padding:78px 0;} .sec.tight{padding-top:0;}}
+
+.sec-head{display:grid;grid-template-columns:0.52fr 0.48fr;gap:56px;align-items:end;padding-bottom:44px;}
+@media(max-width:860px){.sec-head{grid-template-columns:1fr;gap:18px;}}
+.sec-head h2{margin-top:18px;}
+
+/* ---------- Serviços: lista de especificação, não cards ---------- */
+.spec{border-top:1px solid var(--rule-strong);}
+.spec-row{
+  display:grid;grid-template-columns:0.30fr 1fr auto;gap:40px;align-items:start;
+  padding:30px 0;border-bottom:1px solid var(--rule);
+  transition:background .25s ease;
+}
+.spec-row:hover{background:var(--paper-lift);}
+@media(max-width:860px){.spec-row{grid-template-columns:1fr;gap:12px;padding:26px 0;}}
+.spec-row h3{font-size:26px;line-height:1.15;}
+.spec-row p{font-size:15.5px;color:var(--ink-soft);max-width:56ch;margin-top:6px;}
+.spec-apply{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px;}
+.spec-apply span{
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.1em;
+  color:var(--ink-faint);border:1px solid var(--rule);padding:3px 8px;border-radius:2px;
+}
+.spec-row .cta-col{padding-top:6px;}
+
+/* ---------- Segmentos: placas fotográficas ---------- */
+.plates{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
+@media(max-width:1040px){.plates{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:680px){.plates{grid-template-columns:repeat(2,1fr);}}
+.plate{position:relative;overflow:hidden;border-radius:2px;background:var(--night);}
+.plate img{width:100%;aspect-ratio:505/640;object-fit:cover;transition:transform .7s cubic-bezier(.22,.8,.28,1);}
+.plate:hover img{transform:scale(1.045);}
+.plate .veil{
+  position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(0deg, rgba(25,10,36,0.88) 0%, rgba(25,10,36,0.30) 42%, rgba(25,10,36,0) 68%);
+}
+.plate .cap{position:absolute;left:16px;right:16px;bottom:15px;color:var(--on-photo);}
+.plate .cap b{display:block;font-family:var(--serif);font-size:21px;font-weight:400;line-height:1.15;}
+.plate .cap span{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.14em;color:var(--on-photo-soft);}
+/* Se o arquivo de uma foto ainda não estiver na pasta, a placa cai para o
+   tratamento tipográfico em vez de exibir imagem quebrada. */
+.plate.no-photo{background:linear-gradient(155deg, var(--plum) 0%, #7A2F84 52%, var(--ember) 100%);aspect-ratio:505/640;}
+.plate.no-photo img,.plate.no-photo .veil{display:none;}
+.plate.no-photo .cap b{color:#fff;}
+.plate.no-photo .cap span{color:rgba(255,255,255,0.78);}
+/* são cinco placas: a última ocupa duas colunas nos breakpoints menores
+   para nenhuma linha terminar com um bloco sozinho */
+@media(max-width:1040px){
+  .plates .plate:last-child{grid-column:span 2;}
+  .plates .plate:last-child img{aspect-ratio:4/3;}
+}
+@media(max-width:680px){.plates .plate:last-child img{aspect-ratio:3/2;}}
+
+/* ---------- Faixa larga (a única foto que aguenta escala grande) ---------- */
+.band{background:var(--night);}
+.band-inner{position:relative;max-width:1800px;margin:0 auto;overflow:hidden;}
+.band img{width:100%;height:clamp(340px,46vw,520px);object-fit:cover;object-position:50% 62%;opacity:0.62;}
+.band-copy{
+  position:absolute;inset:0;display:flex;align-items:center;
+  background:linear-gradient(90deg, rgba(25,10,36,0.92) 0%, rgba(25,10,36,0.62) 46%, rgba(25,10,36,0.18) 100%);
+}
+.band-copy .wrap{width:100%;}
+.band h2{color:var(--on-photo);max-width:17ch;margin-top:16px;}
+.band p{color:var(--on-photo-soft);max-width:44ch;margin-top:16px;font-size:16px;}
+.band .eyebrow{color:var(--ember-lift);}
+.band .eyebrow::before{background:var(--ember-lift);}
+
+/* ---------- Calendário de manejo ---------- */
+.calendar{background:var(--paper-deep);}
+.cal-scroll{overflow-x:auto;padding-bottom:6px;}
+.cal{min-width:720px;border-top:1px solid var(--rule-strong);}
+.cal-months,.cal-row{display:grid;grid-template-columns:210px repeat(12,1fr);gap:6px;align-items:center;}
+.cal-months{padding:12px 0 10px;}
+.cal-months span{
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.08em;
+  color:var(--ink-faint);text-align:center;
+}
+.cal-months span:first-child{text-align:left;letter-spacing:0.14em;}
+.cal-row{padding:9px 0;border-top:1px solid var(--rule);}
+.cal-row > b{font-size:14px;font-weight:600;line-height:1.25;padding-right:16px;}
+.cal-cell{height:26px;border-radius:2px;background:var(--heat-0);}
+.cal-cell[data-h="1"]{background:var(--heat-1);}
+.cal-cell[data-h="2"]{background:var(--heat-2);}
+.cal-cell[data-h="3"]{background:var(--heat-3);}
+.cal-legend{
+  display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:26px;
+  font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.11em;color:var(--ink-faint);
+}
+.cal-legend i{display:inline-block;width:22px;height:10px;border-radius:2px;margin-right:8px;vertical-align:-1px;}
+.cal-note{margin-top:18px;font-size:14px;color:var(--ink-soft);max-width:70ch;}
+
+/* ---------- Grama esmeralda: produto, não serviço ---------- */
+.product{display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;}
+@media(max-width:900px){.product{grid-template-columns:1fr;gap:34px;}}
+.product h2{margin:18px 0;}
+.product-pics{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.product-pics img{width:100%;aspect-ratio:500/640;object-fit:cover;border-radius:2px;}
+.product-pics figure:last-child{margin-top:34px;}
+@media(max-width:520px){.product-pics figure:last-child{margin-top:0;}}
+.product-pics figcaption{
+  margin-top:9px;font-family:var(--mono);font-size:10px;text-transform:uppercase;
+  letter-spacing:0.13em;color:var(--ink-faint);
+}
+.dl{margin-top:28px;border-top:1px solid var(--rule);}
+.dl div{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid var(--rule);}
+.dl dt{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.13em;color:var(--ink-faint);}
+.dl dd{font-size:14.5px;font-weight:500;text-align:right;}
+.product .btn{margin-top:30px;}
+
+/* ---------- Trabalhos ---------- */
+.works{background:var(--night);color:var(--on-night);}
+.works h2{color:var(--on-night);}
+.works .sec-head p{color:var(--on-night-soft);}
+.works .eyebrow{color:var(--ember-on-night);}
+.works .eyebrow::before{background:var(--ember-on-night);}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px;}
+.filter{
+  padding:8px 15px;border-radius:2px;font-size:13px;font-weight:500;
+  border:1px solid var(--rule-night);color:var(--on-night-soft);
+  transition:background .2s ease, color .2s ease, border-color .2s ease;
+}
+.filter:hover{color:var(--on-night);border-color:var(--on-night);}
+.filter[aria-pressed="true"]{background:var(--ember);border-color:var(--ember);color:#fff;}
+
+.grid-works{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;}
+.work{position:relative;overflow:hidden;border-radius:2px;background:var(--night-2);}
+.work[hidden]{display:none;}
+.work img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .7s cubic-bezier(.22,.8,.28,1);}
+.work.wide{grid-column:span 2;}
+.work.wide img{aspect-ratio:8/5;}
+@media(max-width:520px){.work.wide{grid-column:span 1;}.work.wide img{aspect-ratio:4/5;}}
+.work:hover img{transform:scale(1.05);}
+.work figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:34px 14px 13px;color:var(--on-photo);
+  background:linear-gradient(0deg, rgba(15,5,23,0.9), rgba(15,5,23,0));
+}
+.work figcaption b{display:block;font-size:13.5px;font-weight:600;}
+.work figcaption span{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.13em;color:var(--on-photo-soft);}
+.works-note{margin-top:22px;font-family:var(--mono);font-size:11.5px;letter-spacing:0.06em;color:var(--on-night-soft);}
+
+/* ---------- Como funciona: sequência real, por isso numerada ---------- */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr;}}
+@media(max-width:560px){.steps{grid-template-columns:1fr;}}
+.step{padding:26px 26px 26px 0;border-top:2px solid var(--ink);}
+.step:not(:last-child){border-right:1px solid var(--rule);}
+.step:not(:first-child){padding-left:26px;}
+@media(max-width:900px){
+  .step:nth-child(2n){border-right:none;}
+  .step:nth-child(2n+1){padding-left:0;}
+}
+@media(max-width:560px){.step{border-right:none;padding-left:0;}}
+.step .n{
+  font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:0.14em;
+  color:var(--ember);display:block;margin-bottom:20px;
+}
+.step h3{font-size:21px;margin-bottom:8px;}
+.step p{font-size:14.5px;color:var(--ink-soft);}
+
+/* ---------- FAQ ---------- */
+.faq-list{border-top:1px solid var(--rule-strong);}
+.faq-item{border-bottom:1px solid var(--rule);}
+.faq-q{
+  width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:22px;
+  padding:24px 0;font-family:var(--serif);font-size:21px;line-height:1.25;
+}
+.faq-q .mark{flex:none;width:24px;height:24px;position:relative;}
+.faq-q .mark::before,.faq-q .mark::after{
+  content:"";position:absolute;left:50%;top:50%;background:var(--ink);
+  transition:transform .3s ease, background .3s ease;
+}
+.faq-q .mark::before{width:13px;height:1.5px;transform:translate(-50%,-50%);}
+.faq-q .mark::after{width:1.5px;height:13px;transform:translate(-50%,-50%);}
+.faq-item.open .mark::after{transform:translate(-50%,-50%) scaleY(0);}
+.faq-item.open .mark::before{background:var(--ember);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;}
+.faq-a p{padding:0 0 24px;font-size:15.5px;color:var(--ink-soft);}
+
+/* ---------- Fechamento ---------- */
+.closing{background:var(--night);color:var(--on-night);position:relative;overflow:hidden;}
+.closing::before{
+  content:"";position:absolute;right:-14%;top:-38%;width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle, rgba(238,90,14,0.30), rgba(107,47,168,0.16) 46%, transparent 68%);
+  pointer-events:none;
+}
+.closing .wrap{position:relative;z-index:1;}
+.closing h2{color:var(--on-night);max-width:16ch;margin:18px 0 20px;}
+.closing p{color:var(--on-night-soft);max-width:50ch;margin-bottom:34px;}
+.closing .eyebrow{color:var(--ember-on-night);}
+.closing .eyebrow::before{background:var(--ember-on-night);}
+.closing-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+
+/* ---------- Rodapé ---------- */
+footer{background:var(--night-2);color:var(--on-night-soft);padding:0 0 30px;}
+
+/* faixa de topo: a marca numa placa clara — a assinatura do logo é
+   azul-violeta escura e desapareceria sobre o roxo do rodapé */
+.foot-top{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:36px;flex-wrap:wrap;
+  padding:66px 0 38px;
+}
+.foot-mark{display:inline-flex;transition:transform .25s ease;}
+.foot-mark:hover{transform:translateY(-3px);}
+.foot-mark img{height:98px;width:auto;display:block;}
+.foot-facts{text-align:right;font-family:var(--mono);}
+.foot-facts span{
+  display:block;font-size:10px;text-transform:uppercase;letter-spacing:0.18em;
+  color:var(--on-night-faint);margin-bottom:12px;
+}
+.foot-facts b{
+  display:block;font-size:13.5px;font-weight:500;letter-spacing:0.05em;
+  color:var(--on-night);line-height:1.95;
+}
+.foot-facts b.dim{color:var(--on-night-faint);}
+@media(max-width:760px){.foot-top{padding:52px 0 32px;} .foot-facts{text-align:left;}}
+@media(max-width:520px){.foot-mark img{height:64px;}}
+
+/* grade principal */
+.foot-grid{
+  display:grid;grid-template-columns:1.35fr 0.75fr 1.1fr;gap:52px;
+  padding:44px 0;
+  border-top:1px solid var(--rule-night);
+  border-bottom:1px solid var(--rule-night);
+}
+@media(max-width:880px){.foot-grid{grid-template-columns:1fr 1fr;gap:40px;}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr;gap:34px;}}
+
+footer h4{
+  font-family:var(--mono);font-size:10px;font-weight:500;text-transform:uppercase;
+  letter-spacing:0.18em;color:var(--on-night-faint);margin-bottom:18px;
+}
+footer li{margin-bottom:10px;font-size:14.5px;}
+footer a:hover{color:var(--ember-on-night);}
+footer p{font-size:14.5px;line-height:1.6;max-width:38ch;}
+.foot-role{margin-top:18px;font-size:13px;line-height:1.65;color:var(--on-night-faint);}
+.foot-role b{display:block;font-family:var(--serif);font-size:19px;font-weight:400;color:var(--on-night);margin-bottom:3px;}
+
+/* contato com ícone: rótulo em mono, valor clicável */
+.contact li{margin-bottom:14px;}
+.contact li:last-child{margin-bottom:0;}
+.contact a{display:flex;gap:13px;align-items:center;}
+.contact .ico{
+  flex:none;width:36px;height:36px;border-radius:50%;
+  border:1px solid var(--rule-night);color:var(--ember-on-night);
+  display:flex;align-items:center;justify-content:center;
+  transition:background .2s ease, border-color .2s ease, color .2s ease;
+}
+.contact a:hover .ico{background:var(--ember);border-color:var(--ember);color:#fff;}
+.contact b{
+  display:block;font-family:var(--mono);font-size:9.5px;font-weight:500;
+  text-transform:uppercase;letter-spacing:0.15em;color:var(--on-night-faint);
+  margin-bottom:2px;
+}
+.contact .val{display:block;font-size:14.5px;line-height:1.3;color:var(--on-night);}
+.contact a:hover .val{color:var(--ember-lift);}
+
+/* barra final */
+.foot-bottom{
+  padding-top:26px;display:flex;justify-content:space-between;align-items:flex-end;
+  flex-wrap:wrap;gap:18px;
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;letter-spacing:0.1em;
+  color:var(--on-night-faint);
+}
+.foot-legal{display:grid;gap:8px;}
+.to-top{
+  display:inline-flex;align-items:center;gap:9px;color:var(--on-night-soft);
+  border:1px solid var(--rule-night);border-radius:999px;padding:9px 17px;
+  transition:border-color .2s ease, color .2s ease;
+}
+.to-top:hover{color:var(--on-night);border-color:var(--on-night);}
+.to-top svg{transition:transform .2s ease;}
+.to-top:hover svg{transform:translateY(-2px);}
+
+/* ---------- Visualizador de fotos ---------- */
+/* botão invisível que cobre cada registro da galeria — botão de verdade,
+   para funcionar no teclado e ser anunciado por leitor de tela */
+.work-open{position:absolute;inset:0;z-index:2;cursor:zoom-in;}
+.work-open:focus-visible{outline:2px solid var(--ember);outline-offset:-4px;}
+
+.lb{
+  position:fixed;inset:0;z-index:200;
+  display:flex;flex-direction:column;gap:clamp(10px,2vw,18px);
+  padding:clamp(14px,3vw,30px);
+  background:rgba(10,3,16,0.95);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  color:var(--on-photo);
+}
+.lb[hidden]{display:none;}
+.lb-stage{
+  flex:1;min-height:0;display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(240px,300px);
+  gap:clamp(20px,4vw,52px);align-items:center;
+}
+@media(max-width:920px){.lb-stage{grid-template-columns:1fr;align-content:center;gap:18px;}}
+.lb-frame{min-height:0;display:flex;align-items:center;justify-content:center;}
+.lb-frame img{
+  max-width:100%;max-height:min(72vh,830px);width:auto;height:auto;
+  border-radius:3px;box-shadow:0 46px 100px -46px #000;
+  opacity:1;transform:none;transition:opacity .16s ease, transform .16s ease;
+}
+.lb-frame img.swap{opacity:0;transform:scale(.985);}
+
+.lb-plate .lb-count{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.18em;
+  color:var(--on-photo-soft);margin-bottom:18px;
+}
+.lb-plate .lb-count b{color:var(--ember-lift);font-weight:500;}
+.lb-plate h3{font-family:var(--serif);font-size:clamp(24px,2.4vw,32px);line-height:1.08;margin-bottom:10px;}
+.lb-plate .lb-meta{
+  font-family:var(--mono);font-size:10.5px;text-transform:uppercase;
+  letter-spacing:0.14em;color:var(--on-photo-soft);
+}
+.lb-cta{
+  margin-top:26px;display:inline-flex;align-items:center;gap:9px;
+  font-size:13.5px;font-weight:600;color:var(--ember-lift);
+  border-bottom:1px solid transparent;transition:border-color .2s ease;
+}
+.lb-cta:hover{border-color:currentColor;}
+.lb-cta svg{transition:transform .2s ease;}
+.lb-cta:hover svg{transform:translateX(3px);}
+@media(max-width:920px){.lb-plate{text-align:center;} .lb-plate .lb-count{margin-bottom:10px;}}
+
+.lb-btn{
+  position:absolute;z-index:3;
+  width:46px;height:46px;border-radius:50%;
+  border:1px solid rgba(246,242,248,0.22);color:var(--on-photo);
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(10,3,16,0.55);
+  transition:background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.lb-btn:hover{background:var(--ember);border-color:var(--ember);color:#fff;}
+.lb-close{top:clamp(14px,3vw,30px);right:clamp(14px,3vw,30px);}
+.lb-prev{left:clamp(10px,2vw,24px);top:50%;transform:translateY(-50%);}
+.lb-next{right:clamp(10px,2vw,24px);top:50%;transform:translateY(-50%);}
+.lb-prev:hover,.lb-next:hover{transform:translateY(-50%) scale(1.06);}
+@media(max-width:920px){
+  .lb-prev{left:8px;} .lb-next{right:8px;}
+  .lb-prev,.lb-next{width:40px;height:40px;}
+}
+
+.lb-strip{display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;padding:2px;flex:none;}
+.lb-strip button{
+  flex:none;width:52px;height:64px;border-radius:2px;overflow:hidden;
+  opacity:0.4;outline:2px solid transparent;outline-offset:2px;
+  transition:opacity .2s ease, outline-color .2s ease;
+}
+.lb-strip button:hover{opacity:0.8;}
+.lb-strip button[aria-current="true"]{opacity:1;outline-color:var(--ember);}
+.lb-strip img{width:100%;height:100%;object-fit:cover;}
+@media(max-width:560px){.lb-strip button{width:42px;height:52px;}}
+
+/* transição de elemento compartilhado: a miniatura vira a foto grande */
+::view-transition-group(lb-morph){animation-duration:.46s;animation-timing-function:cubic-bezier(.22,.8,.28,1);}
+::view-transition-old(lb-morph),::view-transition-new(lb-morph){animation-duration:.46s;}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.3s;}
+
+/* ---------- WhatsApp flutuante ---------- */
+.wa{
+  position:fixed;right:22px;bottom:22px;z-index:90;
+  width:56px;height:56px;border-radius:50%;
+  background:linear-gradient(140deg,var(--ember-lift),var(--ember));
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 14px 30px -10px rgba(238,90,14,0.7);
+  transition:transform .2s ease;
+}
+.wa:hover{transform:scale(1.07);}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important;}
+  html{scroll-behavior:auto;}
+}
+</style>
+
+<!-- sem JavaScript o acordeão do FAQ ficaria fechado: abre tudo -->
+<noscript><style>.faq-a{max-height:none !important;}.faq-q .mark{display:none;}</style></noscript>
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============================ HEADER ============================ -->
+<header id="hdr">
+  <div class="wrap">
+    <a href="#topo" class="brand" aria-label="RNN Ambiental — início">
+      <picture>
+        <source srcset="logo-claro.png" media="(prefers-color-scheme: dark)">
+        <img src="logo.png" alt="RNN Ambiental" width="560" height="288">
+      </picture>
+    </a>
+    <nav aria-label="Principal">
+      <ul id="menu">
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#segmentos">Segmentos</a></li>
+        <li><a href="#trabalhos">Trabalhos</a></li>
+        <li><a href="#calendario">Calendário</a></li>
+        <li><a href="#grama">Grama</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="btn btn-solid" style="padding:11px 20px;font-size:13.5px;" target="_blank" rel="noopener"
+         href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20para%20uma%20%C3%A1rea%20verde.">
+        Solicitar avaliação
+      </a>
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <i></i><i></i><i></i>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<div class="nav-scrim" id="nav-scrim" hidden></div>
+
+<main id="conteudo">
+
+<!-- ============================ ABERTURA ============================ -->
+<section class="opening" id="topo">
+  <div class="wrap">
+    <div class="opening-grid">
+      <div>
+        <p class="eyebrow rise rise-1">Caçapava · SP e região</p>
+        <h1 class="d-xl rise rise-2">Cuidamos hoje.<br><em>Transformamos</em> amanhã.</h1>
+        <p class="lede rise rise-3">
+          Manutenção de áreas verdes, paisagismo e poda técnica para condomínios,
+          empresas, comércios, chácaras e sítios — com avaliação individual de cada
+          espaço antes de indicar qualquer serviço.
+        </p>
+        <div class="opening-ctas rise rise-4">
+          <a class="btn btn-solid" target="_blank" rel="noopener"
+             href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Conheci%20a%20RNN%20Ambiental%20atrav%C3%A9s%20da%20p%C3%A1gina%20e%20gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20para%20uma%20%C3%A1rea%20verde.">
+            Solicitar uma avaliação
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-line" href="#servicos">Ver os serviços</a>
+        </div>
+      </div>
+
+      <figure class="opening-photo rise rise-5">
+        <img src="paisagismo-residencial-3.jpeg" width="640" height="570" fetchpriority="high" decoding="async"
+             alt="Fachada residencial contemporânea com passeio de placas de concreto, palmeiras e faixa de grama recém-mantida">
+        <figcaption>
+          <span>Paisagismo residencial</span>
+          <span>Caçapava · SP</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- índice dos segmentos: resumo escaneável, sem numeração falsa -->
+    <div class="index-strip">
+      <ul>
+        <li><b>Condomínios</b><span>Áreas comuns</span></li>
+        <li><b>Empresas</b><span>Indústria e logística</span></li>
+        <li><b>Comércios</b><span>Fachadas verdes</span></li>
+        <li><b>Chácaras</b><span>Grandes extensões</span></li>
+        <li><b>Residências</b><span>Sob medida</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVIÇOS ============================ -->
+<section class="sec" id="servicos" aria-labelledby="t-servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">O que fazemos</p>
+        <h2 class="d-l" id="t-servicos">Seis frentes de trabalho, uma avaliação para cada área.</h2>
+      </div>
+      <p class="body">
+        Da manutenção periódica ao paisagismo completo. Nada é orçado por tabela:
+        o serviço, a frequência e os materiais saem das condições reais do espaço.
+      </p>
+    </div>
+
+    <div class="spec">
+      <article class="spec-row">
+        <h3>Manutenção de áreas verdes</h3>
+        <div>
+          <p>Cuidado periódico de jardins, gramados e áreas externas, conforme as características e as necessidades de cada espaço.</p>
+          <div class="spec-apply"><span>Condomínios</span><span>Empresas</span><span>Comércios</span><span>Chácaras</span><span>Residências</span></div>
+        </div>
+        <div class="cta-col">
+          <a class="inline-link" target="_blank" rel="noopener"
+             href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20manuten%C3%A7%C3%A3o%20de%20uma%20%C3%A1rea%20verde.">
+            Solicitar manutenção
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="spec-row">
+        <h3>Paisagismo</h3>
+        <div>
+          <p>Planejamento, criação e renovação de espaços verdes — do desenho do canteiro à execução no local.</p>
+          <div class="spec-apply"><span>Condomínios</span><span>Comércios</span><span>Residências</span></div>
+        </div>
+        <div class="cta-col">
+          <a class="inline-link" target="_blank" rel="noopener"
+             href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20ou%20renova%C3%A7%C3%A3o%20de%20paisagismo.">
+            Falar sobre um projeto
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="spec-row">
+        <h3>Poda técnica</h3>
+        <div>
+          <p>Avaliação e execução conforme as condições das plantas, do ambiente e a necessidade de manutenção.</p>
+          <div class="spec-apply"><span>Condomínios</span><span>Empresas</span><span>Chácaras</span><span>Residências</span></div>
+        </div>
+        <div class="cta-col">
+          <a class="inline-link" target="_blank" rel="noopener"
+             href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Preciso%20de%20uma%20avalia%C3%A7%C3%A3o%20para%20poda%20de%20plantas%20ou%20%C3%A1rvores%20em%20uma%20%C3%A1rea%20verde.">
+            Solicitar avaliação
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="spec-row">
+        <h3>Gramados</h3>
+        <div>
+          <p>Corte, manutenção, recuperação, plantio e organização de gramados — de jardins residenciais a grandes taludes.</p>
+          <div class="spec-apply"><span>Condomínios</span><span>Empresas</span><span>Chácaras</span><span>Residências</span></div>
+        </div>
+        <div class="cta-col">
+          <a class="inline-link" target="_blank" rel="noopener"
+             href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o%20para%20manuten%C3%A7%C3%A3o%2C%20plantio%20ou%20recupera%C3%A7%C3%A3o%20de%20gramado.">
+            Cuidar do meu gramado
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="spec-row">
+        <h3>Limpeza e organização</h3>
+        <div>
+          <p>Remoção de excesso de vegetação, limpeza e organização de áreas externas, com o terreno entregue pronto para uso.</p>
+          <div class="spec-apply"><span>Empresas</span><span>Chácaras</span><span>Residências</span></div>
+        </div>
+        <div class="cta-col">
+          <a class="inline-link" target="_blank" rel="noopener"
+             href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Preciso%20de%20limpeza%20e%20organiza%C3%A7%C3%A3o%20em%20uma%20%C3%A1rea%20verde%20e%20gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o.">
+            Solicitar limpeza
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="spec-row">
+        <h3>Grama esmeralda</h3>
+        <div>
+          <p>Fornecimento conforme disponibilidade, quantidade necessária e localização. Frete sob consulta.</p>
+          <div class="spec-apply"><span>Fornecimento</span><span>Plantio</span><span>Frete sob consulta</span></div>
+        </div>
+        <div class="cta-col">
+          <a class="inline-link" href="#grama">
+            Ver disponibilidade
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SEGMENTOS ============================ -->
+<section class="sec tight" id="segmentos" aria-labelledby="t-segmentos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Segmentos atendidos</p>
+        <h2 class="d-l" id="t-segmentos">Da área comum de um condomínio à extensão de uma chácara.</h2>
+      </div>
+      <p class="body">
+        Cada atendimento é ajustado à realidade do local: o porte da área, o acesso,
+        o uso que ela recebe e a frequência que consegue sustentar.
+      </p>
+    </div>
+
+    <div class="plates">
+      <figure class="plate">
+        <img src="area-condominial-entrada.jpeg" width="506" height="640" loading="lazy" decoding="async"
+             alt="Portaria de condomínio residencial com gramado mantido e canteiros de cicas na entrada">
+        <div class="veil"></div>
+        <figcaption class="cap"><b>Condomínios</b><span>Áreas comuns e convivência</span></figcaption>
+      </figure>
+
+      <figure class="plate">
+        <img src="area-empresarial.jpeg" width="510" height="640" loading="lazy" decoding="async"
+             alt="Faixa de gramado industrial recém-roçada ao lado de galpão logístico, com roçadeira no local">
+        <div class="veil"></div>
+        <figcaption class="cap"><b>Empresas</b><span>Indústria e logística</span></figcaption>
+      </figure>
+
+      <figure class="plate" id="plate-comercios">
+        <img src="area-empresarial2.jpeg" width="512" height="640" loading="lazy" decoding="async"
+             alt="Faixa de gramado mantida ao longo da área externa de um estabelecimento">
+        <div class="veil"></div>
+        <figcaption class="cap"><b>Comércios</b><span>Fachadas e áreas externas</span></figcaption>
+      </figure>
+
+      <figure class="plate">
+        <img src="chacara-sitio.jpeg" width="505" height="640" loading="lazy" decoding="async"
+             alt="Alameda de palmeiras imperiais com caminho de pedra em chácara ao entardecer">
+        <div class="veil"></div>
+        <figcaption class="cap"><b>Chácaras e sítios</b><span>Grandes extensões</span></figcaption>
+      </figure>
+
+      <figure class="plate">
+        <img src="paisagismo-residencial2.jpeg" width="509" height="640" loading="lazy" decoding="async"
+             alt="Fachada residencial contemporânea com canteiro de cica, arbustos topiados e grama">
+        <div class="veil"></div>
+        <figcaption class="cap"><b>Residências</b><span>Sob medida</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAIXA LARGA ============================ -->
+<section class="band" aria-labelledby="t-band">
+  <div class="band-inner">
+    <img src="manutencao-paisagismo.jpeg" width="1000" height="799" loading="lazy" decoding="async"
+         alt="Área de lazer de condomínio com piscinas, talude gramado e canteiros de folhagem mantidos">
+    <div class="band-copy">
+      <div class="wrap">
+        <p class="eyebrow">Área comum</p>
+        <h2 class="d-l" id="t-band">A primeira coisa que alguém vê é o verde.</h2>
+        <p>
+          Talude, canteiro, calçada e piscina fazem parte do mesmo conjunto. Manter o
+          verde em ordem é manter a leitura do lugar inteiro.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TRABALHOS ============================ -->
+<section class="sec works" id="trabalhos" aria-labelledby="t-trabalhos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Trabalhos</p>
+        <h2 class="d-l" id="t-trabalhos">Registros de áreas executadas.</h2>
+      </div>
+      <p>
+        Manutenção, paisagismo e cuidado de áreas verdes em condomínios, empresas,
+        chácaras e residências da região.
+      </p>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filtrar trabalhos por tipo de área">
+      <button class="filter" data-filter="todos" aria-pressed="true">Todos</button>
+      <button class="filter" data-filter="condominiais" aria-pressed="false">Condomínios</button>
+      <button class="filter" data-filter="empresariais" aria-pressed="false">Empresas</button>
+      <button class="filter" data-filter="chacaras" aria-pressed="false">Chácaras e sítios</button>
+      <button class="filter" data-filter="gramados" aria-pressed="false">Gramados</button>
+      <button class="filter" data-filter="paisagismo" aria-pressed="false">Paisagismo</button>
+    </div>
+
+    <div class="grid-works" id="grid-works" aria-live="polite">
+      <figure class="work wide" data-cat="condominiais">
+        <img src="manutencao-paisagismo.jpeg" width="1000" height="799" loading="lazy" decoding="async"
+             alt="Área de lazer de condomínio com piscinas e talude gramado mantido">
+        <figcaption><b>Área de lazer condominial</b><span>Manutenção · talude e canteiros</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="condominiais">
+        <img src="area-condominial-entrada.jpeg" width="506" height="640" loading="lazy" decoding="async"
+             alt="Portaria de condomínio com gramado e canteiros de cicas">
+        <figcaption><b>Entrada de condomínio</b><span>Manutenção · portaria</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="condominiais">
+        <img src="area-condominial.jpeg" width="505" height="640" loading="lazy" decoding="async"
+             alt="Grande área comum gramada de condomínio com casas ao fundo">
+        <figcaption><b>Área comum</b><span>Corte e roçada</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="condominiais">
+        <img src="area-condominial2.jpeg" width="640" height="633" loading="lazy" decoding="async"
+             alt="Talude gramado com canteiros de folhagem junto à piscina do condomínio">
+        <figcaption><b>Talude e piscina</b><span>Manutenção periódica</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="empresariais">
+        <img src="area-empresarial.jpeg" width="510" height="640" loading="lazy" decoding="async"
+             alt="Gramado industrial recém-roçado com roçadeira ao lado de galpão">
+        <figcaption><b>Área industrial</b><span>Roçada · execução</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="empresariais">
+        <img src="area-empresarial2.jpeg" width="512" height="640" loading="lazy" decoding="async"
+             alt="Extensa faixa de gramado empresarial ao longo de galpão logístico">
+        <figcaption><b>Entorno de galpão</b><span>Manutenção de perímetro</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="chacaras">
+        <img src="chacara-sitio.jpeg" width="505" height="640" loading="lazy" decoding="async"
+             alt="Alameda de palmeiras imperiais e caminho de pedra em chácara">
+        <figcaption><b>Alameda de palmeiras</b><span>Chácara · manutenção</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="gramados">
+        <img src="gramado.jpeg" width="501" height="640" loading="lazy" decoding="async"
+             alt="Campo de produção de grama esmeralda uniforme até o horizonte">
+        <figcaption><b>Campo de grama</b><span>Origem do fornecimento</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="gramados">
+        <img src="grama-esmeralda.jpeg" width="500" height="640" loading="lazy" decoding="async"
+             alt="Paletes de placas de grama esmeralda empilhados no campo">
+        <figcaption><b>Grama esmeralda</b><span>Paletes · fornecimento</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="paisagismo">
+        <img src="paisagismo-residencial.jpeg" width="640" height="559" loading="lazy" decoding="async"
+             alt="Fachada residencial branca e madeira com degraus, canteiro e flores alaranjadas">
+        <figcaption><b>Fachada residencial</b><span>Paisagismo · implantação</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="paisagismo">
+        <img src="paisagismo-residencial-3.jpeg" width="640" height="570" loading="lazy" decoding="async"
+             alt="Residência contemporânea com passeio de placas, palmeiras e grama">
+        <figcaption><b>Passeio e jardim frontal</b><span>Paisagismo · manutenção</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="paisagismo">
+        <img src="paisagismo-residencial2.jpeg" width="509" height="640" loading="lazy" decoding="async"
+             alt="Jardim frontal residencial com cica central e arbustos topiados">
+        <figcaption><b>Jardim frontal</b><span>Paisagismo · condução</span></figcaption>
+      </figure>
+      <figure class="work" data-cat="paisagismo">
+        <img src="paisagismo-residencia.jpeg" width="395" height="640" loading="lazy" decoding="async"
+             alt="Quintal residencial com gramado, mesa sob pergolado e canteiro de folhagens tropicais">
+        <figcaption><b>Quintal e área de estar</b><span>Paisagismo · folhagens</span></figcaption>
+      </figure>
+    </div>
+    <p class="works-note">Registros das próprias equipes, feitos em campo.</p>
+  </div>
+</section>
+
+<!-- ============================ CALENDÁRIO ============================ -->
+<section class="sec calendar" id="calendario" aria-labelledby="t-calendario">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Ritmo do ano</p>
+        <h2 class="d-l" id="t-calendario">Área verde não tem demanda constante.</h2>
+      </div>
+      <p class="body">
+        No Vale do Paraíba o verde acelera com a chuva e o calor e desacelera na seca.
+        Planejar o contrato pelo ano — e não pelo mês mais movimentado — é o que
+        mantém a área apresentável sem desperdício.
+      </p>
+    </div>
+
+    <div class="cal-scroll" tabindex="0" role="group" aria-label="Calendário de manejo ao longo do ano">
+      <div class="cal">
+        <div class="cal-months" aria-hidden="true">
+          <span>Frente de trabalho</span>
+          <span>jan</span><span>fev</span><span>mar</span><span>abr</span><span>mai</span><span>jun</span>
+          <span>jul</span><span>ago</span><span>set</span><span>out</span><span>nov</span><span>dez</span>
+        </div>
+
+        <div class="cal-row">
+          <b>Corte e roçada
+            <span class="sr-only">— intensidade alta de outubro a março, média em abril, maio e setembro, baixa de junho a agosto.</span>
+          </b>
+          <span class="cal-cell" data-h="3" title="janeiro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="fevereiro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="março · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="abril · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="maio · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="junho · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="julho · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="agosto · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="setembro · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="outubro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="novembro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="dezembro · alta" aria-hidden="true"></span>
+        </div>
+
+        <div class="cal-row">
+          <b>Poda e condução
+            <span class="sr-only">— intensidade alta de junho a agosto, média em abril, maio e setembro, baixa no restante do ano.</span>
+          </b>
+          <span class="cal-cell" data-h="1" title="janeiro · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="fevereiro · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="março · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="abril · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="maio · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="junho · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="julho · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="agosto · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="setembro · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="outubro · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="novembro · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="dezembro · baixa" aria-hidden="true"></span>
+        </div>
+
+        <div class="cal-row">
+          <b>Plantio e reforma de gramado
+            <span class="sr-only">— intensidade alta de outubro a fevereiro, média em março e setembro, baixa em abril, maio e agosto, fora de época em junho e julho.</span>
+          </b>
+          <span class="cal-cell" data-h="3" title="janeiro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="fevereiro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="março · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="abril · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="maio · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="0" title="junho · fora de época" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="0" title="julho · fora de época" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="agosto · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="setembro · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="outubro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="novembro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="dezembro · alta" aria-hidden="true"></span>
+        </div>
+
+        <div class="cal-row">
+          <b>Limpeza e organização
+            <span class="sr-only">— intensidade alta em março, abril e setembro, baixa em junho e julho, média no restante do ano.</span>
+          </b>
+          <span class="cal-cell" data-h="2" title="janeiro · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="fevereiro · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="março · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="abril · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="maio · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="junho · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="1" title="julho · baixa" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="agosto · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="3" title="setembro · alta" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="outubro · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="novembro · média" aria-hidden="true"></span>
+          <span class="cal-cell" data-h="2" title="dezembro · média" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+
+    <p class="cal-legend" aria-hidden="true">
+      <span><i style="background:var(--heat-0);"></i>Fora de época</span>
+      <span><i style="background:var(--heat-1);"></i>Baixa</span>
+      <span><i style="background:var(--heat-2);"></i>Média</span>
+      <span><i style="background:var(--heat-3);"></i>Alta</span>
+    </p>
+    <p class="cal-note">
+      Orientação geral para o clima do Vale do Paraíba, não um cronograma fechado.
+      A frequência real de cada contrato sai da avaliação da área — porte, uso,
+      exposição ao sol e espécies presentes.
+    </p>
+  </div>
+</section>
+
+<!-- ============================ GRAMA ESMERALDA ============================ -->
+<section class="sec" id="grama" aria-labelledby="t-grama">
+  <div class="wrap product">
+    <div>
+      <p class="eyebrow">Fornecimento</p>
+      <h2 class="d-l" id="t-grama">Grama esmeralda, do campo ao seu terreno.</h2>
+      <p class="body">
+        A grama sai do campo em placas paletizadas e tem prazo curto entre a colheita
+        e o plantio. Por isso disponibilidade, quantidade e frete são confirmados
+        juntos — e não separadamente.
+      </p>
+
+      <dl class="dl">
+        <div><dt>Espécie</dt><dd>Zoysia japonica · esmeralda</dd></div>
+        <div><dt>Formato</dt><dd>Placas paletizadas</dd></div>
+        <div><dt>Quantidade</dt><dd>Conforme a área a cobrir</dd></div>
+        <div><dt>Frete</dt><dd>Sob consulta, pela localização</dd></div>
+        <div><dt>Plantio</dt><dd>Pode ser contratado junto</dd></div>
+      </dl>
+
+      <a class="btn btn-solid" target="_blank" rel="noopener"
+         href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Gostaria%20de%20consultar%20a%20disponibilidade%2C%20quantidade%20e%20frete%20para%20grama%20esmeralda.">
+        Consultar grama e frete
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div class="product-pics">
+      <figure>
+        <img src="gramado.jpeg" width="501" height="640" loading="lazy" decoding="async"
+             alt="Campo de produção de grama esmeralda uniforme até o horizonte">
+        <figcaption>Campo de produção</figcaption>
+      </figure>
+      <figure>
+        <img src="grama-esmeralda.jpeg" width="500" height="640" loading="lazy" decoding="async"
+             alt="Paletes de placas de grama esmeralda prontos para carregamento">
+        <figcaption>Placas paletizadas</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ COMO FUNCIONA ============================ -->
+<section class="sec tight" aria-labelledby="t-processo">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Como funciona</p>
+        <h2 class="d-l" id="t-processo">Do primeiro contato à execução.</h2>
+      </div>
+      <p class="body">Quatro etapas, nesta ordem, para que você saiba exatamente o que esperar.</p>
+    </div>
+
+    <div class="steps">
+      <article class="step">
+        <span class="n">Etapa 01</span>
+        <h3>Primeiro contato</h3>
+        <p>Você envia uma mensagem e explica o tipo de área e o serviço necessário.</p>
+      </article>
+      <article class="step">
+        <span class="n">Etapa 02</span>
+        <h3>Envio de informações</h3>
+        <p>Quando possível, envia fotografias, vídeos, localização e dimensões aproximadas.</p>
+      </article>
+      <article class="step">
+        <span class="n">Etapa 03</span>
+        <h3>Avaliação</h3>
+        <p>Analisamos a necessidade e, quando necessário, agendamos uma visita ao local.</p>
+      </article>
+      <article class="step">
+        <span class="n">Etapa 04</span>
+        <h3>Proposta e execução</h3>
+        <p>Apresentamos o serviço, a frequência, os materiais e as condições para execução.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="sec tight" aria-labelledby="t-faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Perguntas frequentes</p>
+        <h2 class="d-l" id="t-faq">Dúvidas comuns sobre o atendimento.</h2>
+      </div>
+      <p class="body">Se a sua não estiver aqui, mande pelo WhatsApp — a resposta costuma sair no mesmo dia útil.</p>
+    </div>
+
+    <div class="faq-list" id="faq">
+      <div class="faq-item open">
+        <h3><button class="faq-q" aria-expanded="true"><span>A RNN Ambiental atende empresas e condomínios?</span><span class="mark" aria-hidden="true"></span></button></h3>
+        <div class="faq-a"><p>Sim. A empresa atua com manutenção de áreas verdes empresariais, comerciais e condominiais, conforme a necessidade e o porte do espaço.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" aria-expanded="false"><span>É possível contratar manutenção recorrente?</span><span class="mark" aria-hidden="true"></span></button></h3>
+        <div class="faq-a"><p>A frequência pode ser definida após a avaliação da área, das condições do jardim e da necessidade de manutenção.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" aria-expanded="false"><span>Vocês atendem chácaras e sítios?</span><span class="mark" aria-hidden="true"></span></button></h3>
+        <div class="faq-a"><p>Sim. A disponibilidade e as condições do atendimento devem ser confirmadas após o envio da localização e das informações sobre a área.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" aria-expanded="false"><span>É possível receber orçamento pelo WhatsApp?</span><span class="mark" aria-hidden="true"></span></button></h3>
+        <div class="faq-a"><p>Fotografias, vídeos e informações ajudam em uma avaliação inicial. Dependendo do serviço e do tamanho da área, pode ser necessária uma visita.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" aria-expanded="false"><span>Vocês vendem grama esmeralda?</span><span class="mark" aria-hidden="true"></span></button></h3>
+        <div class="faq-a"><p>O fornecimento depende da quantidade e da disponibilidade. O frete deve ser consultado de acordo com a localização.</p></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" aria-expanded="false"><span>Qual região é atendida?</span><span class="mark" aria-hidden="true"></span></button></h3>
+        <div class="faq-a"><p>A empresa está localizada em Caçapava, São Paulo. A disponibilidade para cidades da região deve ser confirmada pelo WhatsApp.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FECHAMENTO ============================ -->
+<section class="sec closing" id="contato" aria-labelledby="t-contato">
+  <div class="wrap">
+    <p class="eyebrow">Fale com a RNN Ambiental</p>
+    <h2 class="d-l" id="t-contato">Sua área verde é a apresentação de todo o resto.</h2>
+    <p>
+      Envie uma mensagem, apresente o espaço e solicite uma avaliação para
+      manutenção, paisagismo ou poda técnica.
+    </p>
+    <div class="closing-ctas">
+      <a class="btn btn-solid" target="_blank" rel="noopener"
+         href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Conheci%20a%20RNN%20Ambiental%20atrav%C3%A9s%20da%20p%C3%A1gina%20e%20gostaria%20de%20conversar%20sobre%20um%20servi%C3%A7o%20de%20jardinagem%20ou%20paisagismo.">
+        Falar no WhatsApp
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a class="btn btn-night" href="https://www.instagram.com/rnnambiental" target="_blank" rel="noopener">Ver no Instagram</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ RODAPÉ ============================ -->
+<footer>
+  <div class="wrap">
+
+    <div class="foot-top">
+      <a href="#topo" class="foot-mark" aria-label="RNN Ambiental — voltar ao topo">
+        <img src="logo-claro.png" alt="RNN Ambiental" width="560" height="288" loading="lazy">
+      </a>
+      <div class="foot-facts">
+        <span>Atendimento</span>
+        <b>Segunda a sexta · 07h30 às 17h30</b>
+        <b class="dim">Sábado e domingo · fechado</b>
+      </div>
+    </div>
+
+    <div class="foot-grid">
+      <div>
+        <h4>A empresa</h4>
+        <p>Manutenção de áreas verdes, paisagismo e poda técnica para empresas, condomínios, comércios, chácaras e sítios em Caçapava e região.</p>
+        <p class="foot-role">
+          <b>RNN Ambiental</b>
+          Soluções Ambientais Integradas<br>
+          Responsável: Renan
+        </p>
+      </div>
+
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#segmentos">Segmentos</a></li>
+          <li><a href="#trabalhos">Trabalhos</a></li>
+          <li><a href="#calendario">Calendário</a></li>
+          <li><a href="#grama">Grama esmeralda</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <ul class="contact">
+          <li>
+            <a href="https://wa.me/5512974102999" target="_blank" rel="noopener">
+              <span class="ico">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3 1.3 4.7 1.3h.3c5.5 0 10-4.5 10-10S17.5 2 12 2Zm.3 18.2h-.3a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 20 12a8.2 8.2 0 0 1-7.7 8.2Z"/><path d="M17.3 14.5c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1a8.3 8.3 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.4c.1-.1.1-.3 0-.4-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4C6.4 7.4 6 8 6 9.2c0 1.2.9 2.3 1 2.5.1.1 1.8 2.7 4.3 3.8.6.3 1.1.4 1.4.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2 0-.1-.2-.2-.5-.3Z"/></svg>
+              </span>
+              <span><b>WhatsApp</b><span class="val">+55 12 97410-2999</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/rnnambiental" target="_blank" rel="noopener">
+              <span class="ico">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <span><b>Instagram</b><span class="val">@rnnambiental</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:contato@rnnpaisagismo.com">
+              <span class="ico">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.6" y="5" width="18.8" height="14" rx="2.5"/><path d="m3.6 7 8.4 6 8.4-6"/></svg>
+              </span>
+              <span><b>E-mail</b><span class="val">contato@rnnpaisagismo.com</span></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Ca%C3%A7apava%2C+SP" target="_blank" rel="noopener">
+              <span class="ico">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10.5c0 5.2-8 11.5-8 11.5s-8-6.3-8-11.5a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.3" r="2.9"/></svg>
+              </span>
+              <span><b>Localização</b><span class="val">Caçapava — SP</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <div class="foot-legal">
+        <span>© 2026 RNN Ambiental — Soluções Ambientais Integradas</span>
+        <span>Serviços, frequência, materiais, prazos e valores dependem da avaliação de cada área</span>
+      </div>
+      <a class="to-top" href="#topo">
+        Voltar ao topo
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<a class="wa" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"
+   href="https://wa.me/5512974102999?text=Ol%C3%A1%2C%20Renan.%20Vim%20atrav%C3%A9s%20do%20site%20da%20RNN%20Ambiental%20e%20gostaria%20de%20solicitar%20uma%20avalia%C3%A7%C3%A3o.">
+  <svg width="25" height="25" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M17.3 14.5c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.1c-.2.2-.3.2-.6.1a8.3 8.3 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.4c.1-.1.1-.3 0-.4-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4C6.4 7.4 6 8 6 9.2c0 1.2.9 2.3 1 2.5.1.1 1.8 2.7 4.3 3.8.6.3 1.1.4 1.4.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.6.2-1.1.2-1.2 0-.1-.2-.2-.5-.3Z" fill="#fff"/>
+    <path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.6 1.4 5.1L2 22l5-1.3c1.4.8 3 1.3 4.7 1.3h.3c5.5 0 10-4.5 10-10S17.5 2 12 2Zm.3 18.2h-.3a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 20 12a8.2 8.2 0 0 1-7.7 8.2Z" fill="#fff"/>
+  </svg>
+</a>
+
+<!-- ============================ VISUALIZADOR ============================ -->
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Visualizador de fotos">
+  <button class="lb-btn lb-close" id="lb-close" type="button" aria-label="Fechar visualizador">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <button class="lb-btn lb-prev" id="lb-prev" type="button" aria-label="Foto anterior">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="lb-btn lb-next" id="lb-next" type="button" aria-label="Próxima foto">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="lb-stage" id="lb-stage">
+    <figure class="lb-frame"><img id="lb-img" alt=""></figure>
+    <aside class="lb-plate">
+      <p class="lb-count"><b id="lb-i">1</b> / <span id="lb-n">1</span></p>
+      <h3 id="lb-title"></h3>
+      <p class="lb-meta" id="lb-meta"></p>
+      <a class="lb-cta" id="lb-cta" target="_blank" rel="noopener">
+        Quero algo assim na minha área
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </aside>
+  </div>
+
+  <div class="lb-strip" id="lb-strip" role="group" aria-label="Miniaturas"></div>
+</div>
+
+<!-- Dados estruturados: ajudam o Google a mostrar telefone, horário e serviços -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LandscapingBusiness",
+  "name": "RNN Ambiental",
+  "alternateName": "RNN Paisagismo",
+  "description": "Manutenção de áreas verdes, paisagismo, poda técnica e fornecimento de grama esmeralda para condomínios, empresas, comércios, chácaras e residências.",
+  "url": "https://decamsite.com/rnn-ambiental/",
+  "telephone": "+5512974102999",
+  "email": "contato@rnnpaisagismo.com",
+  "image": "https://decamsite.com/rnn-ambiental/paisagismo-residencial-3.jpeg",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Caçapava",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "areaServed": { "@type": "Place", "name": "Caçapava e região do Vale do Paraíba, SP" },
+  "sameAs": ["https://www.instagram.com/rnnambiental"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "07:30",
+    "closes": "17:30"
+  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Manutenção de áreas verdes"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Paisagismo"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Poda técnica"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Gramados"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Limpeza e organização de áreas externas"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Fornecimento de grama esmeralda"}}
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"A RNN Ambiental atende empresas e condomínios?","acceptedAnswer":{"@type":"Answer","text":"Sim. A empresa atua com manutenção de áreas verdes empresariais, comerciais e condominiais, conforme a necessidade e o porte do espaço."}},
+    {"@type":"Question","name":"É possível contratar manutenção recorrente?","acceptedAnswer":{"@type":"Answer","text":"A frequência pode ser definida após a avaliação da área, das condições do jardim e da necessidade de manutenção."}},
+    {"@type":"Question","name":"Vocês atendem chácaras e sítios?","acceptedAnswer":{"@type":"Answer","text":"Sim. A disponibilidade e as condições do atendimento devem ser confirmadas após o envio da localização e das informações sobre a área."}},
+    {"@type":"Question","name":"É possível receber orçamento pelo WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Fotografias, vídeos e informações ajudam em uma avaliação inicial. Dependendo do serviço e do tamanho da área, pode ser necessária uma visita."}},
+    {"@type":"Question","name":"Vocês vendem grama esmeralda?","acceptedAnswer":{"@type":"Answer","text":"O fornecimento depende da quantidade e da disponibilidade. O frete deve ser consultado de acordo com a localização."}},
+    {"@type":"Question","name":"Qual região é atendida?","acceptedAnswer":{"@type":"Answer","text":"A empresa está localizada em Caçapava, São Paulo. A disponibilidade para cidades da região deve ser confirmada pelo WhatsApp."}}
+  ]
+}
+</script>
+
+<script>
+(function(){
+  'use strict';
+
+  /* header — estado ao rolar */
+  var hdr = document.getElementById('hdr');
+  var onScroll = function(){ hdr.classList.toggle('stuck', window.scrollY > 30); };
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  /* menu mobile */
+  var btn = document.getElementById('menu-btn');
+  var menu = document.getElementById('menu');
+  var scrim = document.getElementById('nav-scrim');
+  scrim.hidden = false;
+  var setMenu = function(open){
+    menu.classList.toggle('open', open);
+    scrim.classList.toggle('on', open);
+    document.body.classList.toggle('nav-open', open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
+  };
+  var closeMenu = function(){ setMenu(false); };
+  btn.addEventListener('click', function(){ setMenu(!menu.classList.contains('open')); });
+  scrim.addEventListener('click', closeMenu);
+  Array.prototype.forEach.call(menu.querySelectorAll('a'), function(a){
+    a.addEventListener('click', closeMenu);
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && menu.classList.contains('open')) { closeMenu(); btn.focus(); }
+  });
+
+  /* FAQ — um aberto por vez */
+  var items = Array.prototype.slice.call(document.querySelectorAll('.faq-item'));
+  var setPanel = function(item, open){
+    var panel = item.querySelector('.faq-a');
+    var q = item.querySelector('.faq-q');
+    item.classList.toggle('open', open);
+    q.setAttribute('aria-expanded', String(open));
+    panel.style.maxHeight = open ? (panel.scrollHeight + 'px') : '';
+  };
+  items.forEach(function(item){
+    if (item.classList.contains('open')) setPanel(item, true);
+    item.querySelector('.faq-q').addEventListener('click', function(){
+      var willOpen = !item.classList.contains('open');
+      items.forEach(function(other){ setPanel(other, false); });
+      if (willOpen) setPanel(item, true);
+    });
+  });
+  window.addEventListener('resize', function(){
+    items.forEach(function(item){
+      if (item.classList.contains('open')) setPanel(item, true);
+    });
+  });
+
+  /* filtro da galeria */
+  var filters = Array.prototype.slice.call(document.querySelectorAll('.filter'));
+  var works = Array.prototype.slice.call(document.querySelectorAll('.work'));
+  filters.forEach(function(f){
+    f.addEventListener('click', function(){
+      filters.forEach(function(o){ o.setAttribute('aria-pressed','false'); });
+      f.setAttribute('aria-pressed','true');
+      var cat = f.dataset.filter;
+      works.forEach(function(w){
+        w.hidden = !(cat === 'todos' || w.dataset.cat === cat);
+      });
+    });
+  });
+
+  /* foto de segmento que ainda não existe na pasta: cai para o tratamento tipográfico */
+  Array.prototype.forEach.call(document.querySelectorAll('.plate img'), function(img){
+    img.addEventListener('error', function(){ img.closest('.plate').classList.add('no-photo'); });
+    if (img.complete && img.naturalWidth === 0) img.closest('.plate').classList.add('no-photo');
+  });
+
+  /* ---------- visualizador de fotos ---------- */
+  var lb     = document.getElementById('lb');
+  var lbImg  = document.getElementById('lb-img');
+  var lbStage= document.getElementById('lb-stage');
+  var lbStrip= document.getElementById('lb-strip');
+  var lbClose= document.getElementById('lb-close');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var WA = 'https://wa.me/5512974102999?text=';
+
+  var shots = works.map(function(w){
+    var img = w.querySelector('img');
+    var cap = w.querySelector('figcaption');
+    return {
+      el: w, src: img.getAttribute('src'), alt: img.getAttribute('alt') || '',
+      title: cap.querySelector('b').textContent, meta: cap.querySelector('span').textContent
+    };
+  });
+  var shown = [];   // recorte visível no momento em que o visualizador abriu
+  var at = 0;
+  var origin = null;
+
+  function paint(){
+    var s = shown[at];
+    lbImg.src = s.src;
+    lbImg.alt = s.alt;
+    document.getElementById('lb-title').textContent = s.title;
+    document.getElementById('lb-meta').textContent = s.meta;
+    document.getElementById('lb-i').textContent = at + 1;
+    document.getElementById('lb-n').textContent = shown.length;
+    document.getElementById('lb-cta').href = WA + encodeURIComponent(
+      'Olá, Renan. Vi o registro "' + s.title + '" no site da RNN Ambiental e gostaria de solicitar uma avaliação parecida.');
+    Array.prototype.forEach.call(lbStrip.children, function(b, i){
+      b.setAttribute('aria-current', String(i === at));
+      if (i === at) b.scrollIntoView({block:'nearest', inline:'center', behavior: reduce ? 'auto' : 'smooth'});
+    });
+  }
+
+  function buildStrip(){
+    lbStrip.textContent = '';
+    shown.forEach(function(s, i){
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Ver: ' + s.title);
+      var t = document.createElement('img');
+      t.src = s.src; t.alt = '';
+      b.appendChild(t);
+      b.addEventListener('click', function(){ go(i); });
+      lbStrip.appendChild(b);
+    });
+  }
+
+  /* transição de elemento compartilhado: a miniatura literalmente vira a foto
+     grande. Onde a API não existe (ou o usuário pediu menos movimento) a troca
+     acontece direto, sem quebrar nada. */
+  function morph(from, to, run){
+    if (!document.startViewTransition || reduce) { run(); return; }
+    if (from) from.style.viewTransitionName = 'lb-morph';
+    var done = function(){ if (to) to.style.viewTransitionName = ''; };
+    document.startViewTransition(function(){
+      if (from) from.style.viewTransitionName = '';
+      run();
+      if (to) to.style.viewTransitionName = 'lb-morph';
+    }).finished.then(done, done);
+  }
+
+  function openAt(i){
+    shown = shots.filter(function(s){ return !s.el.hidden; });
+    at = i;
+    origin = shown[at].el.querySelector('img');
+    var pre = new Image();
+    var start = function(){
+      buildStrip();
+      morph(origin, lbImg, function(){
+        paint();
+        lb.hidden = false;
+        document.body.classList.add('nav-open');
+      });
+      lbClose.focus();
+    };
+    pre.onload = pre.onerror = start;
+    pre.src = shown[at].src;
+    if (pre.complete) start();
+  }
+
+  function shut(){
+    var back = origin;
+    morph(lbImg, back, function(){
+      lb.hidden = true;
+      document.body.classList.remove('nav-open');
+    });
+    if (back) { var o = back.closest('.work').querySelector('.work-open'); if (o) o.focus(); }
+  }
+
+  function go(i){
+    var next = (i + shown.length) % shown.length;
+    if (next === at) return;
+    lbImg.classList.add('swap');
+    var pre = new Image();
+    var apply = function(){ at = next; paint(); lbImg.classList.remove('swap'); };
+    pre.onload = pre.onerror = function(){ setTimeout(apply, reduce ? 0 : 130); };
+    pre.src = shown[next].src;
+    if (pre.complete) setTimeout(apply, reduce ? 0 : 130);
+  }
+
+  works.forEach(function(w, i){
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'work-open';
+    b.setAttribute('aria-label', 'Ampliar: ' + shots[i].title);
+    b.addEventListener('click', function(){
+      var vis = shots.filter(function(s){ return !s.el.hidden; });
+      openAt(vis.indexOf(shots[i]));
+    });
+    w.appendChild(b);
+  });
+
+  lbClose.addEventListener('click', shut);
+  document.getElementById('lb-prev').addEventListener('click', function(){ go(at - 1); });
+  document.getElementById('lb-next').addEventListener('click', function(){ go(at + 1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb || e.target === lbStage) shut(); });
+  document.addEventListener('keydown', function(e){
+    if (lb.hidden) return;
+    if (e.key === 'Escape') shut();
+    else if (e.key === 'ArrowRight') go(at + 1);
+    else if (e.key === 'ArrowLeft') go(at - 1);
+  });
+  var swipeX = null;
+  lb.addEventListener('touchstart', function(e){ swipeX = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if (swipeX === null) return;
+    var dx = e.changedTouches[0].clientX - swipeX; swipeX = null;
+    if (Math.abs(dx) > 55) go(dx < 0 ? at + 1 : at - 1);
+  }, {passive:true});
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "Bem-Te-Vi English Academy",
+  "short_name": "Bem-Te-Vi",
+  "description": "Curso de Inglês Integrativo: idioma, neurociência e autoconhecimento.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF6EC",
+  "theme_color": "#26113A",
+  "icons": [
+    { "src": "img/apple-touch-icon.png", "sizes": "200x200", "type": "image/png" },
+    { "src": "img/favicon-64.png", "sizes": "64x64", "type": "image/png" }
+  ]
+}
