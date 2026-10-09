@@ -327,6 +327,7 @@ footer nav a:hover{color:var(--tx)}
  .hero{padding-top:130px;min-height:0}.hero .grid{grid-template-columns:1fr;gap:48px}.stage{max-width:620px;width:100%;margin:0 auto}
  .feat,.feat.rev{grid-template-columns:1fr}.feat .ph,.feat.rev .ph{order:0;padding:16px 16px 0}.feat .tx{padding:28px 24px 32px}
  .about,.brief,.faq{grid-template-columns:1fr;gap:40px}.idcard{position:relative;top:0}.brief{padding:36px 24px}
+ .nums{grid-template-columns:repeat(6,1fr)}.nums>*{grid-column:span 2}.nums>:nth-child(n+4){grid-column:span 3}
  .why{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr;gap:36px}.steps::before{display:none}
  .nav .links,.nav .in>.btn{display:none}.burger{display:block}
  .nav.open .in{background:#fffffff5;border-color:var(--ln);backdrop-filter:blur(16px);flex-wrap:wrap}
@@ -335,7 +336,7 @@ footer nav a:hover{color:var(--tx)}
 }
 @media(max-width:680px){
  section{padding:84px 0}.sec-head{margin-bottom:40px}
- .nums{grid-template-columns:1fr 1fr;margin-top:56px}.nums>*{padding:24px 20px}.nums>:last-child{grid-column:span 2}
+ .nums{grid-template-columns:1fr 1fr;margin-top:56px}.nums{grid-template-columns:1fr 1fr}.nums>*{padding:24px 20px}.nums>:nth-child(n){grid-column:auto}.nums>:last-child{grid-column:span 2}
  .works,.why,.steps{grid-template-columns:1fr}.card.w,.card.w2{grid-column:auto}.card.w .mob,.card.w2 .mob{width:27%}.card.w .sh,.card.w2 .sh{height:auto}.svc,.svc.w{grid-column:span 6;padding:28px 24px}
  .row2{grid-template-columns:1fr}.cta-row .btn{flex:1 1 100%}.proof{white-space:normal;font-size:.8rem}
  .chip.c2{display:none}.chip.c1{left:0;bottom:4%}
@@ -380,7 +381,7 @@ footer nav a:hover{color:var(--tx)}
    <div>
     <div class="status rv"><span class="dot"></span><span><b>Agenda aberta</b> para novos projetos</span></div>
     <h1 class="rv"><span>Sites que <em class="grad">vendem</em>.</span><span class="l2">Sistemas que resolvem.</span><span class="l2">IA que trabalha por você.</span></h1>
-    <p class="lead rv">Engenharia de Computação com mais de 20 anos de experiência, com trajetória em sistemas para <b>Embraer, Azul, Gol e TAM</b>, agora a serviço da <b>sua empresa</b>. Design que impressiona, SEO que coloca você no Google e WhatsApp que não para de tocar.</p>
+    <p class="lead rv">Mais de 20 anos de Engenharia de Computação, com passagem por sistemas da <b>Embraer, Azul, Gol e TAM</b>, agora a serviço da <b>sua empresa</b>. Design que impressiona, SEO que coloca você no Google e um WhatsApp que não para de tocar.</p>
     <div class="cta-row rv">
      <a class="btn btn-p" href="#orcamento"><svg><use href="#i-wa"/></svg>Quero um orçamento</a>
      <a class="btn btn-g" href="#trabalhos">Ver trabalhos <svg><use href="#i-arr"/></svg></a>
@@ -425,7 +426,7 @@ footer nav a:hover{color:var(--tx)}
      <span class="badge mono">Produto próprio · IA · No ar</span>
      <h3>Bia: secretária de <em>IA</em> que atende o WhatsApp 24h</h3>
      <p>SaaS criado por nós: um agente de inteligência artificial que agenda, confirma e cancela compromissos sozinho no Google Calendar, reduzindo faltas e recuperando clientes fora do horário comercial.</p>
-     <div class="kpi"><div><b>24/7</b><span>atendimento</span></div><div><b>5 min</b><span>setup via QR Code</span></div><div><b>SaaS</b><span>receita recorrente</span></div></div>
+     <div class="kpi"><div><b>24/7</b><span>atendimento</span></div><div><b>5 min</b><span>setup via QR Code</span></div><div><b>Google</b><span>Agenda integrada</span></div></div>
      <div class="tags"><span>IA / LLM</span><span>WhatsApp</span><span>Google Calendar</span><span>LGPD</span></div>
      <span class="more">Conhecer a Bia</span>
     </div>
@@ -462,10 +463,10 @@ footer nav a:hover{color:var(--tx)}
      <ul><li>Atendentes virtuais 24h no WhatsApp</li><li>Automação de processos repetitivos</li><li>Integração de LLMs aos seus dados</li><li>Produto próprio no ar: a Bia</li></ul><span class="glyph">IA</span></article>
     <article class="svc rv"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
      <h3>Sistemas sob medida</h3><p>ERPs, painéis, integrações e APIs robustas, com a mesma engenharia usada em grandes empresas.</p>
-     <ul><li>Web e desktop</li><li>Integrações com pagamentos e ERPs</li><li>Java, Node.js, React</li></ul><span class="glyph">{ }</span></article>
+     <ul><li>Web e desktop</li><li>Integrações com pagamentos e ERPs</li><li>Java, Node.js, TypeScript, React</li></ul><span class="glyph">{ }</span></article>
     <article class="svc rv"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
      <h3>Apps Mobile</h3><p>Aplicativos com experiência fluida, do protótipo à publicação na loja.</p>
-     <ul><li>Android e iOS</li><li>Site de lançamento incluso</li><li>Exemplo: NovaRemote, em teste fechado</li></ul><span class="glyph">app</span></article>
+     <ul><li>Android e multiplataforma</li><li>Site de lançamento incluso</li><li>Exemplo: NovaRemote, em teste fechado</li></ul><span class="glyph">app</span></article>
     <article class="svc rv"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/></svg></div>
      <h3>Catálogos & Pedidos</h3><p>Monte a cesta, escolha o kit, peça pelo WhatsApp: vitrines digitais que vendem sem complicar.</p>
      <ul><li>Carrinho que gera pedido no WhatsApp</li><li>Catálogo fácil de atualizar</li><li>Ideal para comércio local</li></ul><span class="glyph">R$</span></article>
@@ -483,7 +484,7 @@ footer nav a:hover{color:var(--tx)}
     <div><span class="n mono">01</span><h3>Engenheiro de Computação no seu projeto</h3><p>Quem conversa com você é quem desenha e programa. Sem repasse, sem telefone sem fio.</p></div>
     <div><span class="n mono">02</span><h3>Feito para o Google</h3><p>SEO técnico desde a primeira linha: velocidade, estrutura semântica, dados estruturados e SEO local.</p></div>
     <div><span class="n mono">03</span><h3>Feito para vender</h3><p>Cada página leva o visitante a uma ação: chamar no WhatsApp, pedir orçamento ou comprar.</p></div>
-    <div><span class="n mono">04</span><h3>Design único</h3><p>Olhe o portfólio: nenhum site parece com o outro. Cada marca ganha uma identidade própria.</p></div>
+    <div><span class="n mono">04</span><h3>Design único</h3><p>Veja as propostas: nenhuma se parece com a outra. Cada marca ganha uma identidade própria.</p></div>
     <div><span class="n mono">05</span><h3>Leve e rápido</h3><p>Código enxuto, imagens otimizadas e nada de plugins pesados. Abre rápido até no 4G.</p></div>
     <div><span class="n mono">06</span><h3>IA no DNA</h3><p>Pós-graduação em Engenharia de Software com IA Aplicada e produto de IA próprio em produção.</p></div>
    </div>
@@ -536,9 +537,9 @@ footer nav a:hover{color:var(--tx)}
     <div class="tl">
      <div class="rv"><span class="mono">2004 – 2010 · BoldCron Technologies</span><h4>Pagamentos e antifraude</h4><p>Gateway de pagamentos BPag, cobrança recorrente, antifraude integrado a ClearSale e Cybersource, ERP para redes como Polishop e Nobel.</p></div>
      <div class="rv"><span class="mono">2010 – 2012 · Compsis</span><h4>Telemetria veicular</h4><p>Desenvolvedor sênior e arquiteto de plataformas de monitoramento de frotas e computadores de bordo.</p></div>
-     <div class="rv"><span class="mono">2012 – 2013 · UOL Diveo</span><h4>Integrações para aéreas</h4><p>Proxies que conectam Azul, TAM e Gol ao gateway de pagamentos e plataforma de BPO financeiro.</p></div>
-     <div class="rv"><span class="mono">2013 – 2021 · GSW Software · Embraer</span><h4>Sistemas para a Embraer</h4><p>Gestão de estoque integrada ao SAP, reparo de peças em todas as plantas e o novo e-commerce da aviação executiva.</p></div>
-     <div class="rv"><span class="mono">2021 – hoje · Resmark Systems (EUA)</span><h4>Engenharia full stack internacional</h4><p>Time de engenharia de empresa de software de Salt Lake City, Utah, em paralelo à Ferreiro Corrêa Software.</p></div>
+     <div class="rv"><span class="mono">2012 – 2013 · UOL Diveo</span><h4>Integrações para companhias aéreas</h4><p>Proxies que conectam Azul, TAM e Gol ao gateway de pagamentos e plataforma de BPO financeiro.</p></div>
+     <div class="rv"><span class="mono">2013 – 2021 · GSW Software · Embraer</span><h4>Sistemas para a Embraer</h4><p>Gestão de estoque integrada ao SAP, reparo de peças em todas as plantas e o e-commerce da aviação executiva.</p></div>
+     <div class="rv"><span class="mono">2021 – hoje · Resmark Systems (EUA)</span><h4>Engenharia full stack internacional</h4><p>Engenheiro full stack em empresa de software de Salt Lake City, Utah, em paralelo à Ferreiro Corrêa Software.</p></div>
     </div>
     <div class="stack rv"><span>Java</span><span>Spring</span><span>Node.js</span><span>TypeScript</span><span>React</span><span>Angular</span><span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>AWS</span><span>Inteligência Artificial</span><span>LLMs & Agentes de IA</span><span>WhatsApp API</span><span>SEO técnico</span></div>
    </div>
@@ -551,7 +552,7 @@ footer nav a:hover{color:var(--tx)}
     <div>
      <span class="eyebrow mono">Orçamento sem compromisso</span>
      <h2>Conte seu projeto em <span class="grad">30 segundos</span>.</h2>
-     <p class="lead">Marque as opções e envie direto pelo WhatsApp. Você fala com o engenheiro, não com um robô de vendas.</p>
+     <p class="lead">Marque as opções e envie direto pelo WhatsApp. Você fala direto com o engenheiro, não com um vendedor.</p>
      <div class="perks">
       <div><svg><use href="#i-check"/></svg>Proposta clara, com escopo e valor fechados</div>
       <div><svg><use href="#i-check"/></svg>Atendimento remoto, do Brasil para o mundo</div>
@@ -564,7 +565,7 @@ footer nav a:hover{color:var(--tx)}
       <label><input type="radio" name="tipo" value="Landing page"><span>Landing page</span></label>
       <label><input type="radio" name="tipo" value="Catálogo / pedidos"><span>Catálogo / pedidos</span></label>
       <label><input type="radio" name="tipo" value="Sistema sob medida"><span>Sistema sob medida</span></label>
-      <label><input type="radio" name="tipo" value="IA / Chatbot"><span>IA / Chatbot</span></label>
+      <label><input type="radio" name="tipo" value="IA / Agente no WhatsApp"><span>IA / Agente no WhatsApp</span></label>
       <label><input type="radio" name="tipo" value="App mobile"><span>App mobile</span></label>
      </div></fieldset>
      <fieldset><legend>Qual o principal objetivo? <small>(pode marcar vários)</small></legend><div class="opts">
@@ -591,7 +592,7 @@ footer nav a:hover{color:var(--tx)}
   <div class="wrap faq">
    <div class="rv"><span class="eyebrow mono">Dúvidas</span><h2>Perguntas <span class="grad">frequentes</span></h2><p class="lead">Não achou sua resposta? Chame no WhatsApp, a gente responde rápido.</p></div>
    <div class="rv">
-    <details open><summary>Quanto custa um site?</summary><p>Depende do escopo: uma landing page é bem diferente de um site multipágina com catálogo ou de um sistema. Depois de uma conversa rápida você recebe uma proposta com escopo e valor fechados, sem surpresas no meio do caminho.</p></details>
+    <details open><summary>Quanto custa um site?</summary><p>Depende do escopo: uma landing page é bem diferente de um site multipágina com catálogo ou de um sistema. Depois de uma conversa rápida, você recebe uma proposta com escopo e valor fechados, sem surpresas no meio do caminho.</p></details>
     <details><summary>Meu site vai aparecer no Google?</summary><p>Todo projeto sai com SEO técnico aplicado: estrutura semântica, títulos e descrições otimizados, dados estruturados, sitemap, velocidade e SEO local para a sua cidade. A posição final depende da concorrência, mas seu site nasce com a base certa para ranquear.</p></details>
     <details><summary>Quanto tempo leva?</summary><p>Landing pages e sites institucionais costumam ser os mais rápidos. Sistemas e projetos de IA são planejados em etapas, com entregas parciais para você acompanhar a evolução. O prazo combinado fica claro na proposta.</p></details>
     <details><summary>Vocês atendem fora do Vale do Paraíba?</summary><p>Sim. O atendimento é 100% remoto: atendemos clientes em qualquer lugar do Brasil e do mundo.</p></details>
@@ -639,19 +640,19 @@ footer nav a:hover{color:var(--tx)}
 <script>
 const WA='5512991359134';
 const P=[
- ["osawa","Osawa Indústria","Indústria","Usinagem, tornearia, corte e dobra com 67 anos de história. Site premium com desenho técnico animado, linha do tempo de três gerações e orçamento direto pelo WhatsApp.",["Premium","Animações","B2B"]],
- ["ribeiro","Ribeiro Móveis e Colchões","Varejo","Site multipágina com páginas por categoria e guias de compra pensados para capturar buscas locais de alta intenção em São José dos Campos.",["SEO local","Guias","Multipágina"]],
- ["vertice","Vértice Paisagismo","Paisagismo","Landing pages por cidade (São Paulo e Uberlândia), portfólio de projetos e captação de orçamentos.",["Páginas por cidade","Portfólio","Leads"]],
- ["central-villa-branca","Central Villa Branca","Alimentação","Açougue, hortifrúti e mercadinho em Jacareí com montagem de cesta no site e pedido direto pelo WhatsApp.",["Carrinho","WhatsApp","SEO local"]],
- ["gml","GML Corretora de Seguros","Serviços","Seguros auto, vida, residencial, saúde, pet e consórcio, com cotação rápida e sem compromisso pelo WhatsApp.",["Leads","Multiproduto","Nacional"]],
- ["hudson","Hudson Empório de Carnes","Alimentação","Kits de carnes, espetinhos e churrasco com delivery diário via WhatsApp em São José dos Campos.",["Delivery","Catálogo","SEO local"]],
- ["bemtevi","Bem-Te-Vi English Academy","Educação","Landing page para curso de inglês que une idioma, neurociência e autoconhecimento, com foco em matrículas.",["Landing page","Conversão","PWA-ready"]],
- ["lavanderia","Lavanderia Central Barueri","Serviços","Serviços, preços e delivery com estrutura de SEO local para Barueri e conversão direta pelo WhatsApp.",["SEO local","Multipágina","WhatsApp"]],
- ["protec","Protec Toldos","Construção","Toldos, coberturas e fachadas de alto padrão. Site premium que comunica engenharia e acabamento.",["Premium","Galeria","Orçamento"]],
- ["destaque-vidros","Destaque Vidros","Construção","Vidraçaria de precisão: temperados, box, espelhos, fachadas e guarda-corpos com apresentação elegante.",["Landing page","Visual","Leads"]],
- ["renan-paisagismo","RNN Ambiental","Paisagismo","Manutenção de áreas verdes, poda técnica e grama esmeralda para condomínios, empresas e residências.",["Galeria","SEO local","B2B"]],
+ ["osawa","Osawa Indústria","Indústria","Indústria de usinagem com 67 anos de história. Proposta premium com desenho técnico animado, linha do tempo de três gerações e orçamento direto pelo WhatsApp.",["Premium","Animações","B2B"]],
+ ["ribeiro","Ribeiro Móveis e Colchões","Varejo","Loja de móveis com site multipágina, páginas por categoria e guias de compra pensados para capturar quem já está pronto para comprar.",["SEO local","Guias","Multipágina"]],
+ ["vertice","Vértice Paisagismo","Paisagismo","Paisagismo com landing pages por cidade (São Paulo e Uberlândia), galeria de projetos e captação de orçamentos.",["Páginas por cidade","Portfólio","Leads"]],
+ ["central-villa-branca","Central Villa Branca","Alimentação","Açougue e hortifrúti com montagem de cesta no próprio site e pedido enviado direto para o WhatsApp da loja.",["Carrinho","WhatsApp","SEO local"]],
+ ["gml","GML Corretora de Seguros","Serviços","Corretora com seis linhas de seguro e consórcio numa única página, cada uma com cotação rápida pelo WhatsApp.",["Leads","Multiproduto","Nacional"]],
+ ["hudson","Hudson Empório de Carnes","Alimentação","Empório de carnes com catálogo de kits, espetinhos e churrasco e pedido de delivery pelo WhatsApp.",["Delivery","Catálogo","SEO local"]],
+ ["bemtevi","Bem-Te-Vi English Academy","Educação","Landing page de alta conversão para curso de inglês que une idioma, neurociência e autoconhecimento.",["Landing page","Conversão","PWA-ready"]],
+ ["lavanderia","Lavanderia Central Barueri","Serviços","Lavanderia com serviços, preços e delivery, SEO local para Barueri e conversão direta pelo WhatsApp.",["SEO local","Multipágina","WhatsApp"]],
+ ["protec","Protec Toldos","Construção","Toldos, coberturas e fachadas de alto padrão, com visual premium que comunica engenharia e acabamento.",["Premium","Galeria","Orçamento"]],
+ ["destaque-vidros","Destaque Vidros","Construção","Vidraçaria de precisão com visual sofisticado para temperados, box, espelhos, fachadas e guarda-corpos.",["Landing page","Visual","Leads"]],
+ ["renan-paisagismo","RNN Ambiental","Paisagismo","Manutenção de áreas verdes e paisagismo, com galeria de trabalhos e foco em condomínios e empresas.",["Galeria","SEO local","B2B"]],
  ["toldos-milena","Toldos Milena","Construção","Toldos, coberturas e luminosos sob medida em Caçapava/SP, com catálogo de soluções e pedido de orçamento.",["SEO local","Catálogo","Orçamento"]],
- ["tecnoway","Tecnoway Auto Peças","Varejo","Peças automotivas novas, recondicionadas e remanufaturadas em São José dos Campos, com disk entrega.",["Catálogo","SEO local","Contato"]]
+ ["tecnoway","Tecnoway Auto Peças","Varejo","Autopeças novas, recondicionadas e remanufaturadas, com catálogo por categoria e disk entrega em destaque.",["Catálogo","SEO local","Disk entrega"]]
 ];
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 document.body.classList.remove('no-js');
