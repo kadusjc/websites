@@ -405,7 +405,7 @@ footer nav a:hover{color:var(--tx)}
  <div class="wrap">
   <div class="nums rv">
    <div><b class="grad" data-n="20" data-s="+">0</b><span>anos de engenharia de software</span></div>
-   <div><b class="grad" data-n="13" id="np2">0</b><span>propostas de site completas e navegáveis</span></div>
+   <div><b class="grad" data-n="14" id="np2">0</b><span>propostas de site completas e navegáveis</span></div>
    <div><b class="grad" data-n="2">0</b><span>produtos próprios: SaaS de IA e app Android</span></div>
    <a href="https://www.amazon.com.br/dp/B0CPDNP4KP?date=1" target="_blank" rel="noopener"><b class="grad" data-n="1">0</b><span>livro publicado sobre React JS ↗</span></a>
    <a href="https://www.youtube.com/@Capi-Capi-Capivara" target="_blank" rel="noopener"><b class="grad" data-n="1">0</b><span>vídeo infantil no YouTube ↗</span></a>
@@ -640,6 +640,7 @@ footer nav a:hover{color:var(--tx)}
 <script>
 const WA='5512991359134';
 const P=[
+ ["telegama","Telegama Telecomunicações","Tecnologia","Telecom com 39 anos no Brooklin. Logo repaginado, painel de câmeras e PABX animado, soluções para empresa e casa e orçamento montado direto no WhatsApp.",["Rebrand","Animações","WhatsApp"]],
  ["osawa","Osawa Indústria","Indústria","Indústria de usinagem com 67 anos de história. Proposta premium com desenho técnico animado, linha do tempo de três gerações e orçamento direto pelo WhatsApp.",["Premium","Animações","B2B"]],
  ["ribeiro","Ribeiro Móveis e Colchões","Varejo","Loja de móveis com site multipágina, páginas por categoria e guias de compra pensados para capturar quem já está pronto para comprar.",["SEO local","Guias","Multipágina"]],
  ["vertice","Vértice Paisagismo","Paisagismo","Paisagismo com landing pages por cidade (São Paulo e Uberlândia), galeria de projetos e captação de orçamentos.",["Páginas por cidade","Portfólio","Leads"]],
@@ -677,7 +678,8 @@ if(!rm)setInterval(()=>{if(document.hidden)return;const a=vpD.children,b=vpM.chi
 
 /* portfólio */
 const W=$('#works'),F=$('#filters');
-W.innerHTML=P.map(([d,n,c,t,tg],i)=>`<a class="card rv${i===0?' w':i===P.length-1?' w2':''}" href="${d}/index.html" target="_blank" rel="noopener" data-c="${c}" data-d="${d}" data-n="${n}">
+const lastWide=(P.length+1)%3===2; /* fecha a última linha da grade de 3 colunas */
+W.innerHTML=P.map(([d,n,c,t,tg],i)=>`<a class="card rv${i===0?' w':i===P.length-1&&lastWide?' w2':''}" href="${d}/index.html" target="_blank" rel="noopener" data-c="${c}" data-d="${d}" data-n="${n}">
  <div class="sh"><div class="win"><i></i><img src="img/shots/${d}-d.webp" alt="Página inicial do site ${n}" loading="lazy" width="1200" height="750"></div><div class="mob"><img src="img/shots/${d}-m.webp" alt="" loading="lazy" width="480" height="1039"></div></div>
  <div class="bd"><span class="cat mono">${c} · Proposta</span><h3>${n}</h3><p>${t}</p><div class="ft"><div class="tags">${tg.map(x=>`<span>${x}</span>`).join('')}</div></div><span class="more">Navegar na proposta</span></div></a>`).join('');
 const cats=['Todos',...new Set(P.map(p=>p[2]))];
