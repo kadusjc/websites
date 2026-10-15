@@ -235,6 +235,50 @@ section[id]{scroll-margin-top:78px}
 .add.added{background:#1f7a4a}
 .kits__note{margin-top:28px;font-size:.82rem;color:var(--mute)}
 
+/* ============ CALCULADORA DE CHURRASCO ============ */
+.churras{background:var(--ink);padding-top:0}
+.calc{position:relative;display:grid;grid-template-columns:1.05fr .95fr;border-radius:26px;border:1px solid var(--line);background:linear-gradient(180deg,#1a1413 0%,#120e0d 100%);overflow:hidden;isolation:isolate;box-shadow:0 40px 80px -40px rgba(0,0,0,.9)}
+.calc::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(55% 70% at 0% 100%,rgba(255,106,43,.14),transparent 70%),radial-gradient(40% 50% at 100% 0%,rgba(200,32,61,.14),transparent 70%)}
+.calc>*{min-width:0}
+.calc__body{padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:center}
+.calc__body h2{font-size:clamp(2.6rem,5vw,4.4rem);margin:18px 0 14px}
+.calc__body h2 .serif{color:var(--brass-2)}
+.calc__body .lead{font-size:1rem;margin-bottom:30px}
+.people{display:flex;align-items:center;gap:18px;margin-bottom:14px}
+.people output{font-family:var(--display);font-size:clamp(4.2rem,7vw,6rem);line-height:.85;color:var(--bone);min-width:2ch;font-variant-numeric:tabular-nums}
+.people__lbl{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);line-height:1.5}
+.people__lbl b{display:block;color:var(--brass);font-size:.74rem}
+.people .qty{margin-left:auto}
+.people .qty button{width:44px;height:44px;font-size:1.3rem}
+.range{width:100%;-webkit-appearance:none;appearance:none;height:6px;border-radius:999px;background:linear-gradient(90deg,var(--blood-2) var(--p,20%),rgba(243,236,226,.12) var(--p,20%));outline:none;margin:12px 0 10px;cursor:pointer}
+.range::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:var(--bone);border:5px solid var(--blood);box-shadow:0 6px 16px rgba(0,0,0,.6);cursor:grab;transition:transform .2s}
+.range::-webkit-slider-thumb:active{cursor:grabbing;transform:scale(1.1)}
+.range::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--bone);border:5px solid var(--blood);box-shadow:0 6px 16px rgba(0,0,0,.6);cursor:grab}
+.range:focus-visible{outline:2px solid var(--brass);outline-offset:6px}
+.range__scale{display:flex;justify-content:space-between;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.calc__tips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.calc__tips span{display:inline-flex;align-items:center;gap:.5em;padding:.5em 1em;border:1px solid var(--line);border-radius:999px;font-size:.76rem;color:var(--bone-2)}
+.calc__tips span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brass)}
+.ticket{position:relative;display:flex;flex-direction:column;background:#0d0a09;border-left:1px solid var(--line);padding:clamp(24px,3.4vw,44px)}
+.ticket::before{content:"";position:absolute;left:-1px;top:0;bottom:0;width:1px;background:repeating-linear-gradient(180deg,var(--line-2) 0 8px,transparent 8px 16px)}
+.ticket__head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:14px;border-bottom:1px dashed var(--line-2)}
+.ticket__head b{font-family:var(--display);font-weight:400;font-size:1.5rem;text-transform:uppercase;letter-spacing:.02em}
+.ticket__head span{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);white-space:nowrap}
+.ticket ul{list-style:none;flex:1}
+.ticket li.ticket__grp{display:block;padding:16px 0 4px;border-bottom:0;font-size:.64rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--brass)}
+.people .qty button:disabled{opacity:.35;cursor:default}
+.ticket li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+.ticket li:last-child{border-bottom:0}
+.ticket li span{color:var(--bone-2)}
+.ticket li small{display:block;font-size:.74rem;color:var(--mute)}
+.ticket li b{font-family:var(--display);font-weight:400;font-size:1.25rem;letter-spacing:.02em;white-space:nowrap;color:var(--bone);font-variant-numeric:tabular-nums}
+.ticket__sum{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:16px 0 18px;border-top:1px dashed var(--line-2);margin-top:14px}
+.ticket__sum span{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.ticket__sum b{font-family:var(--display);font-weight:400;font-size:2rem;line-height:1;color:var(--brass-2);white-space:nowrap}
+.ticket .btn{width:100%}
+.ticket .btn.added{--bg:#1f7a4a;box-shadow:none}
+.ticket__note{margin-top:12px;font-size:.76rem;color:var(--mute);text-align:center;line-height:1.5}
+
 /* ============ EMPORIO ============ */
 .emporio{background:var(--ink)}
 .prod{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -378,6 +422,9 @@ footer{border-top:1px solid var(--line);padding:46px 0 120px;font-size:.86rem;co
 .split.in .w > span{transform:none}
 
 /* ============ RESPONSIVE ============ */
+@media (max-width:1280px) and (min-width:1081px){
+  .nav__links{gap:18px;font-size:.72rem;letter-spacing:.1em}
+}
 @media (max-width:1080px){
   .about__media .tag{left:10px}
   .nav__links{display:none}
@@ -405,6 +452,9 @@ footer{border-top:1px solid var(--line);padding:46px 0 120px;font-size:.86rem;co
   .hero__photo img{-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 95%);mask-image:linear-gradient(180deg,#000 0%,transparent 95%)}
   .pillars{grid-template-columns:1fr}
   .map{min-height:380px}
+  .calc{grid-template-columns:1fr}
+  .ticket{border-left:0;border-top:1px solid var(--line)}
+  .ticket::before{left:0;right:0;top:-1px;bottom:auto;width:auto;height:1px;background:repeating-linear-gradient(90deg,var(--line-2) 0 8px,transparent 8px 16px)}
 }
 @media (max-width:560px){
   body{font-size:16px}
@@ -460,6 +510,22 @@ footer{border-top:1px solid var(--line);padding:46px 0 120px;font-size:.86rem;co
   .kit ul{grid-template-columns:1fr 1fr;gap:8px 12px;margin-bottom:16px}
   .kit li{font-size:.8rem;gap:7px}
   .kit li::before{width:5px;height:5px}
+
+  /* calculadora de churrasco */
+  .churras{padding-bottom:56px}
+  .calc{border-radius:20px}
+  .calc__body{padding:26px 18px 24px}
+  .calc__body h2{font-size:clamp(2.3rem,11vw,2.8rem);margin:14px 0 10px}
+  .calc__body .lead{font-size:.94rem;margin-bottom:22px}
+  .people{gap:14px}
+  .people output{font-size:3.8rem}
+  .people .qty button{width:40px;height:40px}
+  .calc__tips{margin-top:20px;gap:6px}
+  .calc__tips span{font-size:.7rem;padding:.45em .85em}
+  .ticket{padding:22px 18px 20px}
+  .ticket li{font-size:.88rem;padding:9px 0}
+  .ticket li b{font-size:1.1rem}
+  .ticket__sum b{font-size:1.7rem}
 
   /* barra "Ver pedido" ocupando a largura */
   .fab.has-cart{left:calc(14px + env(safe-area-inset-left,0px))}
@@ -522,6 +588,7 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
     <nav class="nav__links" aria-label="Principal">
       <a href="#sobre">O Empório</a>
       <a href="#brasa">Na Brasa</a>
+      <a href="#churrasco">Churrasco</a>
       <a href="#kits">Kits do Hudson</a>
       <a href="#emporio">Prateleira</a>
       <a href="#visite">Visite</a>
@@ -637,6 +704,41 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
         <figcaption><b>Hoje tem churrasco</b><span>Sábado e domingo</span></figcaption></figure>
       <figure class="tile t4 rv d3"><img src="img/espetinhos.webp" alt="Banca de espetinhos do Hudson à noite" loading="lazy">
         <figcaption><b>Fim de tarde</b><span>Na calçada do empório</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALCULADORA DE CHURRASCO ============ -->
+<section class="sec churras" id="churrasco" aria-labelledby="calcTitle">
+  <div class="wrap">
+    <div class="calc rv">
+      <div class="calc__body">
+        <span class="eyebrow">Calculadora de churrasco</span>
+        <h2 class="h-display" id="calcTitle">Quantas pessoas <span class="serif">vêm aí?</span></h2>
+        <p class="lead">Diga quantos adultos vêm e a gente monta a lista completa: cortes na medida, espetinhos pra beliscar e o que não pode faltar. Você ajusta tudo depois no pedido.</p>
+        <div class="people">
+          <output id="pplOut" for="ppl" aria-live="polite">10</output>
+          <div class="people__lbl"><b>pessoas</b>adultas</div>
+          <div class="qty"><button type="button" id="pplDec" aria-label="Menos uma pessoa">−</button><button type="button" id="pplInc" aria-label="Mais uma pessoa">+</button></div>
+        </div>
+        <input class="range" type="range" id="ppl" min="2" max="40" value="10" step="1" aria-label="Número de pessoas adultas">
+        <div class="range__scale" aria-hidden="true"><span>2</span><span>20</span><span>40</span></div>
+        <div class="calc__tips">
+          <span>≈ 400 g de carne por adulto</span>
+          <span>Criança conta como meia pessoa</span>
+          <span>Sobra vira almoço de segunda</span>
+        </div>
+      </div>
+      <div class="ticket">
+        <div class="ticket__head"><b>Sua lista</b><span id="ticketFor">pra 10 pessoas</span></div>
+        <ul id="ticketList"></ul>
+        <div class="ticket__sum"><span>Total de carne</span><b id="ticketKg">4 kg</b></div>
+        <button class="btn" type="button" id="addBbq">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 22c4-2 6-5 6-9 0-3-2-5-3-6 0 2-1 3-2 3 0-3-1-6-4-8 0 3-1 5-3 7-1.4 1.4-2 3-2 4 0 4 3 7 8 9z"/></svg>
+          <span>Adicionar ao pedido</span>
+        </button>
+        <p class="ticket__note">Valores dos cortes confirmados no WhatsApp, conforme o peso real das peças.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -788,7 +890,7 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
   <div class="wrap foot">
     <a href="#top" class="brand"><img src="img/logo.webp" alt="" width="46" height="46"><span><b>HUDSON</b><small>Empório de Carnes</small></span></a>
     <div class="foot__links">
-      <a href="#kits">Kits</a><a href="#brasa">Na Brasa</a><a href="#visite">Horários</a>
+      <a href="#kits">Kits</a><a href="#brasa">Na Brasa</a><a href="#churrasco">Calculadora de churrasco</a><a href="#visite">Horários</a>
       <a href="https://www.instagram.com/hudsonemporiodecarnes/" target="_blank" rel="noopener">Instagram</a>
     </div>
     <p>© <span id="yr">2026</span> Hudson Empório de Carnes · R. Dr. Álvaro Augusto de Almeida, 31 · Tatetuba · São José dos Campos – SP</p>
@@ -824,7 +926,7 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
       <div class="field" id="addrField"><label for="fAddr">Endereço de entrega</label><input id="fAddr" type="text" autocomplete="street-address" enterkeyhint="done" placeholder="Endereço: rua, número, bairro"></div>
     </div>
     <div class="drawer__cta">
-      <div class="sum"><span>Total estimado</span><b id="sumTotal">R$ 0,00</b></div>
+      <div class="sum"><span id="sumLbl">Total estimado</span><b id="sumTotal">R$ 0,00</b></div>
       <p class="hint" id="sendHint" hidden>Informe o endereço de entrega.</p>
       <a class="btn" id="sendWa" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4M12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8M20.5 3.5C18.2 1.2 15.2 0 12 0 5.4 0 .1 5.3.1 11.9c0 2.1.5 4.2 1.6 6L0 24l6.3-1.6c1.8 1 3.8 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.5"/></svg>
@@ -899,25 +1001,61 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
   /* ---------- Carrinho -> WhatsApp ---------- */
   const cart = new Map();
   let mode = 'entrega';
+  let bbq = null; // churrasco no pedido: número de pessoas (null = sem churrasco)
   const $ = id => document.getElementById(id);
   const drawer = $('drawer');
+
+  /* ---------- Calculadora de churrasco (~400 g de carne por adulto) ---------- */
+  const BBQ_MIN = 2, BBQ_MAX = 40;
+  // arredonda pra 100 g, nunca menos de 200 g por corte
+  const grams = kg => Math.max(200, Math.round(kg * 10) * 100);
+  const fmtKg = g => g < 1000 ? g + ' g' : (g / 1000).toLocaleString('pt-BR', { maximumFractionDigits: 1 }) + ' kg';
+  const fmtUn = (q, [s, p]) => q + ' ' + (q === 1 ? s : p);
+  function bbqPlan(n) {
+    const kg = n * 0.4;
+    const carnes = [
+      ['Picanha', grams(kg * .30), 'a estrela da grelha'],
+      ['Contra-filé', grams(kg * .20), 'em bifes grossos'],
+      ['Linguiça toscana', grams(kg * .20), 'pra abrir o churrasco'],
+      ['Coxinha da asa', grams(kg * .15), 'temperada'],
+      ['Costela bovina', grams(kg * .15), 'pra quem tem paciência'],
+    ];
+    const extras = [
+      ['Espetinhos', n, ['un', 'un'], 'pra beliscar enquanto assa'],
+      ['Pão de alho', Math.ceil(n / 5), ['pacote', 'pacotes'], ''],
+      ['Carvão', Math.ceil(n / 8), ['saco', 'sacos'], 'de 5 kg'],
+      ['Sal grosso', 1, ['pacote', 'pacotes'], ''],
+    ];
+    return { carnes, extras, totalG: carnes.reduce((a, c) => a + c[1], 0) };
+  }
+  const bbqLabel = n => `Churrasco pra ${n} pessoas`;
 
   function totals() {
     let n = 0, t = 0;
     cart.forEach((q, id) => { n += q; t += q * KITS.find(k => k.n === id).p; });
+    if (bbq) n += 1;
     return { n, t };
   }
   function message() {
     const { t } = totals();
     const lines = [...cart].map(([id, q]) => { const k = KITS.find(x => x.n === id); return `• ${q}x ${k.title} (${brl(k.p)})`; });
+    const bbqLines = [];
+    if (bbq) {
+      const p = bbqPlan(bbq);
+      bbqLines.push(`🔥 ${bbqLabel(bbq)} (≈ ${fmtKg(p.totalG)} de carne):`);
+      p.carnes.forEach(([nm, g]) => bbqLines.push(`• ${fmtKg(g)} de ${nm}`));
+      bbqLines.push(`Pra completar: ${p.extras.map(([nm, q, u]) => `${nm} ${fmtUn(q, u)}`).join(', ')}`);
+      bbqLines.push('(valor do churrasco conforme o peso das peças)');
+    }
     const name = $('fName').value.trim(), addr = $('fAddr').value.trim();
     return [
       'Olá, Hudson! Quero fazer um pedido pelo site:', '',
       ...lines, '',
-      `Total estimado: ${brl(t)}`,
+      ...bbqLines, '',
+      t ? `Total estimado${bbq ? ' dos kits' : ''}: ${brl(t)}` : '',
       mode === 'entrega' ? `Receber: entrega${addr ? ' em ' + addr : ''}` : 'Receber: vou retirar na loja',
       name ? `Nome: ${name}` : ''
-    ].filter((l, i, a) => l !== '' || a[i - 1] !== '').join('\n').trim();
+    ].filter((l, i, a) => l !== '' || (i > 0 && a[i - 1] !== '')).join('\n').trim();
   }
   function render() {
     const { n, t } = totals();
@@ -925,12 +1063,15 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
     btn.classList.toggle('show', n > 0);
     btn.parentElement.classList.toggle('has-cart', n > 0);
     $('cartCount').textContent = n;
-    $('cartTotal').textContent = brl(t).replace(',00', '');
-    $('sumTotal').textContent = brl(t);
-    $('cartLines').innerHTML = n === 0 ? '<p class="empty">Seu pedido está vazio.<br>Adicione um kit pra começar.</p>' :
-      [...cart].map(([id, q]) => { const k = KITS.find(x => x.n === id); return `<div class="line"><div class="line__info"><b>${k.title}</b><span>${k.i.length} itens · ${brl(k.p * q)}</span></div>
-        <div class="qty"><button data-dec="${id}" aria-label="Diminuir">−</button><output>${q}</output><button data-inc="${id}" aria-label="Aumentar">+</button></div></div>`; }).join('') +
-      '<button type="button" class="more" data-close>+ Escolher mais kits</button>';
+    $('cartTotal').textContent = t ? brl(t).replace(',00', '') : (bbq ? 'Churrasco' : 'R$ 0');
+    $('sumTotal').textContent = t ? brl(t) : (bbq ? 'A combinar' : brl(0));
+    $('sumLbl').textContent = bbq ? (t ? 'Total dos kits' : 'Churrasco') : 'Total estimado';
+    const kitLines = [...cart].map(([id, q]) => { const k = KITS.find(x => x.n === id); return `<div class="line"><div class="line__info"><b>${k.title}</b><span>${k.i.length} itens · ${brl(k.p * q)}</span></div>
+        <div class="qty"><button data-dec="${id}" aria-label="Diminuir">−</button><output>${q}</output><button data-inc="${id}" aria-label="Aumentar">+</button></div></div>`; }).join('');
+    const bbqLine = bbq ? `<div class="line"><div class="line__info"><b>${bbqLabel(bbq)}</b><span>≈ ${fmtKg(bbqPlan(bbq).totalG)} de carne · valor confirmado no WhatsApp</span></div>
+        <div class="qty"><button data-dec="bbq" aria-label="Menos pessoas">−</button><output>${bbq}</output><button data-inc="bbq" aria-label="Mais pessoas">+</button></div></div>` : '';
+    $('cartLines').innerHTML = n === 0 ? '<p class="empty">Seu pedido está vazio.<br>Adicione um kit ou monte seu churrasco pra começar.</p>' :
+      kitLines + bbqLine + '<button type="button" class="more" data-close>+ Escolher mais itens</button>';
     $('sendWa').href = `https://wa.me/${WA}?text=${encodeURIComponent(message())}`;
     $('sendWa').style.pointerEvents = n ? '' : 'none';
     $('sendWa').style.opacity = n ? '' : '.5';
@@ -939,17 +1080,19 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
   // Persiste o pedido: no celular, ir pro WhatsApp e voltar costuma recarregar a aba
   const STORE = 'hudson-pedido';
   function save() {
-    try { localStorage.setItem(STORE, JSON.stringify({ cart: [...cart], mode, name: $('fName').value, addr: $('fAddr').value })); } catch {}
+    try { localStorage.setItem(STORE, JSON.stringify({ cart: [...cart], bbq, mode, name: $('fName').value, addr: $('fAddr').value })); } catch {}
   }
   function restore() {
     try {
       const s = JSON.parse(localStorage.getItem(STORE) || 'null'); if (!s) return;
       (s.cart || []).forEach(([id, q]) => { if (KITS.some(k => k.n === id) && q > 0) cart.set(id, q); });
+      if (Number.isInteger(s.bbq) && s.bbq >= BBQ_MIN && s.bbq <= BBQ_MAX) bbq = s.bbq;
       $('fName').value = s.name || ''; $('fAddr').value = s.addr || '';
       if (s.mode === 'retirada') setMode('retirada', false);
     } catch {}
   }
   function setQty(id, q) { q > 0 ? cart.set(id, q) : cart.delete(id); render(); }
+  function setBbq(n) { bbq = n >= BBQ_MIN ? Math.min(BBQ_MAX, n) : null; render(); renderBbq(); }
 
   // Trava o scroll da página por trás (overflow:hidden no body não basta no iOS Safari)
   let isOpen = false, lockY = 0;
@@ -982,8 +1125,11 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
   });
   $('cartLines').addEventListener('click', e => {
     const inc = e.target.closest('[data-inc]'), dec = e.target.closest('[data-dec]');
-    if (inc) setQty(+inc.dataset.inc, cart.get(+inc.dataset.inc) + 1);
-    if (dec) setQty(+dec.dataset.dec, cart.get(+dec.dataset.dec) - 1);
+    const key = inc ? inc.dataset.inc : dec ? dec.dataset.dec : null;
+    if (key === null) return;
+    const d = inc ? 1 : -1;
+    if (key === 'bbq') setBbq(bbq + d);
+    else setQty(+key, cart.get(+key) + d);
   });
   $('cartBtn').addEventListener('click', () => openDrawer(true));
   drawer.addEventListener('click', e => { if (e.target.closest('[data-close]')) openDrawer(false); });
@@ -1001,7 +1147,7 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
   $('fName').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); mode === 'entrega' ? $('fAddr').focus() : $('fName').blur(); } });
   $('fAddr').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); $('fAddr').blur(); } });
   $('sendWa').addEventListener('click', e => {
-    if (!cart.size) { e.preventDefault(); return; }
+    if (!totals().n) { e.preventDefault(); return; }
     if (mode === 'entrega' && !$('fAddr').value.trim()) {
       e.preventDefault();
       $('fAddr').classList.add('invalid'); $('sendHint').hidden = false;
@@ -1010,8 +1156,42 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
     }
     $('sendWa').href = `https://wa.me/${WA}?text=${encodeURIComponent(message())}`;
   });
+  /* ---------- Calculadora: controles e lista ---------- */
+  const ppl = $('ppl');
+  function renderBbq() {
+    const n = +ppl.value;
+    const p = bbqPlan(n);
+    $('pplOut').textContent = n;
+    ppl.style.setProperty('--p', ((n - BBQ_MIN) / (BBQ_MAX - BBQ_MIN) * 100) + '%');
+    $('pplDec').disabled = n <= BBQ_MIN; $('pplInc').disabled = n >= BBQ_MAX;
+    $('ticketFor').textContent = `pra ${n} pessoas`;
+    $('ticketKg').textContent = '≈ ' + fmtKg(p.totalG);
+    $('ticketList').innerHTML =
+      '<li class="ticket__grp" aria-hidden="true">Carnes</li>' +
+      p.carnes.map(([nm, g, note]) => `<li><span>${nm}${note ? `<small>${note}</small>` : ''}</span><b>${fmtKg(g)}</b></li>`).join('') +
+      '<li class="ticket__grp" aria-hidden="true">Pra completar</li>' +
+      p.extras.map(([nm, q, u, note]) => `<li><span>${nm}${note ? `<small>${note}</small>` : ''}</span><b>${fmtUn(q, u)}</b></li>`).join('');
+    const b = $('addBbq');
+    if (!b.classList.contains('added')) b.querySelector('span').textContent = bbq ? (bbq === n ? 'No pedido ✓' : `Atualizar pra ${n} pessoas`) : 'Adicionar ao pedido';
+  }
+  const setPpl = n => { ppl.value = Math.min(BBQ_MAX, Math.max(BBQ_MIN, n)); renderBbq(); };
+  ppl.addEventListener('input', renderBbq);
+  $('pplDec').addEventListener('click', () => setPpl(+ppl.value - 1));
+  $('pplInc').addEventListener('click', () => setPpl(+ppl.value + 1));
+  $('addBbq').addEventListener('click', () => {
+    const b = $('addBbq');
+    setBbq(+ppl.value);
+    b.classList.add('added'); b.querySelector('span').textContent = 'No pedido ✓';
+    clearTimeout(b._t);
+    b._t = setTimeout(() => { b.classList.remove('added'); renderBbq(); }, 1600);
+    const c = $('cartBtn'); c.classList.remove('bump'); void c.offsetWidth; c.classList.add('bump');
+    openDrawer(true);
+  });
+
   restore();
   render();
+  if (bbq) ppl.value = bbq;
+  renderBbq();
 
   /* ---------- Aberto agora (horário de São Paulo) ---------- */
   const HOURS = { 0: [480, 840], 6: [480, 1110] }; // minutos; seg-sex 08:00-19:30
