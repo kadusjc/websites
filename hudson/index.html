@@ -569,6 +569,38 @@ footer{border-top:1px solid var(--line);padding:46px 0 120px;font-size:.86rem;co
   .tile:hover img,.prod__card:hover img,.feed__grid a:hover img{transform:none}
 }
 button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+/* ---------- LGPD: aviso de cookies + política de privacidade ---------- */
+.lgpd{position:fixed;left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;width:min(440px,calc(100% - 32px));padding:20px 22px;border-radius:var(--radius);background:#120e0d;color:var(--bone);border:1px solid var(--line-2);box-shadow:0 24px 60px -20px rgba(0,0,0,.9);display:grid;gap:14px;font-size:.9rem;line-height:1.5;animation:lgpdIn .5s ease both}
+.lgpd[hidden]{display:none}
+.lgpd p{margin:0;color:var(--bone-2)}
+.lgpd p strong{display:block;color:var(--bone);font-family:var(--display);font-weight:400;font-size:1.25rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.lgpd a{color:var(--brass-2);text-decoration:underline;text-underline-offset:3px}
+.lgpd__row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.lgpd__row .btn{padding:.8em 1.2em;font-size:.72rem}
+.lgpd__link{background:none;border:0;color:var(--mute);font:inherit;font-size:.8rem;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px 4px;margin-left:auto}
+.lgpd__link:hover{color:var(--bone)}
+@keyframes lgpdIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (max-width:640px){.lgpd{bottom:calc(92px + env(safe-area-inset-bottom,0px));padding:16px 18px}}
+.privacy{width:min(760px,calc(100% - 24px));max-height:min(86vh,900px);margin:auto;padding:0;border:1px solid var(--line-2);border-radius:var(--radius);background:#120e0d;color:var(--bone);box-shadow:0 60px 140px -40px #000;overflow:hidden}
+.privacy::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(6px)}
+.privacy[open]{display:flex;flex-direction:column}
+.privacy__head{display:flex;align-items:center;gap:14px;padding:18px 22px;border-bottom:1px solid var(--line);flex:none}
+.privacy__head h2{font-family:var(--display);font-weight:400;font-size:1.6rem;letter-spacing:.04em;text-transform:uppercase;margin:0 auto 0 0}
+.privacy__x{width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);background:transparent;color:var(--bone);font-size:1.4rem;line-height:1;cursor:pointer}
+.privacy__x:hover{border-color:var(--brass);color:var(--brass-2)}
+.privacy__body{overflow:auto;padding:14px 22px 28px;font-size:.93rem;line-height:1.65;color:var(--bone-2);overscroll-behavior:contain}
+.privacy__meta{font-size:.78rem;color:var(--mute);margin:0 0 6px}
+.privacy__body h3{font-family:var(--display);font-weight:400;color:var(--bone);font-size:1.25rem;letter-spacing:.04em;text-transform:uppercase;margin:26px 0 8px}
+.privacy__body p,.privacy__body li{margin:0 0 8px}
+.privacy__body ul{padding-left:20px}
+.privacy__body strong{color:var(--bone)}
+.privacy__body a{color:var(--brass-2);text-decoration:underline;text-underline-offset:3px}
+.privacy__body table{width:100%;border-collapse:collapse;font-size:.84rem;margin:8px 0 4px}
+.privacy__body th,.privacy__body td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.privacy__body th{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.privacy__body code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82em;background:#0d0a09;border:1px solid var(--line);padding:2px 6px;border-radius:6px;color:var(--bone)}
+.drawer__cta .fine{font-size:.74rem;color:var(--mute);text-align:center;margin:-2px 0 0;line-height:1.4}
+.drawer__cta .fine a{color:var(--brass-2);text-decoration:underline;text-underline-offset:2px}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none !important;transition:none !important}
   .rv,.split .w > span{opacity:1;transform:none}
@@ -892,6 +924,7 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
     <div class="foot__links">
       <a href="#kits">Kits</a><a href="#brasa">Na Brasa</a><a href="#churrasco">Calculadora de churrasco</a><a href="#visite">Horários</a>
       <a href="https://www.instagram.com/hudsonemporiodecarnes/" target="_blank" rel="noopener">Instagram</a>
+      <a href="#privacidade" data-privacy>Privacidade e cookies</a>
     </div>
     <p>© <span id="yr">2026</span> Hudson Empório de Carnes · R. Dr. Álvaro Augusto de Almeida, 31 · Tatetuba · São José dos Campos – SP</p>
   </div>
@@ -932,9 +965,71 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4M12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8M20.5 3.5C18.2 1.2 15.2 0 12 0 5.4 0 .1 5.3.1 11.9c0 2.1.5 4.2 1.6 6L0 24l6.3-1.6c1.8 1 3.8 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.5"/></svg>
         Enviar no WhatsApp
       </a>
+      <p class="fine">Seu nome e endereço são usados só para montar a mensagem e seguem pelo seu WhatsApp. Ficam salvos neste navegador até você esvaziar o pedido. <a href="#privacidade" data-privacy>Política de Privacidade</a>.</p>
     </div>
   </aside>
 </div>
+
+<!-- ============ LGPD: AVISO DE COOKIES + POLÍTICA DE PRIVACIDADE ============ -->
+<div class="lgpd" id="lgpd" role="region" aria-label="Aviso de privacidade e cookies" hidden>
+  <p><strong>Sua privacidade</strong>Este site não usa cookies de publicidade nem de rastreamento. Guardamos no seu navegador apenas o necessário para funcionar: o seu pedido em andamento e esta sua escolha. Saiba mais na <a href="#privacidade" data-privacy>Política de Privacidade</a>.</p>
+  <div class="lgpd__row">
+    <button class="btn btn--brass" type="button" data-consent-ok>Entendi</button>
+    <button class="lgpd__link" type="button" data-privacy>Ler a política</button>
+  </div>
+</div>
+
+<dialog class="privacy" id="privacy" aria-labelledby="privacyT">
+  <div class="privacy__head"><h2 id="privacyT">Privacidade e cookies</h2><button class="privacy__x" id="privacyX" type="button" aria-label="Fechar">×</button></div>
+  <div class="privacy__body">
+    <p class="privacy__meta">Última atualização: 16 de outubro de 2026 · Elaborada conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018)</p>
+
+    <h3>1. Quem somos</h3>
+    <p>Este site é mantido por <strong>Hudson Empório de Carnes</strong>, na R. Dr. Álvaro Augusto de Almeida, 31 · Tatetuba · São José dos Campos/SP, que atua como controlador dos dados pessoais tratados por meio dele. Para qualquer assunto de privacidade, fale conosco pelo WhatsApp <a href="https://wa.me/5512996489507" target="_blank" rel="noopener">(12) 99648-9507</a>.</p>
+
+    <h3>2. Quais dados tratamos</h3>
+    <ul>
+      <li><strong>Dados do seu pedido.</strong> Para montar o pedido você informa nome e, no caso de entrega, endereço. Este site não tem cadastro nem banco de dados: essas informações viram uma mensagem enviada pelo seu próprio aplicativo WhatsApp, e o atendimento continua lá. Para você não perder o pedido ao voltar do WhatsApp, os itens escolhidos, o nome e o endereço ficam salvos apenas no seu navegador (ver seção 4).</li>
+      <li><strong>Dados técnicos de navegação.</strong> Como em qualquer site, o servidor de hospedagem pode registrar automaticamente endereço IP, data e hora do acesso, páginas visitadas e tipo de navegador, para segurança e funcionamento.</li>
+    </ul>
+
+    <h3>3. Para que usamos e com qual base legal</h3>
+    <ul>
+      <li>Montar e enviar o seu pedido e realizar a entrega: execução de contrato e procedimentos preliminares (art. 7º, V).</li>
+      <li>Manter o site funcionando com segurança: legítimo interesse (art. 7º, IX).</li>
+      <li>Cumprir obrigações fiscais e de consumo: obrigação legal (art. 7º, II).</li>
+    </ul>
+
+    <h3>4. Cookies e armazenamento local</h3>
+    <p>Não usamos cookies de publicidade, rastreamento ou estatística. O site usa somente o armazenamento local do navegador (<em>localStorage</em>), que fica no seu aparelho e não é enviado a nenhum servidor:</p>
+    <table>
+      <tr><th>Nome</th><th>Finalidade</th><th>Tipo</th><th>Duração</th></tr>
+      <tr><td><code>hudson-pedido</code></td><td>Lembrar os itens do pedido, o nome e o endereço enquanto você monta o pedido</td><td>Essencial</td><td>Até você esvaziar o pedido ou limpar os dados do navegador</td></tr>
+      <tr><td><code>hudson-lgpd</code></td><td>Lembrar que você já viu este aviso de privacidade</td><td>Essencial</td><td>Até você limpar os dados do navegador</td></tr>
+    </table>
+
+    <h3>5. Serviços de terceiros e transferência internacional</h3>
+    <ul>
+      <li><strong>WhatsApp (Meta Platforms).</strong> Canal de pedidos e atendimento. <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">Política de privacidade do WhatsApp</a>.</li>
+      <li><strong>Google Fonts (Google).</strong> Fornece as fontes do site; ao carregá-las, o navegador envia seu IP ao Google. <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener">Política de privacidade do Google</a>.</li>
+      <li><strong>Instagram (Meta).</strong> Apenas link para o nosso perfil; nada é carregado dele nesta página.</li>
+      <li><strong>Hospedagem.</strong> O site é servido pelo GitHub Pages (GitHub, Inc.), que pode registrar dados técnicos de acesso. <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Política de privacidade do GitHub</a>.</li>
+    </ul>
+    <p>Alguns desses provedores ficam fora do Brasil. Nesses casos, a transferência internacional ocorre nos termos do art. 33 da LGPD, com as garantias oferecidas por cada provedor.</p>
+
+    <h3>6. Por quanto tempo guardamos</h3>
+    <p>O site em si não armazena seus dados em servidor. As conversas e pedidos no WhatsApp são mantidos pelo tempo necessário ao atendimento, à entrega e ao cumprimento de obrigações legais (fiscais e de consumo, por exemplo) e, depois, eliminados ou anonimizados.</p>
+
+    <h3>7. Seus direitos</h3>
+    <p>Nos termos do art. 18 da LGPD, você pode, a qualquer momento, pedir: confirmação de que tratamos seus dados; acesso a eles; correção de dados incompletos ou desatualizados; anonimização, bloqueio ou eliminação; portabilidade; e informação sobre compartilhamentos. Basta falar conosco pelo WhatsApp indicado na seção 1. Respondemos sem custo e em prazo razoável. Você também pode apresentar reclamação à <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">Autoridade Nacional de Proteção de Dados (ANPD)</a>.</p>
+
+    <h3>8. Segurança</h3>
+    <p>O site é servido exclusivamente por conexão criptografada (HTTPS) e não coleta nem armazena dados pessoais em servidores próprios, o que reduz ao mínimo o risco de incidentes.</p>
+
+    <h3>9. Alterações</h3>
+    <p>Esta política pode ser atualizada para refletir mudanças no site ou na legislação. A data da última atualização aparece no topo deste texto.</p>
+  </div>
+</dialog>
 
 <script>
 (() => {
@@ -1080,7 +1175,9 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
   // Persiste o pedido: no celular, ir pro WhatsApp e voltar costuma recarregar a aba
   const STORE = 'hudson-pedido';
   function save() {
-    try { localStorage.setItem(STORE, JSON.stringify({ cart: [...cart], bbq, mode, name: $('fName').value, addr: $('fAddr').value })); } catch {}
+    // LGPD: nome e endereço só ficam salvos enquanto houver um pedido em andamento
+    const data = cart.size ? { cart: [...cart], bbq, mode, name: $('fName').value, addr: $('fAddr').value } : { bbq, mode };
+    try { localStorage.setItem(STORE, JSON.stringify(data)); } catch {}
   }
   function restore() {
     try {
@@ -1286,6 +1383,28 @@ button,a,.filter{touch-action:manipulation;-webkit-tap-highlight-color:transpare
     }
     requestAnimationFrame(loop);
   }
+})();
+</script>
+<script>
+/* ---------- LGPD: aviso de privacidade ----------
+   O site não usa cookies de rastreamento, então o aviso é só informativo.
+   Para adicionar uma ferramenta de estatística no futuro, inclua o script como
+   <script type="text/plain" data-consent="stats" src="..."><\/script>, troque o
+   botão "Entendi" por "Aceitar / Só o essencial" e ative-o após o aceite. */
+(() => {
+  const KEY = 'hudson-lgpd';
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const banner = $('#lgpd'), dlg = $('#privacy');
+  const seen = () => { try { return !!localStorage.getItem(KEY); } catch { return false; } };
+  const open = () => { if (!dlg.open) dlg.showModal(); dlg.querySelector('.privacy__body').scrollTop = 0; };
+  $$('[data-privacy]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); open(); }));
+  $$('[data-consent-ok]').forEach(b => b.addEventListener('click', () => {
+    try { localStorage.setItem(KEY, JSON.stringify({ v: 1, at: new Date().toISOString() })); } catch {}
+    banner.hidden = true;
+  }));
+  $('#privacyX').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  if (!seen()) setTimeout(() => { banner.hidden = false; }, 900);
 })();
 </script>
 </body>

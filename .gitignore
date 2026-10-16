@@ -1,0 +1,3 @@
+# Chaves e segredos locais (nunca commitar)
+.gemini/.env
+.env

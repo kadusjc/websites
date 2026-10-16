@@ -492,6 +492,52 @@ footer .brand{padding:10px 16px;border-radius:14px;background:#1e1e1d;border:1px
   .tile:hover img,.cat:hover .cat__img img,.feed__grid a:hover img{transform:none}
 }
 button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+/* ---------- LGPD: aviso de cookies + política de privacidade ---------- */
+.lgpd{position:fixed;left:calc(16px + env(safe-area-inset-left,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;width:min(440px,calc(100% - 32px));padding:20px 22px;border-radius:20px;background:var(--paper);color:var(--ink);border:1px solid var(--line-2);box-shadow:0 24px 60px -20px rgba(20,20,20,.45);display:grid;gap:14px;font-size:.9rem;line-height:1.5;animation:lgpdIn .5s var(--ease) both}
+.lgpd[hidden]{display:none}
+.lgpd p{margin:0;color:var(--ink-2)}
+.lgpd p strong{display:block;color:var(--ink);font-family:var(--display);font-weight:500;font-size:1.15rem;margin-bottom:4px}
+.lgpd a{color:var(--wood);text-decoration:underline;text-underline-offset:3px}
+.lgpd__row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.lgpd__row .btn{padding:.8em 1.2em;font-size:.72rem}
+.lgpd__link{background:none;border:0;color:var(--mute);font:inherit;font-size:.8rem;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:6px 4px;margin-left:auto}
+.lgpd__link:hover{color:var(--ink)}
+@keyframes lgpdIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (max-width:640px){.lgpd{bottom:calc(92px + env(safe-area-inset-bottom,0px));padding:16px 18px}}
+.privacy{width:min(760px,calc(100% - 24px));max-height:min(86vh,900px);margin:auto;padding:0;border:1px solid var(--line-2);border-radius:24px;background:var(--paper);color:var(--ink);box-shadow:0 60px 140px -40px rgba(0,0,0,.6);overflow:hidden}
+.privacy::backdrop{background:rgba(20,20,20,.55);backdrop-filter:blur(6px)}
+.privacy[open]{display:flex;flex-direction:column}
+.privacy__head{display:flex;align-items:center;gap:14px;padding:18px 22px;border-bottom:1px solid var(--line);flex:none}
+.privacy__head h2{font-family:var(--display);font-weight:500;font-size:1.5rem;margin:0 auto 0 0;letter-spacing:-.01em}
+.privacy__x{width:40px;height:40px;border-radius:50%;border:1px solid var(--line-2);background:transparent;color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer}
+.privacy__x:hover{border-color:var(--wood);color:var(--wood)}
+.privacy__body{overflow:auto;padding:14px 22px 28px;font-size:.93rem;line-height:1.65;color:var(--ink-2);overscroll-behavior:contain}
+.privacy__meta{font-size:.78rem;color:var(--mute);margin:0 0 6px}
+.privacy__body h3{font-family:var(--display);font-weight:500;color:var(--ink);font-size:1.2rem;margin:26px 0 8px}
+.privacy__body p,.privacy__body li{margin:0 0 8px}
+.privacy__body ul{padding-left:20px}
+.privacy__body strong{color:var(--ink)}
+.privacy__body a{color:var(--wood);text-decoration:underline;text-underline-offset:3px}
+.privacy__body table{width:100%;border-collapse:collapse;font-size:.84rem;margin:8px 0 4px}
+.privacy__body th,.privacy__body td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.privacy__body th{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.privacy__body code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82em;background:var(--sand);padding:2px 6px;border-radius:6px;color:var(--ink)}
+.prefs{display:grid;gap:12px;padding:16px;border-radius:16px;background:var(--linen);border:1px solid var(--line);margin-top:10px}
+.prefs>strong{font-family:var(--display);font-weight:500;font-size:1.1rem}
+.prefs label{display:flex;gap:14px;align-items:flex-start;cursor:pointer}
+.prefs label input{margin-top:4px;width:18px;height:18px;accent-color:var(--wood);flex:none}
+.prefs label b{display:block;color:var(--ink)}
+.prefs label small{color:var(--mute);font-size:.82rem;line-height:1.45;display:block}
+.prefs__row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:2px}
+.prefs__row .btn{padding:.8em 1.2em;font-size:.72rem}
+.prefs__ok{font-size:.8rem;color:var(--sage);font-weight:700}
+.prefs__ok[hidden]{display:none}
+.map__gate{position:absolute;inset:0;z-index:1;display:grid;place-items:center;text-align:center;padding:24px 24px 110px;background:linear-gradient(180deg,var(--sand),var(--linen))}
+.map__gate>div{max-width:320px;display:grid;gap:10px;justify-items:center}
+.map__gate svg{width:40px;height:40px;color:var(--wood)}
+.map__gate p{margin:0;font-size:.88rem;color:var(--ink-2)}
+.map__gate .btn{padding:.8em 1.2em;font-size:.72rem}
+.map.loaded .map__gate{display:none}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none !important;transition:none !important}
   .rv,.split .w>span{opacity:1;transform:none}
@@ -852,7 +898,14 @@ button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
       </div>
       <div class="map rv d1">
         <a class="map__open" href="https://www.google.com/maps/search/?api=1&query=Av.+Avare%C3%AD,+297+-+Jacare%C3%AD,+SP" target="_blank" rel="noopener" aria-label="Abrir no Google Maps"><span>Abrir no Maps</span></a>
-        <iframe title="Mapa: Vida Nova Design, Av. Avareí 297, Jacareí" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.+Avare%C3%AD,+297+-+Jacare%C3%AD,+SP&z=16&output=embed"></iframe>
+        <iframe title="Mapa: Vida Nova Design, Av. Avareí 297, Jacareí" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-consent-src="https://www.google.com/maps?q=Av.+Avare%C3%AD,+297+-+Jacare%C3%AD,+SP&z=16&output=embed"></iframe>
+        <div class="map__gate">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a7 7 0 0114 0c0 5.6-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            <p>O mapa é um conteúdo do Google Maps e só carrega com a sua permissão. Ao carregar, o Google pode registrar seu IP e usar cookies próprios.</p>
+            <button class="btn btn--wood" type="button" data-consent-embeds>Carregar mapa</button>
+          </div>
+        </div>
         <div class="map__pin"><div><strong>Vida Nova Design</strong><span>Av. Avareí, 297 · Jacareí/SP</span></div><a class="btn btn--wood" style="padding:.75em 1.2em;font-size:.7rem" href="https://waze.com/ul/h6gz76p0fc" target="_blank" rel="noopener">Ir de Waze</a></div>
       </div>
     </div>
@@ -883,10 +936,82 @@ button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
       <a href="#ambientes">Ambientes</a><a href="#colecao">Coleção</a><a href="#medida">Seu sofá</a><a href="#visite">Visite</a>
       <a href="https://www.instagram.com/vida.novadesign/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/share/12LZcXPLi7v/" target="_blank" rel="noopener">Facebook</a>
+      <a href="#privacidade" data-privacy>Privacidade e cookies</a>
     </div>
     <p>© <span id="yr">2026</span> Vida Nova Design · Av. Avareí, 297 · Jacareí – SP</p>
   </div>
 </footer>
+
+<!-- ============ LGPD: AVISO DE COOKIES + POLÍTICA DE PRIVACIDADE ============ -->
+<div class="lgpd" id="lgpd" role="region" aria-label="Aviso de privacidade e cookies" hidden>
+  <p><strong>Sua privacidade</strong>Este site não usa cookies de publicidade nem de rastreamento. Guardamos no seu navegador apenas esta escolha e, com a sua permissão, carregamos o mapa do Google. Saiba mais na <a href="#privacidade" data-privacy>Política de Privacidade</a>.</p>
+  <div class="lgpd__row">
+    <button class="btn btn--wood" type="button" data-consent-all>Aceitar tudo</button>
+    <button class="btn btn--ghost" type="button" data-consent-min>Só o essencial</button>
+    <button class="lgpd__link" type="button" data-prefs>Personalizar</button>
+  </div>
+</div>
+
+<dialog class="privacy" id="privacy" aria-labelledby="privacyT">
+  <div class="privacy__head"><h2 id="privacyT">Privacidade e cookies</h2><button class="privacy__x" id="privacyX" type="button" aria-label="Fechar">×</button></div>
+  <div class="privacy__body">
+    <p class="privacy__meta">Última atualização: 16 de outubro de 2026 · Elaborada conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018)</p>
+
+    <form class="prefs" id="prefs">
+      <strong>Suas preferências</strong>
+      <label><input type="checkbox" checked disabled><span><b>Essenciais · sempre ativos</b><small>Guardam apenas a sua escolha neste aviso. Sem isso o site não consegue lembrar sua decisão.</small></span></label>
+      <label><input type="checkbox" name="embeds"><span><b>Conteúdo de terceiros (Google Maps)</b><small>Carrega o mapa da loja na seção “Visite”. Ao carregar, o Google pode registrar seu IP e usar cookies próprios.</small></span></label>
+      <div class="prefs__row"><button class="btn btn--wood" type="submit">Salvar preferências</button><span class="prefs__ok" id="prefsOk" hidden>Preferências salvas ✓</span></div>
+    </form>
+
+    <h3>1. Quem somos</h3>
+    <p>Este site é mantido por <strong>Vida Nova Design</strong>, loja de móveis e decoração na Av. Avareí, 297 · Jacareí/SP, que atua como controladora dos dados pessoais tratados por meio dele. Para qualquer assunto de privacidade, fale conosco pelo WhatsApp <a href="https://wa.me/5512988996093" target="_blank" rel="noopener">(12) 98899-6093</a>.</p>
+
+    <h3>2. Quais dados tratamos</h3>
+    <ul>
+      <li><strong>Dados que você nos envia.</strong> Este site não tem cadastro nem banco de dados. Ao clicar em “Falar no WhatsApp” ou usar o simulador de sofá, as informações preenchidas (medidas e preferências) viram uma mensagem enviada pelo seu próprio aplicativo WhatsApp. O atendimento, e os dados que você compartilhar nele (nome, telefone, fotos do ambiente, endereço de entrega), acontecem dentro do WhatsApp.</li>
+      <li><strong>Dados técnicos de navegação.</strong> Como em qualquer site, o servidor de hospedagem pode registrar automaticamente endereço IP, data e hora do acesso, páginas visitadas e tipo de navegador, para segurança e funcionamento.</li>
+      <li><strong>Armazenamento local.</strong> Guardamos no seu navegador apenas a sua escolha de privacidade (tabela na seção 4).</li>
+    </ul>
+
+    <h3>3. Para que usamos e com qual base legal</h3>
+    <ul>
+      <li>Responder ao seu pedido de orçamento ou atendimento: procedimentos preliminares a contrato (art. 7º, V).</li>
+      <li>Manter o site funcionando com segurança: legítimo interesse (art. 7º, IX).</li>
+      <li>Carregar conteúdo de terceiros, como o mapa: consentimento (art. 7º, I), que você pode retirar a qualquer momento nas preferências acima.</li>
+    </ul>
+
+    <h3>4. Cookies e armazenamento local</h3>
+    <p>Não usamos cookies de publicidade, rastreamento ou estatística. O site usa somente o armazenamento local do navegador (<em>localStorage</em>) para o item abaixo:</p>
+    <table>
+      <tr><th>Nome</th><th>Finalidade</th><th>Tipo</th><th>Duração</th></tr>
+      <tr><td><code>vn-lgpd</code></td><td>Lembrar sua escolha neste aviso de privacidade</td><td>Essencial</td><td>Até você limpar os dados do navegador</td></tr>
+    </table>
+    <p>Serviços de terceiros carregados com a sua permissão podem definir cookies próprios, conforme as políticas deles (seção 5).</p>
+
+    <h3>5. Serviços de terceiros e transferência internacional</h3>
+    <ul>
+      <li><strong>WhatsApp (Meta Platforms).</strong> Canal de atendimento. <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">Política de privacidade do WhatsApp</a>.</li>
+      <li><strong>Google Fonts (Google).</strong> Fornece as fontes do site; ao carregá-las, o navegador envia seu IP ao Google. <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener">Política de privacidade do Google</a>.</li>
+      <li><strong>Google Maps (Google).</strong> Mapa da loja, carregado apenas com a sua permissão.</li>
+      <li><strong>Instagram e Facebook (Meta).</strong> Apenas links para nossos perfis; nada é carregado deles nesta página.</li>
+      <li><strong>Hospedagem.</strong> O site é servido pelo GitHub Pages (GitHub, Inc.), que pode registrar dados técnicos de acesso. <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">Política de privacidade do GitHub</a>.</li>
+    </ul>
+    <p>Alguns desses provedores ficam fora do Brasil. Nesses casos, a transferência internacional ocorre nos termos do art. 33 da LGPD, com as garantias oferecidas por cada provedor.</p>
+
+    <h3>6. Por quanto tempo guardamos</h3>
+    <p>O site em si não armazena seus dados. As conversas no WhatsApp são mantidas pelo tempo necessário ao atendimento, à execução de uma compra e ao cumprimento de obrigações legais (fiscais e de garantia, por exemplo) e, depois, eliminadas ou anonimizadas.</p>
+
+    <h3>7. Seus direitos</h3>
+    <p>Nos termos do art. 18 da LGPD, você pode, a qualquer momento, pedir: confirmação de que tratamos seus dados; acesso a eles; correção de dados incompletos ou desatualizados; anonimização, bloqueio ou eliminação; portabilidade; informação sobre compartilhamentos; e revogação do consentimento. Basta falar conosco pelo WhatsApp indicado na seção 1. Respondemos sem custo e em prazo razoável. Você também pode apresentar reclamação à <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">Autoridade Nacional de Proteção de Dados (ANPD)</a>.</p>
+
+    <h3>8. Segurança</h3>
+    <p>O site é servido exclusivamente por conexão criptografada (HTTPS) e não coleta nem armazena dados pessoais em servidores próprios, o que reduz ao mínimo o risco de incidentes.</p>
+
+    <h3>9. Alterações</h3>
+    <p>Esta política pode ser atualizada para refletir mudanças no site ou na legislação. A data da última atualização aparece no topo deste texto.</p>
+  </div>
+</dialog>
 
 <div class="fab">
   <span class="fab__txt" aria-hidden="true">Fala com a gente 👋</span>
@@ -1008,6 +1133,53 @@ button,a{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
   /* horário de hoje */
   const d = new Date().getDay();
   $$('#hours li').forEach(li => { const v = +li.dataset.d; li.classList.toggle('today', v === d || (v === 1 && d >= 1 && d <= 5)); });
+})();
+</script>
+<script>
+/* ---------- LGPD: consentimento de cookies e conteúdo de terceiros ----------
+   Para adicionar uma ferramenta de estatística no futuro, inclua o script como
+   <script type="text/plain" data-consent="stats" src="..."><\/script>, crie uma
+   checkbox name="stats" nas preferências e ele só será ativado após o aceite. */
+(() => {
+  const KEY = 'vn-lgpd';
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const banner = $('#lgpd'), dlg = $('#privacy'), prefs = $('#prefs');
+  const read = () => { try { const c = JSON.parse(localStorage.getItem(KEY) || 'null'); return c && c.v === 1 ? c : null; } catch { return null; } };
+  const apply = c => {
+    if (!c) return;
+    if (c.embeds) $$('[data-consent-src]').forEach(el => { el.src = el.dataset.consentSrc; el.removeAttribute('data-consent-src'); el.closest('.map')?.classList.add('loaded'); });
+    else $$('.map.loaded iframe').forEach(el => { el.dataset.consentSrc = el.src; el.removeAttribute('src'); el.closest('.map').classList.remove('loaded'); });
+    $$('script[type="text/plain"][data-consent]').forEach(s => {
+      if (!c[s.dataset.consent]) return;
+      const n = document.createElement('script');
+      for (const a of s.attributes) if (a.name !== 'type' && a.name !== 'data-consent') n.setAttribute(a.name, a.value);
+      n.textContent = s.textContent; s.replaceWith(n);
+    });
+    prefs.querySelectorAll('input[name]').forEach(i => { i.checked = !!c[i.name]; });
+  };
+  const save = o => {
+    const c = { v: 1, at: new Date().toISOString(), embeds: !!o.embeds, stats: !!o.stats };
+    try { localStorage.setItem(KEY, JSON.stringify(c)); } catch {}
+    apply(c); banner.hidden = true; return c;
+  };
+  const open = () => { if (!dlg.open) dlg.showModal(); dlg.querySelector('.privacy__body').scrollTop = 0; };
+
+  $$('[data-privacy]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); open(); }));
+  $$('[data-prefs]').forEach(b => b.addEventListener('click', () => { open(); prefs.scrollIntoView({ block: 'start' }); }));
+  $('#privacyX').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  $$('[data-consent-all]').forEach(b => b.addEventListener('click', () => save({ embeds: true, stats: true })));
+  $$('[data-consent-min]').forEach(b => b.addEventListener('click', () => save({})));
+  $$('[data-consent-embeds]').forEach(b => b.addEventListener('click', () => save({ ...(read() || {}), embeds: true })));
+  prefs.addEventListener('submit', e => {
+    e.preventDefault();
+    const o = {}; prefs.querySelectorAll('input[name]').forEach(i => { o[i.name] = i.checked; });
+    save(o);
+    const ok = $('#prefsOk'); ok.hidden = false; setTimeout(() => { ok.hidden = true; }, 2500);
+  });
+
+  const c = read();
+  if (c) apply(c); else setTimeout(() => { banner.hidden = false; }, 900);
 })();
 </script>
 </body>
