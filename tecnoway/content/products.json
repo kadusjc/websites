@@ -17,6 +17,15 @@
       "price": 590,
       "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-03-53.png",
       "description": "\nDescrição: Correia encarregada de sincronizar o movimento do eixo de comando de válvulas com o virabrequim, evitando danos graves ao motor."
+    },
+    {
+      "active": true,
+      "code": "003",
+      "name": "Bateria 60ah",
+      "category": "Elétrica",
+      "description": "Alimentação de partida e sistemas",
+      "price": 580,
+      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-24-23.png"
     }
   ]
 }
