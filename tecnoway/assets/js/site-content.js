@@ -60,7 +60,7 @@ function applySiteContent(content) {
 	});
 }
 
-fetch(SITE_CONTENT_URL)
+fetch(SITE_CONTENT_URL, { cache: 'no-cache' })
 	.then(response => {
 		if (!response.ok) throw new Error('Não foi possível carregar o conteúdo do site.');
 		return response.json();

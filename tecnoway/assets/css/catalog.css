@@ -18,7 +18,75 @@
 }
 .catalog-search:focus { outline: 2px solid var(--amber); outline-offset: 2px; }
 .catalog-search::placeholder { color: var(--soft); }
-.cart-launch { min-height: 52px; }
+.cart-launch { min-height: 52px; transition: box-shadow .3s; }
+.cart-launch.has-items { box-shadow: 0 0 0 2px var(--amber-b), 0 8px 24px var(--amber-g); }
+.cart-launch.is-bumped { animation: cart-bump .6s ease-out; }
+.cart-launch.is-bumped .cart-count { animation: count-pop .6s ease-out; }
+@keyframes cart-bump {
+	0%   { transform: scale(1);    box-shadow: 0 0 0 0 rgba(208,136,40,.7); }
+	40%  { transform: scale(1.08); box-shadow: 0 0 0 10px rgba(208,136,40,0); }
+	100% { transform: scale(1);    box-shadow: 0 0 0 0 rgba(208,136,40,0); }
+}
+@keyframes count-pop {
+	0%   { transform: scale(1); }
+	40%  { transform: scale(1.5); background: var(--amber); color: #111; }
+	100% { transform: scale(1); }
+}
+.product-add { transition: background .25s, color .25s, border-color .25s; }
+.product-add.is-added {
+	background: #1f7a3a;
+	border-color: #1f7a3a;
+	color: #fff;
+}
+.cart-toast {
+	position: fixed;
+	left: 50%;
+	bottom: 1.75rem;
+	z-index: 998;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	max-width: min(520px, calc(100% - 2rem - 80px));
+	padding: 0.75rem 0.9rem 0.75rem 1rem;
+	border: 1px solid var(--amber-b);
+	border-radius: 12px;
+	background: #161616;
+	color: var(--text);
+	box-shadow: 0 12px 40px rgba(0,0,0,.6);
+	transform: translate(-50%, 20px);
+	opacity: 0;
+	pointer-events: none;
+	transition: transform .3s, opacity .3s;
+}
+.cart-toast.is-visible { transform: translate(-50%, 0); opacity: 1; pointer-events: auto; }
+.cart-toast-check {
+	flex: none;
+	width: 28px;
+	height: 28px;
+	display: grid;
+	place-items: center;
+	border-radius: 50%;
+	background: #1f7a3a;
+	color: #fff;
+	font-weight: 800;
+}
+.cart-toast-text { font-size: 0.9rem; line-height: 1.3; }
+.cart-toast-open {
+	flex: none;
+	padding: 0.5rem 0.85rem;
+	border: 0;
+	border-radius: 8px;
+	background: var(--amber);
+	color: #111;
+	font: inherit;
+	font-weight: 800;
+	cursor: pointer;
+}
+.cart-toast-open:hover { background: var(--amber-h); }
+@media (prefers-reduced-motion: reduce) {
+	.cart-launch.is-bumped, .cart-launch.is-bumped .cart-count { animation: none; }
+	.cart-toast { transition: none; }
+}
 .cart-count {
 	min-width: 1.5rem;
 	height: 1.5rem;
@@ -86,4 +154,13 @@
 	.product-name { font-size: 1.15rem; }
 	.product-description { font-size: 0.8rem; }
 	.product-add { white-space: normal; font-size: 0.78rem; padding-inline: 0.55rem; }
+	.cart-toast {
+		left: 1rem;
+		right: 1rem;
+		bottom: 6rem; /* acima do botão flutuante do WhatsApp */
+		max-width: none;
+		transform: translateY(20px);
+	}
+	.cart-toast.is-visible { transform: translateY(0); }
+	.cart-toast-text { font-size: 0.82rem; }
 }

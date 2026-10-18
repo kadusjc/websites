@@ -56,10 +56,49 @@ function renderProducts() {
 		const button = addText(body, 'button', 'btn btn-amber product-add', contentText('catalog.add_button', 'Adicionar ao pedido'));
 		button.type = 'button';
 		button.setAttribute('aria-label', `Adicionar ${product.name} ao pedido`);
-		button.addEventListener('click', () => changeQuantity(product.code, 1));
+		button.addEventListener('click', () => {
+			changeQuantity(product.code, 1);
+			confirmAdded(button);
+			bumpCartButton();
+			showToast(product.name);
+		});
 		card.append(body);
 		grid.append(card);
 	});
+}
+
+const openCart = document.querySelector('#openCart');
+const toast = document.querySelector('#cartToast');
+const toastText = document.querySelector('#cartToastText');
+let toastTimer;
+
+// Troca o texto do botão por "Adicionado ✓" por um instante e volta ao normal.
+function confirmAdded(button) {
+	if (button.dataset.timer) clearTimeout(Number(button.dataset.timer));
+	button.classList.add('is-added');
+	button.textContent = contentText('catalog.added_label', 'Adicionado ✓');
+	button.dataset.timer = String(setTimeout(() => {
+		button.classList.remove('is-added');
+		button.textContent = contentText('catalog.add_button', 'Adicionar ao pedido');
+		delete button.dataset.timer;
+	}, 1400));
+}
+
+// Faz o botão "Ver pedido" pulsar para chamar atenção ao novo item.
+function bumpCartButton() {
+	openCart.classList.remove('is-bumped');
+	void openCart.offsetWidth; // reinicia a animação se clicar várias vezes seguidas
+	openCart.classList.add('is-bumped');
+}
+
+// Aviso flutuante com atalho para abrir o pedido, útil quando o botão da
+// barra de pesquisa já saiu da tela por causa da rolagem.
+function showToast(productName) {
+	if (!toast) return;
+	toastText.textContent = `${productName} ${contentText('catalog.toast_suffix', 'foi adicionado ao pedido')}`;
+	toast.classList.add('is-visible');
+	clearTimeout(toastTimer);
+	toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 3200);
 }
 
 function changeQuantity(code, delta) {
@@ -108,6 +147,7 @@ function renderCart() {
 	});
 
 	cartCount.textContent = String(count);
+	openCart.classList.toggle('has-items', count > 0);
 	cartTotal.textContent = needsQuote ? `${currency.format(total)} + itens sob consulta` : currency.format(total);
 	if (!count) addText(cartItems, 'p', 'catalog-empty', contentText('catalog.empty_cart_message', 'Seu pedido está vazio. Adicione produtos do catálogo.'));
 	const message = [contentText('contact.order_message', 'Olá! Gostaria de fazer este pedido na Tecnoway:'), '', ...[...cart].flatMap(([code, quantity]) => {
@@ -126,12 +166,19 @@ function renderCart() {
 }
 
 search.addEventListener('input', renderProducts);
-document.querySelector('#openCart').addEventListener('click', () => dialog.showModal());
+openCart.addEventListener('click', () => dialog.showModal());
+openCart.addEventListener('animationend', () => openCart.classList.remove('is-bumped'));
+document.querySelector('#cartToastOpen')?.addEventListener('click', () => {
+	toast.classList.remove('is-visible');
+	dialog.showModal();
+});
 document.querySelector('#closeCart').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
 window.addEventListener('tecnoway:content-ready', renderCart);
 
-fetch(PRODUCTS_URL)
+// no-cache: sempre pergunta ao servidor se o arquivo mudou (via ETag), evitando
+// que o navegador mostre um catálogo antigo logo após uma edição no CMS.
+fetch(PRODUCTS_URL, { cache: 'no-cache' })
 	.then(response => {
 		if (!response.ok) throw new Error('Não foi possível carregar o catálogo.');
 		return response.json();

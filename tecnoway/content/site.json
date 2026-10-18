@@ -136,6 +136,8 @@
     "search_placeholder": "Nome, código ou descrição",
     "cart_button": "Ver pedido",
     "add_button": "Adicionar ao pedido",
+    "added_label": "Adicionado ✓",
+    "toast_suffix": "foi adicionado ao pedido",
     "code_prefix": "Código",
     "price_on_request": "Consulte o preço",
     "cart_title": "Seu pedido",

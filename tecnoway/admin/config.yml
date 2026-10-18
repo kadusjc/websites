@@ -226,6 +226,8 @@ collections:
               - { label: Exemplo da pesquisa, name: search_placeholder, widget: string }
               - { label: Botão do carrinho, name: cart_button, widget: string }
               - { label: Botão de adicionar produto, name: add_button, widget: string }
+              - { label: Texto do botão após adicionar, name: added_label, widget: string }
+              - { label: Aviso após adicionar (depois do nome do produto), name: toast_suffix, widget: string }
               - { label: Rótulo do código da peça, name: code_prefix, widget: string }
               - { label: Texto para preço sob consulta, name: price_on_request, widget: string }
               - { label: Título do carrinho, name: cart_title, widget: string }
