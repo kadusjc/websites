@@ -1,8 +1,28 @@
+# Autenticação via DecapBridge (https://decapbridge.com), sem Netlify.
+# Depois de cadastrar o site no painel do DecapBridge, troque SITE_ID abaixo
+# pelo ID gerado (aparece no template de config.yml que o painel mostra).
 backend:
   name: git-gateway
+  repo: kadusjc/websites
   branch: main
+  identity_url: https://auth.decapbridge.com/sites/4825adeb-950d-4d68-81c9-85c04c9587e3
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: 'Tecnoway CMS: cria {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}>'
+    update: 'Tecnoway CMS: atualiza {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}>'
+    delete: 'Tecnoway CMS: remove {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}>'
+    uploadMedia: 'Tecnoway CMS: envia imagem "{{path}}" - {{author-name}} <{{author-login}}>'
+    deleteMedia: 'Tecnoway CMS: remove imagem "{{path}}" - {{author-name}} <{{author-login}}>'
 
+# Para testar o painel localmente: `npm run cms` na raiz do repo e abra
+# http://localhost:3000/tecnoway/admin/ (sem login). Em produção é ignorado.
+local_backend: true
+
+# Alterações viram pull request para sua aprovação antes de ir ao ar.
+# Para o cliente publicar direto na main, remova a linha abaixo.
 publish_mode: editorial_workflow
+
+locale: pt
 
 logo:
   src: https://fcsoftware.com.br/tecnoway/admin/brand.svg

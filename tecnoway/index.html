@@ -941,20 +941,5 @@
 
 <script src="assets/js/site-content.js" defer></script>
 <script src="assets/js/catalog.js" defer></script>
-<script>
-if(location.hostname.endsWith('.netlify.app')){
-	const identityWidget=document.createElement('script');
-	identityWidget.src='https://identity.netlify.com/v1/netlify-identity-widget.js';
-	identityWidget.addEventListener('load',()=>{
-		const identity=window.netlifyIdentity;
-		const openAdmin=()=>location.replace('/admin/');
-		identity.on('login',openAdmin);
-		identity.on('init',user=>{if(user)openAdmin()});
-		if(location.hash.startsWith('#invite_token='))identity.open('signup');
-		else if(identity.currentUser())openAdmin();
-	});
-	document.head.append(identityWidget);
-}
-</script>
 </body>
 </html>

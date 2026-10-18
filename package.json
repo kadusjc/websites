@@ -4,6 +4,7 @@
   "description": "Servidor local de desenvolvimento. Em produção os sites ficam no GitHub Pages.",
   "scripts": {
     "start": "node serve.js",
-    "dev": "node serve.js"
+    "dev": "node serve.js",
+    "cms": "npx decap-server"
   }
 }

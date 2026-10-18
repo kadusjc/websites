@@ -1,0 +1,291 @@
+- generic [active] [ref=f8e1]:
+  - link "Ir para o conteúdo" [ref=f8e2] [cursor=pointer]:
+    - /url: "#content"
+  - generic [ref=f8e3]:
+    - banner [ref=f8e4]:
+      - generic [ref=f8e8]:
+        - generic [ref=f8e11]:
+          - link [ref=f8e13] [cursor=pointer]:
+            - /url: https://decarlo.com.br/
+            - img "Decarlo Industrial" [ref=f8e14]
+          - generic:
+            - generic:
+              - link "Decarlo Industrial":
+                - /url: https://decarlo.com.br/
+        - button "Main menu toggle" [ref=f8e18] [cursor=pointer]:
+          - generic [ref=f8e19]: Main Menu
+    - main [ref=f8e27]:
+      - article [ref=f8e28]:
+        - generic [ref=f8e29]:
+          - generic [ref=f8e35]:
+            - heading [level=1] [ref=f8e36]:
+              - mark [ref=f8e37]: na
+              - mark [ref=f8e38]: decarlo
+              - mark [ref=f8e39]: ", a complexidade se transforma em excelência"
+            - heading [level=3] [ref=f8e40]:
+              - mark [ref=f8e41]: Produzimos peças usinadas com alta precisão, confiabilidade e pontualidade
+          - generic [ref=f8e42]:
+            - generic [ref=f8e43]:
+              - figure [ref=f8e44]
+              - heading [level=2] [ref=f8e45]:
+                - strong [ref=f8e46]: Capacidade Técnica
+              - paragraph [ref=f8e47]: Mais de 45 anos de experiência em usinagem técnica, com expertise na fabricação de peças de diferentes geometrias e materiais para diversos segmentos industriais.
+            - generic [ref=f8e48]:
+              - figure [ref=f8e49]
+              - heading [level=2] [ref=f8e50]:
+                - strong [ref=f8e51]: Comunicação Transparente
+              - paragraph [ref=f8e52]: Atuamos em parceria com nossos clientes, mantendo uma comunicação clara, ágil e direta em todas as etapas do projeto, garantindo total alinhamento e confiança.
+          - generic [ref=f8e53]:
+            - generic [ref=f8e54]:
+              - figure [ref=f8e55]
+              - heading [level=2] [ref=f8e56]:
+                - strong [ref=f8e57]: Prazo e Qualidade
+              - paragraph [ref=f8e58]: Nossos processos são rigorosamente controlados e auditados, assegurando a entrega de peças com excelência em qualidade e total cumprimento dos prazos acordados.
+            - generic [ref=f8e59]:
+              - figure [ref=f8e60]
+              - heading [level=2] [ref=f8e61]:
+                - strong [ref=f8e62]: Localização estratégica
+              - paragraph [ref=f8e63]: Situada na região do Alto Tietê, na Grande São Paulo, a Decarlo possui uma localização privilegiada, com fácil acesso aos principais corredores logísticos, proporcionando agilidade no escoamento da produção e eficiência no atendimento aos clientes.
+          - generic [ref=f8e64]:
+            - generic [ref=f8e67]:
+              - generic [ref=f8e68]: +2M
+              - generic [ref=f8e69]: PEÇAS USINADAS POR ANO
+            - generic [ref=f8e72]:
+              - generic [ref=f8e73]: "+50"
+              - generic [ref=f8e74]: COLABORADORES
+            - generic [ref=f8e77]:
+              - generic [ref=f8e78]: ISO9001
+              - generic [ref=f8e79]: CERTIFICADA DESDE DE 2015
+            - generic [ref=f8e82]:
+              - generic [ref=f8e83]: "+10"
+              - generic [ref=f8e84]: Máquinas
+          - paragraph
+          - generic [ref=f8e86]:
+            - heading [level=2] [ref=f8e87]:
+              - strong [ref=f8e88]: segmentos atendidos
+            - separator [ref=f8e89]
+            - separator [ref=f8e90]: ···
+            - generic [ref=f8e91]:
+              - generic [ref=f8e92]:
+                - paragraph [ref=f8e93]
+                - heading [level=3] [ref=f8e94]:
+                  - mark [ref=f8e95]:
+                    - strong [ref=f8e96]: AUTOMOTIVO
+                - paragraph [ref=f8e97]: Produção contínua, com precisão e pontualidade, para evitar paradas operacionais e garantir o pleno ritmo da sua produção.
+              - figure [ref=f8e99]
+            - generic [ref=f8e100]:
+              - figure [ref=f8e101]
+              - generic [ref=f8e102]:
+                - heading [level=2] [ref=f8e103]
+                - heading [level=3] [ref=f8e104]:
+                  - mark [ref=f8e105]:
+                    - strong [ref=f8e106]: Veículos Pesados
+                - paragraph [ref=f8e107]: Desenvolvemos componentes com elevada durabilidade e confiabilidade, em conformidade com os rigorosos requisitos de alta performance do setor de transporte rodoviário.
+            - generic [ref=f8e109]:
+              - generic [ref=f8e110]:
+                - heading [level=2] [ref=f8e111]
+                - heading [level=3] [ref=f8e112]:
+                  - mark [ref=f8e113]:
+                    - strong [ref=f8e114]: AGRícola
+                - paragraph [ref=f8e115]: Peças de alta robustez e confiabilidade, projetadas para garantir desempenho e eficiência em todas as operações do campo.
+              - figure [ref=f8e117]
+            - generic [ref=f8e118]:
+              - figure [ref=f8e119]
+              - generic [ref=f8e120]:
+                - heading [level=2] [ref=f8e121]
+                - heading [level=3] [ref=f8e122]:
+                  - mark [ref=f8e123]:
+                    - strong [ref=f8e124]: Construção Civil
+                - paragraph [ref=f8e125]: Precisão e confiabilidade em peças seriadas, desenvolvidas para atender às mais diversas demandas do mercado.
+            - generic [ref=f8e127]:
+              - generic [ref=f8e128]:
+                - heading [level=2] [ref=f8e129]
+                - heading [level=3] [ref=f8e130]:
+                  - mark [ref=f8e131]:
+                    - strong [ref=f8e132]: OUTROS SEGMENTOS
+                - paragraph [ref=f8e133]: Versatilidade em usinagem e excelência em peças seriadas para os mais variados segmentos da indústria.
+              - figure [ref=f8e134]
+          - figure [ref=f8e136]
+          - generic [ref=f8e141]:
+            - heading [level=2] [ref=f8e145]:
+              - strong [ref=f8e146]: Localização estratégica e privilegiada para operações logísticas
+            - generic [ref=f8e147]: COMO CHEGAR
+            - paragraph [ref=f8e150]:
+              - text: A
+              - strong [ref=f8e151]: Decarlo Industrial
+              - text: está estrategicamente localizada em Mogi das Cruzes-SP, um dos principais polos logísticos do estado de São Paulo, oferecendo excelente conectividade com os principais aeroportos do país e uma ampla malha rodoviária, fundamental para o transporte e a distribuição de cargas em todo o território nacional. Sua posição privilegiada também facilita o acesso às principais cidades portuárias, contribuindo para a eficiência das operações de comércio nacional e internacional.
+            - paragraph [ref=f8e152]:
+              - strong [ref=f8e153]: Conectividade Rodoviária e Marítima
+            - paragraph [ref=f8e154]: "Rodovia Ayrton Senna (SP-070): principal via de acesso para quem se desloca a partir da cidade de São Paulo."
+            - paragraph [ref=f8e155]: "Rodovia Mogi-Dutra (SP-088): importante ligação com a Rodovia Presidente Dutra, permitindo a distribuição de mercadorias para diversas regiões do país."
+            - paragraph [ref=f8e156]: "Rodovia Mogi-Bertioga (SP-098): proporciona conexão direta com as cidades do litoral, como Bertioga, além de acesso facilitado ao Porto de Santos, o maior e mais movimentado porto da América Latina."
+            - paragraph [ref=f8e157]:
+              - strong [ref=f8e158]: Acessibilidade Aérea
+            - paragraph [ref=f8e159]: "Aeroporto Internacional de Guarulhos (GRU): localizado a apenas 32 km, é o principal aeroporto brasileiro para voos internacionais."
+            - paragraph [ref=f8e160]: "Aeroporto de Congonhas (CGH): situado a 49 km, é um dos mais importantes centros de operações de voos domésticos do país."
+            - paragraph [ref=f8e161]: "Aeroporto Internacional de Viracopos (VCP): a 113 km, em Campinas, é um dos maiores terminais de carga aérea da América do Sul e opera voos domésticos e internacionais."
+            - paragraph [ref=f8e162]:
+              - text: Essa combinação estratégica de conexões terrestres, marítimas e aéreas posiciona a
+              - strong [ref=f8e163]: Decarlo
+              - text: em um local privilegiado para operações de logística, comércio e distribuição, assegurando maior eficiência, agilidade e competitividade para atender às demandas de seus clientes em todo o Brasil e no mercado internacional.
+          - generic [ref=f8e166]:
+            - figure [ref=f8e167]
+            - heading [level=2] [ref=f8e168]:
+              - strong [ref=f8e169]: Transformando desafios complexos em soluções de alta precisão
+            - generic [ref=f8e170]:
+              - generic [ref=f8e171]:
+                - group "1 / 12" [ref=f8e172]
+                - group "2 / 12" [ref=f8e174]
+                - group "3 / 12" [ref=f8e176]
+                - group "4 / 12" [ref=f8e178]
+                - group "5 / 12" [ref=f8e180]
+                - group "6 / 12" [ref=f8e182]
+                - group "7 / 12" [ref=f8e184]
+                - group "8 / 12" [ref=f8e186]
+                - group "9 / 12" [ref=f8e188]
+                - group "10 / 12" [ref=f8e190]
+                - group "11 / 12" [ref=f8e192]
+                - group "12 / 12" [ref=f8e194]
+              - button "Next slide" [ref=f8e196] [cursor=pointer]: next
+              - button "Previous slide" [ref=f8e197] [cursor=pointer]: prev
+              - generic [ref=f8e198]:
+                - button "Go to slide 1" [ref=f8e199] [cursor=pointer]
+                - button "Go to slide 2" [ref=f8e200] [cursor=pointer]
+                - button "Go to slide 3" [ref=f8e201] [cursor=pointer]
+                - button "Go to slide 4" [ref=f8e202] [cursor=pointer]
+                - button "Go to slide 5" [ref=f8e203] [cursor=pointer]
+                - button "Go to slide 6" [ref=f8e204] [cursor=pointer]
+                - button "Go to slide 7" [ref=f8e205] [cursor=pointer]
+                - button "Go to slide 8" [ref=f8e206] [cursor=pointer]
+                - button "Go to slide 9" [ref=f8e207] [cursor=pointer]
+                - button "Go to slide 10" [ref=f8e208] [cursor=pointer]
+                - button "Go to slide 11" [ref=f8e209] [cursor=pointer]
+                - button "Go to slide 12" [ref=f8e210] [cursor=pointer]
+          - generic [ref=f8e215]:
+            - figure [ref=f8e216]
+            - heading [level=2] [ref=f8e217]:
+              - strong [ref=f8e218]: parque fabril com Tecnologia de ponta
+            - figure [ref=f8e221]
+          - generic [ref=f8e224]:
+            - heading [level=2] [ref=f8e225]:
+              - strong [ref=f8e226]: NOSSOS CLIENTES
+            - separator [ref=f8e227]
+            - generic [ref=f8e228]:
+              - figure [ref=f8e229]
+              - figure [ref=f8e230]
+              - figure [ref=f8e231]
+              - figure [ref=f8e232]
+              - figure [ref=f8e234]
+              - figure [ref=f8e235]
+              - figure [ref=f8e236]
+              - figure [ref=f8e237]
+              - figure [ref=f8e239]
+              - figure [ref=f8e240]
+              - figure [ref=f8e241]
+              - figure [ref=f8e242]
+          - paragraph
+          - generic [ref=f8e244]:
+            - generic [ref=f8e245]:
+              - heading [level=2] [ref=f8e246]:
+                - strong [ref=f8e247]: Nossa história
+              - paragraph [ref=f8e248]:
+                - text: Fundada em 1977, a
+                - strong [ref=f8e249]: Decarlo
+                - text: construiu uma trajetória de quase cinco décadas de evolução, especializando-se em usinagem e fabricação de peças seriadas para a indústria. Com tecnologia de ponta, estrutura moderna e foco em qualidade e eficiência, consolidou-se como referência no setor.
+            - generic [ref=f8e255]:
+              - generic [ref=f8e256]:
+                - group "1 / 8" [ref=f8e257]:
+                  - img "1990 - Fundação" [ref=f8e258]
+                  - heading "1977" [level=2] [ref=f8e259]
+                  - paragraph [ref=f8e260]: Fundada como Retificadora De Carlo, a empresa iniciou suas atividades especializada na retífica de tambores e discos de freio, consolidando sua reputação pela qualidade e precisão dos serviços prestados.
+                - group "2 / 8" [ref=f8e261]:
+                  - heading "1980" [level=2] [ref=f8e263]
+                  - paragraph [ref=f8e264]: A empresa amplia seu portfólio de serviços, deixando de atuar exclusivamente no segmento de freios para atender a diversos setores da indústria por meio de soluções em usinagem de precisão.
+                - group "3 / 8" [ref=f8e265]:
+                  - heading "1990" [level=2] [ref=f8e267]
+                  - paragraph [ref=f8e268]: A companhia passa a adotar oficialmente a razão social De Carlo Peças Ltda., fortalecendo sua identidade e posicionamento no mercado industrial.
+                - group "4 / 8" [ref=f8e269]:
+                  - heading "1990" [level=2] [ref=f8e271]
+                  - paragraph [ref=f8e272]: A fabricação seriada de componentes para a indústria automobilística torna-se a principal atividade da empresa, consolidando sua expertise em produção de alta qualidade e elevada confiabilidade.
+                - group "5 / 8" [ref=f8e273]:
+                  - heading "2007" [level=2] [ref=f8e275]
+                  - paragraph [ref=f8e276]: Tem início a construção do novo parque fabril, localizado na Vila Industrial, em Mogi das Cruzes - SP, ampliando sua capacidade produtiva e fortalecendo sua presença no mercado nacional.
+                - group "6 / 8" [ref=f8e277]:
+                  - heading "2024" [level=2] [ref=f8e279]
+                  - paragraph [ref=f8e280]: Após décadas de gestão familiar, a empresa passa a integrar um grupo de investidores da Grande São Paulo, marcando o início de uma nova fase de crescimento estratégico.
+                - group "7 / 8" [ref=f8e281]:
+                  - heading "2025" [level=2] [ref=f8e283]
+                  - paragraph [ref=f8e284]: Sob nova administração e com investimentos em tecnologia, inovação e modernização, inicia-se um novo ciclo de desenvolvimento pautado pela excelência, qualidade e compromisso com seus clientes.
+                - group "8 / 8" [ref=f8e285]:
+                  - heading "2026" [level=2] [ref=f8e287]
+                  - paragraph [ref=f8e288]: A empresa passa a adotar a marca Decarlo Industrial, refletindo sua evolução, fortalecimento no mercado e compromisso contínuo com inovação, tecnologia e excelência em soluções industriais.
+              - button "Next slide" [ref=f8e289] [cursor=pointer]: next
+              - button "Previous slide" [ref=f8e290] [cursor=pointer]: prev
+              - generic [ref=f8e291]:
+                - button "Go to slide 1" [ref=f8e292] [cursor=pointer]
+                - button "Go to slide 2" [ref=f8e293] [cursor=pointer]
+                - button "Go to slide 3" [ref=f8e294] [cursor=pointer]
+                - button "Go to slide 4" [ref=f8e295] [cursor=pointer]
+                - button "Go to slide 5" [ref=f8e296] [cursor=pointer]
+                - button "Go to slide 6" [ref=f8e297] [cursor=pointer]
+                - button "Go to slide 7" [ref=f8e298] [cursor=pointer]
+                - button "Go to slide 8" [ref=f8e299] [cursor=pointer]
+          - generic [ref=f8e305]:
+            - generic [ref=f8e306]:
+              - paragraph [ref=f8e307]
+              - heading [level=2] [ref=f8e308]:
+                - strong [ref=f8e309]: MISSÃO
+              - separator [ref=f8e310]
+              - paragraph [ref=f8e311]: Impulsionar a eficiência e a inovação em usinagem, promovendo a modernização contínua dos processos produtivos e a busca permanente por novas tecnologias e soluções de alto valor agregado.
+            - generic [ref=f8e312]:
+              - paragraph [ref=f8e313]
+              - heading [level=2] [ref=f8e314]:
+                - strong [ref=f8e315]: VISÃO
+              - separator [ref=f8e316]
+              - paragraph [ref=f8e317]: Ser reconhecida como referência no setor de usinagem pela excelência operacional, agilidade e capacidade de inovação, destacando-se no desenvolvimento de novos produtos e processos. Buscamos consolidar nossa presença no mercado por meio da aplicação de tecnologias avançadas, práticas sustentáveis e de uma gestão da qualidade baseada em riscos, gerando valor para clientes, colaboradores e parceiros.
+            - generic [ref=f8e318]:
+              - paragraph [ref=f8e319]
+              - heading [level=2] [ref=f8e320]:
+                - strong [ref=f8e321]: VALORES
+              - separator [ref=f8e322]
+              - paragraph [ref=f8e323]: Credibilidade e transparência em todas as relações; Responsabilidade social e respeito ao meio ambiente; Compromisso com os requisitos regulatórios e as expectativas dos clientes; Ética, honestidade e integridade profissional; Pontualidade e excelência nas entregas; Valorização das pessoas e incentivo ao aprendizado contínuo; Criatividade e inovação como impulsionadores do crescimento; Trabalho em equipe e colaboração para resultados eficientes; Cultura de prevenção, gestão de riscos e melhoria contínua; Compromisso com a qualidade, a eficiência e a sustentabilidade
+          - generic [ref=f8e327]:
+            - iframe [ref=f8e329]
+            - paragraph
+          - paragraph
+          - generic [ref=f8e333]:
+            - heading [level=2] [ref=f8e334]:
+              - strong [ref=f8e335]: Certificação
+            - figure [ref=f8e336]:
+              - table [ref=f8e337]:
+                - rowgroup [ref=f8e338]:
+                  - row [ref=f8e339]:
+                    - cell [ref=f8e340]
+                    - cell [ref=f8e341]:
+                      - text: ISO 9001:2015
+                      - link [ref=f8e342] [cursor=pointer]:
+                        - /url: https://decarlo.com.br/wp-content/uploads/2025/09/CERTIFICADO_ISO9001_13.09.24_13.09.27_PT-BR_EN-US.pdf
+                      - subscript [ref=f8e343]:
+                        - text: (
+                        - emphasis [ref=f8e344]: PT / EN)
+          - separator [ref=f8e345]
+          - paragraph
+    - contentinfo [ref=f8e346]:
+      - generic [ref=f8e349]:
+        - region "Footer Widget 2" [ref=f8e351]:
+          - generic [ref=f8e353]:
+            - figure [ref=f8e354]
+            - paragraph [ref=f8e356]:
+              - mark [ref=f8e357]: Rua Tenente Onofre Rodrigues de Aguiar, 1005 Vila Industrial, Mogi das Cruzes - SP, 08770-041
+              - link [ref=f8e358] [cursor=pointer]:
+                - /url: https://maps.app.goo.gl/tmHV3B8Tstddwfu78
+                - emphasis [ref=f8e359]: como chegar
+        - region "Footer Widget 3" [ref=f8e361]:
+          - paragraph [ref=f8e363]:
+            - mark [ref=f8e364]: +55 11 4791.7110
+          - paragraph [ref=f8e366]:
+            - mark [ref=f8e367]: comercial@decarlo.com.br
+        - link "Linkedin" [ref=f8e372] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/decarlo/
+      - paragraph [ref=f8e382]:
+        - emphasis [ref=f8e384]: Copyright © 2026 Decarlo Industrial
