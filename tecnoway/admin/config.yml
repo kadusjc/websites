@@ -25,7 +25,7 @@ publish_mode: editorial_workflow
 locale: pt
 
 logo:
-  src: https://fcsoftware.com.br/tecnoway/admin/brand.svg
+  src: brand.svg
   show_in_header: false
 
 site_url: https://fcsoftware.com.br/tecnoway/

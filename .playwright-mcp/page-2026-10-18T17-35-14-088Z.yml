@@ -1,0 +1,340 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Decarlo Industrial, início" [ref=e4] [cursor=pointer]:
+        - /url: "#home"
+        - img "Decarlo Industrial" [ref=e5]
+      - navigation "Navegação principal" [ref=e6]:
+        - link "Capacidade" [ref=e7] [cursor=pointer]:
+          - /url: "#capacidades"
+        - link "Segmentos" [ref=e8] [cursor=pointer]:
+          - /url: "#segmentos"
+        - link "Estrutura" [ref=e9] [cursor=pointer]:
+          - /url: "#estrutura"
+        - link "História" [ref=e10] [cursor=pointer]:
+          - /url: "#historia"
+        - link "Localização" [ref=e11] [cursor=pointer]:
+          - /url: "#localizacao"
+      - link "Solicitar orçamento" [ref=e12] [cursor=pointer]:
+        - /url: https://api.whatsapp.com/send?phone=551147917110&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20usinagem%20com%20a%20Decarlo.
+        - text: Solicitar orçamento
+        - generic [aria-hidden] [ref=e13]: ↗
+  - main [ref=e14]:
+    - generic [ref=e15]:
+      - img "Operação de usinagem de precisão no parque fabril Decarlo" [ref=e16]
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: Decarlo Industrial · Mogi das Cruzes, SP
+        - heading "Na Decarlo, a complexidade vira excelência." [level=1] [ref=e20]: Na Decarlo,a complexidadevira excelência.
+        - paragraph [ref=e21]: Produzimos peças usinadas com alta precisão, confiabilidade e pontualidade. Mais de 45 anos transformando requisitos industriais em produção consistente.
+        - generic [ref=e22]:
+          - link "Solicite um orçamento" [ref=e23] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=551147917110&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20usinagem%20com%20a%20Decarlo.
+            - text: Solicite um orçamento
+            - generic [aria-hidden] [ref=e24]: ↗
+          - link "Conheça nossa capacidade" [ref=e25] [cursor=pointer]:
+            - /url: "#capacidades"
+            - text: Conheça nossa capacidade
+            - generic [aria-hidden] [ref=e26]: ↓
+        - paragraph [ref=e27]:
+          - strong [ref=e28]: Precisão. Confiabilidade. Pontualidade.
+          - text: Do projeto à peça seriada.
+    - region "Decarlo em números" [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - strong [ref=e32]: +2M
+          - generic [ref=e33]: peças usinadas por ano
+        - generic [ref=e34]:
+          - strong [ref=e35]: "+50"
+          - generic [ref=e36]: colaboradores
+        - generic [ref=e37]:
+          - strong [ref=e38]: ISO
+          - generic [ref=e39]: 9001 certificada desde 2015
+        - generic [ref=e40]:
+          - strong [ref=e41]: 45+
+          - generic [ref=e42]: anos de experiência em usinagem
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: Capacidade técnica
+          - heading "Precisão para produzir em escala." [level=2] [ref=e48]: Precisão paraproduzir em escala.
+        - paragraph [ref=e49]: Mais de 45 anos de experiência em usinagem técnica, com expertise na fabricação de peças de diferentes geometrias e materiais para diversos segmentos industriais. Processos controlados e auditados asseguram qualidade e cumprimento dos prazos acordados.
+      - generic [ref=e50]:
+        - article [ref=e51]:
+          - generic [ref=e52]: "19"
+          - generic [ref=e53]:
+            - heading "Centros de usinagem verticais" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Precisão e repetibilidade em produção seriada.
+        - article [ref=e56]:
+          - generic [ref=e57]: "03"
+          - generic [ref=e58]:
+            - heading "Centros de usinagem horizontais" [level=3] [ref=e59]
+            - paragraph [ref=e60]: Capacidade para diferentes geometrias e operações.
+        - article [ref=e61]:
+          - generic [ref=e62]: "02"
+          - generic [ref=e63]:
+            - heading "Tornos verticais CNC" [level=3] [ref=e64]
+            - paragraph [ref=e65]: Usinagem de componentes com controle dimensional.
+        - article [ref=e66]:
+          - generic [ref=e67]: "23"
+          - generic [ref=e68]:
+            - heading "Tornos CNC" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Produção contínua com confiabilidade e pontualidade.
+        - article [ref=e71]:
+          - generic [ref=e72]: "05"
+          - generic [ref=e73]:
+            - heading "Retíficas" [level=3] [ref=e74]
+            - paragraph [ref=e75]: Acabamento e precisão para os requisitos do projeto.
+        - article [ref=e76]:
+          - generic [ref=e77]: "03"
+          - generic [ref=e78]:
+            - heading "Brochadeiras" [level=3] [ref=e79]
+            - paragraph [ref=e80]: Processos especializados para peças seriadas.
+        - article [ref=e81]:
+          - generic [ref=e82]: "07"
+          - generic [ref=e83]:
+            - heading "Fresadoras" [level=3] [ref=e84]
+            - paragraph [ref=e85]: Versatilidade para diversos segmentos industriais.
+        - article [ref=e86]:
+          - generic [ref=e87]: 45+
+          - generic [ref=e88]:
+            - heading "Anos de experiência" [level=3] [ref=e89]
+            - paragraph [ref=e90]: Conhecimento técnico construído desde 1977.
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e95]: Segmentos atendidos
+          - heading "Uma base sólida. Múltiplas indústrias." [level=2] [ref=e96]: Uma base sólida.Múltiplas indústrias.
+        - paragraph [ref=e97]: Produção contínua, peças robustas e precisão para diferentes demandas, com foco em confiabilidade e ritmo operacional.
+      - generic [ref=e98]:
+        - article [ref=e99]:
+          - text: 01 / MOBILIDADE
+          - heading "Automotivo" [level=3] [ref=e100]
+          - paragraph [ref=e101]: Produção contínua e precisa para evitar paradas e manter o ritmo da operação.
+        - article [ref=e102]:
+          - text: 02 / TRANSPORTE
+          - heading "Veículos pesados" [level=3] [ref=e103]
+          - paragraph [ref=e104]: Componentes de elevada durabilidade e confiabilidade para o transporte rodoviário.
+        - article [ref=e105]:
+          - text: 03 / CAMPO
+          - heading "Agrícola" [level=3] [ref=e106]
+          - paragraph [ref=e107]: Peças robustas para desempenho e eficiência nas operações do campo.
+        - article [ref=e108]:
+          - text: 04 / INFRAESTRUTURA
+          - heading "Construção civil" [level=3] [ref=e109]
+          - paragraph [ref=e110]: Peças seriadas de precisão para as mais diversas demandas do setor.
+        - article [ref=e111]:
+          - text: 05 / INDÚSTRIA
+          - heading "Outros segmentos" [level=3] [ref=e112]
+          - paragraph [ref=e113]: Versatilidade em usinagem de precisão para novos desafios industriais.
+    - generic [ref=e115]:
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - generic [ref=e118]: Por dentro da Decarlo
+          - heading "Desafios complexos. Soluções de precisão." [level=2] [ref=e119]: Desafios complexos.Soluções de precisão.
+        - paragraph [ref=e120]: Conheça de perto operações, componentes e detalhes do trabalho de usinagem Decarlo.
+      - generic [ref=e121]:
+        - figure "Usinagem em operação" [ref=e122]:
+          - img "Máquina industrial em operação de usinagem Decarlo" [ref=e123]
+        - figure "Controle dimensional" [ref=e125]:
+          - img "Medição de precisão de componente usinado" [ref=e126]
+        - figure "Centro CNC" [ref=e128]:
+          - img "Centro CNC trabalhando uma peça metálica" [ref=e129]
+        - figure "Peças seriadas" [ref=e131]:
+          - img "Componentes metálicos usinados em série" [ref=e132]
+        - figure "Precisão em cada detalhe" [ref=e134]:
+          - img "Detalhe de processo de usinagem industrial" [ref=e135]
+        - figure "Qualidade de acabamento" [ref=e137]:
+          - img "Componente usinado em acabamento de precisão" [ref=e138]
+        - figure "Parque fabril" [ref=e140]:
+          - img "Operação fabril Decarlo" [ref=e141]
+        - figure "Produção seriada" [ref=e143]:
+          - img "Processo de usinagem de peças seriadas" [ref=e144]
+        - figure "Tecnologia industrial" [ref=e146]:
+          - img "Equipamento de precisão na fábrica Decarlo" [ref=e147]
+        - figure "Componentes industriais" [ref=e149]:
+          - img "Detalhe de componente fabricado pela Decarlo" [ref=e150]
+        - figure "Processo controlado" [ref=e152]:
+          - img "Máquina e processo no parque fabril Decarlo" [ref=e153]
+        - figure "Diferentes geometrias" [ref=e155]:
+          - img "Peças usinadas de diferentes geometrias" [ref=e156]
+    - generic [ref=e159]:
+      - generic [ref=e160]:
+        - generic [ref=e161]:
+          - generic [ref=e162]: Confiança construída
+          - heading "Parcerias que movem a indústria." [level=2] [ref=e163]: Parcerias quemovem a indústria.
+        - paragraph [ref=e164]: Empresas e grupos industriais que fazem parte da trajetória da Decarlo.
+      - generic [ref=e165]:
+        - figure "AGCO" [ref=e166]:
+          - img "AGCO" [ref=e167]
+        - figure "Cabovel" [ref=e169]:
+          - img "Cabovel" [ref=e170]
+        - figure "FRUM" [ref=e172]:
+          - img "FRUM" [ref=e173]
+        - figure "Fundimig" [ref=e175]:
+          - img "Fundimig" [ref=e176]
+        - figure "ITM" [ref=e178]:
+          - img "ITM" [ref=e179]
+        - figure "Joalmi" [ref=e181]:
+          - img "Joalmi" [ref=e182]
+        - figure "Lepe" [ref=e184]:
+          - img "Lepe" [ref=e185]
+        - figure "Musashi" [ref=e187]:
+          - img "Musashi" [ref=e188]
+        - figure "Parker" [ref=e190]:
+          - img "Parker" [ref=e191]
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - generic [ref=e196]:
+          - generic [ref=e197]: Desde 1977
+          - heading "Quase cinco décadas de evolução industrial." [level=2] [ref=e198]: Quase cinco décadasde evolução industrial.
+        - paragraph [ref=e199]: Uma trajetória que começou na retífica e evoluiu para a fabricação seriada de peças usinadas para diversos setores.
+      - generic [ref=e200]:
+        - article [ref=e201]:
+          - img "Primeira fase da empresa em 1977" [ref=e202]
+          - time [ref=e203]: "1977"
+          - heading "Retificadora De Carlo" [level=3] [ref=e204]
+          - paragraph [ref=e205]: Início das atividades com retífica de tambores e discos de freio.
+        - article [ref=e206]:
+          - img "Expansão industrial na década de 1980" [ref=e207]
+          - time [ref=e208]: "1980"
+          - heading "Novos setores" [level=3] [ref=e209]
+          - paragraph [ref=e210]: Ampliação do portfólio para soluções de usinagem de precisão.
+        - article [ref=e211]:
+          - img "Identidade De Carlo Peças Ltda. em 1990" [ref=e212]
+          - time [ref=e213]: "1990"
+          - heading "De Carlo Peças Ltda." [level=3] [ref=e214]
+          - paragraph [ref=e215]: Adoção oficial da razão social e fortalecimento da identidade industrial.
+        - article [ref=e216]:
+          - img "Produção seriada de componentes automotivos" [ref=e217]
+          - time [ref=e218]: "1990"
+          - heading "Produção seriada" [level=3] [ref=e219]
+          - paragraph [ref=e220]: Componentes para a indústria automobilística tornam-se atividade central.
+        - article [ref=e221]:
+          - img "Construção do parque fabril de Mogi das Cruzes em 2007" [ref=e222]
+          - time [ref=e223]: "2007"
+          - heading "Novo parque fabril" [level=3] [ref=e224]
+          - paragraph [ref=e225]: Início da construção da unidade na Vila Industrial, em Mogi das Cruzes.
+        - article [ref=e226]:
+          - img "Nova fase estratégica da empresa em 2024" [ref=e227]
+          - time [ref=e228]: "2024"
+          - heading "Nova etapa" [level=3] [ref=e229]
+          - paragraph [ref=e230]: A empresa passa a integrar um grupo de investidores da Grande São Paulo.
+        - article [ref=e231]:
+          - img "Investimentos em tecnologia e modernização em 2025" [ref=e232]
+          - time [ref=e233]: "2025"
+          - heading "Modernização" [level=3] [ref=e234]
+          - paragraph [ref=e235]: Investimentos em tecnologia, inovação e desenvolvimento industrial.
+        - article [ref=e236]:
+          - img "Marca Decarlo Industrial adotada em 2026" [ref=e237]
+          - time [ref=e238]: "2026"
+          - heading "Decarlo Industrial" [level=3] [ref=e239]
+          - paragraph [ref=e240]: Uma nova marca para refletir a evolução e a excelência em soluções industriais.
+    - generic [ref=e242]:
+      - generic [ref=e243]:
+        - generic [ref=e244]:
+          - generic [ref=e245]: Direção e princípios
+          - heading "O que orienta cada decisão." [level=2] [ref=e246]: O que orientacada decisão.
+        - paragraph [ref=e247]: Uma gestão comprometida com eficiência, qualidade, inovação contínua e relações transparentes.
+      - generic [ref=e248]:
+        - article [ref=e249]:
+          - generic [ref=e250]: Missão
+          - heading "Impulsionar eficiência e inovação." [level=3] [ref=e251]
+          - paragraph [ref=e252]: Promover a modernização contínua dos processos produtivos e buscar tecnologias e soluções de alto valor agregado.
+        - article [ref=e253]:
+          - generic [ref=e254]: Visão
+          - heading "Ser referência em usinagem." [level=3] [ref=e255]
+          - paragraph [ref=e256]: Destacar-se pela excelência operacional, agilidade e inovação no desenvolvimento de produtos e processos, gerando valor para clientes, colaboradores e parceiros.
+        - article [ref=e257]:
+          - generic [ref=e258]: Valores
+          - heading "Ética, qualidade e evolução." [level=3] [ref=e259]
+          - paragraph [ref=e260]: Credibilidade, transparência, responsabilidade, pontualidade, valorização das pessoas, trabalho em equipe, gestão de riscos, melhoria contínua e respeito ao meio ambiente.
+    - generic [ref=e262]:
+      - generic [ref=e263]:
+        - generic [ref=e264]:
+          - generic [ref=e265]: Mogi das Cruzes · Alto Tietê
+          - heading "Conectada aos principais corredores." [level=2] [ref=e266]: Conectada aosprincipais corredores.
+        - paragraph [ref=e267]: Localizada na Vila Industrial, a Decarlo combina acesso rodoviário, aeroportuário e portuário para atender clientes em todo o Brasil.
+      - generic [ref=e268]:
+        - figure [ref=e269]:
+          - img "Parque fabril Decarlo com centros de usinagem, tornos CNC e equipamentos de produção" [ref=e270]
+        - generic [ref=e271]:
+          - heading "Conectividade logística" [level=3] [ref=e272]
+          - generic [ref=e273]:
+            - generic [ref=e274]:
+              - strong [ref=e275]: SP-070
+              - generic [ref=e276]: Ayrton Senna · acesso a São Paulo
+            - generic [ref=e277]:
+              - strong [ref=e278]: SP-088
+              - generic [ref=e279]: Mogi-Dutra · ligação com a Presidente Dutra
+            - generic [ref=e280]:
+              - strong [ref=e281]: SP-098
+              - generic [ref=e282]: Mogi-Bertioga · litoral e Porto de Santos
+            - generic [ref=e283]:
+              - strong [ref=e284]: GRU · 32 km
+              - generic [ref=e285]: Aeroporto Internacional de Guarulhos
+            - generic [ref=e286]:
+              - strong [ref=e287]: CGH · 49 km
+              - generic [ref=e288]: Aeroporto de Congonhas
+            - generic [ref=e289]:
+              - strong [ref=e290]: VCP · 113 km
+              - generic [ref=e291]: Aeroporto de Viracopos
+          - link "Como chegar" [ref=e292] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/tmHV3B8Tstddwfu78
+            - text: Como chegar
+            - generic [aria-hidden] [ref=e293]: ↗
+    - generic [ref=e295]:
+      - generic [ref=e296]:
+        - generic [ref=e297]: Qualidade certificada
+        - heading "ISO 9001:2015" [level=3] [ref=e298]
+        - paragraph [ref=e299]: Certificada desde 2015, com processos controlados e auditados.
+        - link "Ver certificado PT / EN ↗" [ref=e300] [cursor=pointer]:
+          - /url: https://decarlo.com.br/wp-content/uploads/2025/09/CERTIFICADO_ISO9001_13.09.24_13.09.27_PT-BR_EN-US.pdf
+      - img "Selo da certificação ISO 9001:2015 da Decarlo Industrial" [ref=e301]
+    - generic [ref=e303]:
+      - generic [ref=e304]:
+        - generic [ref=e305]: Vamos produzir juntos?
+        - heading "Transforme seu desafio em uma peça de precisão." [level=2] [ref=e306]
+        - paragraph [ref=e307]: Converse com a equipe comercial sobre desenho, material, volume e prazo para sua demanda de usinagem.
+      - generic [ref=e308]:
+        - link "WhatsApp · +55 11 4791.7110" [ref=e309] [cursor=pointer]:
+          - /url: https://api.whatsapp.com/send?phone=551147917110&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20uma%20demanda%20de%20usinagem.
+          - generic [aria-hidden] [ref=e311]: ↗
+        - link "comercial@decarlo.com.br" [ref=e312] [cursor=pointer]:
+          - /url: mailto:comercial@decarlo.com.br
+          - generic [aria-hidden] [ref=e314]: ↗
+        - link "Rua Tenente Onofre Rodrigues de Aguiar, 1005 · Mogi das Cruzes, SP" [ref=e315] [cursor=pointer]:
+          - /url: https://maps.app.goo.gl/tmHV3B8Tstddwfu78
+          - generic [aria-hidden] [ref=e317]: ↗
+  - contentinfo [ref=e318]:
+    - generic [ref=e319]:
+      - generic [ref=e320]:
+        - link "Decarlo Industrial, voltar ao início" [ref=e321] [cursor=pointer]:
+          - /url: "#home"
+          - img "Decarlo Industrial" [ref=e322]
+        - generic [ref=e323]:
+          - link "+55 11 4791.7110" [ref=e324] [cursor=pointer]:
+            - /url: tel:+551147917110
+          - link "comercial@decarlo.com.br" [ref=e325] [cursor=pointer]:
+            - /url: mailto:comercial@decarlo.com.br
+          - link "Mogi das Cruzes, SP · Como chegar ↗" [ref=e326] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/tmHV3B8Tstddwfu78
+          - link "LinkedIn ↗" [ref=e327] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/decarlo/
+          - link "Privacidade" [ref=e328] [cursor=pointer]:
+            - /url: "#privacidade"
+      - generic [ref=e329]:
+        - generic [ref=e330]: © 2026 Decarlo Industrial
+        - generic [ref=e331]: Usinagem de precisão desde 1977.
+  - dialog [ref=e332]:
+    - generic [ref=e333]:
+      - strong [ref=e334]: Sua privacidade, sua escolha.
+      - paragraph [ref=e335]:
+        - text: Usamos um cookie técnico para lembrar sua preferência. Fontes externas só carregam se você permitir.
+        - link "Leia a política" [ref=e336] [cursor=pointer]:
+          - /url: "#privacidade"
+        - text: .
+    - generic [ref=e337]:
+      - button "Aceitar todos" [ref=e338] [cursor=pointer]
+      - button "Somente essenciais" [ref=e339] [cursor=pointer]
+  - link "Solicitar orçamento pelo WhatsApp" [ref=e340] [cursor=pointer]:
+    - /url: https://api.whatsapp.com/send?phone=551147917110&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Decarlo%20Industrial.

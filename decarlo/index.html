@@ -13,9 +13,6 @@
 <meta property="og:image" content="https://fcsoftware.com.br/decarlo/assets/img/usinagem-01.jpg">
 <link rel="canonical" href="https://fcsoftware.com.br/decarlo/">
 <link rel="icon" href="assets/img/logo-decarlo.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/usinagem-01.jpg" fetchpriority="high">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Decarlo Industrial","url":"https://decarlo.com.br/","logo":"https://fcsoftware.com.br/decarlo/assets/img/logo-decarlo.png","image":"https://fcsoftware.com.br/decarlo/assets/img/usinagem-01.jpg","telephone":"+55 11 4791-7110","email":"comercial@decarlo.com.br","address":{"@type":"PostalAddress","streetAddress":"Rua Tenente Onofre Rodrigues de Aguiar, 1005, Vila Industrial","addressLocality":"Mogi das Cruzes","addressRegion":"SP","postalCode":"08770-041","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/company/decarlo/"]}</script>
 <style>
@@ -267,6 +264,7 @@ section[id]{scroll-margin-top:88px}
 
 /* Decarlo current industrial identity */
 :root{--navy:#0a1425;--navy-2:#132846;--navy-3:#193858;--cyan:#159ed1;--cyan-bright:#3bc2ec;--cyan-pale:#dff5fc;--white:#f5f7fa;--paper:#e9eef4;--ink:#101a29;--muted:#67758a;--red:#159ed1;--red-dark:#087eaf}
+.dec-wrap{width:min(1300px,calc(100% - 48px));margin-inline:auto}
 .dec-nav{position:absolute;inset:0 0 auto;z-index:30;color:#fff;background:#07101ed9;border-bottom:1px solid #ffffff20;backdrop-filter:blur(14px)}
 .dec-nav.is-fixed{position:fixed;background:#07101ef2}
 .dec-nav-in{min-height:88px;display:flex;align-items:center;gap:32px}
@@ -315,6 +313,7 @@ section[id]{scroll-margin-top:88px}
 .markets{background:#fff}
 .markets-grid{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #cbd5e1;border-bottom:1px solid #cbd5e1}
 .market{min-height:220px;padding:24px 20px;border-right:1px solid #cbd5e1;transition:background .25s}
+.market img{width:100%;aspect-ratio:16/9;object-fit:cover;margin:0 0 16px}
 .market:first-child{border-left:1px solid #cbd5e1}
 .market:hover{background:#f0f9fc}
 .market span{color:var(--cyan);font:700 .72rem/1 "DM Sans",sans-serif;letter-spacing:.1em}
@@ -330,9 +329,9 @@ section[id]{scroll-margin-top:88px}
 .gallery-item:hover img{transform:scale(1.035);filter:brightness(1.06)}
 .gallery-item figcaption{position:absolute;left:14px;bottom:12px;padding:5px 8px;background:#07101ebf;color:#fff;font-size:.67rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .clients{background:#fff;border-block:1px solid #dce3ec}
-.clients-grid{display:grid;grid-template-columns:repeat(5,1fr);align-items:center;gap:12px}
-.client-logo{height:100px;padding:16px;display:grid;place-items:center;border:1px solid #e3e8ef;background:#fff}
-.client-logo img{max-width:100%;max-height:50px;width:auto;height:auto;object-fit:contain}
+.clients-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;gap:14px}
+.client-logo{height:148px;padding:22px;display:grid;place-items:center;border:1px solid #d6e0eb;background:#fff}
+.client-logo img{max-width:100%;max-height:88px;width:auto;height:auto;object-fit:contain}
 .client-logo span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 .history{background:var(--navy);color:#fff}
 .history .section-v3__head h2{color:#fff}
@@ -382,8 +381,28 @@ section[id]{scroll-margin-top:88px}
 .dec-footer__contacts{display:flex;flex-wrap:wrap;gap:16px 26px;font-size:.77rem}
 .dec-footer__contacts a:hover{color:#fff}
 .dec-footer__bottom{display:flex;justify-content:space-between;gap:20px;padding-top:16px;color:#8190a1;font-size:.68rem}
-@media(max-width:1000px){.dec-nav-in{gap:16px}.dec-nav-links{gap:14px}.dec-nav .btn{padding-inline:13px}.hero-v3 h1{font-size:5.2rem}.metrics-in{grid-template-columns:repeat(2,1fr)}.metric:nth-child(3){border-left:1px solid #ffffff25}.metric:nth-child(-n+2){border-bottom:1px solid #ffffff25}.markets-grid{grid-template-columns:repeat(3,1fr)}.market:nth-child(4){border-left:1px solid #cbd5e1}.gallery-grid{grid-template-columns:repeat(3,1fr)}.clients-grid{grid-template-columns:repeat(3,1fr)}.timeline-grid{grid-template-columns:repeat(2,1fr)}.logistics-grid{grid-template-columns:1fr 1fr}.contact-v3__in{grid-template-columns:1fr}.contact-v3__actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:1000px){.dec-nav-in{gap:16px}.dec-nav-links{gap:14px}.dec-nav .btn{padding-inline:13px}.hero-v3 h1{font-size:5.2rem}.metrics-in{grid-template-columns:repeat(2,1fr)}.metric:nth-child(3){border-left:1px solid #ffffff25}.metric:nth-child(-n+2){border-bottom:1px solid #ffffff25}.markets-grid{grid-template-columns:repeat(3,1fr)}.market:nth-child(4){border-left:1px solid #cbd5e1}.gallery-grid{grid-template-columns:repeat(3,1fr)}.clients-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.client-logo{height:122px;padding:18px}.client-logo img{max-height:72px}.timeline-grid{grid-template-columns:repeat(2,1fr)}.logistics-grid{grid-template-columns:1fr 1fr}.contact-v3__in{grid-template-columns:1fr}.contact-v3__actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){.dec-nav-in{min-height:76px}.dec-brand img{width:158px}.dec-nav-links,.dec-nav>.wrap>.btn{display:none}.dec-menu{display:block}.dec-nav.is-open{position:fixed;inset:0;background:#07101ef8;overflow:auto}.dec-nav.is-open .dec-nav-in{flex-wrap:wrap;align-content:flex-start}.dec-nav.is-open .dec-nav-links{display:flex;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:26px 0}.dec-nav.is-open .dec-nav-links a{padding:17px 4px;border-bottom:1px solid #ffffff22;font-size:.95rem}.dec-nav.is-open>.wrap>.btn{display:flex;order:4;width:100%;margin-bottom:24px}.hero-v3{min-height:760px;min-height:94svh;align-items:flex-end}.hero-v3::before{background:linear-gradient(0deg,#07101ef7 0%,#091a43de 48%,#091a4380 100%)}.hero-v3__image{object-position:58% center}.hero-v3__content{width:calc(100% - 38px);padding-top:145px;padding-bottom:64px}.hero-v3__copy{margin:0;max-width:100%}.hero-v3 h1{font-size:4.1rem;margin:22px 0 18px}.hero-v3__lead{font-size:.93rem}.hero-v3__actions{display:grid;grid-template-columns:1fr}.hero-v3__actions .btn{width:100%}.hero-v3__note{margin-top:22px;font-size:.71rem}.metric{min-height:100px;padding:18px 14px;gap:9px;flex-direction:column;align-items:flex-start}.metric strong{font-size:2.4rem}.metric span{font-size:.69rem}.section-v3{padding:72px 0}.section-v3__head{grid-template-columns:1fr;gap:16px;margin-bottom:34px}.section-v3__head h2{font-size:3.3rem}.section-v3__head p{font-size:.88rem}.capability-grid{grid-template-columns:1fr 1fr}.capability{grid-template-columns:1fr;gap:11px;padding:18px 15px;min-height:142px}.capability b{font-size:2.1rem}.capability h3{font-size:1.35rem}.capability p{font-size:.72rem}.markets-grid{grid-template-columns:1fr 1fr}.market{min-height:185px;padding:18px 14px}.market:nth-child(3),.market:nth-child(5){border-left:1px solid #cbd5e1}.market h3{margin:28px 0 8px;font-size:1.55rem}.market p{font-size:.72rem}.gallery-v3{padding:70px 0}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;gap:7px}.gallery-item:nth-child(1),.gallery-item:nth-child(8){grid-column:span 2;grid-row:span 1}.gallery-item figcaption{font-size:.59rem;left:8px;bottom:8px}.clients-grid{grid-template-columns:repeat(2,1fr);gap:8px}.client-logo{height:78px;padding:12px}.client-logo img{max-height:42px}.timeline-grid{grid-template-columns:1fr 1fr}.timeline-item{padding:11px}.timeline-item time{font-size:1.5rem}.timeline-item h3{font-size:1.12rem}.timeline-item p{font-size:.71rem}.purpose-grid{grid-template-columns:1fr}.purpose-item{min-height:0;padding:24px 20px}.purpose-item .section-v3__label{margin-bottom:20px}.purpose-item h3{font-size:1.8rem}.purpose-item p{font-size:.8rem}.logistics-grid{grid-template-columns:1fr;gap:24px}.logistics-photo{min-height:290px}.route{grid-template-columns:92px 1fr;gap:12px;padding:11px 0}.route strong,.route span{font-size:.72rem}.cert-grid{grid-template-columns:1fr auto;padding:22px 18px;gap:12px}.cert-grid img{width:76px;height:76px}.cert-grid h3{font-size:1.75rem}.cert-grid p{font-size:.75rem}.contact-v3{padding:70px 0}.contact-v3 h2{font-size:3.4rem}.contact-v3 p{font-size:.85rem}.contact-v3__actions{grid-template-columns:1fr}.dec-footer__top{align-items:flex-start;flex-direction:column}.dec-footer__logo img{width:170px}.dec-footer__contacts{display:grid;gap:10px}.dec-footer__bottom{flex-direction:column;gap:6px}}
+@media(max-width:720px){
+	.dec-nav-in>.btn{display:none}
+	.dec-nav.is-open .dec-nav-in>.btn{display:flex;order:4;width:100%;margin-bottom:24px}
+	.markets-grid .market:nth-child(odd){border-left:1px solid #cbd5e1}
+	.clients-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+	.client-logo{height:104px;padding:13px}
+	.client-logo img{max-height:72px}
+	.market{min-height:0}
+	.market img{aspect-ratio:16/10}
+}
+.cookie-banner{position:fixed;left:20px;bottom:20px;z-index:45;width:min(590px,calc(100% - 40px));display:grid;grid-template-columns:1fr auto;align-items:center;gap:14px;padding:18px 20px;background:#fff;color:#101a29;border:1px solid #cbd5e1;border-left:4px solid var(--cyan);box-shadow:0 18px 48px #07101e38}
+.cookie-banner[hidden]{display:none}
+.cookie-copy strong{display:block;color:var(--navy);font-size:.88rem}
+.cookie-copy p{margin-top:4px;color:#526174;font-size:.72rem;line-height:1.5}
+.cookie-copy a{color:#087eaf;text-decoration:underline;text-underline-offset:2px}
+.cookie-actions{display:grid;gap:7px;min-width:142px}
+.cookie-actions button{min-height:38px;padding:8px 12px;border:1px solid var(--navy);background:var(--navy);color:#fff;font-size:.7rem;font-weight:700;cursor:pointer}
+.cookie-actions button+button{background:#fff;color:var(--navy)}
+.cookie-actions button:hover{background:var(--cyan);border-color:var(--cyan);color:#04101a}
+@media(max-width:720px){.cookie-banner{left:12px;bottom:calc(72px + env(safe-area-inset-bottom));width:calc(100% - 24px);grid-template-columns:1fr;gap:10px;padding:15px 16px}.cookie-actions{grid-template-columns:1fr 1fr;min-width:0}.cookie-actions button{min-height:42px;padding:8px;font-size:.67rem}}
 </style>
 </head>
 <body>
@@ -604,10 +623,16 @@ section[id]{scroll-margin-top:88px}
 		<h3>Navegação e terceiros</h3>
 		<p>A hospedagem GitHub Pages pode registrar dados técnicos de acesso para segurança e operação. As fontes são carregadas pelo Google Fonts. Os links para WhatsApp, e-mail, mapas e LinkedIn só acessam esses serviços quando você escolhe abri-los.</p>
 		<h3>Cookies</h3>
-		<p>O site não instala cookies próprios nem utiliza cookies de publicidade ou rastreamento. Não há banner de consentimento porque não são usados cookies não essenciais nesta página.</p>
+		<p>O cookie técnico <code>decarlo_cookie_consent</code> guarda sua escolha por 180 dias. Não usamos cookies de publicidade ou análise. Se você aceitar recursos externos, carregamos as fontes Google Fonts; esse pedido informa seu endereço IP ao Google. Se escolher somente essenciais, usamos as fontes de sistema disponíveis no dispositivo.</p>
+		<p>Você pode mudar sua escolha limpando os cookies deste site no navegador. A política e os canais de contato estão disponíveis no rodapé.</p>
 		<p class="privacy-contact">Dúvidas sobre privacidade? Escreva para <a href="mailto:comercial@decarlo.com.br">comercial@decarlo.com.br</a>.</p>
 	</div>
 </dialog>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDescription" hidden>
+	<div class="cookie-copy"><strong id="cookieTitle">Sua privacidade, sua escolha.</strong><p id="cookieDescription">Usamos um cookie técnico para lembrar sua preferência. Fontes externas só carregam se você permitir. <a href="#privacidade" id="cookiePrivacy">Leia a política</a>.</p></div>
+	<div class="cookie-actions"><button type="button" id="cookieAccept">Aceitar todos</button><button type="button" id="cookieEssential">Somente essenciais</button></div>
+</div>
 
 <a class="social-fixed" href="https://api.whatsapp.com/send?phone=551147917110&text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Decarlo%20Industrial." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento pelo WhatsApp">
 	<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1s-.6.8-.8 1c-.1.2-.3.2-.5.1s-1-.4-1.9-1.2c-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.3.1-.4l.4-.5.3-.4c.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.5 3.8 3.5.5.2.9.4 1.2.4.5.2 1 .1 1.3.1.4-.1 1.4-.6 1.6-1.1.2-.5.2-1 .2-1.1-.1-.1-.3-.2-.5-.3Z"/></svg>
@@ -637,9 +662,30 @@ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
 document.querySelectorAll('.reveal').forEach(element=>observer.observe(element));
 document.querySelector('#year').textContent=new Date().getFullYear();
 const privacyDialog=document.querySelector('#privacyDialog');
-document.querySelector('#privacyOpen').addEventListener('click',event=>{event.preventDefault();privacyDialog.showModal()});
+const openPrivacy=event=>{event.preventDefault();privacyDialog.showModal()};
+document.querySelector('#privacyOpen').addEventListener('click',openPrivacy);
+document.querySelector('#cookiePrivacy').addEventListener('click',openPrivacy);
 document.querySelector('#privacyClose').addEventListener('click',()=>privacyDialog.close());
 privacyDialog.addEventListener('click',event=>{if(event.target===privacyDialog)privacyDialog.close()});
+const consentCookie='decarlo_cookie_consent';
+const cookieBanner=document.querySelector('#cookieBanner');
+const rememberConsent=choice=>{
+	const secure=location.protocol==='https:'?'; Secure':'';
+	document.cookie=`${consentCookie}=${choice}; Max-Age=15552000; Path=/decarlo/; SameSite=Lax${secure}`;
+	cookieBanner.hidden=true;
+};
+const loadExternalFonts=()=>{
+	if(document.querySelector('#decGoogleFonts'))return;
+	const fonts=document.createElement('link');
+	fonts.id='decGoogleFonts';fonts.rel='stylesheet';
+	fonts.href='https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap';
+	document.head.append(fonts);
+};
+const savedConsent=document.cookie.split('; ').find(cookie=>cookie.startsWith(`${consentCookie}=`))?.split('=')[1];
+if(savedConsent==='all')loadExternalFonts();
+if(!savedConsent)cookieBanner.hidden=false;
+document.querySelector('#cookieAccept').addEventListener('click',()=>{rememberConsent('all');loadExternalFonts()});
+document.querySelector('#cookieEssential').addEventListener('click',()=>rememberConsent('essential'));
 </script>
 </body>
 </html>

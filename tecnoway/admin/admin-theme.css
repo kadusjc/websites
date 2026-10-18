@@ -1,0 +1,258 @@
+ /* Tema Tecnoway para o painel Decap CMS.
+ * O Decap gera classes "css-<hash>-<Componente>" (Emotion), por isso os
+ * seletores usam [class*="-Componente"] e !important para vencer o CSS injetado. */
+
+:root {
+	--bg:      #0c0c0c;
+	--card:    #141414;
+	--surf:    #1c1c1c;
+	--line:    #242424;
+	--line2:   #303030;
+	--amber:   #d08828;
+	--amber-h: #e09a38;
+	--amber-g: rgba(208,136,40,0.15);
+	--amber-b: rgba(208,136,40,0.28);
+	--silver:  #b4b4b4;
+	--text:    #f2f2f2;
+	--soft:    #888;
+	--muted:   #555;
+	--r:       14px;
+	--font:    "Manrope", sans-serif;
+	--display: "Barlow Condensed", sans-serif;
+}
+
+/* ── Base ── */
+html, body, #nc-root { background: var(--bg) !important; color: var(--text) !important; font-family: var(--font) !important; }
+#nc-root * { font-family: inherit; }
+#nc-root ::selection { background: var(--amber-b); }
+#nc-root a { color: var(--amber); }
+#nc-root h1, #nc-root h2, #nc-root h3 { color: var(--text) !important; }
+
+/* ── Login ── */
+[class*="-StyledAuthenticationPage"] { background: var(--bg) !important; }
+[class*="-StyledAuthenticationPage"] img[alt="Logo"] { max-width: 220px; }
+[class*="-PageLogoIcon"] { color: var(--amber) !important; }
+[class*="-LoginButton"], [class*="-TurboLoginButton"], [class*="-AuthForm"] button {
+	background: var(--amber) !important; color: #111 !important; border: 0 !important;
+	border-radius: 999px !important; font-weight: 700 !important; font-family: var(--font) !important;
+	box-shadow: 0 4px 20px rgba(208,136,40,.3) !important;
+}
+[class*="-LoginButton"]:hover, [class*="-AuthForm"] button:hover { background: var(--amber-h) !important; }
+[class*="-AuthInput"] {
+	background: var(--surf) !important; color: var(--text) !important;
+	border: 1px solid var(--line2) !important; border-radius: 10px !important;
+}
+[class*="-AuthInput"]:focus { border-color: var(--amber) !important; box-shadow: 0 0 0 3px var(--amber-g) !important; }
+[class*="-StyledAuthenticationPage"] p, [class*="-StyledAuthenticationPage"] a { color: var(--silver) !important; }
+
+/* ── Cabeçalho ── */
+[class*="-AppHeader"]:not([class*="-AppHeaderContent"]):not([class*="-AppHeaderActions"]):not([class*="-AppHeaderNav"]):not([class*="-AppHeaderButton"]):not([class*="-AppHeaderSiteLink"]):not([class*="-AppHeaderQuickNewButton"]):not([class*="-AppHeaderLogo"]):not([class*="-AppHeaderTestRepoIndicator"]) {
+	background: rgba(12,12,12,0.92) !important;
+	border-bottom: 1px solid var(--line) !important;
+	box-shadow: none !important;
+	backdrop-filter: blur(14px);
+}
+[class*="-AppHeaderButton"], [class*="-AppHeaderNavLink"], [class*="-AppHeaderSiteLink"] {
+	color: var(--soft) !important; font-weight: 700 !important; font-size: 0.88rem !important;
+	border-radius: 999px !important;
+}
+[class*="-AppHeaderButton"]:hover, [class*="-AppHeaderNavLink"]:hover, [class*="-AppHeaderSiteLink"]:hover { color: var(--text) !important; background: var(--surf) !important; }
+[class*="-AppHeaderNavLink"].nc-appHeader-navLink-active,
+[class*="-AppHeaderNavLink"][class*="active"],
+[class*="-AppHeaderButton"].nc-appHeader-navLink-active,
+[class*="-AppHeaderButton"][class*="active"] { color: var(--amber) !important; background: var(--amber-g) !important; }
+[class*="-AppHeaderQuickNewButton"], [class*="-AppHeaderQuickNewButton"] button {
+	background: var(--amber) !important; color: #111 !important; border-radius: 999px !important; font-weight: 700 !important;
+}
+[class*="-AvatarDropdownButton"], [class*="-AvatarImage"], [class*="-AvatarInitials"] { background: var(--surf) !important; color: var(--amber) !important; border: 1px solid var(--line2) !important; }
+[class*="-AvatarPlaceholderIcon"] { color: var(--amber) !important; }
+
+/* ── Painéis / cartões genéricos ── */
+[class*="-SidebarContainer"], [class*="-CollectionTopContainer"], [class*="-ListCard"], [class*="-GridCard"],
+[class*="-WorkflowTop"]:not([class*="Row"]):not([class*="Heading"]):not([class*="Description"]),
+[class*="-WorkflowCardContainer"], [class*="-StyledModal"], [class*="-SearchResultContainer"],
+[class*="-DeploysContainer"], [class*="-NotFoundContainer"], [class*="-ErrorBoundaryContainer"],
+[class*="-SettingsPaneContainer"], [class*="-NotesPaneContainer"], [class*="-EmptyState"]:not([class*="Icon"]):not([class*="Text"]) {
+	background: var(--card) !important; color: var(--text) !important;
+	border: 1px solid var(--line) !important; border-radius: var(--r) !important; box-shadow: none !important;
+}
+[class*="-ListCard"]:hover, [class*="-GridCard"]:hover, [class*="-WorkflowCardContainer"]:hover { border-color: var(--amber-b) !important; }
+[class*="-ListCardTitle"], [class*="-CardTitle"], [class*="-CardHeading"], [class*="-ListCard"] h2, [class*="-ListCard"] a { color: var(--text) !important; }
+[class*="-CardCollection"], [class*="-CardDateContainer"], [class*="-CardText"], [class*="-CardBody"] { color: var(--soft) !important; }
+[class*="-CollectionTopDescription"], [class*="-WorkflowTopDescription"], [class*="-DeploysTopDescription"] { color: var(--soft) !important; }
+
+/* Títulos com a fonte condensada do site */
+[class*="-SidebarHeading"], [class*="-CollectionTopHeading"], [class*="-WorkflowTopHeading"], [class*="-DeploysTopHeading"],
+[class*="-SearchResultHeading"], [class*="-LibraryTitle"], [class*="-GroupHeading"], [class*="-SectionHeading"], [class*="-StyledHeaderTitle"] {
+	font-family: var(--display) !important; font-style: italic !important; font-weight: 800 !important;
+	text-transform: uppercase !important; letter-spacing: 0.03em !important; color: var(--text) !important;
+	font-size: 1.5rem !important;
+}
+
+/* Barra lateral */
+[class*="-SidebarNavLink"], [class*="-TreeNavLink"] { color: var(--silver) !important; border-radius: 10px !important; }
+[class*="-SidebarNavLink"]:hover, [class*="-TreeNavLink"]:hover { color: var(--text) !important; background: var(--surf) !important; }
+[class*="-SidebarNavLink"][class*="active"], [class*="-TreeNavLink"][class*="active"],
+[class*="-SidebarNavLink"].sidebar-active, [class*="-TreeNavLink"].sidebar-active,
+[class*="-SidebarNavLink"][class*="sidebarNavLinkActive"] {
+	color: var(--amber) !important; background: var(--amber-g) !important;
+}
+[class*="-SidebarNavLink"][class*="active"] svg, [class*="-TreeNavLink"][class*="active"] svg { color: var(--amber) !important; }
+[class*="-SearchContainer"], [class*="-SearchInput"] { background: var(--surf) !important; color: var(--text) !important; border-color: var(--line2) !important; }
+[class*="-SearchIcon"] { color: var(--soft) !important; }
+
+/* Botões principais */
+[class*="-CollectionTopNewButton"], [class*="-PublishButton"], [class*="-SaveButton"], [class*="-StyledButtonPrimary"],
+[class*="-UploadButton"], [class*="-InsertButton"], [class*="-AddButton"], [class*="-StatusButton"], [class*="-StyledToolbarButton"] {
+	background: var(--amber) !important; color: #111 !important; border: 1px solid transparent !important;
+	border-radius: 999px !important; font-weight: 700 !important; font-family: var(--font) !important;
+	box-shadow: 0 4px 20px rgba(208,136,40,.25) !important;
+}
+[class*="-CollectionTopNewButton"]:hover, [class*="-PublishButton"]:hover, [class*="-SaveButton"]:hover, [class*="-StyledButtonPrimary"]:hover,
+[class*="-UploadButton"]:hover, [class*="-InsertButton"]:hover, [class*="-AddButton"]:hover, [class*="-StatusButton"]:hover { background: var(--amber-h) !important; }
+[class*="-PublishedButton"], [class*="-PublishedToolbarButton"] { background: transparent !important; color: var(--amber) !important; border: 1px solid var(--amber-b) !important; border-radius: 999px !important; }
+[class*="-ToolbarButton"]:not([class*="Styled"]):not([class*="Published"]), [class*="-StyledButtonSecondary"], [class*="-DeleteButton"], [class*="-StyledDeleteButton"],
+[class*="-ViewControlsButton"], [class*="-ActionButton"], [class*="-RefreshButton"], [class*="-RefreshPreviewButton"], [class*="-CopyButton"], [class*="-TopBarButton"], [class*="-FileWidgetButton"] {
+	background: transparent !important; color: var(--text) !important; border: 1px solid var(--line2) !important;
+	border-radius: 999px !important; font-weight: 700 !important; font-family: var(--font) !important; box-shadow: none !important;
+}
+[class*="-ToolbarButton"]:hover, [class*="-StyledButtonSecondary"]:hover, [class*="-ViewControlsButton"]:hover, [class*="-FileWidgetButton"]:hover, [class*="-TopBarButton"]:hover { border-color: var(--amber-b) !important; background: var(--amber-g) !important; }
+[class*="-DeleteButton"], [class*="-StyledDeleteButton"], [class*="-FileWidgetButtonRemove"] { color: #e05a4e !important; border-color: rgba(224,90,78,.4) !important; }
+[class*="-DeleteButton"]:hover, [class*="-StyledDeleteButton"]:hover, [class*="-FileWidgetButtonRemove"]:hover { background: rgba(224,90,78,.12) !important; }
+
+/* Dropdowns */
+[class*="-DropdownList"], [class*="-StyledDropdown"], [class*="-StyledDropContent"], [class*="-ToolbarDropdown"] {
+	background: var(--surf) !important; color: var(--text) !important; border: 1px solid var(--line2) !important; border-radius: 12px !important; box-shadow: 0 12px 40px rgba(0,0,0,.6) !important;
+}
+[class*="-StyledMenuItem"], [class*="-PublishDropDownItem"], [class*="-StatusDropdownItem"], [class*="-DropdownList"] [role="menuitem"] { color: var(--text) !important; }
+[class*="-StyledMenuItem"]:hover, [class*="-DropdownList"] [role="menuitem"]:hover, [class*="-StyledMenuItem"]:focus { background: var(--amber-g) !important; color: var(--amber) !important; }
+[class*="-ViewControlsText"], [class*="-viewControlsText"] { color: var(--soft) !important; }
+
+/* ── Editor ── */
+[class*="-EditorContainer"], [class*="-ControlPaneContainer"], [class*="-PreviewPaneContainer"], [class*="-NoPreviewContainer"] { background: var(--bg) !important; }
+[class*="-ToolbarContainer"], [class*="-EditorControlBar"] { background: rgba(12,12,12,0.92) !important; border-bottom: 1px solid var(--line) !important; box-shadow: none !important; }
+[class*="-ToolbarSectionBackLink"] { border-right: 1px solid var(--line) !important; background: transparent !important; }
+[class*="-BackCollection"], [class*="-BackStatus"] { color: var(--soft) !important; }
+[class*="-BackStatusChanged"] { color: var(--amber) !important; }
+[class*="-BackArrow"] { color: var(--amber) !important; }
+[class*="-ToolbarSectionMeta"] { border-left: 1px solid var(--line) !important; }
+[class*="-EditorToggle"] { border-left: 1px solid var(--line) !important; }
+[class*="-ToolbarToggleLabel"] { color: var(--soft) !important; }
+
+/* Campos */
+[class*="-ControlContainer"] { background: var(--card) !important; border: 1px solid var(--line) !important; border-radius: var(--r) !important; box-shadow: none !important; }
+[class*="-ControlContainer"]:focus-within { border-color: var(--amber) !important; box-shadow: 0 0 0 3px var(--amber-g) !important; }
+[class*="-FieldLabel"], [class*="-SettingsFieldLabel"], [class*="-NestedObjectLabel"] {
+	background: var(--surf) !important; color: var(--silver) !important;
+	font-family: var(--font) !important; font-weight: 700 !important; font-size: 0.72rem !important;
+	letter-spacing: 0.12em !important; text-transform: uppercase !important;
+	border-radius: 0 0 8px 0 !important;
+}
+[class*="-ControlContainer"]:focus-within > [class*="-FieldLabel"],
+[class*="-ControlContainer"]:focus-within [class*="-FieldLabel"]:first-child { background: var(--amber) !important; color: #111 !important; }
+[class*="-ControlHint"], [class*="-Hint"] { color: var(--soft) !important; }
+[class*="-ControlErrorsList"], [class*="-ErrorText"], [class*="-ErrorMessage"], [class*="-StyledError"] { color: #e05a4e !important; }
+
+#nc-root input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+#nc-root textarea, #nc-root select,
+[class*="-TextControl"], [class*="-TextArea"], [class*="-DateTimeControl"] input, [class*="-ListControl"] input,
+[class*="-ControlContainer"] [class*="-css-"] input {
+	background: var(--card) !important; color: var(--text) !important;
+	border: 0 !important; outline: none !important; font-family: var(--font) !important;
+	caret-color: var(--amber);
+}
+#nc-root input::placeholder, #nc-root textarea::placeholder { color: var(--muted) !important; }
+
+/* Listas (produtos, galeria) e objetos */
+[class*="-StyledListItemTopBar"], [class*="-objectWidgetTopBarContainer"], [class*="-TopBar"]:not([class*="Button"]):not([class*="Container"]) {
+	background: var(--surf) !important; border-bottom: 1px solid var(--line) !important; color: var(--silver) !important;
+}
+[class*="-TopBarContainer"] { background: var(--surf) !important; }
+[class*="-StyledListItemTopBar"] button, [class*="-TopBarButton"] { color: var(--silver) !important; border: 0 !important; background: transparent !important; }
+[class*="-StyledListItemTopBar"] button:hover, [class*="-TopBarButton"]:hover { color: var(--amber) !important; }
+[class*="-SortableListItem"], [class*="-StyledListElement"], [class*="-listControlItem"] { border: 1px solid var(--line) !important; border-radius: 10px !important; background: var(--card) !important; }
+[class*="-DragIconContainer"] { color: var(--muted) !important; }
+[class*="-ExpandButton"], [class*="-ExpandButtonContainer"] button { color: var(--text) !important; }
+[class*="-ControlContainer"] [class*="-ControlContainer"] { background: var(--card) !important; border-color: var(--line2) !important; }
+
+/* Toggle (booleano) */
+[class*="-ToggleBackground"], [class*="-BooleanBackground"] { background: var(--line2) !important; }
+[class*="-ToggleHandle"] { background: var(--silver) !important; }
+[class*="-ToggleContainer"][class*="active"] [class*="-ToggleBackground"], [class*="-ToggleBackground"][class*="active"] { background: var(--amber) !important; }
+[role="switch"][aria-checked="true"] [class*="-ToggleBackground"] { background: var(--amber) !important; }
+[role="switch"][aria-checked="true"] [class*="-ToggleHandle"] { background: #111 !important; }
+
+/* Imagens / upload */
+[class*="-ImageWrapper"], [class*="-StyledThumbnail"], [class*="-CardImageWrapper"] { background: var(--surf) !important; border: 1px solid var(--line) !important; border-radius: 10px !important; }
+[class*="-StyledDropZone"] { border: 2px dashed var(--line2) !important; background: var(--surf) !important; color: var(--soft) !important; border-radius: var(--r) !important; }
+[class*="-StyledFileGridItemContainer"], [class*="-StyledFileGridItem"] { background: var(--surf) !important; border: 1px solid var(--line) !important; border-radius: 10px !important; }
+[class*="-StyledFileName"], [class*="-StyledFileInfo"] { color: var(--silver) !important; }
+[class*="-StyledFileSize"], [class*="-StyledFileDate"] { color: var(--soft) !important; }
+[class*="-LibraryTop"], [class*="-StyledHeader"] { background: var(--card) !important; border-bottom: 1px solid var(--line) !important; }
+[class*="-StyledCloseButton"], [class*="-CloseButton"] { color: var(--soft) !important; }
+[class*="-StyledBackdrop"] { background: rgba(0,0,0,.7) !important; }
+
+/* Fluxo de trabalho */
+[class*="-WorkflowContainer"], [class*="-WorkflowListContainer"] { background: transparent !important; }
+[class*="-ColumnHeader"], [class*="-columnHeader"] { background: var(--surf) !important; color: var(--silver) !important; border-radius: 10px !important; font-family: var(--display) !important; font-style: italic; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+[class*="-ColumnCount"] { color: var(--soft) !important; }
+[class*="-WorkflowLink"], [class*="-CardTitle"] { color: var(--text) !important; }
+[class*="-WorkflowBadge"] { background: var(--amber-g) !important; color: var(--amber) !important; }
+
+/* Loader, tooltips, toasts, scroll */
+[class*="-StyledLoader"], [class*="-LoaderText"], [class*="-LoaderItem"] { color: var(--silver) !important; }
+[class*="-TooltipContainer"], [class*="-Tooltip"] { background: var(--surf) !important; color: var(--text) !important; }
+.Toastify__toast { background: var(--surf) !important; color: var(--text) !important; border: 1px solid var(--line2) !important; border-radius: 12px !important; font-family: var(--font) !important; }
+.Toastify__toast--success { border-color: var(--amber-b) !important; }
+.Toastify__toast--error { border-color: rgba(224,90,78,.5) !important; }
+.Toastify__progress-bar { background: var(--amber) !important; }
+#nc-root ::-webkit-scrollbar { width: 10px; height: 10px; }
+#nc-root ::-webkit-scrollbar-track { background: var(--bg); }
+#nc-root ::-webkit-scrollbar-thumb { background: var(--line2); border-radius: 999px; border: 2px solid var(--bg); }
+#nc-root ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* ── Ajustes após verificação visual ── */
+[class*="-EditorControl"], [class*="-StyledWidget"], [class*="-ListControl"], [class*="-ObjectControl"] { background: var(--card) !important; box-shadow: none !important; }
+[class*="-ListCardLink"], [class*="-GridCardLink"], [class*="-SummaryLink"] { border: 0 !important; background: transparent !important; color: var(--text) !important; box-shadow: none !important; }
+[class*="-PreviewLink"], [class*="-PreviewButtonContainer"] a, [class*="-ToolbarSectionMeta"] a { background: transparent !important; color: var(--text) !important; border: 1px solid var(--line2) !important; border-radius: 999px !important; font-weight: 700 !important; }
+[class*="-PreviewLink"]:hover { border-color: var(--amber-b) !important; background: var(--amber-g) !important; }
+[class*="-EditorToggle"] button, [class*="-ToolbarToggle"] button, [class*="-ButtonRound"] { background: var(--surf) !important; color: var(--silver) !important; border: 1px solid var(--line2) !important; box-shadow: none !important; }
+[class*="-EditorToggle"] button:hover, [class*="-ButtonRound"]:hover { color: var(--amber) !important; border-color: var(--amber-b) !important; }
+[class*="-EditorToggle"] button[class*="active"], [class*="-ButtonRound"][class*="active"] { color: var(--amber) !important; background: var(--amber-g) !important; border-color: var(--amber-b) !important; }
+[class*="-EditorToggle"] svg, [class*="-ButtonRound"] svg { color: inherit !important; }
+.Resizer, [class*="-StyledSplitPane"] .Resizer, [class*="-splitPane"] .Resizer { background: var(--line2) !important; border-color: var(--line2) !important; opacity: 1 !important; }
+.Resizer:hover { background: var(--amber) !important; }
+[class*="-PreviewPaneFrame"] { background: var(--bg) !important; border: 0 !important; }
+[class*="-ControlContainer"] > div:not([class*="FieldLabel"]), [class*="-ControlContainer"] > div > div[class^="css-"] { background: var(--card) !important; }
+[class*="-StyledSplitPane"], .SplitPane { background: var(--bg) !important; }
+
+/* ── Legibilidade e acabamento ── */
+:root { --soft: #a3a3a3; --muted: #6e6e6e; }
+#nc-root { font-size: 16px !important; }
+#nc-root button, #nc-root a, #nc-root input, #nc-root textarea, #nc-root select { font-size: 0.95rem !important; }
+[class*="-SidebarNavLink"], [class*="-TreeNavLink"] { font-size: 1rem !important; padding: 0.7rem 0.9rem !important; }
+[class*="-ListCardTitle"], [class*="-ListCard"] h2, [class*="-CardTitle"] { font-size: 1.1rem !important; font-weight: 600 !important; }
+[class*="-FieldLabel"], [class*="-SettingsFieldLabel"], [class*="-NestedObjectLabel"] { font-size: 0.8rem !important; padding: 0.35rem 0.8rem !important; }
+#nc-root input:not([type="checkbox"]):not([type="radio"]):not([type="file"]), #nc-root textarea { font-size: 1.05rem !important; line-height: 1.5 !important; }
+[class*="-StyledListItemTopBar"] { font-size: 0.9rem !important; letter-spacing: 0.06em !important; }
+[class*="-BackCollection"], [class*="-BackStatus"] { font-size: 0.9rem !important; }
+[class*="-AppHeaderButton"], [class*="-AppHeaderNavLink"], [class*="-AppHeaderSiteLink"] { font-size: 0.95rem !important; }
+[class*="-CollectionTopNewButton"], [class*="-PublishButton"], [class*="-SaveButton"], [class*="-AddButton"], [class*="-StatusButton"] { padding: 0.6rem 1.2rem !important; }
+[class*="-ControlContainer"] { margin-bottom: 1.25rem !important; }
+[class*="-SidebarContainer"], [class*="-CollectionTopContainer"], [class*="-ListCard"], [class*="-WorkflowCardContainer"] { box-shadow: 0 10px 30px rgba(0,0,0,.35) !important; }
+
+/* Login */
+[class*="-StyledAuthenticationPage"] {
+	background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(208,136,40,.14), transparent 70%), var(--bg) !important;
+	gap: 0.5rem;
+}
+[class*="-StyledAuthenticationPage"] img[alt="Logo"] { max-width: min(380px, 85vw) !important; width: 380px; height: auto; margin-bottom: 1.5rem; filter: drop-shadow(0 10px 30px rgba(0,0,0,.6)); }
+[class*="-StyledAuthenticationPage"]::before {
+	content: "Painel de administração"; display: block; order: -1;
+	font-family: var(--display); font-style: italic; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em;
+	font-size: 0.95rem; color: var(--amber); margin-bottom: 0.4rem;
+}
+[class*="-LoginButton"], [class*="-TurboLoginButton"] { font-size: 1.05rem !important; padding: 0.85rem 2.4rem !important; }
+[class*="-AuthInput"] { font-size: 1.05rem !important; padding: 0.8rem 1rem !important; min-width: 320px; }
+[class*="-GoBackButtonStyle"] { color: var(--soft) !important; font-size: 0.95rem !important; margin-top: 1rem; }
+[class*="-GoBackButtonStyle"]:hover { color: var(--amber) !important; }

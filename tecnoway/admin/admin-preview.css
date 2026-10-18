@@ -1,0 +1,7 @@
+/* Painel de pré-visualização (iframe) do Decap CMS, no tema Tecnoway */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap");
+html, body { background: #0c0c0c; color: #f2f2f2; font-family: "Manrope", sans-serif; line-height: 1.6; }
+body { padding: 1.25rem; }
+strong, b { color: #d08828; font-weight: 700; }
+img { max-width: 100%; border-radius: 10px; border: 1px solid #242424; }
+a { color: #d08828; }
