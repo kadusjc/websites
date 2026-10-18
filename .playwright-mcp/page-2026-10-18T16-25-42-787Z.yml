@@ -1,0 +1,628 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "Ferreiro Corrêa Software — início" [ref=f2e4] [cursor=pointer]:
+        - /url: "#"
+      - button "Abrir menu" [ref=f2e7] [cursor=pointer]
+  - main [ref=f2e9]:
+    - generic [ref=f2e11]:
+      - generic [ref=f2e12]:
+        - generic [ref=f2e13]: Agenda aberta para novos projetos
+        - heading "Sites que vendem. Sistemas que resolvem. IA que trabalha por você." [level=1] [ref=f2e16]:
+          - generic [ref=f2e17]:
+            - text: Sites que
+            - emphasis [ref=f2e18]: vendem
+            - text: .
+          - generic [ref=f2e19]: Sistemas que resolvem.
+          - generic [ref=f2e20]: IA que trabalha por você.
+        - paragraph [ref=f2e21]: Mais de 20 anos de Engenharia de Computação, com passagem por sistemas da Embraer, Azul, Gol e TAM, agora a serviço da sua empresa. Design que impressiona, SEO que coloca você no Google e um WhatsApp que não para de tocar.
+        - generic [ref=f2e22]:
+          - link "Quero um orçamento" [ref=f2e23] [cursor=pointer]:
+            - /url: "#orcamento"
+          - link "Ver trabalhos" [ref=f2e26] [cursor=pointer]:
+            - /url: "#trabalhos"
+        - generic [ref=f2e29]: Sun Certified Java · Autor de livro de React · Eng. da Computação - Pós em IA Aplicada
+      - generic "Prévia de sites desenvolvidos" [ref=f2e33]:
+        - generic [ref=f2e36]:
+          - img "Site Vida Nova Design" [ref=f2e37]
+          - img "Site Aderic Comercial" [ref=f2e38]
+          - img "Site Osawa Indústria" [ref=f2e39]
+          - img "Site Ribeiro Móveis e Colchões" [ref=f2e40]
+          - img "Site GML Corretora de Seguros" [ref=f2e41]
+          - img "Site Central Villa Branca" [ref=f2e42]
+          - img "Site Vértice Paisagismo" [ref=f2e43]
+          - img "Site Hudson Empório de Carnes" [ref=f2e44]
+          - img "Site Bem-Te-Vi English Academy" [ref=f2e45]
+        - generic [ref=f2e53]:
+          - generic [ref=f2e54]: Proposta desenvolvida
+          - generic [ref=f2e55]: Vida Nova Design
+    - generic "Especialidades" [ref=f2e56]:
+      - generic [ref=f2e57]:
+        - generic [ref=f2e58]: Sites institucionais ✦
+        - generic [ref=f2e59]: Landing pages ✦
+        - generic [ref=f2e60]: SEO técnico ✦
+        - generic [ref=f2e61]: Agentes de IA ✦
+        - generic [ref=f2e62]: LLM + Embeddings + RAG ✦
+        - generic [ref=f2e63]: Sistemas web ✦
+        - generic [ref=f2e64]: Apps Android ✦
+        - generic [ref=f2e65]: Integrações & APIs ✦
+        - generic [ref=f2e66]: Catálogos com pedido ✦
+        - generic [ref=f2e67]: Automação de processos ✦
+        - generic [ref=f2e68]: Sites institucionais ✦
+        - generic [ref=f2e69]: Landing pages ✦
+        - generic [ref=f2e70]: SEO técnico ✦
+        - generic [ref=f2e71]: Agentes de IA ✦
+        - generic [ref=f2e72]: LLM + Embeddings + RAG ✦
+        - generic [ref=f2e73]: Sistemas web ✦
+        - generic [ref=f2e74]: Apps Android ✦
+        - generic [ref=f2e75]: Integrações & APIs ✦
+        - generic [ref=f2e76]: Catálogos com pedido ✦
+        - generic [ref=f2e77]: Automação de processos ✦
+    - generic [ref=f2e79]:
+      - generic [ref=f2e80]:
+        - generic [ref=f2e81]: "0"
+        - generic [ref=f2e82]: anos de engenharia de software
+      - generic [ref=f2e83]:
+        - generic [ref=f2e84]: "0"
+        - generic [ref=f2e85]: propostas de site completas e navegáveis
+      - generic [ref=f2e86]:
+        - generic [ref=f2e87]: "0"
+        - generic [ref=f2e88]: "produtos próprios: SaaS de IA e app Android"
+      - link "0 livro publicado sobre React JS ↗" [ref=f2e89] [cursor=pointer]:
+        - /url: https://www.amazon.com.br/dp/B0CPDNP4KP?date=1
+        - generic [ref=f2e90]: "0"
+        - generic [ref=f2e91]: livro publicado sobre React JS ↗
+      - link "0 vídeo infantil no YouTube ↗" [ref=f2e92] [cursor=pointer]:
+        - /url: https://www.youtube.com/@Capi-Capi-Capivara
+        - generic [ref=f2e93]: "0"
+        - generic [ref=f2e94]: vídeo infantil no YouTube ↗
+    - generic [ref=f2e96]:
+      - generic [ref=f2e97]:
+        - generic [ref=f2e98]: Trabalhos recentes
+        - heading "Casa de ferreiro, espeto de aço." [level=2] [ref=f2e99]
+        - paragraph [ref=f2e100]: "Aqui você não vê promessa, vê código funcionando: dois produtos próprios, criados e mantidos por nós, e propostas de site completas desenvolvidas para empresas de vários segmentos. Clique e navegue em cada uma, no desktop ou no celular."
+      - 'link "Site da Bia, secretária de IA no WhatsApp Produto próprio · IA · No ar Bia: secretária de IA que atende o WhatsApp 24h SaaS criado por nós: um agente de inteligência artificial que agenda, confirma e cancela compromissos sozinho no Google Calendar, reduzindo faltas e recuperando clientes fora do horário comercial. 24/7 atendimento 5 min setup via QR Code Google Agenda integrada IA / LLM WhatsApp Google Calendar LGPD Conhecer a Bia →" [ref=f2e101] [cursor=pointer]':
+        - /url: https://souabia.com
+        - img "Site da Bia, secretária de IA no WhatsApp" [ref=f2e104]
+        - generic [ref=f2e105]:
+          - generic [ref=f2e106]: Produto próprio · IA · No ar
+          - heading [level=3] [ref=f2e107]:
+            - text: "Bia: secretária de"
+            - emphasis [ref=f2e108]: IA
+            - text: que atende o WhatsApp 24h
+          - paragraph [ref=f2e109]: "SaaS criado por nós: um agente de inteligência artificial que agenda, confirma e cancela compromissos sozinho no Google Calendar, reduzindo faltas e recuperando clientes fora do horário comercial."
+          - generic [ref=f2e110]:
+            - generic [ref=f2e111]:
+              - generic [ref=f2e112]: 24/7
+              - text: atendimento
+            - generic [ref=f2e113]:
+              - generic [ref=f2e114]: 5 min
+              - text: setup via QR Code
+            - generic [ref=f2e115]:
+              - generic [ref=f2e116]: Google
+              - text: Agenda integrada
+          - generic [ref=f2e117]:
+            - generic [ref=f2e118]: IA / LLM
+            - generic [ref=f2e119]: WhatsApp
+            - generic [ref=f2e120]: Google Calendar
+            - generic [ref=f2e121]: LGPD
+          - generic [ref=f2e122]: Conhecer a Bia →
+      - 'link "Site do app NovaRemote, controle remoto para Smart TV Produto próprio · App · Teste fechado NovaRemote: o celular vira o controle da TV App Android criado por nós, em teste fechado na Google Play, com site próprio: controla Smart TVs Android TV, Google TV, Samsung, Roku e Philips pelo Wi-Fi, com busca por voz e atalhos para streaming. 5 marcas de TV 100% gratuito Voz busca por voz Android Google Play Wi-Fi Landing page Conhecer o app →" [ref=f2e123] [cursor=pointer]':
+        - /url: https://souabia.com/nova-remote
+        - img "Site do app NovaRemote, controle remoto para Smart TV" [ref=f2e126]
+        - generic [ref=f2e127]:
+          - generic [ref=f2e128]: Produto próprio · App · Teste fechado
+          - heading [level=3] [ref=f2e129]:
+            - text: "NovaRemote: o celular vira o"
+            - emphasis [ref=f2e130]: controle da TV
+          - paragraph [ref=f2e131]: "App Android criado por nós, em teste fechado na Google Play, com site próprio: controla Smart TVs Android TV, Google TV, Samsung, Roku e Philips pelo Wi-Fi, com busca por voz e atalhos para streaming."
+          - generic [ref=f2e132]:
+            - generic [ref=f2e133]:
+              - generic [ref=f2e134]: "5"
+              - text: marcas de TV
+            - generic [ref=f2e135]:
+              - generic [ref=f2e136]: 100%
+              - text: gratuito
+            - generic [ref=f2e137]:
+              - generic [ref=f2e138]: Voz
+              - text: busca por voz
+          - generic [ref=f2e139]:
+            - generic [ref=f2e140]: Android
+            - generic [ref=f2e141]: Google Play
+            - generic [ref=f2e142]: Wi-Fi
+            - generic [ref=f2e143]: Landing page
+          - generic [ref=f2e144]: Conhecer o app →
+      - generic [ref=f2e145]:
+        - paragraph [ref=f2e146]: Propostas de site
+        - generic [ref=f2e147]:
+          - button "Todos" [ref=f2e148] [cursor=pointer]
+          - button "Varejo" [ref=f2e149] [cursor=pointer]
+          - button "Distribuidora" [ref=f2e150] [cursor=pointer]
+          - button "Tecnologia" [ref=f2e151] [cursor=pointer]
+          - button "Indústria" [ref=f2e152] [cursor=pointer]
+          - button "Paisagismo" [ref=f2e153] [cursor=pointer]
+          - button "Alimentação" [ref=f2e154] [cursor=pointer]
+          - button "Serviços" [ref=f2e155] [cursor=pointer]
+          - button "Educação" [ref=f2e156] [cursor=pointer]
+          - button "Construção" [ref=f2e157] [cursor=pointer]
+      - generic [ref=f2e158]:
+        - link "Página inicial do site Vida Nova Design Varejo · Proposta Vida Nova Design Loja de móveis em Jacareí com galeria de ambientes, simulador 'qual sofá cabe na sua sala' e pedido de orçamento montado direto no WhatsApp. Simulador Galeria WhatsApp Navegar na proposta →" [ref=f2e159] [cursor=pointer]:
+          - /url: vida-nova/index.html
+          - img "Página inicial do site Vida Nova Design" [ref=f2e163]
+          - generic [ref=f2e165]:
+            - generic [ref=f2e166]: Varejo · Proposta
+            - heading "Vida Nova Design" [level=3] [ref=f2e167]
+            - paragraph [ref=f2e168]: Loja de móveis em Jacareí com galeria de ambientes, simulador 'qual sofá cabe na sua sala' e pedido de orçamento montado direto no WhatsApp.
+            - generic [ref=f2e170]:
+              - generic [ref=f2e171]: Simulador
+              - generic [ref=f2e172]: Galeria
+              - generic [ref=f2e173]: WhatsApp
+            - generic [ref=f2e174]: Navegar na proposta →
+        - link "Página inicial do site Aderic Comercial Distribuidora · Proposta Aderic Comercial Distribuidora de produtos de limpeza, galões de 5L, álcool 70%, higiene e construção no Jaguaré com montador de orçamento no WhatsApp. Orçamento WhatsApp Catálogo Navegar na proposta →" [ref=f2e175] [cursor=pointer]:
+          - /url: aderic/index.html
+          - img "Página inicial do site Aderic Comercial" [ref=f2e179]
+          - generic [ref=f2e181]:
+            - generic [ref=f2e182]: Distribuidora · Proposta
+            - heading "Aderic Comercial" [level=3] [ref=f2e183]
+            - paragraph [ref=f2e184]: Distribuidora de produtos de limpeza, galões de 5L, álcool 70%, higiene e construção no Jaguaré com montador de orçamento no WhatsApp.
+            - generic [ref=f2e186]:
+              - generic [ref=f2e187]: Orçamento
+              - generic [ref=f2e188]: WhatsApp
+              - generic [ref=f2e189]: Catálogo
+            - generic [ref=f2e190]: Navegar na proposta →
+        - link "Página inicial do site Telegama Telecomunicações Tecnologia · Proposta Telegama Telecomunicações Telecom com 39 anos no Brooklin. Logo repaginado, painel de câmeras e PABX animado, soluções para empresa e casa e orçamento montado direto no WhatsApp. Rebrand Animações WhatsApp Navegar na proposta →" [ref=f2e191] [cursor=pointer]:
+          - /url: telegama/index.html
+          - img "Página inicial do site Telegama Telecomunicações" [ref=f2e195]
+          - generic [ref=f2e197]:
+            - generic [ref=f2e198]: Tecnologia · Proposta
+            - heading "Telegama Telecomunicações" [level=3] [ref=f2e199]
+            - paragraph [ref=f2e200]: Telecom com 39 anos no Brooklin. Logo repaginado, painel de câmeras e PABX animado, soluções para empresa e casa e orçamento montado direto no WhatsApp.
+            - generic [ref=f2e202]:
+              - generic [ref=f2e203]: Rebrand
+              - generic [ref=f2e204]: Animações
+              - generic [ref=f2e205]: WhatsApp
+            - generic [ref=f2e206]: Navegar na proposta →
+        - link "Página inicial do site Osawa Indústria Indústria · Proposta Osawa Indústria Indústria de usinagem com 67 anos de história. Proposta premium com desenho técnico animado, linha do tempo de três gerações e orçamento direto pelo WhatsApp. Premium Animações B2B Navegar na proposta →" [ref=f2e207] [cursor=pointer]:
+          - /url: osawa/index.html
+          - img "Página inicial do site Osawa Indústria" [ref=f2e211]
+          - generic [ref=f2e213]:
+            - generic [ref=f2e214]: Indústria · Proposta
+            - heading "Osawa Indústria" [level=3] [ref=f2e215]
+            - paragraph [ref=f2e216]: Indústria de usinagem com 67 anos de história. Proposta premium com desenho técnico animado, linha do tempo de três gerações e orçamento direto pelo WhatsApp.
+            - generic [ref=f2e218]:
+              - generic [ref=f2e219]: Premium
+              - generic [ref=f2e220]: Animações
+              - generic [ref=f2e221]: B2B
+            - generic [ref=f2e222]: Navegar na proposta →
+        - link "Página inicial do site Ribeiro Móveis e Colchões Varejo · Proposta Ribeiro Móveis e Colchões Loja de móveis com site multipágina, páginas por categoria e guias de compra pensados para capturar quem já está pronto para comprar. SEO local Guias Multipágina Navegar na proposta →" [ref=f2e223] [cursor=pointer]:
+          - /url: ribeiro/index.html
+          - img "Página inicial do site Ribeiro Móveis e Colchões" [ref=f2e227]
+          - generic [ref=f2e229]:
+            - generic [ref=f2e230]: Varejo · Proposta
+            - heading "Ribeiro Móveis e Colchões" [level=3] [ref=f2e231]
+            - paragraph [ref=f2e232]: Loja de móveis com site multipágina, páginas por categoria e guias de compra pensados para capturar quem já está pronto para comprar.
+            - generic [ref=f2e234]:
+              - generic [ref=f2e235]: SEO local
+              - generic [ref=f2e236]: Guias
+              - generic [ref=f2e237]: Multipágina
+            - generic [ref=f2e238]: Navegar na proposta →
+        - link "Página inicial do site Vértice Paisagismo Paisagismo · Proposta Vértice Paisagismo Paisagismo com landing pages por cidade (São Paulo e Uberlândia), galeria de projetos e captação de orçamentos. Páginas por cidade Portfólio Leads Navegar na proposta →" [ref=f2e239] [cursor=pointer]:
+          - /url: vertice/index.html
+          - img "Página inicial do site Vértice Paisagismo" [ref=f2e243]
+          - generic [ref=f2e245]:
+            - generic [ref=f2e246]: Paisagismo · Proposta
+            - heading "Vértice Paisagismo" [level=3] [ref=f2e247]
+            - paragraph [ref=f2e248]: Paisagismo com landing pages por cidade (São Paulo e Uberlândia), galeria de projetos e captação de orçamentos.
+            - generic [ref=f2e250]:
+              - generic [ref=f2e251]: Páginas por cidade
+              - generic [ref=f2e252]: Portfólio
+              - generic [ref=f2e253]: Leads
+            - generic [ref=f2e254]: Navegar na proposta →
+        - link "Página inicial do site Central Villa Branca Alimentação · Proposta Central Villa Branca Açougue e hortifrúti com montagem de cesta no próprio site e pedido enviado direto para o WhatsApp da loja. Carrinho WhatsApp SEO local Navegar na proposta →" [ref=f2e255] [cursor=pointer]:
+          - /url: central-villa-branca/index.html
+          - img "Página inicial do site Central Villa Branca" [ref=f2e259]
+          - generic [ref=f2e261]:
+            - generic [ref=f2e262]: Alimentação · Proposta
+            - heading "Central Villa Branca" [level=3] [ref=f2e263]
+            - paragraph [ref=f2e264]: Açougue e hortifrúti com montagem de cesta no próprio site e pedido enviado direto para o WhatsApp da loja.
+            - generic [ref=f2e266]:
+              - generic [ref=f2e267]: Carrinho
+              - generic [ref=f2e268]: WhatsApp
+              - generic [ref=f2e269]: SEO local
+            - generic [ref=f2e270]: Navegar na proposta →
+        - link "Página inicial do site GML Corretora de Seguros Serviços · Proposta GML Corretora de Seguros Corretora com seis linhas de seguro e consórcio numa única página, cada uma com cotação rápida pelo WhatsApp. Leads Multiproduto Nacional Navegar na proposta →" [ref=f2e271] [cursor=pointer]:
+          - /url: gml/index.html
+          - img "Página inicial do site GML Corretora de Seguros" [ref=f2e275]
+          - generic [ref=f2e277]:
+            - generic [ref=f2e278]: Serviços · Proposta
+            - heading "GML Corretora de Seguros" [level=3] [ref=f2e279]
+            - paragraph [ref=f2e280]: Corretora com seis linhas de seguro e consórcio numa única página, cada uma com cotação rápida pelo WhatsApp.
+            - generic [ref=f2e282]:
+              - generic [ref=f2e283]: Leads
+              - generic [ref=f2e284]: Multiproduto
+              - generic [ref=f2e285]: Nacional
+            - generic [ref=f2e286]: Navegar na proposta →
+        - link "Página inicial do site Hudson Empório de Carnes Alimentação · Proposta Hudson Empório de Carnes Empório de carnes com catálogo de kits, espetinhos e churrasco e pedido de delivery pelo WhatsApp. Delivery Catálogo SEO local Navegar na proposta →" [ref=f2e287] [cursor=pointer]:
+          - /url: hudson/index.html
+          - img "Página inicial do site Hudson Empório de Carnes" [ref=f2e291]
+          - generic [ref=f2e293]:
+            - generic [ref=f2e294]: Alimentação · Proposta
+            - heading "Hudson Empório de Carnes" [level=3] [ref=f2e295]
+            - paragraph [ref=f2e296]: Empório de carnes com catálogo de kits, espetinhos e churrasco e pedido de delivery pelo WhatsApp.
+            - generic [ref=f2e298]:
+              - generic [ref=f2e299]: Delivery
+              - generic [ref=f2e300]: Catálogo
+              - generic [ref=f2e301]: SEO local
+            - generic [ref=f2e302]: Navegar na proposta →
+        - link "Página inicial do site Bem-Te-Vi English Academy Educação · Proposta Bem-Te-Vi English Academy Landing page de alta conversão para curso de inglês que une idioma, neurociência e autoconhecimento. Landing page Conversão PWA-ready Navegar na proposta →" [ref=f2e303] [cursor=pointer]:
+          - /url: bemtevi/index.html
+          - img "Página inicial do site Bem-Te-Vi English Academy" [ref=f2e307]
+          - generic [ref=f2e309]:
+            - generic [ref=f2e310]: Educação · Proposta
+            - heading "Bem-Te-Vi English Academy" [level=3] [ref=f2e311]
+            - paragraph [ref=f2e312]: Landing page de alta conversão para curso de inglês que une idioma, neurociência e autoconhecimento.
+            - generic [ref=f2e314]:
+              - generic [ref=f2e315]: Landing page
+              - generic [ref=f2e316]: Conversão
+              - generic [ref=f2e317]: PWA-ready
+            - generic [ref=f2e318]: Navegar na proposta →
+        - link "Página inicial do site Lavanderia Central Barueri Serviços · Proposta Lavanderia Central Barueri Lavanderia com serviços, preços e delivery, SEO local para Barueri e conversão direta pelo WhatsApp. SEO local Multipágina WhatsApp Navegar na proposta →" [ref=f2e319] [cursor=pointer]:
+          - /url: lavanderia/index.html
+          - img "Página inicial do site Lavanderia Central Barueri" [ref=f2e323]
+          - generic [ref=f2e325]:
+            - generic [ref=f2e326]: Serviços · Proposta
+            - heading "Lavanderia Central Barueri" [level=3] [ref=f2e327]
+            - paragraph [ref=f2e328]: Lavanderia com serviços, preços e delivery, SEO local para Barueri e conversão direta pelo WhatsApp.
+            - generic [ref=f2e330]:
+              - generic [ref=f2e331]: SEO local
+              - generic [ref=f2e332]: Multipágina
+              - generic [ref=f2e333]: WhatsApp
+            - generic [ref=f2e334]: Navegar na proposta →
+        - link "Página inicial do site Protec Toldos Construção · Proposta Protec Toldos Toldos, coberturas e fachadas de alto padrão, com visual premium que comunica engenharia e acabamento. Premium Galeria Orçamento Navegar na proposta →" [ref=f2e335] [cursor=pointer]:
+          - /url: protec/index.html
+          - img "Página inicial do site Protec Toldos" [ref=f2e339]
+          - generic [ref=f2e341]:
+            - generic [ref=f2e342]: Construção · Proposta
+            - heading "Protec Toldos" [level=3] [ref=f2e343]
+            - paragraph [ref=f2e344]: Toldos, coberturas e fachadas de alto padrão, com visual premium que comunica engenharia e acabamento.
+            - generic [ref=f2e346]:
+              - generic [ref=f2e347]: Premium
+              - generic [ref=f2e348]: Galeria
+              - generic [ref=f2e349]: Orçamento
+            - generic [ref=f2e350]: Navegar na proposta →
+        - link "Página inicial do site Destaque Vidros Construção · Proposta Destaque Vidros Vidraçaria de precisão com visual sofisticado para temperados, box, espelhos, fachadas e guarda-corpos. Landing page Visual Leads Navegar na proposta →" [ref=f2e351] [cursor=pointer]:
+          - /url: destaque-vidros/index.html
+          - img "Página inicial do site Destaque Vidros" [ref=f2e355]
+          - generic [ref=f2e357]:
+            - generic [ref=f2e358]: Construção · Proposta
+            - heading "Destaque Vidros" [level=3] [ref=f2e359]
+            - paragraph [ref=f2e360]: Vidraçaria de precisão com visual sofisticado para temperados, box, espelhos, fachadas e guarda-corpos.
+            - generic [ref=f2e362]:
+              - generic [ref=f2e363]: Landing page
+              - generic [ref=f2e364]: Visual
+              - generic [ref=f2e365]: Leads
+            - generic [ref=f2e366]: Navegar na proposta →
+        - link "Página inicial do site RNN Ambiental Paisagismo · Proposta RNN Ambiental Manutenção de áreas verdes e paisagismo, com galeria de trabalhos e foco em condomínios e empresas. Galeria SEO local B2B Navegar na proposta →" [ref=f2e367] [cursor=pointer]:
+          - /url: renan-paisagismo/index.html
+          - img "Página inicial do site RNN Ambiental" [ref=f2e371]
+          - generic [ref=f2e373]:
+            - generic [ref=f2e374]: Paisagismo · Proposta
+            - heading "RNN Ambiental" [level=3] [ref=f2e375]
+            - paragraph [ref=f2e376]: Manutenção de áreas verdes e paisagismo, com galeria de trabalhos e foco em condomínios e empresas.
+            - generic [ref=f2e378]:
+              - generic [ref=f2e379]: Galeria
+              - generic [ref=f2e380]: SEO local
+              - generic [ref=f2e381]: B2B
+            - generic [ref=f2e382]: Navegar na proposta →
+        - link "Página inicial do site Toldos Milena Construção · Proposta Toldos Milena Toldos, coberturas e luminosos sob medida em Caçapava/SP, com catálogo de soluções e pedido de orçamento. SEO local Catálogo Orçamento Navegar na proposta →" [ref=f2e383] [cursor=pointer]:
+          - /url: toldos-milena/index.html
+          - img "Página inicial do site Toldos Milena" [ref=f2e387]
+          - generic [ref=f2e389]:
+            - generic [ref=f2e390]: Construção · Proposta
+            - heading "Toldos Milena" [level=3] [ref=f2e391]
+            - paragraph [ref=f2e392]: Toldos, coberturas e luminosos sob medida em Caçapava/SP, com catálogo de soluções e pedido de orçamento.
+            - generic [ref=f2e394]:
+              - generic [ref=f2e395]: SEO local
+              - generic [ref=f2e396]: Catálogo
+              - generic [ref=f2e397]: Orçamento
+            - generic [ref=f2e398]: Navegar na proposta →
+        - link "Página inicial do site Tecnoway Auto Peças Varejo · Proposta Tecnoway Auto Peças Autopeças novas, recondicionadas e remanufaturadas, com catálogo por categoria e disk entrega em destaque. Catálogo SEO local Disk entrega Navegar na proposta →" [ref=f2e399] [cursor=pointer]:
+          - /url: tecnoway/index.html
+          - img "Página inicial do site Tecnoway Auto Peças" [ref=f2e403]
+          - generic [ref=f2e405]:
+            - generic [ref=f2e406]: Varejo · Proposta
+            - heading "Tecnoway Auto Peças" [level=3] [ref=f2e407]
+            - paragraph [ref=f2e408]: Autopeças novas, recondicionadas e remanufaturadas, com catálogo por categoria e disk entrega em destaque.
+            - generic [ref=f2e410]:
+              - generic [ref=f2e411]: Catálogo
+              - generic [ref=f2e412]: SEO local
+              - generic [ref=f2e413]: Disk entrega
+            - generic [ref=f2e414]: Navegar na proposta →
+        - link "Página inicial do site Decarlo Industrial Indústria · Proposta Decarlo Industrial Site institucional para apresentar a nova fase da Decarlo, valorizar sua história e conectar a equipe ao público. Identidade Indústria Nova fase Navegar na proposta →" [ref=f2e415] [cursor=pointer]:
+          - /url: decarlo/index.html
+          - img "Página inicial do site Decarlo Industrial" [ref=f2e419]
+          - generic [ref=f2e421]:
+            - generic [ref=f2e422]: Indústria · Proposta
+            - heading "Decarlo Industrial" [level=3] [ref=f2e423]
+            - paragraph [ref=f2e424]: Site institucional para apresentar a nova fase da Decarlo, valorizar sua história e conectar a equipe ao público.
+            - generic [ref=f2e426]:
+              - generic [ref=f2e427]: Identidade
+              - generic [ref=f2e428]: Indústria
+              - generic [ref=f2e429]: Nova fase
+            - generic [ref=f2e430]: Navegar na proposta →
+    - generic [ref=f2e432]:
+      - generic [ref=f2e433]:
+        - generic [ref=f2e434]: Expertises
+        - heading "Do site que aparece no Google ao sistema que roda sua operação." [level=2] [ref=f2e435]
+      - generic [ref=f2e436]:
+        - article [ref=f2e437]:
+          - heading "Sites & Landing Pages" [level=3] [ref=f2e442]
+          - paragraph [ref=f2e443]: Seu cliente decide em segundos se confia em você. Criamos sites rápidos, bonitos e pensados para transformar visita em conversa no WhatsApp.
+          - list [ref=f2e444]:
+            - listitem [ref=f2e445]: Design exclusivo, mobile-first
+            - listitem [ref=f2e446]: SEO técnico e local (Google Maps, dados estruturados, sitemap)
+            - listitem [ref=f2e447]: Botões de conversão e pedido pelo WhatsApp
+            - listitem [ref=f2e448]: Páginas por cidade, serviço e guias de conteúdo
+          - generic: www
+        - article [ref=f2e449]:
+          - heading "Inteligência Artificial" [level=3] [ref=f2e453]
+          - paragraph [ref=f2e454]: Agentes e chatbots que atendem, agendam e respondem por você, integrados ao WhatsApp, à agenda e aos sistemas da sua empresa.
+          - list [ref=f2e455]:
+            - listitem [ref=f2e456]: Atendentes virtuais 24h no WhatsApp
+            - listitem [ref=f2e457]: Automação de processos repetitivos
+            - listitem [ref=f2e458]: Integração de LLMs aos seus dados
+            - listitem [ref=f2e459]: "Produto próprio no ar: a Bia"
+          - generic: IA
+        - article [ref=f2e460]:
+          - heading "Sistemas sob medida" [level=3] [ref=f2e464]
+          - paragraph [ref=f2e465]: ERPs, painéis, integrações e APIs robustas, com a mesma engenharia usada em grandes empresas.
+          - list [ref=f2e466]:
+            - listitem [ref=f2e467]: Web e desktop
+            - listitem [ref=f2e468]: Integrações com pagamentos e ERPs
+            - listitem [ref=f2e469]: Java, Node.js, TypeScript, React
+          - generic: "{ }"
+        - article [ref=f2e470]:
+          - heading "Apps Mobile" [level=3] [ref=f2e474]
+          - paragraph [ref=f2e475]: Aplicativos com experiência fluida, do protótipo à publicação na loja.
+          - list [ref=f2e476]:
+            - listitem [ref=f2e477]: Android e multiplataforma
+            - listitem [ref=f2e478]: Site de lançamento incluso
+            - listitem [ref=f2e479]: "Exemplo: NovaRemote, em teste fechado"
+          - generic: app
+        - article [ref=f2e480]:
+          - heading "Catálogos & Pedidos" [level=3] [ref=f2e485]
+          - paragraph [ref=f2e486]: "Monte a cesta, escolha o kit, peça pelo WhatsApp: vitrines digitais que vendem sem complicar."
+          - list [ref=f2e487]:
+            - listitem [ref=f2e488]: Carrinho que gera pedido no WhatsApp
+            - listitem [ref=f2e489]: Catálogo fácil de atualizar
+            - listitem [ref=f2e490]: Ideal para comércio local
+          - generic: R$
+    - generic [ref=f2e492]:
+      - generic [ref=f2e493]:
+        - generic [ref=f2e494]: Por que nós
+        - heading "Você não contrata um template. Contrata engenharia." [level=2] [ref=f2e495]
+      - generic [ref=f2e496]:
+        - generic [ref=f2e497]:
+          - generic [ref=f2e498]: "01"
+          - heading "Engenheiro de Computação no seu projeto" [level=3] [ref=f2e499]
+          - paragraph [ref=f2e500]: Quem conversa com você é quem desenha e programa. Sem repasse, sem telefone sem fio.
+        - generic [ref=f2e501]:
+          - generic [ref=f2e502]: "02"
+          - heading "Feito para o Google" [level=3] [ref=f2e503]
+          - paragraph [ref=f2e504]: Código limpo e rápido desde a primeira linha, com SEO técnico e local na medida da ambição do seu negócio.
+        - generic [ref=f2e505]:
+          - generic [ref=f2e506]: "03"
+          - heading "Feito para vender" [level=3] [ref=f2e507]
+          - paragraph [ref=f2e508]: "Cada página leva o visitante a uma ação: chamar no WhatsApp, pedir orçamento ou comprar."
+        - generic [ref=f2e509]:
+          - generic [ref=f2e510]: "04"
+          - heading "Design único" [level=3] [ref=f2e511]
+          - paragraph [ref=f2e512]: "Veja as propostas: nenhuma se parece com a outra. Cada marca ganha uma identidade própria."
+        - generic [ref=f2e513]:
+          - generic [ref=f2e514]: "05"
+          - heading "Leve e rápido" [level=3] [ref=f2e515]
+          - paragraph [ref=f2e516]: Código enxuto, imagens otimizadas e nada de plugins pesados. Abre rápido até no 4G.
+        - generic [ref=f2e517]:
+          - generic [ref=f2e518]: "06"
+          - heading "IA no DNA" [level=3] [ref=f2e519]
+          - paragraph [ref=f2e520]: Pós-graduação em Engenharia de Software com IA Aplicada e produto de IA próprio em produção.
+    - generic [ref=f2e522]:
+      - generic [ref=f2e523]:
+        - generic [ref=f2e524]: Como funciona
+        - heading "Da conversa ao site no ar, sem dor de cabeça." [level=2] [ref=f2e525]
+      - generic [ref=f2e526]:
+        - generic [ref=f2e527]:
+          - generic [ref=f2e528]: "1"
+          - heading "Diagnóstico" [level=3] [ref=f2e529]
+          - paragraph [ref=f2e530]: Uma conversa rápida para entender seu negócio, seu cliente e onde está o dinheiro.
+        - generic [ref=f2e531]:
+          - generic [ref=f2e532]: "2"
+          - heading "Proposta & Design" [level=3] [ref=f2e533]
+          - paragraph [ref=f2e534]: Escopo e valor fechados. Você aprova o visual antes de qualquer linha de código.
+        - generic [ref=f2e535]:
+          - generic [ref=f2e536]: "3"
+          - heading "Desenvolvimento" [level=3] [ref=f2e537]
+          - paragraph [ref=f2e538]: Performance e conversão embutidas, SEO na profundidade que você escolher e prévias para você acompanhar.
+        - generic [ref=f2e539]:
+          - generic [ref=f2e540]: "4"
+          - heading "Lançamento" [level=3] [ref=f2e541]
+          - paragraph [ref=f2e542]: Publicação, Google configurado e acompanhamento para o projeto continuar crescendo.
+    - generic [ref=f2e544]:
+      - complementary [ref=f2e545]:
+        - generic [ref=f2e546]: CE
+        - heading "Eng. Carlos Eduardo Ferreiro Corrêa" [level=3] [ref=f2e547]
+        - paragraph [ref=f2e548]: Fundador · Engenheiro de Computação
+        - generic [ref=f2e549]:
+          - generic [ref=f2e550]: Engenharia de Computação · UBC
+          - generic [ref=f2e554]: Pós em Eng. de Software com IA Aplicada
+          - generic [ref=f2e557]: Sun Certified Java Programmer
+          - generic [ref=f2e561]: Atendemos clientes em qualquer lugar do planeta
+        - 'link "Autor do livro React JS: Guia Completo para o Desenvolvedor Front-End" [ref=f2e565] [cursor=pointer]':
+          - /url: https://www.amazon.com.br/dp/B0CPDNP4KP?date=1
+          - generic [ref=f2e572]:
+            - generic [ref=f2e573]: Autor do livro
+            - generic [ref=f2e574]: "React JS: Guia Completo para o Desenvolvedor Front-End"
+        - generic [ref=f2e575]:
+          - link "LinkedIn" [ref=f2e576] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/eng-carlos-eduardo-ferreiro-corr%C3%AAa-9606963a
+          - link "GitHub" [ref=f2e579] [cursor=pointer]:
+            - /url: https://github.com/kadusjc
+        - text: </>
+      - generic [ref=f2e582]:
+        - generic [ref=f2e583]:
+          - generic [ref=f2e584]: Quem somos
+          - heading "Duas décadas construindo software que não pode falhar." [level=2] [ref=f2e585]
+        - paragraph [ref=f2e586]: "A Ferreiro Corrêa Software nasceu da experiência do engenheiro Carlos Eduardo Ferreiro Corrêa: mais de 20 anos desenvolvendo sistemas críticos de pagamentos, aviação, telemetria e e-commerce para empresas como Embraer, Azul, Gol, TAM e Polishop."
+        - paragraph [ref=f2e587]: Hoje essa mesma bagagem, de código testado, arquitetura sólida e foco em resultado, está disponível para empresas de todos os tamanhos que querem crescer no digital.
+        - generic [ref=f2e588]:
+          - generic [ref=f2e589]:
+            - text: 2004 – 2010 · BoldCron Technologies
+            - heading "Pagamentos e antifraude" [level=4] [ref=f2e590]
+            - paragraph [ref=f2e591]: Gateway de pagamentos BPag, cobrança recorrente, antifraude integrado a ClearSale e Cybersource, ERP para redes como Polishop e Nobel.
+          - generic [ref=f2e592]:
+            - text: 2010 – 2012 · Compsis
+            - heading "Telemetria veicular" [level=4] [ref=f2e593]
+            - paragraph [ref=f2e594]: Desenvolvedor sênior e arquiteto de plataformas de monitoramento de frotas e computadores de bordo.
+          - generic [ref=f2e595]:
+            - text: 2012 – 2013 · UOL Diveo
+            - heading "Integrações para companhias aéreas" [level=4] [ref=f2e596]
+            - paragraph [ref=f2e597]: Proxies que conectam Azul, TAM e Gol ao gateway de pagamentos e plataforma de BPO financeiro.
+          - generic [ref=f2e598]:
+            - text: 2013 – 2021 · GSW Software · Embraer
+            - heading "Sistemas para a Embraer" [level=4] [ref=f2e599]
+            - paragraph [ref=f2e600]: Gestão de estoque integrada ao SAP, reparo de peças em todas as plantas e o e-commerce da aviação executiva.
+          - generic [ref=f2e601]:
+            - text: 2021 – hoje · Resmark Systems (EUA)
+            - heading "Engenharia full stack internacional" [level=4] [ref=f2e602]
+            - paragraph [ref=f2e603]: Engenheiro full stack em empresa de software de Salt Lake City, Utah, em paralelo à Ferreiro Corrêa Software.
+        - generic [ref=f2e604]:
+          - generic [ref=f2e605]: Java
+          - generic [ref=f2e606]: Spring
+          - generic [ref=f2e607]: Node.js
+          - generic [ref=f2e608]: TypeScript
+          - generic [ref=f2e609]: React
+          - generic [ref=f2e610]: Angular
+          - generic [ref=f2e611]: PostgreSQL
+          - generic [ref=f2e612]: MongoDB
+          - generic [ref=f2e613]: Redis
+          - generic [ref=f2e614]: AWS
+          - generic [ref=f2e615]: Inteligência Artificial
+          - generic [ref=f2e616]: LLMs & Agentes de IA
+          - generic [ref=f2e617]: WhatsApp API
+          - generic [ref=f2e618]: SEO técnico
+    - generic [ref=f2e621]:
+      - generic [ref=f2e622]:
+        - generic [ref=f2e623]: Orçamento sem compromisso
+        - heading "Conte seu projeto em 30 segundos." [level=2] [ref=f2e624]
+        - paragraph [ref=f2e625]: Marque as opções e envie direto pelo WhatsApp. Você fala direto com o engenheiro, não com um vendedor.
+        - generic [ref=f2e626]:
+          - generic [ref=f2e627]: Proposta clara, com escopo e valor fechados
+          - generic [ref=f2e630]: Atendimento remoto, do Brasil para o mundo
+          - generic [ref=f2e633]: Projetos para negócios de todos os tamanhos
+      - generic [ref=f2e636]:
+        - group "O que você precisa?" [ref=f2e637]:
+          - generic [ref=f2e639]:
+            - generic [ref=f2e640]:
+              - radio "Site institucional" [checked]
+              - generic [ref=f2e641] [cursor=pointer]: Site institucional
+            - generic [ref=f2e642]:
+              - radio "Landing page"
+              - generic [ref=f2e643] [cursor=pointer]: Landing page
+            - generic [ref=f2e644]:
+              - radio "Catálogo / pedidos"
+              - generic [ref=f2e645] [cursor=pointer]: Catálogo / pedidos
+            - generic [ref=f2e646]:
+              - radio "Sistema sob medida"
+              - generic [ref=f2e647] [cursor=pointer]: Sistema sob medida
+            - generic [ref=f2e648]:
+              - radio "IA / Agente no WhatsApp"
+              - generic [ref=f2e649] [cursor=pointer]: IA / Agente no WhatsApp
+            - generic [ref=f2e650]:
+              - radio "App mobile"
+              - generic [ref=f2e651] [cursor=pointer]: App mobile
+        - group "Qual o principal objetivo? (pode marcar vários)" [ref=f2e652]:
+          - generic [ref=f2e654]:
+            - generic [ref=f2e655]:
+              - checkbox "Aparecer no Google"
+              - generic [ref=f2e656] [cursor=pointer]: Aparecer no Google
+            - generic [ref=f2e657]:
+              - checkbox "Mais pedidos no WhatsApp"
+              - generic [ref=f2e658] [cursor=pointer]: Mais pedidos no WhatsApp
+            - generic [ref=f2e659]:
+              - checkbox "Passar credibilidade"
+              - generic [ref=f2e660] [cursor=pointer]: Passar credibilidade
+            - generic [ref=f2e661]:
+              - checkbox "Automatizar processos"
+              - generic [ref=f2e662] [cursor=pointer]: Automatizar processos
+        - group "Prazo" [ref=f2e663]:
+          - generic [ref=f2e665]:
+            - generic [ref=f2e666]:
+              - radio "O quanto antes"
+              - generic [ref=f2e667] [cursor=pointer]: O quanto antes
+            - generic [ref=f2e668]:
+              - radio "Próximos 30 dias" [checked]
+              - generic [ref=f2e669] [cursor=pointer]: Próximos 30 dias
+            - generic [ref=f2e670]:
+              - radio "Sem pressa"
+              - generic [ref=f2e671] [cursor=pointer]: Sem pressa
+        - generic [ref=f2e672]:
+          - textbox "Seu nome" [ref=f2e673]
+          - textbox "Empresa / segmento" [ref=f2e674]
+        - 'textbox "Algo mais? (opcional) Ex.: já tenho domínio, quero algo no estilo da proposta Osawa..." [ref=f2e675]'
+        - button "Enviar pelo WhatsApp" [ref=f2e676] [cursor=pointer]
+        - paragraph [ref=f2e679]:
+          - text: Prefere e-mail?
+          - link "kadusjc1984@gmail.com" [ref=f2e680] [cursor=pointer]:
+            - /url: mailto:kadusjc1984@gmail.com?subject=Orçamento%20de%20projeto
+        - paragraph [ref=f2e681]:
+          - text: "Nada fica salvo neste site: suas respostas viram uma mensagem enviada pelo seu WhatsApp, só para preparar sua proposta."
+          - link "Política de Privacidade" [ref=f2e682] [cursor=pointer]:
+            - /url: "#privacidade"
+          - text: .
+    - generic [ref=f2e684]:
+      - generic [ref=f2e685]:
+        - generic [ref=f2e686]: Dúvidas
+        - heading "Perguntas frequentes" [level=2] [ref=f2e687]
+        - paragraph [ref=f2e688]: Não achou sua resposta? Chame no WhatsApp, a gente responde rápido.
+      - generic [ref=f2e689]:
+        - group [ref=f2e690]:
+          - generic "Quanto custa um site? +" [ref=f2e691] [cursor=pointer]
+          - paragraph [ref=f2e692]: "Depende do escopo: uma landing page é bem diferente de um site multipágina com catálogo ou de um sistema. Depois de uma conversa rápida, você recebe uma proposta com escopo e valor fechados, sem surpresas no meio do caminho."
+        - group [ref=f2e693]:
+          - generic "Meu site vai aparecer no Google? +" [ref=f2e694] [cursor=pointer]
+        - group [ref=f2e695]:
+          - generic "Quanto tempo leva? +" [ref=f2e696] [cursor=pointer]
+        - group [ref=f2e697]:
+          - generic "Vocês atendem fora do Vale do Paraíba? +" [ref=f2e698] [cursor=pointer]
+        - group [ref=f2e699]:
+          - generic "Posso ver exemplos funcionando antes de fechar? +" [ref=f2e700] [cursor=pointer]
+        - group [ref=f2e701]:
+          - generic "E depois que o site estiver no ar? +" [ref=f2e702] [cursor=pointer]
+    - generic [ref=f2e705]:
+      - generic [ref=f2e706]: Próximo case
+      - heading "O próximo site deste portfólio pode ser o seu." [level=2] [ref=f2e707]
+      - paragraph [ref=f2e708]: Enquanto seu concorrente aparece no Google e recebe pedidos no WhatsApp, cada dia sem um bom site é cliente perdido.
+      - generic [ref=f2e709]:
+        - link "Começar meu projeto" [ref=f2e710] [cursor=pointer]:
+          - /url: "#orcamento"
+        - link "Rever os trabalhos" [ref=f2e713] [cursor=pointer]:
+          - /url: "#trabalhos"
+  - contentinfo [ref=f2e714]:
+    - generic [ref=f2e715]:
+      - img "Ferreiro Corrêa Software" [ref=f2e716]
+      - navigation "Rodapé" [ref=f2e718]:
+        - link "Trabalhos" [ref=f2e719] [cursor=pointer]:
+          - /url: "#trabalhos"
+        - link "Serviços" [ref=f2e720] [cursor=pointer]:
+          - /url: "#servicos"
+        - link "Quem somos" [ref=f2e721] [cursor=pointer]:
+          - /url: "#sobre"
+        - link "Orçamento" [ref=f2e722] [cursor=pointer]:
+          - /url: "#orcamento"
+        - link "GitHub" [ref=f2e723] [cursor=pointer]:
+          - /url: https://github.com/kadusjc
+        - link "Privacidade e cookies" [ref=f2e724] [cursor=pointer]:
+          - /url: "#privacidade"
+      - generic [ref=f2e725]: © 2026 Ferreiro Corrêa Software · Caçapava/SP
+  - link "Conversar no WhatsApp" [ref=f2e726] [cursor=pointer]:
+    - /url: https://wa.me/5512991359134?text=Ol%C3%A1!%20Vi%20o%20portf%C3%B3lio%20da%20Ferreiro%20Corr%C3%AAa%20Software%20e%20quero%20conversar%20sobre%20um%20projeto.

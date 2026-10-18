@@ -1,16 +1,11 @@
 backend:
-  name: github
-  repo: kadusjc/websites
+  name: git-gateway
   branch: main
-  auth_scope: public_repo
-  open_authoring: true
-  base_url: https://YOUR-OAUTH-PROXY-DOMAIN
-  auth_endpoint: auth
 
 publish_mode: editorial_workflow
 
 logo:
-  src: /tecnoway/admin/brand.svg
+  src: https://fcsoftware.com.br/tecnoway/admin/brand.svg
   show_in_header: false
 
 site_url: https://fcsoftware.com.br/tecnoway/

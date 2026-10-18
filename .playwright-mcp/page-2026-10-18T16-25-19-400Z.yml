@@ -1,0 +1,149 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - link "Decarlo Industrial, início" [ref=f1e4] [cursor=pointer]:
+        - /url: "#inicio"
+        - img "Decarlo Industrial" [ref=f1e5]
+      - navigation "Navegação principal" [ref=f1e6]:
+        - link "A Decarlo" [ref=f1e7] [cursor=pointer]:
+          - /url: "#essencia"
+        - link "Nossa força" [ref=f1e8] [cursor=pointer]:
+          - /url: "#valores"
+        - link "Nova fase" [ref=f1e9] [cursor=pointer]:
+          - /url: "#nova-fase"
+      - link "Fale com a equipe" [ref=f1e10] [cursor=pointer]:
+        - /url: https://www.instagram.com/decarlo.industrial/
+        - text: Fale com a equipe
+        - generic [aria-hidden] [ref=f1e11]: ↗
+  - main [ref=f1e12]:
+    - generic [ref=f1e15]:
+      - generic [ref=f1e16]:
+        - paragraph [ref=f1e17]:
+          - text: Decarlo Industrial
+          - generic [aria-hidden] [ref=f1e18]: /
+          - text: Uma nova fase
+        - heading "Quem move a indústria move o futuro." [level=1] [ref=f1e19]:
+          - generic [ref=f1e20]: Quem move a
+          - generic [ref=f1e21]: indústria
+          - generic [ref=f1e22]:
+            - text: move o
+            - generic [ref=f1e23]: futuro.
+        - paragraph [ref=f1e24]: "A Decarlo Industrial inicia um novo capítulo: identidade renovada, orgulho de quem faz e a mesma força para seguir em frente. Conheça essa nova fase e converse com a nossa equipe."
+        - generic [ref=f1e25]:
+          - link "Converse com a Decarlo" [ref=f1e26] [cursor=pointer]:
+            - /url: https://www.instagram.com/decarlo.industrial/
+            - text: Converse com a Decarlo
+            - generic [aria-hidden] [ref=f1e27]: ↗
+          - link "Conheça nossa história" [ref=f1e28] [cursor=pointer]:
+            - /url: "#essencia"
+            - text: Conheça nossa história
+            - generic [aria-hidden] [ref=f1e29]: ↓
+        - paragraph [ref=f1e30]: Uma nova marca. A força de sempre.
+      - generic [aria-hidden] [ref=f1e31]: 01 / Identidade em movimento
+      - generic [aria-hidden]: DECARLO
+    - generic "Pilares Decarlo" [ref=f1e32]:
+      - generic [ref=f1e33]:
+        - generic [ref=f1e34]:
+          - generic [ref=f1e35]: "01"
+          - paragraph [ref=f1e36]: Identidade renovada
+        - generic [ref=f1e37]:
+          - generic [ref=f1e38]: "02"
+          - paragraph [ref=f1e39]: Orgulho de fazer
+        - generic [ref=f1e40]:
+          - generic [ref=f1e41]: "03"
+          - paragraph [ref=f1e42]: Feita por pessoas
+        - generic [ref=f1e43]:
+          - generic [ref=f1e44]: "04"
+          - paragraph [ref=f1e45]: Pronta para evoluir
+    - generic [ref=f1e47]:
+      - figure "A força da indústria começa em quem faz" [ref=f1e48]:
+        - img "Pessoas que fazem parte da história da Decarlo Industrial" [ref=f1e49]
+      - generic [ref=f1e51]:
+        - paragraph [ref=f1e52]: A essência continua
+        - heading "Gente. Trabalho. Futuro." [level=2] [ref=f1e53]: Gente.Trabalho.Futuro.
+        - paragraph [ref=f1e54]: "Uma nova identidade não apaga uma história. Ela revela, com mais clareza, o que sempre moveu a Decarlo: dedicação, orgulho industrial e pessoas que constroem juntas o próximo capítulo."
+        - blockquote [ref=f1e55]:
+          - text: “A próxima fase começa com tudo o que construímos até aqui.”
+          - generic [ref=f1e56]: Decarlo Industrial
+    - generic [ref=f1e58]:
+      - generic [ref=f1e59]:
+        - generic [ref=f1e60]:
+          - paragraph [ref=f1e61]: Nossa força
+          - heading "Mais que uma marca. Um jeito de fazer." [level=2] [ref=f1e62]: Mais que uma marca.Um jeito de fazer.
+        - paragraph [ref=f1e63]: Uma marca industrial se fortalece no que faz e em quem faz junto. Estes são os princípios que acompanham a Decarlo nesta nova fase.
+      - generic [ref=f1e64]:
+        - article [ref=f1e65]:
+          - generic [ref=f1e66]: 01 / COMPROMISSO
+          - heading "Trabalho com propósito" [level=3] [ref=f1e67]
+          - paragraph [ref=f1e68]: Dedicação que transforma intenção em presença e fortalece cada etapa da jornada.
+        - article [ref=f1e69]:
+          - generic [ref=f1e70]: 02 / IDENTIDADE
+          - heading "Orgulho de fazer parte" [level=3] [ref=f1e71]
+          - paragraph [ref=f1e72]: Uma marca que representa pessoas, trajetórias e o valor de construir em conjunto.
+        - article [ref=f1e73]:
+          - generic [ref=f1e74]: 03 / EVOLUÇÃO
+          - heading "Próxima fase, mesma força" [level=3] [ref=f1e75]
+          - paragraph [ref=f1e76]: Novas possibilidades, com a energia e a essência que fazem a Decarlo ser Decarlo.
+    - generic [ref=f1e78]:
+      - generic [ref=f1e79]:
+        - paragraph [ref=f1e80]: O próximo capítulo
+        - heading "Uma nova fase começa agora." [level=2] [ref=f1e81]
+        - paragraph [ref=f1e82]: Uma identidade mais forte para apresentar ao mundo quem somos hoje e a direção que escolhemos seguir. Acompanhe a transformação e descubra o novo momento da Decarlo.
+        - link "Veja a nova fase" [ref=f1e83] [cursor=pointer]:
+          - /url: https://www.instagram.com/decarlo.industrial/
+          - text: Veja a nova fase
+          - generic [aria-hidden] [ref=f1e84]: ↗
+      - generic [ref=f1e85]:
+        - img "Anúncio da nova fase da Decarlo Industrial" [ref=f1e86]
+        - generic [ref=f1e87]: A Decarlo está em movimento
+    - generic [ref=f1e89]:
+      - generic [ref=f1e90]:
+        - paragraph [ref=f1e91]: Presença real
+        - heading "A força por trás de cada novo começo." [level=2] [ref=f1e92]: A força por trásde cada novo começo.
+        - paragraph [ref=f1e93]: Uma presença industrial real. Uma equipe que faz acontecer. Uma nova fase construída sobre trabalho e propósito.
+      - generic [ref=f1e94]:
+        - figure "Decarlo Industrial Presença que se vê. Trabalho que se sente." [ref=f1e95]:
+          - img "Instalações da Decarlo Industrial" [ref=f1e96]
+          - generic [ref=f1e97]:
+            - generic [ref=f1e98]: Decarlo Industrial
+            - heading "Presença que se vê. Trabalho que se sente." [level=3] [ref=f1e99]
+        - figure "Quem faz a Decarlo Indústria é gente." [ref=f1e100]:
+          - img "Homenagem da Decarlo Industrial às famílias e aos pais" [ref=f1e101]
+          - generic [ref=f1e102]:
+            - generic [ref=f1e103]: Quem faz a Decarlo
+            - heading "Indústria é gente." [level=3] [ref=f1e104]
+    - generic [ref=f1e106]:
+      - generic [ref=f1e107]:
+        - paragraph [ref=f1e108]: Vamos conversar
+        - heading "Vamos construir o próximo capítulo?" [level=2] [ref=f1e109]
+        - paragraph [ref=f1e110]: Quer conhecer a Decarlo ou conversar sobre uma parceria? Fale com nossa equipe e acompanhe de perto esta nova fase.
+      - generic [ref=f1e111]:
+        - link "Chamar no Instagram" [ref=f1e112] [cursor=pointer]:
+          - /url: https://www.instagram.com/decarlo.industrial/
+          - text: Chamar no Instagram
+          - generic [aria-hidden] [ref=f1e113]: ↗
+        - link "Ver perfil da Decarlo" [ref=f1e114] [cursor=pointer]:
+          - /url: https://www.instagram.com/decarlo.industrial/
+          - text: Ver perfil da Decarlo
+          - generic [aria-hidden] [ref=f1e115]: ↗
+  - contentinfo [ref=f1e116]:
+    - generic [ref=f1e117]:
+      - generic [ref=f1e118]:
+        - link "Decarlo Industrial, voltar ao início" [ref=f1e119] [cursor=pointer]:
+          - /url: "#inicio"
+          - img "Decarlo Industrial" [ref=f1e120]
+        - paragraph [ref=f1e121]: Indústria forte.Pessoas que fazem acontecer.
+        - navigation "Links do rodapé" [ref=f1e122]:
+          - link "A Decarlo" [ref=f1e123] [cursor=pointer]:
+            - /url: "#essencia"
+          - link "Nova fase" [ref=f1e124] [cursor=pointer]:
+            - /url: "#nova-fase"
+          - link "Instagram ↗" [ref=f1e125] [cursor=pointer]:
+            - /url: https://www.instagram.com/decarlo.industrial/
+          - link "Privacidade" [ref=f1e126] [cursor=pointer]:
+            - /url: "#privacidade"
+      - generic [ref=f1e127]:
+        - generic [ref=f1e128]: © 2026 Decarlo Industrial
+        - generic [ref=f1e129]: Uma história de trabalho. Um futuro em movimento.
+  - link "Abrir Instagram da Decarlo Industrial" [ref=f1e130] [cursor=pointer]:
+    - /url: https://www.instagram.com/decarlo.industrial/
