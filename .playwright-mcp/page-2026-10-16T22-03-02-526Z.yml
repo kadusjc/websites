@@ -1,0 +1,192 @@
+- generic [ref=f7e11]:
+  - generic [ref=f7e13]:
+    - link [ref=f7e16] [cursor=pointer]:
+      - /url: /
+      - img "Instagram" [ref=f7e19]
+    - generic [ref=f7e30]:
+      - link "Log In" [ref=f7e32] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2Fdecarlo.industrial%2Fp%2FDXui4vQDnXe%2F&source=desktop_nav
+      - link "Sign Up" [ref=f7e34] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+  - main [ref=f7e35]:
+    - dialog [ref=f7e40]:
+      - generic [ref=f7e41]:
+        - button [ref=f7e43] [cursor=pointer]:
+          - img "Close" [ref=f7e45]
+        - generic [ref=f7e49]:
+          - generic [ref=f7e50]:
+            - link [ref=f7e52] [cursor=pointer]:
+              - img "decarlo.industrial's profile picture" [ref=f7e53]
+            - generic [ref=f7e55]:
+              - generic [ref=f7e56]: Never miss a post from decarlo.industrial
+              - generic [ref=f7e57]: Sign up for Instagram to stay in the loop.
+              - generic [ref=f7e60]:
+                - text: By continuing, you agree to Instagram's
+                - link "Terms of Use" [ref=f7e61] [cursor=pointer]:
+                  - /url: https://help.instagram.com/581066165581870/?locale=en_US
+                - text: and
+                - link "Privacy Policy" [ref=f7e62] [cursor=pointer]:
+                  - /url: https://privacycenter.instagram.com/policy/
+                - text: .
+          - generic [ref=f7e63]:
+            - link "Sign up" [ref=f7e66] [cursor=pointer]:
+              - /url: /accounts/emailsignup/
+            - link "Log in" [ref=f7e69] [cursor=pointer]:
+              - /url: /accounts/login/?source=desktop_dynamic_landing_dialog
+    - generic [ref=f7e72]:
+      - img "Photo by Decarlo Industrial on April 29, 2026." [ref=f7e81]
+      - generic [ref=f7e84]:
+        - generic [ref=f7e86]:
+          - link [ref=f7e88] [cursor=pointer]:
+            - img "decarlo.industrial's profile picture" [ref=f7e89]
+          - generic [ref=f7e92]:
+            - link "decarlo.industrial" [ref=f7e95] [cursor=pointer]:
+              - /url: /decarlo.industrial/
+            - generic [ref=f7e99]:
+              - generic [ref=f7e100]: •
+              - button "Follow" [ref=f7e102] [cursor=pointer]
+          - button [ref=f7e105] [cursor=pointer]:
+            - img "More options" [ref=f7e108]
+        - separator [ref=f7e112]
+        - generic [ref=f7e114]:
+          - generic [ref=f7e116]:
+            - link [ref=f7e118] [cursor=pointer]:
+              - /url: /decarlo.industrial/
+              - img "decarlo.industrial's profile picture" [ref=f7e119]
+            - generic [ref=f7e123]:
+              - generic [ref=f7e124]:
+                - link "decarlo.industrial" [ref=f7e125] [cursor=pointer]:
+                  - /url: /decarlo.industrial/
+                - time [ref=f7e130]: 24w
+              - generic [ref=f7e131]:
+                - text: "Desde 1977, a Decarlo constrói uma trajetória sólida na usinagem técnica, com mais de 2 milhões de peças produzidas por ano, alta tecnologia e certificação ISO 9001. Agora, avançamos para uma nova fase, com investimentos em expansão, novos mercados e ainda mais inovação, evoluindo com consistência, visão de futuro e compromisso com resultados.Os sócios: Bruno Maximo, Thiago Lara, Leonel Zeferino e Jonas Gomes.Decarlo Industrial.⚙️"
+                - link "#decarlo" [ref=f7e132] [cursor=pointer]:
+                  - /url: /explore/tags/decarlo/
+                - link "#decarloindustrial" [ref=f7e133] [cursor=pointer]:
+                  - /url: /explore/tags/decarloindustrial/
+                - link "#Usinagem" [ref=f7e134] [cursor=pointer]:
+                  - /url: /explore/tags/usinagem/
+                - link "#industria" [ref=f7e135] [cursor=pointer]:
+                  - /url: /explore/tags/industria/
+                - link "#ISO9001" [ref=f7e136] [cursor=pointer]:
+                  - /url: /explore/tags/iso9001/
+                - text: metalmecanica
+          - button [ref=f7e138] [cursor=pointer]:
+            - img "Load more comments" [ref=f7e140]
+          - generic [ref=f7e144]:
+            - heading "No comments yet." [level=2] [ref=f7e146]
+            - generic [ref=f7e147]: Start the conversation.
+        - generic [ref=f7e149]:
+          - generic [ref=f7e150]:
+            - generic [ref=f7e151]:
+              - button [ref=f7e154] [cursor=pointer]:
+                - img "Like" [ref=f7e157]
+              - button "27" [ref=f7e159] [cursor=pointer]
+              - button [ref=f7e161] [cursor=pointer]:
+                - img "Comment" [ref=f7e163]
+              - button [ref=f7e165] [cursor=pointer]:
+                - img "Share" [ref=f7e166]
+            - button [ref=f7e170] [cursor=pointer]:
+              - img "Save" [ref=f7e172]
+          - link [ref=f7e176] [cursor=pointer]:
+            - /url: /decarlo.industrial/p/DXui4vQDnXe/
+            - time [ref=f7e178]: April 29
+        - generic [ref=f7e183]:
+          - link "Log in" [ref=f7e184] [cursor=pointer]:
+            - /url: /accounts/login/?next=%2Fdecarlo.industrial%2Fp%2FDXui4vQDnXe%2F&source=post_comment_input
+          - text: to like or comment.
+  - contentinfo [ref=f7e185]:
+    - generic [ref=f7e186]:
+      - generic [ref=f7e188]:
+        - link "Meta" [ref=f7e190] [cursor=pointer]:
+          - /url: https://about.meta.com/
+        - link "About" [ref=f7e193] [cursor=pointer]:
+          - /url: https://about.instagram.com/
+        - link "Blog" [ref=f7e196] [cursor=pointer]:
+          - /url: https://about.instagram.com/blog/
+        - link "Jobs" [ref=f7e199] [cursor=pointer]:
+          - /url: https://about.instagram.com/about-us/careers
+        - link "Help" [ref=f7e202] [cursor=pointer]:
+          - /url: https://help.instagram.com/
+        - link "API" [ref=f7e205] [cursor=pointer]:
+          - /url: https://developers.facebook.com/docs/instagram
+        - link "Privacy" [ref=f7e208] [cursor=pointer]:
+          - /url: /legal/privacy/
+        - link "Terms" [ref=f7e211] [cursor=pointer]:
+          - /url: /legal/terms/
+        - link "Locations" [ref=f7e214] [cursor=pointer]:
+          - /url: /explore/locations/
+        - link "Popular" [ref=f7e217] [cursor=pointer]:
+          - /url: /popular/
+        - link "Instagram Lite" [ref=f7e220] [cursor=pointer]:
+          - /url: /web/lite/
+        - link "Meta AI" [ref=f7e223] [cursor=pointer]:
+          - /url: https://www.meta.ai/?utm_source=foa_web_footer
+        - link "Muse" [ref=f7e226] [cursor=pointer]:
+          - /url: https://muse.ai/
+        - link "Threads" [ref=f7e229] [cursor=pointer]:
+          - /url: https://www.threads.com/
+        - link "Contact Uploading & Non-Users" [ref=f7e232] [cursor=pointer]:
+          - /url: https://www.facebook.com/help/instagram/261704639352628
+        - link "Meta Verified" [ref=f7e235] [cursor=pointer]:
+          - /url: /accounts/meta_verified/?entrypoint=web_footer
+      - generic [ref=f7e237]:
+        - generic [ref=f7e238] [cursor=pointer]:
+          - generic [ref=f7e239]:
+            - generic [ref=f7e240]: English
+            - img "Down chevron icon" [ref=f7e243]
+          - combobox "Switch Display Language" [ref=f7e245]:
+            - option "Afrikaans"
+            - option "العربية"
+            - option "Čeština"
+            - option "Dansk"
+            - option "Deutsch"
+            - option "Ελληνικά"
+            - option "English" [selected]
+            - option "English (UK)"
+            - option "Español (España)"
+            - option "Español"
+            - option "فارسی"
+            - option "Suomi"
+            - option "Français"
+            - option "עברית"
+            - option "Bahasa Indonesia"
+            - option "Italiano"
+            - option "日本語"
+            - option "한국어"
+            - option "Bahasa Melayu"
+            - option "Norsk"
+            - option "Nederlands"
+            - option "Polski"
+            - option "Português (Brasil)"
+            - option "Português (Portugal)"
+            - option "Русский"
+            - option "Svenska"
+            - option "ภาษาไทย"
+            - option "Filipino"
+            - option "Türkçe"
+            - option "中文(简体)"
+            - option "中文(台灣)"
+            - option "বাংলা"
+            - option "ગુજરાતી"
+            - option "हिन्दी"
+            - option "Hrvatski"
+            - option "Magyar"
+            - option "ಕನ್ನಡ"
+            - option "മലയാളം"
+            - option "मराठी"
+            - option "नेपाली"
+            - option "ਪੰਜਾਬੀ"
+            - option "සිංහල"
+            - option "Slovenčina"
+            - option "தமிழ்"
+            - option "తెలుగు"
+            - option "اردو"
+            - option "Tiếng Việt"
+            - option "中文(香港)"
+            - option "Български"
+            - option "Français (Canada)"
+            - option "Română"
+            - option "Српски"
+            - option "Українська"
+        - generic [ref=f7e246]: © 2026 Instagram from Meta

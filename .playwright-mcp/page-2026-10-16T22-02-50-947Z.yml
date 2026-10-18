@@ -1,0 +1,293 @@
+- generic [ref=f5e11]:
+  - generic [ref=f5e13]:
+    - link [ref=f5e16] [cursor=pointer]:
+      - /url: /
+      - img "Instagram" [ref=f5e19]
+    - generic [ref=f5e30]:
+      - link "Log In" [ref=f5e32] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2Fdecarlo.industrial%2Freel%2FDXxLMfgPQCX%2F&source=desktop_nav
+      - link "Sign Up" [ref=f5e34] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+  - main [ref=f5e35]:
+    - dialog [ref=f5e40]:
+      - generic [ref=f5e41]:
+        - button [ref=f5e43] [cursor=pointer]:
+          - img "Close" [ref=f5e45]
+        - generic [ref=f5e49]:
+          - generic [ref=f5e50]:
+            - link [ref=f5e52] [cursor=pointer]:
+              - img "decarlo.industrial's profile picture" [ref=f5e53]
+            - generic [ref=f5e55]:
+              - generic [ref=f5e56]: Never miss a post from decarlo.industrial
+              - generic [ref=f5e57]: Sign up for Instagram to stay in the loop.
+              - generic [ref=f5e60]:
+                - text: By continuing, you agree to Instagram's
+                - link "Terms of Use" [ref=f5e61] [cursor=pointer]:
+                  - /url: https://help.instagram.com/581066165581870/?locale=en_US
+                - text: and
+                - link "Privacy Policy" [ref=f5e62] [cursor=pointer]:
+                  - /url: https://privacycenter.instagram.com/policy/
+                - text: .
+          - generic [ref=f5e63]:
+            - link "Sign up" [ref=f5e66] [cursor=pointer]:
+              - /url: /accounts/emailsignup/
+            - link "Log in" [ref=f5e69] [cursor=pointer]:
+              - /url: /accounts/login/?source=desktop_dynamic_landing_dialog
+    - generic [ref=f5e72]:
+      - img "Video by Decarlo Industrial on April 30, 2026." [ref=f5e80]
+      - generic [ref=f5e83]:
+        - generic [ref=f5e85]:
+          - link [ref=f5e87] [cursor=pointer]:
+            - img "decarlo.industrial's profile picture" [ref=f5e88]
+          - generic [ref=f5e90]:
+            - generic [ref=f5e91]:
+              - link "decarlo.industrial" [ref=f5e94] [cursor=pointer]:
+                - /url: /decarlo.industrial/
+              - generic [ref=f5e98]:
+                - generic [ref=f5e99]: •
+                - button "Follow" [ref=f5e101] [cursor=pointer]
+            - link "Original audio" [ref=f5e106] [cursor=pointer]:
+              - /url: /reels/audio/26148524808160518/
+          - button [ref=f5e112] [cursor=pointer]:
+            - img "More options" [ref=f5e115]
+        - separator [ref=f5e119]
+        - generic [ref=f5e121]:
+          - generic [ref=f5e123]:
+            - link [ref=f5e125] [cursor=pointer]:
+              - /url: /decarlo.industrial/
+              - img "decarlo.industrial's profile picture" [ref=f5e126]
+            - generic [ref=f5e130]:
+              - generic [ref=f5e131]:
+                - link "decarlo.industrial" [ref=f5e132] [cursor=pointer]:
+                  - /url: /decarlo.industrial/
+                - time [ref=f5e137]: 24w
+              - generic [ref=f5e138]:
+                - text: "Reunimos os sócios, colaboradores, gestores, clientes e fornecedores da Decarlo para celebrar um dos momentos mais importantes da trajetória da empresa: a apresentação oficial da nossa nova fase no mercado e o reposicionamento da marca, que representa o início de um novo capítulo como Decarlo Industrial.A transição também simboliza a evolução de uma empresa familiar para uma marca ainda mais conectada aos desafios do futuro, baseada em pilares, como confiança, transparência e crescimento conjunto.Ao unir tradição, inovação e visão estratégica, iniciamos uma nova etapa com o compromisso de continuar evoluindo.Decarlo Industrial.⚙️"
+                - link "#decarlo" [ref=f5e139] [cursor=pointer]:
+                  - /url: /explore/tags/decarlo/
+                - link "#decarloindustrial" [ref=f5e140] [cursor=pointer]:
+                  - /url: /explore/tags/decarloindustrial/
+                - link "#Usinagem" [ref=f5e141] [cursor=pointer]:
+                  - /url: /explore/tags/usinagem/
+                - link "#industria" [ref=f5e142] [cursor=pointer]:
+                  - /url: /explore/tags/industria/
+                - link "#ISO9001" [ref=f5e143] [cursor=pointer]:
+                  - /url: /explore/tags/iso9001/
+                - text: metalmecanica
+          - button [ref=f5e145] [cursor=pointer]:
+            - img "Load more comments" [ref=f5e147]
+          - generic [ref=f5e149]:
+            - generic [ref=f5e152]:
+              - link [ref=f5e154] [cursor=pointer]:
+                - /url: /edsonelizaluiza/
+                - img "edsonelizaluiza's profile picture" [ref=f5e155]
+              - generic [ref=f5e157]:
+                - generic [ref=f5e159]:
+                  - generic [ref=f5e160]:
+                    - link "edsonelizaluiza" [ref=f5e162] [cursor=pointer]:
+                      - /url: /edsonelizaluiza/
+                    - link [ref=f5e167] [cursor=pointer]:
+                      - /url: /p/DXxLMfgPQCX/c/17935379607054455/
+                      - time [ref=f5e168]: 24w
+                  - generic [ref=f5e169]: Fiz parte desse time... sucesso a todos que ainda fazem esse empresa se manter forte
+                - generic [ref=f5e171]:
+                  - button "1 like" [ref=f5e172] [cursor=pointer]
+                  - button "Reply" [ref=f5e175] [cursor=pointer]
+            - generic [ref=f5e180]:
+              - link [ref=f5e182] [cursor=pointer]:
+                - /url: /mauricioakira_/
+                - img "mauricioakira_'s profile picture" [ref=f5e183]
+              - generic [ref=f5e185]:
+                - generic [ref=f5e187]:
+                  - generic [ref=f5e188]:
+                    - link "mauricioakira_ Verified" [ref=f5e190] [cursor=pointer]:
+                      - /url: /mauricioakira_/
+                      - generic [ref=f5e192]:
+                        - generic [ref=f5e193]: mauricioakira_
+                        - img "Verified" [ref=f5e195]
+                    - link [ref=f5e198] [cursor=pointer]:
+                      - /url: /p/DXxLMfgPQCX/c/18108938890846493/
+                      - time [ref=f5e199]: 24w
+                  - generic [ref=f5e200]: 👏👏👏
+                - generic [ref=f5e202]:
+                  - button "1 like" [ref=f5e203] [cursor=pointer]
+                  - button "Reply" [ref=f5e206] [cursor=pointer]
+            - generic [ref=f5e211]:
+              - link [ref=f5e213] [cursor=pointer]:
+                - /url: /bianca_pigato/
+                - img "bianca_pigato's profile picture" [ref=f5e214]
+              - generic [ref=f5e216]:
+                - generic [ref=f5e218]:
+                  - generic [ref=f5e219]:
+                    - link "bianca_pigato" [ref=f5e221] [cursor=pointer]:
+                      - /url: /bianca_pigato/
+                    - link [ref=f5e226] [cursor=pointer]:
+                      - /url: /p/DXxLMfgPQCX/c/18113359462647147/
+                      - time [ref=f5e227]: 24w
+                  - generic [ref=f5e228]: Parabéns e sucesso nessa nova fase! 🚀
+                - generic [ref=f5e230]:
+                  - button "1 like" [ref=f5e231] [cursor=pointer]
+                  - button "Reply" [ref=f5e234] [cursor=pointer]
+            - generic [ref=f5e239]:
+              - link [ref=f5e241] [cursor=pointer]:
+                - /url: /cleidemaximoo/
+                - img "cleidemaximoo's profile picture" [ref=f5e242]
+              - generic [ref=f5e244]:
+                - generic [ref=f5e246]:
+                  - generic [ref=f5e247]:
+                    - link "cleidemaximoo" [ref=f5e249] [cursor=pointer]:
+                      - /url: /cleidemaximoo/
+                    - link [ref=f5e254] [cursor=pointer]:
+                      - /url: /p/DXxLMfgPQCX/c/18122700118624401/
+                      - time [ref=f5e255]: 24w
+                  - generic [ref=f5e256]: Parabéns a todos os sócios, gestores e colaboradores da Decarlo! A evolução para Decarlo Industrial marca o início de uma era promissora. Sucesso total nesta nova fase. 👏🏼👏🏼👏🏼👏🏼
+                - generic [ref=f5e258]:
+                  - button "2 likes" [ref=f5e259] [cursor=pointer]
+                  - button "Reply" [ref=f5e262] [cursor=pointer]
+            - generic [ref=f5e267]:
+              - link [ref=f5e269] [cursor=pointer]:
+                - /url: /dracarolmaximo/
+                - img "dracarolmaximo's profile picture" [ref=f5e270]
+              - generic [ref=f5e272]:
+                - generic [ref=f5e274]:
+                  - generic [ref=f5e275]:
+                    - link "dracarolmaximo" [ref=f5e277] [cursor=pointer]:
+                      - /url: /dracarolmaximo/
+                    - link [ref=f5e282] [cursor=pointer]:
+                      - /url: /p/DXxLMfgPQCX/c/18079035920636271/
+                      - time [ref=f5e283]: 24w
+                  - generic [ref=f5e284]: Sucesso!!!!👏👏👏
+                - generic [ref=f5e286]:
+                  - button "2 likes" [ref=f5e287] [cursor=pointer]
+                  - button "Reply" [ref=f5e290] [cursor=pointer]
+            - generic [ref=f5e295]:
+              - link [ref=f5e297] [cursor=pointer]:
+                - /url: /bmaximo_/
+                - img "bmaximo_'s profile picture" [ref=f5e298]
+              - generic [ref=f5e300]:
+                - generic [ref=f5e302]:
+                  - generic [ref=f5e303]:
+                    - link "bmaximo_" [ref=f5e305] [cursor=pointer]:
+                      - /url: /bmaximo_/
+                    - link [ref=f5e310] [cursor=pointer]:
+                      - /url: /p/DXxLMfgPQCX/c/18112846825793787/
+                      - time [ref=f5e311]: 24w
+                  - generic [ref=f5e312]: vamos em frente 👏
+                - generic [ref=f5e314]:
+                  - button "2 likes" [ref=f5e315] [cursor=pointer]
+                  - button "Reply" [ref=f5e318] [cursor=pointer]
+        - generic [ref=f5e321]:
+          - generic [ref=f5e322]:
+            - generic [ref=f5e323]:
+              - button [ref=f5e326] [cursor=pointer]:
+                - img "Like" [ref=f5e329]
+              - button "51" [ref=f5e331] [cursor=pointer]
+              - button [ref=f5e333] [cursor=pointer]:
+                - img "Comment" [ref=f5e335]
+              - button "6" [ref=f5e337] [cursor=pointer]
+              - button [ref=f5e338] [cursor=pointer]:
+                - img "Share" [ref=f5e339]
+            - button [ref=f5e343] [cursor=pointer]:
+              - img "Save" [ref=f5e345]
+          - link [ref=f5e349] [cursor=pointer]:
+            - /url: /decarlo.industrial/reel/DXxLMfgPQCX/
+            - time [ref=f5e351]: April 30
+        - generic [ref=f5e356]:
+          - link "Log in" [ref=f5e357] [cursor=pointer]:
+            - /url: /accounts/login/?next=%2Fdecarlo.industrial%2Freel%2FDXxLMfgPQCX%2F&source=post_comment_input
+          - text: to like or comment.
+  - contentinfo [ref=f5e358]:
+    - generic [ref=f5e359]:
+      - generic [ref=f5e361]:
+        - link "Meta" [ref=f5e363] [cursor=pointer]:
+          - /url: https://about.meta.com/
+        - link "About" [ref=f5e366] [cursor=pointer]:
+          - /url: https://about.instagram.com/
+        - link "Blog" [ref=f5e369] [cursor=pointer]:
+          - /url: https://about.instagram.com/blog/
+        - link "Jobs" [ref=f5e372] [cursor=pointer]:
+          - /url: https://about.instagram.com/about-us/careers
+        - link "Help" [ref=f5e375] [cursor=pointer]:
+          - /url: https://help.instagram.com/
+        - link "API" [ref=f5e378] [cursor=pointer]:
+          - /url: https://developers.facebook.com/docs/instagram
+        - link "Privacy" [ref=f5e381] [cursor=pointer]:
+          - /url: /legal/privacy/
+        - link "Terms" [ref=f5e384] [cursor=pointer]:
+          - /url: /legal/terms/
+        - link "Locations" [ref=f5e387] [cursor=pointer]:
+          - /url: /explore/locations/
+        - link "Popular" [ref=f5e390] [cursor=pointer]:
+          - /url: /popular/
+        - link "Instagram Lite" [ref=f5e393] [cursor=pointer]:
+          - /url: /web/lite/
+        - link "Meta AI" [ref=f5e396] [cursor=pointer]:
+          - /url: https://www.meta.ai/?utm_source=foa_web_footer
+        - link "Muse" [ref=f5e399] [cursor=pointer]:
+          - /url: https://muse.ai/
+        - link "Threads" [ref=f5e402] [cursor=pointer]:
+          - /url: https://www.threads.com/
+        - link "Contact Uploading & Non-Users" [ref=f5e405] [cursor=pointer]:
+          - /url: https://www.facebook.com/help/instagram/261704639352628
+        - link "Meta Verified" [ref=f5e408] [cursor=pointer]:
+          - /url: /accounts/meta_verified/?entrypoint=web_footer
+      - generic [ref=f5e410]:
+        - generic [ref=f5e411] [cursor=pointer]:
+          - generic [ref=f5e412]:
+            - generic [ref=f5e413]: English
+            - img "Down chevron icon" [ref=f5e416]
+          - combobox "Switch Display Language" [ref=f5e418]:
+            - option "Afrikaans"
+            - option "العربية"
+            - option "Čeština"
+            - option "Dansk"
+            - option "Deutsch"
+            - option "Ελληνικά"
+            - option "English" [selected]
+            - option "English (UK)"
+            - option "Español (España)"
+            - option "Español"
+            - option "فارسی"
+            - option "Suomi"
+            - option "Français"
+            - option "עברית"
+            - option "Bahasa Indonesia"
+            - option "Italiano"
+            - option "日本語"
+            - option "한국어"
+            - option "Bahasa Melayu"
+            - option "Norsk"
+            - option "Nederlands"
+            - option "Polski"
+            - option "Português (Brasil)"
+            - option "Português (Portugal)"
+            - option "Русский"
+            - option "Svenska"
+            - option "ภาษาไทย"
+            - option "Filipino"
+            - option "Türkçe"
+            - option "中文(简体)"
+            - option "中文(台灣)"
+            - option "বাংলা"
+            - option "ગુજરાતી"
+            - option "हिन्दी"
+            - option "Hrvatski"
+            - option "Magyar"
+            - option "ಕನ್ನಡ"
+            - option "മലയാളം"
+            - option "मराठी"
+            - option "नेपाली"
+            - option "ਪੰਜਾਬੀ"
+            - option "සිංහල"
+            - option "Slovenčina"
+            - option "தமிழ்"
+            - option "తెలుగు"
+            - option "اردو"
+            - option "Tiếng Việt"
+            - option "中文(香港)"
+            - option "Български"
+            - option "Français (Canada)"
+            - option "Română"
+            - option "Српски"
+            - option "Українська"
+        - generic [ref=f5e419]: © 2026 Instagram from Meta

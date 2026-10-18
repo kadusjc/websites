@@ -1,0 +1,191 @@
+- generic [ref=f3e11]:
+  - generic [ref=f3e13]:
+    - link [ref=f3e16] [cursor=pointer]:
+      - /url: /
+      - img "Instagram" [ref=f3e19]
+    - generic [ref=f3e30]:
+      - link "Log In" [ref=f3e32] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2Fdecarlo.industrial%2Fp%2FDb0sm2XJWK4%2F&source=desktop_nav
+      - link "Sign Up" [ref=f3e34] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+  - main [ref=f3e35]:
+    - dialog [ref=f3e40]:
+      - generic [ref=f3e41]:
+        - button [ref=f3e43] [cursor=pointer]:
+          - img "Close" [ref=f3e45]
+        - generic [ref=f3e49]:
+          - generic [ref=f3e50]:
+            - link [ref=f3e52] [cursor=pointer]:
+              - img "decarlo.industrial's profile picture" [ref=f3e53]
+            - generic [ref=f3e55]:
+              - generic [ref=f3e56]: Never miss a post from decarlo.industrial
+              - generic [ref=f3e57]: Sign up for Instagram to stay in the loop.
+              - generic [ref=f3e60]:
+                - text: By continuing, you agree to Instagram's
+                - link "Terms of Use" [ref=f3e61] [cursor=pointer]:
+                  - /url: https://help.instagram.com/581066165581870/?locale=en_US
+                - text: and
+                - link "Privacy Policy" [ref=f3e62] [cursor=pointer]:
+                  - /url: https://privacycenter.instagram.com/policy/
+                - text: .
+          - generic [ref=f3e63]:
+            - link "Sign up" [ref=f3e66] [cursor=pointer]:
+              - /url: /accounts/emailsignup/
+            - link "Log in" [ref=f3e69] [cursor=pointer]:
+              - /url: /accounts/login/?source=desktop_dynamic_landing_dialog
+    - generic [ref=f3e72]:
+      - img "Photo by Decarlo Industrial on August 09, 2026. May be an image of text that says 'DECARLO INDUSTRIAL 商年記通山业感信套公 讓国車国車商，言口团 Feliz Dia dos Pais A todos que movem todos os pais que movem economia do Alto Tietê, economia do Alto Tietê. Respeito, admiração admi grati dão. Feliz Dia dos Pais! ser Orgulho de do Alto Indústri forte. fortes. que cresce. Regiac'." [ref=f3e81]
+      - generic [ref=f3e84]:
+        - generic [ref=f3e86]:
+          - link [ref=f3e88] [cursor=pointer]:
+            - img "decarlo.industrial's profile picture" [ref=f3e89]
+          - generic [ref=f3e92]:
+            - link "decarlo.industrial" [ref=f3e95] [cursor=pointer]:
+              - /url: /decarlo.industrial/
+            - generic [ref=f3e99]:
+              - generic [ref=f3e100]: •
+              - button "Follow" [ref=f3e102] [cursor=pointer]
+          - button [ref=f3e105] [cursor=pointer]:
+            - img "More options" [ref=f3e108]
+        - separator [ref=f3e112]
+        - generic [ref=f3e114]:
+          - generic [ref=f3e116]:
+            - link [ref=f3e118] [cursor=pointer]:
+              - /url: /decarlo.industrial/
+              - img "decarlo.industrial's profile picture" [ref=f3e119]
+            - generic [ref=f3e123]:
+              - generic [ref=f3e124]:
+                - link "decarlo.industrial" [ref=f3e125] [cursor=pointer]:
+                  - /url: /decarlo.industrial/
+                - time [ref=f3e130]: 9w
+              - generic [ref=f3e131]:
+                - text: Hoje é dia de celebrar quem ensina pelo exemplo, orienta com sabedoria e constrói, todos os dias, um futuro melhor.Neste Dia dos Pais, a Decarlo Industrial homenageia todos os pais que, com dedicação, trabalho e coragem, movem suas famílias e também contribuem para o desenvolvimento da nossa região.Nosso respeito, admiração e gratidão a todos os pais! 💙Feliz Dia dos Pais!
+                - link "#DiaDosPais" [ref=f3e132] [cursor=pointer]:
+                  - /url: /explore/tags/diadospais/
+                - link "#DecarloIndustrial" [ref=f3e133] [cursor=pointer]:
+                  - /url: /explore/tags/decarloindustrial/
+                - link "#IndústriaForte" [ref=f3e134] [cursor=pointer]:
+                  - /url: /explore/tags/ind%C3%BAstriaforte/
+                - link "#FamíliasFortes" [ref=f3e135] [cursor=pointer]:
+                  - /url: /explore/tags/fam%C3%ADliasfortes/
+                - link "#OrgulhoDeSerDoAltoTietê" [ref=f3e136] [cursor=pointer]:
+                  - /url: /explore/tags/orgulhodeserdoaltotiet%C3%AA/
+          - button [ref=f3e138] [cursor=pointer]:
+            - img "Load more comments" [ref=f3e140]
+          - generic [ref=f3e144]:
+            - heading "No comments yet." [level=2] [ref=f3e146]
+            - generic [ref=f3e147]: Start the conversation.
+        - generic [ref=f3e149]:
+          - generic [ref=f3e150]:
+            - generic [ref=f3e151]:
+              - button [ref=f3e154] [cursor=pointer]:
+                - img "Like" [ref=f3e157]
+              - button "6" [ref=f3e159] [cursor=pointer]
+              - button [ref=f3e161] [cursor=pointer]:
+                - img "Comment" [ref=f3e163]
+              - button [ref=f3e165] [cursor=pointer]:
+                - img "Share" [ref=f3e166]
+            - button [ref=f3e170] [cursor=pointer]:
+              - img "Save" [ref=f3e172]
+          - link [ref=f3e176] [cursor=pointer]:
+            - /url: /decarlo.industrial/p/Db0sm2XJWK4/
+            - time [ref=f3e178]: August 9
+        - generic [ref=f3e183]:
+          - link "Log in" [ref=f3e184] [cursor=pointer]:
+            - /url: /accounts/login/?next=%2Fdecarlo.industrial%2Fp%2FDb0sm2XJWK4%2F&source=post_comment_input
+          - text: to like or comment.
+  - contentinfo [ref=f3e185]:
+    - generic [ref=f3e186]:
+      - generic [ref=f3e188]:
+        - link "Meta" [ref=f3e190] [cursor=pointer]:
+          - /url: https://about.meta.com/
+        - link "About" [ref=f3e193] [cursor=pointer]:
+          - /url: https://about.instagram.com/
+        - link "Blog" [ref=f3e196] [cursor=pointer]:
+          - /url: https://about.instagram.com/blog/
+        - link "Jobs" [ref=f3e199] [cursor=pointer]:
+          - /url: https://about.instagram.com/about-us/careers
+        - link "Help" [ref=f3e202] [cursor=pointer]:
+          - /url: https://help.instagram.com/
+        - link "API" [ref=f3e205] [cursor=pointer]:
+          - /url: https://developers.facebook.com/docs/instagram
+        - link "Privacy" [ref=f3e208] [cursor=pointer]:
+          - /url: /legal/privacy/
+        - link "Terms" [ref=f3e211] [cursor=pointer]:
+          - /url: /legal/terms/
+        - link "Locations" [ref=f3e214] [cursor=pointer]:
+          - /url: /explore/locations/
+        - link "Popular" [ref=f3e217] [cursor=pointer]:
+          - /url: /popular/
+        - link "Instagram Lite" [ref=f3e220] [cursor=pointer]:
+          - /url: /web/lite/
+        - link "Meta AI" [ref=f3e223] [cursor=pointer]:
+          - /url: https://www.meta.ai/?utm_source=foa_web_footer
+        - link "Muse" [ref=f3e226] [cursor=pointer]:
+          - /url: https://muse.ai/
+        - link "Threads" [ref=f3e229] [cursor=pointer]:
+          - /url: https://www.threads.com/
+        - link "Contact Uploading & Non-Users" [ref=f3e232] [cursor=pointer]:
+          - /url: https://www.facebook.com/help/instagram/261704639352628
+        - link "Meta Verified" [ref=f3e235] [cursor=pointer]:
+          - /url: /accounts/meta_verified/?entrypoint=web_footer
+      - generic [ref=f3e237]:
+        - generic [ref=f3e238] [cursor=pointer]:
+          - generic [ref=f3e239]:
+            - generic [ref=f3e240]: English
+            - img "Down chevron icon" [ref=f3e243]
+          - combobox "Switch Display Language" [ref=f3e245]:
+            - option "Afrikaans"
+            - option "العربية"
+            - option "Čeština"
+            - option "Dansk"
+            - option "Deutsch"
+            - option "Ελληνικά"
+            - option "English" [selected]
+            - option "English (UK)"
+            - option "Español (España)"
+            - option "Español"
+            - option "فارسی"
+            - option "Suomi"
+            - option "Français"
+            - option "עברית"
+            - option "Bahasa Indonesia"
+            - option "Italiano"
+            - option "日本語"
+            - option "한국어"
+            - option "Bahasa Melayu"
+            - option "Norsk"
+            - option "Nederlands"
+            - option "Polski"
+            - option "Português (Brasil)"
+            - option "Português (Portugal)"
+            - option "Русский"
+            - option "Svenska"
+            - option "ภาษาไทย"
+            - option "Filipino"
+            - option "Türkçe"
+            - option "中文(简体)"
+            - option "中文(台灣)"
+            - option "বাংলা"
+            - option "ગુજરાતી"
+            - option "हिन्दी"
+            - option "Hrvatski"
+            - option "Magyar"
+            - option "ಕನ್ನಡ"
+            - option "മലയാളം"
+            - option "मराठी"
+            - option "नेपाली"
+            - option "ਪੰਜਾਬੀ"
+            - option "සිංහල"
+            - option "Slovenčina"
+            - option "தமிழ்"
+            - option "తెలుగు"
+            - option "اردو"
+            - option "Tiếng Việt"
+            - option "中文(香港)"
+            - option "Български"
+            - option "Français (Canada)"
+            - option "Română"
+            - option "Српски"
+            - option "Українська"
+        - generic [ref=f3e246]: © 2026 Instagram from Meta

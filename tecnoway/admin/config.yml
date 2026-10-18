@@ -1,0 +1,227 @@
+backend:
+  name: github
+  repo: kadusjc/websites
+  branch: main
+  auth_scope: public_repo
+  open_authoring: true
+  base_url: https://YOUR-OAUTH-PROXY-DOMAIN
+  auth_endpoint: auth
+
+publish_mode: editorial_workflow
+
+logo:
+  src: /tecnoway/admin/brand.svg
+  show_in_header: false
+
+site_url: https://fcsoftware.com.br/tecnoway/
+display_url: https://fcsoftware.com.br/tecnoway/
+media_folder: tecnoway/assets/products
+public_folder: /tecnoway/assets/products
+
+collections:
+  - name: catalog
+    label: Catálogo
+    files:
+      - name: products
+        label: Produtos
+        file: tecnoway/content/products.json
+        format: json
+        fields:
+          - label: Produtos
+            name: products
+            widget: list
+            label_singular: Produto
+            summary: '{{fields.name}} · {{fields.code}}'
+            fields:
+              - { label: Código da peça, name: code, widget: string }
+              - { label: Nome, name: name, widget: string }
+              - { label: Categoria, name: category, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Preço (R$), name: price, widget: number, value_type: float, min: 0, step: 0.01 }
+              - { label: Foto, name: image, widget: image, choose_url: false }
+              - { label: Produto ativo, name: active, widget: boolean, default: true }
+      - name: site_content
+        label: Conteúdo do site
+        file: tecnoway/content/site.json
+        format: json
+        fields:
+          - label: SEO e identidade
+            name: seo
+            widget: object
+            fields:
+              - { label: Título da página, name: title, widget: string }
+              - { label: Descrição para buscadores, name: description, widget: text }
+          - label: Marca
+            name: brand
+            widget: object
+            fields:
+              - { label: Logo ou mascote, name: logo, widget: image, choose_url: false }
+              - { label: Texto alternativo do logo, name: logo_alt, widget: string }
+              - { label: Nome (primeira parte), name: wordmark_prefix, widget: string }
+              - { label: Nome (segunda parte), name: wordmark_suffix, widget: string }
+              - { label: Frase abaixo do nome, name: tagline, widget: string }
+          - label: Contato e endereço
+            name: contact
+            widget: object
+            fields:
+              - { label: Telefone exibido, name: phone_display, widget: string }
+              - { label: Link de telefone (tel:...), name: phone_href, widget: string }
+              - { label: Texto do botão de telefone, name: phone_button, widget: string }
+              - { label: WhatsApp com DDI e DDD, name: whatsapp_number, widget: string }
+              - { label: Texto do botão de WhatsApp, name: quote_button, widget: string }
+              - { label: Mensagem inicial de orçamento, name: quote_message, widget: text }
+              - { label: Mensagem do botão flutuante, name: float_message, widget: text }
+              - { label: Mensagem inicial do pedido, name: order_message, widget: text }
+              - { label: Rótulo do cartão de contato, name: card_title, widget: string }
+              - { label: Rótulo do endereço, name: address_label, widget: string }
+              - { label: Endereço (linha 1), name: address_line1, widget: string }
+              - { label: Endereço (linha 2), name: address_line2, widget: string }
+              - { label: Rótulo do telefone, name: phone_label, widget: string }
+              - { label: E-mail, name: email, widget: string }
+              - { label: Link do e-mail (mailto:...), name: email_href, widget: string }
+              - { label: Rótulo do e-mail, name: email_label, widget: string }
+              - { label: Link do mapa, name: maps_url, widget: string }
+          - label: Navegação
+            name: nav
+            widget: object
+            fields:
+              - { label: Botão de produtos, name: products, widget: string }
+          - label: Apresentação principal
+            name: hero
+            widget: object
+            fields:
+              - { label: Localidade, name: location, widget: string }
+              - { label: Título - linha 1, name: title_line1, widget: string }
+              - { label: Título - início da linha 2, name: title_line2_prefix, widget: string }
+              - { label: Título - destaque, name: title_highlight, widget: string }
+              - { label: Título - linha 3, name: title_line3, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Texto do botão de orçamento, name: quote_label, widget: string }
+              - { label: Texto do botão de entrega, name: delivery_label, widget: string }
+          - label: Faixa de benefícios
+            name: stats
+            widget: object
+            fields:
+              - { label: Benefício 1 - título, name: one_title, widget: string }
+              - { label: Benefício 1 - descrição, name: one_description, widget: string }
+              - { label: Benefício 2 - título, name: two_title, widget: string }
+              - { label: Benefício 2 - descrição, name: two_description, widget: string }
+              - { label: Benefício 3 - título, name: three_title, widget: string }
+              - { label: Benefício 3 - descrição, name: three_description, widget: string }
+              - { label: Benefício 4 - título, name: four_title, widget: string }
+              - { label: Benefício 4 - descrição, name: four_description, widget: string }
+          - label: Loja online
+            name: shopee
+            widget: object
+            fields:
+              - { label: Chamada curta, name: eyebrow, widget: string }
+              - { label: Título antes do destaque, name: title_before, widget: string }
+              - { label: Título em destaque, name: title_highlight, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Texto do botão, name: button, widget: string }
+              - { label: Link da loja, name: url, widget: string }
+          - label: Serviços
+            name: services
+            widget: object
+            fields:
+              - { label: Chamada curta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Serviço 1 - título, name: one_title, widget: string }
+              - { label: Serviço 1 - descrição, name: one_description, widget: text }
+              - { label: Serviço 2 - título, name: two_title, widget: string }
+              - { label: Serviço 2 - descrição, name: two_description, widget: text }
+              - { label: Serviço 3 - título, name: three_title, widget: string }
+              - { label: Serviço 3 - descrição, name: three_description, widget: text }
+              - { label: Serviço 4 - título, name: four_title, widget: string }
+              - { label: Serviço 4 - descrição, name: four_description, widget: text }
+          - label: Diferenciais
+            name: why
+            widget: object
+            fields:
+              - { label: Chamada curta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Texto do botão WhatsApp, name: quote_button, widget: string }
+              - { label: Texto do botão mapa, name: map_button, widget: string }
+              - { label: Diferencial 1 - título, name: one_title, widget: string }
+              - { label: Diferencial 1 - descrição, name: one_description, widget: text }
+              - { label: Diferencial 2 - título, name: two_title, widget: string }
+              - { label: Diferencial 2 - descrição, name: two_description, widget: text }
+              - { label: Diferencial 3 - título, name: three_title, widget: string }
+              - { label: Diferencial 3 - descrição, name: three_description, widget: text }
+              - { label: Diferencial 4 - título, name: four_title, widget: string }
+              - { label: Diferencial 4 - descrição, name: four_description, widget: text }
+          - label: Chamada final
+            name: cta
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Texto do botão WhatsApp, name: whatsapp_button, widget: string }
+              - { label: Texto do botão telefone, name: phone_button, widget: string }
+          - label: Instagram
+            name: instagram
+            widget: object
+            fields:
+              - { label: Título, name: title, widget: string }
+              - { label: Descrição, name: description, widget: string }
+              - { label: Perfil, name: handle, widget: string }
+              - { label: Texto do botão, name: button, widget: string }
+              - { label: Link do perfil, name: url, widget: string }
+          - label: Galeria de imagens
+            name: gallery
+            widget: object
+            fields:
+              - { label: Chamada curta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Rótulo da imagem principal, name: main_label, widget: string }
+              - { label: Título da imagem principal, name: main_title, widget: string }
+              - { label: Foto principal, name: main_image, widget: image, choose_url: false }
+              - { label: Descrição da foto principal, name: main_alt, widget: string }
+              - { label: Foto 1, name: one_image, widget: image, choose_url: false }
+              - { label: Descrição da foto 1, name: one_alt, widget: string }
+              - { label: Foto 2, name: two_image, widget: image, choose_url: false }
+              - { label: Descrição da foto 2, name: two_alt, widget: string }
+              - { label: Foto 3, name: three_image, widget: image, choose_url: false }
+              - { label: Descrição da foto 3, name: three_alt, widget: string }
+              - { label: Foto 4, name: four_image, widget: image, choose_url: false }
+              - { label: Descrição da foto 4, name: four_alt, widget: string }
+          - label: Localização
+            name: location
+            widget: object
+            fields:
+              - { label: Chamada curta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Título acessível do mapa, name: map_title, widget: string }
+              - { label: Link de incorporação do mapa, name: map_embed_url, widget: string }
+              - { label: Endereço exibido, name: address, widget: string }
+              - { label: Texto do botão, name: map_button, widget: string }
+          - label: Catálogo e carrinho
+            name: catalog
+            widget: object
+            fields:
+              - { label: Chamada curta, name: eyebrow, widget: string }
+              - { label: Título, name: title, widget: string }
+              - { label: Descrição, name: description, widget: text }
+              - { label: Botão para ver produtos, name: view_products_button, widget: string }
+              - { label: Rótulo da pesquisa, name: search_label, widget: string }
+              - { label: Exemplo da pesquisa, name: search_placeholder, widget: string }
+              - { label: Botão do carrinho, name: cart_button, widget: string }
+              - { label: Botão de adicionar produto, name: add_button, widget: string }
+              - { label: Rótulo do código da peça, name: code_prefix, widget: string }
+              - { label: Texto para preço sob consulta, name: price_on_request, widget: string }
+              - { label: Título do carrinho, name: cart_title, widget: string }
+              - { label: Mensagem do catálogo vazio, name: empty_message, widget: string }
+              - { label: Mensagem para busca sem resultados, name: no_results, widget: string }
+              - { label: Mensagem de carrinho vazio, name: empty_cart_message, widget: string }
+              - { label: Rótulo do total, name: total_label, widget: string }
+              - { label: Aviso do carrinho, name: cart_note, widget: text }
+              - { label: Botão de envio, name: checkout_button, widget: string }
+          - label: Redes sociais
+            name: social
+            widget: object
+            fields:
+              - { label: Link do Facebook, name: facebook_url, widget: string }

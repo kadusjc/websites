@@ -1,0 +1,152 @@
+{
+  "seo": {
+    "title": "Tecnoway Auto Peças | Tecnologia em Peças Automotivas – São José dos Campos",
+    "description": "Tecnoway – Tecnologia em peças automotivas em São José dos Campos. Peças novas, recondicionadas, recuperadas e remanufaturadas com garantia de qualidade e disk entrega."
+  },
+  "brand": {
+    "logo": "/tecnoway/assets/robozinho-tecnoway.jpg",
+    "logo_alt": "Mascote Tecnoway",
+    "wordmark_prefix": "TECNO",
+    "wordmark_suffix": "WAY",
+    "tagline": "Tecnologia em peças automotivas"
+  },
+  "contact": {
+    "phone_display": "(12) 9 8188-9399",
+    "phone_href": "tel:12981889399",
+    "phone_button": "Ligar agora",
+    "whatsapp_number": "5512981889399",
+    "quote_button": "Cotar no WhatsApp",
+    "quote_message": "Olá, quero fazer uma cotação na Tecnoway",
+    "float_message": "Olá, vim pelo site e gostaria de fazer uma cotação",
+    "order_message": "Olá! Gostaria de fazer este pedido na Tecnoway:",
+    "card_title": "Informações de contato",
+    "address_label": "Endereço",
+    "email": "tecnowayremanu@gmail.com",
+    "email_href": "mailto:tecnowayremanu@gmail.com",
+    "email_label": "E-mail",
+    "phone_label": "Telefone / WhatsApp",
+    "address_line1": "Av. Benedito Bento, 759 – Cidade Morumbi",
+    "address_line2": "São José dos Campos – SP",
+    "maps_url": "https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos"
+  },
+  "nav": {
+    "products": "Produtos"
+  },
+  "hero": {
+    "location": "São José dos Campos — SP",
+    "title_line1": "Peças novas",
+    "title_line2_prefix": "e",
+    "title_highlight": "recondicionadas",
+    "title_line3": "com procedência",
+    "description": "Tecnologia em peças automotivas — a Tecnoway oferece peças recondicionadas, recuperadas e remanufaturadas com garantia de qualidade. Economia real sem abrir mão de segurança.",
+    "quote_label": "Fazer cotação",
+    "delivery_label": "Disk entrega"
+  },
+  "stats": {
+    "one_title": "Novas",
+    "one_description": "Peças automotivas com procedência",
+    "two_title": "Recondicionadas",
+    "two_description": "Revisadas e testadas com garantia",
+    "three_title": "Remanufaturas",
+    "three_description": "Remanufaturadas com padrão técnico",
+    "four_title": "Disk",
+    "four_description": "Entrega rápida para toda a região"
+  },
+  "shopee": {
+    "eyebrow": "Loja online oficial",
+    "title_before": "Visitem nossa",
+    "title_highlight": "loja online",
+    "description": "Compre com praticidade pela Shopee da Tecnoway. Aproveite ofertas e encontre peças automotivas direto pelo celular.",
+    "button": "Acessar",
+    "url": "https://shopee.com.br/tecnoway"
+  },
+  "services": {
+    "eyebrow": "O que oferecemos",
+    "title": "Nossas especialidades",
+    "description": "Trabalhamos com orientação técnica para ajudar você a encontrar exatamente a peça certa, na condição ideal para o seu orçamento.",
+    "one_title": "Peças Recondicionadas",
+    "one_description": "Revisadas e testadas para entregar desempenho confiável com excelente custo-benefício. Ideal para quem busca qualidade pagando muito menos.",
+    "two_title": "Peças Remanufaturadas",
+    "two_description": "Processo técnico rigoroso de recuperação com padrão de qualidade próximo ao original — durabilidade e confiabilidade garantidas.",
+    "three_title": "Peças Recuperadas",
+    "three_description": "Alternativa inteligente para reduzir custos sem abrir mão de segurança. Soluções práticas para quem precisa resolver com rapidez e economia.",
+    "four_title": "Peças Novas",
+    "four_description": "Peças originais e de linha para reposição direta — procedência de fábrica, segurança máxima e compatibilidade garantida com o seu veículo."
+  },
+  "why": {
+    "eyebrow": "Motivo para escolher",
+    "title": "Por que a Tecnoway?",
+    "description": "Mais de uma opção para cada necessidade. Orientação técnica honesta para você não pagar mais do que precisa.",
+    "quote_button": "Fazer cotação no WhatsApp",
+    "map_button": "Ver localização no mapa",
+    "one_title": "Garantia de qualidade em todas as peças",
+    "one_description": "Cada item passa por avaliação técnica antes de sair da loja. Você recebe com total procedência e transparência.",
+    "two_title": "Disk entrega em toda a região de SJC",
+    "two_description": "Ligue, faça sua cotação e receba sua peça sem sair de casa. Atendimento rápido e eficiente.",
+    "three_title": "Orientação especializada, sem enrolação",
+    "three_description": "Não sabe qual peça precisa? Nossa equipe orienta você com clareza para fazer a escolha certa na primeira vez.",
+    "four_title": "Economia real com segurança",
+    "four_description": "Peças recondicionadas e remanufaturadas até 70% mais baratas que o equivalente novo, sem abrir mão de desempenho."
+  },
+  "cta": {
+    "title": "Precisa de uma peça agora?",
+    "description": "Fale com a Tecnoway e receba atendimento rápido — verificamos disponibilidade, preço e entrega na hora. Sem burocracia.",
+    "whatsapp_button": "Chamar no WhatsApp",
+    "phone_button": "Ligar para a loja"
+  },
+  "instagram": {
+    "title": "Siga a Tecnoway no Instagram",
+    "description": "Acompanhe novidades, peças em destaque e promoções",
+    "handle": "@tecnowaysjc",
+    "button": "Abrir no Instagram",
+    "url": "https://www.instagram.com/tecnowaysjc/"
+  },
+  "gallery": {
+    "eyebrow": "Galeria da loja",
+    "title": "Visual da Tecnoway",
+    "description": "Uma prévia visual da Tecnoway Auto Peças para reforçar confiança, estrutura e presença local.",
+    "main_label": "Destaque",
+    "main_title": "Tecnologia em peças automotivas",
+    "main_image": "https://ts2.mm.bing.net/th?id=OIP.O2E4EG0Ct_5vJl1gh-5WmAHaHa&pid=15.1",
+    "main_alt": "Destaque da Tecnoway Auto Peças",
+    "one_image": "https://ts2.mm.bing.net/th?id=OIP.LQUSTfEuobQbrE5nmiwADQHaHa&pid=15.1",
+    "one_alt": "Imagem da Tecnoway Auto Peças",
+    "two_image": "https://ts3.mm.bing.net/th?id=OIP.Mxyb4bdeWVVcIhLBfJYdYAHaHa&pid=15.1",
+    "two_alt": "Fachada e atendimento Tecnoway",
+    "three_image": "https://ts2.mm.bing.net/th?id=OIP.Rpz4-xeAaVypS6_A0sAvagHaHa&pid=15.1",
+    "three_alt": "Catálogo e peças Tecnoway",
+    "four_image": "https://ts4.mm.bing.net/th?id=OIP.0FRYkfuia2ZooAs0R4731QHaGx&pid=15.1",
+    "four_alt": "Equipe Tecnoway"
+  },
+  "location": {
+    "eyebrow": "Localização",
+    "title": "Visite a loja",
+    "description": "Estamos na Av. Benedito Bento, 759, Cidade Morumbi, São José dos Campos - SP.",
+    "map_title": "Mapa da Tecnoway Auto Peças",
+    "map_embed_url": "https://www.google.com/maps?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos+-+SP&output=embed",
+    "address": "Av. Benedito Bento, 759 - Cidade Morumbi - São José dos Campos - SP",
+    "map_button": "Abrir no Google Maps"
+  },
+  "catalog": {
+    "eyebrow": "Catálogo Tecnoway",
+    "title": "Encontre sua peça",
+    "description": "Pesquise no catálogo, adicione os produtos ao pedido e envie a lista para confirmar disponibilidade e entrega pelo WhatsApp.",
+    "view_products_button": "Ver produtos",
+    "search_label": "Pesquisar produtos",
+    "search_placeholder": "Nome, código ou descrição",
+    "cart_button": "Ver pedido",
+    "add_button": "Adicionar ao pedido",
+    "code_prefix": "Código",
+    "price_on_request": "Consulte o preço",
+    "cart_title": "Seu pedido",
+    "empty_message": "O catálogo está sendo atualizado. Consulte a loja pelo WhatsApp.",
+    "no_results": "Nenhum produto encontrado. Tente outro termo.",
+    "empty_cart_message": "Seu pedido está vazio. Adicione produtos do catálogo.",
+    "total_label": "Total estimado",
+    "cart_note": "O pedido será enviado pelo WhatsApp para confirmar estoque, preço e entrega. Nenhum pagamento é feito pelo site.",
+    "checkout_button": "Enviar pedido pelo WhatsApp"
+  },
+  "social": {
+    "facebook_url": "https://www.facebook.com/tecnowaysjc"
+  }
+}

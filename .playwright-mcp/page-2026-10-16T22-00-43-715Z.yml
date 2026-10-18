@@ -1,0 +1,167 @@
+- generic [ref=f1e8]:
+  - generic [ref=f1e10]:
+    - link [ref=f1e259] [cursor=pointer]:
+      - /url: /
+      - img "Instagram" [ref=f1e260]
+    - generic [ref=f1e27]:
+      - link "Log In" [ref=f1e261] [cursor=pointer]:
+        - /url: /accounts/login/?next=%2Fdecarlo.industrial%2F&source=desktop_nav
+      - link "Sign Up" [ref=f1e262] [cursor=pointer]:
+        - /url: /accounts/emailsignup/
+  - main [ref=f1e32]:
+    - generic [ref=f1e34]:
+      - generic [ref=f1e35]:
+        - link [ref=f1e263] [cursor=pointer]:
+          - /url: /decarlo.industrial/
+          - img "decarlo.industrial's profile picture" [ref=f1e264]
+        - heading "decarlo.industrial" [level=2] [ref=f1e265]
+        - list [ref=f1e50]:
+          - listitem [ref=f1e51]:
+            - link "103 followers" [ref=f1e266] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f1e54]:
+                - generic "103" [ref=f1e267]
+                - text: followers
+          - listitem [ref=f1e56]:
+            - link "3 following" [ref=f1e268] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=f1e59]:
+                - generic [ref=f1e60]: "3"
+                - text: following
+        - generic [ref=f1e62]:
+          - generic [ref=f1e63]: Decarlo Industrial
+          - generic [ref=f1e65]:
+            - button [ref=f1e269] [cursor=pointer]:
+              - generic [ref=f1e67]: Desde 1977, referência nacional em peças seriadas usinadas.+2 milhões de peças/ano.Automotivo • Agro • Construção
+            - generic [ref=f1e68]:
+              - text: ...
+              - button "more" [ref=f1e270] [cursor=pointer]
+          - generic [ref=f1e71]:
+            - img "Link icon" [ref=f1e271]
+            - link "decarlo.com.br" [ref=f1e272] [cursor=pointer]:
+              - /url: https://l.instagram.com/?u=http%3A%2F%2Fdecarlo.com.br%2F&e=AUBnwFyA0qE8xGVAMqxkxqs0qLzw5Z5MfeVXYPNYG6EPq-_ZXcFfx25ixwka2L_zMuUU1JTOaj-VlZTlqktGQO_WuWcvjfvSQreUjk3lAtcnyvfmJrb_qK5eFeEUmQ6XGWasFM2-f3kmRtw6xc4BtDhEchMzXQ
+        - generic:
+          - menu
+      - generic [ref=f1e79]:
+        - tablist [ref=f1e80]:
+          - link [ref=f1e273] [cursor=pointer]:
+            - /url: /decarlo.industrial/
+            - img "Posts" [ref=f1e274]
+          - link [ref=f1e275] [cursor=pointer]:
+            - /url: "#"
+            - img "Reels" [ref=f1e276]
+          - link [ref=f1e277] [cursor=pointer]:
+            - /url: "#"
+            - img "Tagged" [ref=f1e278]
+        - tabpanel
+      - generic [ref=f1e106]:
+        - generic [ref=f1e110]:
+          - link [ref=f1e279] [cursor=pointer]:
+            - /url: /decarlo.industrial/p/Db0sm2XJWK4/
+            - img "Photo by Decarlo Industrial on August 09, 2026. May be an image of text that says 'DECARLO INDUSTRIAL 商年記通山业感信套公 讓国車国車商，言口团 Feliz Dia dos Pais A todos que movem todos os pais que movem economia do Alto Tietê, economia do Alto Tietê. Respeito, admiração admi grati dão. Feliz Dia dos Pais! ser Orgulho de do Alto Indústri forte. fortes. que cresce. Regiac'." [ref=f1e280]
+          - link [ref=f1e281] [cursor=pointer]:
+            - /url: /decarlo.industrial/reel/DXxLMfgPQCX/
+            - img "Video by Decarlo Industrial on April 30, 2026." [ref=f1e282]
+            - generic:
+              - generic:
+                - generic:
+                  - img "Clip"
+          - link [ref=f1e283] [cursor=pointer]:
+            - /url: /decarlo.industrial/p/DXui4vQDnXe/
+            - img "Photo by Decarlo Industrial on April 29, 2026." [ref=f1e284]
+        - button "Show more posts from decarlo.industrial" [ref=f1e285] [cursor=pointer]
+  - contentinfo [ref=f1e132]:
+    - generic [ref=f1e133]:
+      - generic [ref=f1e135]:
+        - link "Meta" [ref=f1e286] [cursor=pointer]:
+          - /url: https://about.meta.com/
+        - link "About" [ref=f1e287] [cursor=pointer]:
+          - /url: https://about.instagram.com/
+        - link "Blog" [ref=f1e288] [cursor=pointer]:
+          - /url: https://about.instagram.com/blog/
+        - link "Jobs" [ref=f1e289] [cursor=pointer]:
+          - /url: https://about.instagram.com/about-us/careers
+        - link "Help" [ref=f1e290] [cursor=pointer]:
+          - /url: https://help.instagram.com/
+        - link "API" [ref=f1e291] [cursor=pointer]:
+          - /url: https://developers.facebook.com/docs/instagram
+        - link "Privacy" [ref=f1e292] [cursor=pointer]:
+          - /url: /legal/privacy/
+        - link "Terms" [ref=f1e293] [cursor=pointer]:
+          - /url: /legal/terms/
+        - link "Locations" [ref=f1e294] [cursor=pointer]:
+          - /url: /explore/locations/
+        - link "Popular" [ref=f1e295] [cursor=pointer]:
+          - /url: /popular/
+        - link "Instagram Lite" [ref=f1e296] [cursor=pointer]:
+          - /url: /web/lite/
+        - link "Meta AI" [ref=f1e297] [cursor=pointer]:
+          - /url: https://www.meta.ai/?utm_source=foa_web_footer
+        - link "Muse" [ref=f1e298] [cursor=pointer]:
+          - /url: https://muse.ai/
+        - link "Threads" [ref=f1e299] [cursor=pointer]:
+          - /url: https://www.threads.com/
+        - link "Contact Uploading & Non-Users" [ref=f1e300] [cursor=pointer]:
+          - /url: https://www.facebook.com/help/instagram/261704639352628
+        - link "Meta Verified" [ref=f1e301] [cursor=pointer]:
+          - /url: /accounts/meta_verified/?entrypoint=web_footer
+      - generic [ref=f1e184]:
+        - generic [ref=f1e185] [cursor=pointer]:
+          - generic [ref=f1e186]:
+            - generic [ref=f1e187]: English
+            - img "Down chevron icon" [ref=f1e302]
+          - combobox "Switch Display Language" [ref=f1e303]:
+            - option "Afrikaans"
+            - option "العربية"
+            - option "Čeština"
+            - option "Dansk"
+            - option "Deutsch"
+            - option "Ελληνικά"
+            - option "English" [selected]
+            - option "English (UK)"
+            - option "Español (España)"
+            - option "Español"
+            - option "فارسی"
+            - option "Suomi"
+            - option "Français"
+            - option "עברית"
+            - option "Bahasa Indonesia"
+            - option "Italiano"
+            - option "日本語"
+            - option "한국어"
+            - option "Bahasa Melayu"
+            - option "Norsk"
+            - option "Nederlands"
+            - option "Polski"
+            - option "Português (Brasil)"
+            - option "Português (Portugal)"
+            - option "Русский"
+            - option "Svenska"
+            - option "ภาษาไทย"
+            - option "Filipino"
+            - option "Türkçe"
+            - option "中文(简体)"
+            - option "中文(台灣)"
+            - option "বাংলা"
+            - option "ગુજરાતી"
+            - option "हिन्दी"
+            - option "Hrvatski"
+            - option "Magyar"
+            - option "ಕನ್ನಡ"
+            - option "മലയാളം"
+            - option "मराठी"
+            - option "नेपाली"
+            - option "ਪੰਜਾਬੀ"
+            - option "සිංහල"
+            - option "Slovenčina"
+            - option "தமிழ்"
+            - option "తెలుగు"
+            - option "اردو"
+            - option "Tiếng Việt"
+            - option "中文(香港)"
+            - option "Български"
+            - option "Français (Canada)"
+            - option "Română"
+            - option "Српски"
+            - option "Українська"
+        - generic [ref=f1e193]: © 2026 Instagram from Meta

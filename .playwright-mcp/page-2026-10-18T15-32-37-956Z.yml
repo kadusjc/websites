@@ -1,0 +1,200 @@
+- generic [active] [ref=f2e1]:
+  - link "Falar no WhatsApp" [ref=f2e2] [cursor=pointer]:
+    - /url: https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20cota%C3%A7%C3%A3o
+  - banner [ref=f2e5]:
+    - generic [ref=f2e6]:
+      - link "Mascote Tecnoway TECNOWAY Tecnologia em peças automotivas" [ref=f2e7] [cursor=pointer]:
+        - /url: "#"
+        - img "Mascote Tecnoway" [ref=f2e9]
+        - generic [ref=f2e10]:
+          - generic [ref=f2e11]: TECNOWAY
+          - generic [ref=f2e12]: Tecnologia em peças automotivas
+      - generic [ref=f2e13]:
+        - link "Produtos" [ref=f2e14] [cursor=pointer]:
+          - /url: "#catalogo"
+        - generic [ref=f2e15]:
+          - link "Instagram" [ref=f2e16] [cursor=pointer]:
+            - /url: https://www.instagram.com/tecnowaysjc/
+          - link "Facebook" [ref=f2e19] [cursor=pointer]:
+            - /url: https://www.facebook.com/tecnowaysjc
+        - link "Ligar agora" [ref=f2e22] [cursor=pointer]:
+          - /url: tel:12981889399
+        - link "Cotar no WhatsApp" [ref=f2e25] [cursor=pointer]:
+          - /url: https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20na%20Tecnoway
+  - main [ref=f2e28]:
+    - generic [ref=f2e30]:
+      - generic [ref=f2e31]:
+        - generic [ref=f2e32]: São José dos Campos — SP
+        - heading "Peças novas e recondicionadas com procedência" [level=1] [ref=f2e35]: Peças novase recondicionadascom procedência
+        - paragraph [ref=f2e36]: Tecnologia em peças automotivas — a Tecnoway oferece peças recondicionadas, recuperadas e remanufaturadas com garantia de qualidade. Economia real sem abrir mão de segurança.
+        - generic [ref=f2e37]:
+          - link "Fazer cotação" [ref=f2e38] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20na%20Tecnoway
+          - 'link "Disk entrega: (12) 9 8188-9399" [ref=f2e41] [cursor=pointer]':
+            - /url: tel:12981889399
+          - link "Ver produtos" [ref=f2e42] [cursor=pointer]:
+            - /url: "#catalogo"
+      - generic [ref=f2e43]:
+        - generic [ref=f2e44]: Informações de contato
+        - generic [ref=f2e47]:
+          - link [ref=f2e48] [cursor=pointer]:
+            - /url: https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos
+            - generic [ref=f2e52]:
+              - paragraph [ref=f2e53]: Endereço
+              - paragraph [ref=f2e54]: Av. Benedito Bento, 759 – Cidade MorumbiSão José dos Campos – SP
+          - link [ref=f2e55] [cursor=pointer]:
+            - /url: tel:12981889399
+            - generic [ref=f2e59]:
+              - paragraph [ref=f2e60]: Telefone / WhatsApp
+              - paragraph [ref=f2e61]: (12) 9 8188-9399
+          - link [ref=f2e62] [cursor=pointer]:
+            - /url: mailto:tecnowayremanu@gmail.com
+            - generic [ref=f2e67]:
+              - paragraph [ref=f2e68]: E-mail
+              - paragraph [ref=f2e69]: tecnowayremanu@gmail.com
+    - generic [ref=f2e72]:
+      - generic [ref=f2e73]:
+        - generic [ref=f2e74]: Novas
+        - generic [ref=f2e75]: Peças automotivas com procedência
+      - generic [ref=f2e76]:
+        - generic [ref=f2e77]: Recondicionadas
+        - generic [ref=f2e78]: Revisadas e testadas com garantia
+      - generic [ref=f2e79]:
+        - generic [ref=f2e80]: Remanufaturas
+        - generic [ref=f2e81]: Remanufaturadas com padrão técnico
+      - generic [ref=f2e82]:
+        - generic [ref=f2e83]: Disk
+        - generic [ref=f2e84]: Entrega rápida para toda a região
+    - generic [ref=f2e86]:
+      - generic [ref=f2e87]:
+        - paragraph [ref=f2e88]: Catálogo Tecnoway
+        - heading "Encontre sua peça" [level=2] [ref=f2e89]
+        - paragraph [ref=f2e90]: Pesquise no catálogo, adicione os produtos ao pedido e envie a lista para confirmar disponibilidade e entrega pelo WhatsApp.
+      - generic [ref=f2e91]:
+        - generic [ref=f2e92]:
+          - generic [ref=f2e93]: Pesquisar produtos
+          - searchbox "Pesquisar produtos" [ref=f2e94]
+        - button "Ver pedido 0" [ref=f2e95] [cursor=pointer]:
+          - text: Ver pedido
+          - generic [ref=f2e96]: "0"
+      - generic "Produtos"
+      - status [ref=f2e97]: O catálogo está sendo atualizado. Consulte a loja pelo WhatsApp.
+    - generic [ref=f2e100]:
+      - generic [ref=f2e101]:
+        - generic [ref=f2e102]: Loja online oficial
+        - heading [level=2] [ref=f2e103]:
+          - text: Visitem nossa
+          - strong [ref=f2e104]: loja online
+        - paragraph [ref=f2e105]: Compre com praticidade pela Shopee da Tecnoway. Aproveite ofertas e encontre pecas automotivas direto pelo celular.
+      - link "Abrir loja da Tecnoway na Shopee" [ref=f2e106] [cursor=pointer]:
+        - /url: https://shopee.com.br/tecnoway
+        - text: Acessar
+    - generic [ref=f2e110]:
+      - generic [ref=f2e111]:
+        - paragraph [ref=f2e112]: O que oferecemos
+        - heading "Nossas especialidades" [level=2] [ref=f2e113]
+        - paragraph [ref=f2e114]: Trabalhamos com orientação técnica para ajudar você a encontrar exatamente a peça certa, na condição ideal para o seu orçamento.
+      - generic [ref=f2e115]:
+        - article [ref=f2e116]:
+          - heading "Peças Recondicionadas" [level=3] [ref=f2e120]
+          - paragraph [ref=f2e121]: Revisadas e testadas para entregar desempenho confiável com excelente custo-benefício. Ideal para quem busca qualidade pagando muito menos.
+        - article [ref=f2e122]:
+          - heading "Peças Remanufaturadas" [level=3] [ref=f2e126]
+          - paragraph [ref=f2e127]: Processo técnico rigoroso de recuperação com padrão de qualidade próximo ao original — durabilidade e confiabilidade garantidas.
+        - article [ref=f2e128]:
+          - heading "Peças Recuperadas" [level=3] [ref=f2e132]
+          - paragraph [ref=f2e133]: Alternativa inteligente para reduzir custos sem abrir mão de segurança. Soluções práticas para quem precisa resolver com rapidez e economia.
+        - article [ref=f2e134]:
+          - heading "Peças Novas" [level=3] [ref=f2e138]
+          - paragraph [ref=f2e139]: Peças originais e de linha para reposição direta — procedência de fábrica, segurança máxima e compatibilidade garantida com o seu veículo.
+    - generic [ref=f2e142]:
+      - generic [ref=f2e143]:
+        - paragraph [ref=f2e144]: Motivo para escolher
+        - heading "Por que a Tecnoway?" [level=2] [ref=f2e145]
+        - paragraph [ref=f2e146]: Mais de uma opção para cada necessidade. Orientação técnica honesta para você não pagar mais do que precisa.
+        - generic [ref=f2e147]:
+          - link "Fazer cotação no WhatsApp" [ref=f2e148] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20na%20Tecnoway
+          - link "Ver localização no mapa" [ref=f2e149] [cursor=pointer]:
+            - /url: https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos
+      - generic [ref=f2e150]:
+        - generic [ref=f2e155]:
+          - paragraph [ref=f2e156]: Garantia de qualidade em todas as peças
+          - paragraph [ref=f2e157]: Cada item passa por avaliação técnica antes de sair da loja. Você recebe com total procedência e transparência.
+        - generic [ref=f2e162]:
+          - paragraph [ref=f2e163]: Disk entrega em toda a região de SJC
+          - paragraph [ref=f2e164]: Ligue, faça sua cotação e receba sua peça sem sair de casa. Atendimento rápido e eficiente.
+        - generic [ref=f2e169]:
+          - paragraph [ref=f2e170]: Orientação especializada, sem enrolação
+          - paragraph [ref=f2e171]: Não sabe qual peça precisa? Nossa equipe orienta você com clareza para fazer a escolha certa na primeira vez.
+        - generic [ref=f2e176]:
+          - paragraph [ref=f2e177]: Economia real com segurança
+          - paragraph [ref=f2e178]: Peças recondicionadas e remanufaturadas até 70% mais baratas que o equivalente novo, sem abrir mão de desempenho.
+    - generic [ref=f2e181]:
+      - generic [ref=f2e182]:
+        - paragraph [ref=f2e183]: Precisa de uma peça agora?
+        - paragraph [ref=f2e184]: Fale com a Tecnoway e receba atendimento rápido — verificamos disponibilidade, preço e entrega na hora. Sem burocracia.
+      - generic [ref=f2e185]:
+        - link "Chamar no WhatsApp" [ref=f2e186] [cursor=pointer]:
+          - /url: https://api.whatsapp.com/send?phone=5512981889399&text=Ola%2C%20quero%20fazer%20uma%20cota%C3%A7%C3%A3o%20na%20Tecnoway
+        - link "Ligar para a loja" [ref=f2e187] [cursor=pointer]:
+          - /url: tel:12981889399
+    - generic [ref=f2e190]:
+      - generic [ref=f2e195]:
+        - paragraph [ref=f2e196]: Siga a Tecnoway no Instagram
+        - paragraph [ref=f2e197]:
+          - text: Acompanhe novidades, peças em destaque e promoções
+          - strong [ref=f2e198]: "@tecnowaysjc"
+      - link "Abrir no Instagram" [ref=f2e199] [cursor=pointer]:
+        - /url: https://www.instagram.com/tecnowaysjc/
+    - generic [ref=f2e203]:
+      - generic [ref=f2e204]:
+        - paragraph [ref=f2e205]: Galeria da loja
+        - heading "Visual da Tecnoway" [level=2] [ref=f2e206]
+        - paragraph [ref=f2e207]: Uma prévia visual da Tecnoway Auto Peças para reforçar confiança, estrutura e presença local.
+      - generic [ref=f2e208]:
+        - link "Abrir Instagram da Tecnoway" [ref=f2e209] [cursor=pointer]:
+          - /url: https://www.instagram.com/tecnowaysjc/
+          - generic [ref=f2e210]:
+            - paragraph [ref=f2e211]: Destaque
+            - heading "Tecnologia em peças automotivas" [level=3] [ref=f2e212]
+        - generic [ref=f2e213]:
+          - link "Imagem da Tecnoway 1" [ref=f2e214] [cursor=pointer]:
+            - /url: https://www.instagram.com/tecnowaysjc/
+            - img "Imagem da Tecnoway Auto Pecas" [ref=f2e215]
+          - link "Imagem da Tecnoway 2" [ref=f2e216] [cursor=pointer]:
+            - /url: https://www.instagram.com/tecnowaysjc/
+            - img "Fachada e atendimento Tecnoway" [ref=f2e217]
+          - link "Imagem da Tecnoway 3" [ref=f2e218] [cursor=pointer]:
+            - /url: https://www.instagram.com/tecnowaysjc/
+            - img "Catalogo e pecas Tecnoway" [ref=f2e219]
+          - link "Imagem da Tecnoway 4" [ref=f2e220] [cursor=pointer]:
+            - /url: https://www.instagram.com/tecnowaysjc/
+            - img "Equipe Tecnoway" [ref=f2e221]
+    - generic [ref=f2e223]:
+      - generic [ref=f2e224]:
+        - paragraph [ref=f2e225]: Localização
+        - heading "Visite a loja" [level=2] [ref=f2e226]
+        - paragraph [ref=f2e227]: Estamos na Av. Benedito Bento, 759, Cidade Morumbi, São José dos Campos - SP.
+      - generic [ref=f2e228]:
+        - iframe [ref=f2e229]
+        - generic [ref=f2e230]:
+          - paragraph [ref=f2e231]: Av. Benedito Bento, 759 - Cidade Morumbi - São José dos Campos - SP
+          - link "Abrir no Google Maps" [ref=f2e232] [cursor=pointer]:
+            - /url: https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos
+  - contentinfo [ref=f2e233]:
+    - generic [ref=f2e234]:
+      - link "TECNOWAY" [ref=f2e235] [cursor=pointer]:
+        - /url: "#"
+      - paragraph [ref=f2e237]:
+        - text: Av. Benedito Bento, 759 — Cidade Morumbi ·
+        - link "São José dos Campos – SP" [ref=f2e238] [cursor=pointer]:
+          - /url: https://maps.google.com/?q=Av.+Benedito+Bento,+759,+Cidade+Morumbi,+Sao+Jose+dos+Campos
+        - text: ·
+        - link "(12) 9 8188-9399" [ref=f2e239] [cursor=pointer]:
+          - /url: tel:12981889399
+      - generic [ref=f2e240]:
+        - link "Instagram" [ref=f2e241] [cursor=pointer]:
+          - /url: https://www.instagram.com/tecnowaysjc/
+        - link "Facebook" [ref=f2e244] [cursor=pointer]:
+          - /url: https://www.facebook.com/tecnowaysjc

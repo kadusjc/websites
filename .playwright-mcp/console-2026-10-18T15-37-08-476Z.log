@@ -1,0 +1,4 @@
+[      63ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3000/favicon.ico:0
+[    5811ms] [LOG] decap-cms-app 3.17.1 @ https://unpkg.com/decap-cms@%5E3.8.3/dist/decap-cms.js:515
+[    5829ms] [LOG] decap-cms-core 3.20.1 @ https://unpkg.com/decap-cms@%5E3.8.3/dist/decap-cms.js:55
+[    5831ms] [LOG] decap-cms 3.17.1 @ https://unpkg.com/decap-cms@%5E3.8.3/dist/decap-cms.js:515

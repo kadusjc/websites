@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="100" viewBox="0 0 520 100" role="img" aria-labelledby="title desc">
+  <title id="title">Tecnoway e Decap CMS</title>
+  <desc id="desc">Tecnoway Auto Peças usando Decap CMS</desc>
+  <image href="/tecnoway/assets/robozinho-tecnoway.jpg" x="4" y="4" width="92" height="92" preserveAspectRatio="xMidYMid slice" />
+  <text x="112" y="42" fill="#b4b4b4" font-family="Arial, sans-serif" font-size="30" font-style="italic" font-weight="800">TECNO<tspan fill="#d08828">WAY</tspan></text>
+  <text x="114" y="70" fill="#777" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2">AUTO PEÇAS</text>
+  <path d="M290 20v60" stroke="#d08828" stroke-opacity=".65" stroke-width="2" />
+  <text x="316" y="58" fill="#333" font-family="Arial, sans-serif" font-size="26" font-weight="700">Decap CMS</text>
+</svg>

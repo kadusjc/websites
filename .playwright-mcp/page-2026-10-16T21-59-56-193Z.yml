@@ -1,0 +1,43 @@
+- generic [active] [ref=e1]:
+  - link "Ir para o conteúdo" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e8]:
+        - generic [ref=e11]:
+          - link [ref=e13] [cursor=pointer]:
+            - /url: https://decarlo.com.br/
+            - img "Decarlo Industrial" [ref=e14]
+          - generic:
+            - generic:
+              - link "Decarlo Industrial":
+                - /url: https://decarlo.com.br/
+        - button "Main menu toggle" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]: Main Menu
+    - main [ref=e27]:
+      - article [ref=e28]:
+        - generic [ref=e29]:
+          - heading [level=2] [ref=e31]:
+            - text: estamos sempre atualizando.em breve
+            - strong [ref=e32]: um novo site no ar
+          - paragraph
+          - paragraph
+    - contentinfo [ref=e34]:
+      - generic [ref=e37]:
+        - region "Footer Widget 2" [ref=e39]:
+          - generic [ref=e41]:
+            - figure [ref=e42]
+            - paragraph [ref=e44]:
+              - mark [ref=e45]: Rua Tenente Onofre Rodrigues de Aguiar, 1005 Vila Industrial, Mogi das Cruzes - SP, 08770-041
+              - link [ref=e46] [cursor=pointer]:
+                - /url: https://maps.app.goo.gl/tmHV3B8Tstddwfu78
+                - emphasis [ref=e47]: como chegar
+        - region "Footer Widget 3" [ref=e49]:
+          - paragraph [ref=e51]:
+            - mark [ref=e52]: +55 11 4791.7110
+          - paragraph [ref=e54]:
+            - mark [ref=e55]: comercial@decarlo.com.br
+        - link "Linkedin" [ref=e60] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/decarlo/
+      - paragraph [ref=e70]:
+        - emphasis [ref=e72]: Copyright © 2026 Decarlo Industrial
