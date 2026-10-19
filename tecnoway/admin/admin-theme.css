@@ -148,8 +148,6 @@ html, body, #nc-root { background: var(--bg) !important; color: var(--text) !imp
 	letter-spacing: 0.12em !important; text-transform: uppercase !important;
 	border-radius: 0 0 8px 0 !important;
 }
-[class*="-ControlContainer"]:focus-within > [class*="-FieldLabel"],
-[class*="-ControlContainer"]:focus-within [class*="-FieldLabel"]:first-child { background: var(--amber) !important; color: #111 !important; }
 [class*="-ControlHint"], [class*="-Hint"] { color: var(--soft) !important; }
 [class*="-ControlErrorsList"], [class*="-ErrorText"], [class*="-ErrorMessage"], [class*="-StyledError"] { color: #e05a4e !important; }
 
@@ -227,19 +225,77 @@ html, body, #nc-root { background: var(--bg) !important; color: var(--text) !imp
 [class*="-StyledSplitPane"], .SplitPane { background: var(--bg) !important; }
 
 /* ── Legibilidade e acabamento ── */
-:root { --soft: #a3a3a3; --muted: #6e6e6e; }
-#nc-root { font-size: 16px !important; }
+:root { --soft: #a3a3a3; --muted: #6e6e6e; --line: #2a2a2a; --line2: #383838; }
+#nc-root { font-size: 16px !important; line-height: 1.5; }
 #nc-root button, #nc-root a, #nc-root input, #nc-root textarea, #nc-root select { font-size: 0.95rem !important; }
-[class*="-SidebarNavLink"], [class*="-TreeNavLink"] { font-size: 1rem !important; padding: 0.7rem 0.9rem !important; }
-[class*="-ListCardTitle"], [class*="-ListCard"] h2, [class*="-CardTitle"] { font-size: 1.1rem !important; font-weight: 600 !important; }
-[class*="-FieldLabel"], [class*="-SettingsFieldLabel"], [class*="-NestedObjectLabel"] { font-size: 0.8rem !important; padding: 0.35rem 0.8rem !important; }
-#nc-root input:not([type="checkbox"]):not([type="radio"]):not([type="file"]), #nc-root textarea { font-size: 1.05rem !important; line-height: 1.5 !important; }
-[class*="-StyledListItemTopBar"] { font-size: 0.9rem !important; letter-spacing: 0.06em !important; }
+#nc-root svg { fill: currentColor; }
+[class*="-SidebarNavLink"], [class*="-TreeNavLink"] { font-size: 1rem !important; padding: 0.7rem 0.9rem !important; border-left: 0 !important; }
+[class*="-SidebarNavLink"][class*="active"], [class*="-SidebarNavLink"].sidebar-active { box-shadow: inset 3px 0 0 var(--amber) !important; }
+[class*="-ListCardTitle"], [class*="-CardTitle"] { font-size: 1.1rem !important; font-weight: 600 !important; }
 [class*="-BackCollection"], [class*="-BackStatus"] { font-size: 0.9rem !important; }
 [class*="-AppHeaderButton"], [class*="-AppHeaderNavLink"], [class*="-AppHeaderSiteLink"] { font-size: 0.95rem !important; }
 [class*="-CollectionTopNewButton"], [class*="-PublishButton"], [class*="-SaveButton"], [class*="-AddButton"], [class*="-StatusButton"] { padding: 0.6rem 1.2rem !important; }
-[class*="-ControlContainer"] { margin-bottom: 1.25rem !important; }
-[class*="-SidebarContainer"], [class*="-CollectionTopContainer"], [class*="-ListCard"], [class*="-WorkflowCardContainer"] { box-shadow: 0 10px 30px rgba(0,0,0,.35) !important; }
+[class*="-SidebarContainer"], [class*="-CollectionTopContainer"], [class*="-WorkflowCardContainer"],
+[class*="-ListCard"]:not([class*="Link"]):not([class*="Title"]) { box-shadow: 0 10px 30px rgba(0,0,0,.35) !important; }
+
+/* Cartões da home: "-ListCardLink" e "-ListCardTitle" também casam com "-ListCard",
+ * então o link interno herdava borda, fundo e sombra do cartão. */
+[class*="-ListCardLink"], [class*="-ListCardTitle"], [class*="-GridCardLink"] {
+	border: 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important;
+}
+[class*="-ListCardLink"] { display: block; padding: 1rem 1.25rem !important; }
+[class*="-ListCardTitle"] { margin: 0 !important; }
+
+/* Campos: rótulo simples, legível, sem "aba" nem barras laterais */
+[class*="-ControlContainer"] { padding: 0 !important; overflow: hidden; }
+[class*="-ControlContainer"]:focus-within { border-color: var(--amber-b) !important; box-shadow: none !important; }
+[class*="-ControlTopbar"] { background: transparent !important; }
+[class*="-FieldLabel"], [class*="-SettingsFieldLabel"] {
+	display: block !important; background: transparent !important; color: var(--silver) !important;
+	font-size: 0.85rem !important; font-weight: 700 !important; letter-spacing: 0.02em !important; text-transform: none !important;
+	padding: 0.75rem 1rem 0 !important; margin: 0 !important; border-radius: 0 !important;
+}
+[class*="-FieldLabel"]::before, [class*="-FieldLabel"]::after { display: none !important; content: none !important; }
+[class*="-ControlContainer"]:focus-within > [class*="-ControlTopbar"] > [class*="-FieldLabel"] { color: var(--amber) !important; background: transparent !important; }
+[class*="-ControlContainer"]:focus-within [class*="-FieldLabel"] { background: transparent !important; }
+#nc-root input:not([type="checkbox"]):not([type="radio"]):not([type="file"]), #nc-root textarea, #nc-root select { font-size: 1.05rem !important; line-height: 1.5 !important; }
+[class*="-ControlContainer"] > input, [class*="-ControlContainer"] > textarea, [class*="-ControlContainer"] > select,
+[class*="-ControlContainer"] > div > input, [class*="-ControlContainer"] > div > textarea { padding: 0.6rem 1rem 0.9rem !important; width: 100%; }
+[class*="-SearchInput"] { padding: 0.6rem 0.75rem 0.6rem 2.4rem !important; }
+#nc-root select { background: var(--card) !important; color: var(--text) !important; border: 0 !important; }
+[class*="-ControlContainer"] { margin-bottom: 1rem !important; }
+[class*="-ControlHint"], [class*="-Hint"] { padding: 0 1rem 0.75rem !important; margin: 0 !important; font-size: 0.85rem !important; }
+
+/* Corpo de listas e itens (o Decap usa divs sem nome com fundo branco e borda clara) */
+[class*="-ControlContainer"] > div:not([class*="Topbar"]):not([class*="TopBar"]):not([class*="Errors"]):not([class*="Hint"]) { background: var(--card) !important; border: 0 !important; padding: 0.5rem 1rem 0.9rem !important; }
+[class*="-SortableListItem"] > div:not([class*="TopBar"]):not([class*="NestedObjectLabel"]),
+[class*="-StyledListElement"] > div:not([class*="TopBar"]),
+[class*="-listControlItem"] > div:not([class*="TopBar"]):not([class*="NestedObjectLabel"]) { background: var(--card) !important; border: 0 !important; padding: 0.75rem !important; }
+[class*="-SortableListItem"], [class*="-listControlItem"] { margin-bottom: 0.75rem !important; overflow: hidden; }
+[class*="-StyledListItemTopBar"] { font-size: 0.9rem !important; letter-spacing: 0 !important; padding: 0.25rem 0.5rem !important; height: auto !important; min-height: 2.5rem; display: flex !important; align-items: center !important; }
+[class*="-StyledListItemTopBar"] button, [class*="-TopBarButton"] { color: var(--silver) !important; width: 2rem !important; height: 2rem !important; }
+[class*="-StyledListItemTopBar"] svg, [class*="-TopBarContainer"] svg { width: 1.1rem; height: 1.1rem; }
+[class*="-TopBarContainer"] { padding: 0.5rem 0.75rem !important; border-radius: 10px !important; margin-bottom: 0.75rem !important; }
+[class*="-ExpandButtonContainer"] { color: var(--silver) !important; font-size: 0.95rem !important; }
+[class*="-NestedObjectLabel"] {
+	background: var(--card) !important; color: var(--text) !important;
+	font-size: 1rem !important; font-weight: 600 !important; letter-spacing: 0 !important; text-transform: none !important;
+	padding: 0.75rem 1rem !important; border-radius: 0 !important;
+}
+[class*="-ControlContainer"] [class*="-ControlContainer"] { border-color: var(--line2) !important; margin-bottom: 0.75rem !important; }
+[class*="-ControlContainer"] [class*="-ControlContainer"]:last-child { margin-bottom: 0 !important; }
+
+/* Imagem: botões em linha, sem "badge" branca do Decap */
+[class*="-FileWidgetButton"], [class*="-FileWidgetButtonRemove"] { margin: 0.5rem 0.5rem 0 0 !important; padding: 0.5rem 1rem !important; }
+[class*="-ImageWrapper"] { margin: 0 !important; }
+
+/* Divisor e painéis do editor sem o azul padrão */
+.Pane, .Pane1, .Pane2, [class*="-PreviewPaneContainer"], [class*="-ControlPaneContainer"] { border: 0 !important; box-shadow: none !important; outline: 0 !important; }
+.Resizer.vertical { width: 2px !important; margin: 0 !important; border: 0 !important; }
+.Resizer.vertical::before { background-color: var(--line2) !important; }
+.Resizer.vertical:hover::before, .Resizer.vertical:active::before { background-color: var(--amber-b) !important; }
+[class*="-AppHeader"] [class*="-IconWrapper"], [class*="-AppHeader"] svg { color: inherit !important; fill: currentColor !important; }
+[class*="-ControlPaneContainer"] { padding: 1.25rem 1.25rem 3rem !important; }
 
 /* Login */
 [class*="-StyledAuthenticationPage"] {
@@ -256,7 +312,7 @@ html, body, #nc-root { background: var(--bg) !important; color: var(--text) !imp
 	font-size: 1.05rem !important; padding: 0.85rem 2.4rem !important;
 	height: auto !important; line-height: 1.2 !important;
 	display: flex !important; align-items: center !important; justify-content: center !important;
-	width: 100% !important; margin-top: 1.25rem !important;
+	width: min(380px, 85vw) !important; margin-top: 1.25rem !important;
 }
 [class*="-AuthInput"] { font-size: 1.05rem !important; padding: 0.8rem 1rem !important; min-width: 320px; }
 [class*="-GoBackButtonStyle"] { color: var(--soft) !important; font-size: 0.95rem !important; margin-top: 1rem; }

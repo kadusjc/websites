@@ -13,6 +13,34 @@
 </head>
 <body>
 	<script src="https://unpkg.com/decap-cms@^3.8.3/dist/decap-cms.js"></script>
-	<script>CMS.registerPreviewStyle("admin-preview.css");</script>
+	<script>
+		CMS.registerPreviewStyle("admin-preview.css");
+
+		// Mensagens de erro do servidor de autenticação (DecapBridge) chegam em inglês
+		// e o Decap as exibe sem traduzir. Trocamos o texto assim que aparece na tela.
+		(function () {
+			var traducoes = [
+				[/INVALID_CREDENTIALS|Invalid user credentials|invalid_grant/i, "Usuário/Senha inválidos"],
+				[/Failed to fetch|NetworkError|Network request failed/i, "Não foi possível conectar ao servidor. Verifique sua internet e tente novamente."],
+				[/Email not confirmed/i, "E-mail ainda não confirmado. Verifique sua caixa de entrada."],
+				[/too many requests|rate limit/i, "Muitas tentativas. Aguarde um instante e tente novamente."]
+			];
+			function traduzir(no) {
+				var texto = no.textContent;
+				if (!texto) return;
+				for (var i = 0; i < traducoes.length; i++) {
+					if (traducoes[i][0].test(texto)) { no.textContent = traducoes[i][1]; return; }
+				}
+			}
+			function varrer(raiz) {
+				var pagina = raiz.querySelector ? raiz.querySelector('[class*="-StyledAuthenticationPage"]') : null;
+				if (!pagina) return;
+				pagina.querySelectorAll('p, span, div').forEach(function (el) {
+					if (el.children.length === 0) traduzir(el);
+				});
+			}
+			new MutationObserver(function () { varrer(document); }).observe(document.body, { childList: true, subtree: true, characterData: true });
+		})();
+	</script>
 </body>
 </html>
