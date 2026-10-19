@@ -26,6 +26,15 @@
       "description": "Alimentação de partida e sistemas",
       "price": 580,
       "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-24-23.png"
+    },
+    {
+      "active": true,
+      "code": "004",
+      "name": "Teste",
+      "category": "Teste",
+      "description": "Teste",
+      "price": 100,
+      "image": "/tecnoway/assets/products/biauniodontoinstagram.png"
     }
   ]
 }
