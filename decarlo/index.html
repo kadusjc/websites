@@ -13,9 +13,15 @@
 <meta property="og:image" content="https://fcsoftware.com.br/decarlo/assets/img/usinagem-01.jpg">
 <link rel="canonical" href="https://fcsoftware.com.br/decarlo/">
 <link rel="icon" href="assets/img/logo-decarlo.png" type="image/png">
-<link rel="preload" as="image" href="assets/img/usinagem-01.jpg" fetchpriority="high">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Decarlo Industrial","url":"https://decarlo.com.br/","logo":"https://fcsoftware.com.br/decarlo/assets/img/logo-decarlo.png","image":"https://fcsoftware.com.br/decarlo/assets/img/usinagem-01.jpg","telephone":"+55 11 3524-2358","email":"comercial@decarlo.com.br","address":{"@type":"PostalAddress","streetAddress":"Rua Tenente Onofre Rodrigues de Aguiar, 1005, Vila Industrial","addressLocality":"Mogi das Cruzes","addressRegion":"SP","postalCode":"08770-041","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/company/decarlo/"]}</script>
+<link rel="preload" as="image" href="assets/img/hero-poster.jpg" fetchpriority="high">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Decarlo Industrial","url":"https://decarlo.com.br/","logo":"https://fcsoftware.com.br/decarlo/assets/img/logo-decarlo.png","image":"https://fcsoftware.com.br/decarlo/assets/img/usinagem-01.jpg","telephone":"+55 11 4791-7110","email":"comercial@decarlo.com.br","address":{"@type":"PostalAddress","streetAddress":"Rua Tenente Onofre Rodrigues de Aguiar, 1005, Vila Industrial","addressLocality":"Mogi das Cruzes","addressRegion":"SP","postalCode":"08770-041","addressCountry":"BR"},"sameAs":["https://www.linkedin.com/company/decarlo/"]}</script>
 <style>
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/BarlowCondensed-700.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/BarlowCondensed-800.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/DMSans-400.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/DMSans-500.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/DMSans-600.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/DMSans-700.woff2) format('woff2')}
 :root{
 	--navy:#091a43;
 	--navy-2:#10295c;
@@ -283,7 +289,7 @@ section[id]{scroll-margin-top:88px}
 .hero-v3__copy{max-width:820px;margin-left:clamp(0px,4vw,66px)}
 .hero-v3__kicker{display:inline-flex;align-items:center;gap:12px;color:#cfe6f0;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
 .hero-v3__kicker::before{content:"";width:34px;height:2px;background:var(--cyan-bright)}
-.hero-v3 h1{margin:28px 0 22px;font:800 6.4rem/.88 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase;max-width:850px}
+.hero-v3 h1{margin:28px 0 22px;font:800 clamp(3.4rem,7.2vw,6.4rem)/.9 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase;max-width:850px}
 .hero-v3 h1 span{color:var(--cyan-bright)}
 .hero-v3__lead{max-width:610px;color:#d6e0ed;font-size:1.05rem;line-height:1.7}
 .hero-v3__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
@@ -297,12 +303,12 @@ section[id]{scroll-margin-top:88px}
 .metrics-in{display:grid;grid-template-columns:repeat(4,1fr)}
 .metric{padding:28px 26px;min-height:128px;border-right:1px solid #ffffff25;display:flex;align-items:center;gap:15px}
 .metric:first-child{border-left:1px solid #ffffff25}
-.metric strong{font:800 2.8rem/.9 "Barlow Condensed",sans-serif;color:var(--cyan-bright);white-space:nowrap;font-variant-numeric:tabular-nums}
+.metric strong{font:800 clamp(2.1rem,3vw,2.8rem)/.9 "Barlow Condensed",sans-serif;color:var(--cyan-bright);white-space:nowrap;font-variant-numeric:tabular-nums}
 .metric span{max-width:16ch;color:#d4dfeb;font-size:.76rem;font-weight:600;line-height:1.4}
 .section-v3{padding:108px 0}
 .section-v3__head{display:grid;grid-template-columns:.9fr 1.1fr;gap:42px;align-items:end;margin-bottom:52px}
 .section-v3__label{display:block;color:var(--cyan);font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
-.section-v3__head h2{margin-top:12px;color:var(--navy);font:800 4.25rem/.88 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.section-v3__head h2{margin-top:12px;color:var(--navy);font:800 clamp(2.5rem,4.6vw,4.1rem)/.92 "Barlow Condensed",sans-serif;text-transform:uppercase}
 .section-v3__head p{max-width:56ch;color:#526174;font-size:.96rem}
 .capabilities{background:var(--paper)}
 .capability-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid #b9c6d5;border-left:1px solid #b9c6d5}
@@ -322,14 +328,14 @@ section[id]{scroll-margin-top:88px}
 .gallery-v3{padding:100px 0;background:#080f1b;color:#fff}
 .gallery-v3 .section-v3__head h2{color:#fff}
 .gallery-v3 .section-v3__head p{color:#bcc9d9}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:10px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:10px}
 .gallery-item{position:relative;overflow:hidden;background:#17263a}
 .gallery-item:nth-child(1),.gallery-item:nth-child(8){grid-column:span 2;grid-row:span 2}
 .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease),filter .4s}
 .gallery-item:hover img{transform:scale(1.035);filter:brightness(1.06)}
 .gallery-item figcaption{position:absolute;left:14px;bottom:12px;padding:5px 8px;background:#07101ebf;color:#fff;font-size:.67rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .clients{background:#fff;border-block:1px solid #dce3ec}
-.clients-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:12px}
+.clients-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:stretch;gap:12px}
 .client-logo{height:132px;padding:24px 32px;display:grid;place-items:center;border:1px solid #dce3ec;background:#fff;transition:border-color .3s,box-shadow .3s}
 .client-logo img{max-width:min(100%,190px);max-height:64px;width:auto;height:auto;object-fit:contain;filter:grayscale(1) opacity(.7);transition:filter .35s,transform .35s}
 .client-logo:hover{background:#fff;border-color:#b9c9dc;box-shadow:0 18px 36px -24px #091a4366}
@@ -356,7 +362,7 @@ section[id]{scroll-margin-top:88px}
 .logistics .section-v3__head p{color:#c4d1df}
 .logistics-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
 .logistics-photo{position:relative;min-height:480px;overflow:hidden;background:#111e30}
-.logistics-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.logistics-photo img,.logistics-photo video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
 .logistics-info{display:grid;align-content:start;gap:22px}
 .logistics-info h3{color:var(--cyan-bright);font:700 1.8rem/.95 "Barlow Condensed",sans-serif;text-transform:uppercase}
 .route-list{display:grid;gap:0;border-top:1px solid #ffffff2c}
@@ -372,7 +378,7 @@ section[id]{scroll-margin-top:88px}
 .cert-grid a{color:var(--cyan);font-weight:700;text-decoration:underline;text-underline-offset:3px}
 .contact-v3{padding:100px 0;background:var(--cyan);color:#04101a}
 .contact-v3__in{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
-.contact-v3 h2{max-width:800px;margin-top:16px;font:800 4.5rem/.88 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.contact-v3 h2{max-width:800px;margin-top:16px;font:800 clamp(2.6rem,5vw,4.5rem)/.92 "Barlow Condensed",sans-serif;text-transform:uppercase}
 .contact-v3 p{max-width:58ch;margin-top:18px;color:#103b54;font-size:.96rem}
 .contact-v3__actions{display:grid;gap:10px;min-width:240px}
 .contact-v3__actions a{min-height:52px;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;background:var(--navy);color:#fff;font-size:.8rem;font-weight:700}
@@ -384,8 +390,8 @@ section[id]{scroll-margin-top:88px}
 .dec-footer__contacts{display:flex;flex-wrap:wrap;gap:16px 26px;font-size:.77rem}
 .dec-footer__contacts a:hover{color:#fff}
 .dec-footer__bottom{display:flex;justify-content:space-between;gap:20px;padding-top:16px;color:#8190a1;font-size:.68rem}
-@media(max-width:1000px){.dec-nav-in{gap:16px}.dec-nav-links{gap:14px}.dec-nav .btn{padding-inline:13px}.hero-v3 h1{font-size:5.2rem}.metrics-in{grid-template-columns:repeat(2,1fr)}.metric:nth-child(3){border-left:1px solid #ffffff25}.metric:nth-child(-n+2){border-bottom:1px solid #ffffff25}.markets-grid{grid-template-columns:repeat(3,1fr)}.market:nth-child(4){border-left:1px solid #cbd5e1}.gallery-grid{grid-template-columns:repeat(3,1fr)}.client-logo{height:112px;padding:18px 22px}.client-logo img{max-height:54px;max-width:min(100%,160px)}.timeline-grid{grid-template-columns:repeat(2,1fr)}.logistics-grid{grid-template-columns:1fr 1fr}.contact-v3__in{grid-template-columns:1fr}.contact-v3__actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:720px){.dec-nav-in{min-height:76px}.dec-brand img{width:158px}.dec-nav-links,.dec-nav>.wrap>.btn{display:none}.dec-menu{display:block}.dec-nav.is-open{position:fixed;inset:0;background:#07101ef8;overflow:auto}.dec-nav.is-open .dec-nav-in{flex-wrap:wrap;align-content:flex-start}.dec-nav.is-open .dec-nav-links{display:flex;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:26px 0}.dec-nav.is-open .dec-nav-links a{padding:17px 4px;border-bottom:1px solid #ffffff22;font-size:.95rem}.dec-nav.is-open>.wrap>.btn{display:flex;order:4;width:100%;margin-bottom:24px}.hero-v3{min-height:760px;min-height:94svh;align-items:flex-end}.hero-v3::before{background:linear-gradient(0deg,#07101ef7 0%,#091a43de 48%,#091a4380 100%)}.hero-v3__image{object-position:58% center}.hero-v3__content{width:calc(100% - 38px);padding-top:145px;padding-bottom:64px}.hero-v3__copy{margin:0;max-width:100%}.hero-v3 h1{font-size:4.1rem;margin:22px 0 18px}.hero-v3__lead{font-size:.93rem}.hero-v3__actions{display:grid;grid-template-columns:1fr}.hero-v3__actions .btn{width:100%}.hero-v3__note{margin-top:22px;font-size:.71rem}.metric{min-height:100px;padding:18px 14px;gap:9px;flex-direction:column;align-items:flex-start}.metric strong{font-size:2.4rem}.metric span{font-size:.69rem}.section-v3{padding:72px 0}.section-v3__head{grid-template-columns:1fr;gap:16px;margin-bottom:34px}.section-v3__head h2{font-size:3.3rem}.section-v3__head p{font-size:.88rem}.capability-grid{grid-template-columns:1fr 1fr}.capability{grid-template-columns:1fr;gap:11px;padding:18px 15px;min-height:142px}.capability b{font-size:2.1rem}.capability h3{font-size:1.35rem}.capability p{font-size:.72rem}.markets-grid{grid-template-columns:1fr 1fr}.market{min-height:185px;padding:18px 14px}.market:nth-child(3),.market:nth-child(5){border-left:1px solid #cbd5e1}.market h3{margin:28px 0 8px;font-size:1.55rem}.market p{font-size:.72rem}.gallery-v3{padding:70px 0}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;gap:7px}.gallery-item:nth-child(1),.gallery-item:nth-child(8){grid-column:span 2;grid-row:span 1}.gallery-item figcaption{font-size:.59rem;left:8px;bottom:8px}.clients-grid{grid-template-columns:repeat(3,1fr);gap:8px}.client-logo{height:82px;padding:12px}.client-logo img{max-height:38px;max-width:min(100%,96px)}.timeline-grid{grid-template-columns:1fr 1fr}.timeline-item{padding:11px}.timeline-item time{font-size:1.5rem}.timeline-item h3{font-size:1.12rem}.timeline-item p{font-size:.71rem}.purpose-grid{grid-template-columns:1fr}.purpose-item{min-height:0;padding:24px 20px}.purpose-item .section-v3__label{margin-bottom:20px}.purpose-item h3{font-size:1.8rem}.purpose-item p{font-size:.8rem}.logistics-grid{grid-template-columns:1fr;gap:24px}.logistics-photo{min-height:290px}.route{grid-template-columns:92px 1fr;gap:12px;padding:11px 0}.route strong,.route span{font-size:.72rem}.cert-grid{grid-template-columns:1fr auto;padding:22px 18px;gap:12px}.cert-grid img{width:76px;height:76px}.cert-grid h3{font-size:1.75rem}.cert-grid p{font-size:.75rem}.contact-v3{padding:70px 0}.contact-v3 h2{font-size:3.4rem}.contact-v3 p{font-size:.85rem}.contact-v3__actions{grid-template-columns:1fr}.dec-footer__top{align-items:flex-start;flex-direction:column}.dec-footer__logo img{width:170px}.dec-footer__contacts{display:grid;gap:10px}.dec-footer__bottom{flex-direction:column;gap:6px}}
+@media(max-width:1000px){.dec-nav-in{gap:16px}.dec-nav-links{gap:14px}.dec-nav .btn{padding-inline:13px}.hero-v3 h1{font-size:clamp(3rem,8vw,5.2rem)}.metrics-in{grid-template-columns:repeat(2,1fr)}.metric:nth-child(3){border-left:1px solid #ffffff25}.metric:nth-child(-n+2){border-bottom:1px solid #ffffff25}.markets-grid{grid-template-columns:repeat(3,1fr)}.market:nth-child(4){border-left:1px solid #cbd5e1}.gallery-grid{grid-template-columns:repeat(3,1fr)}.client-logo{height:112px;padding:18px 22px}.client-logo img{max-height:54px;max-width:min(100%,160px)}.timeline-grid{grid-template-columns:repeat(2,1fr)}.logistics-grid{grid-template-columns:1fr 1fr}.contact-v3__in{grid-template-columns:1fr}.contact-v3__actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.dec-nav-in{min-height:76px}.dec-brand img{width:158px}.dec-nav-links,.dec-nav>.wrap>.btn{display:none}.dec-menu{display:block}.dec-nav.is-open{position:fixed;inset:0;background:#07101ef8;overflow:auto}.dec-nav.is-open .dec-nav-in{flex-wrap:wrap;align-content:flex-start}.dec-nav.is-open .dec-nav-links{display:flex;order:3;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:26px 0}.dec-nav.is-open .dec-nav-links a{padding:17px 4px;border-bottom:1px solid #ffffff22;font-size:.95rem}.dec-nav.is-open>.wrap>.btn{display:flex;order:4;width:100%;margin-bottom:24px}.hero-v3{min-height:760px;min-height:94svh;align-items:flex-end}.hero-v3::before{background:linear-gradient(0deg,#07101ef7 0%,#091a43de 48%,#091a4380 100%)}.hero-v3__image{object-position:58% center}.hero-v3__content{width:calc(100% - 38px);padding-top:145px;padding-bottom:64px}.hero-v3__copy{margin:0;max-width:100%}.hero-v3 h1{font-size:clamp(2.5rem,11.5vw,3.9rem);margin:22px 0 18px;letter-spacing:0}.hero-v3__lead{font-size:.93rem}.hero-v3__actions{display:grid;grid-template-columns:1fr}.hero-v3__actions .btn{width:100%}.hero-v3__note{margin-top:22px;font-size:.71rem}.metric{min-height:100px;padding:18px 14px;gap:9px;flex-direction:column;align-items:flex-start}.metric strong{font-size:2.4rem}.metric span{font-size:.69rem}.section-v3{padding:72px 0}.section-v3__head{grid-template-columns:1fr;gap:16px;margin-bottom:34px}.section-v3__head h2{font-size:clamp(2.2rem,9vw,3.1rem)}.section-v3__head p{font-size:.88rem}.capability-grid{grid-template-columns:1fr 1fr}.capability{grid-template-columns:1fr;gap:11px;padding:18px 15px;min-height:142px}.capability b{font-size:2.1rem}.capability h3{font-size:1.35rem}.capability p{font-size:.72rem}.markets-grid{grid-template-columns:1fr 1fr}.market{min-height:185px;padding:18px 14px}.market:nth-child(3),.market:nth-child(5){border-left:1px solid #cbd5e1}.market h3{margin:28px 0 8px;font-size:1.55rem}.market p{font-size:.72rem}.gallery-v3{padding:70px 0}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;gap:7px}.gallery-item:nth-child(1),.gallery-item:nth-child(8){grid-column:span 2;grid-row:span 1}.gallery-item figcaption{font-size:.59rem;left:8px;bottom:8px}.clients-grid{grid-template-columns:repeat(3,1fr);gap:8px}.client-logo{height:82px;padding:12px}.client-logo img{max-height:38px;max-width:min(100%,96px)}.timeline-grid{grid-template-columns:1fr 1fr}.timeline-item{padding:11px}.timeline-item time{font-size:1.5rem}.timeline-item h3{font-size:1.12rem}.timeline-item p{font-size:.71rem}.purpose-grid{grid-template-columns:1fr}.purpose-item{min-height:0;padding:24px 20px}.purpose-item .section-v3__label{margin-bottom:20px}.purpose-item h3{font-size:1.8rem}.purpose-item p{font-size:.8rem}.logistics-grid{grid-template-columns:1fr;gap:24px}.logistics-photo{min-height:290px}.route{grid-template-columns:92px 1fr;gap:12px;padding:11px 0}.route strong,.route span{font-size:.72rem}.cert-grid{grid-template-columns:1fr auto;padding:22px 18px;gap:12px}.cert-grid img{width:76px;height:76px}.cert-grid h3{font-size:1.75rem}.cert-grid p{font-size:.75rem}.contact-v3{padding:70px 0}.contact-v3 h2{font-size:clamp(2.3rem,9vw,3.2rem)}.contact-v3 p{font-size:.85rem}.contact-v3__actions{grid-template-columns:1fr}.dec-footer__top{align-items:flex-start;flex-direction:column}.dec-footer__logo img{width:170px}.dec-footer__contacts{display:grid;gap:10px}.dec-footer__bottom{flex-direction:column;gap:6px}}
 @media(max-width:720px){
 	.dec-nav-in>.btn{display:none}
 	.dec-nav.is-open .dec-nav-in>.btn{display:flex;order:4;width:100%;margin-bottom:24px}
@@ -396,6 +402,41 @@ section[id]{scroll-margin-top:88px}
 	.market{min-height:0}
 	.market img{aspect-ratio:16/10}
 }
+
+/* Enrichment */
+.hero-v3__badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px;list-style:none}
+.hero-v3__badges li{padding:8px 14px;border:1px solid #ffffff45;border-radius:3px;background:#ffffff10;color:#e6eef7;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;backdrop-filter:blur(6px)}
+.pillars-v3{background:#fff}
+.pillars-v3__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.pillar-v3{padding:30px 26px 32px;border:1px solid #d8e1eb;background:#f7f9fc;border-top:4px solid var(--cyan);transition:transform .3s var(--ease),box-shadow .3s}
+.pillar-v3:hover{transform:translateY(-6px);box-shadow:0 24px 44px -28px #091a4366}
+.pillar-v3 img{width:66px;height:66px;object-fit:contain;margin-bottom:22px}
+.pillar-v3 h3{color:var(--navy);font:800 1.6rem/.95 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.pillar-v3 p{margin-top:12px;color:var(--muted);font-size:.8rem;line-height:1.6}
+.market__row{display:flex;align-items:center;gap:10px}
+.market__icon{width:34px!important;height:34px;aspect-ratio:1!important;object-fit:contain!important;margin:0!important}
+.market h3{margin-top:16px}
+.presentation{background:var(--navy);color:#fff;padding:0}
+.presentation__grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;padding:90px 0}
+.presentation__copy h2{margin:14px 0 18px;font:800 clamp(2.5rem,4.6vw,4rem)/.92 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.presentation__copy p{max-width:44ch;color:#c5d3e1;font-size:.95rem}
+.presentation__copy .btn{margin-top:26px;background:var(--cyan-bright);color:#07101e;border-radius:3px}
+.presentation__player{position:relative;aspect-ratio:16/9;width:100%;overflow:hidden;background:#000;border:1px solid #ffffff25;cursor:pointer;display:block;padding:0}
+.presentation__player img,.presentation__player iframe{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border:0;transition:transform .8s var(--ease)}
+.presentation__player:hover img{transform:scale(1.03)}
+.presentation__play{position:absolute;left:50%;top:50%;width:92px;height:92px;transform:translate(-50%,-50%);display:grid;place-items:center;border-radius:50%;background:var(--cyan-bright);color:#07101e;font-size:1.6rem;padding-left:6px;box-shadow:0 0 0 14px #3bc2ec33;transition:transform .3s}
+.presentation__player:hover .presentation__play{transform:translate(-50%,-50%) scale(1.08)}
+.presentation__tag{position:absolute;left:16px;bottom:14px;padding:6px 10px;background:#07101ec9;color:#fff;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.logistics-legend{position:absolute;right:14px;top:14px;display:grid;gap:6px;padding:10px 12px;background:#07101ecc;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+.logistics-legend span{display:flex;align-items:center;gap:8px}
+.logistics-legend i{width:18px;height:3px;background:#fff}
+.logistics-legend .l-air{background:#3bc2ec}.logistics-legend .l-port{background:#e52340}.logistics-legend .l-road{background:#ffd166}
+.values-list{margin-top:16px;padding-left:18px;color:#526174;font-size:.82rem;line-height:1.55;display:grid;gap:5px}
+.values-list li::marker{color:var(--cyan)}
+@media(max-width:1000px){.pillars-v3__grid{grid-template-columns:1fr 1fr}.presentation__grid{grid-template-columns:1fr;gap:30px;padding:70px 0}.clients-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.hero-v3__badges{gap:6px;margin-top:22px}.hero-v3__badges li{padding:6px 10px;font-size:.62rem}.pillars-v3__grid{grid-template-columns:1fr;gap:10px}.pillar-v3{padding:22px 18px}.presentation__copy h2{font-size:clamp(2.2rem,9vw,3rem)}.presentation__play{width:68px;height:68px;font-size:1.2rem}.market__icon{width:26px!important;height:26px}}
+h1,h2,h3{overflow-wrap:anywhere;hyphens:manual}
+.section-v3__head h2,.hero-v3 h1,.contact-v3 h2,.presentation__copy h2{letter-spacing:.005em}
 .cookie-banner{position:fixed;left:20px;bottom:20px;z-index:45;width:min(590px,calc(100% - 40px));display:grid;grid-template-columns:1fr auto;align-items:center;gap:14px;padding:18px 20px;background:#fff;color:#101a29;border:1px solid #cbd5e1;border-left:4px solid var(--cyan);box-shadow:0 18px 48px #07101e38}
 .cookie-banner[hidden]{display:none}
 .cookie-copy strong{display:block;color:var(--navy);font-size:.88rem}
@@ -413,26 +454,26 @@ section[id]{scroll-margin-top:88px}
 	<div class="dec-wrap dec-nav-in">
 		<a class="dec-brand" href="#home" aria-label="Decarlo Industrial, início"><img src="assets/img/logo-atual.png" alt="Decarlo Industrial"></a>
 		<nav class="dec-nav-links" aria-label="Navegação principal">
-			<a href="#capacidades">Capacidade</a><a href="#segmentos">Segmentos</a><a href="#estrutura">Estrutura</a><a href="#historia">História</a><a href="#localizacao">Localização</a>
+			<a href="#diferenciais">Diferenciais</a><a href="#capacidades">Capacidade</a><a href="#segmentos">Segmentos</a><a href="#estrutura">Estrutura</a><a href="#historia">História</a><a href="#localizacao">Localização</a>
 		</nav>
-		<a class="btn" href="tel:+551135242358">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+		<a class="btn" href="tel:+551147917110">Solicitar orçamento <span aria-hidden="true">↗</span></a>
 		<button class="dec-menu" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
 	</div>
 </header>
 
 <main id="content">
 	<section class="hero-v3" id="home">
-		<img class="hero-v3__image" src="assets/img/usinagem-01.jpg" alt="Operação de usinagem de precisão no parque fabril Decarlo" fetchpriority="high">
+		<video class="hero-v3__image" autoplay muted loop playsinline poster="assets/img/hero-poster.jpg" aria-hidden="true"><source src="assets/video/hero.mp4" type="video/mp4"></video>
 		<div class="hero-v3__content">
 			<div class="hero-v3__copy">
 				<p class="hero-v3__kicker">Decarlo Industrial · Mogi das Cruzes, SP</p>
 				<h1>Na Decarlo,<br>a complexidade<br>vira <span>excelência.</span></h1>
 				<p class="hero-v3__lead">Produzimos peças usinadas com alta precisão, confiabilidade e pontualidade. Mais de 45 anos transformando requisitos industriais em produção consistente.</p>
 				<div class="hero-v3__actions">
-					<a class="btn" href="tel:+551135242358">Solicite um orçamento <span aria-hidden="true">↗</span></a>
+					<a class="btn" href="tel:+551147917110">Solicite um orçamento <span aria-hidden="true">↗</span></a>
 					<a class="btn btn--outline" href="#capacidades">Conheça nossa capacidade <span aria-hidden="true">↓</span></a>
 				</div>
-				<p class="hero-v3__note"><strong>Precisão. Confiabilidade. Pontualidade.</strong> Do projeto à peça seriada.</p>
+				<ul class="hero-v3__badges" aria-label="Diferenciais"><li>ISO 9001:2015</li><li>Desde 1977</li><li>+2 milhões de peças/ano</li><li>62 máquinas CNC e convencionais</li></ul>
 			</div>
 		</div>
 	</section>
@@ -440,9 +481,25 @@ section[id]{scroll-margin-top:88px}
 	<section class="metrics" aria-label="Decarlo em números">
 		<div class="dec-wrap metrics-in">
 			<div class="metric"><strong data-count="2" data-prefix="+" data-suffix="M">+2M</strong><span>peças usinadas por ano</span></div>
-			<div class="metric"><strong data-count="50" data-prefix="+">+50</strong><span>colaboradores</span></div>
-			<div class="metric"><strong>ISO</strong><span>9001 certificada desde 2015</span></div>
-			<div class="metric"><strong data-count="45" data-suffix="+">45+</strong><span>anos de experiência em usinagem</span></div>
+			<div class="metric"><strong data-count="53" data-prefix="+">+53</strong><span>colaboradores especializados</span></div>
+			<div class="metric"><strong data-count="62">62</strong><span>máquinas no parque fabril</span></div>
+			<div class="metric"><strong data-count="48" data-suffix="+">48+</strong><span>anos de experiência em usinagem</span></div>
+		</div>
+	</section>
+
+
+	<section class="section-v3 pillars-v3" id="diferenciais">
+		<div class="dec-wrap">
+			<div class="section-v3__head">
+				<div><span class="section-v3__label">Por que a Decarlo</span><h2>Quatro pilares.<br>Uma entrega sem surpresas.</h2></div>
+				<p>Da cotação à expedição, cada etapa é conduzida com método: capacidade instalada, comunicação clara, prazos cumpridos e logística que chega onde o cliente está.</p>
+			</div>
+			<div class="pillars-v3__grid">
+				<article class="pillar-v3"><img src="assets/icons/capacidade.png" alt="" loading="lazy"><h3>Capacidade técnica</h3><p>Mais de 45 anos de experiência em usinagem técnica, com expertise na fabricação de peças de diferentes geometrias e materiais para diversos segmentos industriais.</p></article>
+				<article class="pillar-v3"><img src="assets/icons/comunicacao.png" alt="" loading="lazy"><h3>Comunicação transparente</h3><p>Atuamos em parceria com nossos clientes, mantendo uma comunicação clara, ágil e direta em todas as etapas do projeto, garantindo total alinhamento e confiança.</p></article>
+				<article class="pillar-v3"><img src="assets/icons/prazo.png" alt="" loading="lazy"><h3>Prazo e qualidade</h3><p>Processos rigorosamente controlados e auditados, assegurando a entrega de peças com excelência em qualidade e total cumprimento dos prazos acordados.</p></article>
+				<article class="pillar-v3"><img src="assets/icons/localizacao.png" alt="" loading="lazy"><h3>Localização estratégica</h3><p>No Alto Tietê, Grande São Paulo, com acesso direto aos principais corredores logísticos: agilidade no escoamento da produção e eficiência no atendimento.</p></article>
+			</div>
 		</div>
 	</section>
 
@@ -472,12 +529,29 @@ section[id]{scroll-margin-top:88px}
 				<p>Produção contínua, peças robustas e precisão para diferentes demandas, com foco em confiabilidade e ritmo operacional.</p>
 			</div>
 			<div class="markets-grid">
-				<article class="market"><span>01 / MOBILIDADE</span><h3>Automotivo</h3><p>Produção contínua e precisa para evitar paradas e manter o ritmo da operação.</p></article>
-				<article class="market"><span>02 / TRANSPORTE</span><h3>Veículos pesados</h3><p>Componentes de elevada durabilidade e confiabilidade para o transporte rodoviário.</p></article>
-				<article class="market"><span>03 / CAMPO</span><h3>Agrícola</h3><p>Peças robustas para desempenho e eficiência nas operações do campo.</p></article>
-				<article class="market"><span>04 / INFRAESTRUTURA</span><h3>Construção civil</h3><p>Peças seriadas de precisão para as mais diversas demandas do setor.</p></article>
-				<article class="market"><span>05 / INDÚSTRIA</span><h3>Outros segmentos</h3><p>Versatilidade em usinagem de precisão para novos desafios industriais.</p></article>
+				<article class="market"><img src="assets/img/segmento-automotivo.jpg" alt="Segmento Automotivo" loading="lazy"><div class="market__row"><img class="market__icon" src="assets/icons/automotivo.png" alt="" loading="lazy"><span>01 / MOBILIDADE</span></div><h3>Automotivo</h3><p>Produção contínua e precisa para evitar paradas e manter o ritmo da operação.</p></article>
+				<article class="market"><img src="assets/img/segmento-pesados.jpg" alt="Segmento Veículos pesados" loading="lazy"><div class="market__row"><img class="market__icon" src="assets/icons/pesados.png" alt="" loading="lazy"><span>02 / TRANSPORTE</span></div><h3>Veículos pesados</h3><p>Componentes de elevada durabilidade e confiabilidade para o transporte rodoviário.</p></article>
+				<article class="market"><img src="assets/img/segmento-agricola.jpg" alt="Segmento Agrícola" loading="lazy"><div class="market__row"><img class="market__icon" src="assets/icons/agricola.png" alt="" loading="lazy"><span>03 / CAMPO</span></div><h3>Agrícola</h3><p>Peças robustas para desempenho e eficiência nas operações do campo.</p></article>
+				<article class="market"><img src="assets/img/segmento-construcao.jpg" alt="Segmento Construção civil" loading="lazy"><div class="market__row"><img class="market__icon" src="assets/icons/construcao.png" alt="" loading="lazy"><span>04 / INFRAESTRUTURA</span></div><h3>Construção civil</h3><p>Peças seriadas de precisão para as mais diversas demandas do setor.</p></article>
+				<article class="market"><img src="assets/img/segmento-outros.jpg" alt="Segmento Outros segmentos" loading="lazy"><div class="market__row"><img class="market__icon" src="assets/icons/outros.png" alt="" loading="lazy"><span>05 / INDÚSTRIA</span></div><h3>Outros segmentos</h3><p>Versatilidade em usinagem de precisão para novos desafios industriais.</p></article>
 			</div>
+		</div>
+	</section>
+
+
+	<section class="section-v3 presentation" id="apresentacao">
+		<div class="dec-wrap presentation__grid">
+			<div class="presentation__copy">
+				<span class="section-v3__label">Apresentação institucional</span>
+				<h2>Veja a Decarlo<br>em movimento.</h2>
+				<p>Conheça em poucos minutos quem somos, como produzimos e por que grandes marcas da indústria confiam na nossa usinagem.</p>
+				<a class="btn" href="https://www.youtube.com/watch?v=IWFF-4r7hxs" target="_blank" rel="noopener noreferrer">Assistir no YouTube <span aria-hidden="true">↗</span></a>
+			</div>
+			<button class="presentation__player" id="ytPlay" type="button" aria-label="Reproduzir vídeo: Apresentação Decarlo">
+				<img src="assets/img/apresentacao-poster.jpg" alt="" loading="lazy">
+				<span class="presentation__play" aria-hidden="true">▶</span>
+				<span class="presentation__tag">Apresentação Decarlo · YouTube</span>
+			</button>
 		</div>
 	</section>
 
@@ -520,6 +594,9 @@ section[id]{scroll-margin-top:88px}
 				<figure class="client-logo"><img src="assets/img/cliente-Lepe.png" alt="Lepe"><figcaption><span>Lepe</span></figcaption></figure>
 				<figure class="client-logo"><img src="assets/img/cliente-Musashi.png" alt="Musashi"><figcaption><span>Musashi</span></figcaption></figure>
 				<figure class="client-logo"><img src="assets/img/cliente-Parker.png" alt="Parker"><figcaption><span>Parker</span></figcaption></figure>
+				<figure class="client-logo"><img src="assets/img/cliente-06.png" alt="Cliente Decarlo"><figcaption><span>Cliente</span></figcaption></figure>
+				<figure class="client-logo"><img src="assets/img/cliente-08.png" alt="Kaplan"><figcaption><span>Kaplan</span></figcaption></figure>
+				<figure class="client-logo"><img src="assets/img/cliente-09.png" alt="Komatsu"><figcaption><span>Komatsu</span></figcaption></figure>
 			</div>
 		</div>
 	</section>
@@ -552,7 +629,7 @@ section[id]{scroll-margin-top:88px}
 			<div class="purpose-grid">
 				<article class="purpose-item"><span class="section-v3__label">Missão</span><h3>Impulsionar eficiência e inovação.</h3><p>Promover a modernização contínua dos processos produtivos e buscar tecnologias e soluções de alto valor agregado.</p></article>
 				<article class="purpose-item"><span class="section-v3__label">Visão</span><h3>Ser referência em usinagem.</h3><p>Destacar-se pela excelência operacional, agilidade e inovação no desenvolvimento de produtos e processos, gerando valor para clientes, colaboradores e parceiros.</p></article>
-				<article class="purpose-item"><span class="section-v3__label">Valores</span><h3>Ética, qualidade e evolução.</h3><p>Credibilidade, transparência, responsabilidade, pontualidade, valorização das pessoas, trabalho em equipe, gestão de riscos, melhoria contínua e respeito ao meio ambiente.</p></article>
+				<article class="purpose-item"><span class="section-v3__label">Valores</span><h3>Ética, qualidade e evolução.</h3><ul class="values-list"><li>Credibilidade e transparência em todas as relações</li><li>Ética, honestidade e integridade profissional</li><li>Pontualidade e excelência nas entregas</li><li>Valorização das pessoas e aprendizado contínuo</li><li>Criatividade e inovação como motores do crescimento</li><li>Gestão de riscos, prevenção e melhoria contínua</li><li>Responsabilidade social e respeito ao meio ambiente</li></ul></article>
 			</div>
 		</div>
 	</section>
@@ -561,10 +638,10 @@ section[id]{scroll-margin-top:88px}
 		<div class="dec-wrap">
 			<div class="section-v3__head">
 				<div><span class="section-v3__label">Mogi das Cruzes · Alto Tietê</span><h2>Conectada aos<br>principais corredores.</h2></div>
-				<p>Localizada na Vila Industrial, a Decarlo combina acesso rodoviário, aeroportuário e portuário para atender clientes em todo o Brasil.</p>
+				<p>Mogi das Cruzes é um dos principais polos logísticos de São Paulo. Daqui, a Decarlo alcança o Porto de Santos, os três grandes aeroportos e toda a malha rodoviária nacional com agilidade.</p>
 			</div>
 			<div class="logistics-grid">
-				<figure class="logistics-photo"><img src="assets/img/parque-fabril.jpg" alt="Parque fabril Decarlo com centros de usinagem, tornos CNC e equipamentos de produção" loading="lazy"></figure>
+				<figure class="logistics-photo"><video autoplay muted loop playsinline poster="assets/img/acessos-poster.jpg" aria-label="Mapa animado do estado de São Paulo destacando aeroportos, portos e rodovias de acesso à Decarlo"><source src="assets/video/acessos.mp4" type="video/mp4"></video><figcaption class="logistics-legend"><span><i class="l-air"></i>Aeroportos</span><span><i class="l-port"></i>Portos</span><span><i class="l-road"></i>Rodovias</span></figcaption></figure>
 				<div class="logistics-info">
 					<h3>Conectividade logística</h3>
 					<div class="route-list">
@@ -583,8 +660,8 @@ section[id]{scroll-margin-top:88px}
 
 	<section class="section-v3 certification" id="certificados">
 		<div class="dec-wrap cert-grid">
-			<div><span class="section-v3__label">Qualidade certificada</span><h3>ISO 9001:2015</h3><p>Certificada desde 2015, com processos controlados e auditados.</p><a href="https://decarlo.com.br/wp-content/uploads/2025/09/CERTIFICADO_ISO9001_13.09.24_13.09.27_PT-BR_EN-US.pdf" target="_blank" rel="noopener noreferrer">Ver certificado PT / EN ↗</a></div>
-			<img src="assets/img/iso-9001.png" alt="Selo da certificação ISO 9001:2015 da Decarlo Industrial" loading="lazy">
+			<div><span class="section-v3__label">Qualidade certificada</span><h3>ISO 9001:2015</h3><p>Sistema de gestão da qualidade certificado desde 2015 e auditado periodicamente. Rastreabilidade, controle de processo e gestão baseada em riscos em cada lote.</p><a href="https://decarlo.com.br/wp-content/uploads/2025/09/CERTIFICADO_ISO9001_13.09.24_13.09.27_PT-BR_EN-US.pdf" target="_blank" rel="noopener noreferrer">Ver certificado PT / EN ↗</a></div>
+			<img src="assets/img/iso-9001-selo.png" alt="Selo da certificação ISO 9001:2015 da Decarlo Industrial" loading="lazy">
 		</div>
 	</section>
 
@@ -592,7 +669,7 @@ section[id]{scroll-margin-top:88px}
 		<div class="dec-wrap contact-v3__in">
 			<div><span class="section-v3__label">Vamos produzir juntos?</span><h2>Transforme seu desafio em uma peça de precisão.</h2><p>Converse com a equipe comercial sobre desenho, material, volume e prazo para sua demanda de usinagem.</p></div>
 			<div class="contact-v3__actions">
-				<a href="tel:+551135242358"><span>Telefone · +55 (11) 4791-7110</span><span aria-hidden="true">↗</span></a>
+				<a href="tel:+551147917110"><span>Telefone · +55 (11) 4791-7110</span><span aria-hidden="true">↗</span></a>
 				<a href="mailto:comercial@decarlo.com.br"><span>comercial@decarlo.com.br</span><span aria-hidden="true">↗</span></a>
 				<a href="https://maps.app.goo.gl/tmHV3B8Tstddwfu78" target="_blank" rel="noopener noreferrer"><span>Rua Tenente Onofre Rodrigues de Aguiar, 1005 · Mogi das Cruzes, SP</span><span aria-hidden="true">↗</span></a>
 			</div>
@@ -605,7 +682,7 @@ section[id]{scroll-margin-top:88px}
 		<div class="dec-footer__top">
 			<a class="dec-footer__logo" href="#home" aria-label="Decarlo Industrial, voltar ao início"><img src="assets/img/logo-atual.png" alt="Decarlo Industrial" loading="lazy"></a>
 			<div class="dec-footer__contacts">
-				<a href="tel:+551135242358">+55 (11) 4791-711</a>
+				<a href="tel:+551147917110">+55 (11) 4791-7110</a>
 				<a href="mailto:comercial@decarlo.com.br">comercial@decarlo.com.br</a>
 				<a href="https://maps.app.goo.gl/tmHV3B8Tstddwfu78" target="_blank" rel="noopener noreferrer">Mogi das Cruzes, SP · Como chegar ↗</a>
 				<a href="https://www.linkedin.com/company/decarlo/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
@@ -624,20 +701,20 @@ section[id]{scroll-margin-top:88px}
 		<h3>Dados tratados</h3>
 		<p>Esta página é institucional. Não possui cadastro, formulário de contato, checkout ou ferramenta própria de análise. Ao ligar ou enviar e-mail, você passa a compartilhar dados diretamente com a equipe comercial.</p>
 		<h3>Navegação e terceiros</h3>
-		<p>A hospedagem GitHub Pages pode registrar dados técnicos de acesso para segurança e operação. As fontes são carregadas pelo Google Fonts. Os links de telefone, e-mail, mapas e LinkedIn só acessam esses serviços quando você escolhe abri-los.</p>
+		<p>A hospedagem GitHub Pages pode registrar dados técnicos de acesso para segurança e operação. As fontes são hospedadas no próprio site. Os links de telefone, e-mail, mapas e LinkedIn só acessam esses serviços quando você escolhe abri-los.</p>
 		<h3>Cookies</h3>
-		<p>O cookie técnico <code>decarlo_cookie_consent</code> guarda sua escolha por 180 dias. Não usamos cookies de publicidade ou análise. Se você aceitar recursos externos, carregamos as fontes Google Fonts; esse pedido informa seu endereço IP ao Google. Se escolher somente essenciais, usamos as fontes de sistema disponíveis no dispositivo.</p>
+		<p>O cookie técnico <code>decarlo_cookie_consent</code> guarda sua escolha por 180 dias. Não usamos cookies de publicidade ou análise. O vídeo de apresentação só carrega do YouTube (modo sem cookies) quando você clica em reproduzir.</p>
 		<p>Você pode mudar sua escolha limpando os cookies deste site no navegador. A política e os canais de contato estão disponíveis no rodapé.</p>
 		<p class="privacy-contact">Dúvidas sobre privacidade? Escreva para <a href="mailto:comercial@decarlo.com.br">comercial@decarlo.com.br</a>.</p>
 	</div>
 </dialog>
 
 <div class="cookie-banner" id="cookieBanner" role="dialog" aria-labelledby="cookieTitle" aria-describedby="cookieDescription" hidden>
-	<div class="cookie-copy"><strong id="cookieTitle">Sua privacidade, sua escolha.</strong><p id="cookieDescription">Usamos um cookie técnico para lembrar sua preferência. Fontes externas só carregam se você permitir. <a href="#privacidade" id="cookiePrivacy">Leia a política</a>.</p></div>
+	<div class="cookie-copy"><strong id="cookieTitle">Sua privacidade, sua escolha.</strong><p id="cookieDescription">Usamos um cookie técnico para lembrar sua preferência. Conteúdo externo (YouTube) só carrega se você clicar. <a href="#privacidade" id="cookiePrivacy">Leia a política</a>.</p></div>
 	<div class="cookie-actions"><button type="button" id="cookieAccept">Aceitar todos</button><button type="button" id="cookieEssential">Somente essenciais</button></div>
 </div>
 
-<a class="social-fixed" href="tel:+551135242358" aria-label="Ligar para a Decarlo: +55 11 3524-2358">
+<a class="social-fixed" href="tel:+551147917110" aria-label="Ligar para a Decarlo: +55 11 4791-7110">
 	<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02L6.6 10.8Z"/></svg>
 </a>
 
@@ -672,13 +749,14 @@ function countUp(node){
 		node.textContent=prefix+Math.round(target*eased)+suffix;if(progress<1)requestAnimationFrame(tick)};
 	requestAnimationFrame(tick);
 }
-const revealTargets='.section-v3__head, .metric, .capability, .market, .gallery-item, .client-logo, .timeline-item, .purpose-item, .logistics-info, .logistics-photo, .cert-grid > *, .contact-v3__in > *';
+const revealTargets='.section-v3__head, .pillar-v3, .presentation__grid > *, .metric, .capability, .market, .gallery-item, .client-logo, .timeline-item, .purpose-item, .logistics-info, .logistics-photo, .cert-grid > *, .contact-v3__in > *';
 document.querySelectorAll(revealTargets).forEach(element=>element.classList.add('reveal'));
 document.querySelectorAll('.reveal').forEach(element=>{
 	const siblings=[...element.parentElement.children].filter(node=>node.classList.contains('reveal'));
 	element.style.transitionDelay=Math.min(siblings.indexOf(element),7)*70+'ms';
 	observer.observe(element);
 });
+document.querySelector('#ytPlay').addEventListener('click',function(){const f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/IWFF-4r7hxs?autoplay=1&rel=0';f.title='Apresentação Decarlo';f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;this.replaceChildren(f)},{once:true});
 document.querySelector('#year').textContent=new Date().getFullYear();
 const privacyDialog=document.querySelector('#privacyDialog');
 const openPrivacy=event=>{event.preventDefault();privacyDialog.showModal()};
@@ -693,17 +771,9 @@ const rememberConsent=choice=>{
 	document.cookie=`${consentCookie}=${choice}; Max-Age=15552000; Path=/decarlo/; SameSite=Lax${secure}`;
 	cookieBanner.hidden=true;
 };
-const loadExternalFonts=()=>{
-	if(document.querySelector('#decGoogleFonts'))return;
-	const fonts=document.createElement('link');
-	fonts.id='decGoogleFonts';fonts.rel='stylesheet';
-	fonts.href='https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap';
-	document.head.append(fonts);
-};
 const savedConsent=document.cookie.split('; ').find(cookie=>cookie.startsWith(`${consentCookie}=`))?.split('=')[1];
-if(savedConsent==='all')loadExternalFonts();
 if(!savedConsent)cookieBanner.hidden=false;
-document.querySelector('#cookieAccept').addEventListener('click',()=>{rememberConsent('all');loadExternalFonts()});
+document.querySelector('#cookieAccept').addEventListener('click',()=>rememberConsent('all'));
 document.querySelector('#cookieEssential').addEventListener('click',()=>rememberConsent('essential'));
 </script>
 </body>
