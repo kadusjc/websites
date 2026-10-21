@@ -16,8 +16,8 @@
  --img-hero:url("img/hero.webp");
  --img-1:url("img/p1.webp");--img-2:url("img/p2.webp");--img-3:url("img/p3.webp");--img-4:url("img/p4.webp");--img-5:url("img/p5.webp");
  /* Paleta clara baseada no logo: sálvia #8ba6a6, verde-acinzentado #6c7f7f, grafite #6d6c6a */
- --bg:#f4f8f6;--bg2:#e9f1ed;--card:#ffffff;--line:rgba(36,74,66,.13);--txt:#18302b;--mut:#566b66;
- --gold:#3f746b;--gold2:#2c5d55;--glass:#8ba6a6;--mint:#d9e9e2;--r:20px;
+ --bg:#ffffff;--bg2:#f5f8f6;--card:#ffffff;--line:rgba(36,74,66,.11);--txt:#18302b;--mut:#566b66;
+ --gold:#3f746b;--gold2:#2c5d55;--glass:#8ba6a6;--mint:#e4efea;--r:20px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 [hidden]{display:none!important}
@@ -39,20 +39,20 @@ em{font-style:italic;color:var(--gold2)}
 .btn.g{border-color:rgba(36,74,66,.22);background:rgba(255,255,255,.75)}.btn.g:hover{border-color:var(--gold);color:var(--gold2)}
 /* header */
 header{position:fixed;inset:0 0 auto;z-index:50;padding:14px 0 14px;padding-top:calc(14px + env(safe-area-inset-top));transition:.3s}
-header.s{background:rgba(244,248,246,.86);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}header.m{backdrop-filter:none;-webkit-backdrop-filter:none;background:transparent;border-color:transparent}
+header.s{background:rgba(255,255,255,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}header.m{backdrop-filter:none;-webkit-backdrop-filter:none;background:transparent;border-color:transparent}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
 .logo{display:flex;align-items:center;gap:12px;font-family:Raleway,sans-serif;font-size:1.35rem;font-weight:600}
 .mk{width:46px;height:35px;flex:none}.wm{font:600 1.15rem/1 Poppins,sans-serif;letter-spacing:.16em;color:var(--txt)}.wm b{color:var(--gold2);font-weight:600}
 .logo small{display:block;font:500 .56rem Poppins;color:var(--mut);letter-spacing:.12em;margin-top:6px}
-#nv ul{display:flex;gap:28px;list-style:none;font-size:.95rem;color:var(--mut)}#nv a:hover{color:var(--gold2)}
+#nv ul{display:flex;gap:26px;list-style:none;font-size:.95rem;color:var(--mut)}#nv a.on{color:var(--gold2);font-weight:600}.mcta{display:none}.nav>.btn{white-space:nowrap}#nv a:hover{color:var(--gold2)}
 .burger{display:none;background:none;border:1px solid var(--line);border-radius:12px;width:44px;height:44px;color:var(--txt);cursor:pointer}
 /* hero */
-.hero{background:linear-gradient(180deg,#e6f0ec,var(--bg) 85%);min-height:100svh;display:flex;align-items:center;padding-top:130px;overflow:hidden}
+.hero{background:linear-gradient(180deg,#f0f5f3,#fff 80%);min-height:100svh;display:flex;align-items:center;padding-top:130px;overflow:hidden}
 .hero:before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 80% 30%,rgba(139,166,166,.28),transparent 70%),radial-gradient(40% 40% at 10% 90%,rgba(139,166,166,.18),transparent 70%)}
 .hgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,70px);align-items:center;position:relative}
 .hero p.lead{font-size:1.15rem}.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
 .stats{display:flex;gap:clamp(20px,4vw,48px);margin-top:48px;flex-wrap:wrap}
-.stats b{font:500 2.3rem Raleway,sans-serif;display:block;color:var(--gold2);line-height:1}.stats span{font-size:.88rem;color:var(--mut)}
+.stats b{font:500 2.3rem Raleway,sans-serif;display:block;color:var(--gold2);line-height:1}.stats span{font-size:.88rem;color:var(--mut)}.gst{font-size:.95rem;color:#f5b301;letter-spacing:1px;vertical-align:middle}
 .frame{position:relative;aspect-ratio:4/5;border-radius:28px;padding:14px;background:linear-gradient(145deg,#d5dcdc,#6c7f7f 40%,#c4cfcf 70%,#4a5757);box-shadow:0 40px 90px -30px rgba(24,48,43,.45),0 0 0 1px rgba(255,255,255,.15) inset}
 .pane{position:absolute;inset:14px;border-radius:16px;background:var(--img-hero) center/cover;overflow:hidden}
 .pane:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,16,16,.75))}
@@ -77,7 +77,7 @@ header.s{background:rgba(244,248,246,.86);backdrop-filter:blur(16px);border-bott
 /* solucoes */
 .head{max-width:720px;margin-bottom:56px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:34px 30px;transition:.3s;position:relative;overflow:hidden}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:0;transition:.3s;position:relative;overflow:hidden;display:flex;flex-direction:column}.ci{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;transition:transform .6s}.card:hover .ci{transform:scale(1.05)}.cb{padding:26px 28px 30px;position:relative}.cb svg{position:absolute;top:-28px;right:22px;background:var(--bg);border-radius:14px;padding:10px;width:56px!important;height:56px!important;margin:0!important;box-shadow:0 10px 24px -12px rgba(24,48,43,.4)}.cb h3{margin-right:60px}
 .card:hover{border-color:rgba(139,166,166,.45);transform:translateY(-4px)}
 .card svg{width:46px;height:46px;stroke:var(--gold);fill:none;stroke-width:1.4;margin-bottom:22px}
 .card p{color:var(--mut);margin-top:10px;font-size:.98rem}
@@ -93,7 +93,7 @@ header.s{background:rgba(244,248,246,.86);backdrop-filter:blur(16px);border-bott
 /* ===== SIMULADOR ===== */
 .sim{overflow:hidden;background:var(--bg)}
 .sim-glow{position:absolute;inset:0;pointer-events:none}
-.sim-glow span{position:absolute;border-radius:50%;filter:blur(90px);opacity:.75}
+.sim-glow span{position:absolute;border-radius:50%;filter:blur(90px);opacity:.45}
 .sim-glow span:nth-child(1){width:540px;height:540px;left:-160px;top:140px;background:#bcd8ce}
 .sim-glow span:nth-child(2){width:620px;height:620px;right:-200px;bottom:-120px;background:#cfe2db}
 .sim-glow span:nth-child(3){width:320px;height:320px;left:45%;top:30%;background:#e2efe9;opacity:.9}
@@ -199,7 +199,7 @@ legend span{display:inline-grid;place-items:center;width:24px;height:24px;border
 /* regioes */
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}.chips span{padding:8px 16px;border-radius:99px;background:var(--card);border:1px solid var(--line);font-size:.92rem;color:var(--mut)}
 /* contato */
-.contact{background:linear-gradient(180deg,var(--bg),#dfece6)}
+.contact{background:linear-gradient(180deg,#fff,#eef4f1)}
 form{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(26px,4vw,44px);display:grid;gap:16px}
 label{font-size:.88rem;color:var(--mut);display:grid;gap:7px}
 input,select{width:100%;padding:15px 16px;border-radius:14px;background:var(--bg);border:1px solid var(--line);color:var(--txt);font:inherit}
@@ -241,9 +241,9 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
 @media(max-width:960px){
  .hgrid,.two,.pubs,.grid3,.tg{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.ben{grid-template-columns:1fr}
  .frame{max-width:460px;margin:20px auto 0}.badge{left:12px}
- .burger{display:block}header,header.s,header.m{backdrop-filter:none;-webkit-backdrop-filter:none;transition:none}#nv{position:fixed;inset:0;z-index:60;background:#f4f8f6;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+ .burger{display:block}.mcta{display:inline-flex;width:auto!important;margin-top:10px}.sc .tag:before{display:none}header,header.s,header.m{backdrop-filter:none;-webkit-backdrop-filter:none;transition:none}#nv{position:fixed;inset:0;z-index:60;background:#fff;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
  #nv.o{opacity:1;visibility:visible}#nv ul{flex-direction:column;align-items:center;font:500 1.8rem Raleway;color:var(--txt);gap:26px}
- .nav .btn{display:none}.burger{position:relative;z-index:70}
+ .nav>.btn{display:inline-flex;padding:9px 13px;font-size:.82rem;margin-left:auto;white-space:nowrap}.nav>.btn span{display:none}.nav{gap:8px}.nav .lg-mk{height:30px!important}.nav .lg-tx{height:21px!important}.logo{position:relative;z-index:70;gap:8px}.burger{position:relative;z-index:70;flex:none}
  .sbox{grid-template-columns:1fr}.sbox .out{border-left:0;border-top:1px solid var(--line)}.facade{width:150%;right:-50%;opacity:.55}.gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.gal figure{grid-column:span 1!important;grid-row:span 2!important}.g1{grid-column:span 2!important;grid-row:span 2!important}
 }
 @media(max-width:560px){.row2{grid-template-columns:1fr}.tabs{border-radius:22px;width:100%}.tabs button{flex:1 1 100%}.types{grid-template-columns:1fr 1fr}.row3{grid-template-columns:1fr 1fr}.row3 label:last-child{grid-column:span 2}.q{flex-direction:column;align-items:flex-start;gap:10px}.steps{grid-template-columns:1fr}.wa span{display:none}.wa{padding:15px}.norm{flex-direction:column;align-items:flex-start;gap:6px}.cta .btn{width:100%}body{font-size:16px}}
@@ -253,16 +253,42 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
 .ph.wide{margin-bottom:28px;max-height:380px}.ph.wide img{aspect-ratio:3/1}
 .plab{margin:28px 0 10px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}.parc{display:flex;flex-wrap:wrap;gap:14px 26px;align-items:center}.parc img{height:34px;width:auto;max-width:120px;object-fit:contain;filter:grayscale(1);opacity:.7;transition:.3s}.parc img:hover{filter:none;opacity:1}
 .t footer{display:flex;align-items:center;gap:12px}.av{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:none}
-@media(max-width:640px){.lg-mk{height:40px}.lg-tx{height:28px}.ft .lg{height:100px}.ph.wide img{aspect-ratio:16/9}.parc img{height:26px}}
+@media(max-width:640px){.ft .lg{height:100px}.ph.wide img{aspect-ratio:16/9}.parc img{height:26px}}
 .ft-mark img{display:block;width:100%;height:auto;-webkit-mask:linear-gradient(#000,transparent 95%);mask:linear-gradient(#000,transparent 95%);opacity:.38}
+
+.car{padding:0 0 clamp(40px,6vw,72px);background:var(--bg)}
+.carbox{position:relative;border-radius:var(--r);overflow:hidden;background:#0f1a18;color:#fff;box-shadow:0 40px 80px -40px rgba(24,48,43,.5)}
+.slides{position:relative;aspect-ratio:1380/400;min-height:380px}
+.sl{position:absolute;inset:0;opacity:0;transition:opacity .9s;display:grid;place-items:center;text-align:center}.sl.on{opacity:1;z-index:1}
+.sl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.sl:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,16,16,.55),rgba(10,16,16,.62))}
+.sc{position:relative;z-index:2;padding:32px clamp(60px,8vw,120px);max-width:980px;margin:0 auto}
+.sc .tag{color:var(--mint);justify-content:center;display:inline-flex;margin:0 auto}.sc .tag:before{background:var(--mint)}
+.sc h2{color:#fff;font-size:clamp(1.6rem,3.2vw,2.5rem);margin:10px auto 10px;line-height:1.12;text-wrap:balance}.sc p{color:rgba(255,255,255,.9);font-size:1rem;max-width:68ch;margin:0 auto;text-wrap:pretty}
+.sc .cta{margin-top:20px;justify-content:center}.btn.w{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.65)}.btn.w:hover{background:#fff;color:var(--txt)}
+.arr{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:48px;height:64px;border:0;background:none;color:#fff;font-size:3rem;line-height:1;cursor:pointer;opacity:.85;transition:.25s;text-shadow:0 2px 12px rgba(0,0,0,.5)}.arr:hover{opacity:1;transform:translateY(-50%) scale(1.15)}.prev{left:8px}.next{right:8px}
+.dots{position:absolute;left:0;right:0;bottom:12px;z-index:3;display:flex;justify-content:center;gap:8px}.dots button{width:9px;height:9px;border-radius:50%;border:0;background:rgba(255,255,255,.45);cursor:pointer;padding:0;transition:.3s}.dots button[aria-selected=true]{background:#fff;transform:scale(1.25)}
+.gh{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin:40px 0 18px}.gscore{display:flex;align-items:center;gap:14px}.gscore b{font:600 1.5rem Raleway;color:var(--txt);display:flex;align-items:center;gap:8px}.gscore .st{font-size:1rem;color:#f5b301;letter-spacing:2px}.gscore small{display:block;color:var(--mut)}
+.grail{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 18px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}.grail::-webkit-scrollbar{height:6px}.grail::-webkit-scrollbar-thumb{background:var(--gold);border-radius:6px}
+.gc{flex:0 0 min(320px,85vw);scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px}.gc .st{color:#f5b301;letter-spacing:2px}.gc p{font-size:.95rem;color:var(--txt);flex:1}
+.gc footer{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--mut)}.gc footer b{display:block;color:var(--txt)}.gc i{font-style:normal;width:38px;height:38px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center;font-weight:600;flex:none}
+.gal figure{cursor:zoom-in}.lb{position:fixed;inset:0;z-index:100;background:rgba(10,16,16,.94);display:grid;place-items:center;padding:20px;animation:fi .25s}.lb img{max-width:min(1100px,100%);max-height:80vh;border-radius:14px;box-shadow:0 40px 90px -30px #000}.lb p{color:#fff;margin-top:14px;font-size:1.05rem}.lbx{position:absolute;top:18px;right:18px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.1);color:#fff;font-size:1.2rem;cursor:pointer}@keyframes fi{from{opacity:0}}
+@media(max-width:760px){.slides{aspect-ratio:auto;min-height:0}.sl{position:relative;display:none}.sl.on{display:grid}.sc{padding:48px 44px 60px}.sc .cta{flex-direction:column;align-items:stretch}.sc .cta .btn{text-align:center}.arr{width:40px;height:48px;font-size:2.4rem;background:rgba(10,16,16,.3);border-radius:10px}.prev{left:4px}.next{right:4px}.dots{bottom:18px;left:50px;right:50px;pointer-events:none}.dots button{pointer-events:auto}}
+.mapgrid{display:grid;grid-template-columns:minmax(280px,380px) 1fr;gap:24px;align-items:stretch}
+.mapcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:32px;display:flex;flex-direction:column;gap:14px}.mapcard>b{font:600 1.2rem Raleway;color:var(--txt)}.mapcard p{color:var(--mut)}.mapcard ul{list-style:none;padding:0;margin:4px 0;color:var(--mut);display:grid;gap:6px}.mapcard li b{color:var(--txt);margin-right:8px}.mapcard .acts2{margin-top:auto;display:flex;gap:10px;flex-wrap:wrap}
+.mapframe{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:380px;box-shadow:0 30px 60px -30px rgba(24,48,43,.4)}.mapframe iframe{width:100%;height:100%;min-height:380px;border:0;display:block;filter:saturate(.85)}
+@media(max-width:860px){.mapgrid{grid-template-columns:1fr}.mapframe{min-height:320px}.mapframe iframe{min-height:320px}}
+.faqwrap{max-width:860px}.faqs{display:grid;gap:12px}.fq{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:0 24px;transition:.3s}.fq[open]{border-color:var(--gold)}
+.fq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;font-weight:600;font-size:1.05rem;color:var(--txt)}.fq summary::-webkit-details-marker{display:none}.fq summary span{width:30px;height:30px;border-radius:50%;background:var(--mint);color:var(--gold2);display:grid;place-items:center;font-size:1.3rem;flex:none;transition:.3s}.fq[open] summary span{transform:rotate(45deg);background:var(--gold);color:#fff}
+.fq p{color:var(--mut);padding:0 0 22px;max-width:70ch}
 </style>
 </head>
 <body>
 <header id="hd"><div class="wrap nav">
  <a href="#top" class="logo" aria-label="Esquadriplan"><img class="lg-mk" src="img/logo-mark.webp" alt="" width="446" height="308" decoding="async"><img class="lg-tx" src="img/logo-text.webp" alt="Esquadriplan – Esquadrias em alumínio e vidros" width="3168" height="519" decoding="async"></a>
  <nav id="nv"><ul>
-  <li><a href="#sobre">Sobre</a></li><li><a href="#solucoes">Soluções</a></li><li><a href="#simulador">Simulador</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#profissionais">Arquitetos</a></li><li><a href="#depoimentos">Depoimentos</a></li><li><a href="#contato">Contato</a></li></ul></nav>
- <a class="btn p" href="#contato">Pedir cotação</a>
+  <li><a href="#sobre">Sobre</a></li><li><a href="#solucoes">Soluções</a></li><li><a href="#simulador">Simulador</a></li><li><a href="#projetos">Projetos</a></li><li><a href="#profissionais">Arquitetos</a></li><li><a href="#depoimentos">Depoimentos</a></li><li><a href="#contato">Contato</a></li></ul><a class="btn p mcta" href="#contato">Pedir cotação gratuita</a></nav>
+ <a class="btn p" href="#contato"><span>Pedir </span>Cotação</a>
  <button class="burger" id="bg" aria-label="Abrir menu" aria-expanded="false">☰</button>
 </div></header>
 
@@ -275,7 +301,7 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
   <h1>Conforto e sofisticação <em>no mesmo ambiente.</em></h1>
   <p class="lead">Esquadrias de alumínio personalizadas, guarda-corpos, sacadas e fachadas em vidro, fabricadas com materiais nobres e acabamento impecável. Para casas, prédios e grandes empreendimentos.</p>
   <div class="cta"><a class="btn p" href="#contato">Solicitar cotação gratuita</a><a class="btn g" href="#simulador">Simular meu orçamento</a></div>
-  <div class="stats"><div><b>+10</b><span>anos de experiência</span></div><div><b>3 NBRs</b><span>7199 · 10.821 · 15.575</span></div><div><b>B2B e B2C</b><span>obras de todos os portes</span></div></div>
+  <div class="stats"><div><b>5,0 <small class="gst">★★★★★</small></b><span>avaliação no Google</span></div><div><b>+10</b><span>anos de experiência</span></div><div><b>3 NBRs</b><span>7199 · 10.821 · 15.575</span></div><div><b>B2B e B2C</b><span>obras de todos os portes</span></div></div>
  </div>
  <div class="rv"><div class="frame"><div class="pane"></div><div class="mull"></div>
   <div class="badge"><b>Sob medida</b>Cada projeto planejado para a sua obra, do desenho à instalação.</div></div></div>
@@ -285,6 +311,17 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
  <span>Esquadrias em alumínio</span><span>Guarda-corpo</span><span>Envidraçamento de sacadas</span><span>Fachadas em vidro</span><span>Portas e portões</span><span>Coberturas de vidro</span><span>Vidros laminados</span>
  <span>Esquadrias em alumínio</span><span>Guarda-corpo</span><span>Envidraçamento de sacadas</span><span>Fachadas em vidro</span><span>Portas e portões</span><span>Coberturas de vidro</span><span>Vidros laminados</span>
 </div></div>
+
+<section class="car" id="destaques" aria-roledescription="carousel" aria-label="Destaques Esquadriplan"><div class="wrap"><div class="carbox">
+ <div class="slides" id="slides">
+  <div class="sl on" role="group" aria-roledescription="slide" aria-label="1 de 4"><img src="img/s1.webp" alt="" fetchpriority="high" decoding="async"><div class="sc"><span class="tag">Qualidade, design e durabilidade em cada projeto.</span><h2>Esquadriplan: excelência em esquadrias de alumínio.</h2><p>Mais de 10 anos entregando resultados impecáveis para residências, comércios e grandes empreendimentos. Seja qual for o tamanho do seu projeto, somos a escolha certa para quem busca o melhor.</p><div class="cta"><a class="btn p" href="https://wa.me/5512997847095?text=Ol%C3%A1!%20Encontrei%20o%20site%20de%20voc%C3%AAs%20e%20preciso%20de%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener">Fale conosco</a><a class="btn w" href="https://www.instagram.com/esquadriplan_sjc/" target="_blank" rel="noopener">Siga-nos</a></div></div></div>
+  <div class="sl" role="group" aria-roledescription="slide" aria-label="2 de 4" aria-hidden="true"><img src="img/s2.webp" alt="" loading="lazy" decoding="async"><div class="sc"><span class="tag">Elegância e durabilidade em esquadrias de alumínio.</span><h2>Seu projeto merece o melhor.</h2><p>Cada detalhe importa. Transformamos a sua casa com soluções sob medida, unindo design moderno e funcionalidade, para clientes exigentes em São José dos Campos, São Paulo, Litoral Norte e região.</p><div class="cta"><a class="btn p" href="https://wa.me/5512997847095?text=Ol%C3%A1!%20Encontrei%20o%20site%20de%20voc%C3%AAs%20e%20preciso%20de%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener">Fale conosco</a><a class="btn w" href="https://www.instagram.com/esquadriplan_sjc/" target="_blank" rel="noopener">Siga-nos</a></div></div></div>
+  <div class="sl" role="group" aria-roledescription="slide" aria-label="3 de 4" aria-hidden="true"><img src="img/s3.webp" alt="" loading="lazy" decoding="async"><div class="sc"><span class="tag">Arquitetos: parceiros na criação de fachadas e sacadas exclusivas.</span><h2>Soluções que valorizam seus projetos.</h2><p>Esquadrias de alumínio e vidros personalizados para as suas ideias mais ousadas e sofisticadas, com uma equipe técnica que entende a importância de cada detalhe no design arquitetônico.</p><div class="cta"><a class="btn p" href="https://wa.me/5512997847095?text=Ol%C3%A1!%20Encontrei%20o%20site%20de%20voc%C3%AAs%20e%20preciso%20de%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener">Fale conosco</a><a class="btn w" href="https://www.instagram.com/esquadriplan_sjc/" target="_blank" rel="noopener">Siga-nos</a></div></div></div>
+  <div class="sl" role="group" aria-roledescription="slide" aria-label="4 de 4" aria-hidden="true"><img src="img/s4.webp" alt="" loading="lazy" decoding="async"><div class="sc"><span class="tag">Alumínio resistente às condições do litoral.</span><h2>Litoral e casas de veraneio.</h2><p>Guarda-corpos, sacadas e esquadrias projetados para resistir ao tempo, sem abrir mão do design sofisticado. Atuamos em Ilhabela, São Sebastião, Ubatuba, Caraguatatuba e região.</p><div class="cta"><a class="btn p" href="https://wa.me/5512997847095?text=Ol%C3%A1!%20Encontrei%20o%20site%20de%20voc%C3%AAs%20e%20preciso%20de%20uma%20cota%C3%A7%C3%A3o." target="_blank" rel="noopener">Fale conosco</a><a class="btn w" href="https://www.instagram.com/esquadriplan_sjc/" target="_blank" rel="noopener">Siga-nos</a></div></div></div>
+ </div>
+ <button class="arr prev" id="sprev" aria-label="Slide anterior">‹</button><button class="arr next" id="snext" aria-label="Próximo slide">›</button>
+ <div class="dots" id="sdots" role="tablist"></div>
+</div></div></section>
 
 <section id="sobre"><div class="wrap two">
  <div class="rv">
@@ -307,12 +344,12 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
 <section id="solucoes" class="pub"><div class="wrap">
  <div class="head rv"><span class="tag">Soluções completas</span><h2>Alumínio e vidro para <em>valorizar cada projeto.</em></h2><p class="lead">Janelas, portas, guarda-corpos e portões com alta qualidade e inovação, para projetos residenciais, comerciais e corporativos.</p></div>
  <div class="grid3">
-  <article class="card rv"><svg viewBox="0 0 48 48"><rect x="6" y="6" width="36" height="36" rx="3"/><path d="M24 6v36M6 24h36"/></svg><h3>Janelas e portas modernas</h3><p>Design sofisticado, vedação e durabilidade para toda a casa.</p></article>
-  <article class="card rv"><svg viewBox="0 0 48 48"><path d="M5 40h38M5 12h38M12 12v28M24 12v28M36 12v28"/></svg><h3>Guarda-corpos sob medida</h3><p>Segurança com estética impecável, em alumínio e vidro temperado ou laminado.</p></article>
-  <article class="card rv"><svg viewBox="0 0 48 48"><path d="M6 42V10l18-4 18 4v32M6 42h36M17 42V24h14v18"/></svg><h3>Sacadas e envidraçamento</h3><p>Perfis de sacada e fechamentos para prédios e residências.</p></article>
-  <article class="card rv"><svg viewBox="0 0 48 48"><path d="M8 42V8h32v34M8 18h32M8 30h32M24 8v34"/></svg><h3>Fachadas em vidro</h3><p>Vidros e alumínio para fachadas elegantes e de alto padrão.</p></article>
-  <article class="card rv"><svg viewBox="0 0 48 48"><path d="M6 36h36M10 36V16h28v20M10 26h28"/></svg><h3>Portões personalizados</h3><p>Funcionalidade com estilo para qualquer espaço.</p></article>
-  <article class="card rv"><svg viewBox="0 0 48 48"><path d="M4 30L24 8l20 22M10 30v10h28V30"/></svg><h3>Estruturas e coberturas</h3><p>Resistência e leveza em estruturas de alumínio e coberturas de vidro.</p></article>
+  <article class="card rv"><img class="ci" src="img/p1.webp" alt="Janelas e portas modernas" loading="lazy" decoding="async"><div class="cb"><svg viewBox="0 0 48 48"><rect x="6" y="6" width="36" height="36" rx="3"/><path d="M24 6v36M6 24h36"/></svg><h3>Janelas e portas modernas</h3><p>Design sofisticado, vedação e durabilidade para toda a casa.</p></div></article>
+  <article class="card rv"><img class="ci" src="img/p4.webp" alt="Guarda-corpos sob medida" loading="lazy" decoding="async"><div class="cb"><svg viewBox="0 0 48 48"><path d="M5 40h38M5 12h38M12 12v28M24 12v28M36 12v28"/></svg><h3>Guarda-corpos sob medida</h3><p>Segurança com estética impecável, em alumínio e vidro temperado ou laminado.</p></div></article>
+  <article class="card rv"><img class="ci" src="img/hero.webp" alt="Sacadas e envidraçamento" loading="lazy" decoding="async"><div class="cb"><svg viewBox="0 0 48 48"><path d="M6 42V10l18-4 18 4v32M6 42h36M17 42V24h14v18"/></svg><h3>Sacadas e envidraçamento</h3><p>Perfis de sacada e fechamentos para prédios e residências.</p></div></article>
+  <article class="card rv"><img class="ci" src="img/p2.webp" alt="Fachadas em vidro" loading="lazy" decoding="async"><div class="cb"><svg viewBox="0 0 48 48"><path d="M8 42V8h32v34M8 18h32M8 30h32M24 8v34"/></svg><h3>Fachadas em vidro</h3><p>Vidros e alumínio para fachadas elegantes e de alto padrão.</p></div></article>
+  <article class="card rv"><img class="ci" src="img/s1.webp" alt="Portões personalizados" loading="lazy" decoding="async"><div class="cb"><svg viewBox="0 0 48 48"><path d="M6 36h36M10 36V16h28v20M10 26h28"/></svg><h3>Portões personalizados</h3><p>Funcionalidade com estilo para qualquer espaço.</p></div></article>
+  <article class="card rv"><img class="ci" src="img/sobre.webp" alt="Estruturas e coberturas" loading="lazy" decoding="async"><div class="cb"><svg viewBox="0 0 48 48"><path d="M4 30L24 8l20 22M10 30v10h28V30"/></svg><h3>Estruturas e coberturas</h3><p>Resistência e leveza em estruturas de alumínio e coberturas de vidro.</p></div></article>
  </div>
 </div></section>
 
@@ -406,9 +443,16 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
   <div class="t rv"><span class="st">★★★★★</span><p>Fiquei impressionado com o profissionalismo. Se deslocaram até Campos do Jordão e cumpriram o combinado. Contratei para um grande projeto e o resultado foi impecável.</p><footer><img class="av" src="img/t2.webp" alt="" width="48" height="48" loading="lazy"><span><b>Lucas Thiliby</b>Arquiteto · ACR Arquitetos S/A</span></footer></div>
   <div class="t rv"><span class="st">★★★★★</span><p>Indicados para um projeto desafiador, entregaram soluções de alta qualidade, com agilidade e perfeição nos detalhes. Uma parceria que faz toda a diferença.</p><footer><img class="av" src="img/t3.webp" alt="" width="48" height="48" loading="lazy"><span><b>Denise Bacarry</b>Gerente de Projetos · Plano Engenharia Civil</span></footer></div>
  </div>
- <div class="gr rv">
-  <blockquote>Fizeram a vitrine da minha loja em Ubatuba, o trabalho foi muito bem executado dentro do prazo previsto.<cite>Ruy Noronha · Google</cite></blockquote>
-  <blockquote>Fiz orçamento com várias empresas, mas a Esquadriplan foi a que melhor atendeu às minhas necessidades.<cite>Bruno Medrado · Google</cite></blockquote>
+ <div class="gh rv"><div class="gscore"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.7-2.4 3.6v3h3.8c2.3-2.1 3.6-5.2 3.6-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 8-2.9l-3.8-3c-1.1.7-2.5 1.2-4.2 1.2-3.1 0-5.8-2.1-6.8-5H1.2v3.1C3.2 21.3 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.2 14.3c-.5-1.5-.5-3.1 0-4.6V6.6H1.2c-1.6 3.3-1.6 7.3 0 10.6l4-2.9z"/><path fill="#EA4335" d="M12 4.7c1.8 0 3.3.6 4.6 1.8l3.4-3.4C17.9 1.2 15.2 0 12 0 7.3 0 3.2 2.7 1.2 6.6l4 3.1c1-2.9 3.7-5 6.8-5z"/></svg><div><b>5,0 <span class="st">★★★★★</span></b><small>Avaliações reais de clientes no Google</small></div></div><a class="btn g" href="https://maps.app.goo.gl/Gwo59beXFnNG6jqi9" target="_blank" rel="noopener">Ver no Google Maps</a></div>
+ <div class="grail rv" id="grail" tabindex="0" aria-label="Avaliações do Google, role para o lado">
+  <article class="gc"><span class="st">★★★★★</span><p>Excelente serviço e produtos de alta qualidade! Fiz orçamento com várias empresas, mas a Esquadriplan foi a que melhor atendeu às minhas necessidades. Profissionais competentes e atenciosos.</p><footer><i>B</i><span><b>Bruno Medrado</b>Avaliação no Google</span></footer></article>
+  <article class="gc"><span class="st">★★★★★</span><p>É perceptível o cuidado, a dedicação e o compromisso com a qualidade em cada detalhe. O atendimento é atencioso e os produtos são impecáveis.</p><footer><i>A</i><span><b>Aline Cristina</b>Avaliação no Google</span></footer></article>
+  <article class="gc"><span class="st">★★★★★</span><p>Fizeram a vitrine da minha loja em Ubatuba. O trabalho do Moisés e sua equipe foi muito bem executado, dentro do prazo previsto. Recomendo.</p><footer><i>R</i><span><b>Ruy Noronha</b>Avaliação no Google</span></footer></article>
+  <article class="gc"><span class="st">★★★★★</span><p>Produto de ótima qualidade, profissionais qualificados que dão toda atenção para auxiliar nas escolhas, bons preços. Recomendo!</p><footer><i>F</i><span><b>Felipe Almeida</b>Avaliação no Google</span></footer></article>
+  <article class="gc"><span class="st">★★★★★</span><p>Super recomendo. Excelente atendimento, pessoal super atencioso. A qualidade superou minhas expectativas.</p><footer><i>N</i><span><b>Ney Freitas</b>Avaliação no Google</span></footer></article>
+  <article class="gc"><span class="st">★★★★★</span><p>Produtos de ótima qualidade, indico a Esquadriplan para todos.</p><footer><i>L</i><span><b>Leonardo Lima</b>Avaliação no Google</span></footer></article>
+  <article class="gc"><span class="st">★★★★★</span><p>Foi ótimo o atendimento. Equipe está de parabéns.</p><footer><i>I</i><span><b>Isaías Santos</b>Avaliação no Google</span></footer></article>
+  <article class="gc"><span class="st">★★★★★</span><p>Atendimento ágil e muito profissional. Esquadrias de alta qualidade com acabamento impecável, serviço pontual e resultado que transmite confiança.</p><footer><i>A</i><span><b>Agência Especialista em Google</b>Avaliação no Google</span></footer></article>
  </div>
 </div></section>
 
@@ -430,6 +474,17 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
   <div class="chips"><span>Urbanova</span><span>Jardim Esplanada</span><span>Aquarius</span><span>Apolo I e II</span><span>Mogi das Cruzes</span><span>Ilhabela</span><span>São Sebastião</span><span>Caraguatatuba</span><span>Ubatuba</span><span>Campos do Jordão</span></div></div>
 </div></section>
 
+<section id="faq"><div class="wrap faqwrap">
+ <div class="head rv"><span class="tag">Dúvidas frequentes</span><h2>Tudo o que você precisa saber <em>antes de pedir o orçamento.</em></h2></div>
+ <div class="faqs">
+ <details class="fq rv" open><summary>Como funciona o orçamento?<span aria-hidden="true">+</span></summary><p>Você entra em contato pelo WhatsApp ou pelo formulário, conta o que precisa e um consultor agenda a medição. Com as medidas e a linha de alumínio definidas, enviamos o orçamento detalhado.</p></details>
+ <details class="fq rv"><summary>Quais linhas de alumínio vocês trabalham?<span aria-hidden="true">+</span></summary><p>Linhas 25, 30, 42, Suprema, Gold, Inova e Formas Conjugadas, em alumínio natural ou pintado em diversas cores, com vidros temperados, laminados e insulados.</p></details>
+ <details class="fq rv"><summary>Vocês atendem fora de São José dos Campos?<span aria-hidden="true">+</span></summary><p>Sim. Atendemos todo o Vale do Paraíba, Litoral Norte (Ilhabela, São Sebastião, Caraguatatuba e Ubatuba), Região Bragantina, Campos do Jordão e Campinas.</p></details>
+ <details class="fq rv"><summary>Os produtos seguem normas técnicas?<span aria-hidden="true">+</span></summary><p>Sim. Fabricamos conforme as NBR 7199, NBR 10.821 e NBR 15.575, com serviços segurados e suporte técnico para obras em andamento.</p></details>
+ <details class="fq rv"><summary>Trabalham com arquitetos, construtoras e incorporadoras?<span aria-hidden="true">+</span></summary><p>Sim. Temos atendimento B2B com suporte técnico ao projeto, prazos definidos e fornecimento para obras de todos os portes.</p></details>
+ </div>
+</div></section>
+
 <section id="contato" class="contact"><div class="wrap two" style="align-items:start">
  <div class="rv"><span class="tag">Contato</span><h2>Vamos tirar o seu projeto <em>do papel?</em></h2>
   <p class="lead">Conte o que você precisa. Um especialista responde pelo WhatsApp com a sua cotação.</p>
@@ -449,6 +504,21 @@ input:focus,select:focus{outline:none;border-color:var(--gold)}
  </form>
 </div></section>
 </main>
+
+<section id="onde" class="map"><div class="wrap">
+ <div class="head rv"><span class="tag">Onde estamos</span><h2>Venha conhecer <em>a nossa fábrica.</em></h2><p class="lead">Fabricação própria em São José dos Campos, com atendimento em todo o Vale do Paraíba, Litoral Norte, Região Bragantina e Campinas.</p></div>
+ <div class="mapgrid rv">
+  <div class="mapcard">
+   <b>Esquadriplan Esquadrias em Alumínio e Vidros</b>
+   <p>R. Viseu, 252 - Chácaras Reunidas, São José dos Campos - SP, 12238-550</p>
+   <ul><li><b>Segunda a sexta</b> 8h às 18h</li><li><b>Sábado</b> 8h às 12h</li></ul>
+   <div class="acts2"><a class="btn p" href="https://maps.app.goo.gl/Gwo59beXFnNG6jqi9" target="_blank" rel="noopener">Como chegar</a><a class="btn g" href="https://wa.me/5512997847095?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20%C3%A0%20Esquadriplan." target="_blank" rel="noopener">Agendar visita</a></div>
+  </div>
+  <div class="mapframe"><iframe title="Mapa: Esquadriplan em São José dos Campos" src="https://www.google.com/maps?q=R.%20Viseu%2C%20252%20-%20Ch%C3%A1caras%20Reunidas%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012238-550&z=16&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+ </div>
+</div></section>
+
+<div class="lb" id="lb" hidden><button class="lbx" id="lbx" aria-label="Fechar">✕</button><img id="lbi" alt=""><p id="lbc"></p></div>
 
 <footer class="ft">
  <div class="wrap">
@@ -625,6 +695,25 @@ const tabs=[...document.querySelectorAll('.tabs [role=tab]')];
 function sel(b){tabs.forEach(x=>{const on=x===b;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;$('t'+x.dataset.t).hidden=!on;if(on)$('t'+x.dataset.t).classList.add('in')});if(b.dataset.t==='c')cc()}
 tabs.forEach((b,i)=>{b.onclick=()=>sel(b);b.onkeydown=e=>{const d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(d){const n=tabs[(i+d+tabs.length)%tabs.length];sel(n);n.focus()}}});
 
+
+/* carrossel */
+(()=>{const S=[...document.querySelectorAll('#slides .sl')],D=document.getElementById('sdots');let i=0,t;const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+S.forEach((_,k)=>{const b=document.createElement('button');b.role='tab';b.setAttribute('aria-label','Ir para o slide '+(k+1));b.onclick=()=>go(k,true);D.appendChild(b)});
+const go=(n,user)=>{i=(n+S.length)%S.length;S.forEach((s,k)=>{s.classList.toggle('on',k===i);s.setAttribute('aria-hidden',k!==i);D.children[k].setAttribute('aria-selected',k===i)});if(user)play()};
+const play=()=>{clearInterval(t);if(!rm)t=setInterval(()=>go(i+1),6500)};
+document.getElementById('sprev').onclick=()=>go(i-1,true);document.getElementById('snext').onclick=()=>go(i+1,true);
+const c=document.getElementById('destaques');c.addEventListener('mouseenter',()=>clearInterval(t));c.addEventListener('mouseleave',play);
+c.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')go(i-1,true);if(e.key==='ArrowRight')go(i+1,true)});
+let x0=null;c.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});c.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>50)go(i+(dx<0?1:-1),true);x0=null});
+go(0);play();})();
+/* lightbox da galeria */
+(()=>{const lb=document.getElementById('lb'),im=document.getElementById('lbi'),cap=document.getElementById('lbc');
+document.querySelectorAll('.gal figure').forEach(f=>{f.tabIndex=0;f.setAttribute('role','button');const open=()=>{const bg=getComputedStyle(f).backgroundImage.match(/url\("?([^")]+)"?\)/);if(!bg)return;im.src=bg[1];cap.textContent=f.querySelector('figcaption').textContent;lb.hidden=false;document.body.style.overflow='hidden'};f.onclick=open;f.onkeydown=e=>(e.key==='Enter'||e.key===' ')&&(e.preventDefault(),open())});
+const close=()=>{lb.hidden=true;document.body.style.overflow=''};document.getElementById('lbx').onclick=close;lb.onclick=e=>{if(e.target===lb)close()};addEventListener('keydown',e=>e.key==='Escape'&&!lb.hidden&&close());})();
+
+/* menu ativo */
+(()=>{const links=[...document.querySelectorAll('#nv ul a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const spy=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}}),{rootMargin:'-40% 0px -55% 0px'});secs.forEach(x=>spy.observe(x));})();
 </script>
 </body>
 </html>
