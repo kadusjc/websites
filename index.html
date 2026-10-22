@@ -729,6 +729,7 @@ dialog.privacy{width:min(760px,100% - 24px);height:auto;max-height:min(86vh,900p
 <script>
 const WA='5512991359134';
 const P=[
+ ["aparas","Aparas do Vale","Indústria","Landing page para gerenciamento de resíduos, trituração de documentos e locação de caçambas em São José dos Campos, com galeria real da operação, quiz de serviço e orçamento no WhatsApp.",["Galeria","Quiz","WhatsApp"]],
  ["esquadriplan","Esquadrias de Alumínio","Indústria","Site institucional para apresentar a empresa e suas criações em esquadrias de alumínio, guarda-corpos, sacadas e fachadas de vidro.",["Orçamento", "Whatsapp", "Indústria"]],
  ["decarlo","Decarlo Industrial","Indústria","Site institucional para apresentar a nova fase da Decarlo, valorizar sua história e conectar a equipe ao público.",["Identidade","Indústria","Nova fase"]],
  ["vida-nova","Vida Nova Design","Varejo","Loja de móveis em Jacareí com galeria de ambientes, simulador 'qual sofá cabe na sua sala' e pedido de orçamento montado direto no WhatsApp.",["Simulador","Galeria","WhatsApp"]],
@@ -759,7 +760,7 @@ const names=['Sites institucionais','Landing pages','SEO técnico','Agentes de I
 $('#marq').innerHTML=names+names;
 
 /* hero rotator */
-const HERO=['decarlo', 'esquadriplan', 'vida-nova','aderic','osawa','ribeiro','gml','central-villa-branca','vertice','hudson','bemtevi'];
+const HERO=['aparas','decarlo', 'esquadriplan', 'vida-nova','aderic','osawa','ribeiro','gml','central-villa-branca','vertice','hudson','bemtevi'];
 const vpD=$('#vpD'),vpM=$('#vpM'),chip=$('#chipName');
 HERO.forEach((d,i)=>{const n=P.find(p=>p[0]===d)[1];
  vpD.insertAdjacentHTML('beforeend',`<img src="img/shots/${d}-d.webp" alt="Site ${n}" ${i?'loading="lazy"':'fetchpriority="high"'} class="${i?'':'on'}">`);
