@@ -6,7 +6,7 @@
 <title>Aderic Comercial · Limpeza, Higiene e Construção no Jaguaré desde 2001</title>
 <meta name="description" content="Distribuidora de produtos de limpeza, galões de 5L, álcool gel e líquido 70%, higiene pessoal e material de construção em São Paulo desde 2001. Monte seu orçamento e peça no WhatsApp.">
 <link rel="canonical" href="https://adericcomercial.com.br/">
-<meta name="theme-color" content="#09090b">
+<meta name="theme-color" content="#f8fafc">
 
 <!-- Open Graph / Redes Sociais -->
 <meta property="og:type" content="website">
@@ -21,7 +21,7 @@
 <meta name="twitter:image" content="images/fachada.webp">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="images/logo-white.svg">
+<link rel="apple-touch-icon" href="images/logo.svg">
 
 <!-- Fontes do Google -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,36 +76,37 @@
 
 <style>
 :root {
-  /* Identidade Visual: Preto, Branco e Vermelho */
-  --ink: #09090b;           /* Preto profundo */
-  --ink-soft: #121215;      /* Preto suave */
-  --surface: #18181b;       /* Superfície escura */
-  --surface-elevated: #242429;
+  /* Identidade Visual Claro: Frescor e Limpeza */
+  --ink: #0f172a;           /* Texto escuro legível */
+  --ink-soft: #334155;      /* Texto secundário */
+  --surface: #ffffff;       /* Superfície branca limpa */
+  --surface-elevated: #f8fafc;
+  --bg-clean: #f1f5f9;      /* Fundo suave refrescante */
   
   --red: #e11d48;           /* Vermelho vibrante Aderic */
   --red-hover: #f43f5e;     /* Vermelho hover */
   --red-dark: #be123c;
-  --red-glow: rgba(225, 29, 72, 0.45);
-  --red-subtle: rgba(225, 29, 72, 0.12);
-  --red-border: rgba(225, 29, 72, 0.35);
+  --red-glow: rgba(225, 29, 72, 0.2);
+  --red-subtle: rgba(225, 29, 72, 0.08);
+  --red-border: rgba(225, 29, 72, 0.25);
   
-  --border: rgba(255, 255, 255, 0.12);
-  --border-strong: rgba(255, 255, 255, 0.28);
-  --border-light: rgba(0, 0, 0, 0.1);
+  --border: rgba(15, 23, 42, 0.08);
+  --border-strong: rgba(15, 23, 42, 0.16);
+  --border-light: rgba(0, 0, 0, 0.06);
   
   --paper: #ffffff;         /* Branco puro */
-  --paper-soft: #f4f4f5;
-  --paper-ink: #09090b;
-  --paper-muted: #52525b;
-  --mute: #a1a1aa;
-  --mute-dark: #71717a;
+  --paper-soft: #f8fafc;
+  --paper-ink: #0f172a;
+  --paper-muted: #64748b;
+  --mute: #64748b;
+  --mute-dark: #94a3b8;
   
   --serif: 'Fraunces', Georgia, serif;
   --sans: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --r: 22px;
   --r-sm: 12px;
-  --shadow-lg: 0 24px 60px -15px rgba(0, 0, 0, 0.7);
-  --shadow-red: 0 12px 36px -8px rgba(225, 29, 72, 0.4);
+  --shadow-lg: 0 20px 40px -12px rgba(15, 23, 42, 0.08);
+  --shadow-red: 0 10px 28px -6px rgba(225, 29, 72, 0.35);
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -119,8 +120,8 @@ html {
 
 body {
   font-family: var(--sans);
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--paper-soft);
+  color: var(--ink);
   line-height: 1.6;
   overflow-x: hidden;
   padding-bottom: env(safe-area-inset-bottom);
@@ -148,6 +149,7 @@ h1, h2, h3, h4 {
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.02em;
+  color: var(--ink);
 }
 
 h1 { font-size: clamp(2.6rem, 6.4vw, 5.2rem); }
@@ -155,9 +157,9 @@ h2 { font-size: clamp(2rem, 4.2vw, 3.2rem); }
 h3 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
 em {
   font-style: italic;
-  color: #ff3b5c;
+  color: var(--red);
   text-decoration: underline;
-  text-decoration-color: rgba(225, 29, 72, 0.5);
+  text-decoration-color: rgba(225, 29, 72, 0.3);
   text-underline-offset: 4px;
 }
 
@@ -185,40 +187,41 @@ em {
 .btn.p:hover {
   transform: translateY(-2px) scale(1.02);
   background: var(--red-hover);
-  box-shadow: 0 16px 40px -8px rgba(225, 29, 72, 0.65);
+  box-shadow: 0 16px 36px -8px rgba(225, 29, 72, 0.5);
 }
 
 .btn.w-btn {
   background: #ffffff;
-  color: #09090b;
-  box-shadow: 0 8px 24px -6px rgba(255, 255, 255, 0.3);
+  color: var(--ink);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border);
 }
 .btn.w-btn:hover {
-  background: #f4f4f5;
+  background: #f8fafc;
   transform: translateY(-2px);
 }
 
 .btn.g {
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid var(--border-strong);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
 }
 .btn.g:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.65);
+  background: #ffffff;
+  border-color: var(--ink);
   transform: translateY(-2px);
 }
 
 .btn.wa {
   background: #25d366;
   color: #ffffff;
-  box-shadow: 0 10px 30px -8px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 8px 24px -6px rgba(37, 211, 102, 0.35);
 }
 .btn.wa:hover {
   background: #20ba59;
   transform: translateY(-2px);
-  box-shadow: 0 14px 34px -6px rgba(37, 211, 102, 0.55);
+  box-shadow: 0 12px 30px -6px rgba(37, 211, 102, 0.5);
 }
 
 .pill-tag {
@@ -229,7 +232,7 @@ em {
   border-radius: 99px;
   background: var(--red-subtle);
   border: 1px solid var(--red-border);
-  color: #ff4d6d;
+  color: var(--red);
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -252,11 +255,11 @@ header {
 }
 
 header.s {
-  background: rgba(9, 9, 11, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
-  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.06);
+  border-bottom-color: var(--border);
 }
 
 header .w {
@@ -274,7 +277,7 @@ header .w {
 }
 
 .brand-logo-img {
-  height: 38px;
+  height: 78px;
   width: auto;
   object-fit: contain;
   transition: transform 0.25s;
@@ -289,7 +292,7 @@ nav.desk {
   gap: 28px;
   font-weight: 600;
   font-size: 0.93rem;
-  color: var(--mute);
+  color: var(--ink-soft);
 }
 nav.desk a {
   position: relative;
@@ -307,7 +310,7 @@ nav.desk a::after {
   transition: width 0.25s var(--ease);
 }
 nav.desk a:hover {
-  color: #ffffff;
+  color: var(--red);
 }
 nav.desk a:hover::after {
   width: 100%;
@@ -330,9 +333,9 @@ header .btn {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: var(--paper);
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--border);
+  color: var(--ink);
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -361,7 +364,7 @@ header .btn {
 .mobile-nav {
   position: fixed;
   inset: 0;
-  background: rgba(9, 9, 11, 0.98);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   z-index: 75;
@@ -388,8 +391,8 @@ header .btn {
   font-family: var(--serif);
   font-size: 1.8rem;
   font-weight: 500;
-  color: var(--paper);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
   padding-bottom: 12px;
   display: flex;
   justify-content: space-between;
@@ -412,9 +415,9 @@ header .btn {
   padding: calc(130px + env(safe-area-inset-top)) 0 80px;
   overflow: hidden;
   background:
-    radial-gradient(1000px 700px at 85% 20%, rgba(225, 29, 72, 0.12) 0, transparent 75%),
-    radial-gradient(800px 600px at 0% 100%, rgba(255, 255, 255, 0.03) 0, transparent 70%),
-    linear-gradient(180deg, var(--ink) 0%, var(--ink-soft) 100%);
+    radial-gradient(1000px 700px at 85% 20%, rgba(225, 29, 72, 0.05) 0, transparent 75%),
+    radial-gradient(800px 600px at 0% 100%, rgba(14, 165, 233, 0.06) 0, transparent 70%),
+    linear-gradient(180deg, #ffffff 0%, var(--bg-clean) 100%);
 }
 
 .hero .w {
@@ -433,14 +436,14 @@ header .btn {
 .hero h1 span {
   display: block;
   font-style: italic;
-  color: #ff3b5c;
+  color: var(--red);
   font-weight: 400;
 }
 
 .hero p.lead {
   margin: 24px 0 32px;
   font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-  color: #d4d4d8;
+  color: var(--ink-soft);
   line-height: 1.6;
 }
 
@@ -469,7 +472,7 @@ header .btn {
 .stat-item b {
   font-family: var(--serif);
   font-size: clamp(2.2rem, 3.8vw, 3rem);
-  color: #ffffff;
+  color: var(--ink);
   line-height: 1;
 }
 .stat-item.red-stat b {
@@ -489,14 +492,15 @@ header .btn {
   margin-top: 18px;
   padding: 6px 14px;
   border-radius: 99px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #ffffff;
+  border: 1px solid var(--border);
   font-size: 0.82rem;
   color: var(--mute);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   cursor: default;
 }
 .bubble-game-pill b {
-  color: #ff4d6d;
+  color: var(--red);
 }
 
 /* ==================== BOLHAS DE SABÃO INTERATIVAS ==================== */
@@ -512,19 +516,18 @@ header .btn {
   border-radius: 50%;
   cursor: pointer;
   pointer-events: auto;
-  /* Reflexo Furta-cor / Filme de Sabão Realista */
   background:
-    radial-gradient(circle at 28% 26%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.4) 14%, transparent 35%),
-    radial-gradient(circle at 72% 76%, rgba(225, 29, 72, 0.35) 0%, rgba(100, 180, 255, 0.22) 40%, transparent 68%),
-    radial-gradient(circle, transparent 48%, rgba(255, 255, 255, 0.25) 90%, rgba(255, 255, 255, 0.7) 100%);
-  border: 1.2px solid rgba(255, 255, 255, 0.45);
+    radial-gradient(circle at 28% 26%, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.6) 14%, transparent 35%),
+    radial-gradient(circle at 72% 76%, rgba(225, 29, 72, 0.25) 0%, rgba(56, 189, 248, 0.25) 40%, transparent 68%),
+    radial-gradient(circle, transparent 48%, rgba(255, 255, 255, 0.4) 90%, rgba(255, 255, 255, 0.8) 100%);
+  border: 1.2px solid rgba(255, 255, 255, 0.8);
   animation: floatBubble linear forwards;
   transition: transform 0.25s, opacity 0.25s;
-  box-shadow: inset 0 0 14px rgba(255, 255, 255, 0.25), 0 6px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 14px rgba(255, 255, 255, 0.5), 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 .bub:hover {
   transform: scale(1.1);
-  border-color: rgba(225, 29, 72, 0.8);
+  border-color: rgba(225, 29, 72, 0.6);
 }
 .bub.pop {
   transform: scale(1.6) !important;
@@ -535,7 +538,7 @@ header .btn {
 .droplet {
   position: absolute;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(14, 165, 233, 0.6);
   pointer-events: none;
   animation: dropletFly 0.32s ease-out forwards;
 }
@@ -555,24 +558,22 @@ header .btn {
   position: relative;
   border-radius: var(--r);
   overflow: hidden;
-  border: 1px solid var(--border-strong);
-  background: rgba(24, 24, 27, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  background: #ffffff;
   box-shadow: var(--shadow-lg);
   transition: transform 0.35s var(--ease), box-shadow 0.35s, border-color 0.35s;
 }
 .hero-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 35px 80px -20px rgba(0, 0, 0, 0.9);
-  border-color: var(--red);
+  box-shadow: 0 28px 60px -15px rgba(0, 0, 0, 0.12);
+  border-color: var(--red-border);
 }
 
 .hero-card-media {
   position: relative;
   aspect-ratio: 16/11;
   overflow: hidden;
-  background: #18181b;
+  background: #f1f5f9;
 }
 .hero-card-media img {
   width: 100%;
@@ -588,25 +589,26 @@ header .btn {
   position: absolute;
   top: 14px;
   left: 14px;
-  background: rgba(9, 9, 11, 0.88);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
   padding: 6px 12px;
   border-radius: 99px;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--ink);
+  border: 1px solid var(--border);
   display: flex;
   align-items: center;
   gap: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 .hero-card-badge::before {
   content: '';
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #4ade80;
-  box-shadow: 0 0 8px #4ade80;
+  background: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
 }
 
 .hero-card-body {
@@ -617,7 +619,7 @@ header .btn {
 .hero-card-body b {
   font-family: var(--serif);
   font-size: 1.3rem;
-  color: var(--paper);
+  color: var(--ink);
 }
 .hero-card-body p {
   font-size: 0.88rem;
@@ -639,7 +641,7 @@ header .btn {
   text-underline-offset: 3px;
 }
 .hero-card-footer a:hover {
-  color: #ffffff;
+  color: var(--ink);
 }
 
 /* ==================== MARQUEE ==================== */
@@ -653,7 +655,7 @@ header .btn {
   margin: -10px 0;
   position: relative;
   z-index: 5;
-  box-shadow: 0 10px 30px rgba(225, 29, 72, 0.35);
+  box-shadow: 0 10px 25px rgba(225, 29, 72, 0.25);
 }
 .mq-track {
   display: inline-block;
@@ -673,8 +675,8 @@ header .btn {
 
 /* ==================== SOBRE NÓS ==================== */
 .about {
-  background: var(--paper);
-  color: var(--paper-ink);
+  background: #ffffff;
+  color: var(--ink);
   position: relative;
 }
 .about .g {
@@ -689,7 +691,7 @@ header .btn {
 }
 .about p.desc {
   font-size: 1.12rem;
-  color: var(--paper-muted);
+  color: var(--ink-soft);
   margin: 20px 0 28px;
   line-height: 1.7;
 }
@@ -702,17 +704,17 @@ header .btn {
   margin-top: 30px;
 }
 .pillar-card {
-  background: #ffffff;
-  border: 1px solid var(--border-light);
+  background: var(--bg-clean);
+  border: 1px solid var(--border);
   border-radius: var(--r-sm);
   padding: 18px 16px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
 .pillar-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px -10px rgba(225, 29, 72, 0.15);
+  box-shadow: 0 10px 24px -8px rgba(225, 29, 72, 0.12);
   border-color: var(--red);
+  background: #ffffff;
 }
 .pillar-card small {
   display: block;
@@ -725,7 +727,7 @@ header .btn {
 }
 .pillar-card b {
   font-size: 0.95rem;
-  color: var(--paper-ink);
+  color: var(--ink);
   line-height: 1.4;
   display: block;
 }
@@ -736,8 +738,8 @@ header .btn {
 .about-img-frame {
   border-radius: var(--r);
   overflow: hidden;
-  box-shadow: 0 28px 70px -15px rgba(0, 0, 0, 0.2);
-  border: 4px solid #09090b;
+  box-shadow: var(--shadow-lg);
+  border: 4px solid #ffffff;
   aspect-ratio: 4/3;
   position: relative;
 }
@@ -751,15 +753,15 @@ header .btn {
   position: absolute;
   bottom: -20px;
   left: 20px;
-  background: #09090b;
-  color: #ffffff;
+  background: #ffffff;
+  color: var(--ink);
   padding: 14px 20px;
   border-radius: var(--r-sm);
-  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.12);
   display: flex;
   align-items: center;
   gap: 14px;
-  border: 1px solid var(--red-border);
+  border: 1px solid var(--border);
 }
 .about-floating-pill b {
   font-family: var(--serif);
@@ -778,7 +780,7 @@ header .btn {
   margin-top: 36px;
 }
 .nums div {
-  border-top: 2px solid #09090b;
+  border-top: 2px solid var(--ink);
   padding-top: 14px;
   display: flex;
   justify-content: space-between;
@@ -793,7 +795,7 @@ header .btn {
 }
 .nums span {
   text-align: right;
-  color: var(--paper-muted);
+  color: var(--ink-soft);
   font-size: 0.94rem;
   font-weight: 600;
   max-width: 20ch;
@@ -801,14 +803,14 @@ header .btn {
 
 /* ==================== BENTO GRID CATEGORIAS ==================== */
 .categories {
-  background: var(--ink);
+  background: var(--bg-clean);
   position: relative;
 }
 .section-head {
   max-width: 720px;
 }
 .section-head p {
-  color: var(--mute);
+  color: var(--ink-soft);
   margin-top: 12px;
   font-size: 1.1rem;
 }
@@ -831,12 +833,12 @@ header .btn {
   padding: 34px;
   border: 1px solid var(--border);
   transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.3s;
-  background-color: var(--surface);
+  background-color: #ffffff;
   text-decoration: none;
 }
 .c:hover {
   transform: translateY(-6px);
-  box-shadow: 0 25px 60px -15px rgba(225, 29, 72, 0.25);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
   border-color: var(--red);
 }
 
@@ -860,7 +862,7 @@ header .btn {
   inset: 0;
   z-index: 2;
   transition: opacity 0.3s;
-  background: linear-gradient(180deg, rgba(9, 9, 11, 0.25) 0%, rgba(9, 9, 11, 0.88) 60%, #09090b 100%);
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.75) 60%, rgba(15, 23, 42, 0.92) 100%);
 }
 
 .c-content {
@@ -883,12 +885,13 @@ header .btn {
 .c h3 {
   font-size: clamp(1.8rem, 2.6vw, 2.4rem);
   margin-bottom: 8px;
+  color: #ffffff;
 }
 .c p {
   font-size: 0.95rem;
   line-height: 1.5;
   max-width: 44ch;
-  color: #e4e4e7;
+  color: #f1f5f9;
 }
 
 .c1 { grid-column: span 7; }
@@ -898,7 +901,7 @@ header .btn {
 
 /* ==================== MONTADOR DE ORÇAMENTO ==================== */
 .quote-sec {
-  background: linear-gradient(180deg, var(--ink) 0%, var(--ink-soft) 50%, var(--ink) 100%);
+  background: #ffffff;
   position: relative;
 }
 
@@ -910,12 +913,10 @@ header .btn {
 }
 
 .panel {
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--bg-clean);
   border: 1px solid var(--border);
   border-radius: var(--r);
   padding: 32px;
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
 }
 .panel h3 {
   font-size: 1.5rem;
@@ -939,7 +940,7 @@ header .btn {
 }
 .cat-group small {
   display: block;
-  color: #ff4d6d;
+  color: var(--red);
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 0.86rem;
@@ -953,9 +954,9 @@ header .btn {
   gap: 9px;
 }
 .chip {
-  border: 1.5px solid rgba(255, 255, 255, 0.18);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--paper);
+  border: 1.5px solid var(--border-strong);
+  background: #ffffff;
+  color: var(--ink);
   padding: 0.55rem 1rem;
   border-radius: 99px;
   font-weight: 600;
@@ -968,7 +969,7 @@ header .btn {
 }
 .chip:hover {
   border-color: var(--red);
-  color: #ffffff;
+  color: var(--red);
   background: var(--red-subtle);
 }
 .chip.on {
@@ -976,12 +977,14 @@ header .btn {
   color: #ffffff;
   border-color: var(--red);
   font-weight: 700;
-  box-shadow: 0 4px 18px rgba(225, 29, 72, 0.45);
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.3);
 }
 
 .cart-panel {
   display: flex;
   flex-direction: column;
+  background: #ffffff;
+  box-shadow: var(--shadow-lg);
 }
 .cart-list {
   list-style: none;
@@ -991,7 +994,7 @@ header .btn {
   padding-right: 6px;
 }
 .cart-list::-webkit-scrollbar { width: 5px; }
-.cart-list::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); border-radius: 4px; }
+.cart-list::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.15); border-radius: 4px; }
 
 .cart-list li {
   display: flex;
@@ -1020,9 +1023,9 @@ header .btn {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--paper);
+  border: 1.5px solid var(--border-strong);
+  background: #ffffff;
+  color: var(--ink);
   font-size: 1.1rem;
   cursor: pointer;
   display: grid;
@@ -1038,7 +1041,7 @@ header .btn {
   min-width: 24px;
   text-align: center;
   font-size: 1rem;
-  color: #ff4d6d;
+  color: var(--red);
   font-weight: 800;
 }
 
@@ -1047,8 +1050,8 @@ header .btn {
   margin-top: 18px;
   padding: 0.95rem 1.2rem;
   border-radius: var(--r-sm);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
-  background: rgba(0, 0, 0, 0.4);
+  border: 1.5px solid var(--border-strong);
+  background: #ffffff;
   color: inherit;
   font-family: inherit;
   font-size: 0.95rem;
@@ -1057,7 +1060,7 @@ header .btn {
 .input-field:focus {
   outline: none;
   border-color: var(--red);
-  background: rgba(0, 0, 0, 0.6);
+  background: #ffffff;
 }
 
 .panel .btn {
@@ -1080,7 +1083,7 @@ header .btn {
   text-align: center;
 }
 .lgpd-microcopy a {
-  color: #ff4d6d;
+  color: var(--red);
   text-decoration: underline;
 }
 
@@ -1097,7 +1100,7 @@ header .btn {
 .how-item b {
   font-family: var(--serif);
   font-size: 1.6rem;
-  color: var(--paper);
+  color: var(--ink);
   display: block;
   margin-bottom: 6px;
 }
@@ -1108,8 +1111,8 @@ header .btn {
 
 /* ==================== FAQ ==================== */
 .faq-sec {
-  background: var(--paper);
-  color: var(--paper-ink);
+  background: var(--bg-clean);
+  color: var(--ink);
 }
 .faq-sec h2 em {
   color: var(--red);
@@ -1120,7 +1123,7 @@ header .btn {
   max-width: 860px;
 }
 details {
-  border-bottom: 1.5px solid var(--border-light);
+  border-bottom: 1.5px solid var(--border);
   padding: 22px 0;
   transition: background 0.2s;
 }
@@ -1148,7 +1151,7 @@ details[open] summary::after {
 }
 details p {
   margin-top: 14px;
-  color: var(--paper-muted);
+  color: var(--ink-soft);
   font-size: 1.02rem;
   line-height: 1.65;
   max-width: 68ch;
@@ -1156,7 +1159,7 @@ details p {
 
 /* ==================== VISITE A LOJA / LOCALIZAÇÃO ==================== */
 .visit {
-  background: var(--ink);
+  background: #ffffff;
   position: relative;
 }
 .visit .g {
@@ -1167,7 +1170,7 @@ details p {
 }
 
 .info-box {
-  background: var(--surface);
+  background: var(--bg-clean);
   border: 1px solid var(--border);
   border-radius: var(--r);
   padding: 30px;
@@ -1188,16 +1191,16 @@ details p {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #71717a;
+  background: #94a3b8;
   flex-shrink: 0;
 }
 .dot.o {
-  background: #4ade80;
-  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+  background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
   animation: pulseDot 2s infinite;
 }
 @keyframes pulseDot {
-  70% { box-shadow: 0 0 0 12px rgba(74, 222, 128, 0); }
+  70% { box-shadow: 0 0 0 12px rgba(34, 197, 94, 0); }
 }
 
 .info-item {
@@ -1217,7 +1220,7 @@ details p {
 }
 .info-item b {
   font-size: 1.05rem;
-  color: var(--paper);
+  color: var(--ink);
 }
 .info-item a:hover b {
   color: var(--red);
@@ -1232,11 +1235,11 @@ details p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: #ffffff;
+  border: 1px solid var(--border);
   display: grid;
   place-items: center;
-  color: var(--paper);
+  color: var(--ink);
   transition: all 0.25s;
 }
 .social-icon:hover {
@@ -1251,7 +1254,7 @@ details p {
   border-radius: var(--r);
   overflow: hidden;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--bg-clean);
   min-height: 400px;
   position: relative;
   box-shadow: var(--shadow-lg);
@@ -1268,8 +1271,8 @@ details p {
 .cta-sec {
   text-align: center;
   background:
-    radial-gradient(800px 500px at 50% 0%, rgba(225, 29, 72, 0.18) 0%, transparent 70%),
-    linear-gradient(180deg, var(--ink-soft) 0%, var(--ink) 100%);
+    radial-gradient(800px 500px at 50% 0%, rgba(225, 29, 72, 0.06) 0%, transparent 70%),
+    linear-gradient(180deg, var(--bg-clean) 0%, #ffffff 100%);
   padding: 100px 0;
   border-top: 1px solid var(--border);
 }
@@ -1287,7 +1290,7 @@ details p {
 
 /* ==================== FOOTER ==================== */
 footer {
-  background: #000000;
+  background: #f8fafc;
   border-top: 1px solid var(--border);
   padding: 50px 0 calc(40px + env(safe-area-inset-bottom));
   color: var(--mute);
@@ -1310,7 +1313,7 @@ footer {
 }
 .footer-col h4 {
   font-size: 1rem;
-  color: var(--paper);
+  color: var(--ink);
   margin-bottom: 16px;
   font-family: var(--sans);
   font-weight: 700;
@@ -1355,12 +1358,12 @@ footer {
   background: #25d366;
   display: grid;
   place-items: center;
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
   transition: transform 0.25s var(--ease), box-shadow 0.25s;
 }
 .fab:hover {
   transform: scale(1.1) rotate(-6deg);
-  box-shadow: 0 18px 40px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 14px 30px rgba(37, 211, 102, 0.55);
 }
 .fab svg {
   width: 34px;
@@ -1377,12 +1380,12 @@ footer {
   width: min(450px, calc(100% - 36px));
   padding: 22px 24px;
   border-radius: var(--r);
-  background: rgba(18, 18, 21, 0.96);
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  color: var(--paper);
-  border: 1px solid var(--border-strong);
-  box-shadow: 0 24px 60px -15px rgba(0, 0, 0, 0.8);
+  color: var(--ink);
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.12);
   display: grid;
   gap: 14px;
   font-size: 0.9rem;
@@ -1396,16 +1399,16 @@ footer {
   display: block;
   font-family: var(--serif);
   font-size: 1.15rem;
-  color: #ffffff;
+  color: var(--ink);
   margin-bottom: 2px;
 }
 .lgpd-banner p {
-  color: #d4d4d8;
+  color: var(--ink-soft);
   margin: 0;
   font-size: 0.88rem;
 }
 .lgpd-banner a {
-  color: #ff4d6d;
+  color: var(--red);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -1433,7 +1436,7 @@ footer {
   margin-left: auto;
 }
 .lgpd-link-btn:hover {
-  color: var(--paper);
+  color: var(--ink);
 }
 
 @keyframes lgpdSlideIn {
@@ -1447,15 +1450,15 @@ footer {
   max-height: min(86vh, 880px);
   margin: auto;
   padding: 0;
-  border: 1px solid var(--border-strong);
+  border: 1px solid var(--border);
   border-radius: var(--r);
   background: var(--paper);
   color: var(--paper-ink);
-  box-shadow: 0 60px 140px -40px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 .privacy::backdrop {
-  background: rgba(0, 0, 0, 0.82);
+  background: rgba(15, 23, 42, 0.4);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -1648,7 +1651,7 @@ footer {
 <header id="hd">
   <div class="w">
     <a href="#top" class="brand" aria-label="Aderic Comercial - Início">
-      <img src="images/logo-white.svg" alt="Aderic Comercial - Desde 2001" width="168" height="42" class="brand-logo-img">
+      <img src="images/logo-dark.svg" alt="Aderic Comercial - Desde 2001" width="168" height="42" class="brand-logo-img">
     </a>
 
     <nav class="desk" aria-label="Navegação principal">
@@ -1766,7 +1769,7 @@ footer {
   <section class="about" id="sobre">
     <div class="w g">
       <div class="rv">
-        <span class="pill-tag" style="background:var(--red-subtle);border-color:var(--red-border);color:var(--red);">Nossa História</span>
+        <span class="pill-tag">Nossa História</span>
         <h2 style="margin-top:14px;">Distribuidora de verdade, <em>do tamanho do seu bolso.</em></h2>
         <p class="desc">
           No mercado desde 2001, a <strong>Aderic Comercial</strong> abastece casas, condomínios, clínicas, comércios e obras em São Paulo. Focamos no que realmente importa: produtos de alto rendimento, atendimento direto de balcão e preços que cabem confortavelmente no orçamento mensal.
@@ -1933,7 +1936,7 @@ footer {
   <section class="faq-sec" id="faq">
     <div class="w">
       <div class="section-head rv">
-        <span class="pill-tag" style="background:var(--red-subtle);border-color:var(--red-border);color:var(--red);">Tire suas Dúvidas</span>
+        <span class="pill-tag">Tire suas Dúvidas</span>
         <h2 style="margin-top:14px;">Perguntas <em>frequentes.</em></h2>
       </div>
 
@@ -2065,7 +2068,7 @@ footer {
   <div class="w">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="images/logo-white.svg" alt="Aderic Comercial" width="160" height="40">
+        <img src="images/logo.svg" alt="Aderic Comercial" width="160" height="40">
         <p>Distribuidora de produtos de limpeza, álcool 70%, higiene pessoal e materiais de acabamento e construção em São Paulo desde 2001. Tradição, qualidade e economia para o seu mês.</p>
       </div>
 
@@ -2085,7 +2088,7 @@ footer {
         <h4>Loja & Contato</h4>
         <p style="margin-bottom:8px;">Rua Cangati, 131 · Jaguaré<br>São Paulo – SP · CEP 05343-050</p>
         <p style="margin-bottom:8px;">WhatsApp: (11) 94585-5014<br>Telefone: (11) 3714-4134</p>
-        <p><a href="#privacidade" data-privacy style="color:#ff4d6d;font-weight:700;text-decoration:underline;">Privacidade e Cookies (LGPD)</a></p>
+        <p><a href="#privacidade" data-privacy style="color:var(--red);font-weight:700;text-decoration:underline;">Privacidade e Cookies (LGPD)</a></p>
       </div>
     </div>
 
@@ -2122,7 +2125,7 @@ footer {
     <button class="privacy-close" id="privacyClose" aria-label="Fechar política de privacidade">×</button>
   </div>
   <div class="privacy-body">
-    <p style="font-size:0.82rem;color:var(--mute-dark);margin-bottom:16px;">
+    <p style="font-size:0.82rem;color:var(--mute);margin-bottom:16px;">
       Última atualização: Outubro de 2026 · Em total conformidade com a Lei Federal nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD).
     </p>
 
