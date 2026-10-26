@@ -1,656 +1,464 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPVale Esquadrias · Alumínio e Vidros de Alto Padrão</title>
-    <!-- Tailwind CSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            blue: '#0088cc',
-                            darkblue: '#005599',
-                            navy: '#0f172a',
-                            slate: '#1e293b',
-                            accent: '#38bdf8'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #0f172a;
-        }
-        .gradient-text {
-            background: linear-gradient(135deg, #0088cc 0%, #005599 50%, #0f172a 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-glass {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(226, 232, 240, 0.8);
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CPVale Esquadrias · Alumínio e Vidros de Alto Padrão</title>
+<meta name="description" content="Esquadrias de alumínio e vidros de alto padrão sob medida em Caçapava, São José dos Campos e Vale do Paraíba. Simule seu orçamento online.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
+<style>
+:root{--b:#0088cc;--s:#38bdf8;--k:#000;--g:#f2f5f8;--t:#5b6670;--line:rgba(255,255,255,.14);--d:'Archivo',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font:400 16px/1.65 'Instrument Sans',system-ui,sans-serif;color:#0a0a0a;background:#fff;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--s);outline-offset:3px}
+.lucide{width:20px;height:20px;flex:none}
+.wrap{max-width:1240px;margin:auto;padding:0 24px}
+h1,h2,h3{font-family:var(--d);font-stretch:112%;font-weight:800;line-height:1.02;letter-spacing:-.025em}
+h2{font-size:clamp(2rem,4.4vw,3.6rem)}
+.sec{padding:120px 0}
+.dark{background:var(--k);color:#fff}
+.lt{--line:#dbe2e8}
+.g{background:var(--g)}
+.lead{color:var(--t);max-width:52ch}
+.dark .lead{color:rgba(255,255,255,.66)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:600;border:1px solid transparent;transition:background .25s,color .25s,border-color .25s;cursor:pointer}
+.btn.p{background:var(--b);color:#fff}.btn.p:hover{background:var(--s);color:#000}
+.btn.o{border-color:rgba(255,255,255,.4);color:#fff}.btn.o:hover{background:#fff;color:#000}
+.btn.k{background:#000;color:#fff}.btn.k:hover{background:#fff;color:#000}
+.btn.w{background:#fff;color:#000}.btn.w:hover{background:#000;color:#fff}
+
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:50;background:rgba(0,0,0,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:80px}
+.lg{align-self:flex-start;display:block;margin-top:10px;transition:transform .3s}
+.lg:hover{transform:translateY(3px) scale(1.03)}
+.lg img{height:112px;width:auto;filter:drop-shadow(0 0 10px rgba(56,189,248,.55)) drop-shadow(0 6px 22px rgba(0,136,204,.55))}
+.lg .wm{display:block;color:#fff;padding:26px 0}
+.wm{display:block;color:#0a1830;padding:30px 0}
+.wm{font:800 1.4rem var(--d);letter-spacing:.04em}
+.links a{margin-left:30px;font-size:14px;font-weight:500;opacity:.78;transition:opacity .2s}
+.links a:hover,.links a.hot{opacity:1;color:var(--s)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+#mm{display:none;background:#000;border-top:1px solid var(--line);padding:12px 24px 24px}
+#mm.open{display:block}
+#mm a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font-weight:500}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;padding:150px 0 64px;overflow:hidden;color:#fff;background:#000}
+.sl{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.07);transition:opacity 1.4s}
+.sl.on{opacity:.72;animation:kb 14s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000 4%,rgba(0,0,0,.6) 52%,rgba(0,0,0,.1)),linear-gradient(0deg,#000,transparent 38%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hg{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:end}
+.pill{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;border:1px solid rgba(255,255,255,.28);border-radius:999px;font-size:13px;font-weight:500;background:rgba(0,0,0,.35);animation:up .9s both}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--s);box-shadow:0 0 0 4px rgba(56,189,248,.25)}
+.dot.off{background:#8a949c;box-shadow:none}
+.hero h1{font-size:clamp(2.5rem,6.3vw,5.8rem);max-width:15ch;margin:26px 0 0;animation:up .9s .12s both}
+.dim{display:flex;align-items:center;gap:14px;max-width:440px;height:11px;margin:30px 0;color:var(--s);border-left:1px solid;border-right:1px solid;font-size:13px;font-weight:600;white-space:nowrap;animation:up .9s .24s both}
+.dim b{flex:1;height:1px;background:currentColor}
+.hero p.lead{font-size:1.1rem;color:rgba(255,255,255,.78);animation:up .9s .32s both}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;animation:up .9s .42s both}
+.stats{display:flex;gap:44px;margin-top:48px;padding-top:26px;border-top:1px solid var(--line);animation:up .9s .52s both}
+.stats b{display:block;font:800 1.5rem var(--d);font-stretch:112%}
+.stats span{font-size:13px;color:rgba(255,255,255,.62)}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.cap{border:1px solid var(--line);background:rgba(0,0,0,.5);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);padding:22px;border-radius:6px}
+.cap small{color:var(--s);font-weight:600;font-size:13px}
+.cap h3{font-size:1.35rem;margin:6px 0 18px;line-height:1.15}
+.ctl{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:rgba(255,255,255,.6)}
+.ctl button{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:none;cursor:pointer;display:grid;place-items:center;transition:.2s}
+.ctl button:hover{background:var(--b);border-color:var(--b)}
+
+/* marquee */
+.mq{background:var(--b);color:#fff;overflow:hidden;white-space:nowrap;padding:20px 0;font:700 1.05rem var(--d);font-stretch:112%}
+.mq div{display:inline-block;animation:mq 38s linear infinite}
+.mq span::after{content:"✦";margin:0 28px;opacity:.55}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* sobre */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about h2{margin-bottom:26px}
+.about p{color:var(--t);margin-bottom:16px}
+.about p strong{color:#000}
+.chk{margin-top:28px;display:grid;gap:14px}
+.chk li{display:flex;gap:12px;align-items:flex-start;font-weight:500}
+.chk .lucide{color:var(--b);margin-top:2px}
+.ph{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ph img{height:460px;width:100%;object-fit:cover;border-radius:3px}
+.ph img+img{margin-top:60px}
+
+/* produtos */
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:64px}
+.rows a{display:grid;grid-template-columns:64px 1.1fr 1.5fr 52px;gap:28px;align-items:center;padding:34px 0;border-top:1px solid var(--line);transition:padding .35s,background .35s}
+.rows a:last-child{border-bottom:1px solid var(--line)}
+.rows a:hover{padding-left:20px;background:linear-gradient(90deg,rgba(0,136,204,.12),transparent)}
+.rows .ic{width:56px;height:56px;border:1px solid #c5d0d9;background:#fff;border-radius:50%;display:grid;place-items:center;color:var(--b);transition:.3s}
+.rows h3{font-size:clamp(1.3rem,2.4vw,2rem);line-height:1.1}
+.rows p{color:var(--t);font-size:15px}
+.rows .go{width:52px;height:52px;border-radius:50%;background:#0a1830;color:#fff;display:grid;place-items:center;transition:.3s}
+.rows a:hover .ic{background:var(--b);color:#fff;border-color:var(--b)}
+.rows a:hover .go{background:var(--b);color:#fff}
+
+/* simulador */
+.sim{background:#fff}
+.sim .top{text-align:center;margin:0 auto 56px;max-width:640px}
+.sim .top p{margin:16px auto 0}
+.panel{display:grid;grid-template-columns:1.05fr 1fr;border-radius:10px;overflow:hidden;border:1px solid #e1e8ee;box-shadow:0 40px 90px -35px rgba(10,24,48,.35)}
+.ctrl{background:var(--g);padding:44px;display:grid;gap:28px;align-content:start}
+.ctrl label,.lab{display:block;font-weight:700;font-size:14px;margin-bottom:10px}
+.chips{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.chip{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid #d5dbe1;border-radius:8px;background:#fff;cursor:pointer;font-weight:600;font-size:14px;text-align:left;transition:.2s}
+.chip .lucide{color:var(--b)}
+.chip:hover{border-color:var(--b)}
+.chip.on{background:#000;color:#fff;border-color:#000}
+.chip.on .lucide{color:var(--s)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ctrl input,.ctrl select{width:100%;background:#fff;padding:14px 16px;border:1px solid #d5dbe1;border-radius:8px;background:#fff;font-weight:600;transition:border-color .2s}
+.ctrl input:focus,.ctrl select:focus{outline:0;border-color:var(--b)}
+.pv{background:#000;color:#fff;padding:40px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;background-image:linear-gradient(rgba(0,136,204,.14) 1px,transparent 1px),linear-gradient(90deg,rgba(0,136,204,.14) 1px,transparent 1px);background-size:28px 28px}
+.pv svg{width:100%;height:auto;max-height:260px}
+.pv .ar{font-size:14px;color:rgba(255,255,255,.62)}
+.pv .ar b{color:#fff}
+.price{font:800 clamp(2.2rem,4vw,3.2rem) var(--d);font-stretch:112%;color:var(--s);line-height:1.1;margin:4px 0 6px}
+.pv small{display:block;color:rgba(255,255,255,.5);font-size:12px;margin-bottom:22px}
+.pv .btn{width:100%}
+
+/* galeria */
+.gal{display:grid;grid-template-columns:1.7fr 1fr;grid-template-rows:290px 290px;gap:16px}
+.gal figure{position:relative;overflow:hidden;border-radius:3px;background:#111}
+.gal figure:first-child{grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figure::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent 55%)}
+.gal figcaption{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;color:#fff}
+.gal small{color:var(--s);font-weight:600;font-size:13px}
+.gal h3{font-size:1.3rem;line-height:1.15;margin-top:4px}
+.sec.pad0{padding-bottom:0}
+
+/* depoimentos */
+.dep{display:grid;grid-template-columns:.8fr 1.3fr;gap:80px}
+.stars{display:flex;gap:4px;margin-bottom:24px}
+.stars .lucide{fill:var(--b);stroke:var(--b)}
+blockquote{padding:34px 0;border-top:1px solid var(--line)}
+blockquote:last-child{border-bottom:1px solid var(--line)}
+blockquote p{font-size:1.2rem;line-height:1.55;margin-bottom:22px}
+blockquote:first-child p{font:700 clamp(1.3rem,2.2vw,1.8rem)/1.35 var(--d);font-stretch:106%}
+.who{display:flex;align-items:center;gap:14px;font-size:14px}
+.who i{width:44px;height:44px;border-radius:50%;background:var(--b);color:#fff;display:grid;place-items:center;font:700 14px var(--d);font-style:normal}
+.who span{display:block;color:var(--t);font-size:13px}
+
+/* cta final */
+.fin{background:var(--b);color:#fff;text-align:center;padding:110px 0}
+.fin h2{font-size:clamp(2.2rem,5.4vw,4.6rem);max-width:16ch;margin:0 auto 20px}
+.fin p{opacity:.88;margin-bottom:36px}
+.fin .cta{justify-content:center;margin:0}
+
+/* footer */
+footer{background:#000;color:rgba(255,255,255,.58);font-size:14px;padding:80px 0 30px}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:48px;margin-bottom:56px}
+footer img{height:64px;width:auto;margin-bottom:18px}
+footer h4{color:#fff;font:700 1rem var(--d);margin-bottom:18px}
+footer li{margin-bottom:10px}
+footer a:hover{color:var(--s)}
+footer .ct li{display:flex;gap:10px;align-items:center}
+footer .ct .lucide{color:var(--s);width:18px;height:18px}
+.cp{border-top:1px solid var(--line);padding-top:26px;text-align:center;font-size:13px}
+.fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:60;width:58px;height:58px;border-radius:50%;background:var(--b);color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,136,204,.5);transition:.25s}
+.fab:hover{background:#fff;color:#000}
+.fab .lucide{width:26px;height:26px}
+
+@media(max-width:960px){
+ .links,.nav .btn{display:none}.burger{display:block;color:#fff}
+ .hg,.two,.dep,.panel{grid-template-columns:1fr}
+ .hg{gap:36px}.two,.dep{gap:48px}.sec{padding:84px 0}
+ .head{flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:40px}
+ .rows a{grid-template-columns:56px 1fr 44px;gap:18px}.rows p{grid-column:2/4;grid-row:2}
+ .rows .go{width:44px;height:44px}
+ .lg{margin-top:6px}.lg img{height:84px}
+ .ph img{height:300px}.ph img+img{margin-top:32px}
+ .gal{grid-template-columns:1fr;grid-template-rows:340px 240px 240px}.gal figure:first-child{grid-row:auto}
+ .ctrl,.pv{padding:28px}
+ .fg{grid-template-columns:1fr 1fr}
+ .stats{gap:26px}
+}
+@media(max-width:520px){.fg{grid-template-columns:1fr}.chips,.f2{grid-template-columns:1fr}.cta .btn{width:100%}.dim{font-size:12px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.sl{transform:none}}
+</style>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased selection:bg-brand-blue selection:text-white">
+<body>
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Logo da Empresa com Fallback Inteligente -->
-                <a href="#home" class="flex items-center gap-3 group">
-                    <img src="img/logo.png" 
-                         alt="CPVale Esquadrias de Alumínio e Vidros" 
-                         class="h-23 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-                         onerror="this.style.display='none'; document.getElementById('logo-fallback-header').style.display='flex';">
-                    
-                    
-                </a>
+<header>
+ <div class="wrap nav">
+  <a href="#home" aria-label="CPVale Esquadrias">
+   <img src="img/logo-dark.png" style="width: 90px; height: auto;" alt="CPVale Esquadrias de Alumínio e Vidros" onerror="this.replaceWith(Object.assign(document.createElement('b'),{className:'wm',textContent:'CPVALE'}))">
+  </a>
+  <nav class="links" aria-label="Principal">
+   <a href="#sobre">A CPVale</a><a href="#produtos">Produtos</a><a href="#simulador" class="hot">Simulador</a><a href="#galeria">Projetos</a><a href="#depoimentos">Avaliações</a>
+  </nav>
+  <a class="btn p" href="https://wa.me/5512991488382?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener"><i data-lucide="message-circle"></i>(12) 99148-8382</a>
+  <button class="burger" onclick="document.getElementById('mm').classList.toggle('open')" aria-label="Abrir menu"><i data-lucide="menu"></i></button>
+ </div>
+ <div id="mm" onclick="this.classList.remove('open')">
+  <a href="#sobre">A CPVale</a><a href="#produtos">Produtos</a><a href="#simulador">Simulador de orçamento</a><a href="#galeria">Projetos</a><a href="#depoimentos">Avaliações</a>
+  <a href="https://wa.me/5512991488382" target="_blank" rel="noopener" style="color:var(--s);font-weight:700">Falar no WhatsApp</a>
+ </div>
+</header>
 
-                <!-- Nav Links Desktop -->
-                <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-                    <a href="#home" class="hover:text-brand-blue transition-colors">Início</a>
-                    <a href="#sobre" class="hover:text-brand-blue transition-colors">A CPVale</a>
-                    <a href="#produtos" class="hover:text-brand-blue transition-colors">Produtos</a>
-                    <a href="#simulador" class="hover:text-brand-blue transition-colors text-brand-blue font-bold">Simulador de Orçamento</a>
-                    <a href="#galeria" class="hover:text-brand-blue transition-colors">Projetos</a>
-                    <a href="#depoimentos" class="hover:text-brand-blue transition-colors">Avaliações</a>
-                </nav>
+<section id="home" class="hero">
+ <div id="sls" aria-hidden="true"></div>
+ <div class="wrap hg">
+  <div>
+   <div class="pill"><span class="dot" id="dot"></span><span id="st">Caçapava, SJC e Vale do Paraíba</span></div>
+   <h1>Esquadrias de alumínio e vidros de alto padrão</h1>
+   <div class="dim"><b></b><span>precisão no milímetro</span><b></b></div>
+   <p class="lead">Projetos sob medida para residências sofisticadas e espaços comerciais. Precisão técnica e vedação termoacústica de máxima durabilidade.</p>
+   <div class="cta">
+    <a class="btn p" href="#simulador"><i data-lucide="calculator"></i>Simular orçamento</a>
+    <a class="btn o" href="#galeria"><i data-lucide="image"></i>Ver projetos</a>
+   </div>
+   <div class="stats">
+    <div><b>100%</b><span>Sob medida</span></div>
+    <div><b>Garantia</b><span>Especializada</span></div>
+    <div><b>Premium</b><span>Linhas Gold, Chroma e Suprema</span></div>
+   </div>
+  </div>
+  <div class="cap">
+   <small id="cb">Linha Gold &amp; Premium</small>
+   <h3 id="ct">Portas de correr panorâmicas</h3>
+   <div class="ctl">
+    <button onclick="go(-1)" aria-label="Anterior"><i data-lucide="chevron-left"></i></button>
+    <span id="ci">1 / 3</span>
+    <button onclick="go(1)" aria-label="Próximo"><i data-lucide="chevron-right"></i></button>
+   </div>
+  </div>
+ </div>
+</section>
 
-                <!-- CTA WhatsApp Header -->
-                <div class="hidden sm:flex items-center gap-4">
-                    <a href="https://wa.me/5512991488382?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
-                       target="_blank"
-                       class="flex items-center gap-2 bg-brand-blue hover:bg-brand-darkblue text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-md hover:shadow-lg shadow-brand-blue/20">
-                        <i data-lucide="message-circle" class="w-4 h-4"></i>
-                        <span>(12) 99148-8382</span>
-                    </a>
-                </div>
+<div class="mq" aria-hidden="true"><div id="mq">
+ <span>Linha Gold</span><span>Linha Chroma</span><span>Linha Suprema</span><span>Vidro temperado</span><span>Vidro laminado</span><span>Pintura eletrostática</span><span>Isolamento termoacústico</span><span>Sob medida</span>
+</div></div>
 
-                <!-- Botão Menu Mobile -->
-                <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-700 hover:text-slate-900 focus:outline-none">
-                    <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
-                </button>
-            </div>
-        </div>
+<section id="sobre" class="sec about">
+ <div class="wrap two">
+  <div>
+   <h2>Engenharia de precisão, acabamento impecável.</h2>
+   <p>Sediada em Caçapava para atender São José dos Campos e todo o Vale do Paraíba, a <strong>CPVale Esquadrias</strong> é referência pela precisão técnica e pelo cuidado em cada detalhe.</p>
+   <p>Trabalhamos com as melhores linhas de alumínio (Gold, Chroma, Suprema) e vidros laminados e temperados de máxima resistência. Cada esquadria é executada sob medida, com isolamento termoacústico, estanqueidade e sofisticação arquitetônica.</p>
+   <ul class="chk">
+    <li><i data-lucide="check-circle"></i>Equipe própria de fabricação e instalação altamente qualificada</li>
+    <li><i data-lucide="check-circle"></i>Pintura eletrostática e anodização em diversas cores (preto, amadeirado, inox)</li>
+    <li><i data-lucide="check-circle"></i>Atendimento personalizado do projeto à entrega final</li>
+   </ul>
+  </div>
+  <div class="ph">
+   <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=700&q=80" alt="Fachada em pele de vidro" loading="lazy">
+   <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=700&q=80" alt="Porta integrada automática" loading="lazy">
+  </div>
+ </div>
+</section>
 
-        <!-- Menu Mobile Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-4 shadow-lg">
-            <a href="#home" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-blue font-medium">Início</a>
-            <a href="#sobre" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-blue font-medium">A CPVale</a>
-            <a href="#produtos" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-blue font-medium">Produtos</a>
-            <a href="#simulador" onclick="toggleMobileMenu()" class="block py-2 text-brand-blue font-bold">Simulador de Orçamento</a>
-            <a href="#galeria" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-blue font-medium">Projetos</a>
-            <a href="#depoimentos" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-blue font-medium">Avaliações</a>
-            <a href="https://wa.me/5512991488382?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." 
-               target="_blank"
-               class="flex items-center justify-center gap-2 bg-brand-blue text-white py-3 rounded-xl font-semibold">
-                <i data-lucide="message-circle" class="w-5 h-5"></i>
-                <span>Falar no WhatsApp</span>
-            </a>
-        </div>
-    </header>
+<section id="produtos" class="sec g lt">
+ <div class="wrap">
+  <div class="head">
+   <h2>Soluções completas em alumínio e vidro</h2>
+   <p class="lead">Tecnologia avançada para arquitetos, construtores e proprietários exigentes.</p>
+  </div>
+  <div class="rows">
+   <a href="#simulador"><span class="ic"><i data-lucide="maximize"></i></span><h3>Esquadrias de alumínio</h3><p>Portas e janelas de correr, giro, maxim-ar e integradas automatizadas nas linhas Gold e Suprema.</p><span class="go"><i data-lucide="arrow-up-right"></i></span></a>
+   <a href="#simulador"><span class="ic"><i data-lucide="building-2"></i></span><h3>Pele de vidro e glazing</h3><p>Fachadas estruturais modernas com isolamento acústico superior para prédios e residências de alto padrão.</p><span class="go"><i data-lucide="arrow-up-right"></i></span></a>
+   <a href="#simulador"><span class="ic"><i data-lucide="door-closed"></i></span><h3>Portas pivotantes ACM</h3><p>Portas sociais imponentes com painel em ACM, puxadores em inox sob medida e fechaduras digitais.</p><span class="go"><i data-lucide="arrow-up-right"></i></span></a>
+   <a href="#simulador"><span class="ic"><i data-lucide="sun"></i></span><h3>Envidraçamento de sacadas</h3><p>Cortina de vidro retrátil com vedação contra água e vento para varandas gourmet.</p><span class="go"><i data-lucide="arrow-up-right"></i></span></a>
+   <a href="#simulador"><span class="ic"><i data-lucide="shield"></i></span><h3>Guarda-corpo e corrimão</h3><p>Estruturas em alumínio e vidro temperado autoportante para escadas, mezaninos e varandas.</p><span class="go"><i data-lucide="arrow-up-right"></i></span></a>
+   <a href="#simulador"><span class="ic"><i data-lucide="grid"></i></span><h3>Box e vidros especiais</h3><p>Box até o teto, espelhos bisotados, coberturas de vidro e divisórias de ambientes sob medida.</p><span class="go"><i data-lucide="arrow-up-right"></i></span></a>
+  </div>
+ </div>
+</section>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-16 lg:py-24 bg-white">
-        <!-- Background Decorativo -->
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-50 via-white to-slate-50 pointer-events-none"></div>
-        <div class="absolute -top-40 -right-40 w-96 h-96 bg-brand-blue/10 rounded-full blur-3xl"></div>
+<section id="simulador" class="sec sim">
+ <div class="wrap">
+  <div class="top">
+   <h2>Veja sua esquadria e o valor na hora</h2>
+   <p class="lead">Escolha o produto e informe as medidas. A estimativa segue direto para o nosso WhatsApp.</p>
+  </div>
+  <form class="panel" onsubmit="send(event)">
+   <div class="ctrl">
+    <div>
+     <span class="lab">Produto</span>
+     <div class="chips" id="chips">
+      <button type="button" class="chip on" data-n="Janelas de Correr" data-p="1200" data-d="2"><i data-lucide="app-window"></i>Janelas</button>
+      <button type="button" class="chip" data-n="Portas Panorâmicas" data-p="1800" data-d="3"><i data-lucide="door-closed"></i>Portas</button>
+      <button type="button" class="chip" data-n="Pele de Vidro" data-p="2200" data-d="4"><i data-lucide="building"></i>Fachada de vidro</button>
+      <button type="button" class="chip" data-n="Guarda-Corpo" data-p="1100" data-d="5"><i data-lucide="shield"></i>Guarda-corpo</button>
+     </div>
+    </div>
+    <div class="f2">
+     <div><label for="w">Largura (m)</label><input type="number" id="w" step="0.1" value="2.0" min="0.5" max="20" inputmode="decimal"></div>
+     <div><label for="h">Altura (m)</label><input type="number" id="h" step="0.1" value="1.5" min="0.5" max="10" inputmode="decimal"></div>
+    </div>
+    <div>
+     <label for="c">Acabamento do alumínio</label>
+     <select id="c">
+      <option value="Preto Anodizado / Eletrostático">Preto fosco / anodizado (mais pedido)</option>
+      <option value="Branco Brilho">Branco neve</option>
+      <option value="Cinza Grafite / Inox">Cinza grafite / inox</option>
+      <option value="Amadeirado">Amadeirado especial</option>
+     </select>
+    </div>
+   </div>
+   <div class="pv">
+    <svg id="svg" viewBox="0 0 340 240" role="img" aria-label="Desenho da esquadria nas medidas escolhidas"></svg>
+    <div>
+     <p class="ar">Área total: <b id="ar">3,00 m²</b></p>
+     <p class="price" id="pr">R$ 3.600,00</p>
+     <small>Valor estimado, sujeito a confirmação técnica no local.</small>
+     <button type="submit" class="btn p"><i data-lucide="message-square"></i>Enviar estimativa pelo WhatsApp</button>
+    </div>
+   </div>
+  </form>
+ </div>
+</section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-brand-blue/30 text-brand-blue text-xs md:text-sm font-bold">
-                    <i data-lucide="shield-check" class="w-4 h-4"></i>
-                    <span>Atendimento em Caçapava, SJC e Vale do Paraíba</span>
-                </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-slate-900">
-                    Esquadrias de Alumínio & Vidros de <span class="gradient-text">Alto Padrão</span>
-                </h1>
-                <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                    Projetos sob medida para residências sofisticadas e estabelecimentos comerciais. Unimos sofisticação, precisão técnica e vedação termoacústica de máxima durabilidade.
-                </p>
+<section id="galeria" class="sec g">
+ <div class="wrap">
+  <div class="head">
+   <h2>Projetos executados pela CPVale</h2>
+   <p class="lead" style="color:var(--t)">Obras concluídas com o padrão de excelência CPVale em toda a região.</p>
+  </div>
+  <div class="gal">
+   <figure><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="Residência de alto padrão" loading="lazy"><figcaption><small>São José dos Campos</small><h3>Residência Alpha, porta panorâmica</h3></figcaption></figure>
+   <figure><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Fachada em vidro em Caçapava" loading="lazy"><figcaption><small>Caçapava</small><h3>Fachada glazing e pele de vidro</h3></figcaption></figure>
+   <figure><img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Porta integrada preta" loading="lazy"><figcaption><small>Taubaté</small><h3>Janela integrada motorizada</h3></figcaption></figure>
+  </div>
+ </div>
+</section>
 
-                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
-                    <a href="#simulador" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-blue hover:bg-brand-darkblue text-white font-bold text-base transition-all shadow-lg shadow-brand-blue/20 hover:scale-[1.02] flex items-center justify-center gap-2">
-                        <i data-lucide="calculator" class="w-5 h-5"></i>
-                        <span>Simular Orçamento Agora</span>
-                    </a>
-                    <a href="#galeria" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold text-base transition-all border border-slate-300 flex items-center justify-center gap-2">
-                        <i data-lucide="image" class="w-5 h-5"></i>
-                        <span>Ver Portfólio</span>
-                    </a>
-                </div>
+<section id="depoimentos" class="sec lt">
+ <div class="wrap dep">
+  <div>
+   <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+   <h2>O que nossos clientes dizem</h2>
+   <p class="lead" style="margin-top:18px">Compromisso com prazo, limpeza na instalação e acabamento de primeira.</p>
+  </div>
+  <div>
+   <blockquote><p>“Fechei todas as esquadrias da minha casa em Caçapava com a CPVale. As portas de correr pretas ficaram sensacionais e o isolamento do barulho é impecável.”</p><div class="who"><i>RM</i><div>Ricardo Mendes<span>Cliente residencial</span></div></div></blockquote>
+   <blockquote><p>“Excelente atendimento desde o primeiro contato no WhatsApp. Cumpriram o prazo de entrega à risca e a instalação foi super limpa.”</p><div class="who"><i>FA</i><div>Fernanda Almeida<span>Arquiteta</span></div></div></blockquote>
+   <blockquote><p>“Fizeram o envidraçamento da minha sacada e o guarda-corpo de vidro. Qualidade impressionante e preço justo. Recomendo fortemente!”</p><div class="who"><i>CS</i><div>Carlos Silva<span>São José dos Campos</span></div></div></blockquote>
+  </div>
+ </div>
+</section>
 
-                <!-- Destaques / Métricas rápidas -->
-                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-200 max-w-lg mx-auto lg:mx-0">
-                    <div>
-                        <p class="text-2xl font-black text-slate-900">100%</p>
-                        <p class="text-xs text-slate-500 font-medium">Sob Medida</p>
-                    </div>
-                    <div>
-                        <p class="text-2xl font-black text-slate-900">Garantia</p>
-                        <p class="text-xs text-slate-500 font-medium">Especializada</p>
-                    </div>
-                    <div>
-                        <p class="text-2xl font-black text-slate-900">Qualidade</p>
-                        <p class="text-xs text-slate-500 font-medium">Premium</p>
-                    </div>
-                </div>
-            </div>
+<section class="fin">
+ <div class="wrap">
+  <h2>Seu projeto merece esquadrias à altura.</h2>
+  <p>Conte o que você precisa e receba o orçamento pelo WhatsApp.</p>
+  <div class="cta">
+   <a class="btn k" href="https://wa.me/5512991488382?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener"><i data-lucide="message-circle"></i>Pedir orçamento</a>
+   <a class="btn w" href="#simulador"><i data-lucide="calculator"></i>Usar o simulador</a>
+  </div>
+ </div>
+</section>
 
-            <!-- Carrossel de Destaque no Hero -->
-            <div class="lg:col-span-5">
-                <div class="relative bg-white p-3 rounded-2xl border border-slate-200 shadow-xl">
-                    <div class="relative h-80 sm:h-96 rounded-xl overflow-hidden group">
-                        <img id="hero-carousel-img" 
-                             src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" 
-                             alt="Esquadria de Alumínio CPVale" 
-                             class="w-full h-full object-cover transition-all duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
-                        <div class="absolute bottom-4 left-4 right-4 text-left">
-                            <span id="hero-carousel-badge" class="px-3 py-1 bg-brand-blue text-white text-xs font-bold rounded-full">Linha Gold & Premium</span>
-                            <h3 id="hero-carousel-title" class="text-lg font-bold text-white mt-2">Portas de Correr Panorâmicas</h3>
-                        </div>
-                    </div>
-                    <!-- Controles do Carrossel -->
-                    <div class="flex items-center justify-between mt-3 px-2">
-                        <button onclick="prevSlide()" class="p-2 rounded-lg bg-slate-100 hover:bg-brand-blue hover:text-white text-slate-700 transition-colors">
-                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                        </button>
-                        <span id="carousel-indicator" class="text-xs text-slate-500 font-semibold">1 / 3</span>
-                        <button onclick="nextSlide()" class="p-2 rounded-lg bg-slate-100 hover:bg-brand-blue hover:text-white text-slate-700 transition-colors">
-                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<footer>
+ <div class="wrap">
+  <div class="fg">
+   <div>
+    <img src="img/logo-dark.png" alt="CPVale Esquadrias" onerror="this.replaceWith(Object.assign(document.createElement('b'),{className:'wm',textContent:'CPVALE',style:'color:#fff;display:block;margin-bottom:18px'}))">
+    <p>Esquadrias de alumínio e vidros de alto padrão. Soluções sob medida para o seu projeto, com garantia e qualidade.</p>
+   </div>
+   <div>
+    <h4>Navegação</h4>
+    <ul><li><a href="#sobre">Sobre nós</a></li><li><a href="#produtos">Produtos</a></li><li><a href="#simulador">Simulador de valores</a></li><li><a href="#galeria">Galeria de obras</a></li></ul>
+   </div>
+   <div>
+    <h4>Região de atendimento</h4>
+    <ul><li>Caçapava, SP</li><li>São José dos Campos, SP</li><li>Taubaté, SP</li><li>Jacareí, SP</li><li>Litoral Norte e região</li></ul>
+   </div>
+   <div>
+    <h4>Contato direto</h4>
+    <ul class="ct">
+     <li><i data-lucide="phone"></i><a href="https://wa.me/5512991488382" target="_blank" rel="noopener">(12) 99148-8382</a></li>
+     <li><i data-lucide="map-pin"></i>Caçapava, SP</li>
+     <li><i data-lucide="clock"></i>Seg a Sex, 08h às 18h</li>
+    </ul>
+   </div>
+  </div>
+  <p class="cp">© 2026 CPVale Esquadrias de Alumínio e Vidros. Todos os direitos reservados.</p>
+ </div>
+</footer>
 
-    <!-- Sobre a CPVale -->
-    <section id="sobre" class="py-20 bg-slate-50 border-y border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <div class="inline-flex items-center gap-2 text-brand-blue font-bold text-sm uppercase tracking-wider">
-                        <i data-lucide="award" class="w-4 h-4"></i>
-                        <span>Excelência e Tradição</span>
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">CPVale Esquadrias e Vidros de Alto Padrão</h2>
-                    <p class="text-slate-600 leading-relaxed font-normal">
-                        Sediada estrategicamente para atender Caçapava, São José dos Campos e toda a região do Vale do Paraíba, a <strong class="text-slate-900">CPVale Esquadrias</strong> é referência no mercado pela engenharia de precisão e acabamento impecável.
-                    </p>
-                    <p class="text-slate-600 leading-relaxed font-normal">
-                        Trabalhamos com as melhores linhas de alumínio (Gold, Chroma, Suprema) e vidros laminados/temperados de máxima resistência. Cada esquadria é executada estritamente sob medida para garantir isolamento termoacústico, estanqueidade e sofisticação arquitetônica.
-                    </p>
-                    <ul class="space-y-3 pt-2">
-                        <li class="flex items-center gap-3 text-slate-800 font-medium">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-blue"></i>
-                            <span>Equipe própria de fabricação e instalação highly qualificada</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-800 font-medium">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-blue"></i>
-                            <span>Pintura eletrostática e anodização em diversas cores (Preto, Amadeirado, Inox)</span>
-                        </li>
-                        <li class="flex items-center gap-3 text-slate-800 font-medium">
-                            <i data-lucide="check-circle" class="w-5 h-5 text-brand-blue"></i>
-                            <span>Atendimento personalizado do projeto à entrega final</span>
-                        </li>
-                    </ul>
-                </div>
+<a class="fab" href="https://wa.me/5512991488382?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><i data-lucide="message-circle"></i></a>
 
-                <div class="relative">
-                    <div class="grid grid-cols-2 gap-4">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80" alt="Fachada em Pele de Vidro" class="rounded-2xl object-cover h-64 w-full border border-slate-200 shadow-md">
-                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=600&q=80" alt="Porta Integrada Automática" class="rounded-2xl object-cover h-64 w-full border border-slate-200 shadow-md mt-8">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<script>
+const WA='https://wa.me/5512991488382?text=';
+/* hero */
+const S=[
+ {i:'photo-1600585154340-be6161a56a0c',b:'Linha Gold & Premium',t:'Portas de correr panorâmicas'},
+ {i:'photo-1600607687939-ce8a6c25118c',b:'Fachadas modernas',t:'Pele de vidro e glazing estrutural'},
+ {i:'photo-1600566753376-12c8ab7fb75b',b:'Conforto e praticidade',t:'Persianas integradas automatizadas'}
+];
+let cur=0,timer;
+const sls=document.getElementById('sls');
+S.forEach(s=>{const d=document.createElement('div');d.className='sl';d.style.backgroundImage=`url(https://images.unsplash.com/${s.i}?auto=format&fit=crop&w=1800&q=80)`;sls.appendChild(d)});
+function show(){
+ [...sls.children].forEach((e,k)=>e.classList.toggle('on',k===cur));
+ cb.textContent=S[cur].b;ct.textContent=S[cur].t;ci.textContent=`${cur+1} / ${S.length}`;
+}
+function go(n){cur=(cur+n+S.length)%S.length;show();clearInterval(timer);timer=setInterval(()=>go(1),7000)}
+show();timer=setInterval(()=>go(1),7000);
 
-    <!-- Serviços & Produtos -->
-    <section id="produtos" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-blue font-bold text-sm uppercase tracking-wider">Nossos Produtos</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Soluções Completas em Alumínio e Vidro</h2>
-                <p class="text-slate-600 mt-4">Tecnologia avançada para atender arquitetos, construtores e proprietários exigentes.</p>
-            </div>
+/* aberto agora */
+(function(){
+ const d=new Date(),h=d.getHours()+d.getMinutes()/60,ok=d.getDay()>0&&d.getDay()<6&&h>=8&&h<18;
+ document.getElementById('st').textContent=ok?'Aberto agora, atendemos Caçapava, SJC e região':'Atendemos Caçapava, SJC e Vale do Paraíba';
+ if(!ok)document.getElementById('dot').classList.add('off');
+})();
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 transition-all hover:-translate-y-2 hover:border-brand-blue hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-blue-50 group-hover:bg-brand-blue group-hover:text-white rounded-xl flex items-center justify-center text-brand-blue mb-6 transition-colors">
-                        <i data-lucide="maximize" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Esquadrias de Alumínio</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Portas e janelas de correr, giro, maxim-ar e integradas automatizadas nas linhas Gold e Suprema.</p>
-                    <a href="#simulador" class="text-brand-blue text-sm font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Simular orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
+/* marquee */
+mq.innerHTML+=mq.innerHTML;
 
-                <!-- Card 2 -->
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 transition-all hover:-translate-y-2 hover:border-brand-blue hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-blue-50 group-hover:bg-brand-blue group-hover:text-white rounded-xl flex items-center justify-center text-brand-blue mb-6 transition-colors">
-                        <i data-lucide="building-2" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Pele de Vidro / Glazing</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Fachadas estruturais modernas com isolamento acústico superior para prédios e residências de alto padrão.</p>
-                    <a href="#simulador" class="text-brand-blue text-sm font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Simular orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 transition-all hover:-translate-y-2 hover:border-brand-blue hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-blue-50 group-hover:bg-brand-blue group-hover:text-white rounded-xl flex items-center justify-center text-brand-blue mb-6 transition-colors">
-                        <i data-lucide="door-closed" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Portas Pivotantes ACM</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Portas sociais imponentes com painel em ACM, puxadores em inox sob medida e fechaduras digitais.</p>
-                    <a href="#simulador" class="text-brand-blue text-sm font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Simular orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 transition-all hover:-translate-y-2 hover:border-brand-blue hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-blue-50 group-hover:bg-brand-blue group-hover:text-white rounded-xl flex items-center justify-center text-brand-blue mb-6 transition-colors">
-                        <i data-lucide="sun" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Envidraçamento de Sacadas</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Sistema Reiki/Cortina de vidro retrátil com vedação contra água e vento para varandas gourmet.</p>
-                    <a href="#simulador" class="text-brand-blue text-sm font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Simular orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 transition-all hover:-translate-y-2 hover:border-brand-blue hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-blue-50 group-hover:bg-brand-blue group-hover:text-white rounded-xl flex items-center justify-center text-brand-blue mb-6 transition-colors">
-                        <i data-lucide="shield" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Guarda-Corpo & Corrimão</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Estruturas em alumínio e vidro temperado autoportante para escadas, mezaninos e varandas.</p>
-                    <a href="#simulador" class="text-brand-blue text-sm font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Simular orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="bg-white rounded-2xl p-6 border border-slate-200 transition-all hover:-translate-y-2 hover:border-brand-blue hover:shadow-xl group">
-                    <div class="w-12 h-12 bg-blue-50 group-hover:bg-brand-blue group-hover:text-white rounded-xl flex items-center justify-center text-brand-blue mb-6 transition-colors">
-                        <i data-lucide="grid" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Box Elegance & Vidros Especiais</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Box até o teto, espelhos bisotados, coberturas de vidro e divisórias de ambientes sob medida.</p>
-                    <a href="#simulador" class="text-brand-blue text-sm font-bold inline-flex items-center gap-1 hover:gap-2 transition-all">Simular orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SIMULADOR INTERATIVO DE ORÇAMENTO -->
-    <section id="simulador" class="py-20 bg-slate-50 border-t border-slate-200 relative overflow-hidden">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-12">
-                <span class="px-4 py-1.5 rounded-full bg-blue-100 text-brand-blue text-xs font-extrabold uppercase tracking-wider border border-blue-200">Ferramenta Interativa</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-4">Simulador de Orçamento Instantâneo</h2>
-                <p class="text-slate-600 mt-2">Escolha as opções do seu projeto para obter uma estimativa prévia e enviar diretamente ao WhatsApp.</p>
-            </div>
-
-            <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xl">
-                <form id="calc-form" onsubmit="sendSimulatedQuote(event)" class="space-y-8">
-                    <!-- Etapa 1: Categoria de Produto -->
-                    <div>
-                        <label class="block text-sm font-bold text-slate-800 mb-3">1. Selecione o Tipo de Produto:</label>
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                            <button type="button" onclick="selectProduct('Janelas de Correr', 1200)" class="sim-btn p-4 rounded-xl border border-slate-200 bg-slate-50 text-center hover:border-brand-blue transition-all active-sim">
-                                <i data-lucide="app-window" class="w-6 h-6 mx-auto mb-2 text-brand-blue"></i>
-                                <span class="text-xs font-bold block text-slate-800">Janelas</span>
-                            </button>
-                            <button type="button" onclick="selectProduct('Portas Panorâmicas', 1800)" class="sim-btn p-4 rounded-xl border border-slate-200 bg-slate-50 text-center hover:border-brand-blue transition-all">
-                                <i data-lucide="door-closed" class="w-6 h-6 mx-auto mb-2 text-brand-blue"></i>
-                                <span class="text-xs font-bold block text-slate-800">Portas</span>
-                            </button>
-                            <button type="button" onclick="selectProduct('Pele de Vidro', 2200)" class="sim-btn p-4 rounded-xl border border-slate-200 bg-slate-50 text-center hover:border-brand-blue transition-all">
-                                <i data-lucide="building" class="w-6 h-6 mx-auto mb-2 text-brand-blue"></i>
-                                <span class="text-xs font-bold block text-slate-800">Fachada Vidro</span>
-                            </button>
-                            <button type="button" onclick="selectProduct('Guarda-Corpo', 1100)" class="sim-btn p-4 rounded-xl border border-slate-200 bg-slate-50 text-center hover:border-brand-blue transition-all">
-                                <i data-lucide="shield" class="w-6 h-6 mx-auto mb-2 text-brand-blue"></i>
-                                <span class="text-xs font-bold block text-slate-800">Guarda-Corpo</span>
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Etapa 2: Medidas -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-sm font-bold text-slate-800 mb-2">Largura Estimada (Metros):</label>
-                            <input type="number" id="sim-width" step="0.1" value="2.0" min="0.5" max="20" oninput="calculateTotal()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 font-medium focus:outline-none focus:border-brand-blue transition-colors">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-bold text-slate-800 mb-2">Altura Estimada (Metros):</label>
-                            <input type="number" id="sim-height" step="0.1" value="1.5" min="0.5" max="10" oninput="calculateTotal()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 font-medium focus:outline-none focus:border-brand-blue transition-colors">
-                        </div>
-                    </div>
-
-                    <!-- Etapa 3: Cor do Alumínio -->
-                    <div>
-                        <label class="block text-sm font-bold text-slate-800 mb-3">Acabamento do Alumínio:</label>
-                        <select id="sim-color" onchange="calculateTotal()" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-900 font-medium focus:outline-none focus:border-brand-blue transition-colors">
-                            <option value="Preto Anodizado / Eletrostático">Preto Fosco / Anodizado (Mais Solicitado)</option>
-                            <option value="Branco Brilho">Branco Neve</option>
-                            <option value="Cinza Grafite / Inox">Cinza Grafite / Inox</option>
-                            <option value="Amadeirado">Amadeirado Especial</option>
-                        </select>
-                    </div>
-
-                    <!-- Resumo de Valor Estimado -->
-                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-                        <div>
-                            <p class="text-xs text-slate-500 font-bold uppercase">Área Total: <span id="sim-area-display" class="text-slate-900">3.00 m²</span></p>
-                            <p class="text-2xl sm:text-3xl font-black text-brand-blue mt-1" id="sim-price-display">R$ 3.600,00*</p>
-                            <p class="text-[11px] text-slate-500 mt-1">*Valor estimativo sujeito à confirmação técnica no local.</p>
-                        </div>
-                        <button type="submit" class="w-full sm:w-auto px-8 py-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-green-600/20">
-                            <i data-lucide="message-square" class="w-5 h-5"></i>
-                            <span>Enviar Estimativa via WhatsApp</span>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Galeria de Projetos -->
-    <section id="galeria" class="py-20 bg-white border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                <div>
-                    <span class="text-brand-blue font-bold text-sm uppercase tracking-wider">Portfólio Real</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Projetos Executados pela CPVale</h2>
-                </div>
-                <p class="text-slate-600 text-sm max-w-md mt-4 md:mt-0">Confira fotos de obras concluídas com o padrão de excelência CPVale em toda a região.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="group relative overflow-hidden rounded-2xl bg-slate-100 h-72 border border-slate-200 shadow-md">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Residência de Alto Padrão" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-extrabold text-brand-accent">São José dos Campos</span>
-                        <h3 class="text-lg font-bold text-white">Residência Alpha - Porta Panorâmica</h3>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-2xl bg-slate-100 h-72 border border-slate-200 shadow-md">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Fachada em Vidro Caçapava" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-extrabold text-brand-accent">Caçapava - SP</span>
-                        <h3 class="text-lg font-bold text-white">Fachada Glazing & Pele de Vidro</h3>
-                    </div>
-                </div>
-
-                <div class="group relative overflow-hidden rounded-2xl bg-slate-100 h-72 border border-slate-200 shadow-md">
-                    <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Porta Integrada Preta" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-                    <div class="absolute bottom-4 left-4 right-4">
-                        <span class="text-xs font-extrabold text-brand-accent">Taubaté</span>
-                        <h3 class="text-lg font-bold text-white">Janela Integrada Motorizada</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Depoimentos / Avaliações -->
-    <section id="depoimentos" class="py-20 bg-slate-50 border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="flex items-center justify-center gap-1 text-amber-400 mb-3">
-                    <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-                    <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-                    <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-                    <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-                    <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
-                </div>
-                <h2 class="text-3xl font-extrabold text-slate-900">O que Nossos Clientes Dizem</h2>
-                <p class="text-slate-600 mt-2">Compromisso com prazo, limpeza na instalação e acabamento de primeira.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6 font-normal">"Fechei todas as esquadrias da minha casa em Caçapava com a CPVale. As portas de correr pretas ficaram sensacionais e o isolamento do barulho é impecável."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center font-bold text-white">RM</div>
-                        <div>
-                            <h4 class="text-sm font-bold text-slate-900">Ricardo Mendes</h4>
-                            <span class="text-xs text-slate-500">Cliente Residencial</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6 font-normal">"Excelente atendimento desde o primeiro contato no WhatsApp. Cumpriram o prazo de entrega à risca e a instalação foi super limpa."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center font-bold text-white">FA</div>
-                        <div>
-                            <h4 class="text-sm font-bold text-slate-900">Fernanda Almeida</h4>
-                            <span class="text-xs text-slate-500">Arquiteta</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6 font-normal">"Fizeram o envidraçamento da minha sacada e guarda-corpo de vidro. Qualidade impressionante e preço justo. Recomendo fortemente!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center font-bold text-white">CS</div>
-                        <div>
-                            <h4 class="text-sm font-bold text-slate-900">Carlos Silva</h4>
-                            <span class="text-xs text-slate-500">São José dos Campos</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 border-t border-slate-800 pt-16 pb-8 text-slate-400 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-                <!-- Coluna 1: Logo & Sobre -->
-                <div class="space-y-4">
-                    <img src="img/logo-dark.png" 
-                         alt="CPVale Esquadrias" 
-                         class="h-20 w-auto object-contain"
-                         onerror="this.style.display='none'; document.getElementById('logo-fallback-footer').style.display='flex';">
-                    
-                    <div id="logo-fallback-footer" class="hidden items-center gap-2">
-                        <svg class="w-8 h-8 text-brand-blue" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="10" y="10" width="80" height="80" rx="12" stroke="currentColor" stroke-width="8" fill="#0f172a"/>
-                            <path d="M30 35 C30 25, 45 25, 45 35 L45 65 C45 75, 30 75, 30 65" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
-                            <path d="M55 30 L55 70 M55 30 L75 30 C85 30, 85 50, 75 50 L55 50" stroke="#0088cc" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span class="text-lg font-bold text-white">CPVALE</span>
-                    </div>
-
-                    <p class="text-slate-400 text-xs leading-relaxed">
-                        CPVale Esquadrias de Alumínio e Vidros de Alto Padrão. Soluções sob medida para o seu projeto com garantia e qualidade incomparáveis.
-                    </p>
-                </div>
-
-                <!-- Coluna 2: Navegação -->
-                <div>
-                    <h4 class="text-white font-bold mb-4">Navegação</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#home" class="hover:text-brand-blue transition-colors">Início</a></li>
-                        <li><a href="#sobre" class="hover:text-brand-blue transition-colors">Sobre Nós</a></li>
-                        <li><a href="#produtos" class="hover:text-brand-blue transition-colors">Nossos Produtos</a></li>
-                        <li><a href="#simulador" class="hover:text-brand-blue transition-colors">Simulador de Valores</a></li>
-                        <li><a href="#galeria" class="hover:text-brand-blue transition-colors">Galeria de Obras</a></li>
-                    </ul>
-                </div>
-
-                <!-- Coluna 3: Atendimento -->
-                <div>
-                    <h4 class="text-white font-bold mb-4">Região de Atendimento</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li>Caçapava - SP</li>
-                        <li>São José dos Campos - SP</li>
-                        <li>Taubaté - SP</li>
-                        <li>Jacareí - SP</li>
-                        <li>Litoral Norte e Região</li>
-                    </ul>
-                </div>
-
-                <!-- Coluna 4: Contato -->
-                <div>
-                    <h4 class="text-white font-bold mb-4">Contato Direto</h4>
-                    <div class="space-y-3 text-xs">
-                        <p class="flex items-center gap-2">
-                            <i data-lucide="phone" class="w-4 h-4 text-brand-blue"></i>
-                            <a href="https://wa.me/5512991488382" target="_blank" class="hover:text-white transition-colors">(12) 99148-8382</a>
-                        </p>
-                        <p class="flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-brand-blue"></i>
-                            <span>Caçapava / SP</span>
-                        </p>
-                        <p class="flex items-center gap-2">
-                            <i data-lucide="clock" class="w-4 h-4 text-brand-blue"></i>
-                            <span>Seg a Sex: 08h às 18h</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
-                <p>© 2026 CPVale Esquadrias de Alumínio e Vidros. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- LÓGICA JAVASCRIPT AUTO-CONTIDA -->
-    <script>
-        // Inicializar Lucide Icons
-        window.onload = function() {
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-            }
-            calculateTotal();
-        };
-
-        // Estado do Carrossel Hero
-        const slides = [
-            {
-                img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
-                badge: "Linha Gold & Premium",
-                title: "Portas de Correr Panorâmicas"
-            },
-            {
-                img: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
-                badge: "Fachadas Modernas",
-                title: "Pele de Vidro & Glazing Estrutural"
-            },
-            {
-                img: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
-                badge: "Conforto e Praticidade",
-                title: "Persianas Integradas Automatizadas"
-            }
-        ];
-        let currentSlide = 0;
-
-        function updateSlide() {
-            const imgEl = document.getElementById('hero-carousel-img');
-            const badgeEl = document.getElementById('hero-carousel-badge');
-            const titleEl = document.getElementById('hero-carousel-title');
-            const indEl = document.getElementById('carousel-indicator');
-
-            if(imgEl && badgeEl && titleEl && indEl) {
-                imgEl.src = slides[currentSlide].img;
-                badgeEl.textContent = slides[currentSlide].badge;
-                titleEl.textContent = slides[currentSlide].title;
-                indEl.textContent = `${currentSlide + 1} / ${slides.length}`;
-            }
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateSlide();
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            updateSlide();
-        }
-
-        // Menu Mobile Toggle
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobile-menu');
-            if (menu) {
-                menu.classList.toggle('hidden');
-            }
-        }
-
-        // Lógica do Simulador de Orçamento
-        let selectedProduct = "Janelas de Correr";
-        let baseUnitPrice = 1200;
-
-        function selectProduct(name, price) {
-            selectedProduct = name;
-            baseUnitPrice = price;
-
-            // Atualiza botões ativos
-            const buttons = document.querySelectorAll('.sim-btn');
-            buttons.forEach(btn => {
-                if (btn.innerText.includes(name) || (name === 'Janelas de Correr' && btn.innerText.includes('Janelas')) || (name === 'Portas Panorâmicas' && btn.innerText.includes('Portas'))) {
-                    btn.classList.add('border-brand-blue', 'bg-blue-50');
-                    btn.classList.remove('border-slate-200', 'bg-slate-50');
-                } else {
-                    btn.classList.remove('border-brand-blue', 'bg-blue-50');
-                    btn.classList.add('border-slate-200', 'bg-slate-50');
-                }
-            });
-
-            calculateTotal();
-        }
-
-        function calculateTotal() {
-            const width = parseFloat(document.getElementById('sim-width').value) || 0;
-            const height = parseFloat(document.getElementById('sim-height').value) || 0;
-            const area = width * height;
-
-            const total = area * baseUnitPrice;
-
-            document.getElementById('sim-area-display').textContent = `${area.toFixed(2)} m²`;
-            document.getElementById('sim-price-display').textContent = `R$ ${total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
-        }
-
-        function sendSimulatedQuote(e) {
-            e.preventDefault();
-            const width = document.getElementById('sim-width').value;
-            const height = document.getElementById('sim-height').value;
-            const color = document.getElementById('sim-color').value;
-            const area = (parseFloat(width) * parseFloat(height)).toFixed(2);
-            const price = document.getElementById('sim-price-display').textContent;
-
-            const message = `Ol%C3%A1!%20Fiz%20uma%20simula%C3%A7%C3%A3o%20no%20site%20da%20CPVale%20Esquadrias:%0A%0A` +
-                            `*Produto:*%20${encodeURIComponent(selectedProduct)}%0A` +
-                            `*Medidas:*%20${width}m%20x%20${height}m%20(${area}%20m%C2%B2)%0A` +
-                            `*Acabamento:*%20${encodeURIComponent(color)}%0A` +
-                            `*Estimativa:*%20${encodeURIComponent(price)}%0A%0A` +
-                            `Gostaria%20de%20agendar%20uma%20visita%20t%C3%A9cnica!`;
-
-            window.open(`https://wa.me/5512991488382?text=${message}`, '_blank');
-        }
-    </script>
+/* simulador */
+let prod='Janelas de Correr',unit=1200,div=2;
+const $=id=>document.getElementById(id),fmt=n=>n.toFixed(2).replace('.',',');
+document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{
+ document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+ prod=b.dataset.n;unit=+b.dataset.p;div=+b.dataset.d;calc();
+});
+['w','h'].forEach(i=>$(i).addEventListener('input',calc));
+function calc(){
+ const w=parseFloat($('w').value)||0,h=parseFloat($('h').value)||0,a=w*h;
+ $('ar').textContent=fmt(a)+' m²';
+ $('pr').textContent='R$ '+(a*unit).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+ draw(w,h);
+}
+function draw(w,h){
+ w=Math.max(w,.1);h=Math.max(h,.1);
+ const s=Math.min(220/w,150/h),rw=w*s,rh=h*s,x=(300-rw)/2+4,y=(190-rh)/2+10;
+ let g=`<rect x="${x}" y="${y}" width="${rw}" height="${rh}" fill="#38bdf8" fill-opacity=".14" stroke="#fff" stroke-width="3"/>`;
+ g+=`<rect x="${x+6}" y="${y+6}" width="${rw-12}" height="${rh-12}" fill="none" stroke="#38bdf8" stroke-width="1" stroke-opacity=".7"/>`;
+ for(let i=1;i<div;i++){const lx=x+rw*i/div;g+=`<line x1="${lx}" y1="${y}" x2="${lx}" y2="${y+rh}" stroke="#fff" stroke-width="3"/>`}
+ g+=`<path d="M${x+10} ${y+rh-14} L${x+rw*.35} ${y+10}" stroke="#fff" stroke-opacity=".35" stroke-width="2"/>`;
+ const by=y+rh+20,rx=x+rw+20,cy=y+rh/2;
+ g+=`<g stroke="#38bdf8" stroke-width="1"><line x1="${x}" y1="${by}" x2="${x+rw}" y2="${by}"/><line x1="${x}" y1="${by-5}" x2="${x}" y2="${by+5}"/><line x1="${x+rw}" y1="${by-5}" x2="${x+rw}" y2="${by+5}"/><line x1="${rx}" y1="${y}" x2="${rx}" y2="${y+rh}"/><line x1="${rx-5}" y1="${y}" x2="${rx+5}" y2="${y}"/><line x1="${rx-5}" y1="${y+rh}" x2="${rx+5}" y2="${y+rh}"/></g>`;
+ g+=`<g fill="#fff" font-size="13" font-weight="600" font-family="Instrument Sans,sans-serif" text-anchor="middle"><text x="${x+rw/2}" y="${by+20}">${fmt(w)} m</text><text transform="translate(${rx+20} ${cy}) rotate(-90)">${fmt(h)} m</text></g>`;
+ $('svg').innerHTML=g;
+}
+function send(e){
+ e.preventDefault();
+ const w=$('w').value,h=$('h').value,a=(parseFloat(w)*parseFloat(h)).toFixed(2).replace('.',',');
+ const m=`Olá! Fiz uma simulação no site da CPVale Esquadrias:\n\n*Produto:* ${prod}\n*Medidas:* ${w}m x ${h}m (${a} m²)\n*Acabamento:* ${$('c').value}\n*Estimativa:* ${$('pr').textContent}\n\nGostaria de agendar uma visita técnica!`;
+ window.open(WA+encodeURIComponent(m),'_blank');
+}
+window.addEventListener('load',()=>{if(window.lucide)lucide.createIcons();calc()});
+</script>
 </body>
 </html>
