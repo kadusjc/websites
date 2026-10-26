@@ -126,12 +126,13 @@ header{position:fixed;inset:0 0 auto;z-index:50;background:rgba(0,0,0,.72);backd
 .ctrl input,.ctrl select{width:100%;background:#fff;padding:14px 16px;border:1px solid #d5dbe1;border-radius:8px;background:#fff;font-weight:600;transition:border-color .2s}
 .ctrl input:focus,.ctrl select:focus{outline:0;border-color:var(--b)}
 .pv{background:#000;color:#fff;padding:40px;display:flex;flex-direction:column;justify-content:space-between;gap:20px;background-image:linear-gradient(rgba(0,136,204,.14) 1px,transparent 1px),linear-gradient(90deg,rgba(0,136,204,.14) 1px,transparent 1px);background-size:28px 28px}
-.pv svg{width:100%;height:auto;max-height:260px}
+#svg{width:100%;height:auto;max-height:260px}
+.pv .btn .lucide{width:18px;height:18px}
 .pv .ar{font-size:14px;color:rgba(255,255,255,.62)}
 .pv .ar b{color:#fff}
 .price{font:800 clamp(2.2rem,4vw,3.2rem) var(--d);font-stretch:112%;color:var(--s);line-height:1.1;margin:4px 0 6px}
 .pv small{display:block;color:rgba(255,255,255,.5);font-size:12px;margin-bottom:22px}
-.pv .btn{width:100%}
+.pv .btn{width:auto;padding:12px 22px;font-size:15px}
 
 /* galeria */
 .gal{display:grid;grid-template-columns:1.7fr 1fr;grid-template-rows:290px 290px;gap:16px}
@@ -191,7 +192,7 @@ footer .ct .lucide{color:var(--s);width:18px;height:18px}
  .fg{grid-template-columns:1fr 1fr}
  .stats{gap:26px}
 }
-@media(max-width:520px){.fg{grid-template-columns:1fr}.chips,.f2{grid-template-columns:1fr}.cta .btn{width:100%}.dim{font-size:12px}}
+@media(max-width:520px){.pv .btn{width:100%}.fg{grid-template-columns:1fr}.chips,.f2{grid-template-columns:1fr}.cta .btn{width:100%}.dim{font-size:12px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.sl{transform:none}}
 </style>
 </head>
@@ -199,7 +200,7 @@ footer .ct .lucide{color:var(--s);width:18px;height:18px}
 
 <header>
  <div class="wrap nav">
-  <a href="#home" aria-label="CPVale Esquadrias">
+ <a href="#home" aria-label="CPVale Esquadrias">
    <img src="img/logo-dark.png" style="width: 90px; height: auto;" alt="CPVale Esquadrias de Alumínio e Vidros" onerror="this.replaceWith(Object.assign(document.createElement('b'),{className:'wm',textContent:'CPVALE'}))">
   </a>
   <nav class="links" aria-label="Principal">
@@ -321,7 +322,7 @@ footer .ct .lucide{color:var(--s);width:18px;height:18px}
      <p class="ar">Área total: <b id="ar">3,00 m²</b></p>
      <p class="price" id="pr">R$ 3.600,00</p>
      <small>Valor estimado, sujeito a confirmação técnica no local.</small>
-     <button type="submit" class="btn p"><i data-lucide="message-square"></i>Enviar estimativa pelo WhatsApp</button>
+     <button type="submit" class="btn p"><i data-lucide="message-square"></i>Enviar pelo WhatsApp</button>
     </div>
    </div>
   </form>
