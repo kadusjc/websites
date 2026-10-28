@@ -2,7 +2,9 @@
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1F1B16">
+    <meta name="robots" content="index,follow">
     <title>Casa Luxo · Móveis, Estofados e Arquitetura | Pinheiros, São Paulo</title>
     <meta name="description" content="Showroom de móveis de alto padrão na Rua Teodoro Sampaio, 1478, Pinheiros. Sofás sob medida, salas de jantar, dormitórios, curadoria em design e atendimento VIP.">
     
@@ -119,6 +121,37 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #C5A059;
         }
+
+        /* Responsividade, acessibilidade e prevenção de overflow */
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-padding-top: 100px; -webkit-text-size-adjust: 100%; }
+        body { min-width: 320px; overflow-wrap: break-word; }
+        img, svg, video, canvas, iframe { max-width: 100%; }
+        img { height: auto; }
+        a, button, input, select, textarea { touch-action: manipulation; }
+        a:focus-visible, button:focus-visible, input:focus-visible,
+        select:focus-visible, summary:focus-visible, textarea:focus-visible {
+            outline: 3px solid #A37F38; outline-offset: 3px;
+        }
+        .privacy-content h3 { font-weight: 700; margin: 1.25rem 0 .4rem; color: #1F1B16; }
+        .privacy-content p, .privacy-content li { font-size: .875rem; line-height: 1.75; color: #3D3830; }
+        .privacy-content ul { list-style: disc; padding-left: 1.25rem; }
+        #privacy-section { scroll-margin-top: 100px; }
+        #map-consent-placeholder { min-height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1.5rem; }
+        #privacy-notice { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+        @media (max-width: 640px) {
+            html { scroll-padding-top: 84px; }
+            .glass-card-hover:hover { transform: none; }
+            #contato { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+            #map-frame { height: 320px; }
+            #privacy-notice { left: .75rem; right: .75rem; bottom: .75rem; width: auto; }
+            #privacy-notice .notice-actions { display: flex; flex-direction: column; }
+            #privacy-notice .notice-actions button { width: 100%; }
+            #privacy-section { scroll-margin-top: 84px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-gold-500 selection:text-white">
@@ -157,7 +190,7 @@
             <!-- CTA BUTTON -->
             <div class="flex items-center gap-4">
                 <a href="https://wa.me/5511991892089?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20Luxo%20e%20gostaria%20de%20um%20atendimento%20exclusivo." 
-                   target="_blank" 
+                   target="_blank" rel="noopener noreferrer" 
                    class="hidden sm:inline-flex items-center gap-2 bg-sand-900 hover:bg-gold-600 text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all shadow-md hover:shadow-gold-500/20">
                     <i class="fa-brands fa-whatsapp text-sm text-gold-400"></i>
                     <span>Atendimento VIP</span>
@@ -180,7 +213,7 @@
                 <a href="#materiais" class="mobile-link py-2 border-b border-sand-100">Tecidos & Madeiras</a>
                 <a href="#arquitetos" class="mobile-link py-2 border-b border-sand-100">Atendimento a Arquitetos</a>
                 <a href="#contato" class="mobile-link py-2 border-b border-sand-100">Showroom em Pinheiros</a>
-                <a href="https://wa.me/5511991892089" target="_blank" class="mt-2 text-center bg-sand-900 text-white py-3 rounded-full font-bold uppercase">Falar com Consultor</a>
+                <a href="https://wa.me/5511991892089" target="_blank" rel="noopener noreferrer" class="mt-2 text-center bg-sand-900 text-white py-3 rounded-full font-bold uppercase">Falar com Consultor</a>
             </div>
         </div>
     </header>
@@ -212,7 +245,7 @@
 
                 <div class="pt-4 flex flex-wrap items-center gap-4">
                     <a href="https://wa.me/5511991892089?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20guiada%20ao%20Showroom." 
-                       target="_blank"
+                       target="_blank" rel="noopener noreferrer"
                        class="bg-sand-900 hover:bg-gold-600 text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-gold-500/20 flex items-center gap-3">
                         <i class="fa-brands fa-whatsapp text-base text-gold-400"></i>
                         <span>Agendar Visita com Projetista</span>
@@ -353,7 +386,7 @@
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Category 1 -->
-                <a href="https://wa.me/5511991892089?text=Quero%20ver%20as%20op%C3%A7%C3%B5es%20de%20Sof%C3%A1s%20no%20catalogo" target="_blank" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20as%20op%C3%A7%C3%B5es%20de%20Sof%C3%A1s%20no%20catalogo" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
                     <div class="relative h-72 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=800" 
                              alt="Sofás Sob Medida Casa Luxo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -369,7 +402,7 @@
                 </a>
 
                 <!-- Category 2 -->
-                <a href="https://wa.me/5511991892089?text=Quero%20ver%20as%20op%C3%A7%C3%B5es%20de%20Estofados%20e%20Poltronas" target="_blank" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20as%20op%C3%A7%C3%B5es%20de%20Estofados%20e%20Poltronas" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
                     <div class="relative h-72 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" 
                              alt="Poltronas e Puffs de Luxo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -385,7 +418,7 @@
                 </a>
 
                 <!-- Category 3 -->
-                <a href="https://wa.me/5511991892089?text=Quero%20ver%20op%C3%A7%C3%B5es%20para%20Salas%20de%20Jantar" target="_blank" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20op%C3%A7%C3%B5es%20para%20Salas%20de%20Jantar" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
                     <div class="relative h-72 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800" 
                              alt="Mesas e Cadeiras de Jantar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
@@ -404,10 +437,10 @@
 
             <!-- Quick Category Pill Tags -->
             <div class="mt-12 flex flex-wrap justify-center gap-3">
-                <a href="https://wa.me/5511991892089?text=Quero%20ver%20m%C3%B3veis%20para%20Dormit%C3%B3rios" target="_blank" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Dormitórios & Cabeceiras</a>
-                <a href="https://wa.me/5511991892089?text=Quero%20ver%20projetos%20de%20Cozinhas" target="_blank" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Cozinhas & Modulados</a>
-                <a href="https://wa.me/5511991892089?text=Quero%20ver%20racks%20e%20pain%C3%A9is%20para%20Home%20Theater" target="_blank" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Racks & Painéis de TV</a>
-                <a href="https://wa.me/5511991892089?text=Quero%20ver%20acess%C3%B3rios%20e%20objetos%20de%20decora%C3%A7%C3%A3o" target="_blank" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Objetos de Decoração</a>
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20m%C3%B3veis%20para%20Dormit%C3%B3rios" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Dormitórios & Cabeceiras</a>
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20projetos%20de%20Cozinhas" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Cozinhas & Modulados</a>
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20racks%20e%20pain%C3%A9is%20para%20Home%20Theater" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Racks & Painéis de TV</a>
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20acess%C3%B3rios%20e%20objetos%20de%20decora%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Objetos de Decoração</a>
             </div>
 
         </div>
@@ -491,7 +524,7 @@
 
                     <!-- Action Box -->
                     <div class="pt-2">
-                        <a id="sofa-whatsapp-btn" href="#" target="_blank" 
+                        <a id="sofa-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" 
                            class="w-full bg-sand-900 hover:bg-gold-600 text-white py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg">
                             <i class="fa-brands fa-whatsapp text-sm text-gold-400"></i>
                             <span>Pedir Orçamento Deste Sofá</span>
@@ -631,7 +664,7 @@
 
             <div class="lg:col-span-4 text-left lg:text-right">
                 <a href="https://wa.me/5511991892089?text=Sou%20Arquiteto(a)%20e%20gostaria%20de%20cadastrar%20meu%20escrit%C3%B3rio%20na%20Casa%20Luxo." 
-                   target="_blank" 
+                   target="_blank" rel="noopener noreferrer" 
                    class="bg-sand-900 hover:bg-gold-600 text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all inline-flex items-center gap-3 shadow-md">
                     <i class="fa-solid fa-pen-ruler text-gold-400"></i>
                     <span>Cadastrar Escritório VIP</span>
@@ -657,21 +690,21 @@
 
             <div class="grid sm:grid-cols-3 gap-8">
                 
-                <a href="https://moveiscasaluxo.wixsite.com/meusite/post/como-usar-ba%C3%BAs-na-decora%C3%A7%C3%A3o-de-ambientes" target="_blank" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
+                <a href="https://moveiscasaluxo.wixsite.com/meusite/post/como-usar-ba%C3%BAs-na-decora%C3%A7%C3%A3o-de-ambientes" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
                     <span class="text-[10px] font-bold text-gold-600 uppercase tracking-widest">Artigo de Blog</span>
                     <h3 class="text-xl font-serif-title text-sand-900">Como usar baús na decoração de salas e quartos</h3>
                     <p class="text-xs text-sand-800 leading-relaxed">Ideias para unir charme vintage, funcionalidade e espaço extra para organizar mantas e almofadas.</p>
                     <span class="text-xs font-bold text-gold-700 uppercase tracking-wider block pt-2">Ler Artigo Completo →</span>
                 </a>
 
-                <a href="https://moveiscasaluxo.wixsite.com/meusite/post/4-dicas-f%C3%A1ceis-de-decora%C3%A7%C3%A3o-com-plantas-para-o-seu-ambiente" target="_blank" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
+                <a href="https://moveiscasaluxo.wixsite.com/meusite/post/4-dicas-f%C3%A1ceis-de-decora%C3%A7%C3%A3o-com-plantas-para-o-seu-ambiente" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
                     <span class="text-[10px] font-bold text-gold-600 uppercase tracking-widest">Design Biofílico</span>
                     <h3 class="text-xl font-serif-title text-sand-900">4 dicas de decoração com plantas em apartamentos</h3>
                     <p class="text-xs text-sand-800 leading-relaxed">Como escolher vasos e espécies adequadas para valorizar a iluminação e trazer vida à sala de estar.</p>
                     <span class="text-xs font-bold text-gold-700 uppercase tracking-wider block pt-2">Ler Artigo Completo →</span>
                 </a>
 
-                <a href="https://www.youtube.com/watch?v=Oek_z315G-Y" target="_blank" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
+                <a href="https://www.youtube.com/watch?v=Oek_z315G-Y" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
                     <span class="text-[10px] font-bold text-gold-600 uppercase tracking-widest">Vídeo Explicativo</span>
                     <h3 class="text-xl font-serif-title text-sand-900">10 Dicas para escolher móveis em salas compactas</h3>
                     <p class="text-xs text-sand-800 leading-relaxed">Assista ao guia de dimensões e descubra como otimizar a área de circulação sem perder o conforto.</p>
@@ -784,7 +817,7 @@
 
                 <div class="pt-4 flex flex-wrap gap-4">
                     <a href="https://www.google.com/maps/search/?api=1&query=R.+Teodoro+Sampaio+1478+Pinheiros+S%C3%A3o+Paulo" 
-                       target="_blank" 
+                       target="_blank" rel="noopener noreferrer" 
                        class="bg-sand-900 hover:bg-gold-600 text-white px-6 py-3.5 rounded-full font-bold text-xs uppercase tracking-widest inline-flex items-center gap-2 shadow-md">
                         <i class="fa-solid fa-map-location-dot text-gold-400"></i>
                         <span>Abrir Rota no Google Maps</span>
@@ -794,19 +827,81 @@
 
             <!-- Google Maps Iframe Frame -->
             <div class="lg:col-span-6">
-                <div class="glass-card p-3 rounded-3xl overflow-hidden border border-sand-200 h-[400px] shadow-lg">
-                    <iframe 
-                        src="https://maps.google.com/maps?q=R.+Teodoro+Sampaio+1478+Pinheiros+S%C3%A3o+Paulo&hl=pt-BR&z=16&output=embed" 
-                        class="w-full h-full rounded-2xl" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+                <div id="map-frame" class="glass-card p-3 rounded-3xl overflow-hidden border border-sand-200 h-[400px] shadow-lg">
+                    <div id="map-consent-placeholder" class="rounded-2xl bg-sand-50">
+                        <div class="max-w-sm">
+                            <i class="fa-solid fa-map-location-dot text-3xl text-gold-600 mb-4" aria-hidden="true"></i>
+                            <h3 class="font-serif-title text-2xl text-sand-900 mb-2">Veja como chegar</h3>
+                            <p class="text-sm text-sand-800 mb-4">O mapa é fornecido pelo Google e só será carregado se você autorizar o conteúdo externo. Você também pode abrir a rota diretamente no Google Maps.</p>
+                            <button type="button" id="load-map-btn" class="bg-sand-900 hover:bg-gold-600 text-white px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider">Carregar mapa do Google</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
+
+
+    <!-- PRIVACIDADE E LGPD: revise os dados do controlador antes de publicar -->
+    <section id="privacy-section" class="py-16 sm:py-20 bg-sand-50 border-t border-sand-200">
+        <div class="max-w-5xl mx-auto px-5 sm:px-6">
+            <div class="max-w-3xl mb-10">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Transparência e proteção de dados</span>
+                <h2 class="text-3xl sm:text-4xl font-serif-title text-sand-900 mt-3">Privacidade e LGPD</h2>
+                <p class="text-sm text-sand-800 leading-relaxed mt-4">Esta política explica como dados pessoais podem ser tratados ao navegar neste site ou entrar em contato com a Casa Luxo. Última atualização: 28 de outubro de 2026.</p>
+            </div>
+            <div class="privacy-content bg-white rounded-2xl border border-sand-200 p-5 sm:p-8">
+                <h3>1. Quem é responsável pelos dados?</h3>
+                <p>O controlador dos dados é a pessoa física ou jurídica responsável pela operação da Casa Luxo. <strong>Antes de publicar, preencher e confirmar:</strong> razão social/nome empresarial, CNPJ e endereço oficial para assuntos de privacidade. O nome comercial “Casa Luxo”, isoladamente, pode não identificar juridicamente o controlador.</p>
+                <p>Para dúvidas ou solicitações relacionadas a dados pessoais, entre em contato pelo WhatsApp <a class="underline" href="https://wa.me/5511991892089" target="_blank" rel="noopener noreferrer">(11) 99189-2089</a> e solicite o canal responsável por privacidade. A empresa deve confirmar um canal oficial e, quando aplicável, identificar seu encarregado (DPO) e os respectivos dados de contato.</p>
+
+                <h3>2. Quais dados podem ser tratados?</h3>
+                <ul>
+                    <li>Dados que você decide compartilhar ao conversar por WhatsApp, como nome, telefone, preferências de móveis, medidas e informações necessárias para orçamento ou atendimento;</li>
+                    <li>Dados técnicos transmitidos automaticamente pela conexão, como endereço IP, data/hora, navegador e informações de segurança registradas pela hospedagem ou pelos fornecedores;</li>
+                    <li>Preferência local de carregamento do mapa externo, armazenada no navegador para respeitar sua escolha;</li>
+                    <li>Dados que você fornece diretamente em contatos comerciais, pedidos, entregas ou relacionamento pós-venda.</li>
+                </ul>
+                <p>Este site não possui formulário próprio de cadastro ou pagamento no momento. Não informe dados sensíveis pelo site ou WhatsApp, a menos que sejam estritamente necessários e exista orientação adequada.</p>
+
+                <h3>3. Para que usamos os dados e qual a base legal?</h3>
+                <p>Os dados podem ser usados para responder dúvidas, elaborar orçamentos, personalizar o atendimento, cumprir pedidos e obrigações legais, prevenir fraudes, manter a segurança e atender solicitações dos titulares. Conforme o caso concreto, as bases legais podem incluir procedimentos preliminares ou execução de contrato, cumprimento de obrigação legal/regulatória, exercício regular de direitos, legítimo interesse devidamente avaliado ou consentimento. A base aplicável deve ser definida para cada finalidade; esta política não substitui essa avaliação.</p>
+
+                <h3>4. WhatsApp, mapas e outros fornecedores</h3>
+                <p>Ao clicar em links do WhatsApp, Instagram, Facebook ou Google Maps, você sai do ambiente controlado diretamente por este site e passa a interagir com o respectivo fornecedor, que pode tratar dados conforme seus próprios termos e políticas. O mapa incorporado não é carregado automaticamente: ele só é carregado após você acionar “Carregar mapa do Google”. Abrir a rota pelo botão do Google Maps também transfere você ao serviço externo.</p>
+                <p>O site utiliza recursos externos para fontes, ícones, estilos e imagens. Esses fornecedores podem receber dados técnicos como IP e informações do navegador ao requisitar os recursos. A empresa deve confirmar os fornecedores efetivamente utilizados, suas condições, eventuais transferências internacionais e se algum serviço adicional de análise, publicidade ou rastreamento foi instalado.</p>
+
+                <h3>5. Compartilhamento e transferências internacionais</h3>
+                <p>Os dados podem ser compartilhados apenas quando necessário com prestadores que apoiam hospedagem, comunicação, atendimento, segurança e funcionamento do site, ou quando houver obrigação legal. Alguns fornecedores podem processar dados fora do Brasil. A Casa Luxo deve mapear os destinatários, avaliar as garantias contratuais e adotar o mecanismo de transferência internacional aplicável à LGPD e à regulamentação da ANPD.</p>
+
+                <h3>6. Retenção e segurança</h3>
+                <p>Os dados devem ser mantidos apenas pelo período necessário às finalidades informadas, aos prazos legais e ao exercício regular de direitos, e depois eliminados ou anonimizados quando cabível. São recomendadas medidas técnicas e administrativas proporcionais ao risco, controle de acesso, atualização de sistemas, contratos com fornecedores e procedimentos para incidentes. Nenhum método de transmissão ou armazenamento é totalmente isento de risco.</p>
+
+                <h3>7. Seus direitos</h3>
+                <p>Nos termos da LGPD, você pode solicitar, conforme aplicável, confirmação da existência de tratamento, acesso, correção de dados incompletos ou desatualizados, anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade, portabilidade quando regulamentada e aplicável, informação sobre compartilhamentos, informação sobre a possibilidade de negar consentimento e suas consequências, revogação do consentimento e revisão de decisões tomadas unicamente com base em tratamento automatizado que afetem seus interesses. Também é possível apresentar petição à ANPD e aos órgãos de defesa do consumidor, conforme o caso.</p>
+                <p>Para exercer seus direitos, entre em contato pelo canal de privacidade informado nesta política. Podemos solicitar informações razoáveis para confirmar sua identidade e proteger seus dados. As solicitações serão atendidas nos prazos e limites previstos na legislação.</p>
+
+                <h3>8. Cookies e armazenamento local</h3>
+                <p>O site não declara utilizar cookies publicitários ou ferramentas próprias de analytics neste momento. A preferência de carregamento do mapa é guardada no armazenamento local do navegador para lembrar sua escolha. Recursos de terceiros podem ter seus próprios mecanismos de armazenamento quando carregados. Você pode apagar dados locais nas configurações do navegador; isso poderá fazer com que a pergunta sobre o mapa apareça novamente.</p>
+
+                <h3>9. Crianças, alterações e contato</h3>
+                <p>Este site não é direcionado a crianças e não pretende coletar intencionalmente dados de crianças. Caso isso ocorra, o controlador deverá avaliar a situação e agir conforme a LGPD e o melhor interesse da criança. Esta política pode ser atualizada para refletir mudanças no site, nos fornecedores ou nas obrigações legais. A versão vigente ficará disponível nesta página.</p>
+                <p><strong>Atenção:</strong> esta política é uma base de transparência que precisa ser validada e completada pela empresa com seus dados jurídicos, operações reais, prazos de retenção, fornecedores e canal de atendimento ao titular. Não é uma certificação automática de conformidade com a LGPD.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aviso de escolha para o conteúdo externo do mapa -->
+    <aside id="privacy-notice" class="hidden fixed bottom-4 left-4 z-[70] max-w-xl rounded-2xl border border-sand-200 bg-white p-5 shadow-2xl" role="dialog" aria-modal="false" aria-labelledby="privacy-notice-title" aria-describedby="privacy-notice-text">
+        <h2 id="privacy-notice-title" class="font-bold text-sand-900">Sua privacidade</h2>
+        <p id="privacy-notice-text" class="text-sm text-sand-800 mt-2 leading-relaxed">O mapa do Google é um conteúdo externo e pode receber dados técnicos, como seu IP, quando carregado. Você pode autorizá-lo agora ou continuar sem carregar o mapa. A escolha fica salva neste navegador.</p>
+        <div class="notice-actions flex flex-wrap gap-2 mt-4">
+            <button type="button" id="accept-map-btn" class="rounded-full bg-sand-900 px-4 py-2.5 text-xs font-bold text-white hover:bg-gold-600">Permitir mapa externo</button>
+            <button type="button" id="reject-map-btn" class="rounded-full border border-sand-300 px-4 py-2.5 text-xs font-bold text-sand-900 hover:bg-sand-100">Continuar sem mapa</button>
+            <a href="#privacy-section" id="privacy-notice-policy" class="self-center px-2 text-xs underline underline-offset-4 text-sand-800">Ler política</a>
+        </div>
+    </aside>
 
     <!-- FOOTER -->
     <footer class="bg-sand-900 text-white border-t border-sand-800 py-12">
@@ -814,8 +909,7 @@
             
             <div class="flex items-center gap-3">
                 <div class="flex items-center justify-center">
-                    <img src="images/logo.png" 
-                    style="width:auto; height:80px" alt="Casa Luxo Logo" class="object-contain brightness-0 invert" onerror="this.onerror=null; this.src='https://placehold.co/200x80/1F1B16/FFFFFF?text=CASA+LUXO';">
+                  <img src="images/logo.png" style="width:auto; height:80px" alt="Casa Luxo Logo" class="object-contain brightness-0 invert __web-inspector-hide-shortcut__" onerror="this.onerror=null; this.src='https://placehold.co/200x80/1F1B16/FFFFFF?text=CASA+LUXO';">
                 </div>
             </div>
 
@@ -823,10 +917,12 @@
                 © 2026 Casa Luxo. Rua Teodoro Sampaio, 1478 — Pinheiros, São Paulo/SP. Todos os direitos reservados.
             </p>
 
-            <div class="flex items-center gap-5 text-sand-300">
-                <a href="https://instagram.com/moveiscasaluxo" target="_blank" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
-                <a href="https://facebook.com/MoveisCasaLuxo" target="_blank" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
-                <a href="https://wa.me/5511991892089" target="_blank" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+            <div class="flex flex-wrap items-center justify-center gap-5 text-sand-300">
+                <a href="#privacy-section" class="text-xs hover:text-gold-400 underline underline-offset-4">Privacidade e LGPD</a>
+                <button type="button" id="privacy-settings-link" class="text-xs hover:text-gold-400 underline underline-offset-4">Preferências de privacidade</button>
+                <a href="https://instagram.com/moveiscasaluxo" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="https://facebook.com/MoveisCasaLuxo" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+                <a href="https://wa.me/5511991892089" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-whatsapp text-lg"></i></a>
             </div>
 
         </div>
@@ -834,7 +930,7 @@
 
     <!-- FLOATING WHATSAPP BUTTON -->
     <a href="https://wa.me/5511991892089?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20Luxo." 
-       target="_blank" 
+       target="_blank" rel="noopener noreferrer" 
        aria-label="Falar no WhatsApp" 
        class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-2xl transition-transform hover:scale-110">
         <i class="fa-brands fa-whatsapp"></i>
@@ -842,6 +938,45 @@
 
     <!-- JAVASCRIPT FOR CALCULATOR AND INTERACTIVITY -->
     <script>
+        // Preferência do conteúdo externo (Google Maps). Não carrega o mapa antes da escolha.
+        const MAP_URL = 'https://maps.google.com/maps?q=R.+Teodoro+Sampaio+1478+Pinheiros+S%C3%A3o+Paulo&hl=pt-BR&z=16&output=embed';
+        const privacyNotice = document.getElementById('privacy-notice');
+        const mapPlaceholder = document.getElementById('map-consent-placeholder');
+        const mapFrame = document.getElementById('map-frame');
+        const loadMapButton = document.getElementById('load-map-btn');
+        const privacySettingsLink = document.getElementById('privacy-settings-link');
+
+        function loadGoogleMap() {
+            if (!mapFrame || mapFrame.querySelector('iframe')) return;
+            const iframe = document.createElement('iframe');
+            iframe.src = MAP_URL;
+            iframe.title = 'Mapa do showroom Casa Luxo em Pinheiros, São Paulo';
+            iframe.className = 'w-full h-full rounded-2xl';
+            iframe.style.border = '0';
+            iframe.loading = 'lazy';
+            iframe.referrerPolicy = 'no-referrer-when-downgrade';
+            iframe.allowFullscreen = true;
+            mapPlaceholder?.remove();
+            mapFrame.appendChild(iframe);
+        }
+        function saveMapChoice(choice) {
+            try { localStorage.setItem('casaluxo-map-consent', choice); } catch (e) { /* armazenamento pode estar desativado */ }
+            privacyNotice?.classList.add('hidden');
+            if (choice === 'accepted') loadGoogleMap();
+        }
+        function showPrivacyChoices() {
+            privacyNotice?.classList.remove('hidden');
+            document.getElementById('accept-map-btn')?.focus();
+        }
+        let savedMapChoice = null;
+        try { savedMapChoice = localStorage.getItem('casaluxo-map-consent'); } catch (e) { /* armazenamento pode estar desativado */ }
+        if (savedMapChoice === 'accepted') loadGoogleMap();
+        else if (savedMapChoice !== 'rejected') showPrivacyChoices();
+        loadMapButton?.addEventListener('click', () => saveMapChoice('accepted'));
+        document.getElementById('accept-map-btn')?.addEventListener('click', () => saveMapChoice('accepted'));
+        document.getElementById('reject-map-btn')?.addEventListener('click', () => saveMapChoice('rejected'));
+        privacySettingsLink?.addEventListener('click', showPrivacyChoices);
+
         // Header Blur on Scroll
         const header = document.getElementById('main-header');
         window.addEventListener('scroll', () => {
