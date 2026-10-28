@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#1F1B16">
+    <meta name="robots" content="index,follow">
+    <title>Casa Luxo · Móveis, Estofados e Arquitetura | Pinheiros, São Paulo</title>
+    <meta name="description" content="Showroom de móveis de alto padrão na Rua Teodoro Sampaio, 1478, Pinheiros. Sofás sob medida, salas de jantar, dormitórios, curadoria em design e atendimento VIP.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Casa Luxo · Móveis e Decoração de Alto Padrão em Pinheiros">
+    <meta property="og:description" content="Mobiliário autoral, sofás sob medida e curadoria completa em design de interiores. Visite o showroom ou monte seu sofá online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://instagram.com/moveiscasaluxo">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            300: '#F3E5C8',
+                            400: '#E5C07B',
+                            500: '#C5A059',
+                            600: '#A37F38',
+                            700: '#7D5F23'
+                        },
+                        sand: {
+                            50: '#FAF9F5',
+                            100: '#F4F1EA',
+                            200: '#E8E3D8',
+                            300: '#D5CDBF',
+                            800: '#3D3830',
+                            900: '#1F1B16'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'Manrope', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FAF9F5;
+            color: #1F1B16;
+            overflow-x: hidden;
+        }
+
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-serif-title {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* Light Glassmorphism effects */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05);
+        }
+
+        .glass-card-hover {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .glass-card-hover:hover {
+            background: #FFFFFF;
+            border-color: rgba(197, 160, 89, 0.6);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -15px rgba(197, 160, 89, 0.15);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #1F1B16 0%, #A37F38 50%, #C5A059 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Ticker Animation */
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .animate-ticker {
+            display: inline-block;
+            white-space: nowrap;
+            animation: ticker 35s linear infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FAF9F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D5CDBF;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #C5A059;
+        }
+
+        /* Responsividade, acessibilidade e prevenção de overflow */
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-padding-top: 100px; -webkit-text-size-adjust: 100%; }
+        body { min-width: 320px; overflow-wrap: break-word; }
+        img, svg, video, canvas, iframe { max-width: 100%; }
+        img { height: auto; }
+        a, button, input, select, textarea { touch-action: manipulation; }
+        a:focus-visible, button:focus-visible, input:focus-visible,
+        select:focus-visible, summary:focus-visible, textarea:focus-visible {
+            outline: 3px solid #A37F38; outline-offset: 3px;
+        }
+        .privacy-content h3 { font-weight: 700; margin: 1.25rem 0 .4rem; color: #1F1B16; }
+        .privacy-content p, .privacy-content li { font-size: .875rem; line-height: 1.75; color: #3D3830; }
+        .privacy-content ul { list-style: disc; padding-left: 1.25rem; }
+        #privacy-section { scroll-margin-top: 100px; }
+        #map-consent-placeholder { min-height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1.5rem; }
+        #privacy-notice { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+        @media (max-width: 640px) {
+            html { scroll-padding-top: 84px; }
+            .glass-card-hover:hover { transform: none; }
+            #contato { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+            #map-frame { height: 320px; }
+            #privacy-notice { left: .75rem; right: .75rem; bottom: .75rem; width: auto; }
+            #privacy-notice .notice-actions { display: flex; flex-direction: column; }
+            #privacy-notice .notice-actions button { width: 100%; }
+            #privacy-section { scroll-margin-top: 84px; }
+        }
+        /* Imagem de fundo sutil do topo (home) */
+        .hero-bg {
+            position: absolute; inset: 0; pointer-events: none;
+            /* 1º: foto real da fachada/móvel da loja (coloque em images/hero-fundo.jpg).
+               Se o arquivo não existir, aparecem as fotos de reserva abaixo dele. */
+            background-image:
+                url('images/hero-fundo.jpg'),
+                url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=70&w=2000'),
+                url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=70&w=2000');
+            background-size: cover; background-position: 70% center; background-repeat: no-repeat;
+            opacity: .16;
+            filter: grayscale(35%) sepia(20%) contrast(.95);
+            /* some à esquerda, onde fica o texto, para não atrapalhar a leitura */
+            -webkit-mask-image: linear-gradient(to left, #000 25%, rgba(0,0,0,.55) 60%, transparent 92%);
+                    mask-image: linear-gradient(to left, #000 25%, rgba(0,0,0,.55) 60%, transparent 92%);
+        }
+        .hero-video {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            object-fit: cover; object-position: 70% center;
+            opacity: 0; transition: opacity 1.2s ease;
+        }
+        .hero-video.is-ready { opacity: 1; }
+        @media (max-width: 1023px) { .hero-video { object-position: center top; } }
+        @media (prefers-reduced-motion: reduce) { .hero-video { display: none; } }
+        .hero-bg::after {
+            content: ""; position: absolute; inset: 0;
+            background: linear-gradient(to bottom, rgba(255,255,255,.35), transparent 30%, transparent 70%, #F4F1EA);
+        }
+        @media (max-width: 1023px) {
+            .hero-bg { opacity: .1; background-position: center top;
+                -webkit-mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.6) 50%, transparent 95%);
+                        mask-image: linear-gradient(to bottom, #000 0%, rgba(0,0,0,.6) 50%, transparent 95%); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-sand-900 text-white py-2 px-4 text-center text-xs font-medium tracking-wide">
+        <span class="inline-flex items-center gap-2">
+            <i class="fa-solid fa-store text-gold-400 text-[10px]"></i>
+            <span>Showroom Pinheiros aberto de Segunda a Sábado das 9h às 20h e Domingos das 10h às 17h</span>
+            <span class="hidden md:inline">• Rua Teodoro Sampaio, 1478</span>
+        </span>
+    </div>
+
+    <!-- MAIN NAVBAR HEADER -->
+    <header id="main-header" class="sticky top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-sand-200 py-3">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+            
+            <!-- BRAND LOGO -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="h-2 flex items-center justify-center py-1">
+                    <img src="images/logo.png" alt="Casa Luxo Logo" style="width: auto; height: 120px; max-width: 300px;" class="w-auto object-contain drop-shadow-sm group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://placehold.co/200x80/1F1B16/C5A059?text=CASA+LUXO';">
+                </div>
+            </a>
+
+            <!-- NAVIGATION LINKS -->
+            <nav class="hidden lg:flex items-center gap-8 text-xs tracking-widest uppercase font-semibold text-sand-800">
+                <a href="#ambientes" class="hover:text-gold-600 transition-colors">Ambientes</a>
+                <a href="#colecoes" class="hover:text-gold-600 transition-colors">Coleção</a>
+                <a href="#calculadora" class="hover:text-gold-600 transition-colors">Montar Seu Sofá</a>
+                <a href="#diferenciais" class="hover:text-gold-600 transition-colors">A Loja</a>
+                <a href="#materiais" class="hover:text-gold-600 transition-colors">Acabamentos</a>
+                <a href="#arquitetos" class="hover:text-gold-600 transition-colors">Arquitetos</a>
+                <a href="#contato" class="hover:text-gold-600 transition-colors">Visite-nos</a>
+            </nav>
+
+            <!-- CTA BUTTON -->
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5511991892089?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20Luxo%20e%20gostaria%20de%20um%20atendimento%20exclusivo." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="hidden sm:inline-flex items-center gap-2 bg-sand-900 hover:bg-gold-600 text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all shadow-md hover:shadow-gold-500/20">
+                    <i class="fa-brands fa-whatsapp text-sm text-gold-400"></i>
+                    <span>Atendimento VIP</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-sand-900 text-2xl focus:outline-none p-1">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-drawer" class="hidden lg:hidden bg-white border-b border-sand-200 px-6 py-6 mt-3 shadow-xl">
+            <div class="flex flex-col gap-4 text-xs font-semibold uppercase tracking-wider text-sand-900">
+                <a href="#ambientes" class="mobile-link py-2 border-b border-sand-100">Ambientes do Showroom</a>
+                <a href="#colecoes" class="mobile-link py-2 border-b border-sand-100">Coleção Completa</a>
+                <a href="#calculadora" class="mobile-link py-2 border-b border-sand-100">Simulador de Sofá</a>
+                <a href="#diferenciais" class="mobile-link py-2 border-b border-sand-100">Por Que Escolher a Casa Luxo</a>
+                <a href="#materiais" class="mobile-link py-2 border-b border-sand-100">Tecidos & Madeiras</a>
+                <a href="#arquitetos" class="mobile-link py-2 border-b border-sand-100">Atendimento a Arquitetos</a>
+                <a href="#contato" class="mobile-link py-2 border-b border-sand-100">Showroom em Pinheiros</a>
+                <a href="https://wa.me/5511991892089" target="_blank" rel="noopener noreferrer" class="mt-2 text-center bg-sand-900 text-white py-3 rounded-full font-bold uppercase">Falar com Consultor</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[90vh] flex items-center pt-16 pb-20 overflow-hidden bg-gradient-to-b from-white via-sand-50 to-sand-100">
+        <!-- Imagem de fundo sutil (fachada / móvel) -->
+        <div class="hero-bg" aria-hidden="true">
+            <!-- Vídeo de fundo: salve o arquivo em videos/hero.mp4 (e, opcionalmente, videos/hero.webm).
+                 Se o vídeo não existir ou não carregar, a foto de fundo continua aparecendo. -->
+            <video class="hero-video" autoplay muted loop playsinline preload="metadata" tabindex="-1"
+                   onloadeddata="this.classList.add('is-ready')">
+                <source src="videos/hero.webm" type="video/webm">
+                <source src="videos/hero.mp4" type="video/mp4"
+                        onerror="this.closest('video').remove()">
+            </video>
+        </div>
+
+        <!-- Background Glows -->
+        <div class="absolute top-1/4 right-10 w-96 h-96 bg-gold-400/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-gold-300/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+                
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-gold-500/30 bg-gold-500/10 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-gold-600 animate-ping"></span>
+                    <span class="text-xs font-semibold uppercase tracking-widest text-gold-700">Showroom Exclusivo em Pinheiros · SP</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-serif-title leading-[1.05] text-sand-900">
+                    Móveis que fazem <br>
+                    sua casa parecer <br>
+                    <span class="italic text-gold-600 font-normal">a sua verdadeira cara.</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-sand-800 max-w-2xl font-light leading-relaxed">
+                    Sofás sob medida, estofados, mesas de jantar, dormitórios e ambientes decorados completos. Venha sentar, comparar tecidos e planejar cada espaço com nossa equipe especializada no coração de São Paulo.
+                </p>
+
+                <div class="pt-4 flex flex-wrap items-center gap-4">
+                    <a href="https://wa.me/5511991892089?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20visita%20guiada%20ao%20Showroom." 
+                       target="_blank" rel="noopener noreferrer"
+                       class="bg-sand-900 hover:bg-gold-600 text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-gold-500/20 flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-base text-gold-400"></i>
+                        <span>Agendar Visita com Projetista</span>
+                    </a>
+
+                    <a href="#calculadora" 
+                       class="glass-card hover:bg-white text-sand-900 border border-sand-300 px-6 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all flex items-center gap-3">
+                        <i class="fa-solid fa-couch text-gold-600"></i>
+                        <span>Qual Sofá Cabe Na Sua Sala?</span>
+                    </a>
+                </div>
+
+                <!-- Trust Metrics Bar -->
+                <div class="pt-10 grid grid-cols-3 gap-6 border-t border-sand-200 max-w-xl">
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-serif-title font-bold text-gold-600">Pinheiros</span>
+                        <span class="text-[11px] text-sand-800 uppercase tracking-wider font-medium">R. Teodoro Sampaio, 1478</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-serif-title font-bold text-gold-600">7 Dias</span>
+                        <span class="text-[11px] text-sand-800 uppercase tracking-wider font-medium">Aberto Seg. a Domingo</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl sm:text-3xl font-serif-title font-bold text-gold-600">Sob Medida</span>
+                        <span class="text-[11px] text-sand-800 uppercase tracking-wider font-medium">Personalização Total</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-5 relative">
+                <!-- Arch Frame Image Display -->
+                <div class="relative mx-auto max-w-md lg:max-w-none rounded-[200px_200px_30px_30px] overflow-hidden border-2 border-gold-500/30 p-2 bg-white shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1000" 
+                         alt="Sofá de Luxo Casa Luxo" 
+                         class="w-full h-[500px] object-cover rounded-[190px_190px_22px_22px]"
+                         onerror="this.src='https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800'">
+                    
+                    <div class="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-2xl border border-gold-500/20 backdrop-blur-xl text-center shadow-lg">
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-gold-700 block mb-1">Showroom Real Pinheiros</span>
+                        <p class="text-xs text-sand-900 font-medium">Ambientes compostos em escala real para você testar conforto e ergonomia.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTINUOUS TICKER MARQUEE STRIP -->
+    <div class="border-y border-sand-200 py-4 bg-white overflow-hidden font-serif-title italic text-lg sm:text-2xl text-gold-600">
+        <div class="animate-ticker flex items-center gap-12">
+            <span>Sofás Sob Medida</span><i class="fa-solid fa-star text-xs text-sand-300"></i>
+            <span class="text-sand-800">Estofados Ergonômicos</span><i class="fa-solid fa-star text-xs text-sand-300"></i>
+            <span>Mesas e Cadeiras de Jantar</span><i class="fa-solid fa-star text-xs text-sand-300"></i>
+            <span class="text-sand-800">Dormitórios Conceituais</span><i class="fa-solid fa-star text-xs text-sand-300"></i>
+            <span>Cozinhas Planejadas</span><i class="fa-solid fa-star text-xs text-sand-300"></i>
+            <span class="text-sand-800">Acessórios de Decoração</span><i class="fa-solid fa-star text-xs text-sand-300"></i>
+            <span>Móveis para Salas de Estar</span><i class="fa-solid fa-star text-xs text-sand-300"></i>
+            <span>Pinheiros · São Paulo</span><i class="fa-solid fa-star text-xs text-sand-300"></i>
+        </div>
+    </div>
+
+    <!-- SHOWROOM GALLERY / AMBIENTES SECTION -->
+    <section id="ambientes" class="py-24 bg-sand-50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-xs font-bold text-gold-600 uppercase tracking-widest block mb-2">Vivência no Showroom</span>
+                    <h2 class="text-3xl sm:text-5xl font-serif-title text-sand-900">Ambientes que dão <span class="italic text-gold-600">vontade de ficar</span></h2>
+                </div>
+                <p class="text-sand-800 max-w-md text-sm leading-relaxed">
+                    Cada espaço do nosso showroom em Pinheiros é projetado como uma casa real. Toque nos móveis, teste os estofados e escolha a combinação perfeita para o seu lar.
+                </p>
+            </div>
+
+            <!-- Mosaic Gallery Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="glass-card rounded-2xl overflow-hidden glass-card-hover group">
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800" 
+                             alt="Sala de Estar Integrada Casa Luxo" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                             onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-sand-900/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Estar & Living</span>
+                            <h3 class="text-2xl font-serif-title text-white mt-1">Sala de Estar Contemporânea</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden glass-card-hover group">
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800" 
+                             alt="Poltronas e Estofados Nobres" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                             onerror="this.src='https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-sand-900/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Estofados & Poltronas</span>
+                            <h3 class="text-2xl font-serif-title text-white mt-1">Cantinho de Leitura & Relax</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden glass-card-hover group">
+                    <div class="relative h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&q=80&w=800" 
+                             alt="Salas de Jantar de Luxo" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                             onerror="this.src='https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-sand-900/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-[10px] font-bold uppercase tracking-widest text-gold-400">Salas de Jantar</span>
+                            <h3 class="text-2xl font-serif-title text-white mt-1">Mesa Imperiale & Cadeiras</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FULL CATALOG BY CATEGORIES -->
+    <section id="colecoes" class="py-24 bg-white border-t border-sand-200">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Catálogo de Produtos</span>
+                <h2 class="text-3xl sm:text-5xl font-serif-title text-sand-900 mt-2">Da sala de estar <span class="italic text-gold-600">ao dormitório</span></h2>
+                <p class="text-sand-800 text-sm mt-4">Escolha a categoria desejada e fale diretamente com o consultor no WhatsApp para receber catálogo de fotos, tabela de medidas e paleta de tecidos.</p>
+            </div>
+
+            <!-- Categories Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Category 1 -->
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20as%20op%C3%A7%C3%B5es%20de%20Sof%C3%A1s%20no%20catalogo" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=800" 
+                             alt="Sofás Sob Medida Casa Luxo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                             onerror="this.src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-serif-title text-sand-900 mb-2">Sofás Sob Medida</h3>
+                        <p class="text-xs text-sand-800 mb-4 leading-relaxed">Modelos retos, modulares, com chaise-longue e curvos orgânicos. Opções de espumas D33 e molas ensacadas.</p>
+                        <span class="inline-flex items-center gap-2 text-xs font-bold text-gold-600 uppercase tracking-wider group-hover:translate-x-2 transition-transform">
+                            Solicitar Catálogo no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Category 2 -->
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20as%20op%C3%A7%C3%B5es%20de%20Estofados%20e%20Poltronas" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&q=80&w=800" 
+                             alt="Poltronas e Puffs de Luxo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                             onerror="this.src='https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-serif-title text-sand-900 mb-2">Poltronas & Puffs</h3>
+                        <p class="text-xs text-sand-800 mb-4 leading-relaxed">Poltronas giratórias, fixas e pufs com estrutura em madeira nobre e acabamentos premium.</p>
+                        <span class="inline-flex items-center gap-2 text-xs font-bold text-gold-600 uppercase tracking-wider group-hover:translate-x-2 transition-transform">
+                            Solicitar Catálogo no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Category 3 -->
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20op%C3%A7%C3%B5es%20para%20Salas%20de%20Jantar" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl overflow-hidden glass-card-hover group block">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=800" 
+                             alt="Mesas e Cadeiras de Jantar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                             onerror="this.src='https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&q=80&w=800'">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-serif-title text-sand-900 mb-2">Mesas & Cadeiras</h3>
+                        <p class="text-xs text-sand-800 mb-4 leading-relaxed">Tampos em mármore esculpido, madeira natural e vidro laqueado. Cadeiras anatômicas estofadas.</p>
+                        <span class="inline-flex items-center gap-2 text-xs font-bold text-gold-600 uppercase tracking-wider group-hover:translate-x-2 transition-transform">
+                            Solicitar Catálogo no WhatsApp <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Quick Category Pill Tags -->
+            <div class="mt-12 flex flex-wrap justify-center gap-3">
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20m%C3%B3veis%20para%20Dormit%C3%B3rios" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Dormitórios & Cabeceiras</a>
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20projetos%20de%20Cozinhas" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Cozinhas & Modulados</a>
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20racks%20e%20pain%C3%A9is%20para%20Home%20Theater" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Racks & Painéis de TV</a>
+                <a href="https://wa.me/5511991892089?text=Quero%20ver%20acess%C3%B3rios%20e%20objetos%20de%20decora%C3%A7%C3%A3o" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-full border border-sand-300 hover:border-gold-600 text-xs font-medium text-sand-800 hover:text-gold-700 transition-colors bg-sand-50">Objetos de Decoração</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SOFA CALCULATOR & DRAWING TOOL -->
+    <section id="calculadora" class="py-24 bg-sand-50 border-y border-sand-200">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Ferramenta Exclusiva Interativa</span>
+                <h2 class="text-3xl sm:text-5xl font-serif-title text-sand-900 mt-1">Qual sofá cabe <span class="italic text-gold-600">na sua sala?</span></h2>
+                <p class="text-sand-800 text-xs sm:text-sm mt-3">Ajuste a largura da sua parede, o formato do sofá, a cor do tecido e a madeira dos pés. O visual é gerado na hora no desenho técnico abaixo.</p>
+            </div>
+
+            <div class="glass-card p-6 lg:p-10 rounded-3xl border border-gold-500/30 grid lg:grid-cols-12 gap-10 items-center bg-white shadow-xl">
+                
+                <!-- SVG CANVAS DRAWING DISPLAY -->
+                <div class="lg:col-span-7 bg-sand-100 p-6 rounded-2xl border border-sand-200 flex flex-col items-center justify-center min-h-[360px] relative overflow-hidden">
+                    <div class="absolute top-4 left-4 flex items-center gap-2 text-[10px] uppercase font-bold text-sand-800 tracking-wider">
+                        <i class="fa-solid fa-compass-drafting text-gold-600"></i>
+                        <span>Esquema Visual Proporcional</span>
+                    </div>
+
+                    <svg id="sofa-canvas" viewBox="0 0 640 320" class="w-full h-auto max-h-[300px] drop-shadow-md">
+                        <!-- Rendered via JavaScript -->
+                    </svg>
+
+                    <div class="w-full mt-4 flex items-center justify-between text-[11px] text-sand-800 border-t border-sand-200 pt-3">
+                        <span>Largura Total Recomendada: <strong id="sofa-width-display" class="text-gold-700 font-bold">3.00 m</strong></span>
+                        <span id="sofa-type-display" class="text-sand-900 font-semibold uppercase tracking-wider">Sofá Reto</span>
+                    </div>
+                </div>
+
+                <!-- CONTROLS & SELECTION PANEL -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <!-- Wall Size Slider -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-xs font-semibold uppercase tracking-wider text-sand-900">Largura da Parede (Metros)</label>
+                            <span id="wall-value-text" class="text-base font-bold text-gold-600 font-serif-title">3,4 m</span>
+                        </div>
+                        <input type="range" id="wall-slider" min="2.0" max="6.0" step="0.1" value="3.4" 
+                               class="w-full accent-gold-600 h-2 bg-sand-200 rounded-lg cursor-pointer">
+                        <div class="flex justify-between text-[10px] text-sand-800 mt-1">
+                            <span>2,0m</span>
+                            <span>4,0m</span>
+                            <span>6,0m</span>
+                        </div>
+                    </div>
+
+                    <!-- Sofa Type Selector -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-sand-900 mb-2">Formato Desejado</label>
+                        <select id="sofa-format-select" class="w-full bg-sand-50 border border-sand-300 rounded-xl px-4 py-3 text-sm text-sand-900 focus:border-gold-600 focus:outline-none">
+                            <option value="reto" selected>Sofá Reto Minimalista</option>
+                            <option value="chaise">Sofá com Chaise-Longue</option>
+                            <option value="curvo">Sofá Curvo Orgânico</option>
+                            <option value="modular">Configuração Modular Livre</option>
+                        </select>
+                    </div>
+
+                    <!-- Fabric Swatches -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-sand-900 mb-2">Tecido do Estofado</label>
+                        <div class="flex items-center gap-3" id="fabric-swatches">
+                            <!-- Swatches injected via JS -->
+                        </div>
+                        <span id="fabric-name-text" class="block text-[11px] text-gold-700 mt-1.5 font-medium">Bouclé Off-White</span>
+                    </div>
+
+                    <!-- Wood Legs Swatches -->
+                    <div>
+                        <label class="block text-xs font-semibold uppercase tracking-wider text-sand-900 mb-2">Madeira dos Pés</label>
+                        <div class="flex items-center gap-3" id="wood-swatches">
+                            <!-- Swatches injected via JS -->
+                        </div>
+                        <span id="wood-name-text" class="block text-[11px] text-gold-700 mt-1.5 font-medium">Lâmina Mel Natural</span>
+                    </div>
+
+                    <!-- Action Box -->
+                    <div class="pt-2">
+                        <a id="sofa-whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer" 
+                           class="w-full bg-sand-900 hover:bg-gold-600 text-white py-3.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg">
+                            <i class="fa-brands fa-whatsapp text-sm text-gold-400"></i>
+                            <span>Pedir Orçamento Deste Sofá</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Recommendation Helper Cards -->
+            <div class="grid sm:grid-cols-3 gap-6 mt-8">
+                <div class="glass-card p-4 rounded-xl text-xs text-sand-800 border border-sand-200">
+                    <strong class="block text-sand-900 mb-1"><i class="fa-solid fa-ruler-horizontal text-gold-600 mr-1.5"></i> Circulação Ideal</strong>
+                    Deixe entre 60cm e 90cm libres na frente do sofá para garantir fácil passagem e conforto no ambiente.
+                </div>
+                <div class="glass-card p-4 rounded-xl text-xs text-sand-800 border border-sand-200">
+                    <strong class="block text-sand-900 mb-1"><i class="fa-solid fa-arrows-left-right text-gold-600 mr-1.5"></i> Folga Lateral</strong>
+                    Reservamos aproximadamente 20cm de cada lado da parede para mesas de apoio, luminárias ou rodapés.
+                </div>
+                <div class="glass-card p-4 rounded-xl text-xs text-sand-800 border border-sand-200">
+                    <strong class="block text-sand-900 mb-1"><i class="fa-solid fa-swatchbook text-gold-600 mr-1.5"></i> Mostruário Completo</strong>
+                    No showroom físico em Pinheiros você encontra mais de 200 amostras de tecidos toque a veludo, linho e couro.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE CASA LUXO (DIFFERENTIALS) -->
+    <section id="diferenciais" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Diferenciais Exclusivos</span>
+                <h2 class="text-3xl sm:text-5xl font-serif-title text-sand-900 mt-1">Por que escolher <span class="italic text-gold-600">a Casa Luxo</span></h2>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="p-8 rounded-2xl bg-sand-50 border-t-2 border-gold-500 space-y-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 text-xl">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-serif-title text-sand-900">Showroom Para Testar</h3>
+                    <p class="text-xs text-sand-800 leading-relaxed">Sente no sofá, abra gavetas, confira o toque do tecido e a firmeza da espuma antes de definir seu projeto.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-sand-50 border-t-2 border-gold-500 space-y-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 text-xl">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-serif-title text-sand-900">Atendimento Consultivo</h3>
+                    <p class="text-xs text-sand-800 leading-relaxed">Envie fotos e planta da sua sala no WhatsApp. Nossos projetistas sugerem o layout mais funcional para seu espaço.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-sand-50 border-t-2 border-gold-500 space-y-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 text-xl">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-serif-title text-sand-900">Ambientes Completos</h3>
+                    <p class="text-xs text-sand-800 leading-relaxed">Combine sofás, mesas, poltronas e luminárias com a mesma linguagem estética e harmonia de materiais.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-sand-50 border-t-2 border-gold-500 space-y-4 shadow-sm">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/10 flex items-center justify-center text-gold-600 text-xl">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-serif-title text-sand-900">Entrega & Montagem</h3>
+                    <p class="text-xs text-sand-800 leading-relaxed">Logística própria com prazos alinhados e equipe especializada em montagem de móveis nobres.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FINISHES AND MATERIALS GUIDE -->
+    <section id="materiais" class="py-24 bg-sand-50 border-t border-sand-200">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 space-y-6">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Qualidade sem Concessões</span>
+                <h2 class="text-3xl sm:text-5xl font-serif-title text-sand-900">Tecidos nobres e <span class="italic text-gold-600">madeiras selecionadas</span></h2>
+                <p class="text-sand-800 text-sm leading-relaxed">
+                    A durabilidade e a sofisticação dos móveis Casa Luxo começam na seleção criteriosa das matérias-primas. Cada peça recebe tratamentos especiais contra manchas e desgaste térmico.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-sand-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 flex-none font-bold">01</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-sand-900 uppercase">Bouclés & Linhos Italianos</h4>
+                            <p class="text-xs text-sand-800 mt-1">Toque extremamente suave com trama encorpada, de altíssima gramatura e tratamento fácil de limpar.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-sand-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 flex-none font-bold">02</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-sand-900 uppercase">Madeiras Maciças & Lâminas Naturais</h4>
+                            <p class="text-xs text-sand-800 mt-1">Nogueira, Carvalho Americano e Freijó com secagem controlada para evitar fissuras ao longo dos anos.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-white border border-sand-200 shadow-sm">
+                        <div class="w-10 h-10 rounded-lg bg-gold-500/10 flex items-center justify-center text-gold-600 flex-none font-bold">03</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-sand-900 uppercase">Mármores Esculpidos & Metais Anodizados</h4>
+                            <p class="text-xs text-sand-800 mt-1">Tampos imperiais polidos e estruturas metálicas em tonalidade champanhe e ouro envelhecido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" 
+                     alt="Detalhe de Tecido e Madeira Casa Luxo" class="w-full h-80 object-cover rounded-2xl border border-sand-300 shadow-md">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800" 
+                     alt="Detalhe de Acabamento de Luxo" class="w-full h-80 object-cover rounded-2xl border border-sand-300 shadow-md mt-8">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ARCHITECTS & SPECIFIERS SECTION -->
+    <section id="arquitetos" class="py-20 bg-gradient-to-r from-sand-100 via-white to-sand-100 border-y border-gold-500/30">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-8 space-y-4">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Programa de Parcerias</span>
+                <h2 class="text-3xl sm:text-4xl font-serif-title text-sand-900">É Arquiteto ou Designer de Interiores?</h2>
+                <p class="text-sand-800 text-xs sm:text-sm max-w-2xl leading-relaxed">
+                    Oferecemos atendimento prioritário, envio de blocos 3D (CAD/Sketchup) para maquetes, mostruário de tecidos físico para seu escritório e condições comerciais diferenciadas para especificação de projetos.
+                </p>
+            </div>
+
+            <div class="lg:col-span-4 text-left lg:text-right">
+                <a href="https://wa.me/5511991892089?text=Sou%20Arquiteto(a)%20e%20gostaria%20de%20cadastrar%20meu%20escrit%C3%B3rio%20na%20Casa%20Luxo." 
+                   target="_blank" rel="noopener noreferrer" 
+                   class="bg-sand-900 hover:bg-gold-600 text-white px-8 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all inline-flex items-center gap-3 shadow-md">
+                    <i class="fa-solid fa-pen-ruler text-gold-400"></i>
+                    <span>Cadastrar Escritório VIP</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BLOG & TIPS SECTION -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-xs font-bold text-gold-600 uppercase tracking-widest block mb-2">Conteúdo & Inspiração</span>
+                    <h2 class="text-3xl sm:text-5xl font-serif-title text-sand-900">Dicas de decoração <span class="italic text-gold-600">para inspirar</span></h2>
+                </div>
+                <p class="text-sand-800 max-w-md text-sm leading-relaxed">
+                    Artigos preparados pela nossa equipe de arquitetos para ajudar você a definir o layout, tecidos e paleta de cores.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-3 gap-8">
+                
+                <a href="https://moveiscasaluxo.wixsite.com/meusite/post/como-usar-ba%C3%BAs-na-decora%C3%A7%C3%A3o-de-ambientes" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
+                    <span class="text-[10px] font-bold text-gold-600 uppercase tracking-widest">Artigo de Blog</span>
+                    <h3 class="text-xl font-serif-title text-sand-900">Como usar baús na decoração de salas e quartos</h3>
+                    <p class="text-xs text-sand-800 leading-relaxed">Ideias para unir charme vintage, funcionalidade e espaço extra para organizar mantas e almofadas.</p>
+                    <span class="text-xs font-bold text-gold-700 uppercase tracking-wider block pt-2">Ler Artigo Completo →</span>
+                </a>
+
+                <a href="https://moveiscasaluxo.wixsite.com/meusite/post/4-dicas-f%C3%A1ceis-de-decora%C3%A7%C3%A3o-com-plantas-para-o-seu-ambiente" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
+                    <span class="text-[10px] font-bold text-gold-600 uppercase tracking-widest">Design Biofílico</span>
+                    <h3 class="text-xl font-serif-title text-sand-900">4 dicas de decoração com plantas em apartamentos</h3>
+                    <p class="text-xs text-sand-800 leading-relaxed">Como escolher vasos e espécies adequadas para valorizar a iluminação e trazer vida à sala de estar.</p>
+                    <span class="text-xs font-bold text-gold-700 uppercase tracking-wider block pt-2">Ler Artigo Completo →</span>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=Oek_z315G-Y" target="_blank" rel="noopener noreferrer" class="glass-card rounded-2xl p-6 border border-sand-200 glass-card-hover block space-y-4">
+                    <span class="text-[10px] font-bold text-gold-600 uppercase tracking-widest">Vídeo Explicativo</span>
+                    <h3 class="text-xl font-serif-title text-sand-900">10 Dicas para escolher móveis em salas compactas</h3>
+                    <p class="text-xs text-sand-800 leading-relaxed">Assista ao guia de dimensões e descubra como otimizar a área de circulação sem perder o conforto.</p>
+                    <span class="text-xs font-bold text-gold-700 uppercase tracking-wider block pt-2">Assistir Vídeo →</span>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ ACCORDION SECTION -->
+    <section class="py-24 bg-sand-50 border-t border-sand-200">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="text-center mb-16">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Dúvidas Frequentes</span>
+                <h2 class="text-3xl sm:text-5xl font-serif-title text-sand-900 mt-1">Perguntas <span class="italic text-gold-600">frequentes</span></h2>
+            </div>
+
+            <div class="space-y-4">
+                
+                <details class="glass-card rounded-xl p-5 border border-sand-200 group cursor-pointer bg-white">
+                    <summary class="flex justify-between items-center font-serif-title text-xl text-sand-900 font-medium list-none">
+                        <span>Preciso agendar horário para visitar o showroom em Pinheiros?</span>
+                        <span class="text-gold-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="text-xs text-sand-800 mt-3 leading-relaxed">
+                        Não é obrigatório! Nosso showroom fica aberto de Segunda a Sábado das 9h às 20h e aos Domingos das 10h às 17h na Rua Teodoro Sampaio, 1478. Caso deseje um atendimento reservado com um projetista, recomendamos avisar previamente no WhatsApp.
+                    </p>
+                </details>
+
+                <details class="glass-card rounded-xl p-5 border border-sand-200 group cursor-pointer bg-white">
+                    <summary class="flex justify-between items-center font-serif-title text-xl text-sand-900 font-medium list-none">
+                        <span>Como funciona a encomenda de sofás sob medida?</span>
+                        <span class="text-gold-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="text-xs text-sand-800 mt-3 leading-relaxed">
+                        Você escolhe a largura exata em centímetros, o tecido (bouclé, linho, veludo, couro), a profundidade dos assentos e o tipo de pé. Fabricamos o sofá personalizado para a sua sala.
+                    </p>
+                </details>
+
+                <details class="glass-card rounded-xl p-5 border border-sand-200 group cursor-pointer bg-white">
+                    <summary class="flex justify-between items-center font-serif-title text-xl text-sand-900 font-medium list-none">
+                        <span>Vocês realizam entrega e montagem na Grande São Paulo?</span>
+                        <span class="text-gold-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="text-xs text-sand-800 mt-3 leading-relaxed">
+                        Sim! Entregamos e montamos na Capital, Alphaville, Granja Viana, ABC, Litoral e Interior de São Paulo. Consulte taxas e condições para a sua região via WhatsApp.
+                    </p>
+                </details>
+
+                <details class="glass-card rounded-xl p-5 border border-sand-200 group cursor-pointer bg-white">
+                    <summary class="flex justify-between items-center font-serif-title text-xl text-sand-900 font-medium list-none">
+                        <span>Quais são as opções e formas de pagamento disponíveis?</span>
+                        <span class="text-gold-600 text-2xl group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="text-xs text-sand-800 mt-3 leading-relaxed">
+                        Oferecemos parcelamento no cartão de crédito, descontos especiais para pagamentos via PIX ou transferência e faturamento direto para projetos corporativos e residenciais.
+                    </p>
+                </details>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LOCATION & SHOWROOM CONTACT -->
+    <section id="contato" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-6 space-y-6">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Pinheiros · São Paulo</span>
+                <h2 class="text-4xl font-serif-title text-sand-900">Vem sentar <span class="italic text-gold-600">no sofá</span></h2>
+                <p class="text-sand-800 text-sm leading-relaxed">
+                    Venha tomar um café conosco no coração de Pinheiros. Nossa equipe está pronta para apresentar todo o mostruário de tecidos e ajudar a montar o ambiente dos seus sonhos.
+                </p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-600 flex-none">
+                            <i class="fa-solid fa-location-dot text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-sand-900 uppercase tracking-wider">Endereço do Showroom</h4>
+                            <p class="text-xs text-sand-800">Rua Teodoro Sampaio, 1478 — Pinheiros, São Paulo - SP (CEP 05406-100)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-600 flex-none">
+                            <i class="fa-solid fa-clock text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-sand-900 uppercase tracking-wider">Horários de Funcionamento</h4>
+                            <p class="text-xs text-sand-800">Segunda a Sábado: 09h às 20h | Domingos e Feriados: 10h às 17h</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-600 flex-none">
+                            <i class="fa-brands fa-whatsapp text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-sand-900 uppercase tracking-wider">WhatsApp & Telefone Direct</h4>
+                            <p class="text-xs text-sand-800">(11) 99189-2089</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="https://www.google.com/maps/search/?api=1&query=R.+Teodoro+Sampaio+1478+Pinheiros+S%C3%A3o+Paulo" 
+                       target="_blank" rel="noopener noreferrer" 
+                       class="bg-sand-900 hover:bg-gold-600 text-white px-6 py-3.5 rounded-full font-bold text-xs uppercase tracking-widest inline-flex items-center gap-2 shadow-md">
+                        <i class="fa-solid fa-map-location-dot text-gold-400"></i>
+                        <span>Abrir Rota no Google Maps</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Google Maps Iframe Frame -->
+            <div class="lg:col-span-6">
+                <div id="map-frame" class="glass-card p-3 rounded-3xl overflow-hidden border border-sand-200 h-[400px] shadow-lg">
+                    <div id="map-consent-placeholder" class="rounded-2xl bg-sand-50">
+                        <div class="max-w-sm">
+                            <i class="fa-solid fa-map-location-dot text-3xl text-gold-600 mb-4" aria-hidden="true"></i>
+                            <h3 class="font-serif-title text-2xl text-sand-900 mb-2">Veja como chegar</h3>
+                            <p class="text-sm text-sand-800 mb-4">O mapa é fornecido pelo Google e só será carregado se você autorizar o conteúdo externo. Você também pode abrir a rota diretamente no Google Maps.</p>
+                            <button type="button" id="load-map-btn" class="bg-sand-900 hover:bg-gold-600 text-white px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider">Carregar mapa do Google</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PRIVACIDADE E LGPD: revise os dados do controlador antes de publicar -->
+    <section id="privacy-section" class="py-16 sm:py-20 bg-sand-50 border-t border-sand-200">
+        <div class="max-w-5xl mx-auto px-5 sm:px-6">
+            <div class="max-w-3xl mb-10">
+                <span class="text-xs font-bold text-gold-600 uppercase tracking-widest">Transparência e proteção de dados</span>
+                <h2 class="text-3xl sm:text-4xl font-serif-title text-sand-900 mt-3">Privacidade e LGPD</h2>
+                <p class="text-sm text-sand-800 leading-relaxed mt-4">Esta política explica como dados pessoais podem ser tratados ao navegar neste site ou entrar em contato com a Casa Luxo. Última atualização: 28 de outubro de 2026.</p>
+            </div>
+            <div class="privacy-content bg-white rounded-2xl border border-sand-200 p-5 sm:p-8">
+                <h3>1. Quem é responsável pelos dados?</h3>
+                <p>O controlador dos dados é a pessoa física ou jurídica responsável pela operação da Casa Luxo. <strong>Antes de publicar, preencher e confirmar:</strong> razão social/nome empresarial, CNPJ e endereço oficial para assuntos de privacidade. O nome comercial “Casa Luxo”, isoladamente, pode não identificar juridicamente o controlador.</p>
+                <p>Para dúvidas ou solicitações relacionadas a dados pessoais, entre em contato pelo WhatsApp <a class="underline" href="https://wa.me/5511991892089" target="_blank" rel="noopener noreferrer">(11) 99189-2089</a> e solicite o canal responsável por privacidade. A empresa deve confirmar um canal oficial e, quando aplicável, identificar seu encarregado (DPO) e os respectivos dados de contato.</p>
+
+                <h3>2. Quais dados podem ser tratados?</h3>
+                <ul>
+                    <li>Dados que você decide compartilhar ao conversar por WhatsApp, como nome, telefone, preferências de móveis, medidas e informações necessárias para orçamento ou atendimento;</li>
+                    <li>Dados técnicos transmitidos automaticamente pela conexão, como endereço IP, data/hora, navegador e informações de segurança registradas pela hospedagem ou pelos fornecedores;</li>
+                    <li>Preferência local de carregamento do mapa externo, armazenada no navegador para respeitar sua escolha;</li>
+                    <li>Dados que você fornece diretamente em contatos comerciais, pedidos, entregas ou relacionamento pós-venda.</li>
+                </ul>
+                <p>Este site não possui formulário próprio de cadastro ou pagamento no momento. Não informe dados sensíveis pelo site ou WhatsApp, a menos que sejam estritamente necessários e exista orientação adequada.</p>
+
+                <h3>3. Para que usamos os dados e qual a base legal?</h3>
+                <p>Os dados podem ser usados para responder dúvidas, elaborar orçamentos, personalizar o atendimento, cumprir pedidos e obrigações legais, prevenir fraudes, manter a segurança e atender solicitações dos titulares. Conforme o caso concreto, as bases legais podem incluir procedimentos preliminares ou execução de contrato, cumprimento de obrigação legal/regulatória, exercício regular de direitos, legítimo interesse devidamente avaliado ou consentimento. A base aplicável deve ser definida para cada finalidade; esta política não substitui essa avaliação.</p>
+
+                <h3>4. WhatsApp, mapas e outros fornecedores</h3>
+                <p>Ao clicar em links do WhatsApp, Instagram, Facebook ou Google Maps, você sai do ambiente controlado diretamente por este site e passa a interagir com o respectivo fornecedor, que pode tratar dados conforme seus próprios termos e políticas. O mapa incorporado não é carregado automaticamente: ele só é carregado após você acionar “Carregar mapa do Google”. Abrir a rota pelo botão do Google Maps também transfere você ao serviço externo.</p>
+                <p>O site utiliza recursos externos para fontes, ícones, estilos e imagens. Esses fornecedores podem receber dados técnicos como IP e informações do navegador ao requisitar os recursos. A empresa deve confirmar os fornecedores efetivamente utilizados, suas condições, eventuais transferências internacionais e se algum serviço adicional de análise, publicidade ou rastreamento foi instalado.</p>
+
+                <h3>5. Compartilhamento e transferências internacionais</h3>
+                <p>Os dados podem ser compartilhados apenas quando necessário com prestadores que apoiam hospedagem, comunicação, atendimento, segurança e funcionamento do site, ou quando houver obrigação legal. Alguns fornecedores podem processar dados fora do Brasil. A Casa Luxo deve mapear os destinatários, avaliar as garantias contratuais e adotar o mecanismo de transferência internacional aplicável à LGPD e à regulamentação da ANPD.</p>
+
+                <h3>6. Retenção e segurança</h3>
+                <p>Os dados devem ser mantidos apenas pelo período necessário às finalidades informadas, aos prazos legais e ao exercício regular de direitos, e depois eliminados ou anonimizados quando cabível. São recomendadas medidas técnicas e administrativas proporcionais ao risco, controle de acesso, atualização de sistemas, contratos com fornecedores e procedimentos para incidentes. Nenhum método de transmissão ou armazenamento é totalmente isento de risco.</p>
+
+                <h3>7. Seus direitos</h3>
+                <p>Nos termos da LGPD, você pode solicitar, conforme aplicável, confirmação da existência de tratamento, acesso, correção de dados incompletos ou desatualizados, anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade, portabilidade quando regulamentada e aplicável, informação sobre compartilhamentos, informação sobre a possibilidade de negar consentimento e suas consequências, revogação do consentimento e revisão de decisões tomadas unicamente com base em tratamento automatizado que afetem seus interesses. Também é possível apresentar petição à ANPD e aos órgãos de defesa do consumidor, conforme o caso.</p>
+                <p>Para exercer seus direitos, entre em contato pelo canal de privacidade informado nesta política. Podemos solicitar informações razoáveis para confirmar sua identidade e proteger seus dados. As solicitações serão atendidas nos prazos e limites previstos na legislação.</p>
+
+                <h3>8. Cookies e armazenamento local</h3>
+                <p>O site não declara utilizar cookies publicitários ou ferramentas próprias de analytics neste momento. A preferência de carregamento do mapa é guardada no armazenamento local do navegador para lembrar sua escolha. Recursos de terceiros podem ter seus próprios mecanismos de armazenamento quando carregados. Você pode apagar dados locais nas configurações do navegador; isso poderá fazer com que a pergunta sobre o mapa apareça novamente.</p>
+
+                <h3>9. Crianças, alterações e contato</h3>
+                <p>Este site não é direcionado a crianças e não pretende coletar intencionalmente dados de crianças. Caso isso ocorra, o controlador deverá avaliar a situação e agir conforme a LGPD e o melhor interesse da criança. Esta política pode ser atualizada para refletir mudanças no site, nos fornecedores ou nas obrigações legais. A versão vigente ficará disponível nesta página.</p>
+                <p><strong>Atenção:</strong> esta política é uma base de transparência que precisa ser validada e completada pela empresa com seus dados jurídicos, operações reais, prazos de retenção, fornecedores e canal de atendimento ao titular. Não é uma certificação automática de conformidade com a LGPD.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aviso de escolha para o conteúdo externo do mapa -->
+    <aside id="privacy-notice" class="hidden fixed bottom-4 left-4 z-[70] max-w-xl rounded-2xl border border-sand-200 bg-white p-5 shadow-2xl" role="dialog" aria-modal="false" aria-labelledby="privacy-notice-title" aria-describedby="privacy-notice-text">
+        <h2 id="privacy-notice-title" class="font-bold text-sand-900">Sua privacidade</h2>
+        <p id="privacy-notice-text" class="text-sm text-sand-800 mt-2 leading-relaxed">O mapa do Google é um conteúdo externo e pode receber dados técnicos, como seu IP, quando carregado. Você pode autorizá-lo agora ou continuar sem carregar o mapa. A escolha fica salva neste navegador.</p>
+        <div class="notice-actions flex flex-wrap gap-2 mt-4">
+            <button type="button" id="accept-map-btn" class="rounded-full bg-sand-900 px-4 py-2.5 text-xs font-bold text-white hover:bg-gold-600">Permitir mapa externo</button>
+            <button type="button" id="reject-map-btn" class="rounded-full border border-sand-300 px-4 py-2.5 text-xs font-bold text-sand-900 hover:bg-sand-100">Continuar sem mapa</button>
+            <a href="#privacy-section" id="privacy-notice-policy" class="self-center px-2 text-xs underline underline-offset-4 text-sand-800">Ler política</a>
+        </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer class="bg-sand-900 text-white border-t border-sand-800 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <div class="flex items-center gap-3">
+                <div class="flex items-center justify-center">
+                  <img src="images/logo.png" style="width:auto; height:80px" alt="Casa Luxo Logo" class="object-contain brightness-0 invert __web-inspector-hide-shortcut__" onerror="this.onerror=null; this.src='https://placehold.co/200x80/1F1B16/FFFFFF?text=CASA+LUXO';">
+                </div>
+            </div>
+
+            <p class="text-xs text-sand-300 text-center">
+                © 2026 Casa Luxo. Rua Teodoro Sampaio, 1478 — Pinheiros, São Paulo/SP. Todos os direitos reservados.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-5 text-sand-300">
+                <a href="#privacy-section" class="text-xs hover:text-gold-400 underline underline-offset-4">Privacidade e LGPD</a>
+                <button type="button" id="privacy-settings-link" class="text-xs hover:text-gold-400 underline underline-offset-4">Preferências de privacidade</button>
+                <a href="https://instagram.com/moveiscasaluxo" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="https://facebook.com/MoveisCasaLuxo" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+                <a href="https://wa.me/5511991892089" target="_blank" rel="noopener noreferrer" class="hover:text-gold-400 transition-colors"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/5511991892089?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20Luxo." 
+       target="_blank" rel="noopener noreferrer" 
+       aria-label="Falar no WhatsApp" 
+       class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-2xl transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT FOR CALCULATOR AND INTERACTIVITY -->
+    <script>
+        // Preferência do conteúdo externo (Google Maps). Não carrega o mapa antes da escolha.
+        const MAP_URL = 'https://maps.google.com/maps?q=R.+Teodoro+Sampaio+1478+Pinheiros+S%C3%A3o+Paulo&hl=pt-BR&z=16&output=embed';
+        const privacyNotice = document.getElementById('privacy-notice');
+        const mapPlaceholder = document.getElementById('map-consent-placeholder');
+        const mapFrame = document.getElementById('map-frame');
+        const loadMapButton = document.getElementById('load-map-btn');
+        const privacySettingsLink = document.getElementById('privacy-settings-link');
+
+        function loadGoogleMap() {
+            if (!mapFrame || mapFrame.querySelector('iframe')) return;
+            const iframe = document.createElement('iframe');
+            iframe.src = MAP_URL;
+            iframe.title = 'Mapa do showroom Casa Luxo em Pinheiros, São Paulo';
+            iframe.className = 'w-full h-full rounded-2xl';
+            iframe.style.border = '0';
+            iframe.loading = 'lazy';
+            iframe.referrerPolicy = 'no-referrer-when-downgrade';
+            iframe.allowFullscreen = true;
+            mapPlaceholder?.remove();
+            mapFrame.appendChild(iframe);
+        }
+        function saveMapChoice(choice) {
+            try { localStorage.setItem('casaluxo-map-consent', choice); } catch (e) { /* armazenamento pode estar desativado */ }
+            privacyNotice?.classList.add('hidden');
+            if (choice === 'accepted') loadGoogleMap();
+        }
+        function showPrivacyChoices() {
+            privacyNotice?.classList.remove('hidden');
+            document.getElementById('accept-map-btn')?.focus();
+        }
+        let savedMapChoice = null;
+        try { savedMapChoice = localStorage.getItem('casaluxo-map-consent'); } catch (e) { /* armazenamento pode estar desativado */ }
+        if (savedMapChoice === 'accepted') loadGoogleMap();
+        else if (savedMapChoice !== 'rejected') showPrivacyChoices();
+        loadMapButton?.addEventListener('click', () => saveMapChoice('accepted'));
+        document.getElementById('accept-map-btn')?.addEventListener('click', () => saveMapChoice('accepted'));
+        document.getElementById('reject-map-btn')?.addEventListener('click', () => saveMapChoice('rejected'));
+        privacySettingsLink?.addEventListener('click', showPrivacyChoices);
+
+        // Header Blur on Scroll
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+
+        // Mobile Menu Drawer Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileDrawer = document.getElementById('mobile-drawer');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileDrawer.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileDrawer.classList.add('hidden');
+            });
+        });
+
+        // SOFA CALCULATOR & VISUAL DRAWING LOGIC
+        const FABRICS = [
+            { name: 'Bouclé Off-White', hex: '#EDE6D8' },
+            { name: 'Areia Natural', hex: '#CDBBA0' },
+            { name: 'Caramelo Nobre', hex: '#A5703F' },
+            { name: 'Grafite Velvet', hex: '#4A4C50' },
+            { name: 'Sálvia Soft', hex: '#8E9C84' },
+            { name: 'Azul Petróleo', hex: '#2F5459' }
+        ];
+
+        const WOODS = [
+            { name: 'Mel Natural', hex: '#B9824A' },
+            { name: 'Nogueira Escura', hex: '#5B3A27' },
+            { name: 'Ébano / Preto', hex: '#171513' }
+        ];
+
+        let selectedFabricIndex = 0;
+        let selectedWoodIndex = 0;
+
+        const wallSlider = document.getElementById('wall-slider');
+        const wallValueText = document.getElementById('wall-value-text');
+        const sofaFormatSelect = document.getElementById('sofa-format-select');
+        const fabricContainer = document.getElementById('fabric-swatches');
+        const fabricNameText = document.getElementById('fabric-name-text');
+        const woodContainer = document.getElementById('wood-swatches');
+        const woodNameText = document.getElementById('wood-name-text');
+        const sofaCanvas = document.getElementById('sofa-canvas');
+        const sofaWidthDisplay = document.getElementById('sofa-width-display');
+        const sofaTypeDisplay = document.getElementById('sofa-type-display');
+        const sofaWhatsappBtn = document.getElementById('sofa-whatsapp-btn');
+
+        // Render Swatches
+        function renderSwatches() {
+            fabricContainer.innerHTML = '';
+            FABRICS.forEach((fab, i) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = `w-8 h-8 rounded-full border-2 transition-all ${i === selectedFabricIndex ? 'border-gold-600 scale-110 shadow-md' : 'border-sand-300 opacity-80 hover:opacity-100'}`;
+                btn.style.backgroundColor = fab.hex;
+                btn.onclick = () => {
+                    selectedFabricIndex = i;
+                    fabricNameText.innerText = fab.name;
+                    renderSwatches();
+                    drawSofaSVG();
+                };
+                fabricContainer.appendChild(btn);
+            });
+
+            woodContainer.innerHTML = '';
+            WOODS.forEach((wood, i) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = `w-8 h-8 rounded-full border-2 transition-all ${i === selectedWoodIndex ? 'border-gold-600 scale-110 shadow-md' : 'border-sand-300 opacity-80 hover:opacity-100'}`;
+                btn.style.backgroundColor = wood.hex;
+                btn.onclick = () => {
+                    selectedWoodIndex = i;
+                    woodNameText.innerText = wood.name;
+                    renderSwatches();
+                    drawSofaSVG();
+                };
+                woodContainer.appendChild(btn);
+            });
+        }
+
+        // Color shading helper function
+        function shadeColor(color, percent) {
+            let num = parseInt(color.replace('#',''), 16),
+                amt = Math.round(2.55 * percent),
+                R = (num >> 16) + amt,
+                B = (num >> 8 & 0x00FF) + amt,
+                G = (num & 0x0000FF) + amt;
+            return '#' + (0x1000000 + (R<255?R<1?0:R:255)*0x10000 + (B<255?B<1?0:B:255)*0x100 + (G<255?G<1?0:G:255)).toString(16).slice(1);
+        }
+
+        // Draw SVG Sofa
+        function drawSofaSVG() {
+            const wallMeters = parseFloat(wallSlider.value);
+            const sofaMeters = Math.max(1.6, wallMeters - 0.4);
+            const format = sofaFormatSelect.value;
+            
+            wallValueText.innerText = `${wallMeters.toFixed(1).replace('.', ',')} m`;
+            sofaWidthDisplay.innerText = `${sofaMeters.toFixed(2).replace('.', ',')} m`;
+
+            const fabHex = FABRICS[selectedFabricIndex].hex;
+            const darkFab = shadeColor(fabHex, -25);
+            const lightFab = shadeColor(fabHex, 15);
+            const woodHex = WOODS[selectedWoodIndex].hex;
+
+            const scale = Math.min(520 / wallMeters, 170);
+            const viewW = 640;
+            const groundY = 240;
+            const centerX = viewW / 2;
+
+            const wallWidth = wallMeters * scale;
+            const wallX = centerX - wallWidth / 2;
+            const sofaWidth = sofaMeters * scale;
+            const sofaX = centerX - sofaWidth / 2;
+
+            const legH = 0.12 * scale;
+            const seatY = groundY - legH - 0.35 * scale;
+            const backY = groundY - 0.85 * scale;
+            const armW = 0.15 * scale;
+
+            let typeName = 'Sofá Reto';
+            if (format === 'chaise') typeName = 'Sofá com Chaise-Longue';
+            if (format === 'curvo') typeName = 'Sofá Curvo Orgânico';
+            if (format === 'modular') typeName = 'Sofá Modular';
+            sofaTypeDisplay.innerText = typeName;
+
+            let svgContent = '';
+
+            // Wall Background & Floor in Light Theme
+            svgContent += `<rect x="${wallX}" y="20" width="${wallWidth}" height="${groundY - 20}" fill="#F4F1EA" rx="4" stroke="#D5CDBF" stroke-width="1"/>`;
+            svgContent += `<rect x="${wallX}" y="${groundY - 6}" width="${wallWidth}" height="6" fill="#E8E3D8"/>`;
+            svgContent += `<rect x="0" y="${groundY}" width="${viewW}" height="70" fill="#FAF9F5"/>`;
+            
+            // Floor Shadow
+            svgContent += `<ellipse cx="${centerX}" cy="${groundY + 4}" rx="${sofaWidth / 1.9}" ry="8" fill="rgba(0,0,0,0.1)"/>`;
+
+            // Legs helper - Rendered attached to the bottom of the sofa body
+            const sofaBottomY = seatY + 30; // Base position of the sofa seat
+            const actualLegH = groundY - sofaBottomY;
+
+            const legsSVG = (x1, x2) => `
+                <rect x="${x1 + 12}" y="${sofaBottomY}" width="10" height="${actualLegH}" rx="2" fill="${woodHex}"/>
+                <rect x="${x2 - 22}" y="${sofaBottomY}" width="10" height="${actualLegH}" rx="2" fill="${woodHex}"/>
+            `;
+
+            if (format === 'curvo') {
+                // Organic Curved Sofa SVG Rendering
+                const curveBottomY = groundY - legH;
+                svgContent += `<rect x="${sofaX + 30}" y="${curveBottomY}" width="10" height="${legH}" rx="2" fill="${woodHex}"/>`;
+                svgContent += `<rect x="${sofaX + sofaWidth - 40}" y="${curveBottomY}" width="10" height="${legH}" rx="2" fill="${woodHex}"/>`;
+                svgContent += `<path d="M ${sofaX} ${curveBottomY - 10} Q ${sofaX + sofaWidth/2} ${backY - 15} ${sofaX + sofaWidth} ${curveBottomY - 10} L ${sofaX + sofaWidth - 10} ${curveBottomY} Q ${sofaX + sofaWidth/2} ${seatY + 15} ${sofaX + 10} ${curveBottomY} Z" fill="${darkFab}"/>`;
+                svgContent += `<path d="M ${sofaX + 10} ${seatY + 10} Q ${sofaX + sofaWidth/2} ${backY} ${sofaX + sofaWidth - 10} ${seatY + 10} Q ${sofaX + sofaWidth/2} ${seatY - 30} ${sofaX + 10} ${seatY + 10} Z" fill="${fabHex}"/>`;
+            } else if (format === 'chaise') {
+                // Sofa with Chaise Rendering
+                svgContent += legsSVG(sofaX, sofaX + sofaWidth);
+                // Backrest
+                svgContent += `<rect x="${sofaX}" y="${backY}" width="${sofaWidth}" height="${seatY - backY + 10}" rx="12" fill="${darkFab}"/>`;
+                // Standard Cushions
+                const mainW = sofaWidth * 0.65;
+                svgContent += `<rect x="${sofaX + armW}" y="${seatY}" width="${mainW - armW}" height="30" rx="6" fill="${fabHex}" stroke="${lightFab}" stroke-width="1"/>`;
+                // Extended Chaise Cushion
+                svgContent += `<rect x="${sofaX + mainW}" y="${seatY - 10}" width="${sofaWidth - mainW - armW}" height="40" rx="8" fill="${fabHex}" stroke="${lightFab}" stroke-width="1"/>`;
+                // Armrests
+                svgContent += `<rect x="${sofaX}" y="${seatY - 20}" width="${armW}" height="50" rx="8" fill="${darkFab}"/>`;
+                svgContent += `<rect x="${sofaX + sofaWidth - armW}" y="${seatY - 20}" width="${armW}" height="50" rx="8" fill="${darkFab}"/>`;
+            } else if (format === 'modular') {
+                // Modular Blocks
+                const modules = Math.max(3, Math.floor(sofaMeters / 0.8));
+                const modW = (sofaWidth) / modules;
+                svgContent += legsSVG(sofaX, sofaX + sofaWidth);
+                for (let i = 0; i < modules; i++) {
+                    const mx = sofaX + (i * modW);
+                    svgContent += `<rect x="${mx + 2}" y="${backY}" width="${modW - 4}" height="${seatY - backY + 10}" rx="8" fill="${darkFab}"/>`;
+                    svgContent += `<rect x="${mx + 2}" y="${seatY}" width="${modW - 4}" height="30" rx="6" fill="${fabHex}" stroke="${lightFab}" stroke-width="1"/>`;
+                }
+            } else {
+                // Straight Sofa (Standard)
+                svgContent += legsSVG(sofaX, sofaX + sofaWidth);
+                // Backrest
+                svgContent += `<rect x="${sofaX}" y="${backY}" width="${sofaWidth}" height="${seatY - backY + 10}" rx="12" fill="${darkFab}"/>`;
+                // Seat cushions
+                const cushionW = (sofaWidth - armW * 2) / 3;
+                for (let i = 0; i < 3; i++) {
+                    svgContent += `<rect x="${sofaX + armW + (i * cushionW) + 2}" y="${seatY}" width="${cushionW - 4}" height="30" rx="6" fill="${fabHex}" stroke="${lightFab}" stroke-width="1"/>`;
+                }
+                // Armrests
+                svgContent += `<rect x="${sofaX}" y="${seatY - 25}" width="${armW}" height="55" rx="10" fill="${darkFab}"/>`;
+                svgContent += `<rect x="${sofaX + sofaWidth - armW}" y="${seatY - 25}" width="${armW}" height="55" rx="10" fill="${darkFab}"/>`;
+            }
+
+            sofaCanvas.innerHTML = svgContent;
+
+            // Update WhatsApp CTA link with predefined simulation text
+            const textMsg = encodeURIComponent(
+                `Olá! Fiz uma simulação no site da Casa Luxo para uma parede de ${wallMeters.toFixed(1)}m.\n` +
+                `• Modelo: ${typeName}\n` +
+                `• Medida Recomendada: ~${sofaMeters.toFixed(2)}m\n` +
+                `• Tecido: ${FABRICS[selectedFabricIndex].name}\n` +
+                `• Madeira dos Pés: ${WOODS[selectedWoodIndex].name}\n` +
+                `Gostaria de receber um orçamento e conferir opções!`
+            );
+            sofaWhatsappBtn.href = `https://wa.me/5511991892089?text=${textMsg}`;
+        }
+
+        // Attach listeners
+        wallSlider.addEventListener('input', drawSofaSVG);
+        sofaFormatSelect.addEventListener('change', drawSofaSVG);
+
+        // Initial Initialization
+        renderSwatches();
+        drawSofaSVG();
+    </script>
+</body>
+</html>
