@@ -27,6 +27,7 @@
   "description": "Móveis planejados de alto padrão com fabricação própria em Sorocaba/SP.",
   "telephone": "+55-15-99689-1772",
   "image": "https://marcenariamacedo.com.br/wp-content/uploads/2025/09/MG_1417.webp",
+  "logo": "https://marcenariamacedo.com.br/wp-content/uploads/2025/09/Untitled-design-1.webp",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Rua Raimundo Fructuoso da Silva, 484, Jardim Maria Antonia Prado",
@@ -141,6 +142,20 @@ body.rolou::before{background:rgba(251,249,245,.9)}
 .marca{display:flex; flex-direction:column; line-height:1; text-decoration:none}
 .marca strong{font-family:var(--display); font-weight:400; font-size:2.05rem; letter-spacing:.005em}
 .marca small{font-size:.62rem; font-weight:600; letter-spacing:.46em; margin-top:.28rem; padding-left:.12em; opacity:.8}
+/* logotipo oficial */
+.marca.logo{flex-direction:row; align-items:center}
+.marca.logo img{display:block; height:var(--logo-h, 54px); width:auto; max-width:var(--logo-max, 220px); object-fit:contain; transition:height .35s, background .35s, padding .35s, box-shadow .35s; border-radius:8px}
+.marca.logo .texto{display:none; flex-direction:column; line-height:1}
+.marca.logo.sem-img .texto{display:flex}
+.marca.logo.sem-img img{display:none}
+.header .marca.logo{--logo-h:56px}
+.header.solid .marca.logo{--logo-h:50px}
+@media (max-width:640px){ .header .marca.logo{--logo-h:46px; --logo-max:170px} .header.solid .marca.logo{--logo-h:42px} }
+footer .marca.logo{--logo-h:76px; --logo-max:260px}
+/* placa de contraste, aplicada automaticamente conforme a cor do logo */
+.header:not(.solid) .marca.logo.logo-escuro img, footer .marca.logo.logo-escuro img{background:rgba(251,249,245,.94); padding:6px 12px; box-shadow:0 8px 24px -12px rgba(0,0,0,.45)}
+.header.solid .marca.logo.logo-claro img{background:var(--grafite); padding:6px 12px}
+.header:not(.solid) .marca.logo:not(.logo-escuro):not(.logo-proprio) img{filter:drop-shadow(0 2px 10px rgba(0,0,0,.35))}
 .nav{display:none; gap:2.1rem}
 .nav a{text-decoration:none; font-size:.92rem; font-weight:500; position:relative; padding-block:.35rem; opacity:.9}
 .nav a::after{content:""; position:absolute; left:50%; right:50%; bottom:0; height:1px; background:currentColor; transition:left .3s, right .3s}
@@ -477,6 +492,73 @@ footer .marca{color:#fff}
 .modal-caixa p{margin:0; color:var(--cinza); font-size:.95rem}
 .modal-caixa .x{position:absolute; top:1rem; right:1rem; background:var(--base)}
 
+/* =========================================================
+   MAPA NO FINAL DA PÁGINA
+   ========================================================= */
+.local{position:relative; background:var(--base-2)}
+.local-mapa{position:relative; height:clamp(420px, 62vh, 600px); background:var(--base-2)}
+.local-mapa iframe{position:absolute; inset:0; width:100%; height:100%; border:0; filter:grayscale(.35) sepia(.12) contrast(1.02)}
+.mapa-aviso{position:absolute; inset:0; display:grid; place-items:center; text-align:center; padding:2rem var(--gutter); isolation:isolate}
+.mapa-aviso .ph{position:absolute; inset:0; z-index:-2}
+.mapa-aviso::before{content:""; position:absolute; inset:0; z-index:-1; background:rgba(238,233,225,.88); backdrop-filter:blur(4px)}
+.mapa-aviso-in{max-width:46ch}
+.mapa-aviso svg{width:40px; height:40px; color:var(--nogueira); margin:0 auto 1rem}
+.mapa-aviso h3{font-family:var(--display); font-weight:400; font-size:clamp(1.8rem, 3vw, 2.4rem); line-height:1.05; margin-bottom:.6rem}
+.mapa-aviso p{margin:0 0 1.5rem; color:var(--cinza); font-size:.95rem}
+.mapa-aviso .acoes{justify-content:center; margin-top:0}
+.local-cartao{background:var(--papel); padding:clamp(1.6rem, 3.5vw, 2.4rem); border-radius:var(--raio); box-shadow:var(--sombra)}
+.local-cartao h2{font-size:clamp(2.2rem, 4vw, 3rem)}
+.local-cartao address{font-style:normal; margin:1.25rem 0 0; color:var(--cinza)}
+.local-cartao address b{display:block; color:var(--grafite); font-weight:600; margin-bottom:.2rem}
+.local-cartao .acoes{margin-top:1.75rem}
+.local-cartao .btn{min-height:50px; padding:.75rem 1.3rem; font-size:.92rem}
+@media (min-width:1100px){
+  .local-sobre{position:absolute; inset:0; pointer-events:none; display:flex; align-items:center}
+  .local-sobre .wrap{display:flex}
+  .local-cartao{pointer-events:auto; width:410px}
+  .mapa-aviso{justify-items:end; padding-right:max(var(--gutter), calc((100vw - var(--wrap)) / 2 + var(--gutter)))}
+  .mapa-aviso-in{max-width:44ch; text-align:left}
+  .mapa-aviso svg{margin-left:0}
+  .mapa-aviso .acoes{justify-content:flex-start}
+}
+@media (max-width:1099px){ .local-sobre{padding:0 0 3rem; margin-top:-3rem; position:relative; z-index:2} .local-cartao{max-width:560px} }
+@media (max-width:480px){ .pref{flex-wrap:wrap} .pref em{order:-1; width:100%} }
+
+/* =========================================================
+   AVISO LGPD + PREFERÊNCIAS
+   ========================================================= */
+.lgpd{position:fixed; z-index:150; left:clamp(.75rem, 2vw, 1.5rem); right:clamp(.75rem, 2vw, 1.5rem); bottom:calc(clamp(.75rem, 2vw, 1.5rem) + var(--safe-b)); max-width:460px; background:var(--papel); border-radius:var(--raio); box-shadow:0 30px 70px -20px rgba(34,31,27,.45), 0 0 0 1px var(--linha); padding:1.5rem 1.5rem 1.35rem; transform:translateY(calc(100% + 3rem)); opacity:0; transition:transform .5s cubic-bezier(.2,.7,.2,1), opacity .4s; visibility:hidden}
+.lgpd.ver{transform:none; opacity:1; visibility:visible}
+.lgpd h2{font-size:1.9rem; margin-bottom:.5rem}
+.lgpd p{margin:0; font-size:.92rem; color:var(--cinza); line-height:1.55}
+.lgpd-acoes{display:grid; grid-template-columns:1fr 1fr; gap:.5rem; margin-top:1.15rem}
+.lgpd-acoes .btn{min-height:48px; padding:.6rem 1rem; font-size:.9rem}
+.lgpd-link{display:inline-block; margin-top:.9rem; font-size:.88rem; font-weight:600; color:var(--nogueira); text-decoration:underline; text-underline-offset:3px}
+body.lgpd-aberto .barra{transform:translateY(110%)!important}
+body.lgpd-aberto .flut{transform:translateY(220%)!important}
+.prefs{margin:1.5rem 0 .5rem; border:1px solid var(--linha); border-radius:var(--raio); overflow:hidden}
+.pref{display:flex; gap:1rem; align-items:flex-start; justify-content:space-between; padding:1.1rem 1.2rem; background:var(--base)}
+.pref + .pref{border-top:1px solid var(--linha)}
+.pref b{display:block; font-size:.98rem; color:var(--grafite)}
+.pref span{display:block; font-size:.88rem; color:var(--cinza); margin-top:.2rem}
+.pref em{flex:none; font-style:normal; font-size:.8rem; font-weight:600; color:var(--nogueira); padding-top:.15rem}
+.chave{position:relative; flex:none; width:52px; height:30px; margin-top:.1rem}
+.chave input{position:absolute; inset:0; opacity:0; margin:0; cursor:pointer; z-index:1}
+.chave span{position:absolute; inset:0; margin:0; border-radius:999px; background:#C9BFB1; transition:background .25s}
+.chave span::after{content:""; position:absolute; top:3px; left:3px; width:24px; height:24px; border-radius:50%; background:#fff; box-shadow:0 2px 6px rgba(0,0,0,.2); transition:transform .25s}
+.chave input:checked + span{background:var(--nogueira)}
+.chave input:checked + span::after{transform:translateX(22px)}
+.chave input:focus-visible + span{outline:2px solid var(--nogueira); outline-offset:3px}
+.modal-caixa .salvar{margin-top:1rem}
+.modal-caixa ul{margin:.4rem 0 0; padding-left:1.2rem; color:var(--cinza); font-size:.95rem}
+.modal-caixa li + li{margin-top:.35rem}
+.modal-caixa a{color:var(--nogueira)}
+.modal-caixa table{width:100%; border-collapse:collapse; margin-top:.6rem; font-size:.88rem}
+.modal-caixa th, .modal-caixa td{text-align:left; padding:.55rem .6rem; border-bottom:1px solid var(--linha); vertical-align:top}
+.modal-caixa th{font-weight:600}
+.modal-caixa .tabela{overflow-x:auto}
+.atualizado{font-size:.85rem!important}
+
 /* imagem com fallback */
 .ph{overflow:hidden; background:linear-gradient(135deg, #D9CFBF, #C8BBA6)}
 .ph img{width:100%; height:100%; object-fit:cover}
@@ -517,7 +599,7 @@ footer .marca{color:#fff}
     </div>
   </div>
   <div class="wrap barra-sup">
-    <a href="#topo" class="marca" aria-label="Marcenaria Macedo, voltar ao início"><strong>Macedo</strong><small>MARCENARIA</small></a>
+    <a href="#topo" class="marca logo" aria-label="Marcenaria Macedo, voltar ao início"><img data-logo alt="Marcenaria Macedo" width="180" height="56" fetchpriority="high"><span class="texto" aria-hidden="true"><strong>Macedo</strong><small>MARCENARIA</small></span></a>
     <nav class="nav" aria-label="Principal">
       <a href="#quem-somos">Quem somos</a>
       <a href="#projetos">Projetos</a>
@@ -792,13 +874,46 @@ footer .marca{color:#fff}
       </div>
     </div>
   </section>
+  <!-- MAPA -->
+  <section class="local" id="mapa" aria-labelledby="h-mapa">
+    <div class="local-mapa" id="local-mapa">
+      <div class="mapa-aviso" id="mapa-aviso">
+        <div class="ph"><img data-src="maquina-3_1.4.1.webp" alt="" loading="lazy"></div>
+        <div class="mapa-aviso-in">
+          <svg aria-hidden="true"><use href="#i-pin"/></svg>
+          <h3>Veja como chegar</h3>
+          <p>O mapa é um conteúdo do Google e só carrega com a sua permissão. Ao carregar, o Google pode registrar seu IP e usar cookies próprios.</p>
+          <div class="acoes">
+            <button type="button" class="btn btn-principal" id="mapa-carregar">Carregar mapa</button>
+            <a class="btn btn-linha" href="https://www.google.com/maps/search/?api=1&query=Rua%20Raimundo%20Fructuoso%20da%20Silva%2C%20484%2C%20Sorocaba%20SP%2018076-280" target="_blank" rel="noopener">Abrir no Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="local-sobre">
+      <div class="wrap">
+        <div class="local-cartao">
+          <p class="tag">Onde estamos</p>
+          <h2 id="h-mapa">Marcenaria <em>Macedo</em></h2>
+          <address>
+            <b>Rua Raimundo Fructuoso da Silva, 484</b>
+            Jardim Maria Antonia Prado<br>Sorocaba/SP · CEP 18076-280
+          </address>
+          <div class="acoes">
+            <a class="btn btn-principal" href="https://www.google.com/maps/dir/?api=1&destination=Rua%20Raimundo%20Fructuoso%20da%20Silva%2C%20484%2C%20Sorocaba%20SP%2018076-280" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-pin"/></svg> Traçar rota</a>
+            <a class="btn btn-linha" href="https://waze.com/ul?q=Rua%20Raimundo%20Fructuoso%20da%20Silva%20484%20Sorocaba&navigate=yes" target="_blank" rel="noopener">Ir de Waze</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="wrap">
     <div class="rod">
       <div>
-        <a href="#topo" class="marca" aria-label="Voltar ao início"><strong>Macedo</strong><small>MARCENARIA</small></a>
+        <a href="#topo" class="marca logo" aria-label="Marcenaria Macedo, voltar ao início"><img data-logo alt="Marcenaria Macedo" width="220" height="76" loading="lazy"><span class="texto" aria-hidden="true"><strong>Macedo</strong><small>MARCENARIA</small></span></a>
         <p>Móveis planejados exclusivos, com fabricação própria em Sorocaba e atendimento em toda a região.</p>
       </div>
       <div>
@@ -809,6 +924,7 @@ footer .marca{color:#fff}
           <li><a href="#por-dentro">Diferenciais</a></li>
           <li><a href="#planejador">Montar pedido</a></li>
           <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="#mapa">Como chegar</a></li>
         </ul>
       </div>
       <div>
@@ -822,7 +938,7 @@ footer .marca{color:#fff}
     </div>
     <div class="rod-base">
       <span>© <span id="ano"></span> Marcenaria Macedo. Todos os direitos reservados.</span>
-      <button type="button" class="abre-priv">Privacidade e LGPD</button>
+      <span style="display:flex; gap:1.5rem; flex-wrap:wrap"><button type="button" class="abre-priv">Privacidade e LGPD</button><button type="button" class="abre-priv" data-prefs>Preferências de privacidade</button></span>
     </div>
   </div>
 </footer>
@@ -854,22 +970,82 @@ footer .marca{color:#fff}
   </div>
 </div>
 
-<!-- PRIVACIDADE -->
+<!-- AVISO LGPD (primeira visita) -->
+<section class="lgpd" id="lgpd" aria-labelledby="lgpd-t" aria-hidden="true">
+  <h2 id="lgpd-t">Sua privacidade</h2>
+  <p>Este site não usa cookies de publicidade nem de rastreamento. O mapa do Google é um conteúdo externo e só carrega se você permitir. Sua escolha fica salva neste navegador.</p>
+  <div class="lgpd-acoes">
+    <button type="button" class="btn btn-linha" id="lgpd-essencial">Só o essencial</button>
+    <button type="button" class="btn btn-principal" id="lgpd-aceitar">Aceitar tudo</button>
+  </div>
+  <button type="button" class="lgpd-link abre-priv" data-prefs>Personalizar e ler a política</button>
+</section>
+
+<!-- POLÍTICA DE PRIVACIDADE + PREFERÊNCIAS -->
 <div class="modal" id="priv" role="dialog" aria-modal="true" aria-labelledby="priv-t" hidden>
   <div class="modal-caixa">
     <button class="x" id="priv-x" aria-label="Fechar"><svg><use href="#i-x"/></svg></button>
     <h2 id="priv-t">Privacidade e LGPD</h2>
-    <p>Elaborada conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
-    <h3>Quem somos</h3>
-    <p>Este site é mantido pela Marcenaria Macedo, Rua Raimundo Fructuoso da Silva, 484, Jardim Maria Antonia Prado, Sorocaba/SP, CEP 18076-280. Contato: WhatsApp (15) 99689-1772.</p>
-    <h3>Quais dados tratamos</h3>
-    <p>O site não tem cadastro nem banco de dados. As escolhas feitas no “Monte seu pedido” viram uma mensagem enviada pelo seu próprio WhatsApp, e o atendimento continua por lá. A hospedagem pode registrar dados técnicos de acesso, como IP e navegador, para segurança.</p>
-    <h3>Cookies</h3>
-    <p>Não usamos cookies de publicidade, rastreamento ou estatística.</p>
-    <h3>Serviços de terceiros</h3>
-    <p>WhatsApp e Instagram (Meta), para atendimento; Google Fonts, para as fontes; e Google Maps, apenas quando você abre a rota. Esses serviços podem receber seu IP conforme as políticas de cada um.</p>
-    <h3>Seus direitos</h3>
-    <p>Você pode pedir confirmação, acesso, correção ou eliminação dos seus dados a qualquer momento pelo WhatsApp, conforme o art. 18 da LGPD, e também pode apresentar reclamação à ANPD.</p>
+    <p class="atualizado">Última atualização: 29 de outubro de 2026 · Elaborada conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+
+    <div class="prefs" id="prefs" role="group" aria-label="Suas preferências">
+      <div class="pref">
+        <div><b>Essenciais</b><span>Guardam apenas a sua escolha neste aviso. Sem isso, o site não consegue lembrar sua decisão.</span></div>
+        <em>Sempre ativos</em>
+      </div>
+      <div class="pref">
+        <div><b><label for="pref-mapa">Conteúdo de terceiros (Google Maps)</label></b><span>Carrega o mapa com o endereço da marcenaria no final da página. Ao carregar, o Google pode registrar seu IP e usar cookies próprios.</span></div>
+        <span class="chave"><input type="checkbox" id="pref-mapa" role="switch"><span></span></span>
+      </div>
+    </div>
+    <button type="button" class="btn btn-principal salvar" id="pref-salvar">Salvar preferências</button>
+
+    <h3>1. Quem somos</h3>
+    <p>Este site é mantido pela Marcenaria Macedo, na Rua Raimundo Fructuoso da Silva, 484, Jardim Maria Antonia Prado, Sorocaba/SP, CEP 18076-280, que atua como controladora dos dados pessoais tratados por meio dele. Para qualquer assunto de privacidade, fale conosco pelo WhatsApp (15) 99689-1772.</p>
+
+    <h3>2. Quais dados tratamos</h3>
+    <ul>
+      <li><b>Dados que você nos envia.</b> O site não tem cadastro nem banco de dados. As escolhas do “Monte seu pedido” viram uma mensagem enviada pelo seu próprio WhatsApp. O atendimento, e o que você compartilhar nele (nome, telefone, fotos e medidas do ambiente, endereço), acontece dentro do WhatsApp.</li>
+      <li><b>Dados técnicos de navegação.</b> Como em qualquer site, a hospedagem pode registrar automaticamente IP, data e hora do acesso, páginas visitadas e tipo de navegador, para segurança e funcionamento.</li>
+      <li><b>Armazenamento local.</b> Guardamos no seu navegador apenas a sua escolha de privacidade (seção 4).</li>
+    </ul>
+
+    <h3>3. Para que usamos e com qual base legal</h3>
+    <ul>
+      <li>Responder ao seu pedido de orçamento ou atendimento: procedimentos preliminares a contrato (art. 7º, V).</li>
+      <li>Manter o site funcionando com segurança: legítimo interesse (art. 7º, IX).</li>
+      <li>Carregar conteúdo de terceiros, como o mapa: consentimento (art. 7º, I), que você pode retirar a qualquer momento nas preferências acima.</li>
+    </ul>
+
+    <h3>4. Cookies e armazenamento local</h3>
+    <p>Não usamos cookies de publicidade, rastreamento ou estatística. O site usa somente o armazenamento local do navegador (localStorage), que fica no seu aparelho:</p>
+    <div class="tabela">
+      <table>
+        <thead><tr><th>Nome</th><th>Finalidade</th><th>Tipo</th><th>Duração</th></tr></thead>
+        <tbody><tr><td>macedo-lgpd</td><td>Lembrar sua escolha neste aviso de privacidade</td><td>Essencial</td><td>Até você limpar os dados do navegador</td></tr></tbody>
+      </table>
+    </div>
+    <p style="margin-top:.6rem">Serviços de terceiros carregados com a sua permissão podem definir cookies próprios, conforme as políticas deles (seção 5).</p>
+
+    <h3>5. Serviços de terceiros</h3>
+    <ul>
+      <li><b>WhatsApp (Meta).</b> Canal de atendimento. <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener">Política do WhatsApp</a>.</li>
+      <li><b>Google Fonts e Google Maps (Google).</b> Fontes do site e mapa da marcenaria, este carregado só com a sua permissão. <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank" rel="noopener">Política do Google</a>.</li>
+      <li><b>Instagram (Meta).</b> Apenas link para o nosso perfil; nada é carregado dele nesta página.</li>
+    </ul>
+    <p style="margin-top:.6rem">Alguns desses provedores ficam fora do Brasil. Nesses casos, a transferência internacional ocorre nos termos do art. 33 da LGPD, com as garantias oferecidas por cada provedor.</p>
+
+    <h3>6. Por quanto tempo guardamos</h3>
+    <p>O site em si não armazena seus dados em servidor. As conversas no WhatsApp são mantidas pelo tempo necessário ao atendimento, à execução do projeto e ao cumprimento de obrigações legais, como as fiscais e de garantia, e depois eliminadas ou anonimizadas.</p>
+
+    <h3>7. Seus direitos</h3>
+    <p>Nos termos do art. 18 da LGPD, você pode pedir a qualquer momento: confirmação de que tratamos seus dados, acesso, correção, anonimização, bloqueio ou eliminação, portabilidade, informação sobre compartilhamentos e revogação do consentimento. Basta falar conosco pelo WhatsApp. Você também pode apresentar reclamação à <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">Autoridade Nacional de Proteção de Dados (ANPD)</a>.</p>
+
+    <h3>8. Segurança</h3>
+    <p>O site deve ser servido por conexão criptografada (HTTPS) e não coleta nem armazena dados pessoais em servidores próprios, o que reduz ao mínimo o risco de incidentes.</p>
+
+    <h3>9. Alterações</h3>
+    <p>Esta política pode ser atualizada para refletir mudanças no site ou na legislação. A data da última atualização aparece no topo deste texto.</p>
   </div>
 </div>
 
@@ -880,6 +1056,8 @@ footer .marca{color:#fff}
 const WHATS = "5515996891772";
 /* Pasta das imagens. Ao hospedar, copie as fotos para "img/" e troque por: const PASTA = "img/"; */
 const PASTA = "https://marcenariamacedo.com.br/wp-content/uploads/2025/09/";
+/* Logotipo oficial. Ao hospedar: copie para img/ e use, por exemplo, LOGO = "img/logo.webp" */
+const LOGO = PASTA + "Untitled-design-1.webp";
 
 const PROJETOS = [
   { img:"MG_1417.webp",              titulo:"Ambiente exclusivo",        cat:"Projeto entregue", desc:"Projeto desenvolvido pelos nossos arquitetos, fabricado e instalado pela nossa equipe." },
@@ -935,6 +1113,35 @@ document.addEventListener("error", e => {
 
 $$("[data-wa]").forEach(a => a.href = wa(a.dataset.wa));
 $$("img[data-src]").forEach(i => { i.referrerPolicy = "no-referrer"; i.decoding = "async"; i.src = src(i.dataset.src); });
+/* Logotipo: carrega, e escolhe sozinho se precisa de uma "placa" de contraste.
+   Logo escuro sobre a foto do topo ganha placa clara; logo claro sobre o cabeçalho claro ganha placa escura;
+   logo com fundo próprio fica como está. Se a imagem falhar, aparece o nome em texto. */
+$$("img[data-logo]").forEach(i => {
+  i.referrerPolicy = "no-referrer"; i.decoding = "async";
+  i.addEventListener("error", () => i.closest(".marca").classList.add("sem-img"), { once:true });
+  i.src = LOGO;
+});
+(() => {
+  const sonda = new Image();
+  sonda.crossOrigin = "anonymous";
+  sonda.onload = () => {
+    try {
+      const c = document.createElement("canvas"), w = 64, h = Math.max(1, Math.round(64 * sonda.naturalHeight / sonda.naturalWidth));
+      c.width = w; c.height = h;
+      const ctx = c.getContext("2d"); ctx.drawImage(sonda, 0, 0, w, h);
+      const d = ctx.getImageData(0, 0, w, h).data;
+      let opacos = 0, lum = 0;
+      for (let k = 0; k < d.length; k += 4) {
+        if (d[k + 3] > 200) { opacos++; lum += (0.2126 * d[k] + 0.7152 * d[k + 1] + 0.0722 * d[k + 2]) / 255; }
+      }
+      const total = d.length / 4, media = opacos ? lum / opacos : 1;
+      const tipo = opacos / total > .92 ? "logo-proprio" : media < .45 ? "logo-escuro" : media > .62 ? "logo-claro" : "";
+      if (tipo) $$(".marca.logo").forEach(m => m.classList.add(tipo));
+    } catch (e) { /* imagem de outro domínio sem permissão de leitura: mantém o padrão */ }
+  };
+  sonda.src = LOGO;
+})();
+
 $("#letreiro").innerHTML = [...LETREIRO, ...LETREIRO].map(t => `<span>${t}</span>`).join("");
 
 /* =========================================================
@@ -1109,11 +1316,54 @@ let tx = null;
 lb.addEventListener("touchstart", e => tx = e.touches[0].clientX, { passive:true });
 lb.addEventListener("touchend", e => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) passoLb(dx < 0 ? 1 : -1); tx = null; });
 
+/* =========================================================
+   LGPD: aviso, preferências e mapa sob consentimento
+   ========================================================= */
+const CHAVE_LGPD = "macedo-lgpd";
+const MAPA_URL = "https://www.google.com/maps?q=" + encodeURIComponent("Rua Raimundo Fructuoso da Silva, 484, Jardim Maria Antonia Prado, Sorocaba - SP, 18076-280") + "&z=16&output=embed";
+const lerLgpd = () => { try { return JSON.parse(localStorage.getItem(CHAVE_LGPD)); } catch (e) { return null; } };
+const gravarLgpd = mapa => { try { localStorage.setItem(CHAVE_LGPD, JSON.stringify({ mapa, data: new Date().toISOString() })); } catch (e) {} };
+
+const local = $("#mapa"), localMapa = $("#local-mapa"), aviso = $("#mapa-aviso");
+function mostrarMapa(){
+  if (localMapa.querySelector("iframe")) return;
+  const f = document.createElement("iframe");
+  f.src = MAPA_URL; f.title = "Mapa: Marcenaria Macedo, Rua Raimundo Fructuoso da Silva, 484, Sorocaba"; f.loading = "lazy";
+  f.referrerPolicy = "no-referrer-when-downgrade"; f.allowFullscreen = true;
+  localMapa.appendChild(f); aviso.hidden = true; local.classList.remove("sem-mapa");
+}
+function esconderMapa(){
+  localMapa.querySelector("iframe")?.remove(); aviso.hidden = false; local.classList.add("sem-mapa");
+}
+function aplicar(mapa){ mapa ? mostrarMapa() : esconderMapa(); $("#pref-mapa").checked = !!mapa; }
+
+const lgpd = $("#lgpd");
+function bannerLgpd(ver){
+  lgpd.classList.toggle("ver", ver); lgpd.setAttribute("aria-hidden", !ver);
+  lgpd.inert = !ver; document.body.classList.toggle("lgpd-aberto", ver);
+}
+function decidir(mapa){ gravarLgpd(mapa); aplicar(mapa); bannerLgpd(false); }
+$("#lgpd-aceitar").onclick = () => decidir(true);
+$("#lgpd-essencial").onclick = () => decidir(false);
+$("#mapa-carregar").onclick = () => decidir(true);
+
+const escolha = lerLgpd();
+aplicar(escolha?.mapa);
+lgpd.inert = true;
+if (!escolha) setTimeout(() => bannerLgpd(true), 1200);
+
 const priv = $("#priv");
-const abrirPriv = () => { priv.hidden = false; priv.classList.add("aberto"); document.body.style.overflow = "hidden"; $("#priv-x").focus(); };
-const fecharPriv = () => { priv.classList.remove("aberto"); priv.hidden = true; document.body.style.overflow = ""; };
+let privOrigem = null;
+const abrirPriv = e => {
+  privOrigem = e?.currentTarget || null;
+  $("#pref-mapa").checked = !!lerLgpd()?.mapa;
+  priv.hidden = false; priv.classList.add("aberto"); document.body.style.overflow = "hidden";
+  (e?.currentTarget?.hasAttribute("data-prefs") ? $("#pref-mapa") : $("#priv-x")).focus();
+};
+const fecharPriv = () => { priv.classList.remove("aberto"); priv.hidden = true; document.body.style.overflow = ""; privOrigem?.focus?.(); };
 $$(".abre-priv").forEach(b => b.onclick = abrirPriv);
 $("#priv-x").onclick = fecharPriv;
+$("#pref-salvar").onclick = () => { decidir($("#pref-mapa").checked); fecharPriv(); };
 priv.addEventListener("click", e => { if (e.target === priv) fecharPriv(); });
 
 document.addEventListener("keydown", e => {
