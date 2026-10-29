@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contato — Bomshopping</title>
+<meta name="description" content="Fale com a Bomshopping: tire suas dúvidas ou solicite um orçamento de sites, sistemas, e-commerce e data analytics.">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<section class="ph" style="padding-bottom:110px">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <span class="tag rv">Contato</span>
+      <h1 class="rv" style="font-size:clamp(2.4rem,5.5vw,4.2rem)">Vamos tirar sua ideia do <span class="g">papel</span>.</h1>
+      <p class="lead rv">Consultoria, projetos, suporte, produtos e serviços. Tire suas dúvidas, solicite um orçamento e explore novas oportunidades de negócio na internet.</p>
+      <div class="grid rv" style="margin-top:36px;grid-template-columns:1fr">
+        <a data-wa class="card"><div class="ic">💬</div><h3>WhatsApp</h3><p>Resposta rápida em horário comercial.</p></a>
+        <a data-mail class="card" style="display:block"><div class="ic">✉️</div><h3>E-mail</h3><p id="em"></p></a>
+      </div>
+    </div>
+    <div class="card rv" style="padding:36px">
+      <h3 style="font-size:1.6rem;margin-bottom:6px">Solicite um orçamento</h3>
+      <p style="margin-bottom:24px">Preencha e escolha como prefere enviar.</p>
+      <form id="form">
+        <div class="row"><input name="nome" placeholder="Seu nome" required><input name="email" type="email" placeholder="Seu e-mail" required></div>
+        <div class="row"><input name="tel" placeholder="Telefone / WhatsApp"><select name="assunto"><option>Loja virtual (e-commerce)</option><option>Criação de site</option><option>Sistema / Software</option><option>Data Analytics / Dashboards</option><option>Marketing Digital</option><option>Hospedagem</option><option>Consultoria</option><option>Outro assunto</option></select></div>
+        <textarea name="msg" rows="6" placeholder="Conte um pouco sobre o seu negócio e o que você precisa" required></textarea>
+        <div class="cta" style="margin-top:6px"><button class="btn p" value="wa">Enviar pelo WhatsApp →</button><button class="btn o" value="mail">Enviar por e-mail</button></div>
+      </form>
+    </div>
+  </div>
+</section>
+<script src="assets/main.js"></script>
+<script>document.getElementById('em').textContent = EMAIL;</script>
+</body>
+</html>
