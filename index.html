@@ -910,7 +910,17 @@ const col=(l,a)=>`rgba(${120+Math.min(1,l*4)*135|0},${30+l*225|0},${l>.55?(l-.55
 const add=(px,py,n,k=1,big=0)=>{if(p.length>700)return;for(let i=0;i<n;i++){const a=-Math.PI/2+(R()-.5)*(big?2.9:2.2),v=(1.5+R()*R()*8)*k*d;
  p.push(R()<.16?{x:px,y:py,vx:(R()-.5)*1.4*d,vy:-(.4+R()*1.2)*d,l:1,k:.004+R()*.005,m:1,r:(1+R()*1.6)*d,ph:R()*6}
  :{x:px,y:py,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,k:.007+R()*.014,s:big&&R()<.3,w:.7+R()*.9})}};
-hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();add((e.clientX-r.left)*d,(e.clientY-r.top)*d,3,.8)},{passive:true});
+hero.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=hero.getBoundingClientRect();add((e.clientX-r.left)*d,(e.clientY-r.top)*d,3,.8)},{passive:true});
+/* dedo: o navegador cancela o pointermove quando o toque vira rolagem; touchmove segue disparando (passivo, não trava o scroll) */
+let lt=null;
+const fg=e=>{const t=e.touches[0];if(!t)return;const r=hero.getBoundingClientRect(),X=t.clientX,Y=t.clientY;
+ if(Y<r.top||Y>r.bottom){lt=null;return}
+ if(lt){const dx=X-lt.x,dy=Y-lt.y,n=Math.min(10,Math.ceil(Math.hypot(dx,dy)/14));for(let i=1;i<=n;i++)add((lt.x+dx*i/n-r.left)*d,(lt.y+dy*i/n-r.top)*d,2,.8)}
+ else add((X-r.left)*d,(Y-r.top)*d,4,.9);
+ lt={x:X,y:Y}};
+hero.addEventListener('touchstart',e=>{lt=null;fg(e)},{passive:true});
+hero.addEventListener('touchmove',fg,{passive:true});
+['touchend','touchcancel'].forEach(n=>hero.addEventListener(n,()=>{lt=null},{passive:true}));
 const strike=()=>{if(!vis||document.hidden)return;const r=hero.getBoundingClientRect(),s=st.getBoundingClientRect(),px=(s.left+s.width*.46-r.left)*d,py=(s.bottom-r.top-s.height*.04)*d;add(px,py,24,1.25,1);fl={x:px,y:py,l:1}};
 setInterval(strike,2400);setTimeout(strike,900);
 new IntersectionObserver(([e])=>{vis=e.isIntersecting;if(vis&&!raf)loop()}).observe(hero);
