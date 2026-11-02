@@ -1,525 +1,880 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Clínica Lumina — Fisioterapia, Psicologia e Fonoaudiologia em São Paulo. Saúde integral com excelência, escuta e resultados." />
-  <title>Clínica Lumina · Fisioterapia · Psicologia · Fonoaudiologia</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Outfit:wght@400;500;560;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lúmina Fisioterapia & Reabilitação | Movimento, Saúde e Bem-Estar</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        lumina: {
+                            50: '#f0f9f8',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            teal: '#0d9488',
+                            mint: '#e6f4f1',
+                            sage: '#2dd4bf',
+                            dark: '#0f172a',
+                            slate: '#475569'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0f9f8 0%, #e0f2fe 50%, #f8fafc 100%);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -10px rgba(13, 148, 136, 0.12);
+        }
+        .pulse-soft {
+            animation: pulseSoft 2.5s infinite;
+        }
+        @keyframes pulseSoft {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-teal-100 selection:text-teal-900">
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="#inicio" class="logo">
-        <svg viewBox="0 0 120 120" width="42" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#2A6B5E"/>
-              <stop offset="100%" stop-color="#1A4A42"/>
-            </linearGradient>
-          </defs>
-          <circle cx="60" cy="60" r="54" stroke="url(#lg)" stroke-width="3" opacity="0.3"/>
-          <path d="M42 48 Q60 28 78 48 Q70 72 60 88 Q50 72 42 48Z" fill="url(#lg)"/>
-          <circle cx="60" cy="52" r="8" fill="#F7F4EF"/>
-          <path d="M48 62 Q60 78 72 62" stroke="#F7F4EF" stroke-width="3" stroke-linecap="round" fill="none"/>
-        </svg>
-        Lumina
-      </a>
+    <!-- 1. HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-header border-b border-slate-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-600 to-sky-500 flex items-center justify-center text-white shadow-md shadow-teal-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold fa-hand-holding-medical text-lg"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold tracking-tight text-slate-900 group-hover:text-teal-600 transition-colors">LÚMINA</span>
+                    <span class="text-[10px] tracking-widest font-medium uppercase text-teal-600">Fisioterapia & Reabilitação</span>
+                </div>
+            </a>
 
-      <nav class="nav" id="nav">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#especialidades">Especialidades</a>
-        <a href="#equipe">Equipe</a>
-        <a href="#contato">Contato</a>
-        <a href="https://wa.me/5511999990000?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Lumina!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-primary" target="_blank" rel="noopener">Agendar</a>
-      </nav>
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="#inicio" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Início</a>
+                <a href="#sobre" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Sobre Nós</a>
+                <a href="#especialidades" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Especialidades</a>
+                <a href="#equipe" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Corpo Clínico</a>
+                <a href="#depoimentos" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">Depoimentos</a>
+                <a href="#faq" class="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors">FAQ</a>
+            </nav>
 
-      <button class="menu-toggle" aria-label="Menu" id="menu-toggle">
-        <span></span>
-      </button>
+            <!-- CTA Header Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="https://wa.me/5512999998888?text=Olá!%20Gostaria%20de%20agendar%20uma%20avaliação%20na%20Lúmina%20Fisioterapia." target="_blank" class="flex items-center gap-2 text-slate-600 hover:text-teal-600 text-sm font-medium transition-colors mr-2">
+                    <i class="fa-brands fa-whatsapp text-green-500 text-lg"></i>
+                    <span>(12) 99999-8888</span>
+                </a>
+                <a href="#agendamento" class="px-5 py-2.5 rounded-full bg-teal-600 text-white text-sm font-semibold shadow-lg shadow-teal-600/25 hover:bg-teal-700 hover:shadow-teal-600/40 transition-all">
+                    Agendar Consulta
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 pt-4 pb-6 space-y-3">
+            <a href="#inicio" class="block text-base font-medium text-slate-700 hover:text-teal-600">Início</a>
+            <a href="#sobre" class="block text-base font-medium text-slate-700 hover:text-teal-600">Sobre Nós</a>
+            <a href="#especialidades" class="block text-base font-medium text-slate-700 hover:text-teal-600">Especialidades</a>
+            <a href="#equipe" class="block text-base font-medium text-slate-700 hover:text-teal-600">Corpo Clínico</a>
+            <a href="#depoimentos" class="block text-base font-medium text-slate-700 hover:text-teal-600">Depoimentos</a>
+            <a href="#faq" class="block text-base font-medium text-slate-700 hover:text-teal-600">FAQ</a>
+            <a href="#agendamento" class="block w-full text-center py-3 rounded-xl bg-teal-600 text-white font-semibold shadow-md">Agendar Consulta</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- 2. HERO SECTION -->
+        <section id="inicio" class="hero-gradient relative overflow-hidden py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Text Content -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-100/80 text-teal-800 text-xs font-semibold uppercase tracking-wider">
+                            <i class="fa-solid fa-sparkles text-teal-600"></i>
+                            Excelência em Fisioterapia & Reabilitação
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-[1.15]">
+                            Sua recuperação e movimento em <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-sky-600">perfeita harmonia.</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-slate-600 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+                            Tratamentos personalizados baseados em evidências científicas, tecnologia avançada de reabilitação e cuidado humanizado para você retomar o alívio das dores e a performance máxima do seu corpo.
+                        </p>
+                        
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#agendamento" class="w-full sm:w-auto px-8 py-4 rounded-full bg-teal-600 text-white text-base font-semibold shadow-lg shadow-teal-600/30 hover:bg-teal-700 transition-all text-center flex items-center justify-center gap-2">
+                                <span>Agendar Avaliação</span>
+                                <i class="fa-solid fa-arrow-right text-sm"></i>
+                            </a>
+                            <a href="#especialidades" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-slate-700 border border-slate-200 text-base font-medium hover:bg-slate-50 transition-all text-center shadow-sm">
+                                Conhecer Tratamentos
+                            </a>
+                        </div>
+
+                        <!-- Highlights list -->
+                        <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                            <div>
+                                <p class="text-sm font-semibold text-slate-900 flex items-center justify-center lg:justify-start gap-1">
+                                    <i class="fa-solid fa-circle-check text-teal-600"></i> Avaliação 360°
+                                </p>
+                                <p class="text-xs text-slate-500 mt-0.5">Diagnóstico detalhado</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-slate-900 flex items-center justify-center lg:justify-start gap-1">
+                                    <i class="fa-solid fa-circle-check text-teal-600"></i> Sem Filas
+                                </p>
+                                <p class="text-xs text-slate-500 mt-0.5">Horários exclusivos</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-slate-900 flex items-center justify-center lg:justify-start gap-1">
+                                    <i class="fa-solid fa-circle-check text-teal-600"></i> Localização
+                                </p>
+                                <p class="text-xs text-slate-500 mt-0.5">Fácil acesso & Vagas</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Images Gallery Composition -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl shadow-teal-900/10 border-4 border-white">
+                                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80" alt="Fisioterapeuta realizando atendimento personalizado de reabilitação" class="w-full h-[450px] object-cover">
+                            </div>
+                            <!-- Floating Card Badge -->
+                            <div class="absolute -bottom-6 -left-6 z-20 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-4 max-w-xs">
+                                <div class="w-12 h-12 rounded-full bg-teal-50 flex items-center justify-center text-teal-600 text-xl font-bold">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Metodologia</p>
+                                    <p class="text-sm font-bold text-slate-800">Reabilitação Ativa & Sem Dor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. DIFERENCIAIS / NÚMEROS -->
+        <section class="py-12 bg-white border-y border-slate-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+                    <div class="p-4">
+                        <span class="text-3xl sm:text-4xl font-extrabold text-teal-600 font-sans">+5.000</span>
+                        <p class="text-sm font-medium text-slate-600 mt-1">Pacientes Atendidos</p>
+                    </div>
+                    <div class="p-4 pt-6 md:pt-4">
+                        <span class="text-3xl sm:text-4xl font-extrabold text-teal-600 font-sans">98.8%</span>
+                        <p class="text-sm font-medium text-slate-600 mt-1">Índice de Satisfação</p>
+                    </div>
+                    <div class="p-4 pt-6 md:pt-4">
+                        <span class="text-3xl sm:text-4xl font-extrabold text-teal-600 font-sans">+12</span>
+                        <p class="text-sm font-medium text-slate-600 mt-1">Anos de Experiência</p>
+                    </div>
+                    <div class="p-4 pt-6 md:pt-4">
+                        <span class="text-3xl sm:text-4xl font-extrabold text-teal-600 font-sans">100%</span>
+                        <p class="text-sm font-medium text-slate-600 mt-1">Individualizado & Humanizado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ESPECIALIDADES & TRATAMENTOS -->
+        <section id="especialidades" class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-teal-600 mb-2">Tratamentos Especializados</h2>
+                    <p class="text-3xl sm:text-4xl font-bold text-slate-900">Soluções completas para cada necessidade do seu corpo</p>
+                    <p class="text-slate-600 mt-4 text-base">Utilizamos protocolos terapêuticos atualizados para acelerar sua recuperação com segurança e eficácia comprovada.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1597764690523-15bea4c581c9?auto=format&fit=crop&w=800&q=80" alt="Fisioterapia Ortopédica" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-semibold text-teal-700">Ortopedia</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Fisioterapia Ortopédica & Traumatológica</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Reabilitação integral para pré e pós-operatórios, fraturas, entorses, bursites e tendinites. Foco no alívio imediato da dor e ganho de amplitude articular.
+                                </p>
+                            </div>
+                            <a href="#agendamento" class="text-teal-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                <span>Saiba mais</span>
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80" alt="Fisioterapia Esportiva" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-semibold text-teal-700">Esportiva</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Fisioterapia Esportiva & Liberação Miofascial</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Prevenção e tratamento de lesões em atletas amadores e profissionais. Recuperação muscular acelerada, melhora do gesto esportivo e liberação miofascial.
+                                </p>
+                            </div>
+                            <a href="#agendamento" class="text-teal-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                <span>Saiba mais</span>
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="RPG e Pilates Clínico" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-semibold text-teal-700">Postura</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">RPG & Pilates Clínico</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Reeducação Postural Global (RPG) voltada para o tratamento de hérnias de disco, escoliose, dores crônicas na coluna e melhoria do alinhamento corporal.
+                                </p>
+                            </div>
+                            <a href="#agendamento" class="text-teal-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                <span>Saiba mais</span>
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" alt="Fisioterapia Neurofuncional" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-semibold text-teal-700">Neurologia</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Fisioterapia Neurofuncional</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Tratamento especializado para sequelas de AVC, doença de Parkinson, esclerose múltipla e lesões medulares, promovendo independência e neuroplasticidade.
+                                </p>
+                            </div>
+                            <a href="#agendamento" class="text-teal-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                <span>Saiba mais</span>
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80" alt="Fisioterapia Pélvica" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-semibold text-teal-700">Pélvica & Gestantes</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Fisioterapia Pélvica & Saúde da Mulher</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Tratamento para incontinência urinária, disfunções pélvicas, além de acompanhamento especializado no pré e pós-parto com total acolhimento e privacidade.
+                                </p>
+                            </div>
+                            <a href="#agendamento" class="text-teal-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                <span>Saiba mais</span>
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover flex flex-col">
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=800&q=80" alt="Fisioterapia Respiratória" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-md rounded-full text-xs font-semibold text-teal-700">Respiratória</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-2">Fisioterapia Respiratória & Cardiorrespiratória</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                                    Exercícios e técnicas de higiene brônquica para reabilitação pós-infecções respiratórias, asma, DPOC e fortalecimento da musculatura inspiratória.
+                                </p>
+                            </div>
+                            <a href="#agendamento" class="text-teal-600 font-semibold text-sm inline-flex items-center gap-2 hover:gap-3 transition-all">
+                                <span>Saiba mais</span>
+                                <i class="fa-solid fa-chevron-right text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. SOBRE A CLÍNICA / INFRAESTRUTURA -->
+        <section id="sobre" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-6 relative">
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="Consultório moderno Lúmina" class="rounded-2xl shadow-md w-full h-64 object-cover">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=600&q=80" alt="Equipamentos de reabilitação" class="rounded-2xl shadow-md w-full h-64 object-cover mt-6">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-teal-600 text-white p-6 rounded-2xl shadow-xl max-w-xs hidden sm:block">
+                            <i class="fa-solid fa-microscope text-2xl mb-2"></i>
+                            <p class="text-sm font-semibold">Tecnologia de Ponta</p>
+                            <p class="text-xs text-teal-100 mt-1">Laserterapia de alta potência, Eletroterapia e Ultrassom terapêutico.</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6 space-y-6">
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-teal-600">Nossa Filosofia</h2>
+                        <h3 class="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">Um ambiente pensado para a sua completa recuperação</h3>
+                        <p class="text-slate-600 leading-relaxed">
+                            Fundada com a missão de ressignificar a fisioterapia, a **Lúmina Fisioterapia & Reabilitação** combina a ciência mais atualizada com um acolhimento caloroso e ambiente altamente dinâmico.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed">
+                            Acreditamos que cada paciente possui um ritmo e uma história única. Por isso, não utilizamos protocolos engessados: cada atendimento é individualizado, utilizando salas privativas para avaliação detalhada e um ginásio terapêutico moderno para a fase funcional da reabilitação.
+                        </p>
+
+                        <div class="space-y-3 pt-2">
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-xs mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Atendimento 1 por 1</h4>
+                                    <p class="text-xs text-slate-500">O fisioterapeuta atende exclusivamente você durante todo o horário da sessão.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-6 h-6 rounded-full bg-teal-100 text-teal-700 flex items-center justify-center text-xs mt-0.5">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-slate-900">Salas Climatizadas & Equipamentos Certificados</h4>
+                                    <p class="text-xs text-slate-500">Ambiente higienizado, confortável e com os melhores aparelhos do mercado.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CORPO CLÍNICO / EQUIPE -->
+        <section id="equipe" class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-teal-600 mb-2">Especialistas Renomados</h2>
+                    <p class="text-3xl sm:text-4xl font-bold text-slate-900">Conheça os profissionais por trás da sua saúde</p>
+                    <p class="text-slate-600 mt-4 text-base">Nossa equipe é formada por especialistas com sólida formação acadêmica e atualização constante.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Profissional 1 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dra. Camila Alencar" class="w-full h-72 object-cover object-top">
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider">CREFITO 3/248.910-F</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1">Dra. Camila Alencar</h3>
+                            <p class="text-sm font-medium text-slate-500 mb-3">Especialista em Ortopedia & RPG</p>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Mestre em Ciências da Reabilitação (USP). Possui 10 anos de experiência clínica no tratamento de patologias complexas da coluna e reabilitação pós-cirúrgica.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 2 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Lucas Vasconcelos" class="w-full h-72 object-cover object-top">
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider">CREFITO 3/192.405-F</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1">Dr. Lucas Vasconcelos</h3>
+                            <p class="text-sm font-medium text-slate-500 mb-3">Fisioterapeuta Esportivo</p>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Pós-graduado em Fisioterapia Esportiva (SONAFE). Atuou na preparação e recuperação física de atletas profissionais e amadores de alta performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Profissional 3 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-100 card-hover">
+                        <img src="https://images.unsplash.com/photo-1594824813571-24a69c100dd3?auto=format&fit=crop&w=600&q=80" alt="Dra. Mariana Ribeiro" class="w-full h-72 object-cover object-top">
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider">CREFITO 3/310.552-F</span>
+                            <h3 class="text-xl font-bold text-slate-900 mt-1">Dra. Mariana Ribeiro</h3>
+                            <p class="text-sm font-medium text-slate-500 mb-3">Fisioterapia Pélvica & Neurofuncional</p>
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                Especialista em Reabilitação Neuromotora e Saúde da Mulher. Certificada em abordagens inovadoras de biofeedback e neuroplasticidade.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. DEPOIMENTOS DE PACIENTES -->
+        <section id="depoimentos" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-teal-600 mb-2">Depoimentos</h2>
+                    <p class="text-3xl sm:text-4xl font-bold text-slate-900">O que nossos pacientes dizem sobre nós</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Depoimento 1 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                                "Cheguei à Lúmina com uma hérnia de disco severa e quase sem conseguir caminhar. O atendimento humanizado da Dra. Camila e os exercícios de RPG mudaram minha vida. Hoje voltei a correr sem dor!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Paciente Juliana M." class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Juliana Mendes</h4>
+                                <span class="text-xs text-slate-500">Paciente de RPG</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                                "Excelente clínica em Caçapava! Fiz a recuperação de cirurgia de LCA com o Dr. Lucas. Estrutura impecável e profissionalismo fora da curva. Voltei aos campos em tempo recorde."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Paciente Roberto S." class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Roberto Silva</h4>
+                                <span class="text-xs text-slate-500">Reabilitação de Joelho</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-700 italic text-sm leading-relaxed mb-6">
+                                "Ambiente extremamente acolhedor, limpo e calmo. A fisioterapia pélvica durante a minha gestação fez toda a diferença para um parto tranquilo e sem dores lombares."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Paciente Fernanda A." class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Fernanda Almeida</h4>
+                                <span class="text-xs text-slate-500">Fisioterapia Obstétrica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ - PERGUNTAS FREQUENTES -->
+        <section id="faq" class="py-20 bg-slate-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-teal-600 mb-2">Tire suas dúvidas</h2>
+                    <p class="text-3xl font-bold text-slate-900">Perguntas Frequentes</p>
+                </div>
+
+                <div class="space-y-4" id="faq-accordion">
+                    
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-slate-800 hover:text-teal-600 transition-colors">
+                            <span>Vocês atendem por convênio médico?</span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                            Atendemos primordialmente em modalidade **Particular e Reembolso**. Emitimos toda a documentação necessária (recibos e relatórios detalhados) para que você solicite o reembolso integral ou parcial junto ao seu plano de saúde com facilidade.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-slate-800 hover:text-teal-600 transition-colors">
+                            <span>Preciso de um encaminhamento médico para iniciar a fisioterapia?</span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                            Não é obrigatório apresentar guia médica para a consulta inicial de avaliação. Nossos fisioterapeutas são profissionais autônomos capacitados para diagnosticar patologias biomecânicas. Caso necessário, faremos o encaminhamento para exames de imagem ou médicos parceiros.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-slate-800 hover:text-teal-600 transition-colors">
+                            <span>Quanto tempo dura cada sessão?</span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                            As sessões de fisioterapia têm duração média de **50 minutos a 1 hora**, sendo realizadas de forma individual e dedicada exclusivamente ao atendimento das suas queixas.
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm">
+                        <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center font-semibold text-slate-800 hover:text-teal-600 transition-colors">
+                            <span>Como funciona a primeira avaliação?</span>
+                            <i class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden px-6 pb-4 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+                            Na primeira avaliação é feita uma anamnese detalhada, testes de mobilidade, força e testes ortopédicos específicos. A partir desses dados, montamos um plano terapêutico customizado para o seu caso.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. CONTATO & AGENDAMENTO -->
+        <section id="agendamento" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Form Side -->
+                    <div class="lg:col-span-7 bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-100 shadow-sm">
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-teal-600 mb-2">Agendamento Simplificado</h2>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6">Marque sua Avaliação Inicial</h3>
+
+                        <form id="appointment-form" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Nome Completo *</label>
+                                    <input type="text" required placeholder="Seu nome" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Telefone / WhatsApp *</label>
+                                    <input type="tel" required placeholder="(12) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Especialidade Desejada</label>
+                                    <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm text-slate-700">
+                                        <option value="">Selecione uma opção</option>
+                                        <option value="ortopedia">Fisioterapia Ortopédica</option>
+                                        <option value="esportiva">Fisioterapia Esportiva</option>
+                                        <option value="rpg">RPG & Pilates Clínico</option>
+                                        <option value="neurologia">Fisioterapia Neurofuncional</option>
+                                        <option value="pelvica">Fisioterapia Pélvica</option>
+                                        <option value="respiratoria">Fisioterapia Respiratória</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Data Preferencial</label>
+                                    <input type="date" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm text-slate-700">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Mensagem ou Sintomas (Opcional)</label>
+                                <textarea rows="3" placeholder="Conte-nos brevemente o que está sentindo..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-sm shadow-lg shadow-teal-600/20 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-calendar-check"></i>
+                                <span>Solicitar Horário</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact & Map Info -->
+                    <div class="lg:col-span-5 flex flex-col justify-between space-y-8">
+                        <div>
+                            <h2 class="text-xs font-bold uppercase tracking-widest text-teal-600 mb-2">Informações de Contato</h2>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-6">Estamos prontos para atende-lo</h3>
+
+                            <div class="space-y-6">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center shrink-0 mt-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900 text-sm">Endereço Principal</h4>
+                                        <p class="text-slate-600 text-xs mt-0.5">Av. São João, 1200 - Centro / Caçapava - SP</p>
+                                        <p class="text-slate-400 text-xs">(Próximo ao Vale do Paraíba / São José dos Campos)</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center shrink-0 mt-1">
+                                        <i class="fa-solid fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900 text-sm">Horário de Funcionamento</h4>
+                                        <p class="text-slate-600 text-xs mt-0.5">Segunda a Sexta: 07h00 às 20h00</p>
+                                        <p class="text-slate-600 text-xs">Sábados: 08h00 às 13h00</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center shrink-0 mt-1">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-slate-900 text-sm">E-mail de Contato</h4>
+                                        <p class="text-slate-600 text-xs mt-0.5">contato@luminafisioterapia.com.br</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Stylized Map Widget Container -->
+                        <div class="rounded-2xl overflow-hidden border border-slate-200 h-48 bg-slate-100 relative flex items-center justify-center text-center p-4">
+                            <iframe title="Mapa da Clínica Lúmina" class="w-full h-full absolute inset-0 opacity-80" src="https://maps.google.com/maps?q=Ca%C3%A7apava%20SP&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <div class="relative z-10 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow-md border border-slate-200">
+                                <span class="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                                    <i class="fa-solid fa-map-pin text-teal-600"></i> Lúmina Fisioterapia & Reabilitação
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 10. FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-teal-600 flex items-center justify-center text-white font-bold">
+                            <i class="fa-solid fa-hand-holding-medical"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white tracking-tight">LÚMINA</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Clínica de Fisioterapia e Reabilitação dedicada ao restabelecimento do seu movimento, saúde física e prevenção de lesões.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4">Navegação</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inicio" class="hover:text-teal-400 transition-colors">Início</a></li>
+                        <li><a href="#sobre" class="hover:text-teal-400 transition-colors">Sobre Nós</a></li>
+                        <li><a href="#especialidades" class="hover:text-teal-400 transition-colors">Especialidades</a></li>
+                        <li><a href="#equipe" class="hover:text-teal-400 transition-colors">Corpo Clínico</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4">Especialidades</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#especialidades" class="hover:text-teal-400 transition-colors">Fisioterapia Ortopédica</a></li>
+                        <li><a href="#especialidades" class="hover:text-teal-400 transition-colors">Fisioterapia Esportiva</a></li>
+                        <li><a href="#especialidades" class="hover:text-teal-400 transition-colors">RPG & Pilates Clínico</a></li>
+                        <li><a href="#especialidades" class="hover:text-teal-400 transition-colors">Fisioterapia Neurofuncional</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white text-sm font-semibold mb-4">Redes Sociais</h4>
+                    <div class="flex gap-3 text-base">
+                        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-teal-600 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-teal-600 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 hover:bg-teal-600 hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Lúmina Fisioterapia & Reabilitação. Todos os direitos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-slate-400">Termos de Uso</a>
+                    <a href="#" class="hover:text-slate-400">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/5512999998888?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" aria-label="Contato via WhatsApp" class="fixed bottom-6 right-6 z-40 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform pulse-soft">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- CONFIRMATION MODAL -->
+    <div id="modal-success" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl p-8 max-w-sm w-full text-center shadow-2xl mx-4 transform scale-95 transition-transform duration-300" id="modal-box">
+            <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Solicitação Enviada!</h3>
+            <p class="text-slate-600 text-sm mt-2">Recebemos o seu pedido. Nossa equipe entrará em contato via WhatsApp/telefone em instantes para confirmar seu horário.</p>
+            <button id="close-modal" class="mt-6 px-6 py-2.5 rounded-full bg-teal-600 text-white font-semibold text-sm w-full hover:bg-teal-700 transition-colors">
+                Entendido
+            </button>
+        </div>
     </div>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span></span>
-          Saúde integral · São Paulo
-        </div>
-        <h1>Onde corpo, mente e voz <em>encontram equilíbrio.</em></h1>
-        <p class="hero-lead">
-          Fisioterapia, Psicologia e Fonoaudiologia reunidas em um só espaço. Atendimento humanizado, escuta profunda e resultados que transformam a qualidade de vida.
-        </p>
-        <div class="hero-actions">
-          <a href="https://wa.me/5511999990000?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Lumina!%20Quero%20conhecer%20os%20servi%C3%A7os." class="btn btn-primary btn-lg" target="_blank" rel="noopener">
-            Falar no WhatsApp
-          </a>
-          <a href="#especialidades" class="btn btn-outline btn-lg">Conhecer especialidades</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <strong>3</strong>
-            <span>Especialidades integradas</span>
-          </div>
-          <div class="stat">
-            <strong>100%</strong>
-            <span>Atendimento personalizado</span>
-          </div>
-          <div class="stat">
-            <strong>+8</strong>
-            <span>Anos de experiência combinada</span>
-          </div>
-        </div>
-      </div>
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // 1. Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
 
-      <div class="hero-visual">
-        <div class="hero-visual-inner">
-          <div class="hero-visual-label">Clínica Lumina</div>
-          <h3>Cuidado que ilumina cada etapa da sua recuperação.</h3>
-        </div>
-        <div class="floating-card one">
-          <div class="icon">✦</div>
-          <div>
-            <strong>Avaliação completa</strong>
-            <span>Primeira consulta detalhada</span>
-          </div>
-        </div>
-        <div class="floating-card two">
-          <div class="icon">♡</div>
-          <div>
-            <strong>Escuta ativa</strong>
-            <span>Você no centro do cuidado</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            } else {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            }
+        });
 
-  <!-- SOBRE -->
-  <section class="sobre" id="sobre">
-    <div class="container">
-      <div class="sobre-grid">
-        <div class="sobre-text">
-          <span class="section-label">Sobre a Lumina</span>
-          <h2 class="section-title">Inspirados na <em>origem</em> do bem-estar.</h2>
-          <p>
-            <strong>Lumina</strong> nasce da compreensão de que o ser humano é uma integralidade. Corpo, mente e voz não são esferas separadas — são expressões de uma mesma força vital que busca equilíbrio e expressão plena.
-          </p>
-          <p>
-            Embora nossas especialidades (fisioterapia, psicoterapia e fonoaudiologia) sejam fruto da razão científica que costuma separar para compreender, sabemos que o sujeito humano é um todo indissociável. Todos somos, ao mesmo tempo, natureza, corpo, mente, singular e social.
-          </p>
-          <p>
-            Assim, nossas abordagens, embora se dirijam a diferentes dimensões, buscam o bem-estar e o desenvolvimento da pessoa em sua singularidade, em seus contextos e em seus modos únicos de vida.
-          </p>
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
 
-          <div class="pillars">
-            <div class="pillar">
-              <div class="pillar-num">01</div>
-              <div>
-                <h4>Especialidades em Saúde</h4>
-                <p>Reunimos fisioterapia, psicologia e fonoaudiologia para atender necessidades diversas com visão integrada.</p>
-              </div>
-            </div>
-            <div class="pillar">
-              <div class="pillar-num">02</div>
-              <div>
-                <h4>Equipe Especializada</h4>
-                <p>Profissionais com formação de excelência e prática clínica sólida, oferecendo atendimento personalizado.</p>
-              </div>
-            </div>
-            <div class="pillar">
-              <div class="pillar-num">03</div>
-              <div>
-                <h4>Atenção e Escuta</h4>
-                <p>A escuta do paciente como sujeito singular é o foco de todas as nossas especialidades.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        // 2. FAQ Accordion Logic
+        const faqButtons = document.querySelectorAll('.faq-btn');
 
-        <div class="sobre-visual">
-          <div class="sobre-visual-content">
-            <h3>“Cuidar é iluminar o caminho de volta para si.”</h3>
-            <p>Um espaço pensado para acolher, escutar e restaurar — com técnica, presença e humanidade.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        faqButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
 
-  <!-- ESPECIALIDADES -->
-  <section id="especialidades">
-    <div class="container">
-      <span class="section-label">O que oferecemos</span>
-      <h2 class="section-title">Três caminhos, <em>um só propósito:</em> o seu bem-estar.</h2>
-      <p class="section-lead">Cada especialidade com profundidade técnica e olhar humanizado. Escolha o caminho ou combine-os.</p>
+                // Toggle visibility
+                const isOpen = !content.classList.contains('hidden');
 
-      <div class="especialidades-grid">
-        <!-- Fisioterapia -->
-        <article class="card-esp">
-          <div class="card-esp-icon">◎</div>
-          <h3>Fisioterapia</h3>
-          <p>Reabilitação, prevenção de lesões e melhora da funcionalidade com técnicas manuais, exercícios e abordagens avançadas.</p>
-          <ul>
-            <li>Ortopedia e esportiva</li>
-            <li>Liberação miofascial</li>
-            <li>Dry Needling</li>
-            <li>Pilates e treino funcional</li>
-            <li>Drenagem e recovery</li>
-            <li>Atendimento home care</li>
-          </ul>
-          <a href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Fisioterapia%20na%20Cl%C3%ADnica%20Lumina." class="btn btn-outline" target="_blank" rel="noopener">Agendar Fisioterapia</a>
-        </article>
+                // Close all other open items
+                document.querySelectorAll('.faq-content').forEach(el => el.classList.add('hidden'));
+                document.querySelectorAll('.faq-btn i').forEach(ic => ic.classList.remove('rotate-180'));
 
-        <!-- Psicologia -->
-        <article class="card-esp">
-          <div class="card-esp-icon">◇</div>
-          <h3>Psicologia</h3>
-          <p>Psicoterapia de adultos com orientação psicanalítica. Espaço de escuta profunda para processos de transformação e autoconhecimento.</p>
-          <ul>
-            <li>Psicoterapia de adultos</li>
-            <li>Orientação psicanalítica</li>
-            <li>Processos de luto e transição</li>
-            <li>Ansiedade e sofrimento psíquico</li>
-            <li>Desenvolvimento pessoal</li>
-            <li>Escuta singular e ética</li>
-          </ul>
-          <a href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Psicologia%20na%20Cl%C3%ADnica%20Lumina." class="btn btn-outline" target="_blank" rel="noopener">Agendar Psicologia</a>
-        </article>
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
 
-        <!-- Fonoaudiologia -->
-        <article class="card-esp">
-          <div class="card-esp-icon">♪</div>
-          <h3>Fonoaudiologia</h3>
-          <p>Cuidado com a voz, comunicação e linguagem. Integração entre ciência e arte para expressar o que há de mais autêntico em você.</p>
-          <ul>
-            <li>Reabilitação e aprimoramento vocal</li>
-            <li>Técnica vocal e canto</li>
-            <li>Motricidade orofacial</li>
-            <li>Linguagem e fala</li>
-            <li>Transtornos de leitura e escrita</li>
-            <li>Comunicação alternativa</li>
-          </ul>
-          <a href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Fonoaudiologia%20na%20Cl%C3%ADnica%20Lumina." class="btn btn-outline" target="_blank" rel="noopener">Agendar Fonoaudiologia</a>
-        </article>
-      </div>
-    </div>
-  </section>
+        // 3. Form Submission Modal Logic
+        const appointmentForm = document.getElementById('appointment-form');
+        const modalSuccess = document.getElementById('modal-success');
+        const modalBox = document.getElementById('modal-box');
+        const closeModal = document.getElementById('close-modal');
 
-  <!-- EQUIPE -->
-  <section class="equipe" id="equipe">
-    <div class="container">
-      <span class="section-label">Nossa equipe</span>
-      <h2 class="section-title">Profissionais que <em>escutam</em> antes de tratar.</h2>
-      <p class="section-lead">Formação sólida, prática clínica contínua e compromisso com o cuidado singular de cada pessoa.</p>
+        appointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Show Modal with Animation
+            modalSuccess.classList.remove('hidden');
+            setTimeout(() => {
+                modalSuccess.classList.remove('opacity-0');
+                modalBox.classList.remove('scale-95');
+                modalBox.classList.add('scale-100');
+            }, 10);
 
-      <div class="equipe-grid">
-        <article class="card-pro">
-          <div class="pro-avatar">GC</div>
-          <h3>Giovana Carvalho</h3>
-          <div class="role">Fisioterapeuta</div>
-          <p>Atuação em ortopedia e esportiva, com sólida experiência em home care para idosos. Domínio de terapias manuais, pilates e reabilitação funcional.</p>
-          <div class="pro-tags">
-            <span>Ortopedia</span>
-            <span>Dry Needling</span>
-            <span>Pilates</span>
-            <span>Home Care</span>
-          </div>
-          <a href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Giovana%20(Fisioterapia)." class="btn btn-accent" target="_blank" rel="noopener">Falar com Giovana</a>
-        </article>
+            appointmentForm.reset();
+        });
 
-        <article class="card-pro">
-          <div class="pro-avatar">IC</div>
-          <h3>Isabel Carvalho</h3>
-          <div class="role">Psicóloga · Psicanalista</div>
-          <p>Psicóloga com trajetória acadêmica e clínica. Dedica-se à psicoterapia de adultos com orientação psicanalítica, escuta ética e profunda.</p>
-          <div class="pro-tags">
-            <span>Psicanálise</span>
-            <span>Adultos</span>
-            <span>Clínica</span>
-          </div>
-          <a href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Isabel%20(Psicologia)." class="btn btn-accent" target="_blank" rel="noopener">Falar com Isabel</a>
-        </article>
+        closeModal.addEventListener('click', () => {
+            modalSuccess.classList.add('opacity-0');
+            modalBox.classList.remove('scale-100');
+            modalBox.classList.add('scale-95');
+            setTimeout(() => {
+                modalSuccess.classList.add('hidden');
+            }, 300);
+        });
 
-        <article class="card-pro">
-          <div class="pro-avatar">CC</div>
-          <h3>Carmen Carvalho</h3>
-          <div class="role">Fonoaudióloga</div>
-          <p>Especialista em voz, comunicação e linguagem. Integra ciência e expressão artística para reabilitação e aprimoramento vocal.</p>
-          <div class="pro-tags">
-            <span>Voz</span>
-            <span>Motricidade</span>
-            <span>Linguagem</span>
-            <span>Canto</span>
-          </div>
-          <a href="https://wa.me/5511999990000?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20Carmen%20(Fonoaudiologia)." class="btn btn-accent" target="_blank" rel="noopener">Falar com Carmen</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEPOIMENTOS -->
-  <section id="depoimentos">
-    <div class="container">
-      <span class="section-label">Quem passou por aqui</span>
-      <h2 class="section-title">Histórias de quem <em>encontrou</em> equilíbrio.</h2>
-
-      <div class="depoimentos-grid">
-        <article class="card-dep">
-          <div class="stars">★★★★★</div>
-          <blockquote>“A Giovana transformou minha recuperação pós-cirúrgica. Atendimento impecável, técnica precisa e um cuidado que faz a diferença.”</blockquote>
-          <div class="dep-author">
-            <div class="av">MR</div>
-            <div>
-              <strong>Marina R.</strong>
-              <span>Paciente de Fisioterapia</span>
-            </div>
-          </div>
-        </article>
-        <article class="card-dep">
-          <div class="stars">★★★★★</div>
-          <blockquote>“Encontrei na Isabel um espaço de escuta que eu precisava há anos. A terapia me devolveu clareza e leveza.”</blockquote>
-          <div class="dep-author">
-            <div class="av">AS</div>
-            <div>
-              <strong>André S.</strong>
-              <span>Paciente de Psicologia</span>
-            </div>
-          </div>
-        </article>
-        <article class="card-dep">
-          <div class="stars">★★★★★</div>
-          <blockquote>“A Carmen me ajudou a recuperar a voz após um período difícil. Profissional excepcional e ambiente acolhedor.”</blockquote>
-          <div class="dep-author">
-            <div class="av">LF</div>
-            <div>
-              <strong>Luciana F.</strong>
-              <span>Paciente de Fonoaudiologia</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section>
-    <div class="container">
-      <div class="cta-band">
-        <h2>Pronto para começar sua jornada?</h2>
-        <p>Agende uma avaliação. Respondemos no mesmo dia e cuidamos de cada detalhe do seu processo.</p>
-        <a href="https://wa.me/5511999990000?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Lumina!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o." class="btn btn-accent btn-lg" target="_blank" rel="noopener">
-          Agendar pelo WhatsApp
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato">
-    <div class="container">
-      <span class="section-label">Contato</span>
-      <h2 class="section-title">Vamos conversar <em>sobre você.</em></h2>
-      <p class="section-lead">Tire dúvidas ou agende sua primeira avaliação. Estamos prontos para acolher.</p>
-
-      <div class="contato-grid">
-        <div class="contato-info">
-          <h3>Informações</h3>
-
-          <div class="info-item">
-            <div class="ico">📍</div>
-            <div>
-              <strong>Endereço</strong>
-              <span>R. Ministro de Godói, 478 — SL 101<br>Perdizes · São Paulo/SP</span>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="ico">📱</div>
-            <div>
-              <strong>WhatsApp</strong>
-              <a href="https://wa.me/5511999990000" target="_blank" rel="noopener">(11) 99999-0000</a>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="ico">◎</div>
-            <div>
-              <strong>Instagram</strong>
-              <a href="https://instagram.com/" target="_blank" rel="noopener">@clinicalumina</a>
-            </div>
-          </div>
-
-          <div class="horarios">
-            <h4>Horário de atendimento</h4>
-            <ul>
-              <li><span>Segunda a sexta</span><strong>8h – 20h</strong></li>
-              <li><span>Sábado</span><strong>8h – 13h</strong></li>
-              <li><span>Domingo</span><strong>Fechado</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="contato-form">
-          <h3>Envie uma mensagem</h3>
-          <p>Preencha e abriremos o WhatsApp com tudo pronto.</p>
-          <form id="contato-form">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
-              </div>
-              <div class="form-group">
-                <label for="telefone">WhatsApp</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-0000" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="especialidade">Especialidade de interesse</label>
-              <select id="especialidade" name="especialidade">
-                <option value="">Selecione (opcional)</option>
-                <option value="Fisioterapia">Fisioterapia</option>
-                <option value="Psicologia">Psicologia</option>
-                <option value="Fonoaudiologia">Fonoaudiologia</option>
-                <option value="Avaliação geral">Avaliação geral</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar?"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%">Enviar pelo WhatsApp</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="#inicio" class="logo">
-            <svg viewBox="0 0 120 120" width="36" height="36" fill="none">
-              <path d="M42 48 Q60 28 78 48 Q70 72 60 88 Q50 72 42 48Z" fill="#C9A86C"/>
-              <circle cx="60" cy="52" r="7" fill="#143D37"/>
-            </svg>
-            Lumina
-          </a>
-          <p>Clínica de Fisioterapia, Psicologia e Fonoaudiologia. Saúde integral com excelência e humanidade em São Paulo.</p>
-        </div>
-        <div>
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#especialidades">Especialidades</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Especialidades</h4>
-          <ul>
-            <li><a href="#especialidades">Fisioterapia</a></li>
-            <li><a href="#especialidades">Psicologia</a></li>
-            <li><a href="#especialidades">Fonoaudiologia</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contato</h4>
-          <ul>
-            <li><a href="https://wa.me/5511999990000" target="_blank" rel="noopener">(11) 99999-0000</a></li>
-            <li><a href="https://instagram.com/" target="_blank" rel="noopener">@clinicalumina</a></li>
-            <li>Perdizes · São Paulo</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Clínica Lumina. Todos os direitos reservados.</span>
-        <a href="#" data-open-privacy>Privacidade e cookies (LGPD)</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- WhatsApp Float -->
-  <a href="https://wa.me/5511999990000?text=Ol%C3%A1%2C%20Cl%C3%ADnica%20Lumina!" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
-
-  <!-- LGPD Banner -->
-  <div class="lgpd-overlay" id="lgpd-overlay">
-    <div class="lgpd-modal">
-      <h3>Privacidade e cookies</h3>
-      <p>
-        Usamos apenas armazenamento local essencial para lembrar suas preferências de privacidade. Não rastreamos você com cookies de publicidade. Ao continuar, você concorda com nossa política conforme a LGPD.
-      </p>
-      <div class="lgpd-actions">
-        <button class="btn btn-primary" id="lgpd-accept">Aceitar e continuar</button>
-        <button class="btn btn-outline" id="lgpd-essential">Apenas essenciais</button>
-      </div>
-      <a href="#" class="lgpd-link" data-open-privacy>Ler política completa</a>
-    </div>
-  </div>
-
-  <!-- Full Privacy Policy -->
-  <div class="privacy-full" id="privacy-full">
-    <div class="privacy-content">
-      <button class="privacy-close" id="privacy-close" aria-label="Fechar">×</button>
-      <h2>Privacidade e cookies</h2>
-      <p class="date">Última atualização: 31 de outubro de 2026 · Elaborada conforme a Lei Geral de Proteção de Dados (Lei nº 13.709/2018)</p>
-
-      <h3>1. Quem somos</h3>
-      <p>Este site é mantido pela <strong>Clínica Lumina</strong>, com atendimento em R. Ministro de Godói, 478 — SL 101, Perdizes, São Paulo/SP, que atua como controladora dos dados pessoais tratados por meio dele. Para qualquer assunto de privacidade, fale conosco pelo WhatsApp (11) 99999-0000.</p>
-
-      <h3>2. Quais dados tratamos</h3>
-      <ul>
-        <li><strong>Dados que você nos envia.</strong> Este site não possui cadastro nem banco de dados próprio. Ao preencher o formulário de contato ou clicar em “Falar no WhatsApp”, as informações (nome, telefone, especialidade e mensagem) viram uma mensagem enviada pelo seu próprio aplicativo WhatsApp. O atendimento continua lá.</li>
-        <li><strong>Dados técnicos de navegação.</strong> O servidor de hospedagem pode registrar automaticamente endereço IP, data e hora do acesso, páginas visitadas e tipo de navegador, para segurança e funcionamento.</li>
-        <li><strong>Armazenamento local.</strong> Guardamos no seu navegador apenas a sua escolha de privacidade (chave <code>lumina-lgpd</code>).</li>
-      </ul>
-
-      <h3>3. Para que usamos e com qual base legal</h3>
-      <ul>
-        <li>Responder ao seu pedido de agendamento ou dúvida: procedimentos preliminares a contrato (art. 7º, V).</li>
-        <li>Manter o site funcionando com segurança: legítimo interesse (art. 7º, IX).</li>
-      </ul>
-
-      <h3>4. Cookies e armazenamento local</h3>
-      <p>Não usamos cookies de publicidade, rastreamento ou estatística. O site utiliza somente o armazenamento local do navegador (<em>localStorage</em>) para lembrar que você já viu este aviso de privacidade. Essa informação fica apenas no seu aparelho.</p>
-
-      <h3>5. Serviços de terceiros</h3>
-      <ul>
-        <li><strong>WhatsApp (Meta Platforms)</strong> — canal de atendimento.</li>
-        <li><strong>Google Fonts</strong> — fornece as fontes tipográficas; o navegador envia seu IP ao carregar as fontes.</li>
-        <li><strong>Hospedagem</strong> — pode registrar dados técnicos de acesso.</li>
-      </ul>
-      <p>Alguns desses provedores ficam fora do Brasil. A transferência internacional ocorre nos termos do art. 33 da LGPD.</p>
-
-      <h3>6. Por quanto tempo guardamos</h3>
-      <p>O site em si não armazena seus dados em servidor. As conversas no WhatsApp são mantidas pelo tempo necessário ao atendimento e ao cumprimento de obrigações legais, e depois eliminadas ou anonimizadas.</p>
-
-      <h3>7. Seus direitos</h3>
-      <p>Nos termos do art. 18 da LGPD, você pode a qualquer momento pedir: confirmação de tratamento, acesso, correção, anonimização, bloqueio ou eliminação, portabilidade e informação sobre compartilhamentos. Basta falar conosco pelo WhatsApp. Você também pode apresentar reclamação à <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener">ANPD</a>.</p>
-
-      <h3>8. Segurança</h3>
-      <p>O site é servido por conexão criptografada (HTTPS) e não coleta nem armazena dados pessoais em servidores próprios, reduzindo ao mínimo o risco de incidentes.</p>
-
-      <h3>9. Alterações</h3>
-      <p>Esta política pode ser atualizada para refletir mudanças no site ou na legislação. A data da última atualização aparece no topo deste texto.</p>
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
+        // Close modal when clicking backdrop
+        modalSuccess.addEventListener('click', (e) => {
+            if (e.target === modalSuccess) {
+                closeModal.click();
+            }
+        });
+    </script>
 </body>
 </html>
