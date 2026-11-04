@@ -20,6 +20,13 @@
 - Aplicativos mobile: Android e multiplataforma, do protótipo à publicação na Google Play
 - Catálogos e e-commerce com pedido pelo WhatsApp
 
+## Páginas de serviço
+
+- [Criação de sites e landing pages](https://fcsoftware.com.br/criacao-de-sites/): Criação de sites profissionais, rápidos e otimizados para Google e IAs, com pedidos pelo WhatsApp. Feito por engenheiro de computação com 20+ anos. Peça seu orçamento.
+- [Agente de inteligência artificial para WhatsApp](https://fcsoftware.com.br/agente-de-ia-whatsapp/): Atendente virtual com inteligência artificial no WhatsApp: responde, agenda e confirma horários 24h, integrado à sua agenda e sistemas. Desenvolvido por engenheiro com pós em IA.
+- [Desenvolvimento de sistemas sob medida](https://fcsoftware.com.br/sistemas-sob-medida/): Sistemas web sob medida, ERPs, painéis, integrações e APIs em Java, Spring, Node.js e React. Engenharia de quem fez sistemas críticos para Embraer, Azul, Gol e TAM.
+- [SEO, GEO e AEO: otimização para Google e buscas por IA](https://fcsoftware.com.br/seo-geo-aeo/): O que é SEO, GEO e AEO e como deixar seu site pronto para o Google, Google Maps, ChatGPT, Gemini e Perplexity. SEO técnico e local no Vale do Paraíba e em todo o Brasil.
+
 ## Produtos próprios
 
 - [Bia](https://souabia.com): secretária de IA que atende o WhatsApp 24h e agenda no Google Calendar
