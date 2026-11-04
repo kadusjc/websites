@@ -1,3 +1,6 @@
 # Chaves e segredos locais (nunca commitar)
 .gemini/.env
 .env
+
+# Configuração local do Claude Code (contém chave de API)
+.claude/

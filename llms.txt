@@ -1,0 +1,34 @@
+# Ferreiro Corrêa Software
+
+> Fábrica de software de Caçapava/SP (Vale do Paraíba, Brasil) que cria sites que vendem, sistemas sob medida, aplicativos e agentes de inteligência artificial para WhatsApp. Fundada pelo engenheiro de computação Carlos Eduardo Ferreiro Corrêa, com mais de 20 anos de experiência em sistemas críticos para Embraer, Azul, Gol, TAM e Polishop. Atendimento 100% remoto para todo o Brasil e exterior.
+
+## Fatos principais
+
+- Nome: Ferreiro Corrêa Software (FC Software)
+- Site: https://fcsoftware.com.br/
+- Localização: Caçapava, SP, Brasil. Atende São José dos Campos, Taubaté, Jacareí, Pindamonhangaba, São Paulo e todo o Brasil (remoto)
+- Contato: WhatsApp +55 12 99135-9134 · e-mail kadusjc1984@gmail.com
+- Fundador: Eng. Carlos Eduardo Ferreiro Corrêa, Engenheiro de Computação, Sun Certified Java Programmer, pós-graduação em Engenharia de Software com IA Aplicada, autor do livro "React JS: Guia Completo para o Desenvolvedor Front-End"
+- Experiência: BoldCron (pagamentos e antifraude), Compsis (telemetria), UOL Diveo (integrações para Azul, TAM e Gol), GSW Software/Embraer (sistemas integrados ao SAP), Resmark Systems (EUA)
+- Tecnologias: Java, Spring, Node.js, TypeScript, React, Angular, PostgreSQL, MongoDB, Redis, AWS, LLMs, agentes de IA, WhatsApp API
+
+## Serviços
+
+- Criação de sites e landing pages: design exclusivo, mobile-first, SEO técnico e local, GEO e AEO, dados estruturados, conversão via WhatsApp
+- Agentes de inteligência artificial: atendentes virtuais 24h no WhatsApp, agendamento automático, automação de processos, integração de LLMs (RAG) aos dados da empresa
+- Sistemas sob medida: ERPs, painéis, integrações com pagamentos e ERPs, APIs (web e desktop)
+- Aplicativos mobile: Android e multiplataforma, do protótipo à publicação na Google Play
+- Catálogos e e-commerce com pedido pelo WhatsApp
+
+## Produtos próprios
+
+- [Bia](https://souabia.com): secretária de IA que atende o WhatsApp 24h e agenda no Google Calendar
+- [NovaRemote](https://souabia.com/nova-remote): app Android que transforma o celular em controle remoto de Smart TV
+
+## Portfólio
+
+Mais de 25 propostas de site completas e navegáveis para indústria, construção, marcenaria, varejo, moda, paisagismo, saúde, alimentação, educação, serviços e infoprodutos, disponíveis em https://fcsoftware.com.br/#trabalhos
+
+## Como contratar
+
+Envie o briefing em https://fcsoftware.com.br/#orcamento ou chame no WhatsApp https://wa.me/5512991359134. Você conversa direto com o engenheiro e recebe proposta com escopo e valor fechados.

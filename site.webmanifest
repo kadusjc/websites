@@ -1,0 +1,16 @@
+{
+ "name": "Ferreiro Corrêa Software",
+ "short_name": "FC Software",
+ "start_url": "/",
+ "display": "standalone",
+ "background_color": "#07090a",
+ "theme_color": "#07090a",
+ "lang": "pt-BR",
+ "icons": [
+  {
+   "src": "/logo.svg",
+   "sizes": "any",
+   "type": "image/svg+xml"
+  }
+ ]
+}
