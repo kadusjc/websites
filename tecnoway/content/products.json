@@ -8,15 +8,6 @@
       "description": "Alimentação de partida e sistemas",
       "price": 580,
       "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-24-23.png"
-    },
-    {
-      "active": true,
-      "code": "002",
-      "name": "Correia DentadaCorreia Dentada (ou Kit Correia + Tensor)",
-      "category": "Motor",
-      "price": 590,
-      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-03-53.png",
-      "description": "\nDescrição: Correia encarregada de sincronizar o movimento do eixo de comando de válvulas com o virabrequim, evitando danos graves ao motor."
     }
   ]
 }
