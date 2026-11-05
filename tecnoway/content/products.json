@@ -2,15 +2,6 @@
   "products": [
     {
       "active": true,
-      "code": "008",
-      "name": "Bia",
-      "category": "Bot",
-      "description": "Sou a bia",
-      "price": 100,
-      "image": "/tecnoway/assets/products/biauniodontoinstagram.png"
-    },
-    {
-      "active": true,
       "code": "003",
       "name": "Bateria 60ah",
       "category": "Elétrica",
