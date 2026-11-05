@@ -26,6 +26,15 @@
       "description": "Dentadura",
       "price": 10,
       "image": "/tecnoway/assets/products/dentadura.webp"
+    },
+    {
+      "active": true,
+      "code": "008",
+      "name": "Bia",
+      "category": "Bot",
+      "description": "Sou a bia",
+      "price": 100,
+      "image": "/tecnoway/assets/products/biauniodontoinstagram.png"
     }
   ]
 }
