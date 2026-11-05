@@ -2,30 +2,12 @@
   "products": [
     {
       "active": true,
-      "code": "001",
-      "name": "Jogo de Pastilhas de Freio Dianteiras",
-      "category": "Freio",
-      "description": "Componentes de atrito que pressionam os discos de freio para desacelerar ou parar o veículo. Fabricados em ligas metálicas, semi-metálicas ou cerâmica.",
-      "price": 119.81,
-      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-02-54.png"
-    },
-    {
-      "active": true,
-      "code": "002",
-      "name": "Correia DentadaCorreia Dentada (ou Kit Correia + Tensor)",
-      "category": "Motor",
-      "price": 590,
-      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-03-53.png",
-      "description": "\nDescrição: Correia encarregada de sincronizar o movimento do eixo de comando de válvulas com o virabrequim, evitando danos graves ao motor."
-    },
-    {
-      "active": true,
       "code": "003",
-      "name": "Bateria 60ah",
+      "name": "Bateria 60ah - Testando novo repositorio",
       "category": "Elétrica",
-      "description": "Alimentação de partida e sistemas",
+      "description": "Alimentação de partida e sistemas. Mudança de repositório para testes do cliente",
       "price": 580,
-      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-24-23.png"
+      "image": "/tecnoway/assets/products/dentadura.webp"
     }
   ]
 }
