@@ -2,12 +2,12 @@
   "products": [
     {
       "active": true,
-      "code": "001",
-      "name": "Jogo de Pastilhas de Freio Dianteiras",
-      "category": "Freio",
-      "description": "Componentes de atrito que pressionam os discos de freio para desacelerar ou parar o veículo. Fabricados em ligas metálicas, semi-metálicas ou cerâmica.",
-      "price": 119.81,
-      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-02-54.png"
+      "code": "003",
+      "name": "Bateria 60ah",
+      "category": "Elétrica",
+      "description": "Alimentação de partida e sistemas",
+      "price": 580,
+      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-24-23.png"
     },
     {
       "active": true,
@@ -20,12 +20,12 @@
     },
     {
       "active": true,
-      "code": "003",
-      "name": "Bateria 60ah",
-      "category": "Elétrica",
-      "description": "Alimentação de partida e sistemas",
-      "price": 580,
-      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-24-23.png"
+      "code": "001",
+      "name": "Jogo de Pastilhas de Freio Dianteiras",
+      "category": "Freio",
+      "description": "Componentes de atrito que pressionam os discos de freio para desacelerar ou parar o veículo. Fabricados em ligas metálicas, semi-metálicas ou cerâmica.",
+      "price": 119.81,
+      "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-02-54.png"
     }
   ]
 }
