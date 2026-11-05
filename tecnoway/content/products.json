@@ -26,15 +26,6 @@
       "price": 590,
       "image": "/tecnoway/assets/products/screenshot-from-2026-10-18-14-03-53.png",
       "description": "\nDescrição: Correia encarregada de sincronizar o movimento do eixo de comando de válvulas com o virabrequim, evitando danos graves ao motor."
-    },
-    {
-      "active": true,
-      "code": "007",
-      "name": "Dentadura",
-      "category": "Boca",
-      "description": "Dentadura",
-      "price": 10,
-      "image": "/tecnoway/assets/products/dentadura.webp"
     }
   ]
 }
