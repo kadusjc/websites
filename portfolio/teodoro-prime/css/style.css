@@ -88,7 +88,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- Header ---------- */
 .site-header {
-  position: fixed; contain: layout; inset: 0 0 auto; z-index: 100;
+  position: fixed; inset: 0 0 auto; z-index: 100;
   padding-top: env(safe-area-inset-top, 0px);
   color: #fff;
   transition: background-color .3s, box-shadow .3s;
@@ -427,12 +427,15 @@ a.contact-card:hover { border-color: var(--orchid); transform: translateX(4px); 
   .site-header.is-solid .brand img { height: 120px; }
   .menu-toggle { display: block; position: relative; z-index: 2; }
   .nav {
-    position: fixed; inset: 0; background: var(--moss); flex-direction: column; align-items: stretch; justify-content: center;
-    padding: 100px 28px calc(40px + env(safe-area-inset-bottom, 0px)); gap: 4px;
+    position: fixed; inset: 0; z-index: 1; background: var(--moss); flex-direction: column; align-items: stretch; justify-content: flex-start;
+    padding: calc(120px + env(safe-area-inset-top, 0px)) 28px calc(40px + env(safe-area-inset-bottom, 0px)); gap: 4px;
+    overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
     opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s;
   }
-  .nav a { font-family: var(--f-display); font-size: 2rem; padding: 12px 6px; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,.1); }
-  .nav .btn { margin: 24px 0 0; font-family: var(--f-body); font-size: 1.05rem; border-bottom: 0; border-radius: 999px; }
+  /* centraliza na vertical quando sobra espaço, mas rola normalmente em telas baixas (ex.: celular deitado) */
+  .nav > :first-child { margin-top: auto; }
+  .nav a { font-family: var(--f-display); font-size: clamp(1.6rem, 7vw, 2rem); padding: 12px 6px; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,.1); }
+  .nav .btn { margin: 24px 0 auto; font-family: var(--f-body); font-size: 1.05rem; border-bottom: 0; border-radius: 999px; }
   .menu-open .nav { opacity: 1; visibility: visible; }
   .menu-open { overflow: hidden; }
 
