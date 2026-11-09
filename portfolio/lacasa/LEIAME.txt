@@ -1,0 +1,67 @@
+LA CASA PLANEJADOS · NOVO SITE
+==============================
+
+ESTRUTURA
+  index.html              Página principal
+  projetos.html           Portfólio completo com filtros (ex.: projetos.html#cozinhas)
+  contato.html            Formulário que envia pelo WhatsApp ou e-mail
+  privacidade.html        Política de Privacidade (LGPD)
+  404.html                Página de erro
+  sitemap.xml, robots.txt Para o Google indexar o site
+  site.webmanifest        Permite instalar o site como app no celular
+  css/style.min.css       Estilos em uso (minificado)
+  css/style.css           Estilos para editar (cores no topo, em :root)
+  js/main.min.js          Scripts em uso (minificado)
+  js/main.js              Scripts para editar
+  fonts/                  Fontes do site, hospedadas aqui (títulos Josefin 14 KB, texto 40 KB)
+  img/logo.svg            Logo La Casa em vetor (versões escura e branca), nítido em qualquer tela
+  img/                    Logo e fotos em WebP (geradas pelo passo 1)
+  imagens.txt             Lista das imagens (destino | URL original)
+  otimizar-imagens.py     Baixa e converte as fotos para WebP
+  otimizar-imagens.bat    Atalho para Windows
+  otimizar-imagens.sh     Atalho para Mac/Linux
+  .htaccess               Cache, compressão e HTTPS (Apache/cPanel/Hostinger/Locaweb)
+  _headers                O mesmo, para Netlify/Cloudflare Pages
+
+PASSO 1 · GERAR AS IMAGENS WEBP (uma vez só, leva 1 a 2 minutos)
+  Precisa do Python 3 (python.org/downloads; no Windows, marque "Add Python to PATH").
+  Windows ..... dê dois cliques em otimizar-imagens.bat
+  Mac/Linux ... no Terminal, dentro desta pasta:  bash otimizar-imagens.sh
+
+  O script baixa as 31 fotos do site atual (lacasaplanejados.com.br)
+  e gera cada uma em 3 tamanhos WebP (480, 960 e 1600 px). O navegador de
+  cada visitante escolhe sozinho o tamanho certo: celular baixa a versão
+  leve, tela grande baixa a versão nítida.
+
+  Enquanto o passo 1 não for feito, o site mostra as fotos originais
+  direto do servidor atual, então ele nunca aparece quebrado.
+
+  Fotos novas? Coloque numa pasta e rode:
+      python otimizar-imagens.py --pasta minhas-fotos
+  As versões WebP saem em img/extras/.
+
+PASSO 2 · VER NO COMPUTADOR
+  Dê dois cliques em index.html.
+
+PASSO 3 · PUBLICAR
+  Envie TODO o conteúdo desta pasta (inclusive o arquivo .htaccess, que
+  fica oculto em alguns sistemas) para a raiz da hospedagem (public_html).
+  Netlify/Vercel/Cloudflare Pages: arraste a pasta inteira.
+
+DESEMPENHO MEDIDO (Google Lighthouse, todas as páginas)
+  Celular (4G simulado) ... Desempenho 99-100 · Acessibilidade 100 · Boas práticas 100 · SEO 100
+  Computador .............. Desempenho 100 · Acessibilidade 100 · Boas práticas 100 · SEO 100
+  Nenhum "pulo" de layout (CLS 0) em nenhuma página.
+
+RESPONSIVIDADE TESTADA (5 páginas × 11 telas, sem rolagem lateral nem texto cortado)
+  iPhone SE 320 · Galaxy 360 · iPhone 15 393 · iPhone Pro Max 430 · celular deitado
+  iPad mini · iPad · iPad deitado · notebook 1366 · desktop 1920 · monitor 2K 2560
+
+PERSONALIZAR
+  WhatsApp do orçamento ... js/main.js:  var WHATSAPP = "5512992055828";
+  Cores ................... css/style.css, bloco :root
+  Depois de editar style.css ou main.js, gere as versões .min de novo
+  (ex.: npx esbuild css/style.css --minify --outfile=css/style.min.css)
+  e troque o número em ?v=6 em todos os .html para ?v=7, para os visitantes
+  receberem a versão nova. Se preferir não minificar, aponte o index.html
+  direto para style.css e main.js: funciona igual, só fica um pouco maior.

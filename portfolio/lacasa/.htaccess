@@ -1,0 +1,52 @@
+# La Casa Planejados · desempenho (Apache / cPanel / Hostinger / Locaweb)
+
+# Forçar HTTPS
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Página de erro
+ErrorDocument 404 /404.html
+
+# Tipos corretos
+AddType image/webp .webp
+AddType font/woff2 .woff2
+AddType image/svg+xml .svg
+AddType application/manifest+json .webmanifest
+
+# Compressão (Brotli se houver, senão Gzip)
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/css application/javascript text/plain image/svg+xml application/json
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/plain image/svg+xml application/json
+</IfModule>
+
+# Cache: imagens e fontes por 1 ano, CSS/JS por 1 mês (versão controlada por ?v=), HTML sempre atualizado
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|png|svg|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Não exibir arquivos de apoio
+<FilesMatch "^(imagens\.txt|otimizar-imagens\.(py|bat|sh)|LEIAME\.txt)$">
+  Require all denied
+</FilesMatch>
