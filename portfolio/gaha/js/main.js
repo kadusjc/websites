@@ -104,6 +104,7 @@ function footer() {
     </div>
     <div class="copy">
       <span>© ${y} GaHa Wellness Club. Todos os direitos reservados.</span>
+      <span class="credit">Fotos adicionais: Roxana Popovici e Ahmet Kurt / Unsplash</span>
       <a href="politica-de-privacidade.html">LGPD: Política de Privacidade</a>
     </div>
   </div>
@@ -135,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* cabeçalho: transparente no topo, sólido ao rolar */
   const head = document.querySelector(".header");
-  if (body.dataset.header === "dark") head.classList.add("on-dark");
+  if (body.dataset.header === "dark" || document.querySelector(".page-hero.photo")) head.classList.add("on-dark");
   const onScroll = () => head.classList.toggle("solid", window.scrollY > 40);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });

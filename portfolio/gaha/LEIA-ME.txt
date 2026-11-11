@@ -16,3 +16,11 @@ Antes de publicar
   3. Para trocar fotos, substitua os arquivos em img/ mantendo os mesmos nomes.
 
 Hospedagem: basta subir a pasta inteira (GitHub Pages, Netlify, Hostinger etc.).
+
+Versão 2 — ilustrações e fotos extras
+  - img/il-*.svg: ilustrações wellness originais (traço na cor cacau da marca), livres para uso.
+  - Fotos extras vêm do Unsplash (licença gratuita, uso comercial permitido):
+      Roxana Popovici  https://unsplash.com/photos/cZ0WYsBFHhs  e  https://unsplash.com/photos/aY5uOJ2o96g
+      Ahmet Kurt       https://unsplash.com/photos/7UoAoaVVyRE
+    Elas carregam direto do Unsplash; se a internet falhar, o site usa automaticamente uma foto local.
+    Para produção, o ideal é baixar essas fotos, salvar em img/ e trocar os links nos HTML.

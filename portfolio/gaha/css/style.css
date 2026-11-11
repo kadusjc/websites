@@ -337,3 +337,42 @@ html{scroll-padding-top:100px}
   .hero-copy{margin-top:-8px}
   .hero-facts{gap:14px 28px}
 }
+
+/* ===== v2: ilustrações e fotos de fundo ===== */
+.hero::before{content:"";position:absolute;left:-40px;bottom:-20px;width:min(560px,48vw);aspect-ratio:6/7;background:url(../img/deco-arcos.svg) no-repeat left bottom/contain;pointer-events:none}
+@media (max-width:860px){.hero::before{display:none}}
+
+/* cabeçalho das páginas internas com foto */
+.page-hero.photo{position:relative;color:var(--linho);background:var(--espresso);overflow:hidden;min-height:560px;display:flex;align-items:flex-end}
+.page-hero.photo .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.page-hero.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,26,18,.55) 0%,rgba(42,26,18,.35) 40%,rgba(42,26,18,.85) 100%)}
+.page-hero.photo .wrap{position:relative;z-index:1;width:100%}
+.page-hero.photo .kicker{color:var(--areia-clara)}
+.page-hero.photo .lead{color:#efe5d6}
+.page-hero.photo .btn-dark{background:var(--linho);color:var(--espresso)}
+
+/* faixa de foto em tela cheia */
+.band{position:relative;min-height:clamp(420px,60vw,640px);display:flex;align-items:center;color:var(--linho);overflow:hidden;background:var(--espresso)}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(42,26,18,.85) 0%,rgba(42,26,18,.45) 55%,rgba(42,26,18,.15) 100%)}
+.band .wrap{position:relative;z-index:1;width:100%}
+.band blockquote{margin:0;max-width:640px;font-family:var(--serif);font-weight:300;font-size:clamp(34px,4.6vw,62px);line-height:1.08}
+.band cite{display:block;margin-top:22px;font-family:var(--sans);font-style:normal;font-size:14px;color:var(--areia-clara)}
+@media (max-width:700px){.band::after{background:linear-gradient(180deg,rgba(42,26,18,.3),rgba(42,26,18,.85))}.band{align-items:flex-end;padding:48px 0}}
+
+/* ritual ilustrado */
+.ritual-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.rit{background:var(--branco);border-radius:28px;padding:30px 30px 34px;display:flex;flex-direction:column;gap:10px;transition:transform .4s var(--ease)}
+.rit:hover{transform:translateY(-4px)}
+.rit img{width:100%;max-width:220px;height:auto;aspect-ratio:200/140;margin:0 auto 10px}
+.rit h3{font-size:28px}
+.rit p{margin:0;font-size:15px;color:var(--cacau)}
+.rit:nth-child(2),.rit:nth-child(5){background:var(--rose)}
+@media (max-width:980px){.ritual-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.ritual-grid{grid-template-columns:1fr}.rit{flex-direction:row;align-items:center;gap:18px;padding:20px}.rit img{width:110px;flex:none;margin:0}.rit h3{font-size:24px;margin-bottom:4px}}
+
+/* ilustração solta ao lado de títulos */
+.il-float{width:180px;height:auto;opacity:.9}
+.door .il{width:120px;height:auto;filter:invert(93%) sepia(10%) saturate(300%) hue-rotate(340deg);opacity:.85;margin-bottom:4px}
+.door.feature .il{filter:none}
+.credit{font-size:12px;opacity:.7}
