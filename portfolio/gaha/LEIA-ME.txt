@@ -1,0 +1,18 @@
+GaHa Wellness Club — site estático
+
+Estrutura
+  index.html                    página inicial
+  aulas.html                    modalidades + teste "Qual aula é a sua?"
+  contato.html                  formulário que envia a mensagem pelo WhatsApp
+  politica-de-privacidade.html  LGPD
+  css/style.css                 todo o visual (cores no topo, em :root)
+  js/main.js                    menu, cabeçalho/rodapé, quiz, links de WhatsApp
+  img/                          imagens e logos
+
+Antes de publicar
+  1. js/main.js, linha "whatsapp": coloque o número com DDI+DDD, só números (ex.: 5512999999999).
+     Enquanto estiver vazio, os botões abrem o Direct do Instagram.
+  2. Troque os textos marcados com [colchetes] (endereço, horários, telefone) em index.html e contato.html.
+  3. Para trocar fotos, substitua os arquivos em img/ mantendo os mesmos nomes.
+
+Hospedagem: basta subir a pasta inteira (GitHub Pages, Netlify, Hostinger etc.).
