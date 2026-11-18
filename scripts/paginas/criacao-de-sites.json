@@ -1,0 +1,104 @@
+{
+ "slug": "criacao-de-sites",
+ "menu": "Criação de sites",
+ "title": "Criação de Sites Profissionais para Empresas | FC Software",
+ "description": "Criação de sites profissionais, rápidos e prontos para Google e IAs (SEO, GEO e AEO), com contato pelo WhatsApp. Atendemos todo o Brasil e o exterior.",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "Criação de sites e landing pages",
+  "tipo": "Criação de sites"
+ },
+ "migalha": "Criação de sites",
+ "h1": "Criação de sites que <em>aparecem no Google</em> e viram conversa no WhatsApp",
+ "resposta": "A <b>Ferreiro Corrêa Software</b> cria sites institucionais, landing pages e catálogos com design exclusivo, código leve e SEO técnico desde a primeira linha. Atendemos <b>empresas de todo o Brasil e do exterior</b>, de forma 100% remota, a partir de <b>Caçapava/SP, no Vale do Paraíba</b> (São José dos Campos, Taubaté e Jacareí). Quem desenha e programa o seu site é um engenheiro de computação com mais de 20 anos de experiência.",
+ "whatsapp": "Olá! Quero um orçamento de site.",
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "Criação de sites e landing pages, do jeito certo",
+  "cards": [
+   {
+    "titulo": "Design exclusivo",
+    "texto": "Nada de template pronto: cada marca ganha uma identidade própria, pensada para o seu cliente e o seu mercado."
+   },
+   {
+    "titulo": "Mobile-first e rápido",
+    "texto": "Código enxuto, imagens otimizadas e nada de plugins pesados. O site abre rápido até no 4G, o que o Google também valoriza. <a href=\"/sites-alta-performance/\">Sites de alta performance</a>."
+   },
+   {
+    "titulo": "SEO, GEO e AEO de base",
+    "texto": "HTML semântico, dados estruturados schema.org, sitemap, metadados e conteúdo claro, prontos para o Google e para buscas por IA."
+   },
+   {
+    "titulo": "Conversão no WhatsApp",
+    "texto": "Botões, formulários e montadores de pedido que levam o visitante a uma conversa no seu WhatsApp, com a mensagem pronta."
+   },
+   {
+    "titulo": "SEO local",
+    "texto": "Estrutura para Google Maps e Perfil da Empresa, páginas por cidade e por serviço quando faz sentido para o seu negócio."
+   },
+   {
+    "titulo": "Catálogo e pedidos",
+    "texto": "Vitrines digitais com carrinho que gera o pedido direto no WhatsApp, ideais para comércio local."
+   }
+  ]
+ },
+ "detalhes": {
+  "eyebrow": "Na prática",
+  "h2": "Para quem é",
+  "html": "<ul><li><b>Site institucional:</b> apresenta a empresa, os serviços e passa credibilidade.</li><li><b>Landing page:</b> uma página focada em uma oferta ou campanha, feita para converter.</li><li><b>Site multipágina:</b> páginas por serviço, por cidade e guias de conteúdo para crescer no Google.</li><li><b>Catálogo com pedido no WhatsApp:</b> o cliente monta o pedido e envia pronto para a loja.</li><li><b>Página de vendas:</b> para infoprodutos, cursos e lançamentos.</li><li><b>Site com gerenciador de conteúdo:</b> painel com login e senha para você mesmo atualizar textos e imagens. <a href=\"/sites-com-gerenciador-de-conteudo/\">Saiba mais</a>.</li></ul>"
+ },
+ "faqTitulo": "Perguntas sobre Criação de sites",
+ "faq": [
+  {
+   "pergunta": "Quanto custa criar um site?",
+   "resposta": "Depende do escopo: uma landing page é diferente de um site multipágina com catálogo. Depois de uma conversa rápida você recebe uma proposta com escopo e valor fechados, sem surpresas no meio do caminho."
+  },
+  {
+   "pergunta": "Quanto tempo leva para o site ficar pronto?",
+   "resposta": "Landing pages e sites institucionais costumam ser os projetos mais rápidos. O prazo combinado fica claro na proposta, e você acompanha prévias durante o desenvolvimento."
+  },
+  {
+   "pergunta": "O site vai aparecer no Google?",
+   "resposta": "Todo site nasce com base técnica limpa, rápida e estruturada para ser encontrado. A profundidade do SEO, de uma presença essencial a uma estratégia completa com páginas por cidade e conteúdo, é definida com você conforme o seu mercado e a concorrência."
+  },
+  {
+   "pergunta": "Consigo atualizar o site sozinho depois?",
+   "resposta": "Sim, se o site for feito com gerenciador de conteúdo: uma área com login e senha onde você altera textos e imagens por formulários simples, sem saber programar. <a href=\"/sites-com-gerenciador-de-conteudo/\">Veja como funciona</a>."
+  },
+  {
+   "pergunta": "Vocês criam sites para empresas de outras cidades e países?",
+   "resposta": "Sim. O atendimento é 100% remoto, para empresas de qualquer cidade do Brasil e do exterior. A base fica em Caçapava/SP, no Vale do Paraíba."
+  },
+  {
+   "pergunta": "Posso ver sites que vocês já fizeram?",
+   "resposta": "Sim. A página inicial reúne mais de 25 propostas de site completas e navegáveis, de vários segmentos, que você pode abrir no desktop ou no celular."
+  }
+ ],
+ "relacionados": [
+  "sites-alta-performance",
+  "sites-com-gerenciador-de-conteudo",
+  "seo-geo-aeo",
+  "agente-de-ia-whatsapp",
+  "sistemas-sob-medida"
+ ],
+ "dataPublicacao": "2026-11-04",
+ "resumoTitulo": "Criação de sites: o essencial",
+ "resumo": [
+  [
+   "O que entregamos",
+   "Sites institucionais, landing pages, sites multipágina, catálogos com pedido no WhatsApp e páginas de vendas."
+  ],
+  [
+   "Diferencial",
+   "Design exclusivo, código leve e SEO, GEO e AEO de base, feitos por um engenheiro de computação com 20+ anos."
+  ],
+  [
+   "Onde atendemos",
+   "Todo o Brasil e o exterior, 100% remoto. Base em Caçapava/SP, no Vale do Paraíba."
+  ],
+  [
+   "Como contratar",
+   "Conversa pelo WhatsApp, proposta com escopo e valor fechados e prévias durante o desenvolvimento."
+  ]
+ ]
+}

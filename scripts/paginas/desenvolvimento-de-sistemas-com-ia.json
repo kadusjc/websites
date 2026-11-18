@@ -1,0 +1,103 @@
+{
+ "slug": "desenvolvimento-de-sistemas-com-ia",
+ "menu": "Sistemas com IA",
+ "title": "Desenvolvimento de Sistemas com IA | FC Software",
+ "description": "Desenvolvimento de sistemas e softwares com IA: LLMs, RAG, agentes e automação integrados à sua empresa. Engenheiro com pós em IA Aplicada e 20+ anos.",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "Desenvolvimento de sistemas com IA",
+  "tipo": "Desenvolvimento de software com inteligência artificial"
+ },
+ "migalha": "Sistemas com IA",
+ "h1": "Desenvolvimento de sistemas com IA, com <em>engenharia de verdade</em>",
+ "resposta": "A <b>Ferreiro Corrêa Software</b> faz <b>desenvolvimento de sistemas com IA</b> e <b>desenvolvimento de softwares com IA</b> sob medida: conecta modelos de linguagem (LLMs), agentes e automações aos dados e processos da sua empresa. O fundador, o engenheiro <b>Carlos Eduardo Ferreiro Corrêa</b>, tem <b>pós-graduação em Engenharia de Software com IA Aplicada</b>, mais de 20 anos em sistemas críticos para <b>Embraer, Azul, Gol e TAM</b> e um produto de IA próprio em produção, a <b>Bia</b>.",
+ "whatsapp": "Olá! Quero conversar sobre um sistema com IA.",
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "O que entregamos em sistemas e softwares com IA",
+  "cards": [
+   {
+    "titulo": "IA nos seus dados",
+    "texto": "LLMs conectados a documentos, planilhas e bancos da empresa com RAG, respondendo com base no que é seu, não em achismo."
+   },
+   {
+    "titulo": "Agentes e automação",
+    "texto": "Agentes de IA que executam tarefas: preenchem cadastros, consultam sistemas, geram relatórios e disparam fluxos."
+   },
+   {
+    "titulo": "Assistentes no seu produto",
+    "texto": "Chat e copiloto dentro do seu sistema ou portal, para clientes e equipe acharem respostas e agirem mais rápido."
+   },
+   {
+    "titulo": "Leitura de documentos",
+    "texto": "Extração de dados de PDFs, notas, contratos e imagens, com validação e envio direto para o seu ERP."
+   },
+   {
+    "titulo": "IA em ERPs e painéis",
+    "texto": "Classificação, previsões, resumos e alertas inteligentes dentro dos sistemas e dashboards que você já usa."
+   },
+   {
+    "titulo": "Segurança e custo sob controle",
+    "texto": "LGPD, controle de acesso, logs, testes de qualidade das respostas e monitoramento de custo por uso de IA."
+   }
+  ]
+ },
+ "detalhes": {
+  "eyebrow": "Detalhes",
+  "h2": "IA que já funciona em produção",
+  "html": "<p>A <b>Bia</b> (<a href=\"https://souabia.com\" target=\"_blank\" rel=\"noopener\">souabia.com</a>) é nossa secretária de IA: atende o WhatsApp 24 horas, entende o que o cliente quer e agenda direto no Google Calendar. Ela é a prova de que construímos IA que trabalha de verdade, não só demonstração.</p><ul><li><b>IA integrada, não isolada:</b> a IA conversa com o seu ERP, sua agenda, seu banco de dados e suas APIs.</li><li><b>Respostas confiáveis:</b> RAG sobre os seus documentos, regras de negócio e testes que medem a qualidade das respostas.</li><li><b>Desenvolvimento acelerado por IA:</b> usamos IA também para programar, entregando mais rápido sem abrir mão de testes, revisão de código e arquitetura.</li><li><b>Engenharia de sistemas críticos:</b> a mesma disciplina usada em pagamentos, aviação e telemetria por mais de 20 anos.</li></ul>"
+ },
+ "faqTitulo": "Perguntas sobre desenvolvimento de sistemas com IA",
+ "faq": [
+  {
+   "pergunta": "O que é desenvolvimento de sistemas com IA?",
+   "resposta": "É criar ou evoluir sistemas e softwares que usam inteligência artificial para trabalhar por você: entender textos e documentos, responder clientes, automatizar tarefas e apoiar decisões. Na prática, conectamos modelos de linguagem (LLMs) aos dados e processos da sua empresa, com a mesma engenharia de um sistema crítico."
+  },
+  {
+   "pergunta": "Vocês fazem desenvolvimento de softwares com IA para empresas pequenas?",
+   "resposta": "Sim. Atendemos de pequenos negócios que querem automatizar o atendimento ou a rotina a empresas que precisam integrar IA a sistemas complexos. O escopo é dimensionado para o seu tamanho e orçamento."
+  },
+  {
+   "pergunta": "Dá para colocar IA no sistema que eu já tenho?",
+   "resposta": "Na maioria dos casos, sim. Integramos IA a sistemas existentes por API, banco de dados ou integrações com ERPs, sem precisar refazer tudo. Avaliamos a viabilidade no diagnóstico."
+  },
+  {
+   "pergunta": "Quais IAs e modelos vocês usam?",
+   "resposta": "Escolhemos o modelo pelo problema: modelos de linguagem de mercado como os da OpenAI, Anthropic (Claude) e Google (Gemini), ou modelos abertos quando faz sentido rodar em infraestrutura própria. Tudo integrado com Java, Spring, Node.js, TypeScript e Python."
+  },
+  {
+   "pergunta": "Meus dados ficam seguros?",
+   "resposta": "Sim. Projetamos com LGPD desde o início: controle de acesso por perfil, dados sensíveis mascarados, registros de uso e configuração para que os provedores de IA não usem seus dados para treinamento."
+  },
+  {
+   "pergunta": "Quanto custa desenvolver um sistema com IA?",
+   "resposta": "Depende do escopo e do volume de uso. Depois de uma conversa rápida, você recebe uma proposta com escopo e valor fechados, incluindo uma estimativa do custo mensal de uso da IA."
+  }
+ ],
+ "relacionados": [
+  "solucoes-inteligencia-artificial",
+  "agente-de-ia-whatsapp",
+  "desenvolvimento-de-sistemas-corporativos",
+  "sistemas-sob-medida"
+ ],
+ "dataPublicacao": "2026-11-05",
+ "resumoTitulo": "Sistemas com IA: o essencial",
+ "resumo": [
+  [
+   "O que é",
+   "Sistemas e softwares que usam modelos de linguagem (LLMs), agentes e automações conectados aos dados da empresa."
+  ],
+  [
+   "Como funciona",
+   "RAG sobre os seus documentos, integração com ERPs e APIs, testes de qualidade das respostas e controle de custo."
+  ],
+  [
+   "Segurança",
+   "LGPD desde o início, controle de acesso e configuração para os provedores de IA não treinarem com seus dados."
+  ],
+  [
+   "Quem faz",
+   "Engenheiro de computação com pós em Engenharia de Software com IA Aplicada e 20+ anos de experiência."
+  ]
+ ]
+}

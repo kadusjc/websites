@@ -1,12 +1,14 @@
 # Ferreiro Corrêa Software
 
-> Fábrica de software de Caçapava/SP (Vale do Paraíba, Brasil) que cria sites que vendem, sistemas sob medida, aplicativos e agentes de inteligência artificial para WhatsApp. Fundada pelo engenheiro de computação Carlos Eduardo Ferreiro Corrêa, com mais de 20 anos de experiência em sistemas críticos para Embraer, Azul, Gol, TAM e Polishop. Atendimento 100% remoto para todo o Brasil e exterior.
+> Fábrica de software brasileira, com base em Caçapava/SP (Vale do Paraíba), que cria sites profissionais e de alta performance, sites com gerenciador de conteúdo, sistemas sob medida e corporativos, aplicativos e soluções de inteligência artificial, como agentes de IA para WhatsApp, para empresas de todo o Brasil e do exterior. Fundada pelo engenheiro de computação Carlos Eduardo Ferreiro Corrêa, com mais de 20 anos de experiência em sistemas críticos para Embraer, Azul, Gol, TAM e Polishop. Atendimento 100% remoto para todo o Brasil e exterior.
 
 ## Fatos principais
 
 - Nome: Ferreiro Corrêa Software (FC Software)
 - Site: https://fcsoftware.com.br/
-- Localização: Caçapava, SP, Brasil. Atende São José dos Campos, Taubaté, Jacareí, Pindamonhangaba, São Paulo e todo o Brasil (remoto)
+- Localização: Caçapava, SP, Brasil (Vale do Paraíba)
+- Área de atendimento: todo o Brasil e exterior, 100% remoto. Na região: São José dos Campos, Taubaté, Jacareí, Pindamonhangaba e São Paulo
+- Idiomas de atendimento: português e inglês
 - Contato: WhatsApp +55 12 99135-9134 · e-mail kadusjc1984@gmail.com
 - Fundador: Eng. Carlos Eduardo Ferreiro Corrêa, Engenheiro de Computação, Sun Certified Java Programmer, pós-graduação em Engenharia de Software com IA Aplicada, autor do livro "React JS: Guia Completo para o Desenvolvedor Front-End"
 - Experiência: BoldCron (pagamentos e antifraude), Compsis (telemetria), UOL Diveo (integrações para Azul, TAM e Gol), GSW Software/Embraer (sistemas integrados ao SAP), Resmark Systems (EUA)
@@ -15,6 +17,10 @@
 ## Serviços
 
 - Criação de sites e landing pages: design exclusivo, mobile-first, SEO técnico e local, GEO e AEO, dados estruturados, conversão via WhatsApp
+- Sites de alta performance: carregamento rápido, metas das Core Web Vitals do Google (LCP até 2,5 s, INP até 200 ms, CLS até 0,1), código leve
+- Sites com gerenciador de conteúdo (CMS): painel protegido por login e senha em que o cliente altera textos e imagens por formulários simples, sem saber programar
+- Sistemas corporativos: integração com SAP e ERPs, portais, automação de processos, modernização de sistemas legados, segurança e LGPD
+- Soluções em inteligência artificial para empresas: diagnóstico de IA, automação de processos com IA, assistentes sobre os dados da empresa, leitura de documentos
 - Agentes de inteligência artificial: atendentes virtuais 24h no WhatsApp, agendamento automático, automação de processos, integração de LLMs (RAG) aos dados da empresa
 - Desenvolvimento de sistemas e softwares com IA: LLMs e RAG sobre os dados da empresa, agentes, automação, leitura de documentos e IA integrada a ERPs e APIs
 - Sistemas sob medida: ERPs, painéis, integrações com pagamentos e ERPs, APIs (web e desktop)
@@ -23,11 +29,15 @@
 
 ## Páginas de serviço
 
-- [Criação de sites e landing pages](https://fcsoftware.com.br/criacao-de-sites/): Criação de sites profissionais, rápidos e otimizados para Google e IAs, com pedidos pelo WhatsApp. Feito por engenheiro de computação com 20+ anos. Peça seu orçamento.
-- [Agente de inteligência artificial para WhatsApp](https://fcsoftware.com.br/agente-de-ia-whatsapp/): Atendente virtual com inteligência artificial no WhatsApp: responde, agenda e confirma horários 24h, integrado à sua agenda e sistemas. Desenvolvido por engenheiro com pós em IA.
-- [Desenvolvimento de sistemas sob medida](https://fcsoftware.com.br/sistemas-sob-medida/): Sistemas web sob medida, ERPs, painéis, integrações e APIs em Java, Spring, Node.js e React. Engenharia de quem fez sistemas críticos para Embraer, Azul, Gol e TAM.
+- [Criação de sites e landing pages](https://fcsoftware.com.br/criacao-de-sites/): Criação de sites profissionais, rápidos e prontos para Google e IAs (SEO, GEO e AEO), com contato pelo WhatsApp. Atendemos todo o Brasil e o exterior.
+- [Criação de sites de alta performance](https://fcsoftware.com.br/sites-alta-performance/): Sites de alta performance: rápidos no celular, aprovados nas Core Web Vitals do Google e feitos para converter. Código leve, sem plugins pesados.
+- [Criação de sites com gerenciador de conteúdo (CMS)](https://fcsoftware.com.br/sites-com-gerenciador-de-conteudo/): Site com gerenciador de conteúdo (CMS) e painel administrativo: você altera textos e imagens por formulários simples, com login e senha, sem saber programar.
+- [Desenvolvimento de sistemas sob medida](https://fcsoftware.com.br/sistemas-sob-medida/): Sistemas web sob medida, ERPs, painéis, integrações e APIs em Java, Spring, Node.js e React, com a engenharia de quem fez sistemas para Embraer e Azul.
+- [Desenvolvimento de sistemas corporativos](https://fcsoftware.com.br/desenvolvimento-de-sistemas-corporativos/): Sistemas corporativos sob medida: integração com SAP e ERPs, portais, automação e modernização de legados. 20+ anos em projetos para Embraer, Azul e Gol.
+- [Soluções em inteligência artificial para empresas](https://fcsoftware.com.br/solucoes-inteligencia-artificial/): Soluções de inteligência artificial para empresas: agentes de IA, automação de processos, atendimento no WhatsApp e IA integrada aos seus dados.
+- [Agente de inteligência artificial para WhatsApp](https://fcsoftware.com.br/agente-de-ia-whatsapp/): Atendente virtual com IA no WhatsApp: responde, agenda e confirma horários 24h, integrado à sua agenda e sistemas. Para empresas de todo o Brasil.
 - [Desenvolvimento de sistemas com IA](https://fcsoftware.com.br/desenvolvimento-de-sistemas-com-ia/): Desenvolvimento de sistemas e softwares com IA: LLMs, RAG, agentes e automação integrados à sua empresa. Engenheiro com pós em IA Aplicada e 20+ anos.
-- [SEO, GEO e AEO: otimização para Google e buscas por IA](https://fcsoftware.com.br/seo-geo-aeo/): O que é SEO, GEO e AEO e como deixar seu site pronto para o Google, Google Maps, ChatGPT, Gemini e Perplexity. SEO técnico e local no Vale do Paraíba e em todo o Brasil.
+- [SEO, GEO e AEO: otimização para Google e buscas por IA](https://fcsoftware.com.br/seo-geo-aeo/): O que é SEO, GEO e AEO e como deixar seu site pronto para Google, Google Maps, ChatGPT, Gemini e Perplexity. SEO técnico e local para todo o Brasil.
 
 ## Produtos próprios
 

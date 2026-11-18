@@ -4,3 +4,6 @@
 
 # Configuração local do Claude Code (contém chave de API)
 .claude/
+
+# Pasta antiga do Claude Code (contém .api-key, nunca commitar)
+.claudeold/

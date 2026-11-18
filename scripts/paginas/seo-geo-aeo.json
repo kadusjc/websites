@@ -1,0 +1,99 @@
+{
+ "slug": "seo-geo-aeo",
+ "menu": "SEO, GEO e AEO",
+ "title": "SEO, GEO e AEO: Apareça no Google e no ChatGPT | FC Software",
+ "description": "O que é SEO, GEO e AEO e como deixar seu site pronto para Google, Google Maps, ChatGPT, Gemini e Perplexity. SEO técnico e local para todo o Brasil.",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "SEO, GEO e AEO: otimização para Google e buscas por IA",
+  "tipo": "Otimização para mecanismos de busca (SEO)"
+ },
+ "migalha": "SEO, GEO e AEO",
+ "h1": "SEO, GEO e AEO: seu site no <em>Google e nas respostas das IAs</em>",
+ "resposta": "<b>SEO</b> é otimizar o site para aparecer no Google. <b>AEO</b> (Answer Engine Optimization) é organizar o conteúdo em perguntas e respostas diretas para aparecer em respostas rápidas e assistentes de voz. <b>GEO</b> (Generative Engine Optimization) é preparar o site para ser entendido e citado por IAs como ChatGPT, Gemini, Perplexity e Claude. A <b>Ferreiro Corrêa Software</b> aplica os três em sites novos e existentes.",
+ "whatsapp": "Olá! Quero melhorar o SEO do meu site.",
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "SEO, GEO e AEO: otimização para Google e buscas por IA, do jeito certo",
+  "cards": [
+   {
+    "titulo": "SEO técnico",
+    "texto": "Velocidade, Core Web Vitals, HTML semântico, canonical, sitemap, robots.txt e indexação no Google Search Console."
+   },
+   {
+    "titulo": "Dados estruturados",
+    "texto": "Marcação schema.org (empresa, serviços, perguntas frequentes, produtos) para o Google e as IAs entenderem quem você é."
+   },
+   {
+    "titulo": "SEO local",
+    "texto": "Perfil da Empresa no Google, consistência de nome, endereço e telefone, e páginas por cidade e por serviço."
+   },
+   {
+    "titulo": "AEO",
+    "texto": "Conteúdo em formato de pergunta e resposta, objetivo e verificável, pronto para respostas diretas e voz."
+   },
+   {
+    "titulo": "GEO",
+    "texto": "Liberação dos robôs de IA, arquivo llms.txt, fatos claros sobre a empresa e presença consistente em fontes que as IAs consultam."
+   },
+   {
+    "titulo": "Conteúdo e acompanhamento",
+    "texto": "Guias e páginas que respondem às dúvidas reais do seu cliente, com acompanhamento das buscas no Search Console."
+   }
+  ]
+ },
+ "detalhes": {
+  "eyebrow": "Detalhes",
+  "h2": "Como trabalhamos",
+  "html": "<ul><li><b>Diagnóstico:</b> análise técnica do site, das buscas e da concorrência.</li><li><b>Correções técnicas:</b> velocidade, indexação, estrutura e dados estruturados.</li><li><b>Conteúdo:</b> páginas e respostas para as perguntas que seu cliente faz ao Google e às IAs.</li><li><b>Local:</b> Perfil da Empresa no Google e presença consistente na região.</li><li><b>Acompanhamento:</b> evolução das buscas e ajustes contínuos.</li></ul>"
+ },
+ "faqTitulo": "Perguntas sobre SEO, GEO e AEO",
+ "faq": [
+  {
+   "pergunta": "Qual a diferença entre SEO, AEO e GEO?",
+   "resposta": "SEO foca em posicionar o site nos resultados do Google. AEO foca em ser a resposta direta para uma pergunta, como em trechos em destaque e assistentes de voz. GEO foca em ser entendido e citado por IAs generativas como ChatGPT, Gemini, Perplexity e Claude. Os três se complementam e partem da mesma base: site técnico, rápido e com conteúdo claro."
+  },
+  {
+   "pergunta": "Como fazer minha empresa aparecer no ChatGPT?",
+   "resposta": "As IAs citam empresas que encontram descritas de forma clara e consistente. Isso envolve permitir o acesso dos robôs de IA ao site, publicar fatos objetivos sobre a empresa com dados estruturados, manter presença consistente no Google, no Bing e em perfis e diretórios, e ter conteúdo que responda às perguntas do seu cliente."
+  },
+  {
+   "pergunta": "Em quanto tempo o SEO dá resultado?",
+   "resposta": "SEO é um trabalho de médio prazo. Correções técnicas e indexação costumam aparecer primeiro; posições para buscas concorridas levam mais tempo e dependem do mercado e da concorrência."
+  },
+  {
+   "pergunta": "Vocês fazem SEO em site que já existe?",
+   "resposta": "Sim. Fazemos um diagnóstico do site atual e indicamos o que corrigir e o que vale mais a pena reconstruir. Se o site estiver lento, veja também <a href=\"/sites-alta-performance/\">sites de alta performance</a>."
+  },
+  {
+   "pergunta": "O que é SEO local?",
+   "resposta": "É a otimização para buscas com intenção regional, como “empresa perto de mim” ou “serviço em São José dos Campos”, envolvendo o Perfil da Empresa no Google, o Google Maps e páginas voltadas para cada cidade atendida."
+  }
+ ],
+ "relacionados": [
+  "criacao-de-sites",
+  "sites-alta-performance",
+  "sites-com-gerenciador-de-conteudo",
+  "solucoes-inteligencia-artificial"
+ ],
+ "dataPublicacao": "2026-11-04",
+ "resumoTitulo": "SEO, GEO e AEO em uma frase cada",
+ "resumo": [
+  [
+   "SEO",
+   "Search Engine Optimization: otimizar o site para aparecer nos resultados do Google e do Bing."
+  ],
+  [
+   "AEO",
+   "Answer Engine Optimization: organizar o conteúdo em perguntas e respostas para virar a resposta direta, em trechos em destaque e assistentes de voz."
+  ],
+  [
+   "GEO",
+   "Generative Engine Optimization: preparar o site para ser entendido e citado por IAs como ChatGPT, Gemini, Perplexity, Claude e o Modo IA do Google."
+  ],
+  [
+   "Base comum",
+   "Site rápido, HTML semântico, dados estruturados schema.org, conteúdo claro e presença consistente na internet."
+  ]
+ ]
+}

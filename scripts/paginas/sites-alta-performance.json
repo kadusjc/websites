@@ -1,0 +1,110 @@
+{
+ "slug": "sites-alta-performance",
+ "menu": "Sites de alta performance",
+ "title": "Site Rápido e de Alta Performance | FC Software",
+ "description": "Sites de alta performance: rápidos no celular, aprovados nas Core Web Vitals do Google e feitos para converter. Código leve, sem plugins pesados.",
+ "dataPublicacao": "2026-11-18",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "Criação de sites de alta performance",
+  "tipo": "Desenvolvimento de sites rápidos e otimizados para Core Web Vitals"
+ },
+ "migalha": "Sites de alta performance",
+ "h1": "Sites de alta performance: <em>rápidos no celular</em> e bem avaliados pelo Google",
+ "resposta": "Um <b>site de alta performance</b> é um site que abre rápido, responde na hora ao toque e não fica “pulando” enquanto carrega, as três medidas que o Google chama de <b>Core Web Vitals</b>. A <b>Ferreiro Corrêa Software</b> cria sites assim com código enxuto, imagens modernas e sem construtores visuais pesados, para que o visitante não desista antes de ver a sua oferta. Atendemos <b>empresas de todo o Brasil e do exterior</b>, de forma 100% remota.",
+ "whatsapp": "Olá! Quero um site rápido e de alta performance.",
+ "resumoTitulo": "Site de alta performance: o essencial",
+ "resumo": [
+  [
+   "O que é",
+   "Um site que carrega rápido, responde sem atraso e mantém o layout estável, medido pelas Core Web Vitals do Google."
+  ],
+  [
+   "Por que importa",
+   "Visitantes abandonam páginas lentas, e a experiência da página é um dos sinais que o Google considera no ranqueamento."
+  ],
+  [
+   "Como medimos",
+   "PageSpeed Insights e o relatório de Core Web Vitals do Google Search Console, com dados de usuários reais."
+  ],
+  [
+   "Para quem",
+   "Empresas que dependem do site para gerar contatos, orçamentos e vendas, principalmente pelo celular."
+  ]
+ ],
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "O que faz um site ter alta performance",
+  "cards": [
+   {
+    "titulo": "Core Web Vitals no verde",
+    "texto": "Projeto pensado para as metas do Google: carregamento do conteúdo principal (LCP), resposta ao toque (INP) e estabilidade do layout (CLS)."
+   },
+   {
+    "titulo": "Imagens otimizadas",
+    "texto": "Formatos modernos como WebP e AVIF, tamanhos certos para cada tela e carregamento sob demanda das imagens de baixo da página."
+   },
+   {
+    "titulo": "Código sem excesso",
+    "texto": "HTML semântico, CSS enxuto e JavaScript só onde precisa. Nada de construtores visuais e dezenas de plugins deixando o site pesado."
+   },
+   {
+    "titulo": "Hospedagem rápida",
+    "texto": "Publicação em infraestrutura com CDN e HTTPS, servindo o site de perto do visitante e com cache bem configurado."
+   },
+   {
+    "titulo": "Velocidade que converte",
+    "texto": "Botões de WhatsApp e formulários visíveis logo no início, para a velocidade virar contato e venda, não só nota alta."
+   },
+   {
+    "titulo": "Medição e acompanhamento",
+    "texto": "Testes no PageSpeed Insights antes da entrega e acompanhamento das Core Web Vitals no Google Search Console."
+   }
+  ]
+ },
+ "detalhes": [
+  {
+   "eyebrow": "As métricas",
+   "h2": "Core Web Vitals: as metas que usamos em todo site",
+   "html": "<p>O Google mede a experiência real de quem visita o seu site com três métricas. Um site é considerado “bom” quando atinge estes limites em pelo menos 75% das visitas:</p><div class=\"tbl\"><table><thead><tr><th>Métrica</th><th>O que mede</th><th>Meta “boa”</th></tr></thead><tbody><tr><td><b>LCP</b> (Largest Contentful Paint)</td><td>Tempo até o conteúdo principal aparecer</td><td>até 2,5 segundos</td></tr><tr><td><b>INP</b> (Interaction to Next Paint)</td><td>Tempo de resposta a cliques e toques</td><td>até 200 milissegundos</td></tr><tr><td><b>CLS</b> (Cumulative Layout Shift)</td><td>Quanto o layout “pula” enquanto carrega</td><td>até 0,1</td></tr></tbody></table></div><p>Essas metas guiam as escolhas de projeto desde o primeiro rascunho: o que carrega primeiro, o tamanho de cada imagem e quanto código cada página realmente precisa.</p>"
+  },
+  {
+   "eyebrow": "Na prática",
+   "h2": "Site lento ou site de alta performance?",
+   "html": "<ul><li><b>Site lento:</b> tema pronto com construtor visual, muitos plugins, imagens enormes e scripts de terceiros carregando antes do conteúdo.</li><li><b>Site de alta performance:</b> código feito para o seu conteúdo, imagens no tamanho certo, scripts adiados e conteúdo principal aparecendo primeiro.</li><li><b>Resultado esperado:</b> menos visitantes desistindo, melhor experiência no celular e uma base técnica mais forte para o SEO.</li></ul><p>Já tem um site e ele está lento? Fazemos um diagnóstico e dizemos com franqueza se vale otimizar o que existe ou reconstruir. Se você também quer editar textos e fotos sozinho, veja o <a href=\"/sites-com-gerenciador-de-conteudo/\">site com gerenciador de conteúdo</a>, que mantém a mesma leveza.</p>"
+  }
+ ],
+ "faqTitulo": "Perguntas sobre sites de alta performance",
+ "faq": [
+  {
+   "pergunta": "O que é um site de alta performance?",
+   "resposta": "É um site que carrega rápido, responde sem atraso a cliques e toques e mantém o layout estável enquanto abre. Na prática, é um site que atinge as metas das Core Web Vitals do Google: LCP de até 2,5 segundos, INP de até 200 milissegundos e CLS de até 0,1."
+  },
+  {
+   "pergunta": "A velocidade do site ajuda a aparecer no Google?",
+   "resposta": "Ajuda, mas não sozinha. A experiência da página, incluindo as Core Web Vitals, é um dos sinais que o Google usa, enquanto a relevância do conteúdo continua sendo o fator principal. O maior ganho da velocidade costuma ser em conversão: menos pessoas desistem antes de ver a sua oferta."
+  },
+  {
+   "pergunta": "Como saber se o meu site é rápido?",
+   "resposta": "Coloque o endereço do site no PageSpeed Insights do Google (pagespeed.web.dev) e veja a avaliação para celular. Se o site já tem visitas suficientes, o Google Search Console mostra o relatório de Core Web Vitals com dados de usuários reais."
+  },
+  {
+   "pergunta": "Meu site em WordPress está lento. Dá para resolver?",
+   "resposta": "Muitas vezes, sim: otimizando imagens, removendo plugins desnecessários e ajustando cache e hospedagem. Quando o problema é o tema ou o construtor visual, reconstruir com código enxuto costuma sair melhor. Avaliamos o seu caso no diagnóstico."
+  },
+  {
+   "pergunta": "Um site rápido pode ter painel para eu mesmo editar?",
+   "resposta": "Pode. Criamos sites com gerenciador de conteúdo, protegido por login e senha, em que você altera textos e imagens por formulários simples, sem deixar o site pesado. <a href=\"/sites-com-gerenciador-de-conteudo/\">Veja como funciona</a>."
+  },
+  {
+   "pergunta": "Quanto custa um site de alta performance?",
+   "resposta": "Depende do número de páginas e dos recursos. Depois de uma conversa rápida você recebe uma proposta com escopo e valor fechados. Performance não é um adicional: todo site que entregamos já nasce leve."
+  }
+ ],
+ "relacionados": [
+  "criacao-de-sites",
+  "sites-com-gerenciador-de-conteudo",
+  "seo-geo-aeo",
+  "sistemas-sob-medida"
+ ]
+}

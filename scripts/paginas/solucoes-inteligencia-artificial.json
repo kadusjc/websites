@@ -1,0 +1,114 @@
+{
+ "slug": "solucoes-inteligencia-artificial",
+ "menu": "Soluções em IA",
+ "title": "Soluções em Inteligência Artificial para Empresas | FC Software",
+ "description": "Soluções de inteligência artificial para empresas: agentes de IA, automação de processos, atendimento no WhatsApp e IA integrada aos seus dados.",
+ "dataPublicacao": "2026-11-18",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "Soluções em inteligência artificial para empresas",
+  "tipo": "Consultoria e desenvolvimento de soluções de inteligência artificial"
+ },
+ "migalha": "Soluções em IA",
+ "h1": "Soluções em inteligência artificial para <em>empresas que querem resultado</em>",
+ "resposta": "<b>Soluções em inteligência artificial para empresas</b> são aplicações de IA, como agentes, assistentes, automações e leitura de documentos, conectadas aos dados e sistemas do negócio para economizar tempo, atender melhor e decidir mais rápido. A <b>Ferreiro Corrêa Software</b> ajuda a descobrir onde a IA dá retorno na sua empresa e desenvolve a solução de ponta a ponta. O fundador é engenheiro de computação com <b>pós-graduação em Engenharia de Software com IA Aplicada</b>, e temos um produto de IA próprio em produção, a <b>Bia</b>.",
+ "whatsapp": "Olá! Quero saber como usar inteligência artificial na minha empresa.",
+ "resumoTitulo": "IA para empresas: o essencial",
+ "resumo": [
+  [
+   "O que é",
+   "Uso de modelos de IA (como GPT, Claude e Gemini) conectados aos dados e processos da empresa para executar tarefas reais."
+  ],
+  [
+   "Onde dá retorno",
+   "Atendimento, tarefas repetitivas, leitura de documentos, busca de informações internas e apoio a decisões."
+  ],
+  [
+   "Por onde começar",
+   "Por um processo específico, com resultado mensurável, antes de expandir para outras áreas."
+  ],
+  [
+   "Segurança",
+   "Projeto com LGPD, controle de acesso e configuração para que os provedores de IA não treinem com seus dados."
+  ]
+ ],
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "Soluções de IA que trabalham pela sua empresa",
+  "cards": [
+   {
+    "titulo": "Agente de IA no WhatsApp",
+    "texto": "Atendimento 24h que responde, agenda e encaminha para a equipe quando precisa. <a href=\"/agente-de-ia-whatsapp/\">Saiba mais</a>."
+   },
+   {
+    "titulo": "Automação de processos com IA",
+    "texto": "Tarefas repetitivas como triagem de e-mails, cadastros, conferências e relatórios feitas pela IA, com revisão humana onde importa."
+   },
+   {
+    "titulo": "IA nos dados da empresa",
+    "texto": "Assistente que responde com base nos seus documentos, manuais, políticas e bancos de dados, usando RAG (busca nos seus dados)."
+   },
+   {
+    "titulo": "Leitura de documentos",
+    "texto": "Extração de dados de PDFs, notas fiscais, contratos e imagens, com validação e envio direto para o seu sistema."
+   },
+   {
+    "titulo": "IA dentro dos seus sistemas",
+    "texto": "Classificação, resumos, previsões e alertas no ERP, CRM ou painel que você já usa. <a href=\"/desenvolvimento-de-sistemas-com-ia/\">Saiba mais</a>."
+   },
+   {
+    "titulo": "Diagnóstico de IA",
+    "texto": "Mapeamento dos processos em que a IA traz mais retorno, com estimativa de esforço, custo de uso e prioridade."
+   }
+  ]
+ },
+ "detalhes": [
+  {
+   "eyebrow": "Casos de uso",
+   "h2": "Onde a inteligência artificial ajuda em cada área",
+   "html": "<ul><li><b>Atendimento:</b> respostas 24h no WhatsApp e no site, agendamento e triagem antes de chegar à equipe.</li><li><b>Comercial:</b> qualificação de leads, propostas iniciais e resumo de conversas para o vendedor.</li><li><b>Financeiro e administrativo:</b> leitura de notas e boletos, conciliação e conferência de documentos.</li><li><b>Operação:</b> consulta a estoque, pedidos e procedimentos por linguagem natural.</li><li><b>Equipe e RH:</b> assistente interno que responde dúvidas sobre políticas, processos e manuais.</li></ul>"
+  },
+  {
+   "eyebrow": "Por onde começar",
+   "h2": "Como colocar IA na sua empresa sem desperdiçar dinheiro",
+   "html": "<p>O erro mais comum é começar pela ferramenta. A gente começa pelo problema:</p><ul><li><b>1. Escolher um processo:</b> algo repetitivo, frequente e fácil de medir, como responder perguntas comuns ou ler documentos.</li><li><b>2. Validar com um piloto:</b> uma primeira versão com dados reais, para medir tempo economizado e qualidade das respostas.</li><li><b>3. Integrar e expandir:</b> conectar ao WhatsApp, ao ERP e aos sistemas, e levar para outras áreas o que deu resultado.</li></ul><p>A <b>Bia</b> (<a href=\"https://souabia.com\" target=\"_blank\" rel=\"noopener\">souabia.com</a>), nossa secretária de IA que atende o WhatsApp e agenda no Google Calendar, nasceu exatamente assim.</p>"
+  }
+ ],
+ "faqTitulo": "Perguntas sobre soluções em inteligência artificial",
+ "faq": [
+  {
+   "pergunta": "O que são soluções de inteligência artificial para empresas?",
+   "resposta": "São aplicações de IA conectadas aos dados e processos do negócio para executar tarefas reais: atender clientes, ler documentos, automatizar rotinas, buscar informações internas e apoiar decisões. Diferente de usar o ChatGPT avulso, a solução trabalha integrada aos seus sistemas e com as suas regras."
+  },
+  {
+   "pergunta": "Por onde minha empresa deve começar a usar IA?",
+   "resposta": "Por um processo repetitivo, frequente e fácil de medir, como responder perguntas comuns no WhatsApp ou extrair dados de documentos. Um piloto com dados reais mostra o retorno antes de investir em escala."
+  },
+  {
+   "pergunta": "Pequenas empresas podem usar inteligência artificial?",
+   "resposta": "Sim. Um agente de IA no WhatsApp ou uma automação de tarefas repetitivas já traz ganho para negócios pequenos. O escopo é dimensionado para o seu tamanho e orçamento."
+  },
+  {
+   "pergunta": "Qual a diferença entre chatbot e agente de IA?",
+   "resposta": "O chatbot tradicional segue menus e respostas fixas. O agente de IA entende linguagem natural, consulta dados e sistemas e executa ações, como agendar um horário ou consultar um pedido, seguindo as regras do seu negócio."
+  },
+  {
+   "pergunta": "A IA vai substituir a minha equipe?",
+   "resposta": "O foco é tirar da equipe o trabalho repetitivo, para ela se dedicar ao que exige atenção humana. Nos atendimentos, a IA encaminha para uma pessoa sempre que a situação pede."
+  },
+  {
+   "pergunta": "Os dados da minha empresa ficam seguros?",
+   "resposta": "Sim. Projetamos com LGPD desde o início: controle de acesso por perfil, dados sensíveis protegidos, registros de uso e configuração para que os provedores de IA não usem seus dados para treinamento."
+  },
+  {
+   "pergunta": "Quanto custa uma solução de IA?",
+   "resposta": "Depende do escopo e do volume de uso. Depois do diagnóstico você recebe uma proposta com escopo e valor fechados e uma estimativa do custo mensal de uso da IA."
+  }
+ ],
+ "relacionados": [
+  "agente-de-ia-whatsapp",
+  "desenvolvimento-de-sistemas-com-ia",
+  "desenvolvimento-de-sistemas-corporativos",
+  "sistemas-sob-medida"
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "slug": "desenvolvimento-de-sistemas-corporativos",
+ "menu": "Sistemas corporativos",
+ "title": "Desenvolvimento de Sistemas Corporativos | FC Software",
+ "description": "Sistemas corporativos sob medida: integração com SAP e ERPs, portais, automação e modernização de legados. 20+ anos em projetos para Embraer, Azul e Gol.",
+ "dataPublicacao": "2026-11-18",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "Desenvolvimento de sistemas corporativos",
+  "tipo": "Desenvolvimento de software corporativo e integração de sistemas"
+ },
+ "migalha": "Sistemas corporativos",
+ "h1": "Desenvolvimento de sistemas corporativos que <em>integram, escalam e não param</em>",
+ "resposta": "<b>Sistemas corporativos</b> são os softwares que sustentam processos críticos de uma empresa, como estoque, pedidos, financeiro, faturamento e operação, e que precisam conversar com ERPs como o <b>SAP</b>, controlar acessos e registrar quem fez o quê. A <b>Ferreiro Corrêa Software</b> desenvolve, integra e moderniza sistemas assim. O fundador, o engenheiro <b>Carlos Eduardo Ferreiro Corrêa</b>, passou oito anos construindo sistemas integrados ao SAP para a <b>Embraer</b> e fez integrações de pagamento para <b>Azul, Gol e TAM</b>.",
+ "whatsapp": "Olá! Quero conversar sobre um sistema corporativo.",
+ "resumoTitulo": "Sistemas corporativos: o essencial",
+ "resumo": [
+  [
+   "O que é",
+   "Software que roda processos centrais da empresa e se integra a ERPs, bancos de dados e outros sistemas."
+  ],
+  [
+   "Quando precisa",
+   "Quando o ERP não cobre o seu processo, os dados vivem em planilhas ou um sistema antigo trava a operação."
+  ],
+  [
+   "Diferencial",
+   "Mais de 20 anos em sistemas críticos de aviação, pagamentos e telemetria, incluindo integrações com SAP."
+  ],
+  [
+   "Tecnologias",
+   "Java, Spring, Node.js, TypeScript, React, Angular, PostgreSQL, MongoDB, Redis e AWS."
+  ]
+ ],
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "Desenvolvimento de sistemas corporativos para processos críticos",
+  "cards": [
+   {
+    "titulo": "Integração com SAP e ERPs",
+    "texto": "Troca de dados entre o seu ERP e os demais sistemas por APIs, web services ou filas, sem retrabalho e sem digitação duplicada."
+   },
+   {
+    "titulo": "Modernização de legados",
+    "texto": "Migração de sistemas antigos para tecnologias atuais em etapas, com o sistema velho e o novo convivendo até a virada."
+   },
+   {
+    "titulo": "Portais e intranets",
+    "texto": "Portais para clientes, fornecedores, representantes e colaboradores, com acesso por perfil e informações em tempo real."
+   },
+   {
+    "titulo": "Automação de processos",
+    "texto": "Fluxos de aprovação, notificações, geração de documentos e rotinas automáticas que tiram a equipe do trabalho manual."
+   },
+   {
+    "titulo": "Segurança e LGPD",
+    "texto": "Controle de acesso por perfil, registros de auditoria, criptografia e tratamento de dados pessoais em conformidade com a LGPD."
+   },
+   {
+    "titulo": "Arquitetura para crescer",
+    "texto": "APIs documentadas, testes automatizados, nuvem AWS e monitoramento, para o sistema aguentar mais usuários e mais dados."
+   }
+  ]
+ },
+ "detalhes": [
+  {
+   "eyebrow": "Sinais",
+   "h2": "Quando a sua empresa precisa de um sistema corporativo",
+   "html": "<ul><li><b>O ERP não cobre o seu processo</b> e a equipe completa o trabalho em planilhas paralelas.</li><li><b>Os mesmos dados são digitados em vários sistemas</b>, com erros e retrabalho.</li><li><b>Um sistema antigo trava a operação</b>, e pouca gente sabe mantê-lo.</li><li><b>Clientes, fornecedores ou filiais pedem informação</b> que hoje sai por e-mail e telefone.</li><li><b>Falta visibilidade:</b> os números chegam tarde e não batem entre as áreas.</li></ul><p>Para empresas menores ou necessidades mais pontuais, veja também <a href=\"/sistemas-sob-medida/\">sistemas sob medida</a>. Para colocar inteligência artificial nos processos, veja <a href=\"/desenvolvimento-de-sistemas-com-ia/\">desenvolvimento de sistemas com IA</a>.</p>"
+  },
+  {
+   "eyebrow": "Experiência",
+   "h2": "Experiência em sistemas que não podem falhar",
+   "html": "<ul><li><b>2013–2021, GSW Software/Embraer:</b> gestão de estoque integrada ao SAP, reparo de peças em todas as plantas e o e-commerce da aviação executiva.</li><li><b>2012–2013, UOL Diveo:</b> integrações de Azul, TAM e Gol com gateway de pagamentos e plataforma de BPO financeiro.</li><li><b>2004–2010, BoldCron:</b> gateway de pagamentos, cobrança recorrente, antifraude e ERP para redes de varejo como a Polishop.</li><li><b>2010–2012, Compsis:</b> plataformas de telemetria e monitoramento de frotas.</li><li><b>2021–hoje, Resmark Systems (EUA):</b> engenharia full stack em empresa de software internacional.</li></ul>"
+  }
+ ],
+ "faqTitulo": "Perguntas sobre desenvolvimento de sistemas corporativos",
+ "faq": [
+  {
+   "pergunta": "O que é um sistema corporativo?",
+   "resposta": "É um software que sustenta processos centrais de uma empresa, como estoque, pedidos, financeiro, faturamento ou operação, com controle de acesso, registros de auditoria e integração com outros sistemas, como o ERP."
+  },
+  {
+   "pergunta": "Qual a diferença entre sistema corporativo e ERP?",
+   "resposta": "O ERP é um sistema de gestão pronto, como SAP ou TOTVS, que cobre processos padrão. Um sistema corporativo sob medida cobre o que o ERP não atende, ou do jeito específico da sua empresa, e se integra a ele para os dados não ficarem duplicados."
+  },
+  {
+   "pergunta": "Vocês fazem integração com SAP?",
+   "resposta": "Sim. O fundador trabalhou oito anos com sistemas integrados ao SAP na Embraer. Também integramos com outros ERPs e serviços que ofereçam API, web services, arquivos ou banco de dados de integração. A viabilidade é avaliada no diagnóstico."
+  },
+  {
+   "pergunta": "Dá para modernizar um sistema antigo sem parar a operação?",
+   "resposta": "Sim. A migração é feita em etapas: o sistema novo assume uma parte de cada vez enquanto o antigo continua rodando, até a virada completa, com testes e validação a cada etapa."
+  },
+  {
+   "pergunta": "Como fica a segurança dos dados da empresa?",
+   "resposta": "O sistema é projetado com controle de acesso por perfil, registros de auditoria, criptografia de dados sensíveis, backups e atenção à LGPD desde o início."
+  },
+  {
+   "pergunta": "Vocês trabalham junto com a equipe de TI da empresa?",
+   "resposta": "Sim. Trabalhamos com a TI interna, com documentação, repositório de código e alinhamento técnico para que a equipe acompanhe e consiga manter o sistema."
+  }
+ ],
+ "relacionados": [
+  "sistemas-sob-medida",
+  "desenvolvimento-de-sistemas-com-ia",
+  "solucoes-inteligencia-artificial",
+  "sites-com-gerenciador-de-conteudo"
+ ]
+}

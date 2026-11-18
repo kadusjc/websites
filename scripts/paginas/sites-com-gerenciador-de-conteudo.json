@@ -1,0 +1,63 @@
+{
+ "slug": "sites-com-gerenciador-de-conteudo",
+ "menu": "Site com gerenciador de conteúdo",
+ "title": "Site com Gerenciador de Conteúdo: Edite Sozinho | FC Software",
+ "description": "Site com gerenciador de conteúdo (CMS) e painel administrativo: você altera textos e imagens por formulários simples, com login e senha, sem saber programar.",
+ "dataPublicacao": "2026-11-18",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "Criação de sites com gerenciador de conteúdo (CMS)",
+  "tipo": "Site com painel administrativo para edição de conteúdo"
+ },
+ "migalha": "Site com gerenciador de conteúdo",
+ "h1": "Site com gerenciador de conteúdo: <em>você mesmo atualiza</em> textos e imagens",
+ "resposta": "Um <b>site com gerenciador de conteúdo</b> (também chamado de <b>CMS</b> ou <b>painel administrativo</b>) tem uma área protegida por <b>usuário e senha</b> onde você altera textos e imagens do seu site preenchendo <b>formulários simples</b>, sem saber programar e sem depender de ninguém. A <b>Ferreiro Corrêa Software</b> cria esses sites sob medida: o painel mostra só os campos do seu site, com nomes que você entende, e o design continua protegido.",
+ "whatsapp": "Olá! Quero um site com gerenciador de conteúdo para eu mesmo atualizar.",
+ "resumoTitulo": "Gerenciador de conteúdo: o essencial",
+ "resumo": [
+  ["O que é", "Uma área administrativa do site em que você edita textos e imagens por formulários, sem mexer em código."],
+  ["Como se acessa", "Por uma tela de login com usuário e senha. Só quem tem acesso consegue alterar o site."],
+  ["Precisa saber programar?", "Não. Se você sabe preencher um formulário e enviar uma foto pelo celular, sabe atualizar o site."],
+  ["Também conhecido como", "CMS (Content Management System), painel administrativo, painel de controle ou área do administrador."]
+ ],
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "Um painel simples para você cuidar do seu site",
+  "cards": [
+   {"titulo": "Login com usuário e senha", "texto": "A área de edição fica protegida por uma tela de login. Visitantes veem o site; só você e quem você autorizar conseguem alterá-lo."},
+   {"titulo": "Formulários fáceis", "texto": "Cada parte do site vira um campo com nome claro, como “Título do banner”, “Texto sobre a empresa” ou “Foto da equipe”. É só preencher e salvar."},
+   {"titulo": "Troca de imagens", "texto": "Envie fotos do computador ou do celular para banners, galerias, produtos e equipe, sem precisar de designer para cada mudança."},
+   {"titulo": "Listas que crescem", "texto": "Adicione e remova itens como produtos, serviços, cardápio, depoimentos, novidades e posts de blog, quando o projeto prevê."},
+   {"titulo": "Design protegido", "texto": "Você muda o conteúdo, não o layout. Fica difícil “quebrar” o site sem querer, e ele continua bonito e organizado."},
+   {"titulo": "SEO que continua funcionando", "texto": "O site segue rápido e com dados estruturados. Quando faz sentido, o painel também permite editar título e descrição das páginas para o Google."}
+  ]
+ },
+ "detalhes": [
+  {
+   "eyebrow": "O que dá para editar",
+   "h2": "O que você consegue mudar sozinho pelo painel",
+   "html": "<ul><li><b>Textos:</b> apresentação da empresa, descrição de serviços, chamadas e perguntas frequentes.</li><li><b>Imagens:</b> banners, fotos de produtos, galeria de trabalhos e fotos da equipe.</li><li><b>Produtos e preços:</b> catálogo, cardápio, tabela de preços e promoções.</li><li><b>Novidades e blog:</b> posts, notícias e eventos para manter o site vivo e atualizado.</li><li><b>Contatos:</b> telefone, WhatsApp, endereço e horário de funcionamento.</li></ul><p>Os campos editáveis são combinados com você no início do projeto, para que o painel tenha exatamente o que o seu negócio precisa, sem menus confusos.</p>"
+  },
+  {
+   "eyebrow": "Comparação",
+   "h2": "Gerenciador sob medida ou WordPress?",
+   "html": "<p>O WordPress é um gerenciador de conteúdo popular e atende muitos casos. A diferença do gerenciador sob medida está na simplicidade e na leveza:</p><ul><li><b>Painel enxuto:</b> você vê só os campos do seu site, e não dezenas de menus, temas e plugins.</li><li><b>Menos manutenção:</b> sem depender de vários plugins de terceiros que precisam ser atualizados o tempo todo.</li><li><b>Mais leve:</b> o site continua rápido, como um <a href=\"/sites-alta-performance/\">site de alta performance</a>.</li><li><b>Feito para o seu fluxo:</b> o formulário segue a forma como você trabalha, não o contrário.</li></ul><p>Precisa de algo além de textos e imagens, como cadastro de clientes, pedidos ou relatórios? Aí o caminho é um <a href=\"/sistemas-sob-medida/\">sistema sob medida</a> integrado ao site.</p>"
+  }
+ ],
+ "faqTitulo": "Perguntas sobre site com gerenciador de conteúdo",
+ "faq": [
+  {"pergunta": "O que é um site com gerenciador de conteúdo?", "resposta": "É um site que tem uma área administrativa, protegida por usuário e senha, onde você altera textos e imagens preenchendo formulários simples. Também é chamado de CMS ou painel administrativo. Você atualiza o site sozinho, sem programar e sem depender de um desenvolvedor para cada mudança."},
+  {"pergunta": "Preciso saber programar para atualizar o site?", "resposta": "Não. Os campos têm nomes claros, como “Título do banner” ou “Foto da equipe”. Se você sabe preencher um formulário e enviar uma foto, consegue atualizar o site."},
+  {"pergunta": "O painel é seguro?", "resposta": "Sim. O acesso à área de edição exige login com usuário e senha, o site usa HTTPS e só as pessoas que você autorizar conseguem alterar o conteúdo."},
+  {"pergunta": "Posso mudar o layout e as cores pelo painel?", "resposta": "O painel foi feito para mudar conteúdo, como textos, imagens e listas, mantendo o design protegido. Mudanças de layout, novas seções ou páginas novas a gente faz para você."},
+  {"pergunta": "Qual a diferença entre um site com CMS e um site comum?", "resposta": "No site comum, cada alteração de texto ou foto precisa ser feita por um desenvolvedor. No site com gerenciador de conteúdo, você mesmo faz essas alterações por um painel com login e senha, na hora em que precisar."},
+  {"pergunta": "Dá para transformar o meu site atual em um site com painel?", "resposta": "Depende de como o site foi feito. Avaliamos no diagnóstico se vale adaptar o site atual ou criar um novo já com o gerenciador de conteúdo."},
+  {"pergunta": "Atualizar o site sozinho ajuda no Google?", "resposta": "Ajuda a manter o conteúdo atual, com novidades, serviços e perguntas frequentes sempre em dia, o que é bom para o Google e para as IAs que citam fontes atualizadas. O site continua com a mesma base de SEO técnico."}
+ ],
+ "relacionados": [
+  "criacao-de-sites",
+  "sites-alta-performance",
+  "sistemas-sob-medida",
+  "seo-geo-aeo"
+ ]
+}

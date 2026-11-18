@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node serve.js",
     "dev": "node serve.js",
+    "gerar": "node scripts/gerar-paginas.js",
     "cms": "npx decap-server"
   }
 }

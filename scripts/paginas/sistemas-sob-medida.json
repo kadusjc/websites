@@ -1,0 +1,99 @@
+{
+ "slug": "sistemas-sob-medida",
+ "menu": "Sistemas sob medida",
+ "title": "Desenvolvimento de Sistemas Sob Medida, ERPs e APIs | FC Software",
+ "description": "Sistemas web sob medida, ERPs, painéis, integrações e APIs em Java, Spring, Node.js e React, com a engenharia de quem fez sistemas para Embraer e Azul.",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "Desenvolvimento de sistemas sob medida",
+  "tipo": "Desenvolvimento de software sob medida"
+ },
+ "migalha": "Sistemas sob medida",
+ "h1": "Sistemas sob medida com a engenharia de quem fez <em>software que não pode falhar</em>",
+ "resposta": "A <b>Ferreiro Corrêa Software</b> desenvolve sistemas web e desktop, ERPs, painéis, integrações e APIs sob medida. O fundador, o engenheiro <b>Carlos Eduardo Ferreiro Corrêa</b>, tem mais de 20 anos construindo sistemas críticos de pagamentos, aviação, telemetria e e-commerce para empresas como <b>Embraer, Azul, Gol, TAM e Polishop</b>.",
+ "whatsapp": "Olá! Quero conversar sobre um sistema sob medida.",
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "Desenvolvimento de sistemas sob medida, do jeito certo",
+  "cards": [
+   {
+    "titulo": "ERPs e gestão",
+    "texto": "Controle de estoque, pedidos, financeiro e operação desenhados para o seu processo, não o contrário."
+   },
+   {
+    "titulo": "Painéis e dashboards",
+    "texto": "Indicadores em tempo real para decisões rápidas, com acesso por perfil de usuário."
+   },
+   {
+    "titulo": "Integrações",
+    "texto": "Conexão com gateways de pagamento, ERPs como SAP, marketplaces, WhatsApp e APIs de terceiros."
+   },
+   {
+    "titulo": "APIs robustas",
+    "texto": "Back-ends em Java/Spring e Node.js/TypeScript, testados, documentados e prontos para escalar."
+   },
+   {
+    "titulo": "Apps mobile",
+    "texto": "Aplicativos Android e multiplataforma, do protótipo à publicação na Google Play."
+   },
+   {
+    "titulo": "Nuvem e dados",
+    "texto": "PostgreSQL, MongoDB, Redis e AWS, com arquitetura pensada para segurança e desempenho."
+   }
+  ]
+ },
+ "detalhes": {
+  "eyebrow": "Detalhes",
+  "h2": "Experiência que vai para o seu projeto",
+  "html": "<ul><li><b>2004–2010, BoldCron:</b> gateway de pagamentos, cobrança recorrente, antifraude com ClearSale e Cybersource e ERP para redes de varejo.</li><li><b>2010–2012, Compsis:</b> plataformas de telemetria e monitoramento de frotas.</li><li><b>2012–2013, UOL Diveo:</b> integrações de Azul, TAM e Gol com gateway de pagamentos e BPO financeiro.</li><li><b>2013–2021, GSW Software/Embraer:</b> gestão de estoque integrada ao SAP, reparo de peças e e-commerce da aviação executiva.</li><li><b>2021–hoje, Resmark Systems (EUA):</b> engenharia full stack internacional.</li></ul>"
+ },
+ "faqTitulo": "Perguntas sobre Sistemas sob medida",
+ "faq": [
+  {
+   "pergunta": "Quais tecnologias vocês usam?",
+   "resposta": "Java, Spring, Node.js, TypeScript, React, Angular, PostgreSQL, MongoDB, Redis e AWS, além de LLMs e agentes de IA quando o projeto pede."
+  },
+  {
+   "pergunta": "Como funciona o desenvolvimento de um sistema sob medida?",
+   "resposta": "Começa com um diagnóstico do seu processo, segue com proposta de escopo e valor, e o desenvolvimento é feito em etapas com entregas parciais, para você acompanhar a evolução e validar cada parte."
+  },
+  {
+   "pergunta": "Vocês integram com o sistema que eu já uso?",
+   "resposta": "Na maioria dos casos, sim: integramos com ERPs, gateways de pagamento e serviços que ofereçam API ou outra forma de troca de dados. Avaliamos a viabilidade no diagnóstico."
+  },
+  {
+   "pergunta": "Vocês fazem aplicativos para celular?",
+   "resposta": "Sim. Desenvolvemos apps Android e multiplataforma. Nosso app próprio NovaRemote, controle remoto para Smart TVs, está em teste fechado na Google Play."
+  },
+  {
+   "pergunta": "Atendem empresas de qualquer tamanho?",
+   "resposta": "Sim, de pequenos negócios que precisam automatizar a rotina a empresas que precisam de integrações complexas. Para processos críticos e integrações com SAP e ERPs, veja <a href=\"/desenvolvimento-de-sistemas-corporativos/\">sistemas corporativos</a>."
+  }
+ ],
+ "relacionados": [
+  "desenvolvimento-de-sistemas-corporativos",
+  "desenvolvimento-de-sistemas-com-ia",
+  "solucoes-inteligencia-artificial",
+  "criacao-de-sites"
+ ],
+ "dataPublicacao": "2026-11-04",
+ "resumoTitulo": "Sistemas sob medida: o essencial",
+ "resumo": [
+  [
+   "O que é",
+   "Software feito para o processo da sua empresa: ERPs, painéis, integrações, APIs e aplicativos."
+  ],
+  [
+   "Tecnologias",
+   "Java, Spring, Node.js, TypeScript, React, Angular, PostgreSQL, MongoDB, Redis e AWS."
+  ],
+  [
+   "Experiência",
+   "Mais de 20 anos em sistemas críticos para Embraer, Azul, Gol, TAM e Polishop."
+  ],
+  [
+   "Onde atendemos",
+   "Todo o Brasil e o exterior, 100% remoto."
+  ]
+ ]
+}

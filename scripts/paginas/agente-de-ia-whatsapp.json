@@ -1,0 +1,99 @@
+{
+ "slug": "agente-de-ia-whatsapp",
+ "menu": "Agente de IA no WhatsApp",
+ "title": "Agente de IA para WhatsApp: Atendimento 24h | FC Software",
+ "description": "Atendente virtual com IA no WhatsApp: responde, agenda e confirma horários 24h, integrado à sua agenda e sistemas. Para empresas de todo o Brasil.",
+ "dataModificacao": "2026-11-18",
+ "servico": {
+  "nome": "Agente de inteligência artificial para WhatsApp",
+  "tipo": "Agente de inteligência artificial"
+ },
+ "migalha": "Agente de IA no WhatsApp",
+ "h1": "Agente de IA no WhatsApp que <em>atende e agenda 24h</em> por você",
+ "resposta": "A <b>Ferreiro Corrêa Software</b> desenvolve agentes de inteligência artificial que conversam com seus clientes no WhatsApp em linguagem natural: tiram dúvidas, agendam, confirmam e cancelam horários e encaminham para um humano quando precisa. Temos produto próprio em produção, a <b>Bia</b>, e o fundador é engenheiro de computação com <b>pós-graduação em Engenharia de Software com IA Aplicada</b>.",
+ "whatsapp": "Olá! Quero saber sobre agente de IA no WhatsApp.",
+ "entregas": {
+  "eyebrow": "O que entregamos",
+  "h2": "Agente de inteligência artificial para WhatsApp, do jeito certo",
+  "cards": [
+   {
+    "titulo": "Atendimento 24 horas",
+    "texto": "O agente responde na hora, inclusive à noite, nos fins de semana e em feriados, sem deixar cliente esperando."
+   },
+   {
+    "titulo": "Agendamento automático",
+    "texto": "Integração com Google Agenda para marcar, confirmar e cancelar compromissos sozinho, reduzindo faltas."
+   },
+   {
+    "titulo": "Treinado com os seus dados",
+    "texto": "Uso de LLMs com RAG (busca nos seus documentos): o agente responde com as informações reais do seu negócio."
+   },
+   {
+    "titulo": "Passagem para humano",
+    "texto": "Quando a conversa pede, o agente encaminha para você ou sua equipe, com o contexto já resumido."
+   },
+   {
+    "titulo": "Integração com sistemas",
+    "texto": "Conexão com CRM, ERP, planilhas e APIs para consultar pedidos, estoque ou cadastrar leads."
+   },
+   {
+    "titulo": "Privacidade e LGPD",
+    "texto": "Projeto pensado para tratar dados pessoais com responsabilidade e em conformidade com a LGPD."
+   }
+  ]
+ },
+ "detalhes": {
+  "eyebrow": "Na prática",
+  "h2": "Para quem é",
+  "html": "<ul><li><b>Clínicas e consultórios:</b> agendamento, confirmação de consultas e respostas sobre convênios.</li><li><b>Prestadores de serviço:</b> orçamentos iniciais, triagem e marcação de visitas.</li><li><b>Comércio:</b> dúvidas sobre produtos, horários, entregas e status de pedido.</li><li><b>Empresas com alto volume de mensagens:</b> primeira linha de atendimento que libera a equipe.</li></ul>"
+ },
+ "faqTitulo": "Perguntas sobre Agente de IA no WhatsApp",
+ "faq": [
+  {
+   "pergunta": "O que é um agente de IA para WhatsApp?",
+   "resposta": "É um atendente virtual baseado em modelos de linguagem (LLMs) que entende mensagens escritas em linguagem natural e responde como uma pessoa, seguindo as regras e informações do seu negócio. Diferente de um chatbot de menu, ele entende perguntas abertas."
+  },
+  {
+   "pergunta": "A IA consegue marcar horários na minha agenda?",
+   "resposta": "Sim. O agente pode ser integrado ao Google Agenda para consultar horários livres, agendar, confirmar e cancelar compromissos automaticamente. É exatamente o que a Bia, nosso produto próprio, faz em produção."
+  },
+  {
+   "pergunta": "E se o cliente fizer uma pergunta que a IA não sabe?",
+   "resposta": "O agente é configurado para não inventar: quando não tem a informação ou o assunto exige uma pessoa, ele avisa o cliente e encaminha a conversa para a sua equipe."
+  },
+  {
+   "pergunta": "Preciso trocar meu número de WhatsApp?",
+   "resposta": "Isso depende da forma de integração escolhida para o seu caso. Na conversa de diagnóstico explicamos as opções e o que cada uma exige."
+  },
+  {
+   "pergunta": "Vocês fazem outros tipos de automação com IA?",
+   "resposta": "Sim. Automatizamos processos repetitivos, classificação e resumo de documentos e integração de LLMs aos dados e sistemas da empresa. <a href=\"/solucoes-inteligencia-artificial/\">Conheça as soluções em IA</a>."
+  }
+ ],
+ "relacionados": [
+  "solucoes-inteligencia-artificial",
+  "desenvolvimento-de-sistemas-com-ia",
+  "criacao-de-sites",
+  "sistemas-sob-medida"
+ ],
+ "dataPublicacao": "2026-11-04",
+ "resumoTitulo": "Agente de IA no WhatsApp: o essencial",
+ "resumo": [
+  [
+   "O que é",
+   "Um atendente virtual com IA que conversa em linguagem natural no WhatsApp, 24 horas por dia."
+  ],
+  [
+   "O que faz",
+   "Tira dúvidas, agenda, confirma e cancela horários no Google Agenda e passa para um humano quando precisa."
+  ],
+  [
+   "Prova",
+   "A Bia, nosso produto próprio, faz isso em produção em souabia.com."
+  ],
+  [
+   "Onde atendemos",
+   "Empresas de todo o Brasil e do exterior, 100% remoto."
+  ]
+ ]
+}
