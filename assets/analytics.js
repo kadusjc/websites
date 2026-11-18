@@ -1,19 +1,18 @@
-/* Google Tag Manager + Google Consent Mode v2 + aviso de cookies (LGPD)
+/* Tag do Google (GA4 G-3GDR6SCKG6) + Google Consent Mode v2 + aviso de cookies (LGPD)
    Arquivo único, usado por todas as páginas do site:
      <script src="/assets/analytics.js" defer></script>
 
-   - Antes de carregar o GTM, todo armazenamento de estatística e publicidade
+   - Antes de carregar a tag, todo armazenamento de estatística e publicidade
      começa NEGADO (Consent Mode v2). Só é liberado quando o visitante clica em
      "Aceitar". A escolha fica salva no navegador (localStorage "fc-lgpd").
-   - Eventos enviados ao dataLayer para usar como conversão no GTM/GA4:
-       whatsapp_click  -> clique em qualquer link do WhatsApp
+   - Eventos enviados direto ao GA4 (marque os dois primeiros como evento-chave):
        generate_lead   -> envio do briefing de orçamento (#brief)
+       whatsapp_click  -> clique em qualquer link do WhatsApp
        phone_click     -> clique em link de telefone
        portfolio_open  -> abertura de uma proposta do portfólio
-       consent_update  -> visitante aceitou ou recusou as estatísticas
 */
 (function () {
-  var GTM_ID = 'GTM-KG3FCRBX';
+  var GTM_ID = 'GTM-N635HSF4'; // tag do Google ligada ao fluxo de dados do GA4
   var KEY = 'fc-lgpd';
   var VERSAO = 2; // aumente se mudar a política: o aviso volta a aparecer para todos
 
@@ -47,8 +46,8 @@
   gtag('set', 'ads_data_redaction', true);
   gtag('set', 'url_passthrough', false);
 
-  // 2) Google Tag Manager (snippet oficial)
-  window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  // 2) Tag do Google (mesmo código das "Instruções para instalação" do GA4)
+  gtag('js', new Date());
   var s = document.createElement('script');
   s.async = true;
   s.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID;
@@ -57,7 +56,6 @@
   function aplicar(aceitou) {
     salvarEscolha(aceitou);
     gtag('consent', 'update', { analytics_storage: aceitou ? 'granted' : 'denied' });
-    window.dataLayer.push({ event: 'consent_update', analytics_consent: aceitou ? 'granted' : 'denied' });
   }
 
   // 3) Aviso de cookies
@@ -92,20 +90,20 @@
       var a = e.target.closest && e.target.closest('a');
       if (!a) return;
       var href = a.getAttribute('href') || '';
-      var base = { page_path: location.pathname, link_text: (a.textContent || a.getAttribute('aria-label') || '').trim().slice(0, 80) };
+      var texto = (a.textContent || a.getAttribute('aria-label') || '').trim().slice(0, 80);
       if (/wa\.me|whatsapp\.com/.test(href)) {
-        window.dataLayer.push(Object.assign({ event: 'whatsapp_click', link_url: href.split('?')[0] }, base));
+        gtag('event', 'whatsapp_click', { link_url: href.split('?')[0], link_text: texto });
       } else if (href.indexOf('tel:') === 0) {
-        window.dataLayer.push(Object.assign({ event: 'phone_click' }, base));
+        gtag('event', 'phone_click', { link_text: texto });
       } else if (href.indexOf('portfolio/') !== -1) {
-        window.dataLayer.push(Object.assign({ event: 'portfolio_open', portfolio_item: a.getAttribute('data-n') || href }, base));
+        gtag('event', 'portfolio_open', { portfolio_item: a.getAttribute('data-n') || href });
       }
     }, true);
     var brief = document.getElementById('brief');
     if (brief) {
       brief.addEventListener('submit', function () {
         var tipo = brief.querySelector('input[name="tipo"]:checked');
-        window.dataLayer.push({ event: 'generate_lead', lead_source: 'briefing_whatsapp', project_type: tipo ? tipo.value : '', page_path: location.pathname });
+        gtag('event', 'generate_lead', { lead_source: 'briefing_whatsapp', project_type: tipo ? tipo.value : '' });
       }, true);
     }
   }

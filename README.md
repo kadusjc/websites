@@ -11,6 +11,5 @@ As páginas de serviço (`/criacao-de-sites/`, `/sites-alta-performance/` etc.) 
 - Conteúdo de cada página: `scripts/paginas/<slug>.json`
 - Gerar tudo (páginas + `404.html` + `sitemap.xml` + `llms.txt` + `llms-full.txt`): `npm run gerar`
 - Depois do push e da publicação no GitHub Pages, avisar Bing e outros buscadores (IndexNow): `npm run indexnow`
-- Tags de conversão para importar no GTM (Admin › Importar contêiner › Mesclar): `scripts/gtm-importar-conversoes.json`
 
-Analytics: Google Tag Manager `GTM-KG3FCRBX` com Consent Mode v2 e aviso de cookies em `assets/analytics.js` (usado por todas as páginas).
+Analytics: tag do Google `GTM-N635HSF4` (GA4 `G-3GDR6SCKG6`) com Consent Mode v2 e aviso de cookies em `assets/analytics.js` (usado por todas as páginas). Conversões enviadas direto ao GA4: `generate_lead`, `whatsapp_click`, `phone_click`, `portfolio_open`.
