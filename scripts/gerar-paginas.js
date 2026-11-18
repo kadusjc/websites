@@ -269,8 +269,78 @@ for (const p of paginas) {
   console.log(`✔ /${p.slug}/`);
 }
 
+// ---------- 404.html (o GitHub Pages usa para qualquer endereço inexistente) ----------
+fs.writeFileSync(
+  path.join(ROOT, '404.html'),
+  `<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Página não encontrada | FC Software</title>
+<script src="/assets/analytics.js" defer></script>
+<meta name="robots" content="noindex,follow">
+<meta name="theme-color" content="#07090a">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/servicos.css">
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+${header({ slug: '' })}
+<main id="main">
+ <section class="hero"><div class="wrap">
+  <h1>Esta página <em>não existe</em> (ou mudou de endereço)</h1>
+  <p class="ans">O link pode estar errado ou a página foi renomeada. Escolha um dos serviços abaixo ou volte para a página inicial.</p>
+  <div class="cta"><a class="btn btn-p" href="/">Ir para a página inicial</a><a class="btn btn-g" href="${wa('Olá! Vim pelo site e não encontrei uma página.')}" target="_blank" rel="noopener">${ICON_WA}Falar no WhatsApp</a></div>
+ </div></section>
+ <section><div class="wrap">
+  <span class="eyebrow">Serviços</span>
+  <h2>O que a Ferreiro Corrêa Software faz</h2>
+  <div class="grid">${paginas.map((p) => `<div class="card"><h3><a href="/${p.slug}/" style="text-decoration:none">${p.menu}</a></h3><p>${esc(p.description)}</p></div>`).join('')}</div>
+ </div></section>
+</main>
+${footer()}
+</body>
+</html>
+`
+);
+console.log('✔ 404.html');
+
+// ---------- llms-full.txt (conteúdo completo em texto, para IAs) ----------
+const md = (html) => String(html).replace(/<a [^>]*href="([^"]+)"[^>]*>(.*?)<\/a>/g, (_, h, t) => `[${texto(t)}](${h.startsWith('/') ? SITE + h : h})`).replace(/<li>/g, '\n- ').replace(/<\/p>/g, '\n\n').replace(/<[^>]+>/g, '').replace(/[ \t]+/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
+const full = [
+  '# Ferreiro Corrêa Software: conteúdo completo dos serviços',
+  '',
+  `> Versão em texto das páginas de serviço de ${SITE}/ para assistentes de IA. Resumo geral: ${SITE}/llms.txt`,
+  '',
+  ...paginas.map((p) => [
+    `## ${texto(p.servico.nome)}`,
+    '',
+    `URL: ${url(p.slug)}`,
+    `Atualizado em: ${p.dataModificacao}`,
+    '',
+    md(p.resposta),
+    '',
+    ...(p.resumo || []).map(([t, d]) => `- **${texto(t)}:** ${md(d)}`),
+    '',
+    `### ${texto(p.entregas.h2)}`,
+    '',
+    ...p.entregas.cards.map((c) => `- **${texto(c.titulo)}:** ${md(c.texto)}`),
+    '',
+    ...[].concat(p.detalhes || []).flatMap((d) => [`### ${texto(d.h2)}`, '', md(d.html), '']),
+    `### ${texto(p.faqTitulo)}`,
+    '',
+    ...p.faq.flatMap((f) => [`**${texto(f.pergunta)}**`, md(f.resposta), '']),
+  ].join('\n')),
+].join('\n');
+fs.writeFileSync(path.join(ROOT, 'llms-full.txt'), full.replace(/\n{3,}/g, '\n\n'));
+console.log('✔ llms-full.txt');
+
 // ---------- sitemap.xml ----------
-const homeMod = fs.statSync(path.join(ROOT, 'index.html')).mtime.toISOString().slice(0, 10);
+// data da home: a "dateModified" dos dados estruturados do index.html
+const homeMod = (fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8').match(/"@type":"WebPage"[^}]*?"dateModified":"(\d{4}-\d{2}-\d{2})"/) || [])[1] || HOJE;
 const linhas = [
   `<url><loc>${SITE}/</loc><lastmod>${homeMod}</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>`,
   ...paginas.map((p) => `<url><loc>${url(p.slug)}</loc><lastmod>${p.dataModificacao}</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>`),

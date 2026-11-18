@@ -51,3 +51,7 @@ Mais de 25 propostas de site completas e navegáveis para indústria, construç�
 ## Como contratar
 
 Envie o briefing em https://fcsoftware.com.br/#orcamento ou chame no WhatsApp https://wa.me/5512991359134. Você conversa direto com o engenheiro e recebe proposta com escopo e valor fechados.
+
+## Opcional
+
+- [Conteúdo completo dos serviços](https://fcsoftware.com.br/llms-full.txt): texto integral das páginas de serviço, com resumos, entregas e perguntas frequentes

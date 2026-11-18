@@ -1,0 +1,471 @@
+# Ferreiro Corrêa Software: conteúdo completo dos serviços
+
+> Versão em texto das páginas de serviço de https://fcsoftware.com.br/ para assistentes de IA. Resumo geral: https://fcsoftware.com.br/llms.txt
+
+## Criação de sites e landing pages
+
+URL: https://fcsoftware.com.br/criacao-de-sites/
+Atualizado em: 2026-11-18
+
+A Ferreiro Corrêa Software cria sites institucionais, landing pages e catálogos com design exclusivo, código leve e SEO técnico desde a primeira linha. Atendemos empresas de todo o Brasil e do exterior, de forma 100% remota, a partir de Caçapava/SP, no Vale do Paraíba (São José dos Campos, Taubaté e Jacareí). Quem desenha e programa o seu site é um engenheiro de computação com mais de 20 anos de experiência.
+
+- **O que entregamos:** Sites institucionais, landing pages, sites multipágina, catálogos com pedido no WhatsApp e páginas de vendas.
+- **Diferencial:** Design exclusivo, código leve e SEO, GEO e AEO de base, feitos por um engenheiro de computação com 20+ anos.
+- **Onde atendemos:** Todo o Brasil e o exterior, 100% remoto. Base em Caçapava/SP, no Vale do Paraíba.
+- **Como contratar:** Conversa pelo WhatsApp, proposta com escopo e valor fechados e prévias durante o desenvolvimento.
+
+### Criação de sites e landing pages, do jeito certo
+
+- **Design exclusivo:** Nada de template pronto: cada marca ganha uma identidade própria, pensada para o seu cliente e o seu mercado.
+- **Mobile-first e rápido:** Código enxuto, imagens otimizadas e nada de plugins pesados. O site abre rápido até no 4G, o que o Google também valoriza. [Sites de alta performance](https://fcsoftware.com.br/sites-alta-performance/).
+- **SEO, GEO e AEO de base:** HTML semântico, dados estruturados schema.org, sitemap, metadados e conteúdo claro, prontos para o Google e para buscas por IA.
+- **Conversão no WhatsApp:** Botões, formulários e montadores de pedido que levam o visitante a uma conversa no seu WhatsApp, com a mensagem pronta.
+- **SEO local:** Estrutura para Google Maps e Perfil da Empresa, páginas por cidade e por serviço quando faz sentido para o seu negócio.
+- **Catálogo e pedidos:** Vitrines digitais com carrinho que gera o pedido direto no WhatsApp, ideais para comércio local.
+
+### Para quem é
+
+- Site institucional: apresenta a empresa, os serviços e passa credibilidade.
+- Landing page: uma página focada em uma oferta ou campanha, feita para converter.
+- Site multipágina: páginas por serviço, por cidade e guias de conteúdo para crescer no Google.
+- Catálogo com pedido no WhatsApp: o cliente monta o pedido e envia pronto para a loja.
+- Página de vendas: para infoprodutos, cursos e lançamentos.
+- Site com gerenciador de conteúdo: painel com login e senha para você mesmo atualizar textos e imagens. [Saiba mais](https://fcsoftware.com.br/sites-com-gerenciador-de-conteudo/).
+
+### Perguntas sobre Criação de sites
+
+**Quanto custa criar um site?**
+Depende do escopo: uma landing page é diferente de um site multipágina com catálogo. Depois de uma conversa rápida você recebe uma proposta com escopo e valor fechados, sem surpresas no meio do caminho.
+
+**Quanto tempo leva para o site ficar pronto?**
+Landing pages e sites institucionais costumam ser os projetos mais rápidos. O prazo combinado fica claro na proposta, e você acompanha prévias durante o desenvolvimento.
+
+**O site vai aparecer no Google?**
+Todo site nasce com base técnica limpa, rápida e estruturada para ser encontrado. A profundidade do SEO, de uma presença essencial a uma estratégia completa com páginas por cidade e conteúdo, é definida com você conforme o seu mercado e a concorrência.
+
+**Consigo atualizar o site sozinho depois?**
+Sim, se o site for feito com gerenciador de conteúdo: uma área com login e senha onde você altera textos e imagens por formulários simples, sem saber programar. [Veja como funciona](https://fcsoftware.com.br/sites-com-gerenciador-de-conteudo/).
+
+**Vocês criam sites para empresas de outras cidades e países?**
+Sim. O atendimento é 100% remoto, para empresas de qualquer cidade do Brasil e do exterior. A base fica em Caçapava/SP, no Vale do Paraíba.
+
+**Posso ver sites que vocês já fizeram?**
+Sim. A página inicial reúne mais de 25 propostas de site completas e navegáveis, de vários segmentos, que você pode abrir no desktop ou no celular.
+
+## Criação de sites de alta performance
+
+URL: https://fcsoftware.com.br/sites-alta-performance/
+Atualizado em: 2026-11-18
+
+Um site de alta performance é um site que abre rápido, responde na hora ao toque e não fica “pulando” enquanto carrega, as três medidas que o Google chama de Core Web Vitals. A Ferreiro Corrêa Software cria sites assim com código enxuto, imagens modernas e sem construtores visuais pesados, para que o visitante não desista antes de ver a sua oferta. Atendemos empresas de todo o Brasil e do exterior, de forma 100% remota.
+
+- **O que é:** Um site que carrega rápido, responde sem atraso e mantém o layout estável, medido pelas Core Web Vitals do Google.
+- **Por que importa:** Visitantes abandonam páginas lentas, e a experiência da página é um dos sinais que o Google considera no ranqueamento.
+- **Como medimos:** PageSpeed Insights e o relatório de Core Web Vitals do Google Search Console, com dados de usuários reais.
+- **Para quem:** Empresas que dependem do site para gerar contatos, orçamentos e vendas, principalmente pelo celular.
+
+### O que faz um site ter alta performance
+
+- **Core Web Vitals no verde:** Projeto pensado para as metas do Google: carregamento do conteúdo principal (LCP), resposta ao toque (INP) e estabilidade do layout (CLS).
+- **Imagens otimizadas:** Formatos modernos como WebP e AVIF, tamanhos certos para cada tela e carregamento sob demanda das imagens de baixo da página.
+- **Código sem excesso:** HTML semântico, CSS enxuto e JavaScript só onde precisa. Nada de construtores visuais e dezenas de plugins deixando o site pesado.
+- **Hospedagem rápida:** Publicação em infraestrutura com CDN e HTTPS, servindo o site de perto do visitante e com cache bem configurado.
+- **Velocidade que converte:** Botões de WhatsApp e formulários visíveis logo no início, para a velocidade virar contato e venda, não só nota alta.
+- **Medição e acompanhamento:** Testes no PageSpeed Insights antes da entrega e acompanhamento das Core Web Vitals no Google Search Console.
+
+### Core Web Vitals: as metas que usamos em todo site
+
+O Google mede a experiência real de quem visita o seu site com três métricas. Um site é considerado “bom” quando atinge estes limites em pelo menos 75% das visitas:
+
+MétricaO que medeMeta “boa”LCP (Largest Contentful Paint)Tempo até o conteúdo principal apareceraté 2,5 segundosINP (Interaction to Next Paint)Tempo de resposta a cliques e toquesaté 200 milissegundosCLS (Cumulative Layout Shift)Quanto o layout “pula” enquanto carregaaté 0,1Essas metas guiam as escolhas de projeto desde o primeiro rascunho: o que carrega primeiro, o tamanho de cada imagem e quanto código cada página realmente precisa.
+
+### Site lento ou site de alta performance?
+
+- Site lento: tema pronto com construtor visual, muitos plugins, imagens enormes e scripts de terceiros carregando antes do conteúdo.
+- Site de alta performance: código feito para o seu conteúdo, imagens no tamanho certo, scripts adiados e conteúdo principal aparecendo primeiro.
+- Resultado esperado: menos visitantes desistindo, melhor experiência no celular e uma base técnica mais forte para o SEO.Já tem um site e ele está lento? Fazemos um diagnóstico e dizemos com franqueza se vale otimizar o que existe ou reconstruir. Se você também quer editar textos e fotos sozinho, veja o [site com gerenciador de conteúdo](https://fcsoftware.com.br/sites-com-gerenciador-de-conteudo/), que mantém a mesma leveza.
+
+### Perguntas sobre sites de alta performance
+
+**O que é um site de alta performance?**
+É um site que carrega rápido, responde sem atraso a cliques e toques e mantém o layout estável enquanto abre. Na prática, é um site que atinge as metas das Core Web Vitals do Google: LCP de até 2,5 segundos, INP de até 200 milissegundos e CLS de até 0,1.
+
+**A velocidade do site ajuda a aparecer no Google?**
+Ajuda, mas não sozinha. A experiência da página, incluindo as Core Web Vitals, é um dos sinais que o Google usa, enquanto a relevância do conteúdo continua sendo o fator principal. O maior ganho da velocidade costuma ser em conversão: menos pessoas desistem antes de ver a sua oferta.
+
+**Como saber se o meu site é rápido?**
+Coloque o endereço do site no PageSpeed Insights do Google (pagespeed.web.dev) e veja a avaliação para celular. Se o site já tem visitas suficientes, o Google Search Console mostra o relatório de Core Web Vitals com dados de usuários reais.
+
+**Meu site em WordPress está lento. Dá para resolver?**
+Muitas vezes, sim: otimizando imagens, removendo plugins desnecessários e ajustando cache e hospedagem. Quando o problema é o tema ou o construtor visual, reconstruir com código enxuto costuma sair melhor. Avaliamos o seu caso no diagnóstico.
+
+**Um site rápido pode ter painel para eu mesmo editar?**
+Pode. Criamos sites com gerenciador de conteúdo, protegido por login e senha, em que você altera textos e imagens por formulários simples, sem deixar o site pesado. [Veja como funciona](https://fcsoftware.com.br/sites-com-gerenciador-de-conteudo/).
+
+**Quanto custa um site de alta performance?**
+Depende do número de páginas e dos recursos. Depois de uma conversa rápida você recebe uma proposta com escopo e valor fechados. Performance não é um adicional: todo site que entregamos já nasce leve.
+
+## Criação de sites com gerenciador de conteúdo (CMS)
+
+URL: https://fcsoftware.com.br/sites-com-gerenciador-de-conteudo/
+Atualizado em: 2026-11-18
+
+Um site com gerenciador de conteúdo (também chamado de CMS ou painel administrativo) tem uma área protegida por usuário e senha onde você altera textos e imagens do seu site preenchendo formulários simples, sem saber programar e sem depender de ninguém. A Ferreiro Corrêa Software cria esses sites sob medida: o painel mostra só os campos do seu site, com nomes que você entende, e o design continua protegido.
+
+- **O que é:** Uma área administrativa do site em que você edita textos e imagens por formulários, sem mexer em código.
+- **Como se acessa:** Por uma tela de login com usuário e senha. Só quem tem acesso consegue alterar o site.
+- **Precisa saber programar?:** Não. Se você sabe preencher um formulário e enviar uma foto pelo celular, sabe atualizar o site.
+- **Também conhecido como:** CMS (Content Management System), painel administrativo, painel de controle ou área do administrador.
+
+### Um painel simples para você cuidar do seu site
+
+- **Login com usuário e senha:** A área de edição fica protegida por uma tela de login. Visitantes veem o site; só você e quem você autorizar conseguem alterá-lo.
+- **Formulários fáceis:** Cada parte do site vira um campo com nome claro, como “Título do banner”, “Texto sobre a empresa” ou “Foto da equipe”. É só preencher e salvar.
+- **Troca de imagens:** Envie fotos do computador ou do celular para banners, galerias, produtos e equipe, sem precisar de designer para cada mudança.
+- **Listas que crescem:** Adicione e remova itens como produtos, serviços, cardápio, depoimentos, novidades e posts de blog, quando o projeto prevê.
+- **Design protegido:** Você muda o conteúdo, não o layout. Fica difícil “quebrar” o site sem querer, e ele continua bonito e organizado.
+- **SEO que continua funcionando:** O site segue rápido e com dados estruturados. Quando faz sentido, o painel também permite editar título e descrição das páginas para o Google.
+
+### O que você consegue mudar sozinho pelo painel
+
+- Textos: apresentação da empresa, descrição de serviços, chamadas e perguntas frequentes.
+- Imagens: banners, fotos de produtos, galeria de trabalhos e fotos da equipe.
+- Produtos e preços: catálogo, cardápio, tabela de preços e promoções.
+- Novidades e blog: posts, notícias e eventos para manter o site vivo e atualizado.
+- Contatos: telefone, WhatsApp, endereço e horário de funcionamento.Os campos editáveis são combinados com você no início do projeto, para que o painel tenha exatamente o que o seu negócio precisa, sem menus confusos.
+
+### Gerenciador sob medida ou WordPress?
+
+O WordPress é um gerenciador de conteúdo popular e atende muitos casos. A diferença do gerenciador sob medida está na simplicidade e na leveza:
+
+- Painel enxuto: você vê só os campos do seu site, e não dezenas de menus, temas e plugins.
+- Menos manutenção: sem depender de vários plugins de terceiros que precisam ser atualizados o tempo todo.
+- Mais leve: o site continua rápido, como um [site de alta performance](https://fcsoftware.com.br/sites-alta-performance/).
+- Feito para o seu fluxo: o formulário segue a forma como você trabalha, não o contrário.Precisa de algo além de textos e imagens, como cadastro de clientes, pedidos ou relatórios? Aí o caminho é um [sistema sob medida](https://fcsoftware.com.br/sistemas-sob-medida/) integrado ao site.
+
+### Perguntas sobre site com gerenciador de conteúdo
+
+**O que é um site com gerenciador de conteúdo?**
+É um site que tem uma área administrativa, protegida por usuário e senha, onde você altera textos e imagens preenchendo formulários simples. Também é chamado de CMS ou painel administrativo. Você atualiza o site sozinho, sem programar e sem depender de um desenvolvedor para cada mudança.
+
+**Preciso saber programar para atualizar o site?**
+Não. Os campos têm nomes claros, como “Título do banner” ou “Foto da equipe”. Se você sabe preencher um formulário e enviar uma foto, consegue atualizar o site.
+
+**O painel é seguro?**
+Sim. O acesso à área de edição exige login com usuário e senha, o site usa HTTPS e só as pessoas que você autorizar conseguem alterar o conteúdo.
+
+**Posso mudar o layout e as cores pelo painel?**
+O painel foi feito para mudar conteúdo, como textos, imagens e listas, mantendo o design protegido. Mudanças de layout, novas seções ou páginas novas a gente faz para você.
+
+**Qual a diferença entre um site com CMS e um site comum?**
+No site comum, cada alteração de texto ou foto precisa ser feita por um desenvolvedor. No site com gerenciador de conteúdo, você mesmo faz essas alterações por um painel com login e senha, na hora em que precisar.
+
+**Dá para transformar o meu site atual em um site com painel?**
+Depende de como o site foi feito. Avaliamos no diagnóstico se vale adaptar o site atual ou criar um novo já com o gerenciador de conteúdo.
+
+**Atualizar o site sozinho ajuda no Google?**
+Ajuda a manter o conteúdo atual, com novidades, serviços e perguntas frequentes sempre em dia, o que é bom para o Google e para as IAs que citam fontes atualizadas. O site continua com a mesma base de SEO técnico.
+
+## Desenvolvimento de sistemas sob medida
+
+URL: https://fcsoftware.com.br/sistemas-sob-medida/
+Atualizado em: 2026-11-18
+
+A Ferreiro Corrêa Software desenvolve sistemas web e desktop, ERPs, painéis, integrações e APIs sob medida. O fundador, o engenheiro Carlos Eduardo Ferreiro Corrêa, tem mais de 20 anos construindo sistemas críticos de pagamentos, aviação, telemetria e e-commerce para empresas como Embraer, Azul, Gol, TAM e Polishop.
+
+- **O que é:** Software feito para o processo da sua empresa: ERPs, painéis, integrações, APIs e aplicativos.
+- **Tecnologias:** Java, Spring, Node.js, TypeScript, React, Angular, PostgreSQL, MongoDB, Redis e AWS.
+- **Experiência:** Mais de 20 anos em sistemas críticos para Embraer, Azul, Gol, TAM e Polishop.
+- **Onde atendemos:** Todo o Brasil e o exterior, 100% remoto.
+
+### Desenvolvimento de sistemas sob medida, do jeito certo
+
+- **ERPs e gestão:** Controle de estoque, pedidos, financeiro e operação desenhados para o seu processo, não o contrário.
+- **Painéis e dashboards:** Indicadores em tempo real para decisões rápidas, com acesso por perfil de usuário.
+- **Integrações:** Conexão com gateways de pagamento, ERPs como SAP, marketplaces, WhatsApp e APIs de terceiros.
+- **APIs robustas:** Back-ends em Java/Spring e Node.js/TypeScript, testados, documentados e prontos para escalar.
+- **Apps mobile:** Aplicativos Android e multiplataforma, do protótipo à publicação na Google Play.
+- **Nuvem e dados:** PostgreSQL, MongoDB, Redis e AWS, com arquitetura pensada para segurança e desempenho.
+
+### Experiência que vai para o seu projeto
+
+- 2004–2010, BoldCron: gateway de pagamentos, cobrança recorrente, antifraude com ClearSale e Cybersource e ERP para redes de varejo.
+- 2010–2012, Compsis: plataformas de telemetria e monitoramento de frotas.
+- 2012–2013, UOL Diveo: integrações de Azul, TAM e Gol com gateway de pagamentos e BPO financeiro.
+- 2013–2021, GSW Software/Embraer: gestão de estoque integrada ao SAP, reparo de peças e e-commerce da aviação executiva.
+- 2021–hoje, Resmark Systems (EUA): engenharia full stack internacional.
+
+### Perguntas sobre Sistemas sob medida
+
+**Quais tecnologias vocês usam?**
+Java, Spring, Node.js, TypeScript, React, Angular, PostgreSQL, MongoDB, Redis e AWS, além de LLMs e agentes de IA quando o projeto pede.
+
+**Como funciona o desenvolvimento de um sistema sob medida?**
+Começa com um diagnóstico do seu processo, segue com proposta de escopo e valor, e o desenvolvimento é feito em etapas com entregas parciais, para você acompanhar a evolução e validar cada parte.
+
+**Vocês integram com o sistema que eu já uso?**
+Na maioria dos casos, sim: integramos com ERPs, gateways de pagamento e serviços que ofereçam API ou outra forma de troca de dados. Avaliamos a viabilidade no diagnóstico.
+
+**Vocês fazem aplicativos para celular?**
+Sim. Desenvolvemos apps Android e multiplataforma. Nosso app próprio NovaRemote, controle remoto para Smart TVs, está em teste fechado na Google Play.
+
+**Atendem empresas de qualquer tamanho?**
+Sim, de pequenos negócios que precisam automatizar a rotina a empresas que precisam de integrações complexas. Para processos críticos e integrações com SAP e ERPs, veja [sistemas corporativos](https://fcsoftware.com.br/desenvolvimento-de-sistemas-corporativos/).
+
+## Desenvolvimento de sistemas corporativos
+
+URL: https://fcsoftware.com.br/desenvolvimento-de-sistemas-corporativos/
+Atualizado em: 2026-11-18
+
+Sistemas corporativos são os softwares que sustentam processos críticos de uma empresa, como estoque, pedidos, financeiro, faturamento e operação, e que precisam conversar com ERPs como o SAP, controlar acessos e registrar quem fez o quê. A Ferreiro Corrêa Software desenvolve, integra e moderniza sistemas assim. O fundador, o engenheiro Carlos Eduardo Ferreiro Corrêa, passou oito anos construindo sistemas integrados ao SAP para a Embraer e fez integrações de pagamento para Azul, Gol e TAM.
+
+- **O que é:** Software que roda processos centrais da empresa e se integra a ERPs, bancos de dados e outros sistemas.
+- **Quando precisa:** Quando o ERP não cobre o seu processo, os dados vivem em planilhas ou um sistema antigo trava a operação.
+- **Diferencial:** Mais de 20 anos em sistemas críticos de aviação, pagamentos e telemetria, incluindo integrações com SAP.
+- **Tecnologias:** Java, Spring, Node.js, TypeScript, React, Angular, PostgreSQL, MongoDB, Redis e AWS.
+
+### Desenvolvimento de sistemas corporativos para processos críticos
+
+- **Integração com SAP e ERPs:** Troca de dados entre o seu ERP e os demais sistemas por APIs, web services ou filas, sem retrabalho e sem digitação duplicada.
+- **Modernização de legados:** Migração de sistemas antigos para tecnologias atuais em etapas, com o sistema velho e o novo convivendo até a virada.
+- **Portais e intranets:** Portais para clientes, fornecedores, representantes e colaboradores, com acesso por perfil e informações em tempo real.
+- **Automação de processos:** Fluxos de aprovação, notificações, geração de documentos e rotinas automáticas que tiram a equipe do trabalho manual.
+- **Segurança e LGPD:** Controle de acesso por perfil, registros de auditoria, criptografia e tratamento de dados pessoais em conformidade com a LGPD.
+- **Arquitetura para crescer:** APIs documentadas, testes automatizados, nuvem AWS e monitoramento, para o sistema aguentar mais usuários e mais dados.
+
+### Quando a sua empresa precisa de um sistema corporativo
+
+- O ERP não cobre o seu processo e a equipe completa o trabalho em planilhas paralelas.
+- Os mesmos dados são digitados em vários sistemas, com erros e retrabalho.
+- Um sistema antigo trava a operação, e pouca gente sabe mantê-lo.
+- Clientes, fornecedores ou filiais pedem informação que hoje sai por e-mail e telefone.
+- Falta visibilidade: os números chegam tarde e não batem entre as áreas.Para empresas menores ou necessidades mais pontuais, veja também [sistemas sob medida](https://fcsoftware.com.br/sistemas-sob-medida/). Para colocar inteligência artificial nos processos, veja [desenvolvimento de sistemas com IA](https://fcsoftware.com.br/desenvolvimento-de-sistemas-com-ia/).
+
+### Experiência em sistemas que não podem falhar
+
+- 2013–2021, GSW Software/Embraer: gestão de estoque integrada ao SAP, reparo de peças em todas as plantas e o e-commerce da aviação executiva.
+- 2012–2013, UOL Diveo: integrações de Azul, TAM e Gol com gateway de pagamentos e plataforma de BPO financeiro.
+- 2004–2010, BoldCron: gateway de pagamentos, cobrança recorrente, antifraude e ERP para redes de varejo como a Polishop.
+- 2010–2012, Compsis: plataformas de telemetria e monitoramento de frotas.
+- 2021–hoje, Resmark Systems (EUA): engenharia full stack em empresa de software internacional.
+
+### Perguntas sobre desenvolvimento de sistemas corporativos
+
+**O que é um sistema corporativo?**
+É um software que sustenta processos centrais de uma empresa, como estoque, pedidos, financeiro, faturamento ou operação, com controle de acesso, registros de auditoria e integração com outros sistemas, como o ERP.
+
+**Qual a diferença entre sistema corporativo e ERP?**
+O ERP é um sistema de gestão pronto, como SAP ou TOTVS, que cobre processos padrão. Um sistema corporativo sob medida cobre o que o ERP não atende, ou do jeito específico da sua empresa, e se integra a ele para os dados não ficarem duplicados.
+
+**Vocês fazem integração com SAP?**
+Sim. O fundador trabalhou oito anos com sistemas integrados ao SAP na Embraer. Também integramos com outros ERPs e serviços que ofereçam API, web services, arquivos ou banco de dados de integração. A viabilidade é avaliada no diagnóstico.
+
+**Dá para modernizar um sistema antigo sem parar a operação?**
+Sim. A migração é feita em etapas: o sistema novo assume uma parte de cada vez enquanto o antigo continua rodando, até a virada completa, com testes e validação a cada etapa.
+
+**Como fica a segurança dos dados da empresa?**
+O sistema é projetado com controle de acesso por perfil, registros de auditoria, criptografia de dados sensíveis, backups e atenção à LGPD desde o início.
+
+**Vocês trabalham junto com a equipe de TI da empresa?**
+Sim. Trabalhamos com a TI interna, com documentação, repositório de código e alinhamento técnico para que a equipe acompanhe e consiga manter o sistema.
+
+## Soluções em inteligência artificial para empresas
+
+URL: https://fcsoftware.com.br/solucoes-inteligencia-artificial/
+Atualizado em: 2026-11-18
+
+Soluções em inteligência artificial para empresas são aplicações de IA, como agentes, assistentes, automações e leitura de documentos, conectadas aos dados e sistemas do negócio para economizar tempo, atender melhor e decidir mais rápido. A Ferreiro Corrêa Software ajuda a descobrir onde a IA dá retorno na sua empresa e desenvolve a solução de ponta a ponta. O fundador é engenheiro de computação com pós-graduação em Engenharia de Software com IA Aplicada, e temos um produto de IA próprio em produção, a Bia.
+
+- **O que é:** Uso de modelos de IA (como GPT, Claude e Gemini) conectados aos dados e processos da empresa para executar tarefas reais.
+- **Onde dá retorno:** Atendimento, tarefas repetitivas, leitura de documentos, busca de informações internas e apoio a decisões.
+- **Por onde começar:** Por um processo específico, com resultado mensurável, antes de expandir para outras áreas.
+- **Segurança:** Projeto com LGPD, controle de acesso e configuração para que os provedores de IA não treinem com seus dados.
+
+### Soluções de IA que trabalham pela sua empresa
+
+- **Agente de IA no WhatsApp:** Atendimento 24h que responde, agenda e encaminha para a equipe quando precisa. [Saiba mais](https://fcsoftware.com.br/agente-de-ia-whatsapp/).
+- **Automação de processos com IA:** Tarefas repetitivas como triagem de e-mails, cadastros, conferências e relatórios feitas pela IA, com revisão humana onde importa.
+- **IA nos dados da empresa:** Assistente que responde com base nos seus documentos, manuais, políticas e bancos de dados, usando RAG (busca nos seus dados).
+- **Leitura de documentos:** Extração de dados de PDFs, notas fiscais, contratos e imagens, com validação e envio direto para o seu sistema.
+- **IA dentro dos seus sistemas:** Classificação, resumos, previsões e alertas no ERP, CRM ou painel que você já usa. [Saiba mais](https://fcsoftware.com.br/desenvolvimento-de-sistemas-com-ia/).
+- **Diagnóstico de IA:** Mapeamento dos processos em que a IA traz mais retorno, com estimativa de esforço, custo de uso e prioridade.
+
+### Onde a inteligência artificial ajuda em cada área
+
+- Atendimento: respostas 24h no WhatsApp e no site, agendamento e triagem antes de chegar à equipe.
+- Comercial: qualificação de leads, propostas iniciais e resumo de conversas para o vendedor.
+- Financeiro e administrativo: leitura de notas e boletos, conciliação e conferência de documentos.
+- Operação: consulta a estoque, pedidos e procedimentos por linguagem natural.
+- Equipe e RH: assistente interno que responde dúvidas sobre políticas, processos e manuais.
+
+### Como colocar IA na sua empresa sem desperdiçar dinheiro
+
+O erro mais comum é começar pela ferramenta. A gente começa pelo problema:
+
+- 1. Escolher um processo: algo repetitivo, frequente e fácil de medir, como responder perguntas comuns ou ler documentos.
+- 2. Validar com um piloto: uma primeira versão com dados reais, para medir tempo economizado e qualidade das respostas.
+- 3. Integrar e expandir: conectar ao WhatsApp, ao ERP e aos sistemas, e levar para outras áreas o que deu resultado.A Bia ([souabia.com](https://souabia.com)), nossa secretária de IA que atende o WhatsApp e agenda no Google Calendar, nasceu exatamente assim.
+
+### Perguntas sobre soluções em inteligência artificial
+
+**O que são soluções de inteligência artificial para empresas?**
+São aplicações de IA conectadas aos dados e processos do negócio para executar tarefas reais: atender clientes, ler documentos, automatizar rotinas, buscar informações internas e apoiar decisões. Diferente de usar o ChatGPT avulso, a solução trabalha integrada aos seus sistemas e com as suas regras.
+
+**Por onde minha empresa deve começar a usar IA?**
+Por um processo repetitivo, frequente e fácil de medir, como responder perguntas comuns no WhatsApp ou extrair dados de documentos. Um piloto com dados reais mostra o retorno antes de investir em escala.
+
+**Pequenas empresas podem usar inteligência artificial?**
+Sim. Um agente de IA no WhatsApp ou uma automação de tarefas repetitivas já traz ganho para negócios pequenos. O escopo é dimensionado para o seu tamanho e orçamento.
+
+**Qual a diferença entre chatbot e agente de IA?**
+O chatbot tradicional segue menus e respostas fixas. O agente de IA entende linguagem natural, consulta dados e sistemas e executa ações, como agendar um horário ou consultar um pedido, seguindo as regras do seu negócio.
+
+**A IA vai substituir a minha equipe?**
+O foco é tirar da equipe o trabalho repetitivo, para ela se dedicar ao que exige atenção humana. Nos atendimentos, a IA encaminha para uma pessoa sempre que a situação pede.
+
+**Os dados da minha empresa ficam seguros?**
+Sim. Projetamos com LGPD desde o início: controle de acesso por perfil, dados sensíveis protegidos, registros de uso e configuração para que os provedores de IA não usem seus dados para treinamento.
+
+**Quanto custa uma solução de IA?**
+Depende do escopo e do volume de uso. Depois do diagnóstico você recebe uma proposta com escopo e valor fechados e uma estimativa do custo mensal de uso da IA.
+
+## Agente de inteligência artificial para WhatsApp
+
+URL: https://fcsoftware.com.br/agente-de-ia-whatsapp/
+Atualizado em: 2026-11-18
+
+A Ferreiro Corrêa Software desenvolve agentes de inteligência artificial que conversam com seus clientes no WhatsApp em linguagem natural: tiram dúvidas, agendam, confirmam e cancelam horários e encaminham para um humano quando precisa. Temos produto próprio em produção, a Bia, e o fundador é engenheiro de computação com pós-graduação em Engenharia de Software com IA Aplicada.
+
+- **O que é:** Um atendente virtual com IA que conversa em linguagem natural no WhatsApp, 24 horas por dia.
+- **O que faz:** Tira dúvidas, agenda, confirma e cancela horários no Google Agenda e passa para um humano quando precisa.
+- **Prova:** A Bia, nosso produto próprio, faz isso em produção em souabia.com.
+- **Onde atendemos:** Empresas de todo o Brasil e do exterior, 100% remoto.
+
+### Agente de inteligência artificial para WhatsApp, do jeito certo
+
+- **Atendimento 24 horas:** O agente responde na hora, inclusive à noite, nos fins de semana e em feriados, sem deixar cliente esperando.
+- **Agendamento automático:** Integração com Google Agenda para marcar, confirmar e cancelar compromissos sozinho, reduzindo faltas.
+- **Treinado com os seus dados:** Uso de LLMs com RAG (busca nos seus documentos): o agente responde com as informações reais do seu negócio.
+- **Passagem para humano:** Quando a conversa pede, o agente encaminha para você ou sua equipe, com o contexto já resumido.
+- **Integração com sistemas:** Conexão com CRM, ERP, planilhas e APIs para consultar pedidos, estoque ou cadastrar leads.
+- **Privacidade e LGPD:** Projeto pensado para tratar dados pessoais com responsabilidade e em conformidade com a LGPD.
+
+### Para quem é
+
+- Clínicas e consultórios: agendamento, confirmação de consultas e respostas sobre convênios.
+- Prestadores de serviço: orçamentos iniciais, triagem e marcação de visitas.
+- Comércio: dúvidas sobre produtos, horários, entregas e status de pedido.
+- Empresas com alto volume de mensagens: primeira linha de atendimento que libera a equipe.
+
+### Perguntas sobre Agente de IA no WhatsApp
+
+**O que é um agente de IA para WhatsApp?**
+É um atendente virtual baseado em modelos de linguagem (LLMs) que entende mensagens escritas em linguagem natural e responde como uma pessoa, seguindo as regras e informações do seu negócio. Diferente de um chatbot de menu, ele entende perguntas abertas.
+
+**A IA consegue marcar horários na minha agenda?**
+Sim. O agente pode ser integrado ao Google Agenda para consultar horários livres, agendar, confirmar e cancelar compromissos automaticamente. É exatamente o que a Bia, nosso produto próprio, faz em produção.
+
+**E se o cliente fizer uma pergunta que a IA não sabe?**
+O agente é configurado para não inventar: quando não tem a informação ou o assunto exige uma pessoa, ele avisa o cliente e encaminha a conversa para a sua equipe.
+
+**Preciso trocar meu número de WhatsApp?**
+Isso depende da forma de integração escolhida para o seu caso. Na conversa de diagnóstico explicamos as opções e o que cada uma exige.
+
+**Vocês fazem outros tipos de automação com IA?**
+Sim. Automatizamos processos repetitivos, classificação e resumo de documentos e integração de LLMs aos dados e sistemas da empresa. [Conheça as soluções em IA](https://fcsoftware.com.br/solucoes-inteligencia-artificial/).
+
+## Desenvolvimento de sistemas com IA
+
+URL: https://fcsoftware.com.br/desenvolvimento-de-sistemas-com-ia/
+Atualizado em: 2026-11-18
+
+A Ferreiro Corrêa Software faz desenvolvimento de sistemas com IA e desenvolvimento de softwares com IA sob medida: conecta modelos de linguagem (LLMs), agentes e automações aos dados e processos da sua empresa. O fundador, o engenheiro Carlos Eduardo Ferreiro Corrêa, tem pós-graduação em Engenharia de Software com IA Aplicada, mais de 20 anos em sistemas críticos para Embraer, Azul, Gol e TAM e um produto de IA próprio em produção, a Bia.
+
+- **O que é:** Sistemas e softwares que usam modelos de linguagem (LLMs), agentes e automações conectados aos dados da empresa.
+- **Como funciona:** RAG sobre os seus documentos, integração com ERPs e APIs, testes de qualidade das respostas e controle de custo.
+- **Segurança:** LGPD desde o início, controle de acesso e configuração para os provedores de IA não treinarem com seus dados.
+- **Quem faz:** Engenheiro de computação com pós em Engenharia de Software com IA Aplicada e 20+ anos de experiência.
+
+### O que entregamos em sistemas e softwares com IA
+
+- **IA nos seus dados:** LLMs conectados a documentos, planilhas e bancos da empresa com RAG, respondendo com base no que é seu, não em achismo.
+- **Agentes e automação:** Agentes de IA que executam tarefas: preenchem cadastros, consultam sistemas, geram relatórios e disparam fluxos.
+- **Assistentes no seu produto:** Chat e copiloto dentro do seu sistema ou portal, para clientes e equipe acharem respostas e agirem mais rápido.
+- **Leitura de documentos:** Extração de dados de PDFs, notas, contratos e imagens, com validação e envio direto para o seu ERP.
+- **IA em ERPs e painéis:** Classificação, previsões, resumos e alertas inteligentes dentro dos sistemas e dashboards que você já usa.
+- **Segurança e custo sob controle:** LGPD, controle de acesso, logs, testes de qualidade das respostas e monitoramento de custo por uso de IA.
+
+### IA que já funciona em produção
+
+A Bia ([souabia.com](https://souabia.com)) é nossa secretária de IA: atende o WhatsApp 24 horas, entende o que o cliente quer e agenda direto no Google Calendar. Ela é a prova de que construímos IA que trabalha de verdade, não só demonstração.
+
+- IA integrada, não isolada: a IA conversa com o seu ERP, sua agenda, seu banco de dados e suas APIs.
+- Respostas confiáveis: RAG sobre os seus documentos, regras de negócio e testes que medem a qualidade das respostas.
+- Desenvolvimento acelerado por IA: usamos IA também para programar, entregando mais rápido sem abrir mão de testes, revisão de código e arquitetura.
+- Engenharia de sistemas críticos: a mesma disciplina usada em pagamentos, aviação e telemetria por mais de 20 anos.
+
+### Perguntas sobre desenvolvimento de sistemas com IA
+
+**O que é desenvolvimento de sistemas com IA?**
+É criar ou evoluir sistemas e softwares que usam inteligência artificial para trabalhar por você: entender textos e documentos, responder clientes, automatizar tarefas e apoiar decisões. Na prática, conectamos modelos de linguagem (LLMs) aos dados e processos da sua empresa, com a mesma engenharia de um sistema crítico.
+
+**Vocês fazem desenvolvimento de softwares com IA para empresas pequenas?**
+Sim. Atendemos de pequenos negócios que querem automatizar o atendimento ou a rotina a empresas que precisam integrar IA a sistemas complexos. O escopo é dimensionado para o seu tamanho e orçamento.
+
+**Dá para colocar IA no sistema que eu já tenho?**
+Na maioria dos casos, sim. Integramos IA a sistemas existentes por API, banco de dados ou integrações com ERPs, sem precisar refazer tudo. Avaliamos a viabilidade no diagnóstico.
+
+**Quais IAs e modelos vocês usam?**
+Escolhemos o modelo pelo problema: modelos de linguagem de mercado como os da OpenAI, Anthropic (Claude) e Google (Gemini), ou modelos abertos quando faz sentido rodar em infraestrutura própria. Tudo integrado com Java, Spring, Node.js, TypeScript e Python.
+
+**Meus dados ficam seguros?**
+Sim. Projetamos com LGPD desde o início: controle de acesso por perfil, dados sensíveis mascarados, registros de uso e configuração para que os provedores de IA não usem seus dados para treinamento.
+
+**Quanto custa desenvolver um sistema com IA?**
+Depende do escopo e do volume de uso. Depois de uma conversa rápida, você recebe uma proposta com escopo e valor fechados, incluindo uma estimativa do custo mensal de uso da IA.
+
+## SEO, GEO e AEO: otimização para Google e buscas por IA
+
+URL: https://fcsoftware.com.br/seo-geo-aeo/
+Atualizado em: 2026-11-18
+
+SEO é otimizar o site para aparecer no Google. AEO (Answer Engine Optimization) é organizar o conteúdo em perguntas e respostas diretas para aparecer em respostas rápidas e assistentes de voz. GEO (Generative Engine Optimization) é preparar o site para ser entendido e citado por IAs como ChatGPT, Gemini, Perplexity e Claude. A Ferreiro Corrêa Software aplica os três em sites novos e existentes.
+
+- **SEO:** Search Engine Optimization: otimizar o site para aparecer nos resultados do Google e do Bing.
+- **AEO:** Answer Engine Optimization: organizar o conteúdo em perguntas e respostas para virar a resposta direta, em trechos em destaque e assistentes de voz.
+- **GEO:** Generative Engine Optimization: preparar o site para ser entendido e citado por IAs como ChatGPT, Gemini, Perplexity, Claude e o Modo IA do Google.
+- **Base comum:** Site rápido, HTML semântico, dados estruturados schema.org, conteúdo claro e presença consistente na internet.
+
+### SEO, GEO e AEO: otimização para Google e buscas por IA, do jeito certo
+
+- **SEO técnico:** Velocidade, Core Web Vitals, HTML semântico, canonical, sitemap, robots.txt e indexação no Google Search Console.
+- **Dados estruturados:** Marcação schema.org (empresa, serviços, perguntas frequentes, produtos) para o Google e as IAs entenderem quem você é.
+- **SEO local:** Perfil da Empresa no Google, consistência de nome, endereço e telefone, e páginas por cidade e por serviço.
+- **AEO:** Conteúdo em formato de pergunta e resposta, objetivo e verificável, pronto para respostas diretas e voz.
+- **GEO:** Liberação dos robôs de IA, arquivo llms.txt, fatos claros sobre a empresa e presença consistente em fontes que as IAs consultam.
+- **Conteúdo e acompanhamento:** Guias e páginas que respondem às dúvidas reais do seu cliente, com acompanhamento das buscas no Search Console.
+
+### Como trabalhamos
+
+- Diagnóstico: análise técnica do site, das buscas e da concorrência.
+- Correções técnicas: velocidade, indexação, estrutura e dados estruturados.
+- Conteúdo: páginas e respostas para as perguntas que seu cliente faz ao Google e às IAs.
+- Local: Perfil da Empresa no Google e presença consistente na região.
+- Acompanhamento: evolução das buscas e ajustes contínuos.
+
+### Perguntas sobre SEO, GEO e AEO
+
+**Qual a diferença entre SEO, AEO e GEO?**
+SEO foca em posicionar o site nos resultados do Google. AEO foca em ser a resposta direta para uma pergunta, como em trechos em destaque e assistentes de voz. GEO foca em ser entendido e citado por IAs generativas como ChatGPT, Gemini, Perplexity e Claude. Os três se complementam e partem da mesma base: site técnico, rápido e com conteúdo claro.
+
+**Como fazer minha empresa aparecer no ChatGPT?**
+As IAs citam empresas que encontram descritas de forma clara e consistente. Isso envolve permitir o acesso dos robôs de IA ao site, publicar fatos objetivos sobre a empresa com dados estruturados, manter presença consistente no Google, no Bing e em perfis e diretórios, e ter conteúdo que responda às perguntas do seu cliente.
+
+**Em quanto tempo o SEO dá resultado?**
+SEO é um trabalho de médio prazo. Correções técnicas e indexação costumam aparecer primeiro; posições para buscas concorridas levam mais tempo e dependem do mercado e da concorrência.
+
+**Vocês fazem SEO em site que já existe?**
+Sim. Fazemos um diagnóstico do site atual e indicamos o que corrigir e o que vale mais a pena reconstruir. Se o site estiver lento, veja também [sites de alta performance](https://fcsoftware.com.br/sites-alta-performance/).
+
+**O que é SEO local?**
+É a otimização para buscas com intenção regional, como “empresa perto de mim” ou “serviço em São José dos Campos”, envolvendo o Perfil da Empresa no Google, o Google Maps e páginas voltadas para cada cidade atendida.
